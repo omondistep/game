@@ -863,11 +863,17 @@ class FootballPredictionSystem:
         # Show prediction method
         pred_method = pred.get('prediction_method', 'unknown')
         league = md.get('info', {}).get('league', 'Unknown League')
-        if pred_method in ['ml', 'league_ml']:
+        
+        # Check if ML model is actually trained
+        ml_trained = self.predictor.result_model is not None and self.predictor.ou_model is not None and self.predictor.scaler is not None
+        
+        if pred_method in ['ml', 'league_ml'] and ml_trained:
             training_count = pred.get('training_examples', len(self.storage.get_league_training_data(league)))
             print(f"  {C.GREEN}✓ ML Model Trained{C.RESET} - Using learned patterns from {training_count} matches in {league}")
         elif pred_method == 'weighted_factors':
             print(f"  {C.YELLOW}⚠ Statistical Model{C.RESET} - Using weighted factors analysis for {league}")
+        elif pred_method == 'statistical':
+            print(f"  {C.YELLOW}⚠ Fallback Statistical Model{C.RESET} - No ML model trained, using odds/form analysis for {league}")
         else:
             print(f"  {C.DIM}ℹ Model: {pred_method}{C.RESET}")
         
