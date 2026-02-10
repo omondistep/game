@@ -1,0 +1,174 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/crystal-palace-u21-middlesbrough-u23s-2348973",
+  "timestamp": "2026-02-09T14:14:50.357459",
+  "features": {
+    "home_position": 16,
+    "away_position": 221,
+    "position_diff": -205,
+    "home_points": 17,
+    "away_points": 14,
+    "home_form_points": 7,
+    "away_form_points": 9,
+    "home_recent_form": 3,
+    "away_recent_form": 5,
+    "home_wins_l6": 2,
+    "home_draws_l6": 1,
+    "home_losses_l6": 3,
+    "away_wins_l6": 2,
+    "away_draws_l6": 3,
+    "away_losses_l6": 1,
+    "home_scored_avg": 2.0,
+    "home_conceded_avg": 2.142857142857143,
+    "away_scored_avg": 1.8333333333333333,
+    "away_conceded_avg": 1.5,
+    "expected_total_goals": 3.738095238095238,
+    "home_home_win_rate": 60.0,
+    "home_home_goals_avg": 2.8,
+    "away_away_win_rate": 20.0,
+    "away_away_goals_avg": 1.2,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 8.428571428571429,
+    "away_shots_avg": 11.083333333333334,
+    "home_shots_on_target_pct": 52.54237288135594,
+    "away_shots_on_target_pct": 43.609022556390975,
+    "home_dangerous_attacks_avg": 37.57142857142857,
+    "away_dangerous_attacks_avg": 49.083333333333336,
+    "home_possession": 46.86,
+    "away_possession": 50.58,
+    "home_pass_accuracy": 61.158100195185426,
+    "away_pass_accuracy": 27.899484536082475,
+    "home_fouls_avg": 11.642857142857142,
+    "away_fouls_avg": 12.666666666666666,
+    "home_yellow_avg": 1.8571428571428572,
+    "away_yellow_avg": 2.75,
+    "odds_home": 2.0,
+    "odds_draw": 4.2,
+    "odds_away": 2.7,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 42
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4024,
+        "X": 0.2873,
+        "2": 0.3102
+      },
+      "computed_odds": {
+        "1": 2.48,
+        "X": 3.48,
+        "2": 3.22
+      },
+      "confidence": 0.4024
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.65,
+        "Under": 0.35
+      },
+      "computed_odds": {
+        "Over": 1.54,
+        "Under": 2.86
+      },
+      "confidence": 0.65
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.21052631578947367,
+        "away": 0,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.45107398568019097,
+        "away": 0.3341288782816229,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.3888888888888889,
+        "away": 0.5,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.4642857142857143,
+        "away": 0.5833333333333333,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.2954457142857143,
+        "away": 0.40625777777777783,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 3.738095238095238
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 4.2
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 3.4
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 2.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.74,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.83,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udcc9 Away team struggles away (20% win rate)",
+      "\u26bd High-scoring match expected (avg 3.7 goals)",
+      "\ud83d\udcca Home team significantly higher in table (#16 vs #221)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 4.2,
+        "fair": 3.48,
+        "value_pct": 20.7
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

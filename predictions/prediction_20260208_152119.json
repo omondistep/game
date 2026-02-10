@@ -1,0 +1,99 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/bayern-munich-hoffenheim-2344083",
+  "timestamp": "2026-02-08T15:21:19.952980",
+  "features": {
+    "home_position": 1,
+    "away_position": 3,
+    "position_diff": -2,
+    "home_points": 51,
+    "away_points": 42,
+    "home_form_points": 13,
+    "away_form_points": 16,
+    "home_recent_form": 4,
+    "away_recent_form": 9,
+    "home_wins_l6": 4,
+    "home_draws_l6": 1,
+    "home_losses_l6": 1,
+    "away_wins_l6": 5,
+    "away_draws_l6": 1,
+    "away_losses_l6": 0,
+    "home_scored_avg": 3.4193548387096775,
+    "home_conceded_avg": 1.0,
+    "away_scored_avg": 2.1818181818181817,
+    "away_conceded_avg": 1.0909090909090908,
+    "expected_total_goals": 3.8460410557184748,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 58.333333333333336,
+    "away_away_goals_avg": 2.0,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 18.129032258064516,
+    "away_shots_avg": 12.727272727272727,
+    "home_shots_on_target_pct": 46.619217081850536,
+    "away_shots_on_target_pct": 39.64285714285714,
+    "home_dangerous_attacks_avg": 65.58064516129032,
+    "away_dangerous_attacks_avg": 47.72727272727273,
+    "home_possession": 65.52,
+    "away_possession": 54.18,
+    "home_pass_accuracy": 89.76748564435658,
+    "away_pass_accuracy": 80.6633530873638,
+    "home_fouls_avg": 9.838709677419354,
+    "away_fouls_avg": 14.909090909090908,
+    "home_yellow_avg": 1.903225806451613,
+    "away_yellow_avg": 2.090909090909091,
+    "odds_home": 1.28,
+    "odds_draw": 6.0,
+    "odds_away": 9.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 37
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.6036,
+        "X": 0.2949,
+        "2": 0.1015
+      },
+      "computed_odds": {
+        "1": 1.66,
+        "X": 3.39,
+        "2": 9.85
+      },
+      "confidence": 0.6036
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.55,
+        "Under": 0.45
+      },
+      "computed_odds": {
+        "Over": 1.82,
+        "Under": 2.22
+      },
+      "confidence": 0.55
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\ud83d\udd25 Away team in excellent form (5 wins in last 6)",
+      "\u26bd High-scoring match expected (avg 3.8 goals)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 6.0,
+        "fair": 3.39,
+        "value_pct": 77.0
+      }
+    ],
+    "confidence": "HIGH"
+  }
+}

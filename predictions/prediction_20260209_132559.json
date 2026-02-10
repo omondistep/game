@@ -1,0 +1,160 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/chainat-fc-chiangmai-united-2423681",
+  "timestamp": "2026-02-09T13:25:59.932707",
+  "features": {
+    "home_position": 5,
+    "away_position": 27,
+    "position_diff": -22,
+    "home_points": 34,
+    "away_points": 31,
+    "home_form_points": 5,
+    "away_form_points": 9,
+    "home_recent_form": 4,
+    "away_recent_form": 6,
+    "home_wins_l6": 1,
+    "home_draws_l6": 2,
+    "home_losses_l6": 3,
+    "away_wins_l6": 3,
+    "away_draws_l6": 0,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.4583333333333333,
+    "home_conceded_avg": 1.2916666666666667,
+    "away_scored_avg": 1.5,
+    "away_conceded_avg": 1.3636363636363635,
+    "expected_total_goals": 2.8068181818181817,
+    "home_home_win_rate": 41.66666666666667,
+    "home_home_goals_avg": 1.5833333333333333,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.5,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 67.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 12.958333333333334,
+    "away_shots_avg": 11.272727272727273,
+    "home_shots_on_target_pct": 41.47909967845659,
+    "away_shots_on_target_pct": 39.91935483870967,
+    "home_dangerous_attacks_avg": 62.125,
+    "away_dangerous_attacks_avg": 47.45454545454545,
+    "home_possession": 51.25,
+    "away_possession": 47.0,
+    "home_pass_accuracy": 75.36096879366558,
+    "away_pass_accuracy": 77.60487144790257,
+    "home_fouls_avg": 11.083333333333334,
+    "away_fouls_avg": 10.272727272727273,
+    "home_yellow_avg": 2.375,
+    "away_yellow_avg": 2.227272727272727,
+    "odds_home": null,
+    "odds_draw": null,
+    "odds_away": null,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 38
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4165,
+        "X": 0.3357,
+        "2": 0.2477
+      },
+      "computed_odds": {
+        "1": 2.4,
+        "X": 2.98,
+        "2": 4.04
+      },
+      "confidence": 0.4165
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.7894736842105263,
+        "away": 0,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.39252336448598135,
+        "away": 0.2803738317757009,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.2777777777777778,
+        "away": 0.5,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5416666666666666,
+        "away": 0.5340909090909092,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.17,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.47277777777777774,
+        "away": 0.3910909090909091,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.67,
+      "expected_goals": 2.8068181818181817
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 15.8
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 4.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.81,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.96,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (1 win in last 6)",
+      "\ud83d\udcca Home team significantly higher in table (#5 vs #27)"
+    ],
+    "value_bets": [],
+    "confidence": "MEDIUM"
+  }
+}

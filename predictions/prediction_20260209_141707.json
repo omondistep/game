@@ -1,0 +1,157 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/watford-u23-charlton-u23-2420593",
+  "timestamp": "2026-02-09T14:17:07.571591",
+  "features": {
+    "home_position": null,
+    "away_position": null,
+    "position_diff": 0,
+    "away_points": 10,
+    "home_points": 10,
+    "home_form_points": 10,
+    "away_form_points": 10,
+    "home_recent_form": 4,
+    "away_recent_form": 1,
+    "home_wins_l6": 3,
+    "home_draws_l6": 1,
+    "home_losses_l6": 2,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 2.0,
+    "home_conceded_avg": 1.6666666666666667,
+    "away_scored_avg": 1.5,
+    "away_conceded_avg": 2.3333333333333335,
+    "expected_total_goals": 3.7500000000000004,
+    "home_home_win_rate": 100.0,
+    "home_home_goals_avg": 2.6666666666666665,
+    "away_away_win_rate": 66.66666666666666,
+    "away_away_goals_avg": 2.0,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 50.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 10.0,
+    "away_shots_avg": 7.5,
+    "home_shots_on_target_pct": 51.66666666666667,
+    "away_shots_on_target_pct": 48.888888888888886,
+    "home_dangerous_attacks_avg": 38.333333333333336,
+    "away_dangerous_attacks_avg": 36.333333333333336,
+    "home_possession": 48.4,
+    "away_possession": 44.67,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 7.333333333333333,
+    "away_fouls_avg": 12.833333333333334,
+    "home_yellow_avg": 0.8333333333333334,
+    "away_yellow_avg": 1.6666666666666667,
+    "odds_home": 2.3,
+    "odds_draw": 4.2,
+    "odds_away": 2.3,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 36
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3709,
+        "X": 0.2741,
+        "2": 0.355
+      },
+      "computed_odds": {
+        "1": 2.7,
+        "X": 3.65,
+        "2": 2.82
+      },
+      "confidence": 0.3709
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.65,
+        "Under": 0.35
+      },
+      "computed_odds": {
+        "Over": 1.54,
+        "Under": 2.86
+      },
+      "confidence": 0.65
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.5263157894736843,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.3925233644859814,
+        "away": 0.3925233644859814,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5555555555555556,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.6666666666666666,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5833333333333333,
+        "away": 0.29166666666666663,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.35706666666666664,
+        "away": 0.26802000000000004,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.5,
+      "expected_goals": 3.7500000000000004
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 4.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.75,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.5,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83c\udfdf\ufe0f  Home team dominant at home (100% win rate)",
+      "\u26bd High-scoring match expected (avg 3.8 goals)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 4.2,
+        "fair": 3.65,
+        "value_pct": 15.1
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

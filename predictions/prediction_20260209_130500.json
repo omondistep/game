@@ -1,0 +1,172 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/naft-gachsaran-sanat-naft-ac-2423585",
+  "timestamp": "2026-02-09T13:05:00.987663",
+  "features": {
+    "home_position": 14,
+    "away_position": 14,
+    "position_diff": 0,
+    "away_points": 35,
+    "home_points": 21,
+    "home_form_points": 5,
+    "away_form_points": 11,
+    "home_recent_form": 3,
+    "away_recent_form": 6,
+    "home_wins_l6": 0,
+    "home_draws_l6": 5,
+    "home_losses_l6": 1,
+    "away_wins_l6": 3,
+    "away_draws_l6": 2,
+    "away_losses_l6": 1,
+    "home_scored_avg": 0.6818181818181818,
+    "home_conceded_avg": 1.0,
+    "away_scored_avg": 1.1,
+    "away_conceded_avg": 0.6,
+    "expected_total_goals": 1.690909090909091,
+    "home_home_win_rate": 40.0,
+    "home_home_goals_avg": 0.8,
+    "away_away_win_rate": 22.22222222222222,
+    "away_away_goals_avg": 0.5555555555555556,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 1.6363636363636365,
+    "away_shots_avg": 6.0,
+    "home_shots_on_target_pct": 38.88888888888889,
+    "away_shots_on_target_pct": 37.5,
+    "home_dangerous_attacks_avg": 14.181818181818182,
+    "away_dangerous_attacks_avg": 30.55,
+    "home_possession": 45.88,
+    "away_possession": 52.54,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": null,
+    "away_fouls_avg": null,
+    "home_yellow_avg": 1.1363636363636365,
+    "away_yellow_avg": 1.45,
+    "odds_home": 4.2,
+    "odds_draw": 2.7,
+    "odds_away": 2.11,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 39
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3063,
+        "X": 0.3189,
+        "2": 0.3748
+      },
+      "computed_odds": {
+        "1": 3.27,
+        "X": 3.14,
+        "2": 2.67
+      },
+      "confidence": 0.3748
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.32,
+        "Under": 0.68
+      },
+      "computed_odds": {
+        "Over": 3.12,
+        "Under": 1.47
+      },
+      "confidence": 0.68
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.3157894736842105,
+        "away": 0.3157894736842105,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.2199698830070659,
+        "away": 0.43785474342638714,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.2777777777777778,
+        "away": 0.6111111111111112,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 1.0,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.4204545454545454,
+        "away": 0.625,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.27528,
+        "away": 0.31523999999999996,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 1.690909090909091
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 6.7
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 3.3
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 3.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 1.69,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 1.78,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 6)",
+      "\ud83d\udee1\ufe0f  Low-scoring match expected (avg 1.7 goals)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 4.2,
+        "fair": 3.27,
+        "value_pct": 28.4
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/boston-river-nacional-2423097",
+  "timestamp": "2026-02-08T23:41:13.988355",
+  "features": {
+    "home_position": 12,
+    "away_position": 7,
+    "position_diff": 5,
+    "away_points": 0,
+    "home_points": 0,
+    "home_form_points": 8,
+    "away_form_points": 6,
+    "home_recent_form": 5,
+    "away_recent_form": 3,
+    "home_wins_l6": 1,
+    "home_draws_l6": 5,
+    "home_losses_l6": 0,
+    "away_wins_l6": 0,
+    "away_draws_l6": 6,
+    "away_losses_l6": 0,
+    "home_scored_avg": 1.3333333333333333,
+    "home_conceded_avg": 0.6666666666666666,
+    "away_scored_avg": 0.5,
+    "away_conceded_avg": 0.5,
+    "expected_total_goals": 1.5,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 0.6,
+    "h2h_home_win_pct": null,
+    "h2h_draw_pct": null,
+    "h2h_away_win_pct": null,
+    "home_shots_avg": 7.333333333333333,
+    "away_shots_avg": 9.833333333333334,
+    "home_shots_on_target_pct": 45.45454545454545,
+    "away_shots_on_target_pct": 32.20338983050847,
+    "home_dangerous_attacks_avg": 41.0,
+    "away_dangerous_attacks_avg": 72.16666666666667,
+    "home_possession": 52.83,
+    "away_possession": 51.0,
+    "home_pass_accuracy": 79.09319899244332,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 4.666666666666667,
+    "away_fouls_avg": null,
+    "home_yellow_avg": 2.5,
+    "away_yellow_avg": 3.6666666666666665,
+    "odds_home": 5.25,
+    "odds_draw": 3.3,
+    "odds_away": 1.6,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 46
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3292,
+        "X": 0.3268,
+        "2": 0.344
+      },
+      "computed_odds": {
+        "1": 3.04,
+        "X": 3.06,
+        "2": 2.91
+      },
+      "confidence": 0.344
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.32,
+        "Under": 0.68
+      },
+      "computed_odds": {
+        "Over": 3.12,
+        "Under": 1.47
+      },
+      "confidence": 0.68
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.42105263157894735,
+        "away": 0.6842105263157895,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.1702951136913401,
+        "away": 0.5587808417997098,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.4444444444444444,
+        "away": 0.3333333333333333,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.6666666666666666,
+        "away": 0.5,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.31698,
+        "away": 0.3671111111111111,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 1.5
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 5.8
+        },
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 5.3
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 2.5
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 1.5,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 1.83,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (1 win in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (0 win in last 6)",
+      "\ud83d\udee1\ufe0f  Low-scoring match expected (avg 1.5 goals)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 5.25,
+        "fair": 3.04,
+        "value_pct": 72.7
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

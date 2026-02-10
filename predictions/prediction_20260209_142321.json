@@ -1,0 +1,171 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/fc-cajamarca-deportivo-garcilaso-2419322",
+  "timestamp": "2026-02-09T14:23:21.722326",
+  "features": {
+    "home_position": 10,
+    "away_position": 11,
+    "position_diff": -1,
+    "home_points": 1,
+    "away_points": 1,
+    "home_form_points": 12,
+    "away_form_points": 8,
+    "home_recent_form": 5,
+    "away_recent_form": 5,
+    "home_wins_l6": 3,
+    "home_draws_l6": 3,
+    "home_losses_l6": 0,
+    "away_wins_l6": 2,
+    "away_draws_l6": 2,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.8333333333333333,
+    "home_conceded_avg": 0.8333333333333334,
+    "away_scored_avg": 0.8333333333333334,
+    "away_conceded_avg": 1.0,
+    "expected_total_goals": 2.25,
+    "home_home_win_rate": 100.0,
+    "home_home_goals_avg": 2.5,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.3333333333333333,
+    "h2h_home_win_pct": null,
+    "h2h_draw_pct": null,
+    "h2h_away_win_pct": null,
+    "home_shots_avg": 7.166666666666667,
+    "away_shots_avg": 7.833333333333333,
+    "home_shots_on_target_pct": 37.2093023255814,
+    "away_shots_on_target_pct": 36.17021276595745,
+    "home_dangerous_attacks_avg": 50.5,
+    "away_dangerous_attacks_avg": 24.833333333333332,
+    "home_possession": 51.4,
+    "away_possession": 39.67,
+    "home_pass_accuracy": 73.69942196531792,
+    "away_pass_accuracy": 76.48073605520413,
+    "home_fouls_avg": 2.5,
+    "away_fouls_avg": 11.666666666666666,
+    "home_yellow_avg": 2.0,
+    "away_yellow_avg": 2.5,
+    "odds_home": 1.75,
+    "odds_draw": 3.7,
+    "odds_away": 4.33,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 46
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4574,
+        "X": 0.256,
+        "2": 0.2866
+      },
+      "computed_odds": {
+        "1": 2.19,
+        "X": 3.91,
+        "2": 3.49
+      },
+      "confidence": 0.4574
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.4736842105263158,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.5327281493673832,
+        "away": 0.2153058340399355,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6666666666666666,
+        "away": 0.4444444444444444,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.75,
+        "away": 0.45833333333333337,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3084,
+        "away": 0.23801999999999998,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.25
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 4.8
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 4.4
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 4.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.25,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.67,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83c\udfdf\ufe0f  Home team dominant at home (100% win rate)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 4.33,
+        "fair": 3.49,
+        "value_pct": 24.1
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

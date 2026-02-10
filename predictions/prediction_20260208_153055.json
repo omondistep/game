@@ -1,0 +1,91 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/le-havre-strasbourg-2316303",
+  "timestamp": "2026-02-08T15:30:55.821582",
+  "features": {
+    "home_position": 15,
+    "away_position": 17,
+    "position_diff": -2,
+    "away_points": 30,
+    "home_points": 20,
+    "home_form_points": 5,
+    "away_form_points": 13,
+    "home_recent_form": 2,
+    "away_recent_form": 6,
+    "home_wins_l6": 1,
+    "home_draws_l6": 2,
+    "home_losses_l6": 3,
+    "away_wins_l6": 4,
+    "away_draws_l6": 1,
+    "away_losses_l6": 1,
+    "home_scored_avg": 0.7619047619047619,
+    "home_conceded_avg": 1.2857142857142858,
+    "away_scored_avg": 1.8709677419354838,
+    "away_conceded_avg": 1.096774193548387,
+    "expected_total_goals": 2.5076804915514592,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 53.333333333333336,
+    "away_away_goals_avg": 2.0,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 67.0,
+    "home_shots_avg": 11.047619047619047,
+    "away_shots_avg": 10.96774193548387,
+    "home_shots_on_target_pct": 30.603448275862068,
+    "away_shots_on_target_pct": 44.41176470588235,
+    "home_dangerous_attacks_avg": 42.57142857142857,
+    "away_dangerous_attacks_avg": 40.70967741935484,
+    "home_possession": 47.0,
+    "away_possession": 53.97,
+    "home_pass_accuracy": 81.41799766264121,
+    "away_pass_accuracy": 88.36733346537268,
+    "home_fouls_avg": 12.761904761904763,
+    "away_fouls_avg": 10.225806451612904,
+    "home_yellow_avg": 1.619047619047619,
+    "away_yellow_avg": 1.8709677419354838,
+    "odds_home": 3.7,
+    "odds_draw": 3.4,
+    "odds_away": 1.95,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 39
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2073,
+        "X": 0.3109,
+        "2": 0.4818
+      },
+      "computed_odds": {
+        "1": 4.82,
+        "X": 3.22,
+        "2": 2.08
+      },
+      "confidence": 0.4818
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.5,
+        "Under": 0.5
+      },
+      "computed_odds": {
+        "Over": 2.0,
+        "Under": 2.0
+      },
+      "confidence": 0.5
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (1 win in last 6)",
+      "\ud83d\udd25 Away team in excellent form (4 wins in last 6)",
+      "\ud83d\udcdc Away team dominates H2H (67% wins)"
+    ],
+    "value_bets": [],
+    "confidence": "MEDIUM"
+  }
+}

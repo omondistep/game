@@ -1,0 +1,98 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/brighton-crystal-palace-2315985",
+  "timestamp": "2026-02-08T14:27:11.340460",
+  "features": {
+    "home_position": 13,
+    "away_position": 15,
+    "position_diff": -2,
+    "home_points": 31,
+    "away_points": 29,
+    "home_form_points": 9,
+    "away_form_points": 2,
+    "home_recent_form": 2,
+    "away_recent_form": 1,
+    "home_wins_l6": 2,
+    "home_draws_l6": 3,
+    "home_losses_l6": 1,
+    "away_wins_l6": 0,
+    "away_draws_l6": 2,
+    "away_losses_l6": 4,
+    "home_scored_avg": null,
+    "home_conceded_avg": null,
+    "away_scored_avg": null,
+    "away_conceded_avg": null,
+    "expected_total_goals": 2.3,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 11.636363636363637,
+    "away_shots_avg": 11.541666666666666,
+    "home_shots_on_target_pct": 35.41666666666667,
+    "away_shots_on_target_pct": 33.57400722021661,
+    "home_dangerous_attacks_avg": 44.666666666666664,
+    "away_dangerous_attacks_avg": 44.333333333333336,
+    "home_possession": 52.54,
+    "away_possession": 43.96,
+    "home_pass_accuracy": 84.59879870629909,
+    "away_pass_accuracy": 77.62984154929578,
+    "home_fouls_avg": 10.424242424242424,
+    "away_fouls_avg": 10.166666666666666,
+    "home_yellow_avg": 1.9696969696969697,
+    "away_yellow_avg": 2.0,
+    "odds_home": 1.95,
+    "odds_draw": 3.5,
+    "odds_away": 3.75,
+    "odds_over": 2.0,
+    "odds_under": 1.8,
+    "forebet_probability": 43
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4472,
+        "X": 0.3466,
+        "2": 0.2062
+      },
+      "computed_odds": {
+        "1": 2.24,
+        "X": 2.88,
+        "2": 4.85
+      },
+      "confidence": 0.4472
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.4737,
+        "Under": 0.5263
+      },
+      "computed_odds": {
+        "Over": 2.11,
+        "Under": 1.9
+      },
+      "confidence": 0.5263
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (0 win in last 6)",
+      "\ud83d\udcc8 Under 2.5 goals (5/5 = 100%)",
+      "\ud83d\udcc8 Winless (12/13 = 92%)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.5,
+        "fair": 2.88,
+        "value_pct": 21.5
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

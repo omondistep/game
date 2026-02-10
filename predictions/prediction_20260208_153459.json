@@ -1,0 +1,97 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/go-ahead-eagles-sc-telstar-2317001",
+  "timestamp": "2026-02-08T15:34:59.156245",
+  "features": {
+    "home_position": 14,
+    "away_position": 17,
+    "position_diff": -3,
+    "home_points": 22,
+    "away_points": 16,
+    "home_form_points": 4,
+    "away_form_points": 7,
+    "home_recent_form": 2,
+    "away_recent_form": 3,
+    "home_wins_l6": 0,
+    "home_draws_l6": 4,
+    "home_losses_l6": 2,
+    "away_wins_l6": 2,
+    "away_draws_l6": 1,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.3225806451612903,
+    "home_conceded_avg": 1.7096774193548387,
+    "away_scored_avg": 1.56,
+    "away_conceded_avg": 1.6,
+    "expected_total_goals": 3.0961290322580646,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 11.709677419354838,
+    "away_shots_avg": 12.64,
+    "home_shots_on_target_pct": 40.77134986225895,
+    "away_shots_on_target_pct": 39.24050632911392,
+    "home_dangerous_attacks_avg": 46.16129032258065,
+    "away_dangerous_attacks_avg": 42.04,
+    "home_possession": 51.06,
+    "away_possession": 44.12,
+    "home_pass_accuracy": 82.3752866972477,
+    "away_pass_accuracy": 77.210433244916,
+    "home_fouls_avg": 9.935483870967742,
+    "away_fouls_avg": 10.68,
+    "home_yellow_avg": 1.7096774193548387,
+    "away_yellow_avg": 1.36,
+    "odds_home": 1.9,
+    "odds_draw": 3.7,
+    "odds_away": 3.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 44
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4173,
+        "X": 0.3491,
+        "2": 0.2336
+      },
+      "computed_odds": {
+        "1": 2.4,
+        "X": 2.86,
+        "2": 4.28
+      },
+      "confidence": 0.4173
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.55,
+        "Under": 0.45
+      },
+      "computed_odds": {
+        "Over": 1.82,
+        "Under": 2.22
+      },
+      "confidence": 0.55
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 6)",
+      "\u26bd High-scoring match expected (avg 3.1 goals)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.7,
+        "fair": 2.86,
+        "value_pct": 29.4
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

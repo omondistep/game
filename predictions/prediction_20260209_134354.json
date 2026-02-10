@@ -1,0 +1,171 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/alhassam-manama-club-2423607",
+  "timestamp": "2026-02-09T13:43:54.900176",
+  "features": {
+    "home_position": 6,
+    "away_position": 4,
+    "position_diff": 2,
+    "away_points": 23,
+    "home_points": 16,
+    "home_form_points": 8,
+    "away_form_points": 9,
+    "home_recent_form": 1,
+    "away_recent_form": 7,
+    "home_wins_l6": 2,
+    "home_draws_l6": 2,
+    "home_losses_l6": 2,
+    "away_wins_l6": 2,
+    "away_draws_l6": 3,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.0769230769230769,
+    "home_conceded_avg": 1.2307692307692308,
+    "away_scored_avg": 2.230769230769231,
+    "away_conceded_avg": 1.2307692307692308,
+    "expected_total_goals": 2.8846153846153846,
+    "home_home_win_rate": 50.0,
+    "home_home_goals_avg": 1.6666666666666667,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.1666666666666667,
+    "h2h_home_win_pct": 0.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 100.0,
+    "home_shots_avg": 8.384615384615385,
+    "away_shots_avg": 10.384615384615385,
+    "home_shots_on_target_pct": 44.95412844036697,
+    "away_shots_on_target_pct": 54.074074074074076,
+    "home_dangerous_attacks_avg": 48.92307692307692,
+    "away_dangerous_attacks_avg": 49.30769230769231,
+    "home_possession": 51.92,
+    "away_possession": 50.92,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 15.0,
+    "away_fouls_avg": 13.846153846153847,
+    "home_yellow_avg": 2.230769230769231,
+    "away_yellow_avg": 2.3846153846153846,
+    "odds_home": 3.7,
+    "odds_draw": 3.7,
+    "odds_away": 1.72,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 56
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.31,
+        "X": 0.2353,
+        "2": 0.4547
+      },
+      "computed_odds": {
+        "1": 3.23,
+        "X": 4.25,
+        "2": 2.2
+      },
+      "confidence": 0.4547
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.736842105263158,
+        "away": 0.8421052631578947,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.24089635854341734,
+        "away": 0.5182072829131653,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.4444444444444444,
+        "away": 0.5,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.4615384615384615,
+        "away": 0.75,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 1.0,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3243405128205128,
+        "away": 0.38500717948717944,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.8846153846153846
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 6.7
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 4.3
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 4.2
+        },
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.88,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.31,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udcdc Away team dominates H2H (100% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 3.7,
+        "fair": 3.23,
+        "value_pct": 14.6
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

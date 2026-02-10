@@ -1,0 +1,98 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/psg-olympique-marseille-2316300",
+  "timestamp": "2026-02-08T15:32:07.420078",
+  "features": {
+    "home_position": 2,
+    "away_position": 14,
+    "position_diff": -12,
+    "home_points": 48,
+    "away_points": 39,
+    "home_form_points": 10,
+    "away_form_points": 10,
+    "home_recent_form": 7,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 1,
+    "home_losses_l6": 2,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 2.2666666666666666,
+    "home_conceded_avg": 0.9333333333333333,
+    "away_scored_avg": 2.4193548387096775,
+    "away_conceded_avg": 1.1612903225806452,
+    "expected_total_goals": 3.390322580645161,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.25,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 18.133333333333333,
+    "away_shots_avg": 13.35483870967742,
+    "home_shots_on_target_pct": 38.23529411764706,
+    "away_shots_on_target_pct": 42.7536231884058,
+    "home_dangerous_attacks_avg": 65.8,
+    "away_dangerous_attacks_avg": 44.193548387096776,
+    "home_possession": 69.14,
+    "away_possession": 58.97,
+    "home_pass_accuracy": 91.23108501599123,
+    "away_pass_accuracy": 89.13516125135887,
+    "home_fouls_avg": 8.633333333333333,
+    "away_fouls_avg": 11.225806451612904,
+    "home_yellow_avg": 0.9333333333333333,
+    "away_yellow_avg": 1.935483870967742,
+    "odds_home": 1.38,
+    "odds_draw": 5.25,
+    "odds_away": 6.25,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 42
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5875,
+        "X": 0.2928,
+        "2": 0.1197
+      },
+      "computed_odds": {
+        "1": 1.7,
+        "X": 3.42,
+        "2": 8.35
+      },
+      "confidence": 0.5875
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.55,
+        "Under": 0.45
+      },
+      "computed_odds": {
+        "Over": 1.82,
+        "Under": 2.22
+      },
+      "confidence": 0.55
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26bd High-scoring match expected (avg 3.4 goals)",
+      "\ud83d\udcca Home team significantly higher in table (#2 vs #14)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 5.25,
+        "fair": 3.42,
+        "value_pct": 53.5
+      }
+    ],
+    "confidence": "HIGH"
+  }
+}

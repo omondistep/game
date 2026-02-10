@@ -1,0 +1,3319 @@
+[
+  {
+    "match_id": "144d2e7afd",
+    "timestamp": "2026-01-28T16:35:26.671742",
+    "home_team": "Antigua GFC",
+    "away_team": "Comunicaciones",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 44.90314027423367,
+      "away_win": 38.51912428943592,
+      "draw": 16.57773543633041,
+      "home_score": 0.6176926388888888,
+      "away_score": 0.5298733982683982,
+      "draw_score": 0.22804518984487734
+    },
+    "confidence_score": 12,
+    "key_factors_used": [
+      "Form difference: +0.24",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "VERY STRONG HOME ADVANTAGE",
+      "Significant momentum difference"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "HOME ADVANTAGE: Antigua GFC very strong at home",
+      "TACTICAL: STRONG: Antigua GFC attack vs weak Comunicacion defense",
+      "Form difference: +0.24",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4490314027423367,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "72b62e77ab",
+    "timestamp": "2026-01-28T16:45:27.290856",
+    "home_team": "CSD Municipal",
+    "away_team": "Club Xelaj\u00fa MC",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 40.80994352815885,
+      "away_win": 43.619423275728415,
+      "draw": 15.570633196112743,
+      "home_score": 0.6269577777777776,
+      "away_score": 0.6701194444444444,
+      "draw_score": 0.2392095833333333
+    },
+    "confidence_score": 10,
+    "key_factors_used": [
+      "Form difference: -0.28",
+      "Attack advantage for home team",
+      "Strong home advantage",
+      "MAJOR CONSISTENCY ADVANTAGE: Away team much more consistent",
+      "HIGH-QUALITY OPPONENT EXPERTISE difference"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "HOME ADVANTAGE: CSD Municipa very strong at home",
+      "QUALITY: Club Xelaj\u00fa  excels vs top teams",
+      "Form difference: -0.28",
+      "Attack advantage for home team"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.43619423275728414,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "44a987cce1",
+    "timestamp": "2026-01-28T16:50:19.264306",
+    "home_team": "Estudiantes La Plata",
+    "away_team": "Boca Juniors",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 48.72023492575174,
+      "away_win": 41.00463041457836,
+      "draw": 10.275134659669883,
+      "home_score": 0.9980353174603173,
+      "away_score": 0.8399809523809525,
+      "draw_score": 0.2104864087301588
+    },
+    "confidence_score": 5,
+    "key_factors_used": [
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "MAJOR EXPECTED GOALS ADVANTAGE",
+      "Away team has BIG WIN capability"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "HIGH SCORING: >2.5 goals likely",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "MAJOR EXPECTED GOALS ADVANTAGE",
+      "Away team has BIG WIN capability"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4100463041457836,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "708de8002e",
+    "timestamp": "2026-01-28T16:53:25.049808",
+    "home_team": "Malavan",
+    "away_team": "Chadormalu",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 38.014124208363334,
+      "away_win": 42.5454859426383,
+      "draw": 19.440389848998375,
+      "home_score": 0.461936746031746,
+      "away_score": 0.5170005555555554,
+      "draw_score": 0.23623404761904765
+    },
+    "confidence_score": 6,
+    "key_factors_used": [
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "Similar consistency levels",
+      "HIGH-QUALITY OPPONENT EXPERTISE difference",
+      "VERY STRONG H2H DOMINANCE pattern"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "UNPREDICTABLE - Many variables",
+      "QUALITY: Chadormalu excels vs top teams",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Home defense much weaker"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.425454859426383,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "b40fe167e1",
+    "timestamp": "2026-01-28T17:11:28.026747",
+    "home_team": "Dubai City Club",
+    "away_team": "Hatta Club",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 40.75610958179624,
+      "away_win": 41.822020072065,
+      "draw": 17.42187034613876,
+      "home_score": 0.57603047008547,
+      "away_score": 0.5910956204906205,
+      "draw_score": 0.2462337123987124
+    },
+    "confidence_score": 3,
+    "key_factors_used": [
+      "Attack advantage for away team",
+      "Away defensive concerns",
+      "EXCELLENT AWAY FORM (0.78)",
+      "Consistency advantage: Home team",
+      "Quality opponent performance difference"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "AWAY FORM: Hatta Club excellent away",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely",
+      "TACTICAL: Dubai City C attack advantage"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.41822020072065,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "2fb79c908e",
+    "timestamp": "2026-01-28T17:12:30.681479",
+    "home_team": "Al Thaid",
+    "away_team": "Dubba Al Husun",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 40.151561435667375,
+      "away_win": 44.822482546878916,
+      "draw": 15.025956017453712,
+      "home_score": 0.6198644444444444,
+      "away_score": 0.6919746642246641,
+      "draw_score": 0.23197244505494508
+    },
+    "confidence_score": 14,
+    "key_factors_used": [
+      "Form difference: +0.19",
+      "IMPORTANT: Significant recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "POOR HOME FORM (advantage: -0.67)",
+      "Good away form"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Al Thaid superior",
+      "QUALITY: Al Thaid excels vs top teams",
+      "Form difference: +0.19"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.44822482546878917,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "2c3ee20b0c",
+    "timestamp": "2026-01-28T17:13:51.498793",
+    "home_team": "Al Dahra",
+    "away_team": "Al Fujairah Club",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 30.066621701138136,
+      "away_win": 61.36890200601355,
+      "draw": 8.564476292848322,
+      "home_score": 0.4586109920634921,
+      "away_score": 0.9360696825396825,
+      "draw_score": 0.1306353273809524
+    },
+    "confidence_score": 18,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.61",
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "Home defensive concerns",
+      "POOR HOME FORM (advantage: -0.33)",
+      "Good away form"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "QUALITY: Al Fujairah  excels vs top teams",
+      "H2H DOMINANCE: Al Fujairah ",
+      "TACTICAL: Al Fujairah  attack advantage"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.6136890200601355,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "e8139c4573",
+    "timestamp": "2026-01-28T17:17:14.325887",
+    "home_team": "CD Marath\u00f3n",
+    "away_team": "Juticalpa",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 52.356493025169485,
+      "away_win": 34.47726378916073,
+      "draw": 13.166243185669781,
+      "home_score": 0.7421799603174604,
+      "away_score": 0.48873277777777774,
+      "draw_score": 0.18663820436507933
+    },
+    "confidence_score": 11,
+    "key_factors_used": [
+      "Form difference: +0.18",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "Away defensive concerns",
+      "VERY STRONG HOME ADVANTAGE",
+      "Significant momentum difference"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "HOME ADVANTAGE: CD Marath\u00f3n very strong at home",
+      "H2H DOMINANCE: CD Marath\u00f3n",
+      "Form difference: +0.18"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5235649302516948,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "b15d3ecd7f",
+    "timestamp": "2026-01-28T17:18:42.530080",
+    "home_team": "CS Herediano",
+    "away_team": "Puntarenas",
+    "predicted_result": "H",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 60.08343881004561,
+      "away_win": 30.262360953648166,
+      "draw": 9.65420023630622,
+      "home_score": 0.8779266666666665,
+      "away_score": 0.4421873015873016,
+      "draw_score": 0.14106515873015876
+    },
+    "confidence_score": 20,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: +0.50",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Strong home advantage"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: CS Herediano superior",
+      "QUALITY: CS Herediano excels vs top teams"
+    ],
+    "was_correct": true,
+    "error_magnitude": 0.0,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "7560804187",
+    "timestamp": "2026-01-28T17:20:04.184150",
+    "home_team": "Alianza",
+    "away_team": "Inter F.A",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 38.88102117843593,
+      "away_win": 45.87035913752844,
+      "draw": 15.248619684035635,
+      "home_score": 0.5719158333333333,
+      "away_score": 0.6747246825396825,
+      "draw_score": 0.2242977876984127
+    },
+    "confidence_score": 17,
+    "key_factors_used": [
+      "Form difference: +0.22",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Inter F.A superior",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4587035913752844,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "565986b558",
+    "timestamp": "2026-01-28T17:22:41.892704",
+    "home_team": "Ayeyawady United",
+    "away_team": "Dagon",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 31.996859487004254,
+      "away_win": 53.13610223436017,
+      "draw": 14.86703827863558,
+      "home_score": 0.3969469444444444,
+      "away_score": 0.6591963636363635,
+      "draw_score": 0.18443764520202022
+    },
+    "confidence_score": 7,
+    "key_factors_used": [
+      "Form difference: -0.22",
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "POOR HOME FORM (advantage: -0.44)",
+      "EXCELLENT AWAY FORM (0.78)",
+      "Consistency advantage: Home team"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "AWAY FORM: Dagon excellent away",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely",
+      "Form difference: -0.22"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5313610223436017,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "eb6bf28895",
+    "timestamp": "2026-01-28T17:25:54.714566",
+    "home_team": "Sport Sinop",
+    "away_team": "Luverdense",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 32.34425022921411,
+      "away_win": 42.906762228528805,
+      "draw": 24.748987542257073,
+      "home_score": 0.4369577777777778,
+      "away_score": 0.5796530555555556,
+      "draw_score": 0.3343488416666667
+    },
+    "confidence_score": 1,
+    "key_factors_used": [
+      "Significant momentum difference",
+      "Consistency advantage: Home team",
+      "Strong H2H pattern",
+      "Away team prone to BIG LOSSES"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "LOW SCORING: <2.5 goals likely",
+      "Significant momentum difference",
+      "Consistency advantage: Home team",
+      "Strong H2H pattern"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.42906762228528805,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "0092a52e6d",
+    "timestamp": "2026-01-28T17:26:59.369480",
+    "home_team": "Deportivo Guastatoya",
+    "away_team": "Aurora",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 45.44781734307367,
+      "away_win": 37.050696673842545,
+      "draw": 17.501485983083782,
+      "home_score": 0.5796688888888888,
+      "away_score": 0.47256694444444447,
+      "draw_score": 0.22322451388888892
+    },
+    "confidence_score": 23,
+    "key_factors_used": [
+      "Form difference: +0.22",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Strong home advantage"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Deportivo Gu superior",
+      "HOME ADVANTAGE: Deportivo Gu very strong at home"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4544781734307367,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "efeacd40f5",
+    "timestamp": "2026-01-28T17:27:54.328176",
+    "home_team": "Olancho",
+    "away_team": "CD Olimpia",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 35.3028579801519,
+      "away_win": 52.472991321832716,
+      "draw": 12.224150698015386,
+      "home_score": 0.5343514761904761,
+      "away_score": 0.7942422222222222,
+      "draw_score": 0.18502731349206347
+    },
+    "confidence_score": 11,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.30",
+      "CRITICAL: Very strong recent form difference",
+      "Strong home advantage",
+      "STRONG MOMENTUM SHIFT detected",
+      "Consistency advantage: Away team"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: CD Olimpia superior",
+      "QUALITY: CD Olimpia excels vs top teams",
+      "STRONG FORM DIFFERENCE: -0.30"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5247299132183272,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "a4d108dd5a",
+    "timestamp": "2026-01-28T17:29:11.357053",
+    "home_team": "2 de Mayo",
+    "away_team": "Olimpia Asunci\u00f3n",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 23.232769723713506,
+      "away_win": 70.96636800691873,
+      "draw": 5.8008622693677765,
+      "home_score": 0.3275125,
+      "away_score": 1.0004133333333332,
+      "draw_score": 0.08177479166666671
+    },
+    "confidence_score": 19,
+    "key_factors_used": [
+      "Form difference: -0.28",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "Away defensive concerns",
+      "Good away form"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Olimpia Asun superior",
+      "QUALITY: Olimpia Asun excels vs top teams",
+      "PATTERN: momentum_reversal"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.7096636800691872,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "d894833515",
+    "timestamp": "2026-01-28T17:30:07.492353",
+    "home_team": "Operario MS",
+    "away_team": "CR Aquidauana",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 46.24016184676968,
+      "away_win": 35.980666116971065,
+      "draw": 17.779172036259244,
+      "home_score": 0.7117743055555557,
+      "away_score": 0.5538500000000001,
+      "draw_score": 0.27367460069444444
+    },
+    "confidence_score": 0,
+    "key_factors_used": [
+      "Form difference: +0.17",
+      "Consistency advantage: Home team",
+      "Away team is a draw specialist",
+      "PATTERN DETECTED: Both teams are draw specialists with similar form"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "PATTERN: draw_specialists_clash",
+      "Form difference: +0.17",
+      "Consistency advantage: Home team",
+      "Away team is a draw specialist"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4624016184676968,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "bc24f997d7",
+    "timestamp": "2026-01-28T17:31:19.213546",
+    "home_team": "Ind Santa Fe",
+    "away_team": "Deportivo Pereira",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 43.19529291859524,
+      "away_win": 33.68912832081833,
+      "draw": 23.11557876058642,
+      "home_score": 0.5357155555555556,
+      "away_score": 0.41781844444444444,
+      "draw_score": 0.2866834388888889
+    },
+    "confidence_score": 15,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: +0.47",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Ind Santa Fe superior",
+      "LOW SCORING: <2.5 goals likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4319529291859524,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "293ab44273",
+    "timestamp": "2026-01-28T17:32:21.623569",
+    "home_team": "Porto Vit\u00f3ria",
+    "away_team": "Rio Branco ES",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 37.29878694063654,
+      "away_win": 45.05213788450501,
+      "draw": 17.649075174858467,
+      "home_score": 0.4760555555555555,
+      "away_score": 0.5750138888888889,
+      "draw_score": 0.22526041666666663
+    },
+    "confidence_score": 9,
+    "key_factors_used": [
+      "IMPORTANT: Significant recent form difference",
+      "Attack advantage for home team",
+      "Away defensive concerns",
+      "Strong home advantage",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Rio Branco E superior",
+      "H2H DOMINANCE: Rio Branco E",
+      "IMPORTANT: Significant recent form difference"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.45052137884505006,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "18f5386b62",
+    "timestamp": "2026-01-28T17:33:01.277279",
+    "home_team": "Atl\u00e9tico GO",
+    "away_team": "Inhumas",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 54.458140496258544,
+      "away_win": 32.545959619914704,
+      "draw": 12.995899883826745,
+      "home_score": 0.73695873015873,
+      "away_score": 0.4404305555555555,
+      "draw_score": 0.17586795634920638
+    },
+    "confidence_score": 14,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: +0.51",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Significant momentum difference",
+      "Similar consistency levels"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "QUALITY: Atl\u00e9tico GO excels vs top teams",
+      "STRONG FORM DIFFERENCE: +0.51",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5445814049625854,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "6d8d53e8a4",
+    "timestamp": "2026-01-28T17:33:49.719071",
+    "home_team": "Catanduva",
+    "away_team": "Rio Preto SP",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 30.154978169937642,
+      "away_win": 46.2756791261145,
+      "draw": 23.56934270394786,
+      "home_score": 0.3401893162393162,
+      "away_score": 0.5220528282828282,
+      "draw_score": 0.26589435858585864
+    },
+    "confidence_score": 6,
+    "key_factors_used": [
+      "Away defensive concerns",
+      "POOR HOME FORM (advantage: -0.42)",
+      "Significant momentum difference",
+      "MAJOR CONSISTENCY ADVANTAGE: Away team much more consistent",
+      "Strong H2H pattern"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "LOW SCORING: <2.5 goals likely",
+      "H2H PATTERN: Strong draw tendency",
+      "Away defensive concerns",
+      "POOR HOME FORM (advantage: -0.42)"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.462756791261145,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "cb969ad61c",
+    "timestamp": "2026-01-28T17:34:40.971576",
+    "home_team": "Uni\u00e3o S\u00e3o Jo\u00e3o SP",
+    "away_team": "Uniao Barbarense SP",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 46.0672737301459,
+      "away_win": 33.26793480961406,
+      "draw": 20.664791460240053,
+      "home_score": 0.5639833333333333,
+      "away_score": 0.40728611111111107,
+      "draw_score": 0.25299083333333333
+    },
+    "confidence_score": 10,
+    "key_factors_used": [
+      "Form difference: +0.28",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Strong home advantage",
+      "Significant momentum difference"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "LOW SCORING: <2.5 goals likely",
+      "Form difference: +0.28",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.46067273730145897,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "180a19429f",
+    "timestamp": "2026-01-28T17:35:53.790098",
+    "home_team": "River Plate",
+    "away_team": "Gimnasia La Plata",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 34.078972434199756,
+      "away_win": 54.3261793522569,
+      "draw": 11.594848213543345,
+      "home_score": 0.5114919949494949,
+      "away_score": 0.8153827380952382,
+      "draw_score": 0.17402731421356418
+    },
+    "confidence_score": 19,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.58",
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "Home defensive concerns",
+      "POOR HOME FORM (advantage: -0.33)",
+      "EXCELLENT AWAY FORM (1.00)"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "AWAY FORM: Gimnasia La  excellent away",
+      "QUALITY: Gimnasia La  excels vs top teams",
+      "H2H DOMINANCE: River Plate",
+      "STRONG FORM DIFFERENCE: -0.58"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.543261793522569,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "266ecf98a8",
+    "timestamp": "2026-01-28T17:37:11.028159",
+    "home_team": "Oeste",
+    "away_team": "Sert\u00e3ozinho SP",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 39.2581048222197,
+      "away_win": 40.28872728015715,
+      "draw": 20.45316789762316,
+      "home_score": 0.6137584325396825,
+      "away_score": 0.6298711111111112,
+      "draw_score": 0.31976337946428574
+    },
+    "confidence_score": 13,
+    "key_factors_used": [
+      "IMPORTANT: Significant recent form difference",
+      "Attack advantage for away team",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Strong home advantage",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Oeste superior",
+      "HOME ADVANTAGE: Oeste very strong at home",
+      "H2H DOMINANCE: Sert\u00e3ozinho ",
+      "PATTERN: draw_specialists_clash"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4028872728015715,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "e66a608353",
+    "timestamp": "2026-01-28T17:38:16.849260",
+    "home_team": "G\u00e9nesis",
+    "away_team": "Real Espa\u00f1a",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 52.7773384715457,
+      "away_win": 34.05711809279364,
+      "draw": 13.165543435660663,
+      "home_score": 0.7393607222222222,
+      "away_score": 0.47710809523809516,
+      "draw_score": 0.18443684325396825
+    },
+    "confidence_score": 13,
+    "key_factors_used": [
+      "Form difference: -0.25",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "VERY STRONG HOME ADVANTAGE"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Real Espa\u00f1a superior",
+      "HOME ADVANTAGE: G\u00e9nesis very strong at home",
+      "Form difference: -0.25"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.527773384715457,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "ba24ead5f7",
+    "timestamp": "2026-01-28T17:39:02.056489",
+    "home_team": "Libertad",
+    "away_team": "Sportivo Ameliano",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 54.51580124227786,
+      "away_win": 29.11460341567479,
+      "draw": 16.36959534204735,
+      "home_score": 0.7194983333333334,
+      "away_score": 0.3842538888888888,
+      "draw_score": 0.21604555555555552
+    },
+    "confidence_score": 9,
+    "key_factors_used": [
+      "Form difference: +0.17",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "Significant momentum difference",
+      "Consistency advantage: Home team",
+      "Quality opponent performance difference"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "LOW SCORING: <2.5 goals likely",
+      "Form difference: +0.17",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "Significant momentum difference"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5451580124227786,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "659bdfa274",
+    "timestamp": "2026-01-28T17:39:49.167817",
+    "home_team": "Alianza Petrolera",
+    "away_team": "Boyac\u00e1 Chic\u00f3",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 40.83817156814173,
+      "away_win": 35.35360399942851,
+      "draw": 23.808224432429757,
+      "home_score": 0.48132499999999995,
+      "away_score": 0.4166830392156862,
+      "draw_score": 0.2806074117647059
+    },
+    "confidence_score": 12,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: +0.33",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "VERY STRONG HOME ADVANTAGE",
+      "Strong H2H pattern"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "HOME ADVANTAGE: Alianza Petr very strong at home",
+      "LOW SCORING: <2.5 goals likely",
+      "TACTICAL: STRONG: Alianza Petr attack vs weak Boyac\u00e1 Chic\u00f3 defense",
+      "STRONG FORM DIFFERENCE: +0.33"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.40838171568141735,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "b7083f0eeb",
+    "timestamp": "2026-01-28T17:41:01.983152",
+    "home_team": "Internacional",
+    "away_team": "Atl\u00e9tico PR",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 49.79297215570461,
+      "away_win": 37.79228288868943,
+      "draw": 12.414744955605954,
+      "home_score": 0.8075452380952381,
+      "away_score": 0.6129173809523809,
+      "draw_score": 0.2013430357142857
+    },
+    "confidence_score": 10,
+    "key_factors_used": [
+      "Form difference: +0.24",
+      "IMPORTANT: Significant recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "Strong home advantage",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Internaciona superior",
+      "HOME ADVANTAGE: Internaciona very strong at home"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4979297215570461,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "0004cb161d",
+    "timestamp": "2026-01-28T17:42:00.999100",
+    "home_team": "Vit\u00f3ria",
+    "away_team": "Remo PA",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 40.48453731611389,
+      "away_win": 40.36070192741028,
+      "draw": 19.154760756475838,
+      "home_score": 0.6854633838383838,
+      "away_score": 0.6833666666666667,
+      "draw_score": 0.324318566919192
+    },
+    "confidence_score": 10,
+    "key_factors_used": [
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Significant momentum difference",
+      "HIGH-QUALITY OPPONENT EXPERTISE difference",
+      "Away team has BIG WIN capability"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "QUALITY: Vit\u00f3ria excels vs top teams",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Significant momentum difference",
+      "HIGH-QUALITY OPPONENT EXPERTISE difference"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4036070192741028,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "372661e299",
+    "timestamp": "2026-01-28T17:43:03.263283",
+    "home_team": "Itapirense",
+    "away_team": "Francana",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 38.405749878137776,
+      "away_win": 41.38795625604633,
+      "draw": 20.2062938658159,
+      "home_score": 0.4582621367521367,
+      "away_score": 0.49384619047619044,
+      "draw_score": 0.24110398656898657
+    },
+    "confidence_score": 9,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.30",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "POOR HOME FORM (advantage: -0.44)",
+      "EXCELLENT AWAY FORM (0.75)",
+      "MAJOR CONSISTENCY ADVANTAGE: Home team much more consistent"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "AWAY FORM: Francana excellent away",
+      "LOW SCORING: <2.5 goals likely",
+      "STRONG FORM DIFFERENCE: -0.30"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4138795625604633,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "9ad6d820dd",
+    "timestamp": "2026-01-28T17:43:56.958991",
+    "home_team": "Mar\u00edlia SP",
+    "away_team": "Bandeirante SP",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 54.6960718820536,
+      "away_win": 30.31171555911297,
+      "draw": 14.992212558833431,
+      "home_score": 0.6484172222222222,
+      "away_score": 0.3593427777777778,
+      "draw_score": 0.1777313888888889
+    },
+    "confidence_score": 18,
+    "key_factors_used": [
+      "Form difference: +0.22",
+      "IMPORTANT: Significant recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "VERY STRONG HOME ADVANTAGE"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Mar\u00edlia SP superior",
+      "HOME ADVANTAGE: Mar\u00edlia SP very strong at home",
+      "QUALITY: Mar\u00edlia SP excels vs top teams"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.546960718820536,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "19c32356c0",
+    "timestamp": "2026-01-28T17:44:41.957046",
+    "home_team": "Coruripe/AL",
+    "away_team": "Desp Alianca/AL",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 34.309930461705676,
+      "away_win": 42.29350398878456,
+      "draw": 23.396565549509752,
+      "home_score": 0.3990820317460317,
+      "away_score": 0.4919443809523809,
+      "draw_score": 0.2721412952380952
+    },
+    "confidence_score": 3,
+    "key_factors_used": [
+      "Form difference: -0.27",
+      "Attack advantage for away team",
+      "MAJOR CONSISTENCY ADVANTAGE: Home team much more consistent",
+      "Home team prone to BIG LOSSES",
+      "Away team prone to BIG LOSSES"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "LOW SCORING: <2.5 goals likely",
+      "Form difference: -0.27",
+      "Attack advantage for away team",
+      "MAJOR CONSISTENCY ADVANTAGE: Home team much more consistent"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4229350398878456,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "81068b0001",
+    "timestamp": "2026-01-28T17:45:20.485282",
+    "home_team": "Central",
+    "away_team": "San Juan Jabloteh",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 42.34971744137051,
+      "away_win": 41.975553926167706,
+      "draw": 15.674728632461788,
+      "home_score": 0.6714388888888888,
+      "away_score": 0.6655066666666666,
+      "draw_score": 0.24851694444444444
+    },
+    "confidence_score": 7,
+    "key_factors_used": [
+      "Good away form",
+      "Quality opponent performance difference",
+      "TACTICAL MISMATCH: Strong home attack vs weak away defense"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "QUALITY: Central excels vs top teams",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4197555392616771,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "40e6576fbd",
+    "timestamp": "2026-01-28T17:46:19.189900",
+    "home_team": "Fluminense",
+    "away_team": "Gr\u00eamio",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 34.39050666113358,
+      "away_win": 40.60896270293933,
+      "draw": 25.00053063592709,
+      "home_score": 0.3840216666666666,
+      "away_score": 0.4534600694444445,
+      "draw_score": 0.2791684791666666
+    },
+    "confidence_score": 0,
+    "key_factors_used": [
+      "POOR HOME FORM (advantage: -0.33)",
+      "Home team prone to BIG LOSSES",
+      "Away team prone to BIG LOSSES"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "LOW SCORING: <2.5 goals likely",
+      "POOR HOME FORM (advantage: -0.33)",
+      "Home team prone to BIG LOSSES",
+      "Away team prone to BIG LOSSES"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4060896270293933,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "121d3e1a42",
+    "timestamp": "2026-01-28T17:46:44.033762",
+    "home_team": "Manchester City",
+    "away_team": "Galatasaray",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 44.18201944246916,
+      "away_win": 42.61883033910478,
+      "draw": 13.199150218426048,
+      "home_score": 0.8127702380952381,
+      "away_score": 0.784013888888889,
+      "draw_score": 0.24281091269841273
+    },
+    "confidence_score": 12,
+    "key_factors_used": [
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "Strong home advantage",
+      "EXCELLENT AWAY FORM (1.00)",
+      "VERY STRONG H2H DOMINANCE pattern",
+      "MAJOR EXPECTED GOALS ADVANTAGE"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "AWAY FORM: Galatasaray excellent away",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.42618830339104785,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "cd0b2c547c",
+    "timestamp": "2026-01-28T17:47:51.208790",
+    "home_team": "PSV Eindhoven",
+    "away_team": "Bayern Munich",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 39.614868499791456,
+      "away_win": 49.174761389531966,
+      "draw": 11.210370110676571,
+      "home_score": 0.728196111111111,
+      "away_score": 0.903925,
+      "draw_score": 0.20606777777777777
+    },
+    "confidence_score": 12,
+    "key_factors_used": [
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "EXCELLENT AWAY FORM (1.00)",
+      "Significant momentum difference",
+      "VERY STRONG H2H DOMINANCE pattern",
+      "MAJOR EXPECTED GOALS ADVANTAGE"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "AWAY FORM: Bayern Munic excellent away",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4917476138953197,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "dc7b7f7f00",
+    "timestamp": "2026-01-28T17:52:10.999977",
+    "home_team": "Tivoli Gardens",
+    "away_team": "Treasure Beach",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 34.07385082142708,
+      "away_win": 50.434626246031065,
+      "draw": 15.49152293254184,
+      "home_score": 0.4350212393162393,
+      "away_score": 0.6438994444444444,
+      "draw_score": 0.19778044871794875
+    },
+    "confidence_score": 8,
+    "key_factors_used": [
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "POOR HOME FORM (advantage: -0.44)",
+      "Good away form",
+      "Consistency advantage: Away team"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "QUALITY: Tivoli Garde excels vs top teams",
+      "HIGH SCORING: >2.5 goals likely",
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5043462624603107,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "5317c0f27b",
+    "timestamp": "2026-01-28T17:53:02.410587",
+    "home_team": "Forte",
+    "away_team": "Serra ES",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 29.79715387680023,
+      "away_win": 54.67240850737404,
+      "draw": 15.530437615825734,
+      "home_score": 0.4100833333333334,
+      "away_score": 0.7524290277777778,
+      "draw_score": 0.2137376493055556
+    },
+    "confidence_score": 14,
+    "key_factors_used": [
+      "CRITICAL: Very strong recent form difference",
+      "Attack advantage for away team",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "POOR HOME FORM (advantage: -0.56)",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Serra ES superior",
+      "QUALITY: Serra ES excels vs top teams",
+      "LOW SCORING: <2.5 goals likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5467240850737404,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "2da16d3689",
+    "timestamp": "2026-01-28T17:54:03.309619",
+    "home_team": "CD \u00c1guila",
+    "away_team": "Platense",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 46.830372566020735,
+      "away_win": 37.70622466880407,
+      "draw": 15.463402765175193,
+      "home_score": 0.6597893939393938,
+      "away_score": 0.53124,
+      "draw_score": 0.21786265151515155
+    },
+    "confidence_score": 16,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: +0.33",
+      "IMPORTANT: Significant recent form difference",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "STRONG MOMENTUM SHIFT detected",
+      "Similar consistency levels"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: CD \u00c1guila superior",
+      "QUALITY: CD \u00c1guila excels vs top teams"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.46830372566020734,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "f6ca5238b8",
+    "timestamp": "2026-01-28T17:55:27.336386",
+    "home_team": "Sao Raimundo AM",
+    "away_team": "Manauara",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 31.82602028551918,
+      "away_win": 40.19098748540928,
+      "draw": 27.98299222907153,
+      "home_score": 0.31312,
+      "away_score": 0.3954186507936508,
+      "draw_score": 0.27531040476190477
+    },
+    "confidence_score": 12,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.37",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "Significant momentum difference",
+      "MAJOR CONSISTENCY ADVANTAGE: Home team much more consistent",
+      "HIGH-QUALITY OPPONENT EXPERTISE difference"
+    ],
+    "match_characteristics": [
+      "GOALFEST POTENTIAL - High scoring possible",
+      "QUALITY: Manauara excels vs top teams",
+      "LOW SCORING: <2.5 goals likely",
+      "STRONG FORM DIFFERENCE: -0.37",
+      "DEFENSIVE WEAKNESS: Home defense much weaker"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4019098748540928,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "cdd26e5210",
+    "timestamp": "2026-01-28T17:56:22.257157",
+    "home_team": "Mgarr United",
+    "away_team": "Mosta",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 52.33826255448737,
+      "away_win": 34.93651483227362,
+      "draw": 12.725222613239017,
+      "home_score": 0.7662699999999999,
+      "away_score": 0.5114958333333333,
+      "draw_score": 0.18630645833333334
+    },
+    "confidence_score": 13,
+    "key_factors_used": [
+      "Form difference: +0.28",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "POOR HOME FORM (advantage: -0.44)"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Mgarr United superior",
+      "HIGH SCORING: >2.5 goals likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5233826255448737,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "0d3a518f65",
+    "timestamp": "2026-01-28T17:57:47.270602",
+    "home_team": "Linfield Belfast",
+    "away_team": "Ballymena United",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 56.442233735003676,
+      "away_win": 30.221088134664175,
+      "draw": 13.336678130332146,
+      "home_score": 0.7093597222222223,
+      "away_score": 0.37981527777777774,
+      "draw_score": 0.16761388888888884
+    },
+    "confidence_score": 13,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: +0.33",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Strong home advantage"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Linfield Bel superior",
+      "LOW SCORING: <2.5 goals likely",
+      "TACTICAL: Linfield Bel attack advantage"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5644223373500368,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "b5f2d8cfa8",
+    "timestamp": "2026-01-28T17:59:11.042049",
+    "home_team": "Barcelona",
+    "away_team": "K\u00f8benhavn",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 46.96648556722228,
+      "away_win": 41.09137556706486,
+      "draw": 11.942138865712867,
+      "home_score": 0.8755271505376343,
+      "away_score": 0.7660061111111112,
+      "draw_score": 0.22261974014336922
+    },
+    "confidence_score": 21,
+    "key_factors_used": [
+      "Form difference: +0.28",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Strong home advantage",
+      "Good away form"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "QUALITY: Barcelona excels vs top teams",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4109137556706486,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "f1177cdd4e",
+    "timestamp": "2026-01-28T18:00:23.047463",
+    "home_team": "Liverpool",
+    "away_team": "Qarabag",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 39.622949046825205,
+      "away_win": 45.00973044238783,
+      "draw": 15.367320510786955,
+      "home_score": 0.5926605158730159,
+      "away_score": 0.6732333333333334,
+      "draw_score": 0.22985679563492065
+    },
+    "confidence_score": 10,
+    "key_factors_used": [
+      "Attack advantage for home team",
+      "Away defensive concerns",
+      "Strong home advantage",
+      "Significant momentum difference",
+      "Consistency advantage: Away team"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely",
+      "H2H DOMINANCE: Qarabag"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4500973044238783,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "a487c5f36d",
+    "timestamp": "2026-01-28T18:01:14.273151",
+    "home_team": "Eintracht Frankfurt",
+    "away_team": "Tottenham",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 37.009833389893906,
+      "away_win": 40.738985407457065,
+      "draw": 22.251181202649022,
+      "home_score": 0.512641865079365,
+      "away_score": 0.5642962301587301,
+      "draw_score": 0.3082123313492064
+    },
+    "confidence_score": 12,
+    "key_factors_used": [
+      "IMPORTANT: Significant recent form difference",
+      "STRONG MOMENTUM SHIFT detected",
+      "Consistency advantage: Home team",
+      "VERY STRONG H2H DOMINANCE pattern",
+      "TACTICAL MISMATCH: Strong home attack vs weak away defense"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Tottenham superior",
+      "H2H DOMINANCE: Tottenham"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4073898540745706,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "7e6544ada7",
+    "timestamp": "2026-01-28T18:02:17.146258",
+    "home_team": "SL Benfica",
+    "away_team": "Real Madrid",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 36.70643375609613,
+      "away_win": 53.072920491435546,
+      "draw": 10.220645752468313,
+      "home_score": 0.6411708333333335,
+      "away_score": 0.9270529761904762,
+      "draw_score": 0.1785294642857143
+    },
+    "confidence_score": 14,
+    "key_factors_used": [
+      "Form difference: -0.21",
+      "IMPORTANT: Significant recent form difference",
+      "Attack advantage for home team",
+      "Away defensive concerns",
+      "Strong home advantage"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Real Madrid superior",
+      "QUALITY: Real Madrid excels vs top teams"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5307292049143555,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "be5a660b39",
+    "timestamp": "2026-01-28T18:03:21.158999",
+    "home_team": "Arsenal",
+    "away_team": "Kairat Almaty",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 37.89544590228574,
+      "away_win": 43.22098554748748,
+      "draw": 18.883568550226776,
+      "home_score": 0.46865611111111116,
+      "away_score": 0.5345175,
+      "draw_score": 0.2335346527777778
+    },
+    "confidence_score": 18,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: +0.56",
+      "CRITICAL: Very strong recent form difference",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "POOR HOME FORM (advantage: -0.39)",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Arsenal superior",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4322098554748748,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "b87338c22a",
+    "timestamp": "2026-01-28T18:05:22.123323",
+    "home_team": "PSG",
+    "away_team": "Newcastle United",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 46.62198778722219,
+      "away_win": 37.63543567454133,
+      "draw": 15.742576538236502,
+      "home_score": 0.6479158333333334,
+      "away_score": 0.5230277777777776,
+      "draw_score": 0.21877798611111107
+    },
+    "confidence_score": 10,
+    "key_factors_used": [
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "Significant momentum difference",
+      "Consistency advantage: Home team",
+      "VERY STRONG H2H DOMINANCE pattern"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "UNPREDICTABLE - Many variables",
+      "HIGH SCORING: >2.5 goals likely",
+      "H2H DOMINANCE: Newcastle Un",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4662198778722219,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "564eea704f",
+    "timestamp": "2026-01-28T18:06:40.624320",
+    "home_team": "Bayer Leverkusen",
+    "away_team": "Villarreal",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 41.53928247392138,
+      "away_win": 38.916691495432346,
+      "draw": 19.544026030646275,
+      "home_score": 0.5141083333333333,
+      "away_score": 0.48164999999999997,
+      "draw_score": 0.24188541666666669
+    },
+    "confidence_score": 14,
+    "key_factors_used": [
+      "Form difference: +0.17",
+      "IMPORTANT: Significant recent form difference",
+      "Strong home advantage",
+      "STRONG MOMENTUM SHIFT detected",
+      "Similar consistency levels"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Bayer Leverk superior",
+      "QUALITY: Bayer Leverk excels vs top teams",
+      "H2H DOMINANCE: Villarreal"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.3891669149543235,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "84adbf073e",
+    "timestamp": "2026-01-28T18:07:16.717348",
+    "home_team": "Atl\u00e9tico Madrid",
+    "away_team": "Bodo/Glimt",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 40.25179749883574,
+      "away_win": 46.42107991396375,
+      "draw": 13.327122587200508,
+      "home_score": 0.6767536111111111,
+      "away_score": 0.7804777777777778,
+      "draw_score": 0.22406895833333332
+    },
+    "confidence_score": 9,
+    "key_factors_used": [
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Good away form",
+      "Similar consistency levels",
+      "VERY STRONG H2H DOMINANCE pattern",
+      "Away team has BIG WIN capability"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely",
+      "H2H DOMINANCE: Bodo/Glimt"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.46421079913963753,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "62c57d42b9",
+    "timestamp": "2026-01-28T18:08:17.453085",
+    "home_team": "Confian\u00e7a",
+    "away_team": "Campinense PB",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 23.701144041057688,
+      "away_win": 61.03600199724135,
+      "draw": 15.262853961700962,
+      "home_score": 0.24089888888888888,
+      "away_score": 0.620371111111111,
+      "draw_score": 0.15513194444444448
+    },
+    "confidence_score": 11,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.33",
+      "IMPORTANT: Significant recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Campinense P superior",
+      "LOW SCORING: <2.5 goals likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.6103600199724135,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "0788bf5523",
+    "timestamp": "2026-01-28T18:09:23.991141",
+    "home_team": "Gent",
+    "away_team": "Waasland",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 39.53906165590572,
+      "away_win": 45.577706659116004,
+      "draw": 14.88323168497827,
+      "home_score": 0.6029909090909091,
+      "away_score": 0.6950833333333334,
+      "draw_score": 0.22697689393939394
+    },
+    "confidence_score": 9,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.33",
+      "IMPORTANT: Significant recent form difference",
+      "Attack advantage for away team",
+      "EXCELLENT AWAY FORM (1.00)",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Waasland superior",
+      "AWAY FORM: Waasland excellent away",
+      "STRONG FORM DIFFERENCE: -0.33"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.45577706659116,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "16845d4cb1",
+    "timestamp": "2026-01-28T18:12:10.689217",
+    "home_team": "Rio Claro SP",
+    "away_team": "Paulista SP",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 39.175556955302525,
+      "away_win": 43.598915801485546,
+      "draw": 17.22552724321192,
+      "home_score": 0.5342694444444444,
+      "away_score": 0.5945944444444443,
+      "draw_score": 0.23491875
+    },
+    "confidence_score": 10,
+    "key_factors_used": [
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Strong home advantage",
+      "MAJOR CONSISTENCY ADVANTAGE: Home team much more consistent",
+      "HIGH-QUALITY OPPONENT EXPERTISE difference",
+      "MAJOR EXPECTED GOALS ADVANTAGE"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "HOME ADVANTAGE: Rio Claro SP very strong at home",
+      "QUALITY: Paulista SP excels vs top teams",
+      "LOW SCORING: <2.5 goals likely",
+      "DEFENSIVE WEAKNESS: Away defense much weaker"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.43598915801485544,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "72b6de3a2f",
+    "timestamp": "2026-01-28T18:13:04.884150",
+    "home_team": "Maguary PE",
+    "away_team": "Sport Recife",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 30.511542842302646,
+      "away_win": 56.46084366657726,
+      "draw": 13.027613491120082,
+      "home_score": 0.3908741825396824,
+      "away_score": 0.723302857142857,
+      "draw_score": 0.16689283134920635
+    },
+    "confidence_score": 12,
+    "key_factors_used": [
+      "Form difference: -0.28",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "POOR HOME FORM (advantage: -0.33)",
+      "Significant momentum difference",
+      "Similar consistency levels"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "QUALITY: Sport Recife excels vs top teams",
+      "H2H DOMINANCE: Sport Recife",
+      "Form difference: -0.28",
+      "DEFENSIVE WEAKNESS: Away defense much weaker"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5646084366657727,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "16d135a32d",
+    "timestamp": "2026-01-28T18:14:11.845631",
+    "home_team": "Al Wahda Mecca",
+    "away_team": "Jeddah Club",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 31.929100201295253,
+      "away_win": 50.87051613781873,
+      "draw": 17.20038366088601,
+      "home_score": 0.44428861111111106,
+      "away_score": 0.7078555555555555,
+      "draw_score": 0.23934074305555558
+    },
+    "confidence_score": 15,
+    "key_factors_used": [
+      "Form difference: -0.22",
+      "CRITICAL: Very strong recent form difference",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "EXCELLENT AWAY FORM (0.78)",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Jeddah Club superior",
+      "AWAY FORM: Jeddah Club excellent away",
+      "QUALITY: Jeddah Club excels vs top teams"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5087051613781873,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "752fc30446",
+    "timestamp": "2026-01-28T18:15:55.610018",
+    "home_team": "CD Tenerife",
+    "away_team": "Rayo Vallecano",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 42.65040279507035,
+      "away_win": 39.42528038740262,
+      "draw": 17.924316817527043,
+      "home_score": 0.5692611111111111,
+      "away_score": 0.5262149346405228,
+      "draw_score": 0.23923845588235293
+    },
+    "confidence_score": 12,
+    "key_factors_used": [
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "POOR HOME FORM (advantage: -0.42)",
+      "Good away form",
+      "Consistency advantage: Away team"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "QUALITY: CD Tenerife excels vs top teams",
+      "HIGH SCORING: >2.5 goals likely",
+      "H2H DOMINANCE: Rayo Valleca",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.3942528038740262,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "ce4ff54882",
+    "timestamp": "2026-01-28T18:22:40.706163",
+    "home_team": "Wasl Dubai",
+    "away_team": "Khor Fakkan Club",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 54.737128695255066,
+      "away_win": 32.479008697508775,
+      "draw": 12.783862607236163,
+      "home_score": 0.7458027777777777,
+      "away_score": 0.4425320707070707,
+      "draw_score": 0.17418232323232324
+    },
+    "confidence_score": 14,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: +0.50",
+      "IMPORTANT: Significant recent form difference",
+      "VERY STRONG HOME ADVANTAGE",
+      "STRONG MOMENTUM SHIFT detected",
+      "Similar consistency levels"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Wasl Dubai superior",
+      "HOME ADVANTAGE: Wasl Dubai very strong at home",
+      "QUALITY: Wasl Dubai excels vs top teams"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5473712869525507,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "c58fae52ea",
+    "timestamp": "2026-01-28T18:23:32.537829",
+    "home_team": "AD Sarch\u00ed",
+    "away_team": "AD Cofutpa",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 47.132946257596714,
+      "away_win": 37.396935138398426,
+      "draw": 15.470118604004856,
+      "home_score": 0.6581298412698413,
+      "away_score": 0.5221833333333333,
+      "draw_score": 0.216013373015873
+    },
+    "confidence_score": 9,
+    "key_factors_used": [
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Significant momentum difference",
+      "HIGH-QUALITY OPPONENT EXPERTISE difference",
+      "Tactical advantage: Home attack vs away defense",
+      "COMEBACK SPECIALIST: Home team"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "QUALITY: AD Sarch\u00ed excels vs top teams",
+      "TACTICAL: AD Sarch\u00ed attack advantage",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Significant momentum difference"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.47132946257596714,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "d3d0ce976b",
+    "timestamp": "2026-01-28T18:24:24.993234",
+    "home_team": "Floriana",
+    "away_team": "Zabbar St. Patrick",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 47.11013942674454,
+      "away_win": 37.940289689149125,
+      "draw": 14.949570884106333,
+      "home_score": 0.6830711111111111,
+      "away_score": 0.5501133333333333,
+      "draw_score": 0.21676055555555557
+    },
+    "confidence_score": 8,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: +0.33",
+      "CRITICAL: Very strong recent form difference",
+      "Away defensive concerns",
+      "STRONG MOMENTUM SHIFT detected",
+      "Similar consistency levels"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Floriana superior",
+      "STRONG FORM DIFFERENCE: +0.33",
+      "CRITICAL: Very strong recent form difference"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4711013942674454,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "71bdda90ae",
+    "timestamp": "2026-01-28T18:24:58.130013",
+    "home_team": "Tarxien Rainbows",
+    "away_team": "Valletta",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 42.748393135894986,
+      "away_win": 42.1237166484843,
+      "draw": 15.127890215620715,
+      "home_score": 0.6992316666666667,
+      "away_score": 0.6890138888888889,
+      "draw_score": 0.24744555555555556
+    },
+    "confidence_score": 20,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.56",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "VERY STRONG HOME ADVANTAGE",
+      "Good away form"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Valletta superior",
+      "HOME ADVANTAGE: Tarxien Rain very strong at home",
+      "HIGH SCORING: >2.5 goals likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.421237166484843,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "91c79f7a98",
+    "timestamp": "2026-01-28T18:26:11.251751",
+    "home_team": "Al Ahli",
+    "away_team": "Ettifaq",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 48.614966384000894,
+      "away_win": 41.13536863014057,
+      "draw": 10.24966498585855,
+      "home_score": 1.00282,
+      "away_score": 0.8485323232323232,
+      "draw_score": 0.2114280808080808
+    },
+    "confidence_score": 7,
+    "key_factors_used": [
+      "Form difference: +0.28",
+      "Attack advantage for home team",
+      "EXCELLENT AWAY FORM (1.00)",
+      "Significant momentum difference",
+      "Consistency advantage: Home team"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "AWAY FORM: Ettifaq excellent away",
+      "HIGH SCORING: >2.5 goals likely",
+      "Form difference: +0.28"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4113536863014057,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "8673f52f88",
+    "timestamp": "2026-01-28T19:29:51.295950",
+    "home_team": "Club Brugge",
+    "away_team": "Olympique Marseille",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 37.54797623414646,
+      "away_win": 52.08346953750215,
+      "draw": 10.36855422835139,
+      "home_score": 0.6703833333333334,
+      "away_score": 0.9299007142857142,
+      "draw_score": 0.1851206547619048
+    },
+    "confidence_score": 18,
+    "key_factors_used": [
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "EXCELLENT AWAY FORM (0.78)",
+      "Similar consistency levels",
+      "HIGH-QUALITY OPPONENT EXPERTISE difference"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "AWAY FORM: Olympique Ma excellent away",
+      "QUALITY: Club Brugge excels vs top teams",
+      "HIGH SCORING: >2.5 goals likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5208346953750215,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "884d4a378d",
+    "timestamp": "2026-01-28T19:39:57.059698",
+    "home_team": "Athletic Bilbao",
+    "away_team": "Sporting CP",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 34.69501554832451,
+      "away_win": 52.28715402684344,
+      "draw": 13.017830424832036,
+      "home_score": 0.49803749999999997,
+      "away_score": 0.7505678571428572,
+      "draw_score": 0.1868674107142857
+    },
+    "confidence_score": 23,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.48",
+      "CRITICAL: Very strong recent form difference",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "Good away form",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Sporting CP superior",
+      "HIGH SCORING: >2.5 goals likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5228715402684344,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "0df14a1c58",
+    "timestamp": "2026-01-28T19:45:22.230822",
+    "home_team": "Borussia Dortmund",
+    "away_team": "Inter",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 44.59795873584563,
+      "away_win": 41.110527762580304,
+      "draw": 14.291513501574066,
+      "home_score": 0.7352909523809524,
+      "away_score": 0.6777933333333334,
+      "draw_score": 0.23562559523809523
+    },
+    "confidence_score": 13,
+    "key_factors_used": [
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "Home defensive concerns",
+      "VERY STRONG HOME ADVANTAGE",
+      "EXCELLENT AWAY FORM (1.00)",
+      "Similar consistency levels"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "HOME ADVANTAGE: Borussia Dor very strong at home",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.41110527762580307,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "4322dbd30b",
+    "timestamp": "2026-01-28T19:47:36.554905",
+    "home_team": "Ajax",
+    "away_team": "Olympiacos",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 41.39574992154393,
+      "away_win": 44.69826649430134,
+      "draw": 13.905983584154727,
+      "home_score": 0.7024986111111111,
+      "away_score": 0.7585433333333333,
+      "draw_score": 0.23598881944444444
+    },
+    "confidence_score": 10,
+    "key_factors_used": [
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "EXCELLENT AWAY FORM (1.00)",
+      "Similar consistency levels",
+      "VERY STRONG H2H DOMINANCE pattern",
+      "Away team has BIG WIN capability"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "AWAY FORM: Olympiacos excellent away",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4469826649430134,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "fe689fb23d",
+    "timestamp": "2026-01-28T19:50:21.912702",
+    "home_team": "Pafos",
+    "away_team": "Slavia Praha",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 36.62652482211264,
+      "away_win": 44.91657531078109,
+      "draw": 18.45689986710627,
+      "home_score": 0.446025,
+      "away_score": 0.5469783333333333,
+      "draw_score": 0.22476166666666667
+    },
+    "confidence_score": 17,
+    "key_factors_used": [
+      "Form difference: -0.22",
+      "IMPORTANT: Significant recent form difference",
+      "Attack advantage for home team",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "VERY STRONG HOME ADVANTAGE"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Slavia Praha superior",
+      "HOME ADVANTAGE: Pafos very strong at home",
+      "QUALITY: Pafos excels vs top teams"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.44916575310781093,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "bd8e1eb1bc",
+    "timestamp": "2026-01-28T19:51:38.764270",
+    "home_team": "Monaco",
+    "away_team": "Juventus",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 30.44912531430539,
+      "away_win": 55.7378142131028,
+      "draw": 13.81306047259181,
+      "home_score": 0.3780577777777778,
+      "away_score": 0.6920433333333333,
+      "draw_score": 0.17150361111111112
+    },
+    "confidence_score": 21,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.33",
+      "CRITICAL: Very strong recent form difference",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "POOR HOME FORM (advantage: -0.58)",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Juventus superior",
+      "QUALITY: Juventus excels vs top teams"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.557378142131028,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "89c001e20c",
+    "timestamp": "2026-01-28T19:52:37.123979",
+    "home_team": "Napoli",
+    "away_team": "Chelsea",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 34.4202402237859,
+      "away_win": 54.3374740454493,
+      "draw": 11.242285730764793,
+      "home_score": 0.5304694444444444,
+      "away_score": 0.837425,
+      "draw_score": 0.17326111111111112
+    },
+    "confidence_score": 25,
+    "key_factors_used": [
+      "Form difference: -0.28",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "Away defensive concerns",
+      "Strong home advantage"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Chelsea superior",
+      "QUALITY: Napoli excels vs top teams"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.543374740454493,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "7d0061b1f6",
+    "timestamp": "2026-01-28T19:53:57.560355",
+    "home_team": "Atl\u00e9tico Mineiro",
+    "away_team": "Palmeiras",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 41.77323363051473,
+      "away_win": 45.724757141901186,
+      "draw": 12.502009227584074,
+      "home_score": 0.7741581529581528,
+      "away_score": 0.8473893557422969,
+      "draw_score": 0.23169219930396398
+    },
+    "confidence_score": 8,
+    "key_factors_used": [
+      "Form difference: -0.24",
+      "Attack advantage for home team",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "Strong home advantage",
+      "Good away form"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "TACTICAL: Atl\u00e9tico Min attack advantage",
+      "Form difference: -0.24",
+      "Attack advantage for home team",
+      "DEFENSIVE WEAKNESS: Away defense much weaker"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.45724757141901184,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "91479bfee3",
+    "timestamp": "2026-01-28T19:56:01.058812",
+    "home_team": "Gilloise",
+    "away_team": "Atalanta",
+    "predicted_result": "A",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 44.53572604342966,
+      "away_win": 41.5586364677765,
+      "draw": 13.905637488793833,
+      "home_score": 0.7600000000000002,
+      "away_score": 0.7091961111111111,
+      "draw_score": 0.23729902777777773
+    },
+    "confidence_score": 18,
+    "key_factors_used": [
+      "Form difference: +0.28",
+      "CRITICAL: Very strong recent form difference",
+      "Away defensive concerns",
+      "Strong home advantage",
+      "Good away form"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Gilloise superior",
+      "HOME ADVANTAGE: Gilloise very strong at home",
+      "HIGH SCORING: >2.5 goals likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.415586364677765,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "6db9b3b75a",
+    "timestamp": "2026-01-28T19:57:27.594071",
+    "home_team": "ENPPI Cairo",
+    "away_team": "Semouha Club",
+    "predicted_result": "U",
+    "actual_result": "H",
+    "predicted_probabilities": {
+      "home_win": 48.426891066438415,
+      "away_win": 36.44363786538835,
+      "draw": 15.129471068173233,
+      "home_score": 0.8273084595959596,
+      "away_score": 0.6225906565656565,
+      "draw_score": 0.25846671401515153
+    },
+    "confidence_score": 8,
+    "key_factors_used": [
+      "Away defensive concerns",
+      "VERY STRONG HOME ADVANTAGE",
+      "Significant momentum difference",
+      "Similar consistency levels",
+      "H2H draw tendency (53%)"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "HOME ADVANTAGE: ENPPI Cairo very strong at home",
+      "H2H PATTERN: Strong draw tendency",
+      "PATTERN: draw_specialists_clash",
+      "Away defensive concerns"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.48426891066438416,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "388ca248ad",
+    "timestamp": "2026-01-29T16:20:06.874703",
+    "home_team": "Kun Khalifa",
+    "away_team": "Kwara United",
+    "predicted_result": "U",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 28.944773745804692,
+      "away_win": 37.233324395174904,
+      "draw": 33.8219018590204,
+      "home_score": 0.23915722222222222,
+      "away_score": 0.3076416666666667,
+      "draw_score": 0.27945466666666663
+    },
+    "confidence_score": 0,
+    "key_factors_used": [
+      "Form difference: -0.22",
+      "Away defensive concerns",
+      "Similar consistency levels",
+      "Away team has BIG WIN capability",
+      "Away team prone to BIG LOSSES"
+    ],
+    "match_characteristics": [
+      "LOW SCORING: <2.5 goals likely",
+      "Form difference: -0.22",
+      "Away defensive concerns",
+      "Similar consistency levels",
+      "Away team has BIG WIN capability"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.2894477374580469,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "ade507ea53",
+    "timestamp": "2026-01-29T16:21:48.011491",
+    "home_team": "Bendel Insurance",
+    "away_team": "Barau",
+    "predicted_result": "U",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 48.65755020058933,
+      "away_win": 36.623201625694016,
+      "draw": 14.719248173716664,
+      "home_score": 0.6861744444444445,
+      "away_score": 0.5164646581196581,
+      "draw_score": 0.2075725534188034
+    },
+    "confidence_score": 6,
+    "key_factors_used": [
+      "Form difference: +0.22",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "Similar consistency levels",
+      "Quality opponent performance difference",
+      "MAJOR EXPECTED GOALS ADVANTAGE"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "QUALITY: Barau excels vs top teams",
+      "Form difference: +0.22",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "Similar consistency levels"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4865755020058933,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "4748aae8b0",
+    "timestamp": "2026-01-29T16:22:56.286028",
+    "home_team": "Ikorodu City",
+    "away_team": "Shooting Stars",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 38.70381334298514,
+      "away_win": 43.259274883966576,
+      "draw": 18.036911773048285,
+      "home_score": 0.5045925,
+      "away_score": 0.5639833333333333,
+      "draw_score": 0.23515229166666668
+    },
+    "confidence_score": 16,
+    "key_factors_used": [
+      "Form difference: -0.28",
+      "IMPORTANT: Significant recent form difference",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "VERY STRONG HOME ADVANTAGE",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Shooting Sta superior",
+      "HOME ADVANTAGE: Ikorodu City very strong at home",
+      "QUALITY: Shooting Sta excels vs top teams"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.43259274883966575,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "89c874f1ab",
+    "timestamp": "2026-01-29T16:24:09.458342",
+    "home_team": "Warri Wolves",
+    "away_team": "Remo Stars",
+    "predicted_result": "U",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 41.53806924428158,
+      "away_win": 37.18303796436485,
+      "draw": 21.278892791353563,
+      "home_score": 0.4642649999999999,
+      "away_score": 0.41558944444444446,
+      "draw_score": 0.23783111111111113
+    },
+    "confidence_score": 6,
+    "key_factors_used": [
+      "Form difference: +0.22",
+      "Attack advantage for home team",
+      "Away defensive concerns",
+      "Significant momentum difference",
+      "Consistency advantage: Away team"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "QUALITY: Remo Stars excels vs top teams",
+      "Form difference: +0.22",
+      "Attack advantage for home team",
+      "Away defensive concerns"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4153806924428158,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "77186140ae",
+    "timestamp": "2026-01-29T16:25:35.285264",
+    "home_team": "Al Fateh",
+    "away_team": "Ittihad Jeddah",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 35.54605672068302,
+      "away_win": 49.58101781624099,
+      "draw": 14.872925463075989,
+      "home_score": 0.48344444444444434,
+      "away_score": 0.6743270512820513,
+      "draw_score": 0.20227934829059827
+    },
+    "confidence_score": 3,
+    "key_factors_used": [
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "Consistency advantage: Away team",
+      "Strong H2H pattern",
+      "MAJOR EXPECTED GOALS ADVANTAGE",
+      "Home team prone to BIG LOSSES"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "Consistency advantage: Away team",
+      "Strong H2H pattern",
+      "MAJOR EXPECTED GOALS ADVANTAGE"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.49581017816240985,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "b57b01ed9e",
+    "timestamp": "2026-01-29T16:27:19.236340",
+    "home_team": "Faisaly Amman",
+    "away_team": "Ramtha Club",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 45.01175967500535,
+      "away_win": 42.216805644644,
+      "draw": 12.771434680350652,
+      "home_score": 0.8353968253968254,
+      "away_score": 0.7835238095238094,
+      "draw_score": 0.237031746031746
+    },
+    "confidence_score": 2,
+    "key_factors_used": [
+      "Form difference: +0.22",
+      "Good away form",
+      "Home team has BIG WIN capability"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "Form difference: +0.22",
+      "Good away form",
+      "Home team has BIG WIN capability"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.42216805644643995,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "5bad02078e",
+    "timestamp": "2026-01-29T16:29:01.869081",
+    "home_team": "Azam",
+    "away_team": "Kitayosce",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 38.6373501269149,
+      "away_win": 48.30118041176835,
+      "draw": 13.061469461316749,
+      "home_score": 0.6240919444444445,
+      "away_score": 0.7801875,
+      "draw_score": 0.21097611111111111
+    },
+    "confidence_score": 8,
+    "key_factors_used": [
+      "Attack advantage for away team",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "POOR HOME FORM (advantage: -0.58)",
+      "Similar consistency levels",
+      "HIGH-QUALITY OPPONENT EXPERTISE difference"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "QUALITY: Azam excels vs top teams",
+      "HIGH SCORING: >2.5 goals likely",
+      "H2H DOMINANCE: Kitayosce",
+      "Attack advantage for away team"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4830118041176835,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "c96836b9b1",
+    "timestamp": "2026-01-29T16:30:13.479206",
+    "home_team": "Al Nasr Dubai",
+    "away_team": "Baniyas",
+    "predicted_result": "U",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 50.35805480284474,
+      "away_win": 34.62773747521326,
+      "draw": 15.014207721942006,
+      "home_score": 0.6644669444444444,
+      "away_score": 0.45690777777777775,
+      "draw_score": 0.19811020833333332
+    },
+    "confidence_score": 16,
+    "key_factors_used": [
+      "Form difference: +0.22",
+      "IMPORTANT: Significant recent form difference",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "POOR HOME FORM (advantage: -0.67)",
+      "Good away form"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Al Nasr Duba superior",
+      "QUALITY: Al Nasr Duba excels vs top teams",
+      "TACTICAL: STRONG: Baniyas attack vs weak Al Nasr Duba defense"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5035805480284474,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "fd096d9f49",
+    "timestamp": "2026-01-29T16:31:15.437574",
+    "home_team": "Al Wakra",
+    "away_team": "Shahaniya",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 26.60168777361817,
+      "away_win": 62.01250796896325,
+      "draw": 11.385804257418593,
+      "home_score": 0.3286023611111111,
+      "away_score": 0.7660211904761905,
+      "draw_score": 0.14064529265873013
+    },
+    "confidence_score": 14,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.64",
+      "CRITICAL: Very strong recent form difference",
+      "STRONG MOMENTUM SHIFT detected",
+      "Consistency advantage: Away team",
+      "HIGH-QUALITY OPPONENT EXPERTISE difference"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Shahaniya superior",
+      "QUALITY: Shahaniya excels vs top teams",
+      "LOW SCORING: <2.5 goals likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.6201250796896325,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "60e78c38e0",
+    "timestamp": "2026-01-29T16:32:30.828998",
+    "home_team": "Qadisiya Khubar",
+    "away_team": "Al Hilal",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 47.79851522225705,
+      "away_win": 42.07586605461453,
+      "draw": 10.125618723128408,
+      "home_score": 1.0340375757575757,
+      "away_score": 0.9102380341880341,
+      "draw_score": 0.2190501146076146
+    },
+    "confidence_score": 9,
+    "key_factors_used": [
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "EXCELLENT AWAY FORM (0.78)",
+      "Significant momentum difference",
+      "Similar consistency levels",
+      "MAJOR EXPECTED GOALS ADVANTAGE"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "AWAY FORM: Al Hilal excellent away",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4207586605461453,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "7f49bbe850",
+    "timestamp": "2026-01-29T16:34:04.699801",
+    "home_team": "Future",
+    "away_team": "Ismaily",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 36.731572925282805,
+      "away_win": 41.64495343258631,
+      "draw": 21.623473642130875,
+      "home_score": 0.5141083333333333,
+      "away_score": 0.5828777777777777,
+      "draw_score": 0.30264993055555556
+    },
+    "confidence_score": 8,
+    "key_factors_used": [
+      "Away defensive concerns",
+      "POOR HOME FORM (advantage: -0.33)",
+      "Consistency advantage: Home team",
+      "HIGH-QUALITY OPPONENT EXPERTISE difference",
+      "VERY STRONG H2H DOMINANCE pattern"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "QUALITY: Future excels vs top teams",
+      "H2H DOMINANCE: Ismaily",
+      "Away defensive concerns",
+      "POOR HOME FORM (advantage: -0.33)"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4164495343258631,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "052a0c6a47",
+    "timestamp": "2026-01-29T16:37:10.768463",
+    "home_team": "Centro Oeste",
+    "away_team": "Vila Nova",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 31.417736816093576,
+      "away_win": 55.7764554669054,
+      "draw": 12.805807717001025,
+      "home_score": 0.4156777777777778,
+      "away_score": 0.7379600000000001,
+      "draw_score": 0.16942944444444444
+    },
+    "confidence_score": 18,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.52",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "Home defensive concerns",
+      "EXCELLENT AWAY FORM (1.00)"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Vila Nova superior",
+      "AWAY FORM: Vila Nova excellent away"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.557764554669054,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "8207cd7dbe",
+    "timestamp": "2026-01-29T16:55:35.548493",
+    "home_team": "Valur Reykjavik",
+    "away_team": "Grotta",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 33.075326809434024,
+      "away_win": 57.14029894767889,
+      "draw": 9.78437424288709,
+      "home_score": 0.5233233333333334,
+      "away_score": 0.9040833333333333,
+      "draw_score": 0.15481
+    },
+    "confidence_score": 26,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.78",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Away attack much stronger",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "Strong home advantage"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Grotta superior",
+      "HOME ADVANTAGE: Valur Reykja very strong at home"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5714029894767889,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "04d9e1bbdb",
+    "timestamp": "2026-01-29T17:00:09.758910",
+    "home_team": "Maccabi Tel Aviv",
+    "away_team": "Bologna",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 31.287906999867744,
+      "away_win": 51.16983392788856,
+      "draw": 17.5422590722437,
+      "home_score": 0.34744666666666674,
+      "away_score": 0.5682319444444445,
+      "draw_score": 0.19480368055555558
+    },
+    "confidence_score": 10,
+    "key_factors_used": [
+      "Attack advantage for away team",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "HIGH-QUALITY OPPONENT EXPERTISE difference",
+      "VERY STRONG H2H DOMINANCE pattern"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "QUALITY: Bologna excels vs top teams",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely",
+      "H2H DOMINANCE: Bologna"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.5116983392788856,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "f2a884854a",
+    "timestamp": "2026-01-29T17:09:56.297979",
+    "home_team": "Go Ahead Eagles",
+    "away_team": "Sporting Braga",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 32.55983004259628,
+      "away_win": 51.644902400111306,
+      "draw": 15.79526755729241,
+      "home_score": 0.4810430555555555,
+      "away_score": 0.7630083333333333,
+      "draw_score": 0.23336128472222223
+    },
+    "confidence_score": 14,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: -0.39",
+      "CRITICAL: Very strong recent form difference",
+      "Home defensive concerns",
+      "STRONG MOMENTUM SHIFT detected",
+      "Similar consistency levels"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Sporting Bra superior",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.516449024001113,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "dcfafe9733",
+    "timestamp": "2026-01-29T17:13:45.994708",
+    "home_team": "Stuttgart",
+    "away_team": "Young Boys",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 38.007899171309404,
+      "away_win": 41.68073371772625,
+      "draw": 20.311367110964344,
+      "home_score": 0.4475819444444444,
+      "away_score": 0.49083333333333323,
+      "draw_score": 0.2391871527777778
+    },
+    "confidence_score": 18,
+    "key_factors_used": [
+      "STRONG FORM DIFFERENCE: +0.44",
+      "CRITICAL: Very strong recent form difference",
+      "Attack advantage for home team",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Stuttgart superior",
+      "H2H DOMINANCE: Young Boys"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4168073371772625,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "06e9c5d5fa",
+    "timestamp": "2026-01-29T17:14:44.811518",
+    "home_team": "Porto",
+    "away_team": "Rangers",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 39.82442351748872,
+      "away_win": 49.22930618203785,
+      "draw": 10.946270300473428,
+      "home_score": 0.7487206349206349,
+      "away_score": 0.9255375000000001,
+      "draw_score": 0.2057957837301587
+    },
+    "confidence_score": 12,
+    "key_factors_used": [
+      "Form difference: -0.24",
+      "Away defensive concerns",
+      "Strong home advantage",
+      "EXCELLENT AWAY FORM (1.00)",
+      "Significant momentum difference"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "HOME ADVANTAGE: Porto very strong at home",
+      "HIGH SCORING: >2.5 goals likely",
+      "BOTH TEAMS TO SCORE: Likely"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.4922930618203785,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "e370e035d2",
+    "timestamp": "2026-01-29T17:16:11.153560",
+    "home_team": "Real Betis",
+    "away_team": "Feyenoord",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 38.12275003740769,
+      "away_win": 46.32392419881528,
+      "draw": 15.553325763777034,
+      "home_score": 0.541405,
+      "away_score": 0.657875,
+      "draw_score": 0.2208825
+    },
+    "confidence_score": 18,
+    "key_factors_used": [
+      "IMPORTANT: Significant recent form difference",
+      "DEFENSIVE WEAKNESS: Away defense much weaker",
+      "VERY STRONG HOME ADVANTAGE",
+      "STRONG MOMENTUM SHIFT detected",
+      "Consistency advantage: Home team"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Feyenoord superior",
+      "HOME ADVANTAGE: Real Betis very strong at home"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.46323924198815275,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "58f29a3c84",
+    "timestamp": "2026-01-29T17:18:45.393553",
+    "home_team": "Racing Genk",
+    "away_team": "Malm\u00f6",
+    "predicted_result": "U",
+    "actual_result": "A",
+    "predicted_probabilities": {
+      "home_win": 41.6850672173538,
+      "away_win": 36.7965762485686,
+      "draw": 21.51835653407761,
+      "home_score": 0.4582694444444445,
+      "away_score": 0.40452727272727274,
+      "draw_score": 0.23656445707070706
+    },
+    "confidence_score": 16,
+    "key_factors_used": [
+      "Form difference: +0.28",
+      "CRITICAL: Very strong recent form difference",
+      "MAJOR ATTACK ADVANTAGE: Home attack much stronger",
+      "STRONG MOMENTUM SHIFT detected",
+      "Similar consistency levels"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "RECENT FORM: Racing Genk superior",
+      "H2H DOMINANCE: Malm\u00f6",
+      "TACTICAL: Racing Genk attack advantage"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.416850672173538,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  },
+  {
+    "match_id": "38246f62ad",
+    "timestamp": "2026-01-29T17:20:02.440919",
+    "home_team": "FCSB",
+    "away_team": "Fenerbah\u00e7e",
+    "predicted_result": "A",
+    "actual_result": "D",
+    "predicted_probabilities": {
+      "home_win": 39.787550966385055,
+      "away_win": 42.79070349714257,
+      "draw": 17.42174553647238,
+      "home_score": 0.5473583333333333,
+      "away_score": 0.5886727777777777,
+      "draw_score": 0.2396713888888889
+    },
+    "confidence_score": 25,
+    "key_factors_used": [
+      "CRITICAL: Very strong recent form difference",
+      "DEFENSIVE WEAKNESS: Home defense much weaker",
+      "Strong home advantage",
+      "EXCELLENT AWAY FORM (1.00)",
+      "STRONG MOMENTUM SHIFT detected"
+    ],
+    "match_characteristics": [
+      "CLEAR FAVORITE - Significant mismatch",
+      "MOMENTUM SHIFT - Recent form change",
+      "GOALFEST POTENTIAL - High scoring possible",
+      "RECENT FORM: Fenerbah\u00e7e superior",
+      "AWAY FORM: Fenerbah\u00e7e excellent away"
+    ],
+    "was_correct": false,
+    "error_magnitude": 0.42790703497142574,
+    "odds_at_time": null,
+    "home_metrics": null,
+    "away_metrics": null,
+    "core_analysis": null
+  }
+]

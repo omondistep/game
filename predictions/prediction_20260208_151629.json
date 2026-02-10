@@ -1,0 +1,97 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/atl%C3%A9tico-madrid-real-betis-2316648",
+  "timestamp": "2026-02-08T15:16:29.293144",
+  "features": {
+    "home_position": 3,
+    "away_position": 5,
+    "position_diff": -2,
+    "home_points": 45,
+    "away_points": 35,
+    "home_form_points": 11,
+    "away_form_points": 9,
+    "home_recent_form": 4,
+    "away_recent_form": 6,
+    "home_wins_l6": 3,
+    "home_draws_l6": 2,
+    "home_losses_l6": 1,
+    "away_wins_l6": 3,
+    "away_draws_l6": 0,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.911764705882353,
+    "home_conceded_avg": 1.0588235294117647,
+    "away_scored_avg": 1.8285714285714285,
+    "away_conceded_avg": 1.2285714285714286,
+    "expected_total_goals": 3.0138655462184873,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 14.058823529411764,
+    "away_shots_avg": 14.82857142857143,
+    "home_shots_on_target_pct": 40.79497907949791,
+    "away_shots_on_target_pct": 32.947976878612714,
+    "home_dangerous_attacks_avg": 54.14705882352941,
+    "away_dangerous_attacks_avg": 47.48571428571429,
+    "home_possession": 54.0,
+    "away_possession": 51.54,
+    "home_pass_accuracy": 86.1959719393528,
+    "away_pass_accuracy": 85.38346762160549,
+    "home_fouls_avg": 11.264705882352942,
+    "away_fouls_avg": 11.17142857142857,
+    "home_yellow_avg": 1.6176470588235294,
+    "away_yellow_avg": 2.0285714285714285,
+    "odds_home": 1.55,
+    "odds_draw": 4.2,
+    "odds_away": 5.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 45
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5388,
+        "X": 0.3265,
+        "2": 0.1348
+      },
+      "computed_odds": {
+        "1": 1.86,
+        "X": 3.06,
+        "2": 7.42
+      },
+      "confidence": 0.5388
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.55,
+        "Under": 0.45
+      },
+      "computed_odds": {
+        "Over": 1.82,
+        "Under": 2.22
+      },
+      "confidence": 0.55
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26bd High-scoring match expected (avg 3.0 goals)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 4.2,
+        "fair": 3.06,
+        "value_pct": 37.3
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/brighton-crystal-palace-2315985",
+  "timestamp": "2026-02-08T17:19:14.044494",
+  "features": {
+    "home_position": 13,
+    "away_position": 15,
+    "position_diff": -2,
+    "home_points": 31,
+    "away_points": 29,
+    "home_form_points": 9,
+    "away_form_points": 2,
+    "home_recent_form": 2,
+    "away_recent_form": 1,
+    "home_wins_l6": 2,
+    "home_draws_l6": 3,
+    "home_losses_l6": 1,
+    "away_wins_l6": 0,
+    "away_draws_l6": 2,
+    "away_losses_l6": 4,
+    "home_scored_avg": 1.7142857142857142,
+    "home_conceded_avg": 1.25,
+    "away_scored_avg": 1.1944444444444444,
+    "away_conceded_avg": 1.0833333333333333,
+    "expected_total_goals": 2.621031746031746,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 13.714285714285714,
+    "away_shots_avg": 13.055555555555555,
+    "home_shots_on_target_pct": 35.41666666666667,
+    "away_shots_on_target_pct": 33.40425531914894,
+    "home_dangerous_attacks_avg": 52.642857142857146,
+    "away_dangerous_attacks_avg": 46.166666666666664,
+    "home_possession": 52.54,
+    "away_possession": 47.22,
+    "home_pass_accuracy": 84.59879870629909,
+    "away_pass_accuracy": 79.04212189926476,
+    "home_fouls_avg": 12.285714285714286,
+    "away_fouls_avg": 10.38888888888889,
+    "home_yellow_avg": 2.3214285714285716,
+    "away_yellow_avg": 1.8611111111111112,
+    "odds_home": 1.95,
+    "odds_draw": 3.5,
+    "odds_away": 3.75,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4244,
+        "X": 0.2881,
+        "2": 0.2876
+      },
+      "computed_odds": {
+        "1": 2.36,
+        "X": 3.47,
+        "2": 3.48
+      },
+      "confidence": 0.4244
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.368421052631579,
+        "away": 0.26315789473684215,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.48143053645116923,
+        "away": 0.25034387895460797,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5,
+        "away": 0.1111111111111111,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.6160714285714286,
+        "away": 0.5277777777777778,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.5057161904761904,
+        "away": 0.45183851851851853,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.621031746031746
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 7.8
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 3.5
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.62,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.91,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (0 win in last 6)"
+    ],
+    "value_bets": [],
+    "confidence": "MEDIUM"
+  }
+}

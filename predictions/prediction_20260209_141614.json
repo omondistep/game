@@ -1,0 +1,167 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/leicester-city-u23s-norwich-u23s-2348974",
+  "timestamp": "2026-02-09T14:16:14.913749",
+  "features": {
+    "home_position": 10,
+    "away_position": 223,
+    "position_diff": -213,
+    "home_points": 20,
+    "away_points": 12,
+    "home_form_points": 12,
+    "away_form_points": 2,
+    "home_recent_form": 3,
+    "away_recent_form": 1,
+    "home_wins_l6": 4,
+    "home_draws_l6": 0,
+    "home_losses_l6": 2,
+    "away_wins_l6": 0,
+    "away_draws_l6": 2,
+    "away_losses_l6": 4,
+    "home_scored_avg": 2.263157894736842,
+    "home_conceded_avg": 1.9473684210526316,
+    "away_scored_avg": 1.5555555555555556,
+    "away_conceded_avg": 2.0555555555555554,
+    "expected_total_goals": 3.9108187134502925,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 10.526315789473685,
+    "away_shots_avg": 9.722222222222221,
+    "home_shots_on_target_pct": 53.0,
+    "away_shots_on_target_pct": 42.285714285714285,
+    "home_dangerous_attacks_avg": 42.10526315789474,
+    "away_dangerous_attacks_avg": 41.666666666666664,
+    "home_possession": 50.32,
+    "away_possession": 50.83,
+    "home_pass_accuracy": 50.340651021953065,
+    "away_pass_accuracy": 39.05191873589165,
+    "home_fouls_avg": 13.736842105263158,
+    "away_fouls_avg": 11.555555555555555,
+    "home_yellow_avg": 2.0526315789473686,
+    "away_yellow_avg": 1.7777777777777777,
+    "odds_home": 1.72,
+    "odds_draw": 4.33,
+    "odds_away": 3.4,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 44
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5349,
+        "X": 0.2061,
+        "2": 0.259
+      },
+      "computed_odds": {
+        "1": 1.87,
+        "X": 4.85,
+        "2": 3.86
+      },
+      "confidence": 0.5349
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.65,
+        "Under": 0.35
+      },
+      "computed_odds": {
+        "Over": 1.54,
+        "Under": 2.86
+      },
+      "confidence": 0.65
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.5254554280166752,
+        "away": 0.2658186282907886,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6666666666666666,
+        "away": 0.1111111111111111,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5789473684210527,
+        "away": 0.37500000000000006,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3861305263157895,
+        "away": 0.3623874074074074,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 3.9108187134502925
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 11.1
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 10.5
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 3.9
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 3.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.91,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.82,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (0 win in last 6)",
+      "\u26bd High-scoring match expected (avg 3.9 goals)",
+      "\ud83d\udcca Home team significantly higher in table (#10 vs #223)"
+    ],
+    "value_bets": [],
+    "confidence": "HIGH"
+  }
+}

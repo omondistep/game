@@ -1,0 +1,168 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/antigua-gfc-deportivo-mixco-2416088",
+  "timestamp": "2026-02-08T23:42:00.242601",
+  "features": {
+    "home_position": 12,
+    "away_position": 11,
+    "position_diff": 1,
+    "away_points": 44,
+    "home_points": 42,
+    "home_form_points": 5,
+    "away_form_points": 5,
+    "home_recent_form": 2,
+    "away_recent_form": 4,
+    "home_wins_l6": 1,
+    "home_draws_l6": 2,
+    "home_losses_l6": 3,
+    "away_wins_l6": 1,
+    "away_draws_l6": 2,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.59375,
+    "home_conceded_avg": 1.09375,
+    "away_scored_avg": 1.3214285714285714,
+    "away_conceded_avg": 1.0,
+    "expected_total_goals": 2.5044642857142856,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.4285714285714286,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 9.1875,
+    "away_shots_avg": 9.142857142857142,
+    "home_shots_on_target_pct": 36.054421768707485,
+    "away_shots_on_target_pct": 35.9375,
+    "home_dangerous_attacks_avg": 52.0,
+    "away_dangerous_attacks_avg": 67.39285714285714,
+    "home_possession": 51.24,
+    "away_possession": 48.83,
+    "home_pass_accuracy": 76.89331122166944,
+    "away_pass_accuracy": 76.75386444708681,
+    "home_fouls_avg": 6.34375,
+    "away_fouls_avg": 4.678571428571429,
+    "home_yellow_avg": 3.0,
+    "away_yellow_avg": 2.2142857142857144,
+    "odds_home": 1.6,
+    "odds_draw": 3.5,
+    "odds_away": 5.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 48
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4383,
+        "X": 0.2683,
+        "2": 0.2935
+      },
+      "computed_odds": {
+        "1": 2.28,
+        "X": 3.73,
+        "2": 3.41
+      },
+      "confidence": 0.4383
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.42105263157894735,
+        "away": 0.4736842105263158,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.562700964630225,
+        "away": 0.18006430868167203,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.2777777777777778,
+        "away": 0.2777777777777778,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.625,
+        "away": 0.5803571428571428,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.17,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.34702333333333335,
+        "away": 0.33107523809523803,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 2.5044642857142856
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 5.7
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 5.0
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.5,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.92,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (1 win in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 5.0,
+        "fair": 3.41,
+        "value_pct": 46.6
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

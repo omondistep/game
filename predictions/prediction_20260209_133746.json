@@ -1,0 +1,165 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/al-jubail-club-al-oruba-2416574",
+  "timestamp": "2026-02-09T13:37:46.333777",
+  "features": {
+    "home_position": 18,
+    "away_position": 4,
+    "position_diff": 14,
+    "away_points": 40,
+    "home_points": 8,
+    "home_form_points": 3,
+    "away_form_points": 10,
+    "home_recent_form": 1,
+    "away_recent_form": 6,
+    "home_wins_l6": 0,
+    "home_draws_l6": 3,
+    "home_losses_l6": 3,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 0.8095238095238095,
+    "home_conceded_avg": 2.0,
+    "away_scored_avg": 1.619047619047619,
+    "away_conceded_avg": 1.1904761904761905,
+    "expected_total_goals": 2.8095238095238093,
+    "home_home_win_rate": 9.090909090909092,
+    "home_home_goals_avg": 0.7272727272727273,
+    "away_away_win_rate": 70.0,
+    "away_away_goals_avg": 1.9,
+    "h2h_home_win_pct": null,
+    "h2h_draw_pct": null,
+    "h2h_away_win_pct": null,
+    "home_shots_avg": 7.0,
+    "away_shots_avg": 9.0,
+    "home_shots_on_target_pct": 40.136054421768705,
+    "away_shots_on_target_pct": 37.03703703703704,
+    "home_dangerous_attacks_avg": 38.57142857142857,
+    "away_dangerous_attacks_avg": 44.523809523809526,
+    "home_possession": 45.0,
+    "away_possession": 50.81,
+    "home_pass_accuracy": 26.014388489208635,
+    "away_pass_accuracy": 24.47381930184805,
+    "home_fouls_avg": 10.619047619047619,
+    "away_fouls_avg": 13.476190476190476,
+    "home_yellow_avg": 1.619047619047619,
+    "away_yellow_avg": 1.9523809523809523,
+    "odds_home": 4.75,
+    "odds_draw": 3.8,
+    "odds_away": 1.55,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 68
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1743,
+        "X": 0.2475,
+        "2": 0.5782
+      },
+      "computed_odds": {
+        "1": 5.74,
+        "X": 4.04,
+        "2": 1.73
+      },
+      "confidence": 0.5782
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.10526315789473684,
+        "away": 0.8421052631578947,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.1881638846737481,
+        "away": 0.5766312594840668,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.16666666666666666,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.20238095238095238,
+        "away": 0.6071428571428572,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.27,
+        "away": 0.3381933333333333,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.8095238095238093
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 14.7
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 7.8
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 6.1
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 5.8
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.81,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.43,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 6)",
+      "\ud83d\udcca Away team significantly higher in table (#4 vs #18)"
+    ],
+    "value_bets": [],
+    "confidence": "MEDIUM"
+  }
+}

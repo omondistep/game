@@ -1,0 +1,167 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/omonia-aradippou-akritas-2357989",
+  "timestamp": "2026-02-09T13:49:38.984184",
+  "features": {
+    "home_position": 10,
+    "away_position": 9,
+    "position_diff": 1,
+    "away_points": 22,
+    "home_points": 21,
+    "home_form_points": 6,
+    "away_form_points": 3,
+    "home_recent_form": 2,
+    "away_recent_form": 3,
+    "home_wins_l6": 1,
+    "home_draws_l6": 3,
+    "home_losses_l6": 2,
+    "away_wins_l6": 1,
+    "away_draws_l6": 0,
+    "away_losses_l6": 5,
+    "home_scored_avg": 1.0434782608695652,
+    "home_conceded_avg": 1.3478260869565217,
+    "away_scored_avg": 1.0909090909090908,
+    "away_conceded_avg": 1.7272727272727273,
+    "expected_total_goals": 2.604743083003952,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 27.27272727272727,
+    "away_away_goals_avg": 1.0,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 9.521739130434783,
+    "away_shots_avg": 6.7727272727272725,
+    "home_shots_on_target_pct": 43.83561643835616,
+    "away_shots_on_target_pct": 44.966442953020135,
+    "home_dangerous_attacks_avg": 58.91304347826087,
+    "away_dangerous_attacks_avg": 43.04545454545455,
+    "home_possession": 46.83,
+    "away_possession": 45.5,
+    "home_pass_accuracy": 79.81574539363484,
+    "away_pass_accuracy": 80.63806380638063,
+    "home_fouls_avg": 12.91304347826087,
+    "away_fouls_avg": 11.454545454545455,
+    "home_yellow_avg": 2.739130434782609,
+    "away_yellow_avg": 2.6818181818181817,
+    "odds_home": 1.8,
+    "odds_draw": 3.4,
+    "odds_away": 4.33,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 44
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4126,
+        "X": 0.3009,
+        "2": 0.2865
+      },
+      "computed_odds": {
+        "1": 2.42,
+        "X": 3.32,
+        "2": 3.49
+      },
+      "confidence": 0.4126
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.5789473684210527,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.5141081156586115,
+        "away": 0.21371699958094703,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.3333333333333333,
+        "away": 0.16666666666666666,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.42391304347826086,
+        "away": 0.3409090909090909,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.33170463768115943,
+        "away": 0.273,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.604743083003952
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 4.5
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 3.3
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.6,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.13,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (1 win in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 4.33,
+        "fair": 3.49,
+        "value_pct": 24.1
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

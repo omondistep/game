@@ -1,0 +1,94 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/juventus-lazio-2344437",
+  "timestamp": "2026-02-08T16:11:02.966930",
+  "features": {
+    "home_position": 4,
+    "away_position": 8,
+    "position_diff": -4,
+    "home_points": 45,
+    "away_points": 32,
+    "home_form_points": 10,
+    "away_form_points": 8,
+    "home_recent_form": 4,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 1,
+    "home_losses_l6": 2,
+    "away_wins_l6": 2,
+    "away_draws_l6": 2,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.6666666666666667,
+    "home_conceded_avg": 0.9393939393939394,
+    "away_scored_avg": 1.0416666666666667,
+    "away_conceded_avg": 0.875,
+    "expected_total_goals": 2.2613636363636367,
+    "home_home_win_rate": 62.5,
+    "home_home_goals_avg": 2.125,
+    "away_away_win_rate": 27.27272727272727,
+    "away_away_goals_avg": 0.5454545454545454,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 15.787878787878787,
+    "away_shots_avg": 11.083333333333334,
+    "home_shots_on_target_pct": 36.46833013435701,
+    "away_shots_on_target_pct": 35.714285714285715,
+    "home_dangerous_attacks_avg": 58.15151515151515,
+    "away_dangerous_attacks_avg": 36.583333333333336,
+    "home_possession": 55.61,
+    "away_possession": 50.46,
+    "home_pass_accuracy": 86.50423981846411,
+    "away_pass_accuracy": 85.5602886203599,
+    "home_fouls_avg": 13.424242424242424,
+    "away_fouls_avg": 10.708333333333334,
+    "home_yellow_avg": 1.3333333333333333,
+    "away_yellow_avg": 2.0416666666666665,
+    "odds_home": 1.48,
+    "odds_draw": 4.0,
+    "odds_away": 7.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 40
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5534,
+        "X": 0.3414,
+        "2": 0.1052
+      },
+      "computed_odds": {
+        "1": 1.81,
+        "X": 2.93,
+        "2": 9.5
+      },
+      "confidence": 0.5534
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.5,
+        "Under": 0.5
+      },
+      "computed_odds": {
+        "Over": 2.0,
+        "Under": 2.0
+      },
+      "confidence": 0.5
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 4.0,
+        "fair": 2.93,
+        "value_pct": 36.5
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

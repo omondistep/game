@@ -1,0 +1,172 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/bnei-yehuda-hapoel-acre-2360593",
+  "timestamp": "2026-02-09T13:52:54.134832",
+  "features": {
+    "home_position": 11,
+    "away_position": 9,
+    "position_diff": 2,
+    "away_points": 26,
+    "home_points": 26,
+    "home_form_points": 12,
+    "away_form_points": 6,
+    "home_recent_form": 9,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 3,
+    "home_losses_l6": 0,
+    "away_wins_l6": 1,
+    "away_draws_l6": 3,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.0416666666666667,
+    "home_conceded_avg": 1.2083333333333333,
+    "away_scored_avg": 1.0454545454545454,
+    "away_conceded_avg": 1.2727272727272727,
+    "expected_total_goals": 2.284090909090909,
+    "home_home_win_rate": 41.66666666666667,
+    "home_home_goals_avg": 1.0833333333333333,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.2727272727272727,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 67.0,
+    "home_shots_avg": 9.166666666666666,
+    "away_shots_avg": 8.318181818181818,
+    "home_shots_on_target_pct": 39.54545454545455,
+    "away_shots_on_target_pct": 38.25136612021858,
+    "home_dangerous_attacks_avg": 57.916666666666664,
+    "away_dangerous_attacks_avg": 42.95454545454545,
+    "home_possession": 53.77,
+    "away_possession": 48.77,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": 90.51878354203936,
+    "home_fouls_avg": 10.958333333333334,
+    "away_fouls_avg": 10.318181818181818,
+    "home_yellow_avg": 2.9166666666666665,
+    "away_yellow_avg": 2.590909090909091,
+    "odds_home": 1.85,
+    "odds_draw": 3.3,
+    "odds_away": 3.75,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 43
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3614,
+        "X": 0.2835,
+        "2": 0.3551
+      },
+      "computed_odds": {
+        "1": 2.77,
+        "X": 3.53,
+        "2": 2.82
+      },
+      "confidence": 0.3614
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.4736842105263158,
+        "away": 0.5789473684210527,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.4868692829743287,
+        "away": 0.2401888462673355,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6666666666666666,
+        "away": 0.3333333333333333,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.3333333333333333,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.45833333333333337,
+        "away": 0.4431818181818182,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.67,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3615088888888889,
+        "away": 0.3032260606060606,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 2.284090909090909
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 6.7
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 5.0
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 3.7
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "away",
+          "impact": 3.3
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.28,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.09,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcdc Away team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 3.75,
+        "fair": 2.82,
+        "value_pct": 33.0
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

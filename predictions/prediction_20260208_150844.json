@@ -1,0 +1,97 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/liverpool-manchester-city-2315988",
+  "timestamp": "2026-02-08T15:08:44.355590",
+  "features": {
+    "home_position": 6,
+    "away_position": 2,
+    "position_diff": 4,
+    "away_points": 47,
+    "home_points": 39,
+    "home_form_points": 13,
+    "away_form_points": 10,
+    "home_recent_form": 6,
+    "away_recent_form": 7,
+    "home_wins_l6": 4,
+    "home_draws_l6": 1,
+    "home_losses_l6": 1,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.8571428571428572,
+    "home_conceded_avg": 1.3142857142857143,
+    "away_scored_avg": 2.263157894736842,
+    "away_conceded_avg": 0.9210526315789473,
+    "expected_total_goals": 3.1778195488721805,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 16.228571428571428,
+    "away_shots_avg": 15.078947368421053,
+    "home_shots_on_target_pct": 31.514084507042256,
+    "away_shots_on_target_pct": 38.21989528795812,
+    "home_dangerous_attacks_avg": 63.74285714285714,
+    "away_dangerous_attacks_avg": 63.71052631578947,
+    "home_possession": 60.2,
+    "away_possession": 60.92,
+    "home_pass_accuracy": 86.98633695256896,
+    "away_pass_accuracy": 89.26590969104834,
+    "home_fouls_avg": 9.742857142857142,
+    "away_fouls_avg": 9.894736842105264,
+    "home_yellow_avg": 1.4857142857142858,
+    "away_yellow_avg": 1.736842105263158,
+    "odds_home": 2.3,
+    "odds_draw": 3.7,
+    "odds_away": 2.75,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 43
+  },
+  "prediction": {
+    "result": {
+      "prediction": "X",
+      "probabilities": {
+        "1": 0.3431,
+        "X": 0.3826,
+        "2": 0.2743
+      },
+      "computed_odds": {
+        "1": 2.91,
+        "X": 2.61,
+        "2": 3.65
+      },
+      "confidence": 0.3826
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.55,
+        "Under": 0.45
+      },
+      "computed_odds": {
+        "Over": 1.82,
+        "Under": 2.22
+      },
+      "confidence": 0.55
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\u26bd High-scoring match expected (avg 3.2 goals)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.7,
+        "fair": 2.61,
+        "value_pct": 41.8
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

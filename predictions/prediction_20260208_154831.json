@@ -1,0 +1,97 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/willem-ii-tilburg-waalwijk-2334637",
+  "timestamp": "2026-02-08T15:48:31.003865",
+  "features": {
+    "home_position": 8,
+    "away_position": 7,
+    "position_diff": 1,
+    "away_points": 37,
+    "home_points": 36,
+    "home_form_points": 7,
+    "away_form_points": 11,
+    "home_recent_form": 6,
+    "away_recent_form": 7,
+    "home_wins_l6": 2,
+    "home_draws_l6": 1,
+    "home_losses_l6": 3,
+    "away_wins_l6": 3,
+    "away_draws_l6": 2,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.5384615384615385,
+    "home_conceded_avg": 1.4615384615384615,
+    "away_scored_avg": 1.9642857142857142,
+    "away_conceded_avg": 1.5357142857142858,
+    "expected_total_goals": 3.25,
+    "home_home_win_rate": 46.15384615384615,
+    "home_home_goals_avg": 1.6153846153846154,
+    "away_away_win_rate": 42.857142857142854,
+    "away_away_goals_avg": 2.2142857142857144,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 13.846153846153847,
+    "away_shots_avg": 14.357142857142858,
+    "home_shots_on_target_pct": 37.77777777777778,
+    "away_shots_on_target_pct": 37.56218905472637,
+    "home_dangerous_attacks_avg": 50.61538461538461,
+    "away_dangerous_attacks_avg": 48.75,
+    "home_possession": 48.12,
+    "away_possession": 50.48,
+    "home_pass_accuracy": 81.1367218282112,
+    "away_pass_accuracy": 82.64959498301542,
+    "home_fouls_avg": 10.961538461538462,
+    "away_fouls_avg": 10.25,
+    "home_yellow_avg": 1.3846153846153846,
+    "away_yellow_avg": 1.2857142857142858,
+    "odds_home": 2.15,
+    "odds_draw": 3.7,
+    "odds_away": 2.8,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 41
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3626,
+        "X": 0.3447,
+        "2": 0.2927
+      },
+      "computed_odds": {
+        "1": 2.76,
+        "X": 2.9,
+        "2": 3.42
+      },
+      "confidence": 0.3626
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.55,
+        "Under": 0.45
+      },
+      "computed_odds": {
+        "Over": 1.82,
+        "Under": 2.22
+      },
+      "confidence": 0.55
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26bd High-scoring match expected (avg 3.2 goals)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.7,
+        "fair": 2.9,
+        "value_pct": 27.6
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

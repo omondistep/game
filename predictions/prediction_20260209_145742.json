@@ -1,0 +1,167 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/porto-sporting-cp-2411102",
+  "timestamp": "2026-02-09T14:57:42.107026",
+  "features": {
+    "home_position": 1,
+    "away_position": 2,
+    "position_diff": -1,
+    "home_points": 55,
+    "away_points": 51,
+    "home_form_points": 13,
+    "away_form_points": 16,
+    "home_recent_form": 6,
+    "away_recent_form": 7,
+    "home_wins_l6": 4,
+    "home_draws_l6": 1,
+    "home_losses_l6": 1,
+    "away_wins_l6": 5,
+    "away_draws_l6": 1,
+    "away_losses_l6": 0,
+    "home_scored_avg": 2.0303030303030303,
+    "home_conceded_avg": 0.5151515151515151,
+    "away_scored_avg": 2.5294117647058822,
+    "away_conceded_avg": 0.9117647058823529,
+    "expected_total_goals": 2.9933155080213902,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 56.25,
+    "away_away_goals_avg": 2.0,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 50.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 14.787878787878787,
+    "away_shots_avg": 17.264705882352942,
+    "home_shots_on_target_pct": 37.295081967213115,
+    "away_shots_on_target_pct": 38.841567291311755,
+    "home_dangerous_attacks_avg": 53.878787878787875,
+    "away_dangerous_attacks_avg": 57.23529411764706,
+    "home_possession": 57.73,
+    "away_possession": 59.59,
+    "home_pass_accuracy": 85.19127636753664,
+    "away_pass_accuracy": 87.41384663148091,
+    "home_fouls_avg": 12.93939393939394,
+    "away_fouls_avg": 11.264705882352942,
+    "home_yellow_avg": 2.3333333333333335,
+    "away_yellow_avg": 2.1470588235294117,
+    "odds_home": 2.31,
+    "odds_draw": 3.02,
+    "odds_away": 3.49,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 36
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3896,
+        "X": 0.2319,
+        "2": 0.3785
+      },
+      "computed_odds": {
+        "1": 2.57,
+        "X": 4.31,
+        "2": 2.64
+      },
+      "confidence": 0.3896
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 1.0,
+        "away": 0.9473684210526316,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.4120666669273083,
+        "away": 0.27274326664816106,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.7222222222222222,
+        "away": 0.8888888888888888,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.8787878787878788,
+        "away": 0.9044117647058824,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.5726426262626263,
+        "away": 0.6663635294117647,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.5,
+      "expected_goals": 2.9933155080213902
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 3.3
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.99,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 4.56,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\ud83d\udd25 Away team in excellent form (5 wins in last 6)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 3.49,
+        "fair": 2.64,
+        "value_pct": 32.2
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

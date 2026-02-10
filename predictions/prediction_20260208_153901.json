@@ -1,0 +1,97 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/sl-benfica-fc-alverca-2411101",
+  "timestamp": "2026-02-08T15:39:01.726391",
+  "features": {
+    "home_position": 3,
+    "away_position": 10,
+    "position_diff": -7,
+    "home_points": 46,
+    "away_points": 24,
+    "home_form_points": 10,
+    "away_form_points": 7,
+    "home_recent_form": 7,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 1,
+    "home_losses_l6": 2,
+    "away_wins_l6": 2,
+    "away_draws_l6": 1,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.763157894736842,
+    "home_conceded_avg": 0.7105263157894737,
+    "away_scored_avg": 1.0454545454545454,
+    "away_conceded_avg": 1.8636363636363635,
+    "expected_total_goals": 2.6913875598086126,
+    "home_home_win_rate": 61.111111111111114,
+    "home_home_goals_avg": 2.111111111111111,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 2.3636363636363638,
+    "h2h_home_win_pct": 83.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 15.605263157894736,
+    "away_shots_avg": 9.227272727272727,
+    "home_shots_on_target_pct": 35.91905564924115,
+    "away_shots_on_target_pct": 38.42364532019704,
+    "home_dangerous_attacks_avg": 55.55263157894737,
+    "away_dangerous_attacks_avg": 38.27272727272727,
+    "home_possession": 56.08,
+    "away_possession": 44.5,
+    "home_pass_accuracy": 85.06217277486911,
+    "away_pass_accuracy": 80.9771986970684,
+    "home_fouls_avg": 11.394736842105264,
+    "away_fouls_avg": 12.409090909090908,
+    "home_yellow_avg": 2.1052631578947367,
+    "away_yellow_avg": 2.5,
+    "odds_home": 1.18,
+    "odds_draw": 6.25,
+    "odds_away": 17.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 59
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.7058,
+        "X": 0.2615,
+        "2": 0.0327
+      },
+      "computed_odds": {
+        "1": 1.42,
+        "X": 3.82,
+        "2": 30.54
+      },
+      "confidence": 0.7058
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.5,
+        "Under": 0.5
+      },
+      "computed_odds": {
+        "Over": 2.0,
+        "Under": 2.0
+      },
+      "confidence": 0.5
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udcca Home team significantly higher in table (#3 vs #10)",
+      "\ud83d\udcdc Home team dominates H2H (83% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 6.25,
+        "fair": 3.82,
+        "value_pct": 63.6
+      }
+    ],
+    "confidence": "HIGH"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/sporting-gij%C3%B3n-huesca-2353022",
+  "timestamp": "2026-02-08T15:45:02.335616",
+  "features": {
+    "home_position": 9,
+    "away_position": 19,
+    "position_diff": -10,
+    "home_points": 36,
+    "away_points": 27,
+    "home_form_points": 9,
+    "away_form_points": 5,
+    "home_recent_form": 6,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 0,
+    "home_losses_l6": 3,
+    "away_wins_l6": 1,
+    "away_draws_l6": 2,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.3333333333333333,
+    "home_conceded_avg": 1.2592592592592593,
+    "away_scored_avg": 1.037037037037037,
+    "away_conceded_avg": 1.2222222222222223,
+    "expected_total_goals": 2.4259259259259256,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 11.074074074074074,
+    "away_shots_avg": 10.666666666666666,
+    "home_shots_on_target_pct": 40.802675585284284,
+    "away_shots_on_target_pct": 28.125,
+    "home_dangerous_attacks_avg": 47.25925925925926,
+    "away_dangerous_attacks_avg": 40.7037037037037,
+    "home_possession": 46.15,
+    "away_possession": 44.41,
+    "home_pass_accuracy": 79.58207713899573,
+    "away_pass_accuracy": 76.74800306379254,
+    "home_fouls_avg": 11.703703703703704,
+    "away_fouls_avg": 12.444444444444445,
+    "home_yellow_avg": 2.4074074074074074,
+    "away_yellow_avg": 2.2962962962962963,
+    "odds_home": 1.83,
+    "odds_draw": 3.3,
+    "odds_away": 4.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 48
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4652,
+        "X": 0.3596,
+        "2": 0.1752
+      },
+      "computed_odds": {
+        "1": 2.15,
+        "X": 2.78,
+        "2": 5.71
+      },
+      "confidence": 0.4652
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.5,
+        "Under": 0.5
+      },
+      "computed_odds": {
+        "Over": 2.0,
+        "Under": 2.0
+      },
+      "confidence": 0.5
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcca Home team significantly higher in table (#9 vs #19)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.3,
+        "fair": 2.78,
+        "value_pct": 18.7
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

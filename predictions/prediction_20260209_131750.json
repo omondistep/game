@@ -1,0 +1,159 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/silivrispor-galata-2380871",
+  "timestamp": "2026-02-09T13:17:50.844172",
+  "features": {
+    "home_position": 8,
+    "away_position": 7,
+    "position_diff": 1,
+    "away_points": 29,
+    "home_points": 26,
+    "home_form_points": 11,
+    "away_form_points": 5,
+    "home_recent_form": 4,
+    "away_recent_form": 1,
+    "home_wins_l6": 3,
+    "home_draws_l6": 2,
+    "home_losses_l6": 1,
+    "away_wins_l6": 1,
+    "away_draws_l6": 2,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.25,
+    "home_conceded_avg": 1.2,
+    "away_scored_avg": 1.3333333333333333,
+    "away_conceded_avg": 1.2380952380952381,
+    "expected_total_goals": 2.5107142857142857,
+    "home_home_win_rate": 45.45454545454545,
+    "home_home_goals_avg": 1.0909090909090908,
+    "away_away_win_rate": 36.36363636363637,
+    "away_away_goals_avg": 1.1818181818181819,
+    "h2h_home_win_pct": 0.0,
+    "h2h_draw_pct": 100.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 8.45,
+    "away_shots_avg": 9.619047619047619,
+    "home_shots_on_target_pct": 40.23668639053255,
+    "away_shots_on_target_pct": 47.524752475247524,
+    "home_dangerous_attacks_avg": 43.1,
+    "away_dangerous_attacks_avg": 49.76190476190476,
+    "home_possession": 50.94,
+    "away_possession": 52.8,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 7.9,
+    "away_fouls_avg": 6.380952380952381,
+    "home_yellow_avg": 2.3,
+    "away_yellow_avg": 1.8095238095238095,
+    "odds_home": 2.0,
+    "odds_draw": 3.2,
+    "odds_away": 3.3,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 46
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4022,
+        "X": 0.3225,
+        "2": 0.2753
+      },
+      "computed_odds": {
+        "1": 2.49,
+        "X": 3.1,
+        "2": 3.63
+      },
+      "confidence": 0.4022
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.631578947368421,
+        "away": 0.6842105263157895,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.44821731748726656,
+        "away": 0.27164685908319186,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6111111111111112,
+        "away": 0.2777777777777778,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 1.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5125,
+        "away": 0.5238095238095237,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3206399999999999,
+        "away": 0.37076825396825397,
+        "weight": 0.1
+      },
+      "h2h_draws": 1.0,
+      "expected_goals": 2.5107142857142857
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 10.0
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 6.7
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 2.6
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.51,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.58,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)"
+    ],
+    "value_bets": [],
+    "confidence": "MEDIUM"
+  }
+}

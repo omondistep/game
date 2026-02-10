@@ -1,0 +1,164 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/chrobry-glogow-stal-rzeszow-2308785",
+  "timestamp": "2026-02-09T14:09:45.421696",
+  "features": {
+    "home_position": 6,
+    "away_position": 9,
+    "position_diff": -3,
+    "home_points": 31,
+    "away_points": 31,
+    "home_form_points": 9,
+    "away_form_points": 11,
+    "home_recent_form": 3,
+    "away_recent_form": 7,
+    "home_wins_l6": 3,
+    "home_draws_l6": 0,
+    "home_losses_l6": 3,
+    "away_wins_l6": 3,
+    "away_draws_l6": 2,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.45,
+    "home_conceded_avg": 1.05,
+    "away_scored_avg": 1.5,
+    "away_conceded_avg": 1.5,
+    "expected_total_goals": 2.75,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 50.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 13.5,
+    "away_shots_avg": 14.45,
+    "home_shots_on_target_pct": 37.77777777777778,
+    "away_shots_on_target_pct": 32.52595155709342,
+    "home_dangerous_attacks_avg": 72.1,
+    "away_dangerous_attacks_avg": 64.7,
+    "home_possession": 51.1,
+    "away_possession": 48.45,
+    "home_pass_accuracy": 83.03959716182193,
+    "away_pass_accuracy": 82.39342806394316,
+    "home_fouls_avg": 10.95,
+    "away_fouls_avg": 9.25,
+    "home_yellow_avg": 2.4,
+    "away_yellow_avg": 1.7,
+    "odds_home": 1.97,
+    "odds_draw": 3.49,
+    "odds_away": 3.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 41
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3745,
+        "X": 0.2779,
+        "2": 0.3476
+      },
+      "computed_odds": {
+        "1": 2.67,
+        "X": 3.6,
+        "2": 2.88
+      },
+      "confidence": 0.3745
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.736842105263158,
+        "away": 0.5789473684210527,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.47007346461268484,
+        "away": 0.26458420722485404,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5,
+        "away": 0.6111111111111112,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.6,
+        "away": 0.5,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.48993333333333333,
+        "away": 0.5057,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.5,
+      "expected_goals": 2.75
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 3.2
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 3.1
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 2.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.75,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.95,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 3.5,
+        "fair": 2.88,
+        "value_pct": 21.5
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

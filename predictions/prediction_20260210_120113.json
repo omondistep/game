@@ -1,0 +1,234 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/aris-limassol-anorthosis-fc-2357987",
+  "timestamp": "2026-02-10T12:01:13.275886",
+  "features": {
+    "home_position": null,
+    "away_position": null,
+    "position_diff": 0,
+    "home_points": 37,
+    "away_points": 20,
+    "home_form_points": 7,
+    "away_form_points": 6,
+    "home_recent_form": 0,
+    "away_recent_form": 3,
+    "home_wins_l6": 2,
+    "home_draws_l6": 1,
+    "home_losses_l6": 3,
+    "away_wins_l6": 2,
+    "away_draws_l6": 0,
+    "away_losses_l6": 4,
+    "home_scored_avg": 1.8846153846153846,
+    "home_conceded_avg": 1.0,
+    "away_scored_avg": 0.8181818181818182,
+    "away_conceded_avg": 1.5454545454545454,
+    "expected_total_goals": 2.624125874125874,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.7692307692307692,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 12.192307692307692,
+    "away_shots_avg": 8.909090909090908,
+    "home_shots_on_target_pct": 48.580441640378545,
+    "away_shots_on_target_pct": 41.3265306122449,
+    "home_dangerous_attacks_avg": 62.30769230769231,
+    "away_dangerous_attacks_avg": 55.68181818181818,
+    "home_possession": 53.35,
+    "away_possession": 53.09,
+    "home_pass_accuracy": 81.8241469816273,
+    "away_pass_accuracy": 84.64874241110148,
+    "home_fouls_avg": 13.923076923076923,
+    "away_fouls_avg": 12.227272727272727,
+    "home_yellow_avg": 2.6923076923076925,
+    "away_yellow_avg": 2.1818181818181817,
+    "odds_home": 1.42,
+    "odds_draw": 4.2,
+    "odds_away": 7.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5198,
+        "2": 0.3093,
+        "X": 0.1709
+      },
+      "computed_odds": {
+        "1": 1.92,
+        "2": 3.23,
+        "X": 5.85
+      },
+      "confidence": 0.5198
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.1611,
+        "Under": 0.8389
+      },
+      "computed_odds": {
+        "Over": 6.21,
+        "Under": 1.19
+      },
+      "confidence": 0.8389
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5198,
+        "2": 0.3093,
+        "X": 0.1709
+      },
+      "computed_odds": {
+        "1": 1.92,
+        "2": 3.23,
+        "X": 5.85
+      },
+      "confidence": 0.5198
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.1611,
+        "Under": 0.8389
+      },
+      "computed_odds": {
+        "Over": 6.21,
+        "Under": 1.19
+      },
+      "confidence": 0.8389
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4454,
+        "X": 0.2526,
+        "2": 0.302
+      },
+      "computed_odds": {
+        "1": 2.25,
+        "X": 3.96,
+        "2": 3.31
+      },
+      "confidence": 0.4454
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.5263157894736843,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.6489493201483314,
+        "away": 0.13164400494437578,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.3888888888888889,
+        "away": 0.3333333333333333,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.6666666666666666,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.7211538461538461,
+        "away": 0.31818181818181823,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.45984358974358974,
+        "away": 0.34884303030303027,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.624125874125874
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 7.8
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 6.0
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 3.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.62,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.7,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": false,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 7.0,
+        "fair": 3.23,
+        "value_pct": 116.7
+      }
+    ],
+    "confidence": "HIGH"
+  }
+}

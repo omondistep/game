@@ -1,0 +1,160 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/ofk-beograd-cukaricki-belgrade-2310565",
+  "timestamp": "2026-02-09T13:13:44.112752",
+  "features": {
+    "home_position": 9,
+    "away_position": 6,
+    "position_diff": 3,
+    "away_points": 30,
+    "home_points": 26,
+    "home_form_points": 6,
+    "away_form_points": 7,
+    "home_recent_form": 2,
+    "away_recent_form": 3,
+    "home_wins_l6": 1,
+    "home_draws_l6": 3,
+    "home_losses_l6": 2,
+    "away_wins_l6": 2,
+    "away_draws_l6": 1,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.2727272727272727,
+    "home_conceded_avg": 1.4090909090909092,
+    "away_scored_avg": 1.5454545454545454,
+    "away_conceded_avg": 1.5454545454545454,
+    "expected_total_goals": 2.8863636363636367,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.8181818181818181,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 67.0,
+    "home_shots_avg": 10.909090909090908,
+    "away_shots_avg": 12.409090909090908,
+    "home_shots_on_target_pct": 36.25,
+    "away_shots_on_target_pct": 35.8974358974359,
+    "home_dangerous_attacks_avg": 52.31818181818182,
+    "away_dangerous_attacks_avg": 53.72727272727273,
+    "home_possession": 49.86,
+    "away_possession": 48.43,
+    "home_pass_accuracy": 79.05698952210581,
+    "away_pass_accuracy": 76.32586112629852,
+    "home_fouls_avg": 12.181818181818182,
+    "away_fouls_avg": 15.136363636363637,
+    "home_yellow_avg": 2.1818181818181817,
+    "away_yellow_avg": 2.272727272727273,
+    "odds_home": 2.5,
+    "odds_draw": 3.5,
+    "odds_away": 2.55,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 38
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.344,
+        "X": 0.2841,
+        "2": 0.3719
+      },
+      "computed_odds": {
+        "1": 2.91,
+        "X": 3.52,
+        "2": 2.69
+      },
+      "confidence": 0.3719
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5789473684210527,
+        "away": 0.736842105263158,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.37110187110187104,
+        "away": 0.3638253638253638,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.3333333333333333,
+        "away": 0.3888888888888889,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.4659090909090909,
+        "away": 0.5,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.67,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3961296969696969,
+        "away": 0.4375496969696969,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.8863636363636367
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 3.4
+        },
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 3.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.89,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.82,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (1 win in last 6)",
+      "\ud83d\udcdc Away team dominates H2H (67% wins)"
+    ],
+    "value_bets": [],
+    "confidence": "MEDIUM"
+  }
+}

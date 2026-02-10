@@ -1,0 +1,173 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/1926-polatl%C4%B1-belediye-%C4%B0nk%C4%B1lapspor-2380874",
+  "timestamp": "2026-02-09T13:17:14.427567",
+  "features": {
+    "home_position": 15,
+    "away_position": 13,
+    "position_diff": 2,
+    "away_points": 21,
+    "home_points": 14,
+    "home_form_points": 1,
+    "away_form_points": 9,
+    "home_recent_form": 0,
+    "away_recent_form": 2,
+    "home_wins_l6": 0,
+    "home_draws_l6": 1,
+    "home_losses_l6": 5,
+    "away_wins_l6": 2,
+    "away_draws_l6": 3,
+    "away_losses_l6": 1,
+    "home_scored_avg": 0.6,
+    "home_conceded_avg": 1.45,
+    "away_scored_avg": 0.75,
+    "away_conceded_avg": 1.2,
+    "expected_total_goals": 2.0,
+    "home_home_win_rate": 20.0,
+    "home_home_goals_avg": 0.8,
+    "away_away_win_rate": 20.0,
+    "away_away_goals_avg": 0.8,
+    "h2h_home_win_pct": 0.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 100.0,
+    "home_shots_avg": 5.75,
+    "away_shots_avg": 5.9,
+    "home_shots_on_target_pct": 33.04347826086956,
+    "away_shots_on_target_pct": 44.91525423728814,
+    "home_dangerous_attacks_avg": 29.75,
+    "away_dangerous_attacks_avg": 46.55,
+    "home_possession": 46.41,
+    "away_possession": 46.17,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 0.9,
+    "away_fouls_avg": 6.0,
+    "home_yellow_avg": 2.0,
+    "away_yellow_avg": 2.15,
+    "odds_home": 2.8,
+    "odds_draw": 3.1,
+    "odds_away": 2.3,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 48
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2215,
+        "X": 0.298,
+        "2": 0.4805
+      },
+      "computed_odds": {
+        "1": 4.51,
+        "X": 3.36,
+        "2": 2.08
+      },
+      "confidence": 0.4805
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.26315789473684215,
+        "away": 0.368421052631579,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.3204494382022472,
+        "away": 0.39011235955056184,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.05555555555555555,
+        "away": 0.5,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.2875,
+        "away": 0.3875,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 1.0,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.27846,
+        "away": 0.27702,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.0
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 8.9
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 6.7
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "away",
+          "impact": 5.0
+        },
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.0,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 1.35,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 6)",
+      "\ud83d\udcc9 Away team struggles away (20% win rate)",
+      "\ud83d\udcdc Away team dominates H2H (100% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 2.3,
+        "fair": 2.08,
+        "value_pct": 10.6
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/jalapa-art-unan-managua-2401567",
+  "timestamp": "2026-02-08T23:38:48.093828",
+  "features": {
+    "home_position": null,
+    "away_position": null,
+    "position_diff": 0,
+    "home_points": 15,
+    "away_points": 9,
+    "home_form_points": 9,
+    "away_form_points": 1,
+    "home_recent_form": 3,
+    "away_recent_form": 1,
+    "home_wins_l6": 2,
+    "home_draws_l6": 3,
+    "home_losses_l6": 1,
+    "away_wins_l6": 0,
+    "away_draws_l6": 1,
+    "away_losses_l6": 5,
+    "home_scored_avg": 1.6153846153846154,
+    "home_conceded_avg": 2.0,
+    "away_scored_avg": 1.2307692307692308,
+    "away_conceded_avg": 2.076923076923077,
+    "expected_total_goals": 3.4615384615384617,
+    "home_home_win_rate": 57.14285714285714,
+    "home_home_goals_avg": 1.8571428571428572,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.6666666666666667,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 1.6153846153846154,
+    "away_shots_avg": 5.153846153846154,
+    "home_shots_on_target_pct": 23.809523809523807,
+    "away_shots_on_target_pct": 40.298507462686565,
+    "home_dangerous_attacks_avg": 18.923076923076923,
+    "away_dangerous_attacks_avg": 25.384615384615383,
+    "home_possession": 52.0,
+    "away_possession": 46.5,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": null,
+    "away_fouls_avg": null,
+    "home_yellow_avg": 0.5384615384615384,
+    "away_yellow_avg": 1.6153846153846154,
+    "odds_home": null,
+    "odds_draw": null,
+    "odds_away": null,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4545,
+        "X": 0.2649,
+        "2": 0.2806
+      },
+      "computed_odds": {
+        "1": 2.2,
+        "X": 3.77,
+        "2": 3.56
+      },
+      "confidence": 0.4545
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.58,
+        "Under": 0.42
+      },
+      "computed_odds": {
+        "Over": 1.72,
+        "Under": 2.38
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.5263157894736843,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.39252336448598135,
+        "away": 0.2803738317757009,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5,
+        "away": 0.05555555555555555,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.8,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.40384615384615385,
+        "away": 0.28846153846153844,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.312,
+        "away": 0.279,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 3.4615384615384617
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 8.9
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 8.0
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 3.3
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.46,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.85,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (0 win in last 6)",
+      "\u26bd High-scoring match expected (avg 3.5 goals)"
+    ],
+    "value_bets": [],
+    "confidence": "MEDIUM"
+  }
+}

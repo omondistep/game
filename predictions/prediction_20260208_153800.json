@@ -1,0 +1,91 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/sporting-braga-rio-ave-2411108",
+  "timestamp": "2026-02-08T15:38:00.413743",
+  "features": {
+    "home_position": 5,
+    "away_position": 14,
+    "position_diff": -9,
+    "home_points": 36,
+    "away_points": 20,
+    "home_form_points": 13,
+    "away_form_points": 4,
+    "home_recent_form": 7,
+    "away_recent_form": 0,
+    "home_wins_l6": 4,
+    "home_draws_l6": 1,
+    "home_losses_l6": 1,
+    "away_wins_l6": 1,
+    "away_draws_l6": 1,
+    "away_losses_l6": 4,
+    "home_scored_avg": 2.024390243902439,
+    "home_conceded_avg": 0.7804878048780488,
+    "away_scored_avg": 1.1428571428571428,
+    "away_conceded_avg": 1.9523809523809523,
+    "expected_total_goals": 2.9500580720092917,
+    "home_home_win_rate": 66.66666666666666,
+    "home_home_goals_avg": 2.3333333333333335,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 2.090909090909091,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 12.195121951219512,
+    "away_shots_avg": 9.571428571428571,
+    "home_shots_on_target_pct": 39.800000000000004,
+    "away_shots_on_target_pct": 39.30348258706468,
+    "home_dangerous_attacks_avg": 59.51219512195122,
+    "away_dangerous_attacks_avg": 30.333333333333332,
+    "home_possession": 61.23,
+    "away_possession": 47.0,
+    "home_pass_accuracy": 86.89059103612462,
+    "away_pass_accuracy": 82.8397673188789,
+    "home_fouls_avg": 10.21951219512195,
+    "away_fouls_avg": 12.571428571428571,
+    "home_yellow_avg": 1.7317073170731707,
+    "away_yellow_avg": 2.6666666666666665,
+    "odds_home": 1.25,
+    "odds_draw": 5.5,
+    "odds_away": 12.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 55
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.7644,
+        "X": 0.1923,
+        "2": 0.0433
+      },
+      "computed_odds": {
+        "1": 1.31,
+        "X": 5.2,
+        "2": 23.08
+      },
+      "confidence": 0.7644
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.55,
+        "Under": 0.45
+      },
+      "computed_odds": {
+        "Over": 1.82,
+        "Under": 2.22
+      },
+      "confidence": 0.55
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcca Home team significantly higher in table (#5 vs #14)"
+    ],
+    "value_bets": [],
+    "confidence": "HIGH"
+  }
+}

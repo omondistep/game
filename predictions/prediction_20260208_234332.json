@@ -1,0 +1,164 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/karak%C3%B6pr%C3%BC-bld-diyarbekirspor-2381114",
+  "timestamp": "2026-02-08T23:43:32.135641",
+  "features": {
+    "home_position": 5,
+    "away_position": 9,
+    "position_diff": -4,
+    "home_points": 29,
+    "away_points": 25,
+    "home_form_points": 7,
+    "away_form_points": 10,
+    "home_recent_form": 4,
+    "away_recent_form": 7,
+    "home_wins_l6": 2,
+    "home_draws_l6": 1,
+    "home_losses_l6": 3,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.3636363636363635,
+    "home_conceded_avg": 1.2727272727272727,
+    "away_scored_avg": 1.0,
+    "away_conceded_avg": 1.15,
+    "expected_total_goals": 2.393181818181818,
+    "home_home_win_rate": 53.84615384615385,
+    "home_home_goals_avg": 1.6923076923076923,
+    "away_away_win_rate": 33.33333333333333,
+    "away_away_goals_avg": 1.1111111111111112,
+    "h2h_home_win_pct": null,
+    "h2h_draw_pct": null,
+    "h2h_away_win_pct": null,
+    "home_shots_avg": 1.3636363636363635,
+    "away_shots_avg": 2.8,
+    "home_shots_on_target_pct": 36.666666666666664,
+    "away_shots_on_target_pct": 46.42857142857143,
+    "home_dangerous_attacks_avg": 7.7272727272727275,
+    "away_dangerous_attacks_avg": 9.25,
+    "home_possession": 50.4,
+    "away_possession": 40.67,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 1.8636363636363635,
+    "away_fouls_avg": 2.2,
+    "home_yellow_avg": 0.36363636363636365,
+    "away_yellow_avg": 1.1,
+    "odds_home": 1.6,
+    "odds_draw": 3.5,
+    "odds_away": 5.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 42
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3899,
+        "X": 0.2886,
+        "2": 0.3215
+      },
+      "computed_odds": {
+        "1": 2.56,
+        "X": 3.47,
+        "2": 3.11
+      },
+      "confidence": 0.3899
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.7894736842105263,
+        "away": 0.5789473684210527,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.562700964630225,
+        "away": 0.18006430868167203,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.3888888888888889,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5227272727272727,
+        "away": 0.4625,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3024,
+        "away": 0.24402,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.393181818181818
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 5.7
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 4.2
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 3.3
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.39,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.36,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 5.0,
+        "fair": 3.11,
+        "value_pct": 60.8
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/hapoel-beer-sheva-beitar-jerusalem-2356591",
+  "timestamp": "2026-02-09T14:08:51.929139",
+  "features": {
+    "home_position": 1,
+    "away_position": 2,
+    "position_diff": -1,
+    "home_points": 48,
+    "away_points": 47,
+    "home_form_points": 13,
+    "away_form_points": 11,
+    "home_recent_form": 9,
+    "away_recent_form": 2,
+    "home_wins_l6": 4,
+    "home_draws_l6": 1,
+    "home_losses_l6": 1,
+    "away_wins_l6": 3,
+    "away_draws_l6": 2,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.9310344827586208,
+    "home_conceded_avg": 0.8620689655172413,
+    "away_scored_avg": 2.3,
+    "away_conceded_avg": 1.1,
+    "expected_total_goals": 3.096551724137931,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 16.344827586206897,
+    "away_shots_avg": 14.633333333333333,
+    "home_shots_on_target_pct": 38.18565400843882,
+    "away_shots_on_target_pct": 39.863325740318906,
+    "home_dangerous_attacks_avg": 69.27586206896552,
+    "away_dangerous_attacks_avg": 61.166666666666664,
+    "home_possession": 61.78,
+    "away_possession": 60.67,
+    "home_pass_accuracy": 86.49325626204238,
+    "away_pass_accuracy": 84.11870674125343,
+    "home_fouls_avg": 13.344827586206897,
+    "away_fouls_avg": 11.833333333333334,
+    "home_yellow_avg": 2.6551724137931036,
+    "away_yellow_avg": 2.466666666666667,
+    "odds_home": 1.75,
+    "odds_draw": 4.07,
+    "odds_away": 3.92,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 38
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4473,
+        "X": 0.175,
+        "2": 0.3776
+      },
+      "computed_odds": {
+        "1": 2.24,
+        "X": 5.71,
+        "2": 2.65
+      },
+      "confidence": 0.4473
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.58,
+        "Under": 0.42
+      },
+      "computed_odds": {
+        "Over": 1.72,
+        "Under": 2.38
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 1.0,
+        "away": 0.9473684210526316,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.5329342717515841,
+        "away": 0.23791708560338581,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.7222222222222222,
+        "away": 0.6111111111111112,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.7672413793103449,
+        "away": 0.7999999999999999,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.6488409195402298,
+        "away": 0.585131111111111,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 3.096551724137931
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 4.4
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 3.4
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 2.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.1,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 4.23,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\u26bd High-scoring match expected (avg 3.1 goals)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 3.92,
+        "fair": 2.65,
+        "value_pct": 47.9
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

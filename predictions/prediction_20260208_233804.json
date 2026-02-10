@@ -1,0 +1,166 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/jaguares-de-c%C3%B3rdoba-deportivo-pereira-2415201",
+  "timestamp": "2026-02-08T23:38:04.590498",
+  "features": {
+    "home_position": 14,
+    "away_position": 16,
+    "position_diff": -2,
+    "home_points": 4,
+    "away_points": 2,
+    "home_form_points": 8,
+    "away_form_points": 2,
+    "home_recent_form": 4,
+    "away_recent_form": 2,
+    "home_wins_l6": 2,
+    "home_draws_l6": 2,
+    "home_losses_l6": 2,
+    "away_wins_l6": 0,
+    "away_draws_l6": 2,
+    "away_losses_l6": 4,
+    "home_scored_avg": 1.8333333333333333,
+    "home_conceded_avg": 1.5,
+    "away_scored_avg": 0.8333333333333334,
+    "away_conceded_avg": 2.5,
+    "expected_total_goals": 3.333333333333333,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 67.0,
+    "home_shots_avg": 5.666666666666667,
+    "away_shots_avg": 7.166666666666667,
+    "home_shots_on_target_pct": 47.05882352941176,
+    "away_shots_on_target_pct": 32.55813953488372,
+    "home_dangerous_attacks_avg": 21.666666666666668,
+    "away_dangerous_attacks_avg": 12.5,
+    "home_possession": 52.2,
+    "away_possession": 39.4,
+    "home_pass_accuracy": 127.38461538461539,
+    "away_pass_accuracy": 97.36842105263158,
+    "home_fouls_avg": 5.833333333333333,
+    "away_fouls_avg": 7.5,
+    "home_yellow_avg": 2.5,
+    "away_yellow_avg": 1.8333333333333333,
+    "odds_home": 2.05,
+    "odds_draw": 3.25,
+    "odds_away": 3.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 45
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4495,
+        "X": 0.2655,
+        "2": 0.285
+      },
+      "computed_odds": {
+        "1": 2.22,
+        "X": 3.77,
+        "2": 3.51
+      },
+      "confidence": 0.4495
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.58,
+        "Under": 0.42
+      },
+      "computed_odds": {
+        "Over": 1.72,
+        "Under": 2.38
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.3157894736842105,
+        "away": 0.21052631578947367,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.451165096678235,
+        "away": 0.264253842340109,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.4444444444444444,
+        "away": 0.1111111111111111,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5833333333333333,
+        "away": 0.08333333333333337,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.67,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3132,
+        "away": 0.23639999999999997,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 3.333333333333333
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 7.5
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 6.7
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 5.0
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 2.8
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.33,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.67,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (0 win in last 6)",
+      "\u26bd High-scoring match expected (avg 3.3 goals)",
+      "\ud83d\udcdc Away team dominates H2H (67% wins)"
+    ],
+    "value_bets": [],
+    "confidence": "MEDIUM"
+  }
+}

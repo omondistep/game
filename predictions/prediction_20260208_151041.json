@@ -1,0 +1,96 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/athletic-bilbao-levante-2316656",
+  "timestamp": "2026-02-08T15:10:41.114899",
+  "features": {
+    "home_position": 11,
+    "away_position": 19,
+    "position_diff": -8,
+    "home_points": 25,
+    "away_points": 18,
+    "home_form_points": 7,
+    "away_form_points": 9,
+    "home_recent_form": 4,
+    "away_recent_form": 4,
+    "home_wins_l6": 2,
+    "home_draws_l6": 1,
+    "home_losses_l6": 3,
+    "away_wins_l6": 2,
+    "away_draws_l6": 3,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.0294117647058822,
+    "home_conceded_avg": 1.588235294117647,
+    "away_scored_avg": 1.2083333333333333,
+    "away_conceded_avg": 1.5833333333333333,
+    "expected_total_goals": 2.7046568627450975,
+    "home_home_win_rate": 40.0,
+    "home_home_goals_avg": 1.0666666666666667,
+    "away_away_win_rate": 35.714285714285715,
+    "away_away_goals_avg": 1.2857142857142858,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 67.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 13.588235294117647,
+    "away_shots_avg": 11.083333333333334,
+    "home_shots_on_target_pct": 30.735930735930733,
+    "away_shots_on_target_pct": 31.57894736842105,
+    "home_dangerous_attacks_avg": 51.029411764705884,
+    "away_dangerous_attacks_avg": 38.125,
+    "home_possession": 46.53,
+    "away_possession": 42.63,
+    "home_pass_accuracy": 78.72670807453416,
+    "away_pass_accuracy": 78.83567203989331,
+    "home_fouls_avg": 13.705882352941176,
+    "away_fouls_avg": 12.375,
+    "home_yellow_avg": 2.176470588235294,
+    "away_yellow_avg": 2.125,
+    "odds_home": 1.62,
+    "odds_draw": 3.6,
+    "odds_away": 5.75,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 42
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4655,
+        "X": 0.3938,
+        "2": 0.1407
+      },
+      "computed_odds": {
+        "1": 2.15,
+        "X": 2.54,
+        "2": 7.11
+      },
+      "confidence": 0.4655
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.5,
+        "Under": 0.5
+      },
+      "computed_odds": {
+        "Over": 2.0,
+        "Under": 2.0
+      },
+      "confidence": 0.5
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udcca Home team significantly higher in table (#11 vs #19)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.6,
+        "fair": 2.54,
+        "value_pct": 41.7
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

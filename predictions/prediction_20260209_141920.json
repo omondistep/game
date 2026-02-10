@@ -1,0 +1,163 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/amiens-clermont-2333837",
+  "timestamp": "2026-02-09T14:19:20.703319",
+  "features": {
+    "home_position": 16,
+    "away_position": 15,
+    "position_diff": 1,
+    "away_points": 22,
+    "home_points": 19,
+    "home_form_points": 4,
+    "away_form_points": 4,
+    "home_recent_form": 1,
+    "away_recent_form": 0,
+    "home_wins_l6": 1,
+    "home_draws_l6": 1,
+    "home_losses_l6": 4,
+    "away_wins_l6": 1,
+    "away_draws_l6": 1,
+    "away_losses_l6": 4,
+    "home_scored_avg": 1.32,
+    "home_conceded_avg": 1.4,
+    "away_scored_avg": 1.0,
+    "away_conceded_avg": 1.2380952380952381,
+    "expected_total_goals": 2.479047619047619,
+    "home_home_win_rate": 10.0,
+    "home_home_goals_avg": 0.8,
+    "away_away_win_rate": 18.181818181818183,
+    "away_away_goals_avg": 0.8181818181818182,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 8.04,
+    "away_shots_avg": 9.285714285714286,
+    "home_shots_on_target_pct": 40.79601990049751,
+    "away_shots_on_target_pct": 30.256410256410255,
+    "home_dangerous_attacks_avg": 29.76,
+    "away_dangerous_attacks_avg": 33.23809523809524,
+    "home_possession": 46.04,
+    "away_possession": 51.7,
+    "home_pass_accuracy": 80.28736257755524,
+    "away_pass_accuracy": 84.3448051243079,
+    "home_fouls_avg": 12.36,
+    "away_fouls_avg": 10.238095238095237,
+    "home_yellow_avg": 1.84,
+    "away_yellow_avg": 1.1904761904761905,
+    "odds_home": 2.75,
+    "odds_draw": 3.2,
+    "odds_away": 2.64,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 36
+  },
+  "prediction": {
+    "result": {
+      "prediction": "X",
+      "probabilities": {
+        "1": 0.3136,
+        "X": 0.3755,
+        "2": 0.3109
+      },
+      "computed_odds": {
+        "1": 3.19,
+        "X": 2.66,
+        "2": 3.22
+      },
+      "confidence": 0.3755
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.21052631578947367,
+        "away": 0.26315789473684215,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.34470377019748655,
+        "away": 0.3590664272890485,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.2222222222222222,
+        "away": 0.2222222222222222,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.48000000000000004,
+        "away": 0.44047619047619047,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.2775733333333333,
+        "away": 0.35305714285714285,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.479047619047619
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 3.3
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.48,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.32,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (1 win in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcc9 Away team struggles away (18% win rate)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.2,
+        "fair": 2.66,
+        "value_pct": 20.3
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

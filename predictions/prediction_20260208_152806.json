@@ -1,0 +1,97 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/auxerre-paris-fc-2316299",
+  "timestamp": "2026-02-08T15:28:06.213620",
+  "features": {
+    "home_position": 17,
+    "away_position": 114,
+    "position_diff": -97,
+    "away_points": 21,
+    "home_points": 13,
+    "home_form_points": 1,
+    "away_form_points": 8,
+    "home_recent_form": 1,
+    "away_recent_form": 2,
+    "home_wins_l6": 0,
+    "home_draws_l6": 1,
+    "home_losses_l6": 5,
+    "away_wins_l6": 2,
+    "away_draws_l6": 2,
+    "away_losses_l6": 2,
+    "home_scored_avg": 0.7142857142857143,
+    "home_conceded_avg": 1.4761904761904763,
+    "away_scored_avg": 1.3043478260869565,
+    "away_conceded_avg": 1.565217391304348,
+    "expected_total_goals": 2.5300207039337472,
+    "home_home_win_rate": 27.27272727272727,
+    "home_home_goals_avg": 1.0,
+    "away_away_win_rate": 38.46153846153847,
+    "away_away_goals_avg": 1.2307692307692308,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 50.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 10.523809523809524,
+    "away_shots_avg": 10.826086956521738,
+    "home_shots_on_target_pct": 32.126696832579185,
+    "away_shots_on_target_pct": 30.522088353413658,
+    "home_dangerous_attacks_avg": 38.61904761904762,
+    "away_dangerous_attacks_avg": 38.08695652173913,
+    "home_possession": 43.8,
+    "away_possession": 53.71,
+    "home_pass_accuracy": 81.06422505307856,
+    "away_pass_accuracy": 86.26462475030914,
+    "home_fouls_avg": 12.952380952380953,
+    "away_fouls_avg": 10.434782608695652,
+    "home_yellow_avg": 2.238095238095238,
+    "away_yellow_avg": 1.7826086956521738,
+    "odds_home": 2.38,
+    "odds_draw": 3.4,
+    "odds_away": 2.75,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 41
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3348,
+        "X": 0.3294,
+        "2": 0.3358
+      },
+      "computed_odds": {
+        "1": 2.99,
+        "X": 3.04,
+        "2": 2.98
+      },
+      "confidence": 0.3358
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.5,
+        "Under": 0.5
+      },
+      "computed_odds": {
+        "Over": 2.0,
+        "Under": 2.0
+      },
+      "confidence": 0.5
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 6)",
+      "\ud83d\udcca Home team significantly higher in table (#17 vs #114)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.4,
+        "fair": 3.04,
+        "value_pct": 11.8
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/real-zaragoza-eibar-2353016",
+  "timestamp": "2026-02-09T17:13:03.289777",
+  "features": {
+    "home_position": null,
+    "away_position": null,
+    "position_diff": 0,
+    "away_points": 31,
+    "home_points": 22,
+    "home_form_points": 6,
+    "away_form_points": 13,
+    "home_recent_form": 2,
+    "away_recent_form": 7,
+    "home_wins_l6": 1,
+    "home_draws_l6": 3,
+    "home_losses_l6": 2,
+    "away_wins_l6": 4,
+    "away_draws_l6": 1,
+    "away_losses_l6": 1,
+    "home_scored_avg": 0.9230769230769231,
+    "home_conceded_avg": 1.4615384615384615,
+    "away_scored_avg": 1.1851851851851851,
+    "away_conceded_avg": 1.0740740740740742,
+    "expected_total_goals": 2.3219373219373223,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.0769230769230769,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 11.653846153846153,
+    "away_shots_avg": 12.407407407407407,
+    "home_shots_on_target_pct": 28.71287128712871,
+    "away_shots_on_target_pct": 35.223880597014926,
+    "home_dangerous_attacks_avg": 44.26923076923077,
+    "away_dangerous_attacks_avg": 49.77777777777778,
+    "home_possession": 49.42,
+    "away_possession": 50.56,
+    "home_pass_accuracy": 80.35789473684211,
+    "away_pass_accuracy": 80.41543026706232,
+    "home_fouls_avg": 12.538461538461538,
+    "away_fouls_avg": 13.88888888888889,
+    "home_yellow_avg": 3.076923076923077,
+    "away_yellow_avg": 2.3333333333333335,
+    "odds_home": 2.7,
+    "odds_draw": 3.1,
+    "odds_away": 2.7,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3906,
+        "2": 0.3409,
+        "X": 0.2685
+      },
+      "computed_odds": {
+        "1": 2.56,
+        "2": 2.93,
+        "X": 3.73
+      },
+      "confidence": 0.3906
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.924,
+        "Under": 0.076
+      },
+      "computed_odds": {
+        "Over": 1.08,
+        "Under": 13.16
+      },
+      "confidence": 0.924
+    },
+    "model_trained": true
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (1 win in last 6)",
+      "\ud83d\udd25 Away team in excellent form (4 wins in last 6)"
+    ],
+    "value_bets": [],
+    "confidence": "HIGH"
+  }
+}

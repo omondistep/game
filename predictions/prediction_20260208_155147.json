@@ -1,0 +1,98 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/msk-zilina-kfc-komarno-2312376",
+  "timestamp": "2026-02-08T15:51:47.929566",
+  "features": {
+    "home_position": 4,
+    "away_position": 9,
+    "position_diff": -5,
+    "home_points": 34,
+    "away_points": 19,
+    "home_form_points": 9,
+    "away_form_points": 5,
+    "home_recent_form": 0,
+    "away_recent_form": 1,
+    "home_wins_l6": 3,
+    "home_draws_l6": 0,
+    "home_losses_l6": 3,
+    "away_wins_l6": 1,
+    "away_draws_l6": 2,
+    "away_losses_l6": 3,
+    "home_scored_avg": 2.391304347826087,
+    "home_conceded_avg": 1.391304347826087,
+    "away_scored_avg": 1.4761904761904763,
+    "away_conceded_avg": 1.5238095238095237,
+    "expected_total_goals": 3.391304347826087,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 75.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 25.0,
+    "home_shots_avg": 11.652173913043478,
+    "away_shots_avg": 12.19047619047619,
+    "home_shots_on_target_pct": 39.92537313432835,
+    "away_shots_on_target_pct": 36.71875,
+    "home_dangerous_attacks_avg": 47.47826086956522,
+    "away_dangerous_attacks_avg": 55.76190476190476,
+    "home_possession": 48.24,
+    "away_possession": 45.15,
+    "home_pass_accuracy": 78.03018515637156,
+    "away_pass_accuracy": 72.0795783030097,
+    "home_fouls_avg": 10.217391304347826,
+    "away_fouls_avg": 11.80952380952381,
+    "home_yellow_avg": 1.565217391304348,
+    "away_yellow_avg": 1.7619047619047619,
+    "odds_home": 1.61,
+    "odds_draw": 3.9,
+    "odds_away": 4.75,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 58
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5303,
+        "X": 0.3128,
+        "2": 0.1569
+      },
+      "computed_odds": {
+        "1": 1.89,
+        "X": 3.2,
+        "2": 6.37
+      },
+      "confidence": 0.5303
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.55,
+        "Under": 0.45
+      },
+      "computed_odds": {
+        "Over": 1.82,
+        "Under": 2.22
+      },
+      "confidence": 0.55
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\u26bd High-scoring match expected (avg 3.4 goals)",
+      "\ud83d\udcdc Home team dominates H2H (75% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.9,
+        "fair": 3.2,
+        "value_pct": 21.9
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

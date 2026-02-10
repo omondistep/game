@@ -1,0 +1,70 @@
+[
+  {
+    "url": "https://www.forebet.com/en/football/matches/sisaket-united-trat-fc-2423682",
+    "prediction": {
+      "result": {
+        "prediction": "1",
+        "probabilities": {
+          "1": 0.5707,
+          "2": 0.1418,
+          "X": 0.2875
+        },
+        "computed_odds": {
+          "1": 1.75,
+          "2": 7.05,
+          "X": 3.48
+        },
+        "confidence": 0.5707
+      },
+      "over_under": {
+        "prediction": "Under",
+        "probabilities": {
+          "Over": 0.0136,
+          "Under": 0.9864
+        },
+        "computed_odds": {
+          "Over": 73.53,
+          "Under": 1.01
+        },
+        "confidence": 0.9864
+      },
+      "prediction_method": "ml",
+      "confidence": null
+    },
+    "saved_at": "2026-02-10T12:35:30.452674"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/chelsea-leeds-united-2315994",
+    "prediction": {
+      "result": {
+        "prediction": "1",
+        "probabilities": {
+          "1": 0.6915,
+          "2": 0.1071,
+          "X": 0.2014
+        },
+        "computed_odds": {
+          "1": 1.45,
+          "2": 9.34,
+          "X": 4.97
+        },
+        "confidence": 0.6915
+      },
+      "over_under": {
+        "prediction": "Under",
+        "probabilities": {
+          "Over": 0.3341,
+          "Under": 0.6659
+        },
+        "computed_odds": {
+          "Over": 2.99,
+          "Under": 1.5
+        },
+        "confidence": 0.6659
+      },
+      "prediction_method": "ml",
+      "confidence": null
+    },
+    "saved_at": "2026-02-10T13:23:04.831832"
+  }
+]

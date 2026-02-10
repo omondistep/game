@@ -1,0 +1,227 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/cadiz-ud-almer%C3%ADa-2353020",
+  "timestamp": "2026-02-09T17:20:55.098297",
+  "features": {
+    "home_position": null,
+    "away_position": null,
+    "position_diff": 0,
+    "away_points": 39,
+    "home_points": 34,
+    "home_form_points": 7,
+    "away_form_points": 7,
+    "home_recent_form": 0,
+    "away_recent_form": 3,
+    "home_wins_l6": 2,
+    "home_draws_l6": 1,
+    "home_losses_l6": 3,
+    "away_wins_l6": 2,
+    "away_draws_l6": 1,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.1923076923076923,
+    "home_conceded_avg": 1.1923076923076923,
+    "away_scored_avg": 1.8461538461538463,
+    "away_conceded_avg": 1.4230769230769231,
+    "expected_total_goals": 2.8269230769230766,
+    "home_home_win_rate": 38.46153846153847,
+    "home_home_goals_avg": 1.1923076923076923,
+    "away_away_win_rate": 35.714285714285715,
+    "away_away_goals_avg": 1.4285714285714286,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 50.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 10.384615384615385,
+    "away_shots_avg": 15.192307692307692,
+    "home_shots_on_target_pct": 32.592592592592595,
+    "away_shots_on_target_pct": 38.22784810126582,
+    "home_dangerous_attacks_avg": 40.84615384615385,
+    "away_dangerous_attacks_avg": 46.38461538461539,
+    "home_possession": 46.54,
+    "away_possession": 54.23,
+    "home_pass_accuracy": 78.82311896732178,
+    "away_pass_accuracy": 82.52222965866719,
+    "home_fouls_avg": 13.5,
+    "away_fouls_avg": 14.0,
+    "home_yellow_avg": 2.8461538461538463,
+    "away_yellow_avg": 2.769230769230769,
+    "odds_home": 2.8,
+    "odds_draw": 3.4,
+    "odds_away": 2.4,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4366,
+        "2": 0.276,
+        "X": 0.2874
+      },
+      "computed_odds": {
+        "1": 2.29,
+        "2": 3.62,
+        "X": 3.48
+      },
+      "confidence": 0.4366
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.5722,
+        "Under": 0.4278
+      },
+      "computed_odds": {
+        "Over": 1.75,
+        "Under": 2.34
+      },
+      "confidence": 0.5722
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4366,
+        "2": 0.276,
+        "X": 0.2874
+      },
+      "computed_odds": {
+        "1": 2.29,
+        "2": 3.62,
+        "X": 3.48
+      },
+      "confidence": 0.4366
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.5722,
+        "Under": 0.4278
+      },
+      "computed_odds": {
+        "Over": 1.75,
+        "Under": 2.34
+      },
+      "confidence": 0.5722
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3467,
+        "X": 0.2984,
+        "2": 0.3549
+      },
+      "computed_odds": {
+        "1": 2.88,
+        "X": 3.35,
+        "2": 2.82
+      },
+      "confidence": 0.3549
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.5263157894736843,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.3344262295081967,
+        "away": 0.39016393442622954,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.3888888888888889,
+        "away": 0.3888888888888889,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 1.0,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5,
+        "away": 0.6057692307692308,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.35872717948717947,
+        "away": 0.5651235897435898,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.5,
+      "expected_goals": 2.8269230769230766
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "shots_possession",
+          "direction": "away",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.83,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.04,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "2",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 2.8,
+        "fair": 2.29,
+        "value_pct": 22.3
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

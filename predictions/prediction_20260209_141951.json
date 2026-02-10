@@ -1,0 +1,172 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/roma-cagliari-2344443",
+  "timestamp": "2026-02-09T14:19:51.611641",
+  "features": {
+    "home_position": 5,
+    "away_position": 12,
+    "position_diff": -7,
+    "home_points": 43,
+    "away_points": 28,
+    "home_form_points": 8,
+    "away_form_points": 10,
+    "home_recent_form": 2,
+    "away_recent_form": 9,
+    "home_wins_l6": 2,
+    "home_draws_l6": 2,
+    "home_losses_l6": 2,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.3125,
+    "home_conceded_avg": 0.71875,
+    "away_scored_avg": 1.3076923076923077,
+    "away_conceded_avg": 1.3076923076923077,
+    "expected_total_goals": 2.3233173076923075,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 23.076923076923077,
+    "away_away_goals_avg": 1.0769230769230769,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 13.65625,
+    "away_shots_avg": 10.423076923076923,
+    "home_shots_on_target_pct": 35.92677345537758,
+    "away_shots_on_target_pct": 35.05535055350554,
+    "home_dangerous_attacks_avg": 53.59375,
+    "away_dangerous_attacks_avg": 28.53846153846154,
+    "home_possession": 56.78,
+    "away_possession": 45.62,
+    "home_pass_accuracy": 83.41265308712482,
+    "away_pass_accuracy": 81.26667325363105,
+    "home_fouls_avg": 14.5,
+    "away_fouls_avg": 15.307692307692308,
+    "home_yellow_avg": 1.96875,
+    "away_yellow_avg": 2.1153846153846154,
+    "odds_home": 1.44,
+    "odds_draw": 4.1,
+    "odds_away": 8.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 43
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5087,
+        "X": 0.2093,
+        "2": 0.2819
+      },
+      "computed_odds": {
+        "1": 1.97,
+        "X": 4.78,
+        "2": 3.55
+      },
+      "confidence": 0.5087
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.7894736842105263,
+        "away": 0.42105263157894735,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.6576216175416084,
+        "away": 0.11140883873646074,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.4444444444444444,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.6484375,
+        "away": 0.5,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.17,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.5292216666666667,
+        "away": 0.3544892307692308,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 2.3233173076923075
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 8.2
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 7.4
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 5.0
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.32,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.62,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udcca Home team significantly higher in table (#5 vs #12)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 8.5,
+        "fair": 3.55,
+        "value_pct": 139.4
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

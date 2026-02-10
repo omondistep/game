@@ -1,0 +1,164 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/al-duhail-sharjah-sc-2394432",
+  "timestamp": "2026-02-09T13:39:53.977617",
+  "features": {
+    "home_position": 8,
+    "away_position": 8,
+    "position_diff": 0,
+    "home_points": 7,
+    "away_points": 7,
+    "home_form_points": 8,
+    "away_form_points": 10,
+    "home_recent_form": 1,
+    "away_recent_form": 6,
+    "home_wins_l6": 2,
+    "home_draws_l6": 2,
+    "home_losses_l6": 2,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.40625,
+    "home_conceded_avg": 1.5,
+    "away_scored_avg": 1.2962962962962963,
+    "away_conceded_avg": 1.7407407407407407,
+    "expected_total_goals": 2.971643518518518,
+    "home_home_win_rate": 41.17647058823529,
+    "home_home_goals_avg": 1.6470588235294117,
+    "away_away_win_rate": 42.857142857142854,
+    "away_away_goals_avg": 1.4285714285714286,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 12.09375,
+    "away_shots_avg": 11.407407407407407,
+    "home_shots_on_target_pct": 36.434108527131784,
+    "away_shots_on_target_pct": 35.064935064935064,
+    "home_dangerous_attacks_avg": 48.46875,
+    "away_dangerous_attacks_avg": 46.18518518518518,
+    "home_possession": 54.2,
+    "away_possession": 50.54,
+    "home_pass_accuracy": 84.53022435583422,
+    "away_pass_accuracy": 82.41059326451882,
+    "home_fouls_avg": 10.5625,
+    "away_fouls_avg": 12.962962962962964,
+    "home_yellow_avg": 2.0625,
+    "away_yellow_avg": 2.5185185185185186,
+    "odds_home": 1.75,
+    "odds_draw": 3.8,
+    "odds_away": 3.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 41
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3544,
+        "X": 0.2786,
+        "2": 0.367
+      },
+      "computed_odds": {
+        "1": 2.82,
+        "X": 3.59,
+        "2": 2.72
+      },
+      "confidence": 0.367
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.631578947368421,
+        "away": 0.631578947368421,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.5100671140939597,
+        "away": 0.25503355704697983,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.4444444444444444,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.4765625,
+        "away": 0.3888888888888889,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.4616583333333333,
+        "away": 0.41682024691358016,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.971643518518518
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "away",
+          "impact": 5.0
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 3.8
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 2.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.97,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.7,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 3.5,
+        "fair": 2.72,
+        "value_pct": 28.7
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

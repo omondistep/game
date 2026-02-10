@@ -1,0 +1,19 @@
+#!/bin/bash
+# Football Prediction System - Extract Results Command
+# Usage: fbextract
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+VENV_DIR="${SCRIPT_DIR}/football_env"
+EXTRACT="${SCRIPT_DIR}/extract_results.py"
+
+if [ ! -d "$VENV_DIR" ]; then
+    echo "Error: Virtual environment not found at $VENV_DIR"
+    exit 1
+fi
+
+if [ ! -f "$EXTRACT" ]; then
+    echo "Error: extract_results.py not found"
+    exit 1
+fi
+
+"$VENV_DIR/bin/python" "$EXTRACT"

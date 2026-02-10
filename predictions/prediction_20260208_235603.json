@@ -1,0 +1,159 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/corinthians-palmeiras-2413760",
+  "timestamp": "2026-02-08T23:56:03.149744",
+  "features": {
+    "home_position": 5,
+    "away_position": 4,
+    "position_diff": 1,
+    "away_points": 12,
+    "home_points": 11,
+    "home_form_points": 11,
+    "away_form_points": 10,
+    "home_recent_form": 6,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 2,
+    "home_losses_l6": 1,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.5,
+    "home_conceded_avg": 0.875,
+    "away_scored_avg": 1.625,
+    "away_conceded_avg": 1.125,
+    "expected_total_goals": 2.5625,
+    "home_home_win_rate": 50.0,
+    "home_home_goals_avg": 2.0,
+    "away_away_win_rate": 25.0,
+    "away_away_goals_avg": 0.75,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 15.0,
+    "away_shots_avg": 13.0,
+    "home_shots_on_target_pct": 35.0,
+    "away_shots_on_target_pct": 35.57692307692308,
+    "home_dangerous_attacks_avg": 23.375,
+    "away_dangerous_attacks_avg": 23.5,
+    "home_possession": 57.63,
+    "away_possession": 53.5,
+    "home_pass_accuracy": 85.8,
+    "away_pass_accuracy": 84.3654199877376,
+    "home_fouls_avg": 12.875,
+    "away_fouls_avg": 13.625,
+    "home_yellow_avg": 3.0,
+    "away_yellow_avg": 1.75,
+    "odds_home": 3.2,
+    "odds_draw": 3.1,
+    "odds_away": 2.15,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 44
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3888,
+        "X": 0.2404,
+        "2": 0.3709
+      },
+      "computed_odds": {
+        "1": 2.57,
+        "X": 4.16,
+        "2": 2.7
+      },
+      "confidence": 0.3888
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.7894736842105263,
+        "away": 0.8421052631578947,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.2840400596633284,
+        "away": 0.42275729810355855,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6111111111111112,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.65625,
+        "away": 0.625,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.5,
+        "away": 0.17,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.5791133333333334,
+        "away": 0.4876666666666667,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.5625
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 3.3
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.56,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.12,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 3.2,
+        "fair": 2.57,
+        "value_pct": 24.5
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

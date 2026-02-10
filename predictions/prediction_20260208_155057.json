@@ -1,0 +1,99 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/paderborn-07-ii-wiedenbr%C3%BCck-2000-2311873",
+  "timestamp": "2026-02-08T15:50:57.817706",
+  "features": {
+    "home_position": 12,
+    "away_position": 18,
+    "position_diff": -6,
+    "home_points": 21,
+    "away_points": 13,
+    "home_form_points": 4,
+    "away_form_points": 2,
+    "home_recent_form": 0,
+    "away_recent_form": 2,
+    "home_wins_l6": 1,
+    "home_draws_l6": 1,
+    "home_losses_l6": 4,
+    "away_wins_l6": 0,
+    "away_draws_l6": 2,
+    "away_losses_l6": 4,
+    "home_scored_avg": 1.4210526315789473,
+    "home_conceded_avg": 1.2105263157894737,
+    "away_scored_avg": 1.2222222222222223,
+    "away_conceded_avg": 2.1666666666666665,
+    "expected_total_goals": 3.010233918128655,
+    "home_home_win_rate": 50.0,
+    "home_home_goals_avg": 2.375,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 0.7,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 0.0,
+    "away_shots_avg": 0.0,
+    "home_shots_on_target_pct": null,
+    "away_shots_on_target_pct": null,
+    "home_dangerous_attacks_avg": 0.0,
+    "away_dangerous_attacks_avg": 0.0,
+    "home_possession": null,
+    "away_possession": null,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": null,
+    "away_fouls_avg": null,
+    "home_yellow_avg": 0.0,
+    "away_yellow_avg": 0.0,
+    "odds_home": 1.57,
+    "odds_draw": 3.75,
+    "odds_away": 4.75,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 44
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4905,
+        "X": 0.3441,
+        "2": 0.1654
+      },
+      "computed_odds": {
+        "1": 2.04,
+        "X": 2.91,
+        "2": 6.05
+      },
+      "confidence": 0.4905
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.55,
+        "Under": 0.45
+      },
+      "computed_odds": {
+        "Over": 1.82,
+        "Under": 2.22
+      },
+      "confidence": 0.55
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (1 win in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (0 win in last 6)",
+      "\u26bd High-scoring match expected (avg 3.0 goals)",
+      "\ud83d\udcca Home team significantly higher in table (#12 vs #18)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.75,
+        "fair": 2.91,
+        "value_pct": 28.9
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

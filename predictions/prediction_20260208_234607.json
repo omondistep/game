@@ -1,0 +1,161 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/libertad-club-guaran%C3%AD-2416854",
+  "timestamp": "2026-02-08T23:46:07.231749",
+  "features": {
+    "home_position": 8,
+    "away_position": 7,
+    "position_diff": 1,
+    "away_points": 4,
+    "home_points": 4,
+    "home_form_points": 10,
+    "away_form_points": 10,
+    "home_recent_form": 4,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 1,
+    "home_losses_l6": 2,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.1666666666666667,
+    "home_conceded_avg": 0.8333333333333334,
+    "away_scored_avg": 1.5,
+    "away_conceded_avg": 1.1666666666666667,
+    "expected_total_goals": 2.3333333333333335,
+    "home_home_win_rate": 100.0,
+    "home_home_goals_avg": 1.5,
+    "away_away_win_rate": 33.33333333333333,
+    "away_away_goals_avg": 1.0,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 13.333333333333334,
+    "away_shots_avg": 9.5,
+    "home_shots_on_target_pct": 41.25,
+    "away_shots_on_target_pct": 29.82456140350877,
+    "home_dangerous_attacks_avg": 33.333333333333336,
+    "away_dangerous_attacks_avg": 31.5,
+    "home_possession": 58.0,
+    "away_possession": 54.2,
+    "home_pass_accuracy": 82.22940226171244,
+    "away_pass_accuracy": 76.0845383759733,
+    "home_fouls_avg": 10.166666666666666,
+    "away_fouls_avg": 10.666666666666666,
+    "home_yellow_avg": 1.8333333333333333,
+    "away_yellow_avg": 1.6666666666666667,
+    "odds_home": 2.02,
+    "odds_draw": 3.3,
+    "odds_away": 3.72,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 43
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4332,
+        "X": 0.2227,
+        "2": 0.3441
+      },
+      "computed_odds": {
+        "1": 2.31,
+        "X": 4.49,
+        "2": 2.91
+      },
+      "confidence": 0.4332
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.631578947368421,
+        "away": 0.6842105263157895,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.464008708667846,
+        "away": 0.25196171814759377,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5555555555555556,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 1.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5833333333333334,
+        "away": 0.5833333333333333,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.5257777777777778,
+        "away": 0.3752,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 2.3333333333333335
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 10.0
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 3.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.33,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.67,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83c\udfdf\ufe0f  Home team dominant at home (100% win rate)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 3.72,
+        "fair": 2.91,
+        "value_pct": 27.8
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

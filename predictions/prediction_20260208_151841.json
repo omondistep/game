@@ -1,0 +1,98 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/valencia-real-madrid-2316650",
+  "timestamp": "2026-02-08T15:18:41.076322",
+  "features": {
+    "home_position": 16,
+    "away_position": 2,
+    "position_diff": 14,
+    "away_points": 54,
+    "home_points": 23,
+    "home_form_points": 10,
+    "away_form_points": 12,
+    "home_recent_form": 3,
+    "away_recent_form": 6,
+    "home_wins_l6": 3,
+    "home_draws_l6": 1,
+    "home_losses_l6": 2,
+    "away_wins_l6": 4,
+    "away_draws_l6": 0,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.2592592592592593,
+    "home_conceded_avg": 1.4074074074074074,
+    "away_scored_avg": 2.264705882352941,
+    "away_conceded_avg": 1.1470588235294117,
+    "expected_total_goals": 3.0392156862745097,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 12.074074074074074,
+    "away_shots_avg": 18.970588235294116,
+    "home_shots_on_target_pct": 30.061349693251532,
+    "away_shots_on_target_pct": 37.98449612403101,
+    "home_dangerous_attacks_avg": 42.925925925925924,
+    "away_dangerous_attacks_avg": 65.3529411764706,
+    "home_possession": 50.67,
+    "away_possession": 58.47,
+    "home_pass_accuracy": 82.61616421884395,
+    "away_pass_accuracy": 89.00386746106408,
+    "home_fouls_avg": 11.962962962962964,
+    "away_fouls_avg": 9.970588235294118,
+    "home_yellow_avg": 2.0,
+    "away_yellow_avg": 1.911764705882353,
+    "odds_home": 5.75,
+    "odds_draw": 4.33,
+    "odds_away": 1.53,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 64
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.135,
+        "X": 0.3278,
+        "2": 0.5372
+      },
+      "computed_odds": {
+        "1": 7.41,
+        "X": 3.05,
+        "2": 1.86
+      },
+      "confidence": 0.5372
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.55,
+        "Under": 0.45
+      },
+      "computed_odds": {
+        "Over": 1.82,
+        "Under": 2.22
+      },
+      "confidence": 0.55
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Away team in excellent form (4 wins in last 6)",
+      "\u26bd High-scoring match expected (avg 3.0 goals)",
+      "\ud83d\udcca Away team significantly higher in table (#2 vs #16)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 4.33,
+        "fair": 3.05,
+        "value_pct": 42.0
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

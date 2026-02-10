@@ -1,0 +1,168 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/kayserispor-kocaelispor-2338169",
+  "timestamp": "2026-02-09T13:35:33.733493",
+  "features": {
+    "home_position": 17,
+    "away_position": 9,
+    "position_diff": 8,
+    "away_points": 24,
+    "home_points": 15,
+    "home_form_points": 3,
+    "away_form_points": 5,
+    "home_recent_form": 0,
+    "away_recent_form": 2,
+    "home_wins_l6": 0,
+    "home_draws_l6": 3,
+    "home_losses_l6": 3,
+    "away_wins_l6": 1,
+    "away_draws_l6": 2,
+    "away_losses_l6": 3,
+    "home_scored_avg": 0.7727272727272727,
+    "home_conceded_avg": 1.8636363636363635,
+    "away_scored_avg": 0.9166666666666666,
+    "away_conceded_avg": 1.0416666666666667,
+    "expected_total_goals": 2.297348484848485,
+    "home_home_win_rate": 20.0,
+    "home_home_goals_avg": 0.7,
+    "away_away_win_rate": 18.181818181818183,
+    "away_away_goals_avg": 0.7272727272727273,
+    "h2h_home_win_pct": 80.0,
+    "h2h_draw_pct": 20.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 11.136363636363637,
+    "away_shots_avg": 10.833333333333334,
+    "home_shots_on_target_pct": 34.285714285714285,
+    "away_shots_on_target_pct": 32.69230769230769,
+    "home_dangerous_attacks_avg": 39.5,
+    "away_dangerous_attacks_avg": 43.583333333333336,
+    "home_possession": 46.09,
+    "away_possession": 50.5,
+    "home_pass_accuracy": 79.78395061728395,
+    "away_pass_accuracy": 79.76933514246947,
+    "home_fouls_avg": 11.772727272727273,
+    "away_fouls_avg": 13.208333333333334,
+    "home_yellow_avg": 2.6818181818181817,
+    "away_yellow_avg": 2.375,
+    "odds_home": 3.1,
+    "odds_draw": 3.1,
+    "odds_away": 2.25,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 37
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3091,
+        "X": 0.3183,
+        "2": 0.3726
+      },
+      "computed_odds": {
+        "1": 3.24,
+        "X": 3.14,
+        "2": 2.68
+      },
+      "confidence": 0.3726
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.1578947368421053,
+        "away": 0.5789473684210527,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.29605263157894735,
+        "away": 0.4078947368421052,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.16666666666666666,
+        "away": 0.2777777777777778,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.2272727272727273,
+        "away": 0.46875,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.8,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.38108545454545456,
+        "away": 0.3974444444444445,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.2,
+      "expected_goals": 2.297348484848485
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 8.4
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 4.7
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 3.6
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.3,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 1.69,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcc9 Away team struggles away (18% win rate)",
+      "\ud83d\udcca Away team significantly higher in table (#9 vs #17)",
+      "\ud83d\udcdc Home team dominates H2H (80% wins)"
+    ],
+    "value_bets": [],
+    "confidence": "MEDIUM"
+  }
+}

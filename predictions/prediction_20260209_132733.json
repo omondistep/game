@@ -1,0 +1,172 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/al-jabalain-al-bukiryah-2416571",
+  "timestamp": "2026-02-09T13:27:33.677456",
+  "features": {
+    "home_position": 5,
+    "away_position": 6,
+    "position_diff": -1,
+    "home_points": 36,
+    "away_points": 33,
+    "home_form_points": 15,
+    "away_form_points": 7,
+    "home_recent_form": 6,
+    "away_recent_form": 1,
+    "home_wins_l6": 5,
+    "home_draws_l6": 0,
+    "home_losses_l6": 1,
+    "away_wins_l6": 2,
+    "away_draws_l6": 1,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.8095238095238095,
+    "home_conceded_avg": 1.0952380952380953,
+    "away_scored_avg": 1.1904761904761905,
+    "away_conceded_avg": 1.2857142857142858,
+    "expected_total_goals": 2.6904761904761907,
+    "home_home_win_rate": 54.54545454545454,
+    "home_home_goals_avg": 2.090909090909091,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.2,
+    "h2h_home_win_pct": 83.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 11.0,
+    "away_shots_avg": 6.333333333333333,
+    "home_shots_on_target_pct": 33.76623376623377,
+    "away_shots_on_target_pct": 36.84210526315789,
+    "home_dangerous_attacks_avg": 48.714285714285715,
+    "away_dangerous_attacks_avg": 41.857142857142854,
+    "home_possession": 52.24,
+    "away_possession": 48.57,
+    "home_pass_accuracy": 31.521997621878718,
+    "away_pass_accuracy": 22.628973423658156,
+    "home_fouls_avg": 11.285714285714286,
+    "away_fouls_avg": 13.666666666666666,
+    "home_yellow_avg": 2.0952380952380953,
+    "away_yellow_avg": 2.5714285714285716,
+    "odds_home": 1.65,
+    "odds_draw": 3.7,
+    "odds_away": 4.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 45
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5221,
+        "X": 0.1998,
+        "2": 0.2782
+      },
+      "computed_odds": {
+        "1": 1.92,
+        "X": 5.01,
+        "2": 3.59
+      },
+      "confidence": 0.5221
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.7894736842105263,
+        "away": 0.736842105263158,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.5516898608349902,
+        "away": 0.20228628230616302,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.8333333333333334,
+        "away": 0.3888888888888889,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.6666666666666666,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.6785714285714286,
+        "away": 0.47619047619047616,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.83,
+        "away": 0.17,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.41344000000000003,
+        "away": 0.29142,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.6904761904761907
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 8.9
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 6.7
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 6.6
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 5.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.69,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.0,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (5 wins in last 6)",
+      "\ud83d\udcdc Home team dominates H2H (83% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 4.5,
+        "fair": 3.59,
+        "value_pct": 25.3
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

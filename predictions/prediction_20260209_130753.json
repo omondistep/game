@@ -1,0 +1,173 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/niroye-zamini-saipa-karaj-2423586",
+  "timestamp": "2026-02-09T13:07:53.545483",
+  "features": {
+    "home_position": 11,
+    "away_position": 15,
+    "position_diff": -4,
+    "away_points": 34,
+    "home_points": 25,
+    "home_form_points": 7,
+    "away_form_points": 10,
+    "home_recent_form": 5,
+    "away_recent_form": 6,
+    "home_wins_l6": 1,
+    "home_draws_l6": 4,
+    "home_losses_l6": 1,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.0476190476190477,
+    "home_conceded_avg": 0.9047619047619048,
+    "away_scored_avg": 0.8636363636363636,
+    "away_conceded_avg": 0.5,
+    "expected_total_goals": 1.658008658008658,
+    "home_home_win_rate": 44.44444444444444,
+    "home_home_goals_avg": 1.2222222222222223,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 0.5454545454545454,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 67.0,
+    "home_shots_avg": 5.285714285714286,
+    "away_shots_avg": 6.363636363636363,
+    "home_shots_on_target_pct": 47.74774774774775,
+    "away_shots_on_target_pct": 42.857142857142854,
+    "home_dangerous_attacks_avg": 32.666666666666664,
+    "away_dangerous_attacks_avg": 37.40909090909091,
+    "home_possession": 49.87,
+    "away_possession": 51.6,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": null,
+    "away_fouls_avg": null,
+    "home_yellow_avg": 1.8095238095238095,
+    "away_yellow_avg": 1.2727272727272727,
+    "odds_home": 3.7,
+    "odds_draw": 2.75,
+    "odds_away": 2.25,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 43
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3192,
+        "X": 0.3152,
+        "2": 0.3657
+      },
+      "computed_odds": {
+        "1": 3.13,
+        "X": 3.17,
+        "2": 2.73
+      },
+      "confidence": 0.3657
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.32,
+        "Under": 0.68
+      },
+      "computed_odds": {
+        "Over": 3.12,
+        "Under": 1.47
+      },
+      "confidence": 0.68
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.4736842105263158,
+        "away": 0.26315789473684215,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.250632911392405,
+        "away": 0.4121518987341772,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.3888888888888889,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5357142857142857,
+        "away": 0.5909090909090909,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.67,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.29922,
+        "away": 0.3096,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 1.658008658008658
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 4.2
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 3.4
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 3.3
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 2.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 1.66,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 1.91,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (1 win in last 6)",
+      "\ud83d\udee1\ufe0f  Low-scoring match expected (avg 1.7 goals)",
+      "\ud83d\udcdc Away team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 3.7,
+        "fair": 3.13,
+        "value_pct": 18.2
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

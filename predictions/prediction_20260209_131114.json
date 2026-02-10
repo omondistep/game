@@ -1,0 +1,172 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/albirex-niigata-hougang-united-2357799",
+  "timestamp": "2026-02-09T13:11:14.424016",
+  "features": {
+    "home_position": 3,
+    "away_position": 5,
+    "position_diff": -2,
+    "home_points": 16,
+    "away_points": 9,
+    "home_form_points": 13,
+    "away_form_points": 10,
+    "home_recent_form": 9,
+    "away_recent_form": 6,
+    "home_wins_l6": 4,
+    "home_draws_l6": 1,
+    "home_losses_l6": 1,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 2.1538461538461537,
+    "home_conceded_avg": 1.1538461538461537,
+    "away_scored_avg": 1.5,
+    "away_conceded_avg": 1.8333333333333333,
+    "expected_total_goals": 3.3205128205128203,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": null,
+    "h2h_draw_pct": null,
+    "h2h_away_win_pct": null,
+    "home_shots_avg": 14.0,
+    "away_shots_avg": 9.166666666666666,
+    "home_shots_on_target_pct": 45.05494505494506,
+    "away_shots_on_target_pct": 44.54545454545455,
+    "home_dangerous_attacks_avg": 69.23076923076923,
+    "away_dangerous_attacks_avg": 45.583333333333336,
+    "home_possession": 54.42,
+    "away_possession": 47.36,
+    "home_pass_accuracy": 83.87533875338752,
+    "away_pass_accuracy": 84.69010175763182,
+    "home_fouls_avg": 11.923076923076923,
+    "away_fouls_avg": 11.0,
+    "home_yellow_avg": 1.3846153846153846,
+    "away_yellow_avg": 1.5833333333333333,
+    "odds_home": 1.5,
+    "odds_draw": 4.2,
+    "odds_away": 5.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 46
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4744,
+        "X": 0.186,
+        "2": 0.3396
+      },
+      "computed_odds": {
+        "1": 2.11,
+        "X": 5.38,
+        "2": 2.94
+      },
+      "confidence": 0.4744
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.58,
+        "Under": 0.42
+      },
+      "computed_odds": {
+        "Over": 1.72,
+        "Under": 2.38
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.8947368421052632,
+        "away": 0.7894736842105263,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.6034482758620691,
+        "away": 0.18103448275862072,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.7222222222222222,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.75,
+        "away": 0.4166666666666667,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.52652,
+        "away": 0.3230488888888889,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 3.3205128205128203
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 6.3
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 3.3
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.32,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.65,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\u26bd High-scoring match expected (avg 3.3 goals)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 5.0,
+        "fair": 2.94,
+        "value_pct": 70.1
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

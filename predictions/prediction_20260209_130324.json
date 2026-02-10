@@ -1,0 +1,177 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/nam-dinh-fc-hong-linh-ha-tinh-2423451",
+  "timestamp": "2026-02-09T13:03:24.204370",
+  "features": {
+    "home_position": 12,
+    "away_position": 7,
+    "position_diff": 5,
+    "away_points": 16,
+    "home_points": 11,
+    "home_form_points": 8,
+    "away_form_points": 7,
+    "home_recent_form": 4,
+    "away_recent_form": 1,
+    "home_wins_l6": 2,
+    "home_draws_l6": 2,
+    "home_losses_l6": 2,
+    "away_wins_l6": 2,
+    "away_draws_l6": 1,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.5789473684210527,
+    "home_conceded_avg": 1.368421052631579,
+    "away_scored_avg": 0.7142857142857143,
+    "away_conceded_avg": 1.0714285714285714,
+    "expected_total_goals": 2.3665413533834587,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 11.31578947368421,
+    "away_shots_avg": 9.214285714285714,
+    "home_shots_on_target_pct": 30.697674418604652,
+    "away_shots_on_target_pct": 37.98449612403101,
+    "home_dangerous_attacks_avg": 61.26315789473684,
+    "away_dangerous_attacks_avg": 46.357142857142854,
+    "home_possession": 53.81,
+    "away_possession": 50.14,
+    "home_pass_accuracy": 79.7550432276657,
+    "away_pass_accuracy": 80.90379008746356,
+    "home_fouls_avg": 8.631578947368421,
+    "away_fouls_avg": 3.9285714285714284,
+    "home_yellow_avg": 1.5263157894736843,
+    "away_yellow_avg": 2.0,
+    "odds_home": 1.25,
+    "odds_draw": 5.0,
+    "odds_away": 8.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 37
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4322,
+        "X": 0.2433,
+        "2": 0.3245
+      },
+      "computed_odds": {
+        "1": 2.31,
+        "X": 4.11,
+        "2": 3.08
+      },
+      "confidence": 0.4322
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.42105263157894735,
+        "away": 0.6842105263157895,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.7157894736842105,
+        "away": 0.10526315789473684,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.4444444444444444,
+        "away": 0.3888888888888889,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5526315789473684,
+        "away": 0.4107142857142857,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.17,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.4333863157894737,
+        "away": 0.3413161904761904,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 2.3665413533834587
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 9.2
+        },
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 5.3
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.37,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.29,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 5.0,
+        "fair": 4.11,
+        "value_pct": 21.7
+      },
+      {
+        "outcome": "2",
+        "market": 8.5,
+        "fair": 3.08,
+        "value_pct": 176.0
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

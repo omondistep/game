@@ -1,0 +1,149 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/lamphun-warrior-kanchanaburi-fc-2423675",
+  "timestamp": "2026-02-09T13:12:50.508427",
+  "features": {
+    "home_position": 13,
+    "away_position": 14,
+    "position_diff": -1,
+    "home_points": 18,
+    "away_points": 15,
+    "home_form_points": 10,
+    "away_form_points": 5,
+    "home_recent_form": 6,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 1,
+    "home_losses_l6": 2,
+    "away_wins_l6": 1,
+    "away_draws_l6": 2,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.3478260869565217,
+    "home_conceded_avg": 1.6956521739130435,
+    "away_scored_avg": 0.9130434782608695,
+    "away_conceded_avg": 1.6956521739130435,
+    "expected_total_goals": 2.8260869565217392,
+    "home_home_win_rate": 18.181818181818183,
+    "home_home_goals_avg": 1.6363636363636365,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 0.5714285714285714,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 13.26086956521739,
+    "away_shots_avg": 12.391304347826088,
+    "home_shots_on_target_pct": 35.73770491803279,
+    "away_shots_on_target_pct": 28.421052631578945,
+    "home_dangerous_attacks_avg": 43.26086956521739,
+    "away_dangerous_attacks_avg": 39.26086956521739,
+    "home_possession": 48.87,
+    "away_possession": 51.55,
+    "home_pass_accuracy": 78.05993690851734,
+    "away_pass_accuracy": 81.27293029191259,
+    "home_fouls_avg": 13.26086956521739,
+    "away_fouls_avg": 10.347826086956522,
+    "home_yellow_avg": 2.260869565217391,
+    "away_yellow_avg": 2.4347826086956523,
+    "odds_home": null,
+    "odds_draw": null,
+    "odds_away": null,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 49
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3831,
+        "X": 0.3337,
+        "2": 0.2832
+      },
+      "computed_odds": {
+        "1": 2.61,
+        "X": 3.0,
+        "2": 3.53
+      },
+      "confidence": 0.3831
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.368421052631579,
+        "away": 0.3157894736842105,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.39252336448598135,
+        "away": 0.2803738317757009,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5555555555555556,
+        "away": 0.2777777777777778,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.41304347826086957,
+        "away": 0.30434782608695654,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.46858231884057966,
+        "away": 0.4556768115942029,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.8260869565217392
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 5.6
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.83,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.26,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)"
+    ],
+    "value_bets": [],
+    "confidence": "MEDIUM"
+  }
+}

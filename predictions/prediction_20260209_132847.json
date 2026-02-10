@@ -1,0 +1,173 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/abha-club-al-zulfi-2416573",
+  "timestamp": "2026-02-09T13:28:47.655408",
+  "features": {
+    "home_position": 1,
+    "away_position": 11,
+    "position_diff": -10,
+    "home_points": 51,
+    "away_points": 25,
+    "home_form_points": 18,
+    "away_form_points": 14,
+    "home_recent_form": 9,
+    "away_recent_form": 7,
+    "home_wins_l6": 6,
+    "home_draws_l6": 0,
+    "home_losses_l6": 0,
+    "away_wins_l6": 4,
+    "away_draws_l6": 2,
+    "away_losses_l6": 0,
+    "home_scored_avg": 2.142857142857143,
+    "home_conceded_avg": 0.8095238095238095,
+    "away_scored_avg": 1.0454545454545454,
+    "away_conceded_avg": 1.1818181818181819,
+    "expected_total_goals": 2.58982683982684,
+    "home_home_win_rate": 63.63636363636363,
+    "home_home_goals_avg": 2.1818181818181817,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.4545454545454546,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 11.857142857142858,
+    "away_shots_avg": 11.681818181818182,
+    "home_shots_on_target_pct": 45.38152610441767,
+    "away_shots_on_target_pct": 35.019455252918284,
+    "home_dangerous_attacks_avg": 57.19047619047619,
+    "away_dangerous_attacks_avg": 50.22727272727273,
+    "home_possession": 55.14,
+    "away_possession": 48.32,
+    "home_pass_accuracy": 12.031945535480492,
+    "away_pass_accuracy": 16.558764940239044,
+    "home_fouls_avg": 15.142857142857142,
+    "away_fouls_avg": 12.681818181818182,
+    "home_yellow_avg": 2.5238095238095237,
+    "away_yellow_avg": 2.090909090909091,
+    "odds_home": 1.57,
+    "odds_draw": 3.5,
+    "odds_away": 5.25,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 39
+  },
+  "prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5283,
+        "X": 0.1814,
+        "2": 0.2902
+      },
+      "computed_odds": {
+        "1": 1.89,
+        "X": 5.51,
+        "2": 3.45
+      },
+      "confidence": 0.5283
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 1.0,
+        "away": 0.4736842105263158,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.5722070844686649,
+        "away": 0.17111716621253406,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 1.0,
+        "away": 0.7777777777777778,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.75,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.8333333333333333,
+        "away": 0.4659090909090909,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.4594114285714286,
+        "away": 0.41264727272727275,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.58982683982684
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 10.5
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 7.5
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 6.0
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 5.5
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.59,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.19,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (6 wins in last 6)",
+      "\ud83d\udd25 Away team in excellent form (4 wins in last 6)",
+      "\ud83d\udcca Home team significantly higher in table (#1 vs #11)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 5.25,
+        "fair": 3.45,
+        "value_pct": 52.2
+      }
+    ],
+    "confidence": "MEDIUM"
+  }
+}

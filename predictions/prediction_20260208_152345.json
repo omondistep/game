@@ -1,0 +1,97 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/sassuolo-inter-2344435",
+  "timestamp": "2026-02-08T15:23:45.019935",
+  "features": {
+    "home_position": 11,
+    "away_position": 1,
+    "position_diff": 10,
+    "away_points": 55,
+    "home_points": 29,
+    "home_form_points": 7,
+    "away_form_points": 15,
+    "home_recent_form": 6,
+    "away_recent_form": 9,
+    "home_wins_l6": 2,
+    "home_draws_l6": 1,
+    "home_losses_l6": 3,
+    "away_wins_l6": 5,
+    "away_draws_l6": 0,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.12,
+    "home_conceded_avg": 1.28,
+    "away_scored_avg": 2.242424242424242,
+    "away_conceded_avg": 0.8484848484848485,
+    "expected_total_goals": 2.7454545454545456,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 11.4,
+    "away_shots_avg": 17.636363636363637,
+    "home_shots_on_target_pct": 34.03508771929825,
+    "away_shots_on_target_pct": 33.84879725085911,
+    "home_dangerous_attacks_avg": 36.96,
+    "away_dangerous_attacks_avg": 56.78787878787879,
+    "home_possession": 44.84,
+    "away_possession": 58.94,
+    "home_pass_accuracy": 81.96921822444196,
+    "away_pass_accuracy": 87.0652664859982,
+    "home_fouls_avg": 12.88,
+    "away_fouls_avg": 13.303030303030303,
+    "home_yellow_avg": 2.12,
+    "away_yellow_avg": 1.5757575757575757,
+    "odds_home": 6.5,
+    "odds_draw": 4.33,
+    "odds_away": 1.48,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 61
+  },
+  "prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1197,
+        "X": 0.2714,
+        "2": 0.6088
+      },
+      "computed_odds": {
+        "1": 8.35,
+        "X": 3.68,
+        "2": 1.64
+      },
+      "confidence": 0.6088
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.5,
+        "Under": 0.5
+      },
+      "computed_odds": {
+        "Over": 2.0,
+        "Under": 2.0
+      },
+      "confidence": 0.5
+    },
+    "model_trained": false
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Away team in excellent form (5 wins in last 6)",
+      "\ud83d\udcca Away team significantly higher in table (#1 vs #11)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 4.33,
+        "fair": 3.68,
+        "value_pct": 17.7
+      }
+    ],
+    "confidence": "HIGH"
+  }
+}

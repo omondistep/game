@@ -1,0 +1,76 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/juventus-lazio-2344437",
+  "timestamp": "2026-02-08T12:58:47.102105",
+  "match_info": {
+    "home_team": "Juventus",
+    "away_team": "Lazio",
+    "date": "08 Feb 2026",
+    "time": "20:45",
+    "venue": "Juventus\n VS\n\nLazio\n\nAllianz Stadium",
+    "league": null
+  },
+  "team_stats": {
+    "home": {
+      "position": 4,
+      "form": "LWDWWL",
+      "scored_avg": 1.67,
+      "conceded_avg": 1.67
+    },
+    "away": {
+      "position": 8,
+      "form": "WDLWDL",
+      "scored_avg": 1.67,
+      "conceded_avg": 0.94
+    }
+  },
+  "market_odds": {
+    "1": null,
+    "X": null,
+    "2": null,
+    "over": 1.484,
+    "under": 7.5
+  },
+  "forebet_prediction": {
+    "result": null,
+    "probability": null,
+    "over_under": null,
+    "half_time": null
+  },
+  "our_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.39252336448598135,
+        "X": 0.32710280373831774,
+        "2": 0.2803738317757009
+      },
+      "computed_odds": {
+        "1": 2.5,
+        "X": 3.0,
+        "2": 3.5
+      },
+      "confidence": 0.39252336448598135
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.8348174532502226,
+        "Under": 0.1651825467497774
+      },
+      "computed_odds": {
+        "Over": 1.48,
+        "Under": 7.5
+      },
+      "confidence": 0.8348174532502226
+    },
+    "model_trained": false,
+    "note": "Predictions based on odds only. Train model with match results for better accuracy."
+  },
+  "analysis": {
+    "key_factors": [
+      "High-scoring match expected (avg 3.3 goals)"
+    ],
+    "value_bets": [],
+    "confidence_level": "high"
+  }
+}
