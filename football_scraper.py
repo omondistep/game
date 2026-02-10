@@ -78,7 +78,12 @@ class ForebetScraper:
             with open('data/unknown_leagues.json', 'r') as f:
                 unknown = json.load(f)
             if code in unknown:
-                return unknown[code]
+                value = unknown[code]
+                # Handle both old format (string) and new format (dict with suggested_name)
+                if isinstance(value, str):
+                    return value
+                elif isinstance(value, dict):
+                    return value.get('suggested_name') or value.get('name')
         except:
             pass
         
@@ -86,7 +91,7 @@ class ForebetScraper:
         print(f"New league detected: {code}")
         name = input("Enter league name (or press Enter to skip): ").strip()
         if name:
-            # Save to unknown_leagues.json
+            # Save to unknown_leagues.json (old simple format for backwards compatibility)
             try:
                 with open('data/unknown_leagues.json', 'r') as f:
                     unknown = json.load(f)
