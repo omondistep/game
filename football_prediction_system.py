@@ -202,7 +202,7 @@ class FootballPredictionSystem:
         else:
             primary_prediction = weighted_prediction
 
-        result = {
+        return {
             'url': url,
             'timestamp': datetime.now().isoformat(),
             'match_data': match_data,
@@ -213,18 +213,6 @@ class FootballPredictionSystem:
             'convergence': convergence,
             'analysis': self._analyse(match_data, features, primary_prediction),
         }
-        
-        # Save prediction for future learning
-        if save_data:
-            prediction_to_save = {
-                'result': primary_prediction.get('result', {}),
-                'over_under': primary_prediction.get('over_under', {}),
-                'prediction_method': primary_prediction.get('prediction_method'),
-                'confidence': primary_prediction.get('confidence'),
-            }
-            self.storage.save_prediction(url, prediction_to_save)
-        
-        return result
 
     def add_match_result(self, url: str) -> bool:
         result = self.scraper.extract_actual_result(url)
@@ -324,16 +312,16 @@ class FootballPredictionSystem:
     # Beautiful display
     # ------------------------------------------------------------------
 
-    def display_prediction(self, result: Dict, show_debug: bool = False):
-        # Debug output (hidden by default)
-        if show_debug:
-            import sys
-            ml_pred = result.get("ml_prediction", {}).get("result", {}) if isinstance(result, dict) else {}
-            w_pred = result.get("weighted_prediction", {}).get("result", {}) if isinstance(result, dict) else {}
-            if show_debug:
-                print(f"DEBUG: ml_prediction={ml_pred}", file=sys.stderr)
-                print(f"DEBUG: weighted_prediction={w_pred}", file=sys.stderr)
-
+    def display_prediction(self, result: Dict):
+        import sys
+        import os
+        import traceback
+        trace_id = os.urandom(4).hex()
+        call_id = id(result)
+        print(f"DEBUG: [{trace_id}] display_prediction called (result_id={call_id})", file=sys.stderr)
+        print(f"DEBUG: [{trace_id}] result keys = {list(result.keys())}", file=sys.stderr)
+        print(f"DEBUG: [{trace_id}] call stack:\n{''.join(traceback.format_stack()[-5:-1])}", file=sys.stderr)
+        
         md = result['match_data']
         pred = result['prediction']
         feats = result['features']
@@ -413,11 +401,11 @@ class FootballPredictionSystem:
                 opp_pos = _get_opponent_position(opp, league_table)
                 opp_pos_str = f"#{opp_pos}" if opp_pos else "N/A"
                 venue = _get_venue_icon(is_home_team)
-                formatted_result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), is_home_team)
+                result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), is_home_team)
                 result_icon = _get_result_icon(form.get('home', ['?'])[i] if i < len(form.get('home', [])) else '?', is_home_team)
                 comp = m.get('competition', '')
                 vs_at = "vs" if is_home_team else "@"
-                print(f"  {i+1}. {result_icon} {venue} {formatted_result} {vs_at} {opp} ({opp_pos_str}) {C.DIM}{comp}{C.RESET}")
+                print(f"  {i+1}. {result_icon} {venue} {result} {vs_at} {opp} ({opp_pos_str}) {C.DIM}{comp}{C.RESET}")
             
             # Away team last 6 (mix of home and away matches)
             away_pos = feats.get('away_position', '?')
@@ -437,11 +425,11 @@ class FootballPredictionSystem:
                 opp_pos = _get_opponent_position(opp, league_table)
                 opp_pos_str = f"#{opp_pos}" if opp_pos else "N/A"
                 venue = _get_venue_icon(is_home_team)
-                formatted_result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), is_home_team)
+                result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), is_home_team)
                 result_icon = _get_result_icon(form.get('away', ['?'])[i] if i < len(form.get('away', [])) else '?', is_home_team)
                 comp = m.get('competition', '')
                 vs_at = "vs" if is_home_team else "@"
-                print(f"  {i+1}. {result_icon} {venue} {formatted_result} {vs_at} {opp} ({opp_pos_str}) {C.DIM}{comp}{C.RESET}")
+                print(f"  {i+1}. {result_icon} {venue} {result} {vs_at} {opp} ({opp_pos_str}) {C.DIM}{comp}{C.RESET}")
 
         # ── Home / Away Performance with Positions ──
         hm = md.get('home_matches', [])
@@ -462,9 +450,9 @@ class FootballPredictionSystem:
                     opp = m.get('away_team', 'Unknown')
                     opp_pos = _get_opponent_position(opp, league_table)
                     opp_pos_str = f"#{opp_pos}" if opp_pos else "N/A"
-                    formatted_result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), True)
+                    result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), True)
                     ht = f"({m.get('ht_home', '?')}-{m.get('ht_away', '?')})"
-                    print(f"    {m['date']}  {formatted_result} vs {opp} ({opp_pos_str}) {C.DIM}{ht}{C.RESET}")
+                    print(f"    {m['date']}  {result} vs {opp} ({opp_pos_str}) {C.DIM}{ht}{C.RESET}")
             
             if am:
                 awr = feats.get('away_away_win_rate', 0)
@@ -476,9 +464,9 @@ class FootballPredictionSystem:
                     opp = m.get('home_team', 'Unknown')
                     opp_pos = _get_opponent_position(opp, league_table)
                     opp_pos_str = f"#{opp_pos}" if opp_pos else "N/A"
-                    formatted_result = _format_match_result(m.get('away_score', 0), m.get('home_score', 0), False)
+                    result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), False)
                     ht = f"({m.get('ht_home', '?')}-{m.get('ht_away', '?')})"
-                    print(f"    {m['date']}  {formatted_result} @ {opp} ({opp_pos_str}) {C.DIM}{ht}{C.RESET}")
+                    print(f"    {m['date']}  {result} @ {opp} ({opp_pos_str}) {C.DIM}{ht}{C.RESET}")
 
         # ── Goals Statistics ──
         gs = md.get('goals_stats', {})
@@ -663,9 +651,21 @@ class FootballPredictionSystem:
         ml_pred = result.get('ml_prediction', {}).get('result', {}) if isinstance(result, dict) else {}
         w_pred = result.get('weighted_prediction', {}).get('result', {}) if isinstance(result, dict) else {}
         
+        import sys
+        ml_pred_debug = repr(ml_pred)
+        w_pred_debug = repr(w_pred)
+        print(f"DEBUG: After assignment: ml_pred={ml_pred_debug}", file=sys.stderr)
+        print(f"DEBUG: After assignment: result_ml_prediction={result.get('ml_prediction')}", file=sys.stderr)
+        
+        # DEBUG: Print the values we're about to use
+        import sys
+        print(f"DEBUG: ml_pred={ml_pred}", file=sys.stderr)
+        print(f"DEBUG: w_pred={w_pred}", file=sys.stderr)
+        
         for label, key, col in [('1 (Home)', '1', C.CYAN), ('X (Draw)', 'X', C.YELLOW), ('2 (Away)', '2', C.MAGENTA)]:
             ml_pct = ml_pred.get('probabilities', {}).get(key, 0) * 100
             w_pct = w_pred.get('probabilities', {}).get(key, 0) * 100
+            print(f"DEBUG: key={key}, ml_pct={ml_pct}, w_pct={w_pct}", file=sys.stderr)
             pct = rp['probabilities'].get(key, 0) * 100
             ml_bar = _bar(ml_pct)
             w_bar = _bar(w_pct)
@@ -824,9 +824,7 @@ def main():
             else:
                 system.display_prediction(result)
             # Save prediction
-            predictions_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'predictions')
-            os.makedirs(predictions_dir, exist_ok=True)
-            fname = os.path.join(predictions_dir, f"prediction_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json")
+            fname = f"prediction_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
             with open(fname, 'w') as f:
                 out = {k: v for k, v in result.items() if k != 'match_data'}
                 json.dump(out, f, indent=2, default=str)
@@ -903,9 +901,7 @@ def main():
             else:
                 system.display_prediction(result)
             # Save prediction
-            predictions_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'predictions')
-            os.makedirs(predictions_dir, exist_ok=True)
-            fname = os.path.join(predictions_dir, f"prediction_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json")
+            fname = f"prediction_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
             with open(fname, 'w') as f:
                 out = {k: v for k, v in result.items() if k != 'match_data'}
                 json.dump(out, f, indent=2, default=str)
@@ -1008,41 +1004,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-def cleanup_old_predictions(days: int = 90):
-    """Remove prediction files older than specified days."""
-    predictions_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'predictions')
-    if not os.path.exists(predictions_dir):
-        return 0
-    
-    cutoff = datetime.now().timestamp() - (days * 24 * 60 * 60)
-    removed = 0
-    
-    for f in os.listdir(predictions_dir):
-        if f.startswith('prediction_') and f.endswith('.json'):
-            fpath = os.path.join(predictions_dir, f)
-            if os.path.getmtime(fpath) < cutoff:
-                os.remove(fpath)
-                removed += 1
-    
-    return removed
-
-def cleanup_old_predictions(days: int = 90):
-    """Remove prediction files older than specified days."""
-    predictions_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'predictions')
-    if not os.path.exists(predictions_dir):
-        print("No predictions directory found")
-        return 0
-    
-    cutoff = datetime.now().timestamp() - (days * 24 * 60 * 60)
-    removed = 0
-    
-    for f in os.listdir(predictions_dir):
-        if f.startswith('prediction_') and f.endswith('.json'):
-            fpath = os.path.join(predictions_dir, f)
-            if os.path.getmtime(fpath) < cutoff:
-                os.remove(fpath)
-                removed += 1
-    
-    print(f"Removed {removed} prediction files older than {days} days")
-    return removed

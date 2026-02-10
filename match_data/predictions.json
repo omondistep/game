@@ -73,32 +73,66 @@
       "result": {
         "prediction": "X",
         "probabilities": {
-          "1": 0.1649,
-          "2": 0.1494,
-          "X": 0.6858
+          "1": 0.3227,
+          "2": 0.2274,
+          "X": 0.4499
         },
         "computed_odds": {
-          "1": 6.06,
-          "2": 6.69,
-          "X": 1.46
+          "1": 3.1,
+          "2": 4.4,
+          "X": 2.22
         },
-        "confidence": 0.6858
+        "confidence": 0.4499
       },
       "over_under": {
         "prediction": "Over",
         "probabilities": {
-          "Over": 0.6421,
-          "Under": 0.3579
+          "Over": 0.7787,
+          "Under": 0.2213
         },
         "computed_odds": {
-          "Over": 1.56,
-          "Under": 2.79
+          "Over": 1.28,
+          "Under": 4.52
         },
-        "confidence": 0.6421
+        "confidence": 0.7787
       },
       "prediction_method": "ml",
       "confidence": null
     },
-    "saved_at": "2026-02-10T14:35:53.006988"
+    "saved_at": "2026-02-10T14:50:02.831920"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/muranga-seal-aps-bomet-2420612",
+    "prediction": {
+      "result": {
+        "prediction": "X",
+        "probabilities": {
+          "1": 0.2125,
+          "2": 0.1664,
+          "X": 0.6211
+        },
+        "computed_odds": {
+          "1": 4.71,
+          "2": 6.01,
+          "X": 1.61
+        },
+        "confidence": 0.6211
+      },
+      "over_under": {
+        "prediction": "Over",
+        "probabilities": {
+          "Over": 0.5587,
+          "Under": 0.4413
+        },
+        "computed_odds": {
+          "Over": 1.79,
+          "Under": 2.27
+        },
+        "confidence": 0.5587
+      },
+      "prediction_method": "ml",
+      "confidence": null
+    },
+    "saved_at": "2026-02-10T14:51:48.857762"
   }
 ]
