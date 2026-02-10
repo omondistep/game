@@ -615,32 +615,76 @@ class FootballPredictionSystem:
         print(f"  {C.BG_GREEN}{C.WHITE}{C.BOLD}{'🎯  OUR PREDICTION  🎯':^{w - 4}}{C.RESET}")
         print(f"  {C.BG_GREEN}{C.WHITE}{C.BOLD}{'':^{w - 4}}{C.RESET}")
         
-        # Show convergence summary
+        # ── CONVERGENCE ANALYSIS ──
         if 'convergence' in result and isinstance(result, dict):
             conv = result['convergence']
             print()
-            print(f"  {C.BOLD}CONVERGENCE:{C.RESET}")
-            print(f"  {'─' * 40}")
+            print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
+            print(f"  {C.BOLD}🔗 CONVERGENCE ANALYSIS{C.RESET}")
+            print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
+            
             ml_r = conv.get('ml_result', '?')
             w_r = conv.get('weighted_result', '?')
-            r_ok = "✅" if conv.get('result_match') else "⚠️"
-            print(f"  Match Result:  ML: {ml_r}  W: {w_r}  {r_ok}")
+            ml_conf = result.get('ml_prediction', {}).get('result', {}).get('confidence', 0) * 100
+            w_conf = result.get('weighted_prediction', {}).get('result', {}).get('confidence', 0) * 100
+            
+            # Result convergence
+            r_match = conv.get('result_match', False)
+            r_emoji = "✅ AGREE" if r_match else "⚠️ DISAGREE"
+            r_col = C.GREEN if r_match else C.YELLOW
+            
+            # Calculate probability difference for degree of convergence
+            ml_probs = result.get('ml_prediction', {}).get('result', {}).get('probabilities', {})
+            w_probs = result.get('weighted_prediction', {}).get('result', {}).get('probabilities', {})
+            
+            if ml_probs and w_probs:
+                prob_diff = sum(abs(ml_probs.get(k, 0) - w_probs.get(k, 0)) for k in ['1', 'X', '2']) / 3 * 100
+                convergence_degree = max(0, 100 - prob_diff)
+            else:
+                convergence_degree = 0
+            
+            print()
+            print(f"  {C.CYAN}ML Model:{C.RESET}      {ml_r} ({ml_conf:.0f}% confidence)")
+            print(f"  {C.YELLOW}Weighted Model:{C.RESET} {w_r} ({w_conf:.0f}% confidence)")
+            print()
+            print(f"  {C.BOLD}Agreement:{C.RESET} {r_emoji}")
+            print(f"  {C.BOLD}Convergence Degree:{C.RESET} {convergence_degree:.0f}% ({_bar(convergence_degree)})")
+            
+            # O/U convergence
             ml_o = conv.get('ml_ou', '?')
             w_o = conv.get('weighted_ou', '?')
-            o_ok = "✅" if conv.get('ou_match') else "⚠️"
-            print(f"  O/U 2.5:      ML: {ml_o}  W: {w_o}  {o_ok}")
+            o_match = conv.get('ou_match', False)
+            o_emoji = "✅ AGREE" if o_match else "⚠️ DISAGREE"
             
-            # Confidence from convergence
-            c = sum([conv.get('result_match', False), conv.get('ou_match', False)])
+            ml_ou_conf = result.get('ml_prediction', {}).get('over_under', {}).get('confidence', 0) * 100
+            w_ou_conf = result.get('weighted_prediction', {}).get('over_under', {}).get('confidence', 0) * 100
+            
+            ml_ou_probs = result.get('ml_prediction', {}).get('over_under', {}).get('probabilities', {})
+            w_ou_probs = result.get('weighted_prediction', {}).get('over_under', {}).get('probabilities', {})
+            
+            if ml_ou_probs and w_ou_probs:
+                ou_diff = sum(abs(ml_ou_probs.get(k, 0) - w_ou_probs.get(k, 0)) for k in ['Over', 'Under']) / 2 * 100
+                ou_convergence_degree = max(0, 100 - ou_diff)
+            else:
+                ou_convergence_degree = 0
+            
+            print()
+            print(f"  {C.CYAN}ML Model O/U:{C.RESET}  {ml_o} ({ml_ou_conf:.0f}%)")
+            print(f"  {C.YELLOW}Weighted O/U:{C.RESET}  {w_o} ({w_ou_conf:.0f}%)")
+            print(f"  {C.BOLD}O/U Agreement:{C.RESET} {o_emoji} ({ou_convergence_degree:.0f}%)")
+            
+            # Overall confidence based on convergence
+            c = sum([r_match, o_match])
             conf = "HIGH" if c == 2 else ("MEDIUM" if c == 1 else "LOW")
             col = C.GREEN if conf == "HIGH" else (C.YELLOW if conf == "MEDIUM" else C.RED)
-            print(f"  {C.BOLD}Conv. Confidence:{C.RESET}  {col}{conf}{C.RESET}")
+            print()
+            print(f"  {C.BOLD}Overall Prediction Confidence:{C.RESET} {col}{C.BOLD}{conf}{C.RESET}")
             print()
         
         rp = pred['result']
         op = pred['over_under']
         
-        # 1X2
+        # ── 1X2 PREDICTIONS ──
         print()
         print(f"  {C.BOLD}Match Result:{C.RESET}  ", end="")
         rmap = {'1': f"{C.CYAN}{home} Win{C.RESET}", 'X': f"{C.YELLOW}Draw{C.RESET}", '2': f"{C.MAGENTA}{away} Win{C.RESET}"}
