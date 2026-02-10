@@ -65,6 +65,40 @@
       "prediction_method": "ml",
       "confidence": null
     },
-    "saved_at": "2026-02-10T14:33:31.189719"
+    "saved_at": "2026-02-10T14:35:36.797627"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/east-riffa-busaiteen-2423610",
+    "prediction": {
+      "result": {
+        "prediction": "X",
+        "probabilities": {
+          "1": 0.1649,
+          "2": 0.1494,
+          "X": 0.6858
+        },
+        "computed_odds": {
+          "1": 6.06,
+          "2": 6.69,
+          "X": 1.46
+        },
+        "confidence": 0.6858
+      },
+      "over_under": {
+        "prediction": "Over",
+        "probabilities": {
+          "Over": 0.6421,
+          "Under": 0.3579
+        },
+        "computed_odds": {
+          "Over": 1.56,
+          "Under": 2.79
+        },
+        "confidence": 0.6421
+      },
+      "prediction_method": "ml",
+      "confidence": null
+    },
+    "saved_at": "2026-02-10T14:35:53.006988"
   }
 ]

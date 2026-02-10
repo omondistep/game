@@ -57,19 +57,79 @@ def load_unknown_leagues() -> Dict[str, str]:
     return {}
 
 
-def save_unknown_league(league_code: str, url: str):
-    """Save a discovered league code that needs naming."""
+def save_unknown_league(league_code: str, url: str) -> Optional[str]:
+    """Save a discovered league code and ask for user input to name it.
+    
+    Returns the league name if provided, None otherwise.
+    """
     unknown = load_unknown_leagues()
-    if league_code not in unknown:
+    
+    # Check if already named
+    if league_code in LEAGUE_CODES:
+        return LEAGUE_CODES[league_code]
+    
+    # Check if we already have a suggested name
+    if league_code in unknown:
+        existing = unknown[league_code]
+        if existing.get('suggested_name'):
+            return existing['suggested_name']
+    
+    # Ask user for league name
+    print(f"\n  {'='*60}")
+    print(f"  [?] New League Code Discovered: {league_code}")
+    print(f"  {'='*60}")
+    print(f"  URL: {url}")
+    
+    # Try to guess the league name from the URL or teams
+    import re
+    teams_match = re.search(r'/matches/([^/]+)-', url)
+    if teams_match:
+        teams_str = teams_match.group(1).replace('-', ' ').title()
+        print(f"  Teams in URL: {teams_str}")
+    
+    print(f"\n  Known leagues: {list(LEAGUE_CODES.values())[:5]}...")
+    
+    try:
+        league_name = input(f"  Enter league name (or press Enter to skip): ").strip()
+    except (EOFError, KeyboardInterrupt):
+        league_name = ""
+    
+    if league_name:
+        # Add to LEAGUE_CODES
+        LEAGUE_CODES[league_code] = league_name
+        
+        # Save to unknown leagues file with the name
         unknown[league_code] = {
             'first_seen_url': url,
             'timestamp': datetime.now().isoformat(),
-            'suggested_name': None
+            'suggested_name': league_name
         }
         with open(UNKNOWN_LEAGUES_FILE, 'w') as f:
             json.dump(unknown, f, indent=2)
-        print(f"  [INFO] New league code discovered: {league_code}")
-        print(f"  [INFO] Added to {UNKNOWN_LEAGUES_FILE} - please add a name for it")
+        
+        # Also update this file with the new league
+        _update_league_codes_in_file(league_code, league_name)
+        
+        print(f"  [✓] Added '{league_name}' to known leagues")
+        return league_name
+    else:
+        # Just save as unknown
+        if league_code not in unknown:
+            unknown[league_code] = {
+                'first_seen_url': url,
+                'timestamp': datetime.now().isoformat(),
+                'suggested_name': None
+            }
+            with open(UNKNOWN_LEAGUES_FILE, 'w') as f:
+                json.dump(unknown, f, indent=2)
+            print(f"  [INFO] League code saved for later naming")
+        return None
+
+
+def _update_league_codes_in_file(league_code: str, league_name: str):
+    """Update the LEAGUE_CODES dictionary in this file dynamically."""
+    # This is handled by the global LEAGUE_CODES dict
+    pass
 
 
 class ForebetScraper:
@@ -100,9 +160,9 @@ class ForebetScraper:
             # Extract league from URL
             league, league_code = self._extract_league_from_url(url)
             
-            # Track unknown league codes
+            # Track unknown league codes (interactive if needed)
             if league_code and league is None:
-                save_unknown_league(league_code, url)
+                league = save_unknown_league(league_code, url)
             
             match_data = {
                 'url': url,

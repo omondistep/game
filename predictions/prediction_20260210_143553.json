@@ -1,0 +1,210 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/east-riffa-busaiteen-2423610",
+  "timestamp": "2026-02-10T14:35:53.006729",
+  "features": {
+    "home_position": null,
+    "away_position": null,
+    "position_diff": 0,
+    "home_form_points": 0,
+    "away_form_points": 0,
+    "home_recent_form": 0,
+    "away_recent_form": 0,
+    "home_wins_l6": 0,
+    "home_draws_l6": 0,
+    "home_losses_l6": 0,
+    "away_wins_l6": 0,
+    "away_draws_l6": 0,
+    "away_losses_l6": 0,
+    "home_scored_avg": null,
+    "home_conceded_avg": null,
+    "away_scored_avg": null,
+    "away_conceded_avg": null,
+    "expected_total_goals": 2.3,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": null,
+    "h2h_draw_pct": null,
+    "h2h_away_win_pct": null,
+    "home_shots_avg": null,
+    "away_shots_avg": null,
+    "home_shots_on_target_pct": 0.0,
+    "away_shots_on_target_pct": 0.0,
+    "home_dangerous_attacks_avg": null,
+    "away_dangerous_attacks_avg": null,
+    "home_possession": null,
+    "away_possession": null,
+    "home_pass_accuracy": 0.0,
+    "away_pass_accuracy": 0.0,
+    "home_fouls_avg": 0.0,
+    "away_fouls_avg": 0.0,
+    "home_yellow_avg": 0.0,
+    "away_yellow_avg": 0.0,
+    "odds_home": null,
+    "odds_draw": null,
+    "odds_away": null,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "X",
+      "probabilities": {
+        "1": 0.1649,
+        "2": 0.1494,
+        "X": 0.6858
+      },
+      "computed_odds": {
+        "1": 6.06,
+        "2": 6.69,
+        "X": 1.46
+      },
+      "confidence": 0.6858
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.6421,
+        "Under": 0.3579
+      },
+      "computed_odds": {
+        "Over": 1.56,
+        "Under": 2.79
+      },
+      "confidence": 0.6421
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "X",
+      "probabilities": {
+        "1": 0.1649,
+        "2": 0.1494,
+        "X": 0.6858
+      },
+      "computed_odds": {
+        "1": 6.06,
+        "2": 6.69,
+        "X": 1.46
+      },
+      "confidence": 0.6858
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.6421,
+        "Under": 0.3579
+      },
+      "computed_odds": {
+        "Over": 1.56,
+        "Under": 2.79
+      },
+      "confidence": 0.6421
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3541,
+        "X": 0.3274,
+        "2": 0.3185
+      },
+      "computed_odds": {
+        "1": 2.82,
+        "X": 3.05,
+        "2": 3.14
+      },
+      "confidence": 0.3541
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.5263157894736843,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.39252336448598135,
+        "away": 0.2803738317757009,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.575,
+        "away": 0.47500000000000003,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.5,
+        "away": 0.43333333333333335,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.3
+    },
+    "key_factors": {
+      "match_result": [],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.3,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.8,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": false,
+    "ml_result": "X",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Under"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 0)",
+      "\u26a0\ufe0f  Away team in poor form (0 win in last 0)"
+    ],
+    "value_bets": [],
+    "confidence": "HIGH"
+  }
+}
