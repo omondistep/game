@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/2.0/schema.json",
+  "buildCommand": "pip install -r requirements.txt",
+  "devCommand": "python app.py",
+  "installCommand": "pip install fastapi uvicorn jinja2 python-multipart",
+  "framework": "fastapi",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/app.py"
+    }
+  ],
+  "functions": {
+    "app.py": {
+      "maxDuration": 60
+    }
+  }
+}
