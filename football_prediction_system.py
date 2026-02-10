@@ -862,7 +862,7 @@ class FootballPredictionSystem:
         
         # Show prediction method
         pred_method = pred.get('prediction_method', 'unknown')
-        league = md.get('info', {}).get('league', 'Unknown League')
+        league = md.get('match_info', {}).get('league', 'Unknown League')
         
         # Check if ML model is actually trained
         ml_trained = self.predictor.result_model is not None and self.predictor.ou_model is not None and self.predictor.scaler is not None
