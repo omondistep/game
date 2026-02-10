@@ -1,8 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/2.0/schema.json",
-  "buildCommand": "pip install -r requirements.txt",
+  "buildCommand": "uv pip install --system -r requirements.txt",
   "devCommand": "python3 -m uvicorn api.main:app --host 0.0.0.0 --port 8000",
-  "installCommand": "pip install fastapi uvicorn",
+  "installCommand": "uv pip install fastapi uvicorn",
   "framework": "fastapi",
   "routes": [
     {
