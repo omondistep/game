@@ -3,6 +3,7 @@
 # Usage: fb <command> [options]
 # Examples:
 #   fb predict https://www.forebet.com/... 
+#   fb https://www.forebet.com/... (shortcut for predict)
 #   fb result <url> <actual_result>
 #   fb train [status|force]
 
@@ -20,4 +21,9 @@ if [ ! -f "$MAIN" ]; then
     exit 1
 fi
 
-"$VENV_DIR/bin/python" "$MAIN" "$@"
+# If first argument looks like a URL, treat it as predict command
+if [[ "$1" == http://* ]] || [[ "$1" == https://* ]]; then
+    "$VENV_DIR/bin/python" "$MAIN" predict --url "$1" "${@:2}"
+else
+    "$VENV_DIR/bin/python" "$MAIN" "$@"
+fi
