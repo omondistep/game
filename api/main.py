@@ -1,26 +1,22 @@
 #!/usr/bin/env python3
 """
-Football Prediction System - Web API
-FastAPI-based web application with web UI
-Deployable to Vercel Serverless Functions
+Football Prediction System - Web API for Vercel Serverless
+Uses Vercel's Python Runtime with ASGI adapter
 """
 
 import sys
 import os
-import json
-import time
 from datetime import datetime
-from typing import Optional
 
-# Add current directory to path for imports
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-
-from fastapi import FastAPI, Request, HTTPException
-from fastapi.responses import HTMLResponse, JSONResponse
-from pydantic import BaseModel
+# Add parent directory to path for imports
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, PROJECT_ROOT)
 
 # Import prediction system
-import sys; sys.path.insert(0, "../"); from football_prediction_system import FootballPredictionSystem
+from football_prediction_system import FootballPredictionSystem
+from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
+from pydantic import BaseModel
 
 # Initialize system
 system = FootballPredictionSystem()
@@ -111,10 +107,7 @@ HTML_TEMPLATE = """
             font-size: 16px;
             font-weight: 600;
             cursor: pointer;
-            transition: transform 0.2s;
         }
-        .btn:hover { transform: translateY(-2px); }
-        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
         
         .result-box {
             margin-top: 30px;
@@ -134,21 +127,7 @@ HTML_TEMPLATE = """
             font-size: 14px;
         }
         
-        .loading {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 3px solid rgba(255,255,255,0.3);
-            border-radius: 50%;
-            border-top-color: #fff;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin { to { transform: rotate(360deg); } }
-        
-        h2, h3 { margin-bottom: 20px; }
         h3 { margin-top: 20px; color: #00d4ff; }
-        
-        .api-section { margin-bottom: 30px; }
     </style>
 </head>
 <body>
@@ -161,119 +140,48 @@ HTML_TEMPLATE = """
         <div class="tabs">
             <div class="tab active" onclick="showTab('predict')">🔮 Predict</div>
             <div class="tab" onclick="showTab('result')">📝 Result</div>
-            <div class="tab" onclick="showTab('train')">🧠 Train</div>
             <div class="tab" onclick="showTab('stats')">📊 Stats</div>
-            <div class="tab" onclick="showTab('batch')">📚 Batch</div>
-            <div class="tab" onclick="showTab('api')">🔗 API</div>
         </div>
         
-        <!-- Predict Panel -->
         <div id="predict" class="panel active">
             <h2>🔮 Match Prediction</h2>
-            <p style="color: #888; margin-bottom: 20px;">Enter a Forebet match URL to get a prediction</p>
-            
+            <p style="color: #888; margin-bottom: 20px;">Enter a Forebet match URL</p>
             <form id="predictForm" onsubmit="submitPredict(event)">
                 <div class="form-group">
-                    <label>Forebet Match URL</label>
-                    <input type="url" id="predict_url" placeholder="https://www.forebet.com/en/football/matches/..." required>
+                    <label>Forebet URL</label>
+                    <input type="url" id="predict_url" placeholder="https://..." required>
                 </div>
-                <button type="submit" class="btn" id="predictBtn">🔮 Get Prediction</button>
+                <button type="submit" class="btn">🔮 Predict</button>
             </form>
             <div id="predictResult"></div>
         </div>
         
-        <!-- Result Panel -->
         <div id="result" class="panel">
-            <h2>📝 Add Match Result</h2>
-            <p style="color: #888; margin-bottom: 20px;">Record an actual match result for training</p>
-            
+            <h2>📝 Add Result</h2>
             <form id="resultForm" onsubmit="submitResult(event)">
                 <div class="form-group">
-                    <label>Forebet Match URL</label>
-                    <input type="url" id="result_url" placeholder="https://www.forebet.com/..." required>
+                    <label>Forebet URL</label>
+                    <input type="url" id="result_url" placeholder="https://..." required>
                 </div>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                     <div class="form-group">
-                        <label>Home Score</label>
+                        <label>Home</label>
                         <input type="number" id="home_score" min="0" required>
                     </div>
                     <div class="form-group">
-                        <label>Away Score</label>
+                        <label>Away</label>
                         <input type="number" id="away_score" min="0" required>
                     </div>
                 </div>
-                <button type="submit" class="btn" id="resultBtn">📝 Save Result</button>
+                <button type="submit" class="btn">📝 Save</button>
             </form>
             <div id="resultOutput"></div>
         </div>
         
-        <!-- Train Panel -->
-        <div id="train" class="panel">
-            <h2>🧠 Train Prediction Model</h2>
-            <p style="color: #888; margin-bottom: 20px;">Train the ML model with accumulated match data</p>
-            
-            <form id="trainForm" onsubmit="submitTrain(event)">
-                <div class="form-group">
-                    <label>
-                        <input type="checkbox" id="force_train" style="width: auto;"> Force training
-                    </label>
-                </div>
-                <button type="submit" class="btn" id="trainBtn">🧠 Start Training</button>
-            </form>
-            <div id="trainOutput"></div>
-        </div>
-        
-        <!-- Stats Panel -->
         <div id="stats" class="panel">
-            <h2>📊 Model Statistics</h2>
-            <p style="color: #888; margin-bottom: 20px;">View model performance metrics</p>
-            <button class="btn" onclick="loadStats()" style="margin-bottom: 20px;">📊 Load Statistics</button>
+            <h2>📊 Statistics</h2>
+            <button class="btn" onclick="loadStats()" style="margin-bottom: 20px;">📊 Load</button>
             <div id="statsOutput"></div>
-        </div>
-        
-        <!-- Batch Panel -->
-        <div id="batch" class="panel">
-            <h2>📚 Batch Predictions</h2>
-            <p style="color: #888; margin-bottom: 20px;">Process multiple match URLs at once</p>
-            
-            <form id="batchForm" onsubmit="submitBatch(event)">
-                <div class="form-group">
-                    <label>Match URLs (one per line)</label>
-                    <textarea id="batch_urls" rows="8" placeholder="https://...&#10;https://..."></textarea>
-                </div>
-                <button type="submit" class="btn" id="batchBtn">📚 Process Batch</button>
-            </form>
-            <div id="batchOutput"></div>
-        </div>
-        
-        <!-- API Panel -->
-        <div id="api" class="panel">
-            <h2>🔗 API Documentation</h2>
-            
-            <div class="api-section">
-                <h3>POST /api/predict</h3>
-                <pre>{"url": "https://...", "save_data": true}</pre>
-            </div>
-            
-            <div class="api-section">
-                <h3>POST /api/result</h3>
-                <pre>{"url": "https://...", "home_score": 2, "away_score": 1}</pre>
-            </div>
-            
-            <div class="api-section">
-                <h3>POST /api/train</h3>
-                <pre>{"force": false}</pre>
-            </div>
-            
-            <div class="api-section">
-                <h3>GET /api/stats</h3>
-                <p style="color: #888;">Returns model statistics</p>
-            </div>
-            
-            <div class="api-section">
-                <h3>GET /health</h3>
-                <p style="color: #888;">Health check endpoint</p>
-            </div>
         </div>
     </div>
     
@@ -287,130 +195,54 @@ HTML_TEMPLATE = """
         
         async function submitPredict(e) {
             e.preventDefault();
-            const btn = document.getElementById('predictBtn');
             const url = document.getElementById('predict_url').value;
-            
-            btn.disabled = true;
-            btn.innerHTML = '<span class="loading"></span>';
-            
             try {
-                const response = await fetch('/api/predict', {
+                const r = await fetch('/api/predict', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({url, save_data: true})
+                    body: JSON.stringify({url})
                 });
-                const data = await response.json();
-                
-                if (data.error) {
-                    document.getElementById('predictResult').innerHTML = 
-                        `<div class="result-box error"><h3>❌ Error</h3><p>${data.error}</p></div>`;
-                } else {
-                    document.getElementById('predictResult').innerHTML = 
-                        `<div class="result-box success"><pre>${JSON.stringify(data, null, 2)}</pre></div>`;
-                }
+                const data = await r.json();
+                document.getElementById('predictResult').innerHTML = 
+                    data.error 
+                        ? `<div class="result-box error">❌ ${data.error}</div>`
+                        : `<div class="result-box success"><pre>${JSON.stringify(data, null, 2)}</pre></div>`;
             } catch (err) {
                 document.getElementById('predictResult').innerHTML = 
-                    `<div class="result-box error"><h3>❌ Error</h3><p>${</p></div>`;
+                    `<div class="result-box error">❌ ${err.message}</div>`;
             }
-            
-           err.message} btn.disabled = false;
-            btn.inner🔮 Get Prediction';
-HTML = '        }
+        }
         
         async function submitResult(e) {
             e.preventDefault();
-            const btn = document.getElementById('resultBtn = document.getElement');
-            const urlById('result_url').value;
-            const home_score = parseInt(document.getElementById('home_score').value);
-            const away_score = parseInt(document.getElementById('away_score').value);
-            
-            btn.disabled = true;
-            btn.innerHTML = '<span class="loading"></span>';
-            
+            const url = document.getElementById('result_url').value;
+            const home = parseInt(document.getElementById('home_score').value);
+            const away = parseInt(document.getElementById('away_score').value);
             try {
-                const response = await fetch('/api/result', {
+                const r = await fetch('/api/result', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({url, home_score, away_score})
+                    body: JSON.stringify({url, home_score: home, away_score: away})
                 });
-                const data = await response.json();
-                
+                const data = await r.json();
                 document.getElementById('resultOutput').innerHTML = 
-                    `<div class="result-box success"><h3>✅ ${data.message || 'Done'}</h3></div>`;
+                    `<div class="result-box success">✅ ${data.message || 'Done'}</div>`;
             } catch (err) {
                 document.getElementById('resultOutput').innerHTML = 
-                    `<div class="result-box error"><h3>❌ Error</h3><p>${err.message}</p></div>`;
+                    `<div class="result-box error">❌ ${err.message}</div>`;
             }
-            
-            btn.disabled = false;
-            btn.innerHTML = '📝 Save Result';
-        }
-        
-        async function submitTrain(e) {
-            e.preventDefault();
-            const btn = document.getElementById('trainBtn');
-            const force = document.getElementById('force_train').checked;
-            
-            btn.disabled = true;
-            btn.innerHTML = '<span class="loading"></span>';
-            
-            try {
-                const response = await fetch('/api/train', {
-                    method: 'POST',
-                    headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({force})
-                });
-                const data = await response.json();
-                
-                document.getElementById('trainOutput').innerHTML = 
-                    `<div class="result-box success"><pre>${JSON.stringify(data, null, 2)}</pre></div>`;
-            } catch (err) {
-                document.getElementById('trainOutput').innerHTML = 
-                    `<div class="result-box error"><h3>❌ Error</h3><p>${err.message}</p></div>`;
-            }
-            
-            btn.disabled = false;
-            btn.innerHTML = '🧠 Start Training';
         }
         
         async function loadStats() {
             try {
-                const response = await fetch('/api/stats');
-                const data = await response.json();
+                const r = await fetch('/api/stats');
+                const data = await r.json();
                 document.getElementById('statsOutput').innerHTML = 
                     `<div class="result-box"><pre>${JSON.stringify(data, null, 2)}</pre></div>`;
             } catch (err) {
                 document.getElementById('statsOutput').innerHTML = 
-                    `<div class="result-box error"><h3>❌ Error</h3><p>${err.message}</p></div>`;
+                    `<div class="result-box error">❌ ${err.message}</div>`;
             }
-        }
-        
-        async function submitBatch(e) {
-            e.preventDefault();
-            const btn = document.getElementById('batchBtn');
-            const urlsText = document.getElementById('batch_urls').value;
-            const urls = urlsText.split('\\n').map(u => u.trim()).filter(u => u);
-            
-            btn.disabled = true;
-            btn.innerHTML = '<span class="loading"></span>';
-            
-            try {
-                const response = await fetch('/api/batch', {
-                    method: 'POST',
-                    headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({urls})
-                });
-                const data = await response.json();
-                
-                document.getElementById('batchOutput').innerHTML = 
-                    `<div class="result-box"><pre>${JSON.stringify(data, null, 2)}</pre></div>`;
-            } catch (err) {
-                document.getElementById('batchOutput').innerHTML = 
-                    `<div class="result-box error"><h3>❌ Error</h3><p>${err.message}</p></div>`;
-            }
-            
-            btn.disabled = false;
-            btn.innerHTML = '📚 Process Batch';
         }
     </script>
 </body>
@@ -418,134 +250,59 @@ HTML = '        }
 """
 
 
-# ======================================================================
-# API Routes
-# ======================================================================
-
-@app.get("/", response_class=HTMLResponse)
+@app.get("/")
 async def home():
-    """Serve the main web UI."""
     return HTML_TEMPLATE
 
 
 @app.get("/health")
 async def health():
-    """Health check endpoint."""
     return {"status": "healthy", "timestamp": datetime.now().isoformat()}
 
 
+class PredictRequest(BaseModel):
+    url: str
+    save_data: bool = True
+
+
 @app.post("/api/predict")
-async def predict(request: dict):
-    """Get a prediction for a match URL."""
+async def predict(request: PredictRequest):
     try:
-        url = request.get("url")
-        save_data = request.get("save_data", True)
-        
-        if not url:
-            return JSONResponse(status_code=400, content={"error": "URL is required"})
-        
-        result = system.predict_match(url, save_data=save_data)
-        
+        result = system.predict_match(request.url, save_data=request.save_data)
         if 'error' in result:
-            return JSONResponse(status_code=400, content=result)
-        
+            return {"error": result['error']}
         return result
     except Exception as e:
-        return JSONResponse(status_code=500, content={"error": str(e)})
+        return {"error": str(e)}
+
+
+class ResultRequest(BaseModel):
+    url: str
+    home_score: int
+    away_score: int
 
 
 @app.post("/api/result")
-async def add_result(request: dict):
-    """Record an actual match result."""
+async def add_result(request: ResultRequest):
     try:
-        url = request.get("url")
-        home_score = request.get("home_score")
-        away_score = request.get("away_score")
-        
-        if not url or home_score is None or away_score is None:
-            return JSONResponse(status_code=400, content={"error": "Missing required fields"})
-        
-        success = system.record_result(url, home_score, away_score)
-        
-        if success:
-            return {"success": True, "message": "Result recorded successfully"}
-        else:
-            return JSONResponse(status_code=400, content={"error": "Failed to record result"})
+        success = system.record_result(request.url, request.home_score, request.away_score)
+        return {"success": success, "message": "Result recorded" if success else "Failed"}
     except Exception as e:
-        return JSONResponse(status_code=500, content={"error": str(e)})
+        return {"error": str(e)}
 
 
 @app.post("/api/train")
-async def train_model(request: dict):
-    """Trigger model training."""
+async def train_model():
     try:
-        force = request.get("force", False)
-        success = system.train_models(force=force)
-        
-        if success:
-            return {
-                "success": True, 
-                "message": "Model trained successfully",
-                "timestamp": datetime.now().isoformat()
-            }
-        else:
-            return {"success": False, "message": "Training skipped (not enough time elapsed)"}
+        success = system.train_models(force=True)
+        return {"success": success, "message": "Training complete" if success else "Skipped"}
     except Exception as e:
-        return JSONResponse(status_code=500, content={"error": str(e)})
+        return {"error": str(e)}
 
 
 @app.get("/api/stats")
 async def get_stats():
-    """Get model statistics."""
     try:
-        stats = system.get_model_stats()
-        return stats
+        return system.get_model_stats()
     except Exception as e:
-        return JSONResponse(status_code=500, content={"error": str(e)})
-
-
-@app.post("/api/batch")
-async def batch_predict(request: dict):
-    """Process multiple URLs for batch predictions."""
-    urls = request.get("urls", [])
-    results = []
-    
-    for url in urls:
-        try:
-            result = system.predict_match(url, save_data=True)
-            results.append({
-                "url": url,
-                "result": result,
-                "success": "error" not in result
-            })
-        except Exception as e:
-            results.append({
-                "url": url,
-                "result": {"error": str(e)},
-                "success": False
-            })
-    
-    return {
-        "total": len(urls),
-        "success": sum(1 for r in results if r["success"]),
-        "results": results
-    }
-
-
-@app.get("/api/leagues")
-async def get_leagues():
-    """Get list of tracked leagues."""
-    try:
-        leagues = system.storage.get_leagues()
-        return {"leagues": leagues}
-    except Exception as e:
-        return JSONResponse(status_code=500, content={"error": str(e)})
-
-
-# ======================================================================
-# Run locally
-# ======================================================================
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+        return {"error": str(e)}
