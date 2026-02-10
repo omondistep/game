@@ -9,119 +9,9 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import json
-import os
 from typing import Dict, List, Optional, Tuple
 import time
 from datetime import datetime, timedelta
-
-
-# League code mapping (5-digit codes extracted from URL)
-# URL format: https://www.forebet.com/en/football/matches/team-name-2315994
-# The suffix is 7 digits, first 5 (23159) is the unique league code
-LEAGUE_CODES = {
-    '23159': 'England Premier League',
-    '23351': 'England Championship',
-    '23161': 'Spain La Liga',
-    '23531': 'Spain Segunda Division',
-    '23441': 'Italy Serie A',
-    '23444': 'Italy Serie A',
-    '23551': 'Italy Serie B',
-    '23331': 'France Ligue 2',
-    '23341': 'Netherlands Eerste Divisie',
-    '24111': 'Portugal Liga Portugal',
-    '23171': 'Scotland Premiership',
-    '24171': 'Argentina Liga Profesional',
-    '24151': 'Colombia Primera A',
-    '23579': 'Cyprus First Division',
-    '23261': 'England League One',
-    '23301': 'England League Two',
-    '23391': 'England National League',
-    '23401': 'England National League North',
-    '23411': 'England National League South',
-    '24091': 'England Isthmian League',
-    '23481': 'England Premier League 2',
-    '23431': 'England SPL Premier Division',
-    '24236': 'Bahrain Premier League',
-}
-
-# File to store discovered but unnamed league codes
-UNKNOWN_LEAGUES_FILE = "unknown_leagues.json"
-
-
-def load_unknown_leagues() -> Dict[str, str]:
-    """Load unknown league codes from file."""
-    if os.path.exists(UNKNOWN_LEAGUES_FILE):
-        try:
-            with open(UNKNOWN_LEAGUES_FILE, 'r') as f:
-                return json.load(f)
-        except:
-            return {}
-    return {}
-
-
-def save_unknown_league(league_code: str, url: str) -> Optional[str]:
-    """Save a discovered league code and ask for user input to name it.
-    
-    Returns the league name if provided, None otherwise.
-    """
-    unknown = load_unknown_leagues()
-    
-    # Check if already named
-    if league_code in LEAGUE_CODES:
-        return LEAGUE_CODES[league_code]
-    
-    # Check if we already have a suggested name
-    if league_code in unknown:
-        existing = unknown[league_code]
-        if existing.get('suggested_name'):
-            return existing['suggested_name']
-    
-    # Ask user for league name
-    print(f"\n  {'='*60}")
-    print(f"  [?] New League Code Discovered: {league_code}")
-    print(f"  {'='*60}")
-    print(f"  URL: {url}")
-    
-    # Try to guess the league name from the URL or teams
-    teams_match = re.search(r'/matches/([^/]+)-', url)
-    if teams_match:
-        teams_str = teams_match.group(1).replace('-', ' ').title()
-        print(f"  Teams in URL: {teams_str}")
-    
-    print(f"\n  Known leagues: {list(LEAGUE_CODES.values())[:5]}...")
-    
-    try:
-        league_name = input(f"  Enter league name (or press Enter to skip): ").strip()
-    except (EOFError, KeyboardInterrupt):
-        league_name = ""
-    
-    if league_name:
-        # Add to LEAGUE_CODES
-        LEAGUE_CODES[league_code] = league_name
-        
-        # Save to unknown leagues file with the name
-        unknown[league_code] = {
-            'first_seen_url': url,
-            'timestamp': datetime.now().isoformat(),
-            'suggested_name': league_name
-        }
-        with open(UNKNOWN_LEAGUES_FILE, 'w') as f:
-            json.dump(unknown, f, indent=2)
-        
-        print(f"  [✓] Added '{league_name}' to known leagues")
-        return league_name
-    else:
-        # Just save as unknown
-        if league_code not in unknown:
-            unknown[league_code] = {
-                'first_seen_url': url,
-                'timestamp': datetime.now().isoformat(),
-                'suggested_name': None
-            }
-            with open(UNKNOWN_LEAGUES_FILE, 'w') as f:
-                json.dump(unknown, f, indent=2)
-            print(f"  [INFO] League code saved for later naming")
-        return None
 
 
 class ForebetScraper:
@@ -149,18 +39,11 @@ class ForebetScraper:
             # Check if match has been played and extract result
             result = self._extract_result_from_soup(soup)
             
-            # Extract league from URL (5-digit code)
-            league, league_code = self._extract_league_from_url(url)
-            
-            # Track unknown league codes (interactive if needed)
-            if league_code and league is None:
-                league = save_unknown_league(league_code, url)
-            
             match_data = {
                 'url': url,
                 'timestamp': time.time(),
                 'teams': self._extract_teams(soup),
-                'match_info': self._extract_match_info(soup, league),
+                'match_info': self._extract_match_info(soup),
                 'standings': self._extract_standings(soup),
                 'league_table': self._extract_league_table(soup),
                 'form': self._extract_form(soup),
@@ -183,40 +66,15 @@ class ForebetScraper:
                 'injuries': self._extract_injuries(soup),
                 'next_matches': self._extract_next_matches(soup),
                 'js_detailed_stats': self._extract_javascript_data(soup),
-                'actual_result': result,
+                'actual_result': result,  # None if not played, result dict if played
             }
             return match_data
-            
         except Exception as e:
             print(f"Error scraping match: {e}")
             import traceback
             traceback.print_exc()
             return None
-
-    # ------------------------------------------------------------------
-    # League extraction
-    # ------------------------------------------------------------------
-
-    def _extract_league_from_url(self, url: str) -> Tuple[Optional[str], Optional[str]]:
-        """Extract league name and code from URL.
-        
-        Returns:
-            Tuple of (league_name, league_code)
-        """
-        # URL format: https://www.forebet.com/en/football/matches/team-name-2315994
-        # The suffix is 7 digits, first 5 is the unique league code
-        match = re.search(r'-(\d+)$', url)
-        if match:
-            full_code = match.group(1)
-            if len(full_code) >= 5:
-                league_code = full_code[:5]
-                return LEAGUE_CODES.get(league_code), league_code
-        return None, None
-
-    # ------------------------------------------------------------------
-    # Extraction methods
-    # ------------------------------------------------------------------
-
+    
     def _extract_result_from_soup(self, soup: BeautifulSoup) -> Optional[Dict]:
         """Extract actual result from parsed HTML if match has been played."""
         result: Dict = {
@@ -257,26 +115,50 @@ class ForebetScraper:
                 result['result'] = 'X'
             return result
         
-        return None
+        return None  # Match not played yet
 
     def is_match_played(self, url: str) -> bool:
-        """Check if a match has been played."""
+        """Check if a match has been played (has FT indicator and/or date in past)."""
         try:
             response = requests.get(url, headers=self.headers, timeout=15)
             response.raise_for_status()
             soup = BeautifulSoup(response.content, 'html.parser')
             
+            # Check 1: Look for "FT" (Full Time) indicator
             page_text = soup.get_text()
             if 'FT' in page_text:
+                # Double check it's not in a future context
                 ft_pattern = re.search(r'(\d+)\s*-\s*(\d+)\s*FT', page_text)
                 if ft_pattern:
                     return True
             
+            # Check 2: Look for "Final" indicator
             if 'Final' in page_text:
                 final_pattern = re.search(r'(\d+)\s*-\s*(\d+)\s*Final', page_text, re.IGNORECASE)
                 if final_pattern:
                     return True
             
+            # Check 3: Look for date and check if it's in the past
+            date_elem = soup.find('span', class_='date')
+            if date_elem:
+                text = date_elem.get_text(strip=True)
+                d = re.search(r'(\d{2})/(\d{2})/(\d{4})', text)
+                if d:
+                    day, month, year = int(d.group(1)), int(d.group(2)), int(d.group(3))
+                    match_date = datetime(year, month, day)
+                    # If match date is today or in the past, it may have been played
+                    # (we still need score to confirm)
+                    if match_date <= datetime.now():
+                        # Check if there's a score displayed
+                        score_patterns = [
+                            r'(\d+)\s*-\s*(\d+)',  # Basic score pattern
+                            r'(\d+)\s*:\s*(\d+)',  # Alternative score pattern
+                        ]
+                        for pattern in score_patterns:
+                            if re.search(pattern, page_text):
+                                return True
+            
+            # Check 4: Look for score element (lscrsp class)
             score_elem = soup.find('span', class_='lscrsp')
             if score_elem:
                 text = score_elem.get_text(strip=True)
@@ -301,6 +183,7 @@ class ForebetScraper:
                 'over_under_2_5': None,
             }
 
+            # Forebet shows the score in the prediction row after the match
             score_elem = soup.find('span', class_='lscrsp')
             if score_elem:
                 text = score_elem.get_text(strip=True)
@@ -310,6 +193,7 @@ class ForebetScraper:
                     result['away_score'] = int(m.group(2))
 
             if result['home_score'] is None:
+                # Fallback: look for any score-like element
                 for elem in soup.find_all(['span', 'div'], class_=re.compile(r'score|result')):
                     text = elem.get_text(strip=True)
                     m = re.search(r'(\d+)\s*-\s*(\d+)', text)
@@ -327,12 +211,15 @@ class ForebetScraper:
                     result['result'] = '2'
                 else:
                     result['result'] = 'X'
-                return result
-            
-            return None
+
+            return result
         except Exception as e:
-            print(f"Error extracting actual result: {e}")
+            print(f"Error extracting result: {e}")
             return None
+
+    # ------------------------------------------------------------------
+    # Private extraction methods
+    # ------------------------------------------------------------------
 
     def _extract_teams(self, soup: BeautifulSoup) -> Dict:
         """Extract team names."""
@@ -381,9 +268,9 @@ class ForebetScraper:
             print(f"Error extracting teams: {e}")
         return teams
 
-    def _extract_match_info(self, soup: BeautifulSoup, league: str = None) -> Dict:
+    def _extract_match_info(self, soup: BeautifulSoup) -> Dict:
         """Extract match date, time, league, venue."""
-        info = {'date': None, 'time': None, 'league': league, 'venue': None}
+        info = {'date': None, 'time': None, 'league': None, 'venue': None}
         try:
             date_elem = soup.find('span', class_='date')
             if date_elem:
@@ -392,11 +279,10 @@ class ForebetScraper:
                 t = re.search(r'(\d{2}:\d{2})', text)
                 if d: info['date'] = d.group(1)
                 if t: info['time'] = t.group(1)
-                
-            venue_elem = soup.find('span', class_='venue')
-            if venue_elem:
-                info['venue'] = venue_elem.get_text(strip=True)
-                
+
+            league_elem = soup.find('span', class_='league_name')
+            if league_elem:
+                info['league'] = league_elem.get_text(strip=True)
         except Exception as e:
             print(f"Error extracting match info: {e}")
         return info
@@ -416,290 +302,561 @@ class ForebetScraper:
 
     def _extract_league_table(self, soup: BeautifulSoup) -> List[Dict]:
         """Extract the full league standings table."""
-        table = []
+        table: List[Dict] = []
         try:
+            # Find cells with class std_pos (position column)
             pos_cells = soup.find_all('td', class_='std_pos')
             for pc in pos_cells:
-                try:
-                    row = pc.find_parent('tr')
-                    cells = row.find_all('td')
-                    if len(cells) >= 8:
-                        team = cells[1].get_text(strip=True)
-                        table.append({
-                            'position': int(pc.get_text(strip=True)),
-                            'team': team,
-                            'played': int(cells[2].get_text(strip=True)),
-                            'won': int(cells[3].get_text(strip=True)),
-                            'drawn': int(cells[4].get_text(strip=True)),
-                            'lost': int(cells[5].get_text(strip=True)),
-                            'gf': int(cells[6].get_text(strip=True)),
-                            'ga': int(cells[7].get_text(strip=True)),
-                            'gd': int(cells[8].get_text(strip=True)) if len(cells) > 8 else int(cells[6].get_text(strip=True)) - int(cells[7].get_text(strip=True)),
-                            'points': int(cells[9].get_text(strip=True)) if len(cells) > 9 else 0,
-                        })
-                except (ValueError, IndexError):
-                    continue
+                row_cells = []
+                sibling = pc
+                while sibling:
+                    if hasattr(sibling, 'get_text'):
+                        row_cells.append(sibling.get_text(strip=True))
+                    sibling = sibling.find_next_sibling('td')
+                    if sibling and 'std_pos' in (sibling.get('class') or []):
+                        break
+                if len(row_cells) >= 9:
+                    entry = {
+                        'position': int(row_cells[0]),
+                        'team': row_cells[1],
+                        'points': int(row_cells[2]),
+                        'played': int(row_cells[3]),
+                        'won': int(row_cells[4]),
+                        'drawn': int(row_cells[5]),
+                        'lost': int(row_cells[6]),
+                        'gf': int(row_cells[7]),
+                        'ga': int(row_cells[8]),
+                        'gd': int(row_cells[9]) if len(row_cells) > 9 else None,
+                    }
+                    table.append(entry)
         except Exception as e:
             print(f"Error extracting league table: {e}")
         return table
 
     def _extract_form(self, soup: BeautifulSoup) -> Dict:
-        """Extract recent form for both teams (last 6 matches)."""
-        form = {'home': [], 'away': []}
+        form: Dict = {'home': [], 'away': [], 'home_summary': {}, 'away_summary': {}}
         try:
-            home_form = soup.find('div', class_='home')
-            if home_form:
-                form_elem = home_form.find('div', class_='form')
-                if form_elem:
-                    results = form_elem.find_all('span', class_='p1')
-                    form['home'] = [r.get_text(strip=True) for r in results[:6]]
-                    
-            away_form = soup.find('div', class_='away')
-            if away_form:
-                form_elem = away_form.find('div', class_='form')
-                if form_elem:
-                    results = form_elem.find_all('span', class_='p1')
-                    form['away'] = [r.get_text(strip=True) for r in results[:6]]
+            containers = soup.find_all('div', class_='prformcont')
+            if len(containers) >= 2:
+                form['home'] = list(containers[0].get_text(strip=True))
+                form['away'] = list(containers[1].get_text(strip=True))
+
+            # Extract W/D/L percentages from the page text
+            # Pattern: "Win N\nXX%\nDraw N\nXX%\nLost N\nXX%"
+            main_table = soup.find('table', class_='main')
+            if main_table:
+                full_text = main_table.get_text()
+                # Find all Win/Draw/Lost blocks
+                wdl_blocks = re.findall(
+                    r'Win\s+(\d+)\s+(\d+)%\s*Draw\s+(\d+)\s+(\d+)%\s*Lost\s+(\d+)\s+(\d+)%',
+                    full_text
+                )
+                if len(wdl_blocks) >= 1:
+                    form['home_summary'] = {
+                        'wins': int(wdl_blocks[0][0]),
+                        'win_pct': int(wdl_blocks[0][1]),
+                        'draws': int(wdl_blocks[0][2]),
+                        'draw_pct': int(wdl_blocks[0][3]),
+                        'losses': int(wdl_blocks[0][4]),
+                        'loss_pct': int(wdl_blocks[0][5]),
+                    }
+                if len(wdl_blocks) >= 2:
+                    form['away_summary'] = {
+                        'wins': int(wdl_blocks[1][0]),
+                        'win_pct': int(wdl_blocks[1][1]),
+                        'draws': int(wdl_blocks[1][2]),
+                        'draw_pct': int(wdl_blocks[1][3]),
+                        'losses': int(wdl_blocks[1][4]),
+                        'loss_pct': int(wdl_blocks[1][5]),
+                    }
         except Exception as e:
             print(f"Error extracting form: {e}")
         return form
 
+    def _parse_match_rows(self, text: str) -> List[Dict]:
+        """Parse match rows from a text block containing date/score/team patterns."""
+        matches = []
+        # Pattern: DD/MM YYYY  Team1 N - N (N - N) Team2 Competition
+        pattern = re.compile(
+            r'(\d{2}/\d{2})\s*(\d{4})\s+'
+            r'(.+?)\s*(\d+)\s*-\s*(\d+)\s*'
+            r'\((\d+)\s*-\s*(\d+)\)\s*'
+            r'(.+?)(?:\s+(It1|It[A-Z]|ItC|UCL|UEL|UECL|EPL|LaL|BuL|Li1|ErD|LiP|[A-Z][a-z]+\d?))?$',
+            re.MULTILINE
+        )
+        for m in pattern.finditer(text):
+            matches.append({
+                'date': f"{m.group(1)}/{m.group(2)}",
+                'home_team': m.group(3).strip(),
+                'home_score': int(m.group(4)),
+                'away_score': int(m.group(5)),
+                'ht_home': int(m.group(6)),
+                'ht_away': int(m.group(7)),
+                'away_team': m.group(8).strip(),
+                'competition': m.group(9) if m.group(9) else '',
+            })
+        return matches
+
     def _extract_last_6_matches(self, soup: BeautifulSoup) -> Dict:
         """Extract last 6 matches for both teams."""
-        l6 = {'home': [], 'away': []}
+        data: Dict = {'home': [], 'away': []}
         try:
-            tc = soup.find('div', class_='last-matches')
-            if tc:
-                home_matches = tc.find('div', class_='home')
-                away_matches = tc.find('div', class_='away')
-                
-                if home_matches:
-                    for match in home_matches.find_all('tr')[1:7]:
-                        cells = match.find_all('td')
-                        if len(cells) >= 4:
-                            l6['home'].append({
-                                'date': cells[0].get_text(strip=True),
-                                'home_team': cells[1].get_text(strip=True),
-                                'away_team': cells[2].get_text(strip=True),
-                                'home_score': int(cells[3].get_text(strip=True)),
-                                'away_score': int(cells[4].get_text(strip=True)) if len(cells) > 4 else 0,
-                                'competition': cells[5].get_text(strip=True) if len(cells) > 5 else '',
-                            })
-                            
-                if away_matches:
-                    for match in away_matches.find_all('tr')[1:7]:
-                        cells = match.find_all('td')
-                        if len(cells) >= 4:
-                            l6['away'].append({
-                                'date': cells[0].get_text(strip=True),
-                                'home_team': cells[1].get_text(strip=True),
-                                'away_team': cells[2].get_text(strip=True),
-                                'home_score': int(cells[3].get_text(strip=True)),
-                                'away_score': int(cells[4].get_text(strip=True)) if len(cells) > 4 else 0,
-                                'competition': cells[5].get_text(strip=True) if len(cells) > 5 else '',
-                            })
+            main_table = soup.find('table', class_='main')
+            if not main_table:
+                return data
+            full_text = main_table.get_text('\n')
+
+            # Split around "Last 6 matches" and "home matches"
+            l6_match = re.search(r'Last\s+6\s+matches', full_text)
+            hm_match = re.search(r'home\s+matches', full_text)
+
+            if l6_match:
+                start = l6_match.end()
+                end = hm_match.start() if hm_match else start + 3000
+                l6_text = full_text[start:end]
+
+                # Split into home and away sections using "View all" as separator
+                parts = re.split(r'View\s+all', l6_text)
+                if len(parts) >= 1:
+                    data['home'] = self._parse_match_rows(parts[0])
+                if len(parts) >= 2:
+                    data['away'] = self._parse_match_rows(parts[1])
         except Exception as e:
             print(f"Error extracting last 6 matches: {e}")
-        return l6
+        return data
 
-    def _extract_home_away_matches(self, soup: BeautifulSoup, team_type: str) -> List[Dict]:
-        """Extract home or away matches for a team."""
-        matches = []
+    def _extract_home_away_matches(self, soup: BeautifulSoup, which: str) -> List[Dict]:
+        """Extract home matches (for home team) or away matches (for away team)."""
+        matches: List[Dict] = []
         try:
-            tc = soup.find('div', class_=f'{team_type}-matches')
-            if tc:
-                for row in tc.find_all('tr')[1:7]:
-                    cells = row.find_all('td')
-                    if len(cells) >= 4:
-                        match = {
-                            'date': cells[0].get_text(strip=True),
-                            'home_team': cells[1].get_text(strip=True),
-                            'away_team': cells[2].get_text(strip=True),
-                            'home_score': int(cells[3].get_text(strip=True)),
-                            'away_score': int(cells[4].get_text(strip=True)) if len(cells) > 4 else 0,
-                            'competition': cells[5].get_text(strip=True) if len(cells) > 5 else '',
-                        }
-                        matches.append(match)
+            main_table = soup.find('table', class_='main')
+            if not main_table:
+                return matches
+            full_text = main_table.get_text('\n')
+
+            if which == 'home':
+                marker = re.search(r'home\s+matches', full_text)
+                end_marker = re.search(r'away\s+matches', full_text)
+            else:
+                marker = re.search(r'away\s+matches', full_text)
+                end_marker = re.search(r'Overall|Home/Away|Full\s+time', full_text)
+
+            if marker:
+                start = marker.end()
+                end = end_marker.start() if end_marker else start + 3000
+                section = full_text[start:end]
+                parts = re.split(r'View\s+all', section)
+                if parts:
+                    matches = self._parse_match_rows(parts[0])
         except Exception as e:
-            print(f"Error extracting {team_type} matches: {e}")
+            print(f"Error extracting {which} matches: {e}")
         return matches
 
     def _extract_head_to_head(self, soup: BeautifulSoup) -> Dict:
-        """Extract head-to-head matches."""
-        h2h = []
+        """Extract head-to-head record."""
+        h2h: Dict = {'matches': [], 'summary': {}}
         try:
-            tc = soup.find('div', class_='h2h-matches')
-            if tc:
-                for row in tc.find_all('tr')[1:11]:
-                    cells = row.find_all('td')
-                    if len(cells) >= 4:
-                        match = {
-                            'date': cells[0].get_text(strip=True),
-                            'home_team': cells[1].get_text(strip=True),
-                            'away_team': cells[2].get_text(strip=True),
-                            'home_score': int(cells[3].get_text(strip=True)),
-                            'away_score': int(cells[4].get_text(strip=True)) if len(cells) > 4 else 0,
-                            'competition': cells[5].get_text(strip=True) if len(cells) > 5 else '',
-                        }
-                        h2h.append(match)
+            # Find the H2H section
+            main_table = soup.find('table', class_='main')
+            if not main_table:
+                return h2h
+            full_text = main_table.get_text('\n')
+
+            h2h_match = re.search(r'Head\s+to\s+head', full_text)
+            l6_match = re.search(r'Last\s+6\s+matches', full_text)
+
+            if h2h_match:
+                start = h2h_match.end()
+                end = l6_match.start() if l6_match else start + 3000
+                h2h_text = full_text[start:end]
+                h2h['matches'] = self._parse_match_rows(h2h_text)
+
+                # Summary: "TeamA N\nXX%\nDraw N\nXX%\nTeamB N\nXX%"
+                wdl = re.findall(
+                    r'(\w[\w\s]*?)\s+(\d+)\s+(\d+)%\s*Draw\s+(\d+)\s+(\d+)%\s*(\w[\w\s]*?)\s+(\d+)\s+(\d+)%',
+                    h2h_text
+                )
+                if wdl:
+                    h2h['summary'] = {
+                        'home_wins': int(wdl[0][1]),
+                        'home_win_pct': int(wdl[0][2]),
+                        'draws': int(wdl[0][3]),
+                        'draw_pct': int(wdl[0][4]),
+                        'away_wins': int(wdl[0][6]),
+                        'away_win_pct': int(wdl[0][7]),
+                    }
         except Exception as e:
-            print(f"Error extracting H2H matches: {e}")
-        return {'matches': h2h}
+            print(f"Error extracting H2H: {e}")
+        return h2h
 
     def _extract_odds(self, soup: BeautifulSoup) -> Dict:
-        """Extract betting odds."""
-        odds = {}
+        odds: Dict = {'1': None, 'X': None, '2': None, 'over': None, 'under': None}
         try:
-            tc = soup.find('div', class_='odds')
-            if tc:
-                home_odds = tc.find('div', class_='home')
-                draw_odds = tc.find('div', class_='draw')
-                away_odds = tc.find('div', class_='away')
-                
-                if home_odds:
-                    odds['home'] = float(home_odds.get_text(strip=True))
-                if draw_odds:
-                    odds['draw'] = float(draw_odds.get_text(strip=True))
-                if away_odds:
-                    odds['away'] = float(away_odds.get_text(strip=True))
-                    
-                ou = soup.find('div', class_='ou')
-                if ou:
-                    over_elem = ou.find('div', class_='over')
-                    under_elem = ou.find('div', class_='under')
-                    if over_elem:
-                        odds['over'] = float(over_elem.get_text(strip=True))
-                    if under_elem:
-                        odds['under'] = float(under_elem.get_text(strip=True))
+            elems = soup.find_all(class_='haodd')
+            for elem in elems:
+                # Get text from each span individually (haodd contains multiple spans)
+                spans = elem.find_all('span')
+                nums = []
+                for span in spans:
+                    txt = span.get_text(strip=True)
+                    if txt.replace('.', '').isdigit():
+                        nums.append(float(txt))
+                if len(nums) >= 3:
+                    odds['1'], odds['X'], odds['2'] = nums[0], nums[1], nums[2]
+                elif len(nums) == 2:
+                    odds['over'], odds['under'] = nums[0], nums[1]
+                break
+
+            # Fallback
+            if odds['1'] is None:
+                for elem in soup.find_all(class_='odd'):
+                    txt = elem.get_text(strip=True)
+                    m = re.search(r'([\d.]+)', txt)
+                    if m and odds['1'] is None:
+                        odds['1'] = float(m.group(1))
+                    elif odds['X'] is None:
+                        odds['X'] = float(m.group(1))
+                    elif odds['2'] is None:
+                        odds['2'] = float(m.group(1))
+                        break
         except Exception as e:
             print(f"Error extracting odds: {e}")
         return odds
 
     def _extract_predictions(self, soup: BeautifulSoup) -> Dict:
-        """Extract Forebet's predictions."""
-        pred = {'home': 0, 'draw': 0, 'away': 0}
+        preds: Dict = {'result': None, 'probability': None, 'over_under': None}
         try:
-            tc = soup.find('div', class_='prediction')
-            if tc:
-                probs = tc.find_all('div', class_='proc')
-                if len(probs) >= 3:
-                    pred['home'] = float(probs[0].get_text(strip=True).replace('%', ''))
-                    pred['draw'] = float(probs[1].get_text(strip=True).replace('%', ''))
-                    pred['away'] = float(probs[2].get_text(strip=True).replace('%', ''))
+            # Forebet's predicted outcome
+            for elem in soup.find_all(['span', 'div'], class_=re.compile(r'pred|probability')):
+                txt = elem.get_text(strip=True)
+                if txt in ['1', 'X', '2']:
+                    preds['result'] = txt
+                prob = re.search(r'(\d+)%', txt)
+                if prob:
+                    preds['probability'] = int(prob.group(1))
         except Exception as e:
             print(f"Error extracting predictions: {e}")
-        return pred
+        return preds
 
     def _extract_goals_stats(self, soup: BeautifulSoup) -> Dict:
-        """Extract goals statistics."""
-        stats = {'home': {}, 'away': {}}
+        gs: Dict = {'home': {}, 'away': {}}
         try:
-            gs = soup.find('div', class_='goals')
-            if gs:
-                home_elem = gs.find('div', class_='home')
-                away_elem = gs.find('div', class_='away')
-                
-                if home_elem:
-                    stats['home']['scored'] = home_elem.find('span', class_='for')
-                    stats['home']['conceded'] = home_elem.find('span', class_='again')
+            # Use JavaScript data which has scr (scored), cnd (conceded), and pl (played)
+            js = self._extract_javascript_data(soup)
+            
+            for side, key in [('home', 'home_stats'), ('away', 'away_stats')]:
+                if key in js:
+                    d = js[key]
+                    scored = d.get('scr', [0])[0] if isinstance(d.get('scr'), list) else d.get('scr', 0)
+                    conceded = d.get('cnd', [0])[0] if isinstance(d.get('cnd'), list) else d.get('cnd', 0)
+                    games = d.get('pl', [28 if side == 'home' else 36, 0, 0])[0] if isinstance(d.get('pl'), list) else (28 if side == 'home' else 36)
                     
-                if away_elem:
-                    stats['away']['scored'] = away_elem.find('span', class_='for')
-                    stats['away']['conceded'] = away_elem.find('span', class_='again')
+                    gs[side]['scored'] = scored
+                    gs[side]['conceded'] = conceded
+                    gs[side]['scored_avg'] = scored / games if games else None
+                    gs[side]['conceded_avg'] = conceded / games if games else None
+                    gs[side]['games'] = games
                     
         except Exception as e:
             print(f"Error extracting goals stats: {e}")
-        return stats
+        return gs
 
     def _extract_over_under_stats(self, soup: BeautifulSoup) -> Dict:
-        """Extract Over/Under statistics."""
-        return {}
+        ou: Dict = {'home': {}, 'away': {}}
+        try:
+            txt = soup.get_text()
+            # O/U patterns
+            for side, pattern in [('home', r'Over\s*2\.5.*?(\d+)%\s*Under\s*2\.5.*?(\d+)%'),
+                                  ('away', r'Under\s*2\.5.*?(\d+)%\s*Over\s*2\.5.*?(\d+)%')]:
+                m = re.search(pattern, txt, re.IGNORECASE | re.DOTALL)
+                if m:
+                    ou[side]['over_pct'] = int(m.group(2)) if side == 'home' else int(m.group(2))
+                    ou[side]['under_pct'] = int(m.group(1)) if side == 'home' else int(m.group(1))
+        except Exception as e:
+            print(f"Error extracting O/U stats: {e}")
+        return ou
 
     def _extract_bts_stats(self, soup: BeautifulSoup) -> Dict:
-        """Extract Both Teams To Score statistics."""
-        return {}
+        bts: Dict = {'home': {}, 'away': {}}
+        try:
+            txt = soup.get_text()
+            # Both to score patterns
+            for side, pattern in [('home', r'Both.*?score.*?Yes.*?(\d+)%.*?No.*?(\d+)%'),
+                                  ('away', r'Both.*?score.*?No.*?(\d+)%.*?Yes.*?(\d+)%')]:
+                m = re.search(pattern, txt, re.IGNORECASE | re.DOTALL)
+                if m:
+                    bts[side]['yes_pct'] = int(m.group(2)) if side == 'home' else int(m.group(2))
+                    bts[side]['no_pct'] = int(m.group(1)) if side == 'home' else int(m.group(1))
+        except Exception as e:
+            print(f"Error extracting BTS stats: {e}")
+        return bts
 
     def _extract_shots_stats(self, soup: BeautifulSoup) -> Dict:
-        """Extract shots statistics."""
-        return {}
+        shots: Dict = {'home': {}, 'away': {}}
+        try:
+            js = self._extract_javascript_data(soup)
+            for side, key in [('home', 'home_stats'), ('away', 'away_stats')]:
+                if key in js:
+                    d = js[key]
+                    shots[side] = {
+                        'total': d.get('shots_total'),
+                        'on_target': d.get('shots_on_target'),
+                        'off_target': d.get('shots_off_target'),
+                        'inside_box': d.get('shots_insidebox'),
+                        'outside_box': d.get('shots_outsidebox'),
+                        'blocked': d.get('shots_blocked'),
+                    }
+        except Exception as e:
+            print(f"Error extracting shots: {e}")
+        return shots
 
     def _extract_passes_stats(self, soup: BeautifulSoup) -> Dict:
-        """Extract passes statistics."""
-        return {}
+        passes: Dict = {'home': {}, 'away': {}}
+        try:
+            js = self._extract_javascript_data(soup)
+            for side, key in [('home', 'home_stats'), ('away', 'away_stats')]:
+                if key in js:
+                    d = js[key]
+                    passes[side] = {
+                        'total': d.get('passes_total'),
+                        'accurate': d.get('passes_accurate'),
+                        'ball_poss': d.get('ball_poss'),
+                    }
+        except Exception as e:
+            print(f"Error extracting passes: {e}")
+        return passes
 
     def _extract_attacks_stats(self, soup: BeautifulSoup) -> Dict:
-        """Extract attacks statistics."""
-        return {}
+        attacks: Dict = {'home': {}, 'away': {}}
+        try:
+            js = self._extract_javascript_data(soup)
+            for side, key in [('home', 'home_stats'), ('away', 'away_stats')]:
+                if key in js:
+                    d = js[key]
+                    attacks[side] = {
+                        'total': d.get('attacks'),
+                        'dangerous': d.get('dan_attacks'),
+                    }
+        except Exception as e:
+            print(f"Error extracting attacks: {e}")
+        return attacks
 
     def _extract_discipline(self, soup: BeautifulSoup) -> Dict:
-        """Extract discipline statistics."""
-        return {}
+        disc: Dict = {'home': {}, 'away': {}}
+        try:
+            js = self._extract_javascript_data(soup)
+            for side, key in [('home', 'home_stats'), ('away', 'away_stats')]:
+                if key in js:
+                    d = js[key]
+                    disc[side] = {
+                        'fouls': d.get('fouls'),
+                        'yellow_cards': d.get('yellowcards'),
+                        'red_cards': d.get('redcards'),
+                    }
+        except Exception as e:
+            print(f"Error extracting discipline: {e}")
+        return disc
 
     def _extract_other_stats(self, soup: BeautifulSoup) -> Dict:
-        """Extract other statistics."""
-        return {}
+        other: Dict = {'home': {}, 'away': {}}
+        try:
+            js = self._extract_javascript_data(soup)
+            for side, key in [('home', 'home_stats'), ('away', 'away_stats')]:
+                if key in js:
+                    d = js[key]
+                    other[side] = {
+                        'corners': d.get('total_corners'),
+                        'throw_ins': d.get('throw_in'),
+                        'goal_kicks': d.get('goal_kick'),
+                        'offsides': d.get('offsides'),
+                        'saves': d.get('saves'),
+                    }
+        except Exception as e:
+            print(f"Error extracting other stats: {e}")
+        return other
 
     def _extract_trends(self, soup: BeautifulSoup) -> List[Dict]:
-        """Extract trends."""
-        trends = []
+        trends: List[Dict] = []
         try:
-            tc = soup.find('div', class_='trends')
-            if tc:
-                for trend in tc.find_all('tr')[1:]:
-                    cells = trend.find_all('td')
-                    if len(cells) >= 2:
-                        trends.append({
-                            'description': cells[0].get_text(strip=True),
-                            'percentage': cells[1].get_text(strip=True),
-                            'record': cells[2].get_text(strip=True) if len(cells) > 2 else '',
-                        })
+            trend_elems = soup.find_all('div', class_=re.compile(r'trend|statbox'))
+            for elem in trend_elems:
+                text = elem.get_text(strip=True)
+                m = re.search(r'([A-Za-z\s]+)\s*(\d+)/(\d+)\s*=\s*(\d+)%', text)
+                if m:
+                    trends.append({
+                        'description': m.group(1).strip(),
+                        'count': int(m.group(2)),
+                        'total': int(m.group(3)),
+                        'percentage': int(m.group(4)),
+                    })
         except Exception as e:
             print(f"Error extracting trends: {e}")
         return trends
 
     def _extract_match_intro(self, soup: BeautifulSoup) -> str:
-        """Extract match introduction."""
+        intro = ''
         try:
-            intro = soup.find('div', class_='intro')
-            if intro:
-                return intro.get_text(strip=True)
+            intro_elem = soup.find('p', class_='match_intro')
+            if intro_elem:
+                intro = intro_elem.get_text(strip=True)
+            else:
+                # Try any paragraph containing match preview
+                for p in soup.find_all('p'):
+                    txt = p.get_text(strip=True)
+                    if len(txt) > 50 and any(kw in txt for kw in ['will face', 'host', 'upcoming', 'preview']):
+                        intro = txt
+                        break
         except Exception as e:
             print(f"Error extracting match intro: {e}")
-        return ""
+        return intro
 
-    def _extract_injuries(self, soup: BeautifulSoup) -> List[Dict]:
-        """Extract injury information."""
-        return []
+    def _extract_injuries(self, soup: BeautifulSoup) -> Dict:
+        inj: Dict = {'home': [], 'away': []}
+        try:
+            # Look for injury/suspension indicators
+            for elem in soup.find_all(['span', 'div'], class_=re.compile(r'injury|suspension|absent')):
+                text = elem.get_text(strip=True)
+                # Try to identify team
+                if any(name in text for name in ['out', 'injured', 'suspended']):
+                    inj['home'].append(text) if 'home' not in inj else inj['away'].append(text)
+        except Exception as e:
+            print(f"Error extracting injuries: {e}")
+        return inj
 
-    def _extract_next_matches(self, soup: BeautifulSoup) -> List[Dict]:
-        """Extract next matches for teams."""
-        return []
+    def _extract_next_matches(self, soup: BeautifulSoup) -> Dict:
+        nxt: Dict = {'home': [], 'away': []}
+        try:
+            main_table = soup.find('table', class_='main')
+            if not main_table:
+                return nxt
+            txt = main_table.get_text('\n')
+            nm = re.search(r'next\s+matches', txt)
+            if nm:
+                section = txt[nm.end():]
+                parts = re.split(r'View\s+all', section)
+                for i, part in enumerate(parts[:2]):
+                    side = 'home' if i == 0 else 'away'
+                    lines = re.findall(r'(\d{2}/\d{2})\s+(\d{4})\s+\w+\s+(.+?)(?:\d+\s*$|\n)', part, re.MULTILINE)
+                    for line in lines:
+                        nxt[side].append({
+                            'date': f"{line[0]}/{line[1]}",
+                            'match': line[2].strip(),
+                        })
+        except Exception as e:
+            print(f"Error extracting next matches: {e}")
+        return nxt
 
     def _extract_javascript_data(self, soup: BeautifulSoup) -> Dict:
-        """Extract data from JavaScript variables."""
-        stats = {'home_stats': {}, 'away_stats': {}}
+        """Extract detailed statistics from the get_ovd JavaScript function."""
+        js_data: Dict = {}
         try:
-            for script in soup.find_all('script'):
-                text = script.get_text()
-                # Extract various stats from JavaScript
-                patterns = {
-                    'shots_total': r'"shots_total"\s*:\s*\[([^\]]+)\]',
-                    'shots_on_target': r'"shots_on_target"\s*:\s*\[([^\]]+)\]',
-                    'ball_poss': r'"ball_poss"\s*:\s*\[([^\]]+)\]',
-                    'passes_accurate': r'"passes_accurate"\s*:\s*\[([^\]]+)\]',
-                    'passes_total': r'"passes_total"\s*:\s*\[([^\]]+)\]',
-                    'fouls': r'"fouls"\s*:\s*\[([^\]]+)\]',
-                    'yellowcards': r'"yellowcards"\s*:\s*\[([^\]]+)\]',
-                    'dan_attacks': r'"dan_attacks"\s*:\s*\[([^\]]+)\]',
-                }
-                
-                for key, pattern in patterns.items():
-                    match = re.search(pattern, text)
-                    if match:
-                        values = match.group(1).split(',')
-                        stats['home_stats'][key] = [float(v.strip()) for v in values if v.strip()]
-                        # Look for away stats
-                        away_match = re.search(text.replace(match.group(0), ''), pattern)
+            if hasattr(self, '_js_cache'):
+                return self._js_cache
+
+            # First, try to extract from JavaScript (this is the primary source)
+            scripts = soup.find_all('script')
+            for script in scripts:
+                if script.string and 'get_ovd' in script.string:
+                    # Extract all return statements with data objects
+                    returns = re.findall(r'return\s+(\{.+?\})\s*;', script.string, re.DOTALL)
+                    for i, ret in enumerate(returns):
+                        try:
+                            cleaned = ret.replace("'", '"').replace('\n', ' ')
+                            data = json.loads(cleaned)
+                            key = 'home_stats' if i == 0 else 'away_stats'
+                            if 'all' in data and 'ft' in data['all']:
+                                js_data[key] = data['all']['ft']
+                            if 'all' in data and 'ht1' in data['all']:
+                                js_data[key + '_ht'] = data['all']['ht1']
+                        except (json.JSONDecodeError, KeyError):
+                            pass
+                    break  # Found the main get_ovd function, no need to check other scripts
+            
+            # If JS extraction failed or incomplete, use HTML extraction as fallback
+            if not js_data or len(js_data) < 2:
+                js_data = self._extract_stats_from_html(soup)
+            
+            self._js_cache = js_data
         except Exception as e:
             print(f"Error extracting JS data: {e}")
+            # Fallback to HTML extraction
+            js_data = self._extract_stats_from_html(soup)
+        return js_data
+
+    def _extract_stats_from_html(self, soup: BeautifulSoup) -> Dict:
+        """Extract statistics directly from HTML when JavaScript parsing fails."""
+        stats: Dict = {'home_stats': {}, 'away_stats': {}}
+        try:
+            # Find all stat containers
+            stat_containers = soup.find_all(['div', 'td', 'span'], 
+                class_=re.compile(r'stat|stats|value|data', re.I))
+            
+            # Extract shots data
+            for container in stat_containers:
+                text = container.get_text(' ', strip=True)
+                # Look for numeric patterns with labels
+                total_shots = re.search(r'Total\s+shots?\s+(\d+)', text)
+                if total_shots:
+                    if 'home_stats' not in stats or 'shots_total' not in stats['home_stats']:
+                        stats['home_stats']['shots_total'] = int(total_shots.group(1))
+                    else:
+                        stats['away_stats']['shots_total'] = int(total_shots.group(1))
+            
+            # Extract from tables with class 'stat'
+            stat_tables = soup.find_all('table', class_='stat')
+            for table in stat_tables:
+                rows = table.find_all('tr')
+                for row in rows:
+                    cells = row.find_all(['td', 'th'])
+                    if len(cells) >= 2:
+                        label = cells[0].get_text(strip=True).lower()
+                        home_val = cells[1].get_text(strip=True)
+                        away_val = cells[2].get_text(strip=True) if len(cells) > 2 else None
+                        
+                        # Map common stat names
+                        stat_map = {
+                            'shots': 'shots_total',
+                            'on target': 'shots_on_target',
+                            'off target': 'shots_off_target',
+                            'blocked': 'shots_blocked',
+                            'inside box': 'shots_insidebox',
+                            'outside box': 'shots_outsidebox',
+                            'passes': 'passes_total',
+                            'accurate passes': 'passes_accurate',
+                            'possession': 'ball_poss',
+                            'attacks': 'attacks',
+                            'dangerous attacks': 'dan_attacks',
+                            'fouls': 'fouls',
+                            'yellow cards': 'yellowcards',
+                            'red cards': 'redcards',
+                        }
+                        
+                        for pattern, key in stat_map.items():
+                            if pattern in label:
+                                try:
+                                    val = re.search(r'([\d.]+)', home_val)
+                                    if val:
+                                        stats['home_stats'][key] = float(val.group(1))
+                                    if away_val:
+                                        val = re.search(r'([\d.]+)', away_val)
+                                        if val:
+                                            stats['away_stats'][key] = float(val.group(1))
+                                except ValueError:
+                                    pass
+        except Exception as e:
+            print(f"Error extracting stats from HTML: {e}")
+        
         return stats
+
+
+if __name__ == "__main__":
+    scraper = ForebetScraper()
+    test_url = "https://www.forebet.com/en/football/matches/juventus-lazio-2344437"
+    print("Testing Football Scraper...")
+    print("=" * 60)
+    data = scraper.scrape_match(test_url)
+    if data:
+        print("\nExtracted Data:")
+        print(json.dumps(data, indent=2, default=str))
+    else:
+        print("Failed to scrape data")

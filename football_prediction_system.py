@@ -318,9 +318,6 @@ class FootballPredictionSystem:
         import traceback
         trace_id = os.urandom(4).hex()
         call_id = id(result)
-        print(f"DEBUG: [{trace_id}] display_prediction called (result_id={call_id})", file=sys.stderr)
-        print(f"DEBUG: [{trace_id}] result keys = {list(result.keys())}", file=sys.stderr)
-        print(f"DEBUG: [{trace_id}] call stack:\n{''.join(traceback.format_stack()[-5:-1])}", file=sys.stderr)
         
         md = result['match_data']
         pred = result['prediction']
@@ -401,11 +398,11 @@ class FootballPredictionSystem:
                 opp_pos = _get_opponent_position(opp, league_table)
                 opp_pos_str = f"#{opp_pos}" if opp_pos else "N/A"
                 venue = _get_venue_icon(is_home_team)
-                result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), is_home_team)
+                match_result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), is_home_team)
                 result_icon = _get_result_icon(form.get('home', ['?'])[i] if i < len(form.get('home', [])) else '?', is_home_team)
                 comp = m.get('competition', '')
                 vs_at = "vs" if is_home_team else "@"
-                print(f"  {i+1}. {result_icon} {venue} {result} {vs_at} {opp} ({opp_pos_str}) {C.DIM}{comp}{C.RESET}")
+                print(f"  {i+1}. {result_icon} {venue} {match_result} {vs_at} {opp} ({opp_pos_str}) {C.DIM}{comp}{C.RESET}")
             
             # Away team last 6 (mix of home and away matches)
             away_pos = feats.get('away_position', '?')
@@ -425,11 +422,11 @@ class FootballPredictionSystem:
                 opp_pos = _get_opponent_position(opp, league_table)
                 opp_pos_str = f"#{opp_pos}" if opp_pos else "N/A"
                 venue = _get_venue_icon(is_home_team)
-                result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), is_home_team)
+                match_result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), is_home_team)
                 result_icon = _get_result_icon(form.get('away', ['?'])[i] if i < len(form.get('away', [])) else '?', is_home_team)
                 comp = m.get('competition', '')
                 vs_at = "vs" if is_home_team else "@"
-                print(f"  {i+1}. {result_icon} {venue} {result} {vs_at} {opp} ({opp_pos_str}) {C.DIM}{comp}{C.RESET}")
+                print(f"  {i+1}. {result_icon} {venue} {match_result} {vs_at} {opp} ({opp_pos_str}) {C.DIM}{comp}{C.RESET}")
 
         # ── Home / Away Performance with Positions ──
         hm = md.get('home_matches', [])
@@ -450,9 +447,9 @@ class FootballPredictionSystem:
                     opp = m.get('away_team', 'Unknown')
                     opp_pos = _get_opponent_position(opp, league_table)
                     opp_pos_str = f"#{opp_pos}" if opp_pos else "N/A"
-                    result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), True)
+                    match_result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), True)
                     ht = f"({m.get('ht_home', '?')}-{m.get('ht_away', '?')})"
-                    print(f"    {m['date']}  {result} vs {opp} ({opp_pos_str}) {C.DIM}{ht}{C.RESET}")
+                    print(f"    {m['date']}  {match_result} vs {opp} ({opp_pos_str}) {C.DIM}{ht}{C.RESET}")
             
             if am:
                 awr = feats.get('away_away_win_rate', 0)
@@ -464,9 +461,9 @@ class FootballPredictionSystem:
                     opp = m.get('home_team', 'Unknown')
                     opp_pos = _get_opponent_position(opp, league_table)
                     opp_pos_str = f"#{opp_pos}" if opp_pos else "N/A"
-                    result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), False)
+                    match_result = _format_match_result(m.get('home_score', 0), m.get('away_score', 0), False)
                     ht = f"({m.get('ht_home', '?')}-{m.get('ht_away', '?')})"
-                    print(f"    {m['date']}  {result} @ {opp} ({opp_pos_str}) {C.DIM}{ht}{C.RESET}")
+                    print(f"    {m['date']}  {match_result} @ {opp} ({opp_pos_str}) {C.DIM}{ht}{C.RESET}")
 
         # ── Goals Statistics ──
         gs = md.get('goals_stats', {})
@@ -654,18 +651,13 @@ class FootballPredictionSystem:
         import sys
         ml_pred_debug = repr(ml_pred)
         w_pred_debug = repr(w_pred)
-        print(f"DEBUG: After assignment: ml_pred={ml_pred_debug}", file=sys.stderr)
-        print(f"DEBUG: After assignment: result_ml_prediction={result.get('ml_prediction')}", file=sys.stderr)
         
         # DEBUG: Print the values we're about to use
         import sys
-        print(f"DEBUG: ml_pred={ml_pred}", file=sys.stderr)
-        print(f"DEBUG: w_pred={w_pred}", file=sys.stderr)
         
         for label, key, col in [('1 (Home)', '1', C.CYAN), ('X (Draw)', 'X', C.YELLOW), ('2 (Away)', '2', C.MAGENTA)]:
             ml_pct = ml_pred.get('probabilities', {}).get(key, 0) * 100
             w_pct = w_pred.get('probabilities', {}).get(key, 0) * 100
-            print(f"DEBUG: key={key}, ml_pct={ml_pct}, w_pct={w_pct}", file=sys.stderr)
             pct = rp['probabilities'].get(key, 0) * 100
             ml_bar = _bar(ml_pct)
             w_bar = _bar(w_pct)
