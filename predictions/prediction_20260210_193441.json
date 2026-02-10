@@ -1,0 +1,241 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/stratford-town-halesowen-town-2343153",
+  "timestamp": "2026-02-10T19:34:40.973111",
+  "features": {
+    "home_position": 9,
+    "away_position": 6,
+    "position_diff": 3,
+    "away_points": 45,
+    "home_points": 41,
+    "home_form_points": 12,
+    "away_form_points": 12,
+    "home_recent_form": 3,
+    "away_recent_form": 6,
+    "home_wins_l6": 4,
+    "home_draws_l6": 0,
+    "home_losses_l6": 2,
+    "away_wins_l6": 4,
+    "away_draws_l6": 0,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.4666666666666666,
+    "home_conceded_avg": 1.5,
+    "away_scored_avg": 1.911764705882353,
+    "away_conceded_avg": 1.3529411764705883,
+    "expected_total_goals": 3.115686274509804,
+    "home_home_win_rate": 57.14285714285714,
+    "home_home_goals_avg": 2.0,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.375,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 3.466666666666667,
+    "away_shots_avg": 4.647058823529412,
+    "home_shots_on_target_pct": 39.42307692307692,
+    "away_shots_on_target_pct": 48.10126582278481,
+    "home_dangerous_attacks_avg": 24.433333333333334,
+    "away_dangerous_attacks_avg": 19.264705882352942,
+    "home_possession": 48.06,
+    "away_possession": 49.85,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 4.766666666666667,
+    "away_fouls_avg": 3.323529411764706,
+    "home_yellow_avg": 0.6333333333333333,
+    "away_yellow_avg": 0.6176470588235294,
+    "odds_home": 4.0,
+    "odds_draw": 3.7,
+    "odds_away": 1.7,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 42
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1916,
+        "2": 0.4169,
+        "X": 0.3915
+      },
+      "computed_odds": {
+        "1": 5.22,
+        "2": 2.4,
+        "X": 2.55
+      },
+      "confidence": 0.4169
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.7639,
+        "Under": 0.2361
+      },
+      "computed_odds": {
+        "Over": 1.31,
+        "Under": 4.24
+      },
+      "confidence": 0.7639
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1916,
+        "2": 0.4169,
+        "X": 0.3915
+      },
+      "computed_odds": {
+        "1": 5.22,
+        "2": 2.4,
+        "X": 2.55
+      },
+      "confidence": 0.4169
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.7639,
+        "Under": 0.2361
+      },
+      "computed_odds": {
+        "Over": 1.31,
+        "Under": 4.24
+      },
+      "confidence": 0.7639
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4015,
+        "X": 0.2092,
+        "2": 0.3892
+      },
+      "computed_odds": {
+        "1": 2.49,
+        "X": 4.78,
+        "2": 2.57
+      },
+      "confidence": 0.4015
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.58,
+        "Under": 0.42
+      },
+      "computed_odds": {
+        "Over": 1.72,
+        "Under": 2.38
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5789473684210527,
+        "away": 0.736842105263158,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.22552886339189673,
+        "away": 0.5306561491574041,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6666666666666666,
+        "away": 0.6666666666666666,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 1.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.49166666666666664,
+        "away": 0.6397058823529411,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.5,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.28836,
+        "away": 0.2991,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 3.115686274509804
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 10.0
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 4.6
+        },
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 3.2
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 2.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.12,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.38,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": true,
+    "ml_result": "2",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\ud83d\udd25 Away team in excellent form (4 wins in last 6)",
+      "\u26bd High-scoring match expected (avg 3.1 goals)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.7,
+        "fair": 2.55,
+        "value_pct": 45.1
+      }
+    ],
+    "confidence": "HIGH"
+  }
+}

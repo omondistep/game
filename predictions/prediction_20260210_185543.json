@@ -1,0 +1,240 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/cimarrones-sonora-tritones-vallarta-2354347",
+  "timestamp": "2026-02-10T18:55:43.400022",
+  "features": {
+    "home_position": 4,
+    "away_position": 6,
+    "position_diff": -2,
+    "home_points": 35,
+    "away_points": 31,
+    "home_form_points": 11,
+    "away_form_points": 12,
+    "home_recent_form": 2,
+    "away_recent_form": 3,
+    "home_wins_l6": 3,
+    "home_draws_l6": 2,
+    "home_losses_l6": 1,
+    "away_wins_l6": 4,
+    "away_draws_l6": 0,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.7777777777777777,
+    "home_conceded_avg": 0.7777777777777778,
+    "away_scored_avg": 1.3888888888888888,
+    "away_conceded_avg": 1.2777777777777777,
+    "expected_total_goals": 2.6111111111111107,
+    "home_home_win_rate": 66.66666666666666,
+    "home_home_goals_avg": 2.111111111111111,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 2.0,
+    "h2h_home_win_pct": 100.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 9.222222222222221,
+    "away_shots_avg": 5.666666666666667,
+    "home_shots_on_target_pct": 42.77108433734939,
+    "away_shots_on_target_pct": 50.0,
+    "home_dangerous_attacks_avg": 32.888888888888886,
+    "away_dangerous_attacks_avg": 26.61111111111111,
+    "home_possession": 56.58,
+    "away_possession": 54.8,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 5.833333333333333,
+    "away_fouls_avg": 4.555555555555555,
+    "home_yellow_avg": 1.6666666666666667,
+    "away_yellow_avg": 1.6111111111111112,
+    "odds_home": 2.4,
+    "odds_draw": 3.0,
+    "odds_away": 3.3,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 55
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5556,
+        "2": 0.1652,
+        "X": 0.2792
+      },
+      "computed_odds": {
+        "1": 1.8,
+        "2": 6.05,
+        "X": 3.58
+      },
+      "confidence": 0.5556
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0798,
+        "Under": 0.9202
+      },
+      "computed_odds": {
+        "Over": 12.53,
+        "Under": 1.09
+      },
+      "confidence": 0.9202
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5556,
+        "2": 0.1652,
+        "X": 0.2792
+      },
+      "computed_odds": {
+        "1": 1.8,
+        "2": 6.05,
+        "X": 3.58
+      },
+      "confidence": 0.5556
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0798,
+        "Under": 0.9202
+      },
+      "computed_odds": {
+        "Over": 12.53,
+        "Under": 1.09
+      },
+      "confidence": 0.9202
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4625,
+        "X": 0.2125,
+        "2": 0.325
+      },
+      "computed_odds": {
+        "1": 2.16,
+        "X": 4.71,
+        "2": 3.08
+      },
+      "confidence": 0.4625
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.8421052631578947,
+        "away": 0.736842105263158,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.3956834532374101,
+        "away": 0.2877697841726619,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6111111111111112,
+        "away": 0.6666666666666666,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.6666666666666666,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.75,
+        "away": 0.5277777777777778,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 1.0,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.38022074074074064,
+        "away": 0.3287999999999999,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.6111111111111107
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 6.7
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 6.7
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 3.3
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.61,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.17,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": false,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Away team in excellent form (4 wins in last 6)",
+      "\ud83d\udcdc Home team dominates H2H (100% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 2.4,
+        "fair": 1.8,
+        "value_pct": 33.3
+      }
+    ],
+    "confidence": "HIGH"
+  }
+}

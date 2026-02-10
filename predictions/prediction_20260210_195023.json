@@ -1,0 +1,241 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/cwmbran-celtic-llantwit-major-2403564",
+  "timestamp": "2026-02-10T19:50:23.941639",
+  "features": {
+    "home_position": 16,
+    "away_position": 10,
+    "position_diff": 6,
+    "away_points": 21,
+    "home_points": 5,
+    "home_form_points": 2,
+    "away_form_points": 7,
+    "home_recent_form": 1,
+    "away_recent_form": 2,
+    "home_wins_l6": 0,
+    "home_draws_l6": 2,
+    "home_losses_l6": 4,
+    "away_wins_l6": 1,
+    "away_draws_l6": 4,
+    "away_losses_l6": 1,
+    "home_scored_avg": 0.7142857142857143,
+    "home_conceded_avg": 2.4285714285714284,
+    "away_scored_avg": 1.1428571428571428,
+    "away_conceded_avg": 1.1904761904761905,
+    "expected_total_goals": 2.738095238095238,
+    "home_home_win_rate": 0.0,
+    "home_home_goals_avg": 0.625,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.5555555555555556,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 2.0,
+    "away_shots_avg": 1.2380952380952381,
+    "home_shots_on_target_pct": 71.42857142857143,
+    "away_shots_on_target_pct": 34.61538461538461,
+    "home_dangerous_attacks_avg": 8.095238095238095,
+    "away_dangerous_attacks_avg": 6.142857142857143,
+    "home_possession": 45.2,
+    "away_possession": 47.0,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 2.0476190476190474,
+    "away_fouls_avg": 1.0,
+    "home_yellow_avg": 0.23809523809523808,
+    "away_yellow_avg": 0.2857142857142857,
+    "odds_home": 4.2,
+    "odds_draw": 3.7,
+    "odds_away": 1.66,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 35
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1531,
+        "2": 0.536,
+        "X": 0.3109
+      },
+      "computed_odds": {
+        "1": 6.53,
+        "2": 1.87,
+        "X": 3.22
+      },
+      "confidence": 0.536
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.3709,
+        "Under": 0.6291
+      },
+      "computed_odds": {
+        "Over": 2.7,
+        "Under": 1.59
+      },
+      "confidence": 0.6291
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1531,
+        "2": 0.536,
+        "X": 0.3109
+      },
+      "computed_odds": {
+        "1": 6.53,
+        "2": 1.87,
+        "X": 3.22
+      },
+      "confidence": 0.536
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.3709,
+        "Under": 0.6291
+      },
+      "computed_odds": {
+        "Over": 2.7,
+        "Under": 1.59
+      },
+      "confidence": 0.6291
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1939,
+        "X": 0.3438,
+        "2": 0.4623
+      },
+      "computed_odds": {
+        "1": 5.16,
+        "X": 2.91,
+        "2": 2.16
+      },
+      "confidence": 0.4623
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.21052631578947367,
+        "away": 0.5263157894736843,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.21435052697703638,
+        "away": 0.5423326586165982,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.1111111111111111,
+        "away": 0.3888888888888889,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.07142857142857151,
+        "away": 0.4880952380952381,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.2712,
+        "away": 0.282,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.738095238095238
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 6.3
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 6.2
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 5.6
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 4.9
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.74,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 1.86,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": false,
+    "ml_result": "2",
+    "weighted_result": "2",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcca Away team significantly higher in table (#10 vs #16)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.7,
+        "fair": 3.22,
+        "value_pct": 14.9
+      }
+    ],
+    "confidence": "HIGH"
+  }
+}

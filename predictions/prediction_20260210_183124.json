@@ -1,0 +1,239 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/falkirk-fc-dundee-2317395",
+  "timestamp": "2026-02-10T18:31:24.251993",
+  "features": {
+    "home_position": 6,
+    "away_position": 10,
+    "position_diff": -4,
+    "home_points": 36,
+    "away_points": 23,
+    "home_form_points": 8,
+    "away_form_points": 8,
+    "home_recent_form": 4,
+    "away_recent_form": 2,
+    "home_wins_l6": 2,
+    "home_draws_l6": 2,
+    "home_losses_l6": 2,
+    "away_wins_l6": 2,
+    "away_draws_l6": 2,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.40625,
+    "home_conceded_avg": 1.1875,
+    "away_scored_avg": 1.0,
+    "away_conceded_avg": 1.4,
+    "expected_total_goals": 2.496875,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 67.0,
+    "home_shots_avg": 12.375,
+    "away_shots_avg": 10.133333333333333,
+    "home_shots_on_target_pct": 35.858585858585855,
+    "away_shots_on_target_pct": 36.51315789473684,
+    "home_dangerous_attacks_avg": 53.6875,
+    "away_dangerous_attacks_avg": 41.56666666666667,
+    "home_possession": 50.67,
+    "away_possession": 42.76,
+    "home_pass_accuracy": 76.93994778067885,
+    "away_pass_accuracy": 76.26230346414418,
+    "home_fouls_avg": 10.46875,
+    "away_fouls_avg": 8.766666666666667,
+    "home_yellow_avg": 1.84375,
+    "away_yellow_avg": 1.3666666666666667,
+    "odds_home": 1.7,
+    "odds_draw": 3.5,
+    "odds_away": 5.25,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 43
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5116,
+        "2": 0.1703,
+        "X": 0.3181
+      },
+      "computed_odds": {
+        "1": 1.95,
+        "2": 5.87,
+        "X": 3.14
+      },
+      "confidence": 0.5116
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0517,
+        "Under": 0.9483
+      },
+      "computed_odds": {
+        "Over": 19.34,
+        "Under": 1.05
+      },
+      "confidence": 0.9483
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5116,
+        "2": 0.1703,
+        "X": 0.3181
+      },
+      "computed_odds": {
+        "1": 1.95,
+        "2": 5.87,
+        "X": 3.14
+      },
+      "confidence": 0.5116
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0517,
+        "Under": 0.9483
+      },
+      "computed_odds": {
+        "Over": 19.34,
+        "Under": 1.05
+      },
+      "confidence": 0.9483
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4088,
+        "X": 0.2591,
+        "2": 0.3321
+      },
+      "computed_odds": {
+        "1": 2.45,
+        "X": 3.86,
+        "2": 3.01
+      },
+      "confidence": 0.4088
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.736842105263158,
+        "away": 0.5263157894736843,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.5526315789473685,
+        "away": 0.17894736842105263,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.4444444444444444,
+        "away": 0.4444444444444444,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5546875,
+        "away": 0.4,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.67,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.4498533333333333,
+        "away": 0.327671111111111,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.496875
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 5.6
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 4.2
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 3.4
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 2.3
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.5,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.41,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Under"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udcdc Away team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.5,
+        "fair": 3.14,
+        "value_pct": 11.5
+      }
+    ],
+    "confidence": "HIGH"
+  }
+}

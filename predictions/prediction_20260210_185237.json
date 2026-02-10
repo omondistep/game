@@ -1,0 +1,240 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/club-guaran%C3%AD-cs-san-lorenzo-2416855",
+  "timestamp": "2026-02-10T18:52:37.370820",
+  "features": {
+    "home_position": 6,
+    "away_position": 12,
+    "position_diff": -6,
+    "home_points": 5,
+    "away_points": 0,
+    "home_form_points": 11,
+    "away_form_points": 6,
+    "home_recent_form": 5,
+    "away_recent_form": 0,
+    "home_wins_l6": 3,
+    "home_draws_l6": 2,
+    "home_losses_l6": 1,
+    "away_wins_l6": 2,
+    "away_draws_l6": 0,
+    "away_losses_l6": 4,
+    "home_scored_avg": 2.0,
+    "home_conceded_avg": 1.0,
+    "away_scored_avg": 1.0,
+    "away_conceded_avg": 1.5,
+    "expected_total_goals": 2.75,
+    "home_home_win_rate": 100.0,
+    "home_home_goals_avg": 3.0,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 0.6666666666666666,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 50.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 11.166666666666666,
+    "away_shots_avg": 7.166666666666667,
+    "home_shots_on_target_pct": 32.83582089552239,
+    "away_shots_on_target_pct": 20.930232558139537,
+    "home_dangerous_attacks_avg": 35.0,
+    "away_dangerous_attacks_avg": 35.0,
+    "home_possession": 51.67,
+    "away_possession": 46.5,
+    "home_pass_accuracy": 75.69682151589242,
+    "away_pass_accuracy": 75.81845238095238,
+    "home_fouls_avg": 12.333333333333334,
+    "away_fouls_avg": 7.833333333333333,
+    "home_yellow_avg": 1.8333333333333333,
+    "away_yellow_avg": 1.1666666666666667,
+    "odds_home": 1.74,
+    "odds_draw": 3.6,
+    "odds_away": 4.4,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 66
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5599,
+        "2": 0.1075,
+        "X": 0.3326
+      },
+      "computed_odds": {
+        "1": 1.79,
+        "2": 9.3,
+        "X": 3.01
+      },
+      "confidence": 0.5599
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0103,
+        "Under": 0.9897
+      },
+      "computed_odds": {
+        "Over": 97.09,
+        "Under": 1.01
+      },
+      "confidence": 0.9897
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5599,
+        "2": 0.1075,
+        "X": 0.3326
+      },
+      "computed_odds": {
+        "1": 1.79,
+        "2": 9.3,
+        "X": 3.01
+      },
+      "confidence": 0.5599
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0103,
+        "Under": 0.9897
+      },
+      "computed_odds": {
+        "Over": 97.09,
+        "Under": 1.01
+      },
+      "confidence": 0.9897
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5241,
+        "X": 0.2356,
+        "2": 0.2403
+      },
+      "computed_odds": {
+        "1": 1.91,
+        "X": 4.24,
+        "2": 4.16
+      },
+      "confidence": 0.5241
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.736842105263158,
+        "away": 0.42105263157894735,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.532258064516129,
+        "away": 0.21048387096774196,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6111111111111112,
+        "away": 0.3333333333333333,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 1.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.75,
+        "away": 0.375,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.5,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.4155755555555556,
+        "away": 0.279,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.5,
+      "expected_goals": 2.75
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 10.0
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 6.3
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 5.6
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 5.6
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.75,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.0,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": false,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83c\udfdf\ufe0f  Home team dominant at home (100% win rate)",
+      "\ud83d\udcca Home team significantly higher in table (#6 vs #12)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.6,
+        "fair": 3.01,
+        "value_pct": 19.6
+      }
+    ],
+    "confidence": "HIGH"
+  }
+}

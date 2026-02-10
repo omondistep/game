@@ -1,0 +1,240 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/zawraa-baghdad-wasl-dubai-2423630",
+  "timestamp": "2026-02-10T18:59:09.255047",
+  "features": {
+    "home_position": 5,
+    "away_position": 24,
+    "position_diff": -19,
+    "away_points": 14,
+    "home_points": 9,
+    "home_form_points": 12,
+    "away_form_points": 8,
+    "home_recent_form": 5,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 3,
+    "home_losses_l6": 0,
+    "away_wins_l6": 2,
+    "away_draws_l6": 2,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.3181818181818181,
+    "home_conceded_avg": 0.9545454545454546,
+    "away_scored_avg": 1.7307692307692308,
+    "away_conceded_avg": 1.0384615384615385,
+    "expected_total_goals": 2.520979020979021,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 100.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 11.818181818181818,
+    "away_shots_avg": 12.884615384615385,
+    "home_shots_on_target_pct": 38.07692307692307,
+    "away_shots_on_target_pct": 32.83582089552239,
+    "home_dangerous_attacks_avg": 55.59090909090909,
+    "away_dangerous_attacks_avg": 50.07692307692308,
+    "home_possession": 52.77,
+    "away_possession": 60.85,
+    "home_pass_accuracy": 82.39520958083833,
+    "away_pass_accuracy": 86.88939508985068,
+    "home_fouls_avg": 6.636363636363637,
+    "away_fouls_avg": 11.038461538461538,
+    "home_yellow_avg": 2.1363636363636362,
+    "away_yellow_avg": 1.4230769230769231,
+    "odds_home": 3.3,
+    "odds_draw": 3.5,
+    "odds_away": 1.95,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 37
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2918,
+        "2": 0.3846,
+        "X": 0.3236
+      },
+      "computed_odds": {
+        "1": 3.43,
+        "2": 2.6,
+        "X": 3.09
+      },
+      "confidence": 0.3846
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.064,
+        "Under": 0.936
+      },
+      "computed_odds": {
+        "Over": 15.62,
+        "Under": 1.07
+      },
+      "confidence": 0.936
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2918,
+        "2": 0.3846,
+        "X": 0.3236
+      },
+      "computed_odds": {
+        "1": 3.43,
+        "2": 2.6,
+        "X": 3.09
+      },
+      "confidence": 0.3846
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.064,
+        "Under": 0.936
+      },
+      "computed_odds": {
+        "Over": 15.62,
+        "Under": 1.07
+      },
+      "confidence": 0.936
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4695,
+        "X": 0.2288,
+        "2": 0.3017
+      },
+      "computed_odds": {
+        "1": 2.13,
+        "X": 4.37,
+        "2": 3.31
+      },
+      "confidence": 0.4695
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.7894736842105263,
+        "away": 0,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.2750906892382104,
+        "away": 0.46553808948004843,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6666666666666666,
+        "away": 0.4444444444444444,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5909090909090908,
+        "away": 0.6730769230769231,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 1.0,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.4438927272727273,
+        "away": 0.5279205128205129,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.520979020979021
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 15.8
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 6.7
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 4.4
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 2.9
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.52,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.05,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": false,
+    "ml_result": "2",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udcca Home team significantly higher in table (#5 vs #24)",
+      "\ud83d\udcdc Home team dominates H2H (100% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.5,
+        "fair": 3.09,
+        "value_pct": 13.3
+      }
+    ],
+    "confidence": "HIGH"
+  }
+}

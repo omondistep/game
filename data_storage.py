@@ -309,6 +309,22 @@ class MatchDataStorage:
         """Get list of leagues with training data."""
         training_data = self.get_training_data()
         return [entry.get('league') for entry in training_data if entry.get('league')]
+    
+    def update_league_name(self, old_name: str, new_name: str) -> int:
+        """Update league name in training data. Returns number of examples updated."""
+        training_data = self.get_training_data()
+        updated_count = 0
+        
+        for entry in training_data:
+            if entry.get('league') == old_name:
+                entry['league'] = new_name
+                updated_count += 1
+        
+        if updated_count > 0:
+            with open(self.training_data_file, 'wb') as f:
+                pickle.dump(training_data, f)
+        
+        return updated_count
 
     # ------------------------------------------------------------------
     # Getters
