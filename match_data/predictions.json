@@ -37,34 +37,34 @@
     "url": "https://www.forebet.com/en/football/matches/chelsea-leeds-united-2315994",
     "prediction": {
       "result": {
-        "prediction": "1",
+        "prediction": "X",
         "probabilities": {
-          "1": 0.6915,
-          "2": 0.1071,
-          "X": 0.2014
+          "1": 0.1621,
+          "2": 0.1011,
+          "X": 0.7368
         },
         "computed_odds": {
-          "1": 1.45,
-          "2": 9.34,
-          "X": 4.97
+          "1": 6.17,
+          "2": 9.89,
+          "X": 1.36
         },
-        "confidence": 0.6915
+        "confidence": 0.7368
       },
       "over_under": {
         "prediction": "Under",
         "probabilities": {
-          "Over": 0.3341,
-          "Under": 0.6659
+          "Over": 0.3113,
+          "Under": 0.6887
         },
         "computed_odds": {
-          "Over": 2.99,
-          "Under": 1.5
+          "Over": 3.21,
+          "Under": 1.45
         },
-        "confidence": 0.6659
+        "confidence": 0.6887
       },
       "prediction_method": "ml",
       "confidence": null
     },
-    "saved_at": "2026-02-10T13:23:04.831832"
+    "saved_at": "2026-02-10T14:33:31.189719"
   }
 ]

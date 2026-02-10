@@ -40,5 +40,19 @@
     "result_accuracy": 0.9907635467980296,
     "ou_accuracy": 0.9987684729064039,
     "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-10T14:27:51.076554",
+    "training_examples": 1624,
+    "result_accuracy": 0.9907635467980296,
+    "ou_accuracy": 0.9987684729064039,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-10T14:33:49.840535",
+    "training_examples": 1624,
+    "result_accuracy": 0.9907635467980296,
+    "ou_accuracy": 0.9987684729064039,
+    "model_type": "global"
   }
 ]

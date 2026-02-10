@@ -428,3 +428,14 @@ class ForebetScraper:
         except Exception as e:
             print(f"Error extracting predictions: {e}")
         return pred
+    
+    def extract_actual_result(self, url: str) -> Optional[Dict]:
+        """Extract actual match result from a URL (for completed matches)."""
+        try:
+            response = requests.get(url, headers=self.headers, timeout=15)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.content, 'html.parser')
+            return self._extract_result_from_soup(soup)
+        except Exception as e:
+            print(f"Error extracting actual result: {e}")
+            return None
