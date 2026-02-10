@@ -92,7 +92,8 @@ class AutoTrainer:
         
         for i, url in enumerate(urls, 1):
             try:
-                match_data = system.scraper.scrape_match(url)
+                # prompt_user=False for batch training - use placeholders
+                match_data = system.scraper.scrape_match(url, prompt_user=False)
                 if match_data:
                     # Save match data (also updates training data if result is available)
                     ok = system.storage.save_match_with_result(match_data)

@@ -165,7 +165,8 @@ class FootballPredictionSystem:
 
     def predict_match(self, url: str, save_data: bool = True) -> Dict:
         """Scrape, analyse, and predict a match."""
-        match_data = self.scraper.scrape_match(url)
+        # prompt_user=True so user is asked for league name if unknown
+        match_data = self.scraper.scrape_match(url, prompt_user=True)
         if not match_data:
             return {'error': 'Failed to scrape match data', 'url': url}
 
@@ -891,11 +892,43 @@ class FootballPredictionSystem:
 
 def main():
     parser = argparse.ArgumentParser(description='Football Match Prediction System')
-    parser.add_argument('command', choices=['predict', 'result', 'train', 'stats', 'batch'])
+    parser.add_argument('command', choices=['predict', 'result', 'train', 'stats', 'batch', 'update-league'])
     parser.add_argument('--url', help='Forebet match URL or path to file with URLs')
     parser.add_argument('--no-save', action='store_true')
     parser.add_argument('--json', action='store_true', help='Output raw JSON')
+    parser.add_argument('--code', help='League code (for update-league command)')
+    parser.add_argument('--name', help='League name (for update-league command)')
     args = parser.parse_args()
+    
+    # Handle update-league command
+    if args.command == 'update-league':
+        code = args.code
+        name = args.name
+        if not code or not name:
+            print("Error: --code and --name required for update-league")
+            return
+        
+        # Update unknown_leagues.json
+        try:
+            with open('data/unknown_leagues.json', 'r') as f:
+                unknown = json.load(f)
+        except:
+            unknown = {}
+        
+        old_name = unknown.get(code, f"League {code}")
+        unknown[code] = name
+        
+        with open('data/unknown_leagues.json', 'w') as f:
+            json.dump(unknown, f, indent=2)
+        
+        print(f"✓ Updated: {code} = {name}")
+        
+        # Update training data if league name changed
+        if old_name != name:
+            updated = system.storage.update_league_name(old_name, name)
+            if updated:
+                print(f"  Updated {updated} training examples from '{old_name}' to '{name}'")
+        return
 
     system = FootballPredictionSystem()
 

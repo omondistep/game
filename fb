@@ -1,0 +1,23 @@
+#!/bin/bash
+# Football Prediction System - Main Command
+# Usage: fb <command> [options]
+# Examples:
+#   fb predict https://www.forebet.com/... 
+#   fb result <url> <actual_result>
+#   fb train [status|force]
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+VENV_DIR="${SCRIPT_DIR}/football_env"
+MAIN="${SCRIPT_DIR}/football_prediction_system.py"
+
+if [ ! -d "$VENV_DIR" ]; then
+    echo "Error: Virtual environment not found at $VENV_DIR"
+    exit 1
+fi
+
+if [ ! -f "$MAIN" ]; then
+    echo "Error: football_prediction_system.py not found"
+    exit 1
+fi
+
+"$VENV_DIR/bin/python" "$MAIN" "$@"

@@ -38,7 +38,8 @@ def main():
         print(f"[{i}/{len(urls)}] {url[:80]}...")
         try:
             # Scrape and save match data
-            match_data = system.scraper.scrape_match(url)
+            # prompt_user=False for batch training - use placeholders
+            match_data = system.scraper.scrape_match(url, prompt_user=False)
             if match_data:
                 system.storage.save_match_data(match_data)
                 saved_count += 1

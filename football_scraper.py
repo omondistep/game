@@ -64,8 +64,8 @@ class ForebetScraper:
             return match.group(1)
         return None
     
-    def _get_league_name(self, code: str) -> Optional[str]:
-        """Get league name from code, prompting user if unknown."""
+    def _get_league_name(self, code: str, prompt_user: bool = False) -> Optional[str]:
+        """Get league name from code, prompting user if unknown and prompt_user=True."""
         if not code:
             return None
         
@@ -87,28 +87,39 @@ class ForebetScraper:
         except:
             pass
         
-        # Prompt user for unknown league
-        print(f"New league detected: {code}")
-        name = input("Enter league name (or press Enter to skip): ").strip()
-        if name:
-            # Save to unknown_leagues.json (old simple format for backwards compatibility)
+        # If prompt_user is True, ask user for league name
+        if prompt_user:
             try:
-                with open('data/unknown_leagues.json', 'r') as f:
-                    unknown = json.load(f)
-            except:
-                unknown = {}
-            unknown[code] = name
-            with open('data/unknown_leagues.json', 'w') as f:
-                json.dump(unknown, f, indent=2)
-            print(f"Saved: {code} = {name}")
-        return name if name else None
+                league = input(f"Enter league name for code {code}: ").strip()
+                if league:
+                    # Save to unknown_leagues.json for future use
+                    try:
+                        with open('data/unknown_leagues.json', 'r') as f:
+                            unknown = json.load(f)
+                    except:
+                        unknown = {}
+                    unknown[code] = league
+                    with open('data/unknown_leagues.json', 'w') as f:
+                        json.dump(unknown, f, indent=2)
+                    return league
+            except KeyboardInterrupt:
+                return None
+        
+        # Return placeholder with code so training can proceed without user input
+        return f"League {code}"
 
     # ------------------------------------------------------------------
     # Public API
     # ------------------------------------------------------------------
 
-    def scrape_match(self, url: str) -> Optional[Dict]:
-        """Scrape all available match data from a Forebet URL."""
+    def scrape_match(self, url: str, prompt_user: bool = False) -> Optional[Dict]:
+        """Scrape all available match data from a Forebet URL.
+        
+        Args:
+            url: The Forebet match URL
+            prompt_user: If True, prompt user for league name if unknown.
+                         If False, use placeholder "League {code}".
+        """
         try:
             response = requests.get(url, headers=self.headers, timeout=15)
             response.raise_for_status()
@@ -119,7 +130,7 @@ class ForebetScraper:
             
             # Extract league from URL
             league_code = self._extract_league_code(url)
-            league_name = self._get_league_name(league_code) if league_code else None
+            league_name = self._get_league_name(league_code, prompt_user) if league_code else None
             
             match_data = {
                 'url': url,
