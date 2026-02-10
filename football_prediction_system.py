@@ -14,6 +14,9 @@ from football_scraper import ForebetScraper
 from data_storage import MatchDataStorage
 from prediction_model import FootballPredictor, WeightedPredictor
 
+# JSON output directory
+PREDICTIONS_DIR = "predictions"
+
 
 # ======================================================================
 # ANSI colour helpers (works in most modern terminals)
@@ -815,8 +818,9 @@ def main():
                 print(json.dumps(out, indent=2, default=str))
             else:
                 system.display_prediction(result)
-            # Save prediction
-            fname = f"prediction_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            # Save prediction to predictions directory
+            os.makedirs(PREDICTIONS_DIR, exist_ok=True)
+            fname = os.path.join(PREDICTIONS_DIR, f"prediction_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json")
             with open(fname, 'w') as f:
                 out = {k: v for k, v in result.items() if k != 'match_data'}
                 json.dump(out, f, indent=2, default=str)
@@ -892,8 +896,9 @@ def main():
                 print(json.dumps(out, indent=2, default=str))
             else:
                 system.display_prediction(result)
-            # Save prediction
-            fname = f"prediction_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            # Save prediction to predictions directory
+            os.makedirs(PREDICTIONS_DIR, exist_ok=True)
+            fname = os.path.join(PREDICTIONS_DIR, f"prediction_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json")
             with open(fname, 'w') as f:
                 out = {k: v for k, v in result.items() if k != 'match_data'}
                 json.dump(out, f, indent=2, default=str)
@@ -987,8 +992,9 @@ def main():
             else:
                 print(f"  → Error: {result.get('error')}")
         
-        # Save batch predictions
-        fname = f"batch_predictions_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        # Save batch predictions to predictions directory
+        os.makedirs(PREDICTIONS_DIR, exist_ok=True)
+        fname = os.path.join(PREDICTIONS_DIR, f"batch_predictions_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json")
         with open(fname, 'w') as f:
             json.dump(predictions, f, indent=2, default=str)
         print(f"\n✓ Saved {len(predictions)} predictions to {fname}")

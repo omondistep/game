@@ -14,7 +14,7 @@ import pickle
 class MatchDataStorage:
     """Storage system for match data and results."""
 
-    def __init__(self, data_dir: str = "match_data"):
+    def __init__(self, data_dir: str = "data"):
         self.data_dir = data_dir
         self.matches_file = os.path.join(data_dir, "matches.json")
         self.results_file = os.path.join(data_dir, "results.json")

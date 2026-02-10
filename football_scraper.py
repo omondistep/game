@@ -75,7 +75,7 @@ class ForebetScraper:
         
         # Check saved unknown leagues
         try:
-            with open('unknown_leagues.json', 'r') as f:
+            with open('data/unknown_leagues.json', 'r') as f:
                 unknown = json.load(f)
             if code in unknown:
                 return unknown[code]
@@ -88,12 +88,12 @@ class ForebetScraper:
         if name:
             # Save to unknown_leagues.json
             try:
-                with open('unknown_leagues.json', 'r') as f:
+                with open('data/unknown_leagues.json', 'r') as f:
                     unknown = json.load(f)
             except:
                 unknown = {}
             unknown[code] = name
-            with open('unknown_leagues.json', 'w') as f:
+            with open('data/unknown_leagues.json', 'w') as f:
                 json.dump(unknown, f, indent=2)
             print(f"Saved: {code} = {name}")
         return name if name else None

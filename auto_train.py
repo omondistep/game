@@ -15,7 +15,7 @@ import argparse
 
 # Constants
 RESULTS_FILE = "results.txt"
-LAST_TRAIN_FILE = "last_training.json"
+LAST_TRAIN_FILE = "data/last_training.json"
 TRAINING_THRESHOLD_HOURS = 20
 MATCH_DATA_DIR = "match_data"
 

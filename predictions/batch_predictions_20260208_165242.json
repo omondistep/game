@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://www.forebet.com/en/football/matches/juventus-lazio-2344437",
+    "home": "Juventus",
+    "away": "Lazio",
+    "prediction": "1",
+    "confidence": 0.5034
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/athletic-bilbao-levante-2344438",
+    "home": "Bologna",
+    "away": "Parma",
+    "prediction": "1",
+    "confidence": 0.4772
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/barcelona-real-madrid-2344440",
+    "home": "Atalanta",
+    "away": "Cremonese",
+    "prediction": "1",
+    "confidence": 0.5159
+  }
+]
