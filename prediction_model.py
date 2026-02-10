@@ -13,6 +13,7 @@ import pickle
 import os
 import json
 from datetime import datetime
+import time
 
 
 # =============================================================================
@@ -428,6 +429,10 @@ class FootballPredictor:
         # League-specific models
         self.league_models: Dict[str, Dict] = {}
         self._load_league_models()
+        
+        # Prediction feedback tracking
+        self.prediction_feedback: Dict[str, Dict] = {}
+        self._load_prediction_feedback()
 
     def _load_models(self):
         paths = {
@@ -467,6 +472,56 @@ class FootballPredictor:
                         self.league_models[entry] = models
         except Exception as e:
             print(f"Error loading league models: {e}")
+    
+    def _load_prediction_feedback(self):
+        """Load prediction feedback data."""
+        feedback_file = os.path.join(self.model_dir, "prediction_feedback.json")
+        if os.path.exists(feedback_file):
+            try:
+                with open(feedback_file, 'r') as f:
+                    self.prediction_feedback = json.load(f)
+                    print(f"Loaded {len(self.prediction_feedback)} feedback entries")
+            except:
+                self.prediction_feedback = {}
+    
+    def save_prediction_feedback(self, url: str, prediction: Dict, actual_result: Dict):
+        """Save prediction for later feedback comparison."""
+        self.prediction_feedback[url] = {
+            'prediction': prediction,
+            'actual': actual_result,
+            'timestamp': time.time()
+        }
+        # Save periodically
+        if len(self.prediction_feedback) % 10 == 0:
+            self._save_prediction_feedback()
+    
+    def _save_prediction_feedback(self):
+        """Save prediction feedback to file."""
+        feedback_file = os.path.join(self.model_dir, "prediction_feedback.json")
+        with open(feedback_file, 'w') as f:
+            json.dump(self.prediction_feedback, f, indent=2)
+    
+    def get_prediction_accuracy(self, league: str = None) -> Dict:
+        """Calculate prediction accuracy from feedback."""
+        correct = 0
+        total = 0
+        for url, feedback in self.prediction_feedback.items():
+            pred = feedback.get('prediction', {}).get('result', {}).get('prediction')
+            actual = feedback.get('actual', {}).get('result')
+            if pred and actual:
+                # Convert actual result to prediction format
+                if actual.get('home_score') > actual.get('away_score'):
+                    actual_pred = '1'
+                elif actual.get('home_score') < actual.get('away_score'):
+                    actual_pred = '2'
+                else:
+                    actual_pred = 'X'
+                
+                if pred == actual_pred:
+                    correct += 1
+                total += 1
+        
+        return {'correct': correct, 'total': total, 'accuracy': correct/total if total > 0 else 0}
 
     # ------------------------------------------------------------------
     # Model persistence

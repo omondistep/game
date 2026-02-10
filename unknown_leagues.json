@@ -18,5 +18,20 @@
     "first_seen_url": "https://www.forebet.com/en/football/matches/juventus-lazio-2344437",
     "timestamp": "2026-02-10T11:55:00Z",
     "suggested_name": "Italy Serie A"
-  }
+  },
+  "23381": {
+    "first_seen_url": "https://www.forebet.com/en/football/matches/gaziantep-kas%C4%B1mpasa-sk-2338174",
+    "timestamp": "2026-02-10T15:09:28.016703",
+    "suggested_name": "Turkey Super League"
+  },
+  "23574": "Albania Super League",
+  "23577": "Albania League 1",
+  "24126": "Albanian Cup",
+  "24118": "Albania Super Cup",
+  "24234": "Algeria League 1",
+  "24202": "Algeria League 2",
+  "24103": "Algeria Cup",
+  "24155": "Algeria Super Cup",
+  "20611": "Algeria U21 League",
+  "24235": "Andorra Primera Division"
 }

@@ -17,6 +17,33 @@ from datetime import datetime, timedelta
 class ForebetScraper:
     """Scraper for extracting football match data from Forebet"""
 
+    # League code mapping (5-digit codes from URL)
+    LEAGUE_CODES = {
+        '23159': 'England Premier League',
+        '23351': 'England Championship',
+        '23161': 'Spain La Liga',
+        '23531': 'Spain Segunda Division',
+        '23441': 'Italy Serie A',
+        '23444': 'Italy Serie A',
+        '23551': 'Italy Serie B',
+        '23331': 'France Ligue 2',
+        '23341': 'Netherlands Eerste Divisie',
+        '24111': 'Portugal Liga Portugal',
+        '23171': 'Scotland Premiership',
+        '24171': 'Argentina Liga Profesional',
+        '24151': 'Colombia Primera A',
+        '23579': 'Cyprus First Division',
+        '23261': 'England League One',
+        '23301': 'England League Two',
+        '23391': 'England National League',
+        '23401': 'England National League North',
+        '23411': 'England National League South',
+        '24091': 'England Isthmian League',
+        '23481': 'England Premier League 2',
+        '23431': 'England SPL Premier Division',
+        '24236': 'Bulgaria First League',
+    }
+
     def __init__(self):
         self.headers = {
             'User-Agent': (
@@ -24,6 +51,52 @@ class ForebetScraper:
                 '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             )
         }
+
+    def _extract_league_code(self, url: str) -> Optional[str]:
+        """Extract league code (first 5 digits) from URL.
+        
+        URL format: /matches/{team1}-{team2}-{league_code}{match_id}
+        Example: /matches/cska-sofia-cska-1948-2423671 -> league_code = 24236
+        """
+        # Match 5-digit code before 1-3 digit match ID at end
+        match = re.search(r'-(\d{5})\d{1,3}$', url)
+        if match:
+            return match.group(1)
+        return None
+    
+    def _get_league_name(self, code: str) -> Optional[str]:
+        """Get league name from code, prompting user if unknown."""
+        if not code:
+            return None
+        
+        # Check known leagues
+        if code in self.LEAGUE_CODES:
+            return self.LEAGUE_CODES[code]
+        
+        # Check saved unknown leagues
+        try:
+            with open('unknown_leagues.json', 'r') as f:
+                unknown = json.load(f)
+            if code in unknown:
+                return unknown[code]
+        except:
+            pass
+        
+        # Prompt user for unknown league
+        print(f"New league detected: {code}")
+        name = input("Enter league name (or press Enter to skip): ").strip()
+        if name:
+            # Save to unknown_leagues.json
+            try:
+                with open('unknown_leagues.json', 'r') as f:
+                    unknown = json.load(f)
+            except:
+                unknown = {}
+            unknown[code] = name
+            with open('unknown_leagues.json', 'w') as f:
+                json.dump(unknown, f, indent=2)
+            print(f"Saved: {code} = {name}")
+        return name if name else None
 
     # ------------------------------------------------------------------
     # Public API
@@ -39,11 +112,15 @@ class ForebetScraper:
             # Check if match has been played and extract result
             result = self._extract_result_from_soup(soup)
             
+            # Extract league from URL
+            league_code = self._extract_league_code(url)
+            league_name = self._get_league_name(league_code) if league_code else None
+            
             match_data = {
                 'url': url,
                 'timestamp': time.time(),
                 'teams': self._extract_teams(soup),
-                'match_info': self._extract_match_info(soup),
+                'match_info': self._extract_match_info(soup, league_code, league_name),
                 'standings': self._extract_standings(soup),
                 'league_table': self._extract_league_table(soup),
                 'form': self._extract_form(soup),
@@ -268,9 +345,15 @@ class ForebetScraper:
             print(f"Error extracting teams: {e}")
         return teams
 
-    def _extract_match_info(self, soup: BeautifulSoup) -> Dict:
+    def _extract_match_info(self, soup: BeautifulSoup, league_code: str = None, league_name: str = None) -> Dict:
         """Extract match date, time, league, venue."""
-        info = {'date': None, 'time': None, 'league': None, 'venue': None}
+        info = {'date': None, 'time': None, 'league': league_name, 'league_code': league_code, 'venue': None}
+        
+        # Try to get league from page if not from URL
+        if not info['league']:
+            league_elem = soup.find('span', class_='league_name')
+            if league_elem:
+                info['league'] = league_elem.get_text(strip=True)
         try:
             date_elem = soup.find('span', class_='date')
             if date_elem:
