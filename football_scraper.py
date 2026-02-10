@@ -367,10 +367,6 @@ class ForebetScraper:
                 t = re.search(r'(\d{2}:\d{2})', text)
                 if d: info['date'] = d.group(1)
                 if t: info['time'] = t.group(1)
-
-            league_elem = soup.find('span', class_='league_name')
-            if league_elem:
-                info['league'] = league_elem.get_text(strip=True)
         except Exception as e:
             print(f"Error extracting match info: {e}")
         return info
