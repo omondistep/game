@@ -819,6 +819,47 @@ class FootballPredictionSystem:
         conf_col = C.GREEN if conf == 'HIGH' else (C.YELLOW if conf == 'MEDIUM' else C.RED)
         print(f"  {C.BOLD}Confidence Level:{C.RESET}  {conf_col}{C.BOLD}{conf}{C.RESET}")
         
+        # Convergence summary in prediction summary
+        if 'convergence' in result and isinstance(result, dict):
+            conv = result['convergence']
+            r_match = conv.get('result_match', False)
+            o_match = conv.get('ou_match', False)
+            
+            ml_r = conv.get('ml_result', '?')
+            w_r = conv.get('weighted_result', '?')
+            ml_o = conv.get('ml_ou', '?')
+            w_o = conv.get('weighted_ou', '?')
+            
+            # Calculate convergence degrees
+            ml_probs = result.get('ml_prediction', {}).get('result', {}).get('probabilities', {})
+            w_probs = result.get('weighted_prediction', {}).get('result', {}).get('probabilities', {})
+            
+            if ml_probs and w_probs:
+                prob_diff = sum(abs(ml_probs.get(k, 0) - w_probs.get(k, 0)) for k in ['1', 'X', '2']) / 3 * 100
+                r_deg = max(0, 100 - prob_diff)
+            else:
+                r_deg = 0
+            
+            ml_ou_probs = result.get('ml_prediction', {}).get('over_under', {}).get('probabilities', {})
+            w_ou_probs = result.get('weighted_prediction', {}).get('over_under', {}).get('probabilities', {})
+            
+            if ml_ou_probs and w_ou_probs:
+                ou_diff = sum(abs(ml_ou_probs.get(k, 0) - w_ou_probs.get(k, 0)) for k in ['Over', 'Under']) / 2 * 100
+                o_deg = max(0, 100 - ou_diff)
+            else:
+                o_deg = 0
+            
+            print(f"  {C.BOLD}Model Agreement:{C.RESET}")
+            if r_match:
+                print(f"    {C.GREEN}✓{C.RESET} Both models predict: {ml_r} ({r_deg:.0f}% convergence)")
+            else:
+                print(f"    {C.YELLOW}⚠{C.RESET} ML predicts: {ml_r}, Weighted predicts: {w_r} ({r_deg:.0f}% convergence)")
+            
+            if o_match:
+                print(f"    {C.GREEN}✓{C.RESET} Both models predict: {ml_o} O/U ({o_deg:.0f}% convergence)")
+            else:
+                print(f"    {C.YELLOW}⚠{C.RESET} ML predicts: {ml_o}, Weighted predicts: {w_o} ({o_deg:.0f}% convergence)")
+        
         # Show prediction method
         pred_method = pred.get('prediction_method', 'unknown')
         if pred_method in ['ml', 'league_ml']:
