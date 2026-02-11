@@ -729,12 +729,16 @@ def display_train():
         
         if st.button("🚀 Train Model Now", use_container_width=True):
             with st.spinner("Training in progress..."):
-                success = system.train_model()
+                result = system.train_model()
                 
-                if success:
-                    st.success("✅ Models trained successfully!")
+                if result.get('success'):
+                    st.success(f"✅ Models trained successfully!")
+                    st.info(f"📊 Train Accuracy: {result.get('train_accuracy', 0):.1f}%")
+                    st.info(f"📈 Test Accuracy: {result.get('test_accuracy', 0):.1f}% (on {result.get('test_examples', 0)} examples)")
+                elif 'error' in result:
+                    st.error(f"❌ {result['error']}")
                 else:
-                    st.warning("⚠️ No new data to train on (or training was skipped)")
+                    st.warning("⚠️ No new data to train on (or training was skipped")
     
     with col2:
         st.markdown("### 📊 Training Info")

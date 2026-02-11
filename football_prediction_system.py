@@ -248,7 +248,21 @@ class FootballPredictionSystem:
         total_examples = sum(len(entry.get('examples', [])) for entry in td)
         if total_examples < 10:
             return {'error': 'Insufficient training data', 'available': total_examples, 'required': 10}
-        return self.predictor.train(td)
+        
+        # Train with test split (20%)
+        result = self.predictor.train(td, test_size=0.2)
+        
+        # Format result for display
+        if 'error' not in result:
+            return {
+                'success': True,
+                'training_examples': result.get('training_examples'),
+                'test_examples': result.get('test_examples'),
+                'train_accuracy': result.get('train_result_accuracy', 0) * 100,
+                'test_accuracy': result.get('result_accuracy', 0) * 100,
+                'message': f"Trained on {result.get('training_examples')} examples, tested on {result.get('test_examples')}"
+            }
+        return result
 
     def get_statistics(self) -> Dict:
         ss = self.storage.get_statistics()

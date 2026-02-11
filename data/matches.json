@@ -84588,7 +84588,7 @@
   },
   {
     "url": "https://www.forebet.com/en/football/matches/arkadag-al-nassr-2423633",
-    "timestamp": 1770823268.9811385,
+    "timestamp": 1770823860.509355,
     "teams": {
       "home": "Arkadag",
       "away": "Al Nassr"
@@ -87020,6 +87020,4991 @@
       "total_goals": 1,
       "over_under_2_5": "Under"
     },
-    "saved_at": "2026-02-11T18:21:09.491031"
+    "saved_at": "2026-02-11T18:31:01.076774"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/monastir-valmontone-2373775",
+    "timestamp": 1770823783.3193202,
+    "teams": {
+      "home": "Monastir",
+      "away": "Valmontone"
+    },
+    "match_info": {
+      "date": null,
+      "time": null,
+      "league": "It4",
+      "league_code": "23737",
+      "venue": null
+    },
+    "standings": {
+      "home": null,
+      "away": null,
+      "home_points": null,
+      "away_points": null
+    },
+    "league_table": [
+      {
+        "position": 1,
+        "team": "Scafatese",
+        "points": 57,
+        "played": 23,
+        "won": 17,
+        "drawn": 6,
+        "lost": 0,
+        "gf": 48,
+        "ga": 13,
+        "gd": 35
+      },
+      {
+        "position": 2,
+        "team": "Trastevere Calcio",
+        "points": 46,
+        "played": 23,
+        "won": 13,
+        "drawn": 7,
+        "lost": 3,
+        "gf": 44,
+        "ga": 28,
+        "gd": 16
+      },
+      {
+        "position": 3,
+        "team": "ASG Nocerina",
+        "points": 37,
+        "played": 23,
+        "won": 10,
+        "drawn": 7,
+        "lost": 6,
+        "gf": 32,
+        "ga": 27,
+        "gd": 5
+      },
+      {
+        "position": 4,
+        "team": "Flaminia",
+        "points": 35,
+        "played": 23,
+        "won": 9,
+        "drawn": 8,
+        "lost": 6,
+        "gf": 36,
+        "ga": 25,
+        "gd": 11
+      },
+      {
+        "position": 5,
+        "team": "Valmontone",
+        "points": 34,
+        "played": 22,
+        "won": 10,
+        "drawn": 4,
+        "lost": 8,
+        "gf": 33,
+        "ga": 29,
+        "gd": 4
+      },
+      {
+        "position": 6,
+        "team": "Monastir",
+        "points": 34,
+        "played": 22,
+        "won": 10,
+        "drawn": 4,
+        "lost": 8,
+        "gf": 33,
+        "ga": 29,
+        "gd": 4
+      },
+      {
+        "position": 7,
+        "team": "Atletico Lodigiani",
+        "points": 32,
+        "played": 23,
+        "won": 8,
+        "drawn": 8,
+        "lost": 7,
+        "gf": 32,
+        "ga": 29,
+        "gd": 3
+      },
+      {
+        "position": 8,
+        "team": "USD Palmese",
+        "points": 31,
+        "played": 23,
+        "won": 7,
+        "drawn": 10,
+        "lost": 6,
+        "gf": 32,
+        "ga": 29,
+        "gd": 3
+      },
+      {
+        "position": 9,
+        "team": "CynthiAlbalonga",
+        "points": 31,
+        "played": 23,
+        "won": 8,
+        "drawn": 7,
+        "lost": 8,
+        "gf": 36,
+        "ga": 37,
+        "gd": -1
+      },
+      {
+        "position": 10,
+        "team": "Latte Dolce",
+        "points": 31,
+        "played": 23,
+        "won": 9,
+        "drawn": 4,
+        "lost": 10,
+        "gf": 31,
+        "ga": 34,
+        "gd": -3
+      },
+      {
+        "position": 11,
+        "team": "Anzio",
+        "points": 30,
+        "played": 23,
+        "won": 8,
+        "drawn": 6,
+        "lost": 9,
+        "gf": 26,
+        "ga": 31,
+        "gd": -5
+      },
+      {
+        "position": 12,
+        "team": "Ischia",
+        "points": 30,
+        "played": 23,
+        "won": 8,
+        "drawn": 6,
+        "lost": 9,
+        "gf": 28,
+        "ga": 36,
+        "gd": -8
+      },
+      {
+        "position": 13,
+        "team": "Budoni",
+        "points": 29,
+        "played": 23,
+        "won": 8,
+        "drawn": 5,
+        "lost": 10,
+        "gf": 24,
+        "ga": 24,
+        "gd": 0
+      },
+      {
+        "position": 14,
+        "team": "Sarrabus Ogliastra",
+        "points": 29,
+        "played": 23,
+        "won": 8,
+        "drawn": 5,
+        "lost": 10,
+        "gf": 32,
+        "ga": 42,
+        "gd": -10
+      },
+      {
+        "position": 15,
+        "team": "Olbia Calcio",
+        "points": 22,
+        "played": 23,
+        "won": 4,
+        "drawn": 10,
+        "lost": 9,
+        "gf": 25,
+        "ga": 36,
+        "gd": -11
+      },
+      {
+        "position": 16,
+        "team": "Montespaccato",
+        "points": 20,
+        "played": 23,
+        "won": 4,
+        "drawn": 8,
+        "lost": 11,
+        "gf": 33,
+        "ga": 41,
+        "gd": -8
+      },
+      {
+        "position": 17,
+        "team": "Real Monterotondo Scalo",
+        "points": 19,
+        "played": 23,
+        "won": 5,
+        "drawn": 4,
+        "lost": 14,
+        "gf": 22,
+        "ga": 35,
+        "gd": -13
+      },
+      {
+        "position": 18,
+        "team": "Cassino",
+        "points": 14,
+        "played": 23,
+        "won": 3,
+        "drawn": 5,
+        "lost": 15,
+        "gf": 18,
+        "ga": 40,
+        "gd": -22
+      }
+    ],
+    "form": {
+      "home": [
+        "W",
+        "L",
+        "W",
+        "D",
+        "W",
+        "L"
+      ],
+      "away": [
+        "L",
+        "L",
+        "W",
+        "D",
+        "L",
+        "W"
+      ],
+      "home_summary": {},
+      "away_summary": {}
+    },
+    "last_6_matches": {
+      "home": [
+        {
+          "date": "08/02/2026",
+          "home_team": "Sarrabus Ogliastra",
+          "home_score": 1,
+          "away_score": 3,
+          "ht_home": 0,
+          "ht_away": 3,
+          "away_team": "Monastir",
+          "competition": "It4"
+        },
+        {
+          "date": "25/01/2026",
+          "home_team": "Cassino",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Monastir",
+          "competition": "It4"
+        },
+        {
+          "date": "18/01/2026",
+          "home_team": "Monastir",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Real Monterotondo",
+          "competition": "Scalo"
+        },
+        {
+          "date": "11/01/2026",
+          "home_team": "Montespaccato",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Monastir",
+          "competition": "It4"
+        },
+        {
+          "date": "06/01/2026",
+          "home_team": "Monastir",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Budoni",
+          "competition": "It4"
+        },
+        {
+          "date": "21/12/2025",
+          "home_team": "Monastir",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "USD",
+          "competition": "Palmese"
+        },
+        {
+          "date": "14/12/2025",
+          "home_team": "ASG Nocerina",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Monastir",
+          "competition": "It4"
+        },
+        {
+          "date": "06/12/2025",
+          "home_team": "Monastir",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "CynthiAlbalonga",
+          "competition": "It4"
+        },
+        {
+          "date": "29/11/2025",
+          "home_team": "Trastevere Calcio",
+          "home_score": 4,
+          "away_score": 1,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Monastir",
+          "competition": "It4"
+        },
+        {
+          "date": "23/11/2025",
+          "home_team": "Monastir",
+          "home_score": 3,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Anzio",
+          "competition": "It4"
+        },
+        {
+          "date": "16/11/2025",
+          "home_team": "Olbia Calcio",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 2,
+          "away_team": "Monastir",
+          "competition": "It4"
+        },
+        {
+          "date": "09/11/2025",
+          "home_team": "Monastir",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Scafatese",
+          "competition": "It4"
+        },
+        {
+          "date": "02/11/2025",
+          "home_team": "Monastir",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Flaminia",
+          "competition": "It4"
+        },
+        {
+          "date": "26/10/2025",
+          "home_team": "Ischia",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Monastir",
+          "competition": "It4"
+        },
+        {
+          "date": "19/10/2025",
+          "home_team": "Monastir",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Atletico",
+          "competition": "Lodigiani"
+        },
+        {
+          "date": "12/10/2025",
+          "home_team": "Latte Dolce",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Monastir",
+          "competition": "It4"
+        },
+        {
+          "date": "05/10/2025",
+          "home_team": "Monastir",
+          "home_score": 2,
+          "away_score": 3,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Sarrabus",
+          "competition": "Ogliastra"
+        },
+        {
+          "date": "28/09/2025",
+          "home_team": "Valmontone",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Monastir",
+          "competition": "It4"
+        },
+        {
+          "date": "24/09/2025",
+          "home_team": "Monastir",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Cassino",
+          "competition": "It4"
+        },
+        {
+          "date": "20/09/2025",
+          "home_team": "Real Monterotondo Scalo",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Monastir",
+          "competition": "It4"
+        },
+        {
+          "date": "14/09/2025",
+          "home_team": "Monastir",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Montespaccato",
+          "competition": "It4"
+        },
+        {
+          "date": "07/09/2025",
+          "home_team": "Budoni",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Monastir",
+          "competition": "It4"
+        },
+        {
+          "date": "24/08/2025",
+          "home_team": "Unipomezia",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Monastir",
+          "competition": "ItC"
+        }
+      ],
+      "away": [
+        {
+          "date": "08/02/2026",
+          "home_team": "Valmontone",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Ischia",
+          "competition": "It4"
+        },
+        {
+          "date": "25/01/2026",
+          "home_team": "Valmontone",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Latte",
+          "competition": "Dolce"
+        },
+        {
+          "date": "18/01/2026",
+          "home_team": "Flaminia",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Valmontone",
+          "competition": "It4"
+        },
+        {
+          "date": "11/01/2026",
+          "home_team": "Valmontone",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Olbia",
+          "competition": "Calcio"
+        },
+        {
+          "date": "04/01/2026",
+          "home_team": "Atletico Lodigiani",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Valmontone",
+          "competition": "It4"
+        },
+        {
+          "date": "21/12/2025",
+          "home_team": "Valmontone",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Real Monterotondo",
+          "competition": "Scalo"
+        },
+        {
+          "date": "14/12/2025",
+          "home_team": "Sarrabus Ogliastra",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Valmontone",
+          "competition": "It4"
+        },
+        {
+          "date": "07/12/2025",
+          "home_team": "Valmontone",
+          "home_score": 3,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Cassino",
+          "competition": "It4"
+        },
+        {
+          "date": "30/11/2025",
+          "home_team": "Montespaccato",
+          "home_score": 3,
+          "away_score": 4,
+          "ht_home": 1,
+          "ht_away": 3,
+          "away_team": "Valmontone",
+          "competition": "It4"
+        },
+        {
+          "date": "23/11/2025",
+          "home_team": "Valmontone",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Budoni",
+          "competition": "It4"
+        },
+        {
+          "date": "19/11/2025",
+          "home_team": "Ancona",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Valmontone",
+          "competition": "ItC"
+        },
+        {
+          "date": "16/11/2025",
+          "home_team": "USD Palmese",
+          "home_score": 3,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Valmontone",
+          "competition": "It4"
+        },
+        {
+          "date": "09/11/2025",
+          "home_team": "Valmontone",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "ASG",
+          "competition": "Nocerina"
+        },
+        {
+          "date": "02/11/2025",
+          "home_team": "Anzio",
+          "home_score": 0,
+          "away_score": 3,
+          "ht_home": 0,
+          "ht_away": 2,
+          "away_team": "Valmontone",
+          "competition": "It4"
+        },
+        {
+          "date": "26/10/2025",
+          "home_team": "Valmontone",
+          "home_score": 3,
+          "away_score": 0,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "CynthiAlbalonga",
+          "competition": "It4"
+        },
+        {
+          "date": "22/10/2025",
+          "home_team": "Valmontone",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Orvietana",
+          "competition": "Calcio"
+        },
+        {
+          "date": "19/10/2025",
+          "home_team": "Scafatese",
+          "home_score": 4,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Valmontone",
+          "competition": "It4"
+        },
+        {
+          "date": "12/10/2025",
+          "home_team": "Valmontone",
+          "home_score": 1,
+          "away_score": 3,
+          "ht_home": 1,
+          "ht_away": 3,
+          "away_team": "Trastevere",
+          "competition": "Calcio"
+        },
+        {
+          "date": "08/10/2025",
+          "home_team": "Gavorrano",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Valmontone",
+          "competition": "ItC"
+        },
+        {
+          "date": "05/10/2025",
+          "home_team": "Ischia",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Valmontone",
+          "competition": "It4"
+        },
+        {
+          "date": "28/09/2025",
+          "home_team": "Valmontone",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Monastir",
+          "competition": "It4"
+        },
+        {
+          "date": "24/09/2025",
+          "home_team": "Latte Dolce",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Valmontone",
+          "competition": "It4"
+        },
+        {
+          "date": "21/09/2025",
+          "home_team": "Valmontone",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Flaminia",
+          "competition": "It4"
+        },
+        {
+          "date": "14/09/2025",
+          "home_team": "Olbia Calcio",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Valmontone",
+          "competition": "It4"
+        },
+        {
+          "date": "07/09/2025",
+          "home_team": "Valmontone",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Atletico",
+          "competition": "Lodigiani"
+        },
+        {
+          "date": "31/08/2025",
+          "home_team": "Flaminia",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Valmontone",
+          "competition": "ItC"
+        }
+      ]
+    },
+    "home_matches": [
+      {
+        "date": "18/01/2026",
+        "home_team": "Monastir",
+        "home_score": 2,
+        "away_score": 0,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Real Monterotondo",
+        "competition": "Scalo"
+      },
+      {
+        "date": "06/01/2026",
+        "home_team": "Monastir",
+        "home_score": 1,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Budoni",
+        "competition": "It4"
+      },
+      {
+        "date": "21/12/2025",
+        "home_team": "Monastir",
+        "home_score": 1,
+        "away_score": 2,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "USD",
+        "competition": "Palmese"
+      },
+      {
+        "date": "06/12/2025",
+        "home_team": "Monastir",
+        "home_score": 2,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "CynthiAlbalonga",
+        "competition": "It4"
+      },
+      {
+        "date": "23/11/2025",
+        "home_team": "Monastir",
+        "home_score": 3,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Anzio",
+        "competition": "It4"
+      },
+      {
+        "date": "09/11/2025",
+        "home_team": "Monastir",
+        "home_score": 1,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Scafatese",
+        "competition": "It4"
+      },
+      {
+        "date": "02/11/2025",
+        "home_team": "Monastir",
+        "home_score": 2,
+        "away_score": 2,
+        "ht_home": 2,
+        "ht_away": 0,
+        "away_team": "Flaminia",
+        "competition": "It4"
+      },
+      {
+        "date": "19/10/2025",
+        "home_team": "Monastir",
+        "home_score": 0,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Atletico",
+        "competition": "Lodigiani"
+      },
+      {
+        "date": "05/10/2025",
+        "home_team": "Monastir",
+        "home_score": 2,
+        "away_score": 3,
+        "ht_home": 1,
+        "ht_away": 1,
+        "away_team": "Sarrabus",
+        "competition": "Ogliastra"
+      },
+      {
+        "date": "24/09/2025",
+        "home_team": "Monastir",
+        "home_score": 2,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Cassino",
+        "competition": "It4"
+      },
+      {
+        "date": "14/09/2025",
+        "home_team": "Monastir",
+        "home_score": 2,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Montespaccato",
+        "competition": "It4"
+      }
+    ],
+    "away_matches": [
+      {
+        "date": "18/01/2026",
+        "home_team": "Flaminia",
+        "home_score": 0,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Valmontone",
+        "competition": "It4"
+      },
+      {
+        "date": "04/01/2026",
+        "home_team": "Atletico Lodigiani",
+        "home_score": 2,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Valmontone",
+        "competition": "It4"
+      },
+      {
+        "date": "14/12/2025",
+        "home_team": "Sarrabus Ogliastra",
+        "home_score": 0,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Valmontone",
+        "competition": "It4"
+      },
+      {
+        "date": "30/11/2025",
+        "home_team": "Montespaccato",
+        "home_score": 3,
+        "away_score": 4,
+        "ht_home": 1,
+        "ht_away": 3,
+        "away_team": "Valmontone",
+        "competition": "It4"
+      },
+      {
+        "date": "19/11/2025",
+        "home_team": "Ancona",
+        "home_score": 1,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Valmontone",
+        "competition": "ItC"
+      },
+      {
+        "date": "16/11/2025",
+        "home_team": "USD Palmese",
+        "home_score": 3,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Valmontone",
+        "competition": "It4"
+      },
+      {
+        "date": "02/11/2025",
+        "home_team": "Anzio",
+        "home_score": 0,
+        "away_score": 3,
+        "ht_home": 0,
+        "ht_away": 2,
+        "away_team": "Valmontone",
+        "competition": "It4"
+      },
+      {
+        "date": "19/10/2025",
+        "home_team": "Scafatese",
+        "home_score": 4,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 1,
+        "away_team": "Valmontone",
+        "competition": "It4"
+      },
+      {
+        "date": "08/10/2025",
+        "home_team": "Gavorrano",
+        "home_score": 0,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Valmontone",
+        "competition": "ItC"
+      },
+      {
+        "date": "05/10/2025",
+        "home_team": "Ischia",
+        "home_score": 0,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Valmontone",
+        "competition": "It4"
+      },
+      {
+        "date": "24/09/2025",
+        "home_team": "Latte Dolce",
+        "home_score": 0,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Valmontone",
+        "competition": "It4"
+      },
+      {
+        "date": "14/09/2025",
+        "home_team": "Olbia Calcio",
+        "home_score": 1,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Valmontone",
+        "competition": "It4"
+      },
+      {
+        "date": "31/08/2025",
+        "home_team": "Flaminia",
+        "home_score": 0,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Valmontone",
+        "competition": "ItC"
+      }
+    ],
+    "head_to_head": {
+      "matches": [
+        {
+          "date": "28/09/2025",
+          "home_team": "Valmontone",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Monastir",
+          "competition": "It4"
+        }
+      ],
+      "summary": {
+        "home_wins": 0,
+        "home_win_pct": 0,
+        "draws": 0,
+        "draw_pct": 0,
+        "away_wins": 1,
+        "away_win_pct": 100
+      }
+    },
+    "odds": {
+      "1": 2.55,
+      "X": 3.0,
+      "2": 2.65,
+      "over": null,
+      "under": null
+    },
+    "predictions": {
+      "result": "X",
+      "probability": null,
+      "over_under": null
+    },
+    "goals_stats": {
+      "home": {
+        "scored": 34,
+        "conceded": 30,
+        "scored_avg": 1.4782608695652173,
+        "conceded_avg": 1.3043478260869565,
+        "games": 23
+      },
+      "away": {
+        "scored": 39,
+        "conceded": 30,
+        "scored_avg": 1.4444444444444444,
+        "conceded_avg": 1.1111111111111112,
+        "games": 27
+      }
+    },
+    "over_under_stats": {
+      "home": {},
+      "away": {}
+    },
+    "both_to_score": {
+      "home": {
+        "yes_pct": 74,
+        "no_pct": 24
+      },
+      "away": {
+        "yes_pct": 74,
+        "no_pct": 24
+      }
+    },
+    "shots_stats": {
+      "home": {
+        "total": [
+          237,
+          151,
+          86
+        ],
+        "on_target": [
+          108,
+          68,
+          40
+        ],
+        "off_target": [
+          129,
+          83,
+          46
+        ],
+        "inside_box": [
+          0,
+          0,
+          0
+        ],
+        "outside_box": [
+          0,
+          0,
+          0
+        ],
+        "blocked": [
+          0,
+          0,
+          0
+        ]
+      },
+      "away": {
+        "total": [
+          147,
+          111,
+          36
+        ],
+        "on_target": [
+          55,
+          42,
+          13
+        ],
+        "off_target": [
+          92,
+          69,
+          23
+        ],
+        "inside_box": [
+          0,
+          0,
+          0
+        ],
+        "outside_box": [
+          0,
+          0,
+          0
+        ],
+        "blocked": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "passes_stats": {
+      "home": {
+        "total": [
+          0,
+          0,
+          0
+        ],
+        "accurate": [
+          0,
+          0,
+          0
+        ],
+        "ball_poss": [
+          51.65,
+          53.55,
+          49.33
+        ]
+      },
+      "away": {
+        "total": [
+          0,
+          0,
+          0
+        ],
+        "accurate": [
+          0,
+          0,
+          0
+        ],
+        "ball_poss": [
+          50.92,
+          52.22,
+          48
+        ]
+      }
+    },
+    "attacks_stats": {
+      "home": {
+        "total": [
+          1604,
+          794,
+          810
+        ],
+        "dangerous": [
+          911,
+          389,
+          522
+        ]
+      },
+      "away": {
+        "total": [
+          861,
+          600,
+          261
+        ],
+        "dangerous": [
+          449,
+          298,
+          151
+        ]
+      }
+    },
+    "discipline": {
+      "home": {
+        "fouls": [
+          199,
+          113,
+          86
+        ],
+        "yellow_cards": [
+          47,
+          26,
+          21
+        ],
+        "red_cards": [
+          3,
+          1,
+          2
+        ]
+      },
+      "away": {
+        "fouls": [
+          160,
+          122,
+          38
+        ],
+        "yellow_cards": [
+          29,
+          20,
+          9
+        ],
+        "red_cards": [
+          3,
+          3,
+          0
+        ]
+      }
+    },
+    "other_stats": {
+      "home": {
+        "corners": [
+          76,
+          46,
+          30
+        ],
+        "throw_ins": [
+          0,
+          0,
+          0
+        ],
+        "goal_kicks": [
+          0,
+          0,
+          0
+        ],
+        "offsides": [
+          41,
+          9,
+          32
+        ],
+        "saves": [
+          0,
+          0,
+          0
+        ]
+      },
+      "away": {
+        "corners": [
+          51,
+          35,
+          16
+        ],
+        "throw_ins": [
+          0,
+          0,
+          0
+        ],
+        "goal_kicks": [
+          0,
+          0,
+          0
+        ],
+        "offsides": [
+          31,
+          25,
+          6
+        ],
+        "saves": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "trends": [],
+    "match_intro": "",
+    "injuries": {
+      "home": [],
+      "away": []
+    },
+    "next_matches": {
+      "home": [
+        {
+          "date": "11/02/2026",
+          "match": "Monastir"
+        },
+        {
+          "date": "15/02/2026",
+          "match": "Monastir"
+        },
+        {
+          "date": "22/02/2026",
+          "match": "Atletico Lodigiani"
+        },
+        {
+          "date": "01/03/2026",
+          "match": "Monastir"
+        },
+        {
+          "date": "08/03/2026",
+          "match": "Flaminia"
+        },
+        {
+          "date": "22/03/2026",
+          "match": "Scafatese"
+        },
+        {
+          "date": "29/03/2026",
+          "match": "Monastir"
+        },
+        {
+          "date": "02/04/2026",
+          "match": "Anzio"
+        },
+        {
+          "date": "12/04/2026",
+          "match": "Monastir"
+        },
+        {
+          "date": "19/04/2026",
+          "match": "CynthiAlbalonga"
+        },
+        {
+          "date": "26/04/2026",
+          "match": "Monastir"
+        },
+        {
+          "date": "03/05/2026",
+          "match": "USD Palmese"
+        }
+      ],
+      "away": [
+        {
+          "date": "11/02/2026",
+          "match": "Monastir"
+        },
+        {
+          "date": "15/02/2026",
+          "match": "Trastevere Calcio"
+        },
+        {
+          "date": "22/02/2026",
+          "match": "Valmontone"
+        },
+        {
+          "date": "01/03/2026",
+          "match": "CynthiAlbalonga"
+        },
+        {
+          "date": "08/03/2026",
+          "match": "Valmontone"
+        },
+        {
+          "date": "22/03/2026",
+          "match": "ASG Nocerina"
+        },
+        {
+          "date": "29/03/2026",
+          "match": "Valmontone"
+        },
+        {
+          "date": "02/04/2026",
+          "match": "Budoni"
+        },
+        {
+          "date": "12/04/2026",
+          "match": "Valmontone"
+        },
+        {
+          "date": "19/04/2026",
+          "match": "Cassino"
+        },
+        {
+          "date": "26/04/2026",
+          "match": "Valmontone"
+        },
+        {
+          "date": "03/05/2026",
+          "match": "Real Monterotondo Scalo"
+        }
+      ]
+    },
+    "js_detailed_stats": {
+      "home_stats": {
+        "scr": [
+          34,
+          18,
+          16
+        ],
+        "un1.5": [
+          4,
+          2,
+          2
+        ],
+        "un2.5": [
+          9,
+          4,
+          5
+        ],
+        "un3.5": [
+          16,
+          8,
+          8
+        ],
+        "bts": [
+          15,
+          7,
+          8
+        ],
+        "cnd": [
+          30,
+          12,
+          18
+        ],
+        "ch": [
+          5,
+          4,
+          1
+        ],
+        "sn": [
+          19,
+          10,
+          9
+        ],
+        "pl": [
+          23,
+          11,
+          12
+        ],
+        "shots_total": [
+          237,
+          151,
+          86
+        ],
+        "shots_on_target": [
+          108,
+          68,
+          40
+        ],
+        "shots_off_target": [
+          129,
+          83,
+          46
+        ],
+        "shots_insidebox": [
+          0,
+          0,
+          0
+        ],
+        "shots_outsidebox": [
+          0,
+          0,
+          0
+        ],
+        "shots_blocked": [
+          0,
+          0,
+          0
+        ],
+        "passes_total": [
+          0,
+          0,
+          0
+        ],
+        "passes_accurate": [
+          0,
+          0,
+          0
+        ],
+        "attacks": [
+          1604,
+          794,
+          810
+        ],
+        "dan_attacks": [
+          911,
+          389,
+          522
+        ],
+        "fouls": [
+          199,
+          113,
+          86
+        ],
+        "total_corners": [
+          76,
+          46,
+          30
+        ],
+        "offsides": [
+          41,
+          9,
+          32
+        ],
+        "ball_poss": [
+          51.65,
+          53.55,
+          49.33
+        ],
+        "yellowcards": [
+          47,
+          26,
+          21
+        ],
+        "redcards": [
+          3,
+          1,
+          2
+        ],
+        "yellowredcards": [
+          0,
+          0,
+          0
+        ],
+        "saves": [
+          0,
+          0,
+          0
+        ],
+        "substitutions": [
+          50,
+          26,
+          24
+        ],
+        "goal_kick": [
+          0,
+          0,
+          0
+        ],
+        "goal_attempts": [
+          0,
+          0,
+          0
+        ],
+        "free_kick": [
+          309,
+          152,
+          157
+        ],
+        "throw_in": [
+          0,
+          0,
+          0
+        ],
+        "ball_safe": [
+          901,
+          537,
+          364
+        ],
+        "pen_awarded": [
+          0,
+          0,
+          0
+        ],
+        "pen_scored": [
+          0,
+          0,
+          0
+        ],
+        "injuries": [
+          0,
+          0,
+          0
+        ],
+        "tackles": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_0_15": [
+          1,
+          1,
+          0
+        ],
+        "scr_min_15_30": [
+          4,
+          2,
+          2
+        ],
+        "scr_min_30_45": [
+          4,
+          1,
+          3
+        ],
+        "scr_min_45_60": [
+          8,
+          5,
+          3
+        ],
+        "scr_min_60_75": [
+          1,
+          1,
+          0
+        ],
+        "scr_min_75_90": [
+          9,
+          4,
+          5
+        ],
+        "cnd_min_0_15": [
+          3,
+          0,
+          3
+        ],
+        "cnd_min_15_30": [
+          5,
+          2,
+          3
+        ],
+        "cnd_min_30_45": [
+          2,
+          0,
+          2
+        ],
+        "cnd_min_45_60": [
+          3,
+          2,
+          1
+        ],
+        "cnd_min_60_75": [
+          3,
+          2,
+          1
+        ],
+        "cnd_min_75_90": [
+          8,
+          4,
+          4
+        ],
+        "1st_goal_scr_min": [
+          47,
+          46,
+          50
+        ],
+        "1st_goal_cnd_min": [
+          28,
+          32,
+          22
+        ],
+        "1st_card_min": [
+          77,
+          73,
+          82
+        ],
+        "1st_corner_min": [
+          0,
+          0,
+          0
+        ]
+      },
+      "home_stats_ht": {
+        "scr": [
+          15,
+          7,
+          8
+        ],
+        "un1.5": [
+          15,
+          9,
+          6
+        ],
+        "un2.5": [
+          21,
+          11,
+          10
+        ],
+        "un3.5": [
+          23,
+          11,
+          12
+        ],
+        "bts": [
+          3,
+          1,
+          2
+        ],
+        "cnd": [
+          12,
+          2,
+          10
+        ],
+        "ch": [
+          14,
+          9,
+          5
+        ],
+        "sn": [
+          11,
+          6,
+          5
+        ],
+        "pl": [
+          23,
+          11,
+          12
+        ],
+        "shots_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_on_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_off_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_insidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_outsidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_blocked": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_accurate": [
+          "-",
+          "-",
+          "-"
+        ],
+        "attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "dan_attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "fouls": [
+          "-",
+          "-",
+          "-"
+        ],
+        "total_corners": [
+          "-",
+          "-",
+          "-"
+        ],
+        "offsides": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_poss": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "redcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowredcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "saves": [
+          "-",
+          "-",
+          "-"
+        ],
+        "substitutions": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_attempts": [
+          "-",
+          "-",
+          "-"
+        ],
+        "free_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "throw_in": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_safe": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_awarded": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_scored": [
+          "-",
+          "-",
+          "-"
+        ],
+        "injuries": [
+          "-",
+          "-",
+          "-"
+        ],
+        "tackles": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_scr_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_cnd_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_card_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_corner_min": [
+          "-",
+          "-",
+          "-"
+        ]
+      },
+      "away_stats": {
+        "scr": [
+          39,
+          20,
+          19
+        ],
+        "un1.5": [
+          6,
+          2,
+          4
+        ],
+        "un2.5": [
+          15,
+          7,
+          8
+        ],
+        "un3.5": [
+          22,
+          12,
+          10
+        ],
+        "bts": [
+          14,
+          8,
+          6
+        ],
+        "cnd": [
+          30,
+          16,
+          14
+        ],
+        "ch": [
+          11,
+          4,
+          7
+        ],
+        "sn": [
+          24,
+          12,
+          12
+        ],
+        "pl": [
+          27,
+          14,
+          13
+        ],
+        "shots_total": [
+          147,
+          111,
+          36
+        ],
+        "shots_on_target": [
+          55,
+          42,
+          13
+        ],
+        "shots_off_target": [
+          92,
+          69,
+          23
+        ],
+        "shots_insidebox": [
+          0,
+          0,
+          0
+        ],
+        "shots_outsidebox": [
+          0,
+          0,
+          0
+        ],
+        "shots_blocked": [
+          0,
+          0,
+          0
+        ],
+        "passes_total": [
+          0,
+          0,
+          0
+        ],
+        "passes_accurate": [
+          0,
+          0,
+          0
+        ],
+        "attacks": [
+          861,
+          600,
+          261
+        ],
+        "dan_attacks": [
+          449,
+          298,
+          151
+        ],
+        "fouls": [
+          160,
+          122,
+          38
+        ],
+        "total_corners": [
+          51,
+          35,
+          16
+        ],
+        "offsides": [
+          31,
+          25,
+          6
+        ],
+        "ball_poss": [
+          50.92,
+          52.22,
+          48
+        ],
+        "yellowcards": [
+          29,
+          20,
+          9
+        ],
+        "redcards": [
+          3,
+          3,
+          0
+        ],
+        "yellowredcards": [
+          0,
+          0,
+          0
+        ],
+        "saves": [
+          0,
+          0,
+          0
+        ],
+        "substitutions": [
+          62,
+          43,
+          19
+        ],
+        "goal_kick": [
+          0,
+          0,
+          0
+        ],
+        "goal_attempts": [
+          0,
+          0,
+          0
+        ],
+        "free_kick": [
+          165,
+          122,
+          43
+        ],
+        "throw_in": [
+          0,
+          0,
+          0
+        ],
+        "ball_safe": [
+          0,
+          0,
+          0
+        ],
+        "pen_awarded": [
+          0,
+          0,
+          0
+        ],
+        "pen_scored": [
+          0,
+          0,
+          0
+        ],
+        "injuries": [
+          0,
+          0,
+          0
+        ],
+        "tackles": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_0_15": [
+          9,
+          5,
+          4
+        ],
+        "scr_min_15_30": [
+          3,
+          2,
+          1
+        ],
+        "scr_min_30_45": [
+          4,
+          2,
+          2
+        ],
+        "scr_min_45_60": [
+          3,
+          0,
+          3
+        ],
+        "scr_min_60_75": [
+          5,
+          2,
+          3
+        ],
+        "scr_min_75_90": [
+          4,
+          2,
+          2
+        ],
+        "cnd_min_0_15": [
+          3,
+          2,
+          1
+        ],
+        "cnd_min_15_30": [
+          2,
+          2,
+          0
+        ],
+        "cnd_min_30_45": [
+          2,
+          2,
+          0
+        ],
+        "cnd_min_45_60": [
+          4,
+          1,
+          3
+        ],
+        "cnd_min_60_75": [
+          4,
+          1,
+          3
+        ],
+        "cnd_min_75_90": [
+          8,
+          4,
+          4
+        ],
+        "1st_goal_scr_min": [
+          39,
+          32,
+          45
+        ],
+        "1st_goal_cnd_min": [
+          31,
+          37,
+          26
+        ],
+        "1st_card_min": [
+          44,
+          44,
+          0
+        ],
+        "1st_corner_min": [
+          0,
+          0,
+          0
+        ]
+      },
+      "away_stats_ht": {
+        "scr": [
+          20,
+          11,
+          9
+        ],
+        "un1.5": [
+          20,
+          10,
+          10
+        ],
+        "un2.5": [
+          25,
+          13,
+          12
+        ],
+        "un3.5": [
+          25,
+          13,
+          12
+        ],
+        "bts": [
+          5,
+          3,
+          2
+        ],
+        "cnd": [
+          11,
+          8,
+          3
+        ],
+        "ch": [
+          18,
+          8,
+          10
+        ],
+        "sn": [
+          16,
+          10,
+          6
+        ],
+        "pl": [
+          27,
+          14,
+          13
+        ],
+        "shots_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_on_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_off_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_insidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_outsidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_blocked": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_accurate": [
+          "-",
+          "-",
+          "-"
+        ],
+        "attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "dan_attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "fouls": [
+          "-",
+          "-",
+          "-"
+        ],
+        "total_corners": [
+          "-",
+          "-",
+          "-"
+        ],
+        "offsides": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_poss": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "redcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowredcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "saves": [
+          "-",
+          "-",
+          "-"
+        ],
+        "substitutions": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_attempts": [
+          "-",
+          "-",
+          "-"
+        ],
+        "free_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "throw_in": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_safe": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_awarded": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_scored": [
+          "-",
+          "-",
+          "-"
+        ],
+        "injuries": [
+          "-",
+          "-",
+          "-"
+        ],
+        "tackles": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_scr_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_cnd_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_card_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_corner_min": [
+          "-",
+          "-",
+          "-"
+        ]
+      }
+    },
+    "actual_result": {
+      "home_score": 3,
+      "away_score": 0,
+      "result": "1",
+      "total_goals": 3,
+      "over_under_2_5": "Over"
+    },
+    "saved_at": "2026-02-11T18:29:43.857483"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/verona-u19-atalanta-u19-2423719",
+    "timestamp": 1770823826.2585096,
+    "teams": {
+      "home": "Verona U19",
+      "away": "Atalanta U19"
+    },
+    "match_info": {
+      "date": null,
+      "time": null,
+      "league": "ItP",
+      "league_code": "24237",
+      "venue": null
+    },
+    "standings": {
+      "home": 6,
+      "away": 14,
+      "home_points": null,
+      "away_points": null
+    },
+    "league_table": [],
+    "form": {
+      "home": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "W",
+        "D"
+      ],
+      "away": [
+        "D",
+        "L",
+        "D",
+        "L",
+        "L",
+        "L"
+      ],
+      "home_summary": {},
+      "away_summary": {}
+    },
+    "last_6_matches": {
+      "home": [
+        {
+          "date": "07/02/2026",
+          "home_team": "Juventus U19",
+          "home_score": 3,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "01/02/2026",
+          "home_team": "Verona U19",
+          "home_score": 4,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Milan U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "26/01/2026",
+          "home_team": "Cesena U19",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "22/01/2026",
+          "home_team": "Verona U19",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Cagliari U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "17/01/2026",
+          "home_team": "Verona U19",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "12/01/2026",
+          "home_team": "Frosinone U19",
+          "home_score": 3,
+          "away_score": 3,
+          "ht_home": 0,
+          "ht_away": 2,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "07/01/2026",
+          "home_team": "Verona U19",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Lazio U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "03/01/2026",
+          "home_team": "Verona U19",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Bologna U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "20/12/2025",
+          "home_team": "Roma U19",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "17/12/2025",
+          "home_team": "Verona U19",
+          "home_score": 3,
+          "away_score": 3,
+          "ht_home": 2,
+          "ht_away": 1,
+          "away_team": "Inter U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "13/12/2025",
+          "home_team": "Verona U19",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Juventus U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "06/12/2025",
+          "home_team": "Milan U19",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "29/11/2025",
+          "home_team": "Verona U19",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Genoa U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "24/11/2025",
+          "home_team": "Lazio U19",
+          "home_score": 2,
+          "away_score": 4,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "08/11/2025",
+          "home_team": "Verona U19",
+          "home_score": 0,
+          "away_score": 3,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Lecce U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "03/11/2025",
+          "home_team": "Torino U19",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "25/10/2025",
+          "home_team": "Cagliari U19",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "20/10/2025",
+          "home_team": "Verona U19",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Cremonese U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "04/10/2025",
+          "home_team": "Fiorentina U19",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "28/09/2025",
+          "home_team": "Verona U19",
+          "home_score": 3,
+          "away_score": 0,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Sassuolo U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "20/09/2025",
+          "home_team": "Parma U19",
+          "home_score": 3,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "15/09/2025",
+          "home_team": "Verona U19",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Cesena U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "30/08/2025",
+          "home_team": "Napoli U19",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 2,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "24/08/2025",
+          "home_team": "Verona U19",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Monza U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "18/08/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        }
+      ],
+      "away": [
+        {
+          "date": "08/02/2026",
+          "home_team": "Atalanta U19",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Bologna U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "02/02/2026",
+          "home_team": "Lazio U19",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "25/01/2026",
+          "home_team": "Atalanta U19",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Frosinone U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "21/01/2026",
+          "home_team": "Napoli U19",
+          "home_score": 3,
+          "away_score": 1,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "17/01/2026",
+          "home_team": "Verona U19",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "12/01/2026",
+          "home_team": "Atalanta U19",
+          "home_score": 2,
+          "away_score": 3,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Lecce U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "07/01/2026",
+          "home_team": "Cagliari U19",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "03/01/2026",
+          "home_team": "Monza U19",
+          "home_score": 1,
+          "away_score": 3,
+          "ht_home": 0,
+          "ht_away": 3,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "22/12/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Juventus U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "17/12/2025",
+          "home_team": "Cagliari U19",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "13/12/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Cremonese U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "09/12/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 1,
+          "away_score": 3,
+          "ht_home": 1,
+          "ht_away": 2,
+          "away_team": "Chelsea U19",
+          "competition": ""
+        },
+        {
+          "date": "06/12/2025",
+          "home_team": "Genoa U19",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "03/12/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 6,
+          "away_score": 1,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Entella U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "30/11/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Lazio U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "26/11/2025",
+          "home_team": "Eintracht Frankfurt U19",
+          "home_score": 3,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Atalanta U19",
+          "competition": ""
+        },
+        {
+          "date": "22/11/2025",
+          "home_team": "Cesena U19",
+          "home_score": 3,
+          "away_score": 3,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "09/11/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Napoli U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "05/11/2025",
+          "home_team": "Marseille U19",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Atalanta U19",
+          "competition": ""
+        },
+        {
+          "date": "01/11/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 3,
+          "away_score": 2,
+          "ht_home": 2,
+          "ht_away": 1,
+          "away_team": "Sassuolo U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "29/10/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 6,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Pro Vercelli U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "26/10/2025",
+          "home_team": "Fiorentina U19",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 2,
+          "ht_away": 2,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "22/10/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Slavia Prague U19",
+          "competition": ""
+        },
+        {
+          "date": "19/10/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Milan U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "04/10/2025",
+          "home_team": "Parma U19",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "30/09/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Club Brugge U19",
+          "competition": ""
+        },
+        {
+          "date": "26/09/2025",
+          "home_team": "Bologna U19",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "21/09/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Inter U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "17/09/2025",
+          "home_team": "PSG U19",
+          "home_score": 5,
+          "away_score": 1,
+          "ht_home": 2,
+          "ht_away": 1,
+          "away_team": "Atalanta U19",
+          "competition": ""
+        },
+        {
+          "date": "13/09/2025",
+          "home_team": "Frosinone U19",
+          "home_score": 3,
+          "away_score": 3,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "29/08/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 4,
+          "away_score": 1,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Torino U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "24/08/2025",
+          "home_team": "Roma U19",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "18/08/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        }
+      ]
+    },
+    "home_matches": [
+      {
+        "date": "01/02/2026",
+        "home_team": "Verona U19",
+        "home_score": 4,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Milan U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "22/01/2026",
+        "home_team": "Verona U19",
+        "home_score": 1,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Cagliari U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "17/01/2026",
+        "home_team": "Verona U19",
+        "home_score": 2,
+        "away_score": 1,
+        "ht_home": 2,
+        "ht_away": 0,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "07/01/2026",
+        "home_team": "Verona U19",
+        "home_score": 1,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Lazio U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "03/01/2026",
+        "home_team": "Verona U19",
+        "home_score": 2,
+        "away_score": 2,
+        "ht_home": 1,
+        "ht_away": 1,
+        "away_team": "Bologna U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "17/12/2025",
+        "home_team": "Verona U19",
+        "home_score": 3,
+        "away_score": 3,
+        "ht_home": 2,
+        "ht_away": 1,
+        "away_team": "Inter U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "13/12/2025",
+        "home_team": "Verona U19",
+        "home_score": 1,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 1,
+        "away_team": "Juventus U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "29/11/2025",
+        "home_team": "Verona U19",
+        "home_score": 1,
+        "away_score": 0,
+        "ht_home": 1,
+        "ht_away": 1,
+        "away_team": "Genoa U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "08/11/2025",
+        "home_team": "Verona U19",
+        "home_score": 0,
+        "away_score": 3,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Lecce U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "20/10/2025",
+        "home_team": "Verona U19",
+        "home_score": 1,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Cremonese U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "28/09/2025",
+        "home_team": "Verona U19",
+        "home_score": 3,
+        "away_score": 0,
+        "ht_home": 2,
+        "ht_away": 0,
+        "away_team": "Sassuolo U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "15/09/2025",
+        "home_team": "Verona U19",
+        "home_score": 2,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 1,
+        "away_team": "Cesena U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "24/08/2025",
+        "home_team": "Verona U19",
+        "home_score": 0,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Monza U19",
+        "competition": "ItP"
+      }
+    ],
+    "away_matches": [
+      {
+        "date": "02/02/2026",
+        "home_team": "Lazio U19",
+        "home_score": 2,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "21/01/2026",
+        "home_team": "Napoli U19",
+        "home_score": 3,
+        "away_score": 1,
+        "ht_home": 2,
+        "ht_away": 0,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "17/01/2026",
+        "home_team": "Verona U19",
+        "home_score": 2,
+        "away_score": 1,
+        "ht_home": 2,
+        "ht_away": 0,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "07/01/2026",
+        "home_team": "Cagliari U19",
+        "home_score": 0,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "03/01/2026",
+        "home_team": "Monza U19",
+        "home_score": 1,
+        "away_score": 3,
+        "ht_home": 0,
+        "ht_away": 3,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "17/12/2025",
+        "home_team": "Cagliari U19",
+        "home_score": 1,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "06/12/2025",
+        "home_team": "Genoa U19",
+        "home_score": 2,
+        "away_score": 2,
+        "ht_home": 1,
+        "ht_away": 1,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "26/11/2025",
+        "home_team": "Eintracht Frankfurt U19",
+        "home_score": 3,
+        "away_score": 2,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Atalanta U19",
+        "competition": ""
+      },
+      {
+        "date": "22/11/2025",
+        "home_team": "Cesena U19",
+        "home_score": 3,
+        "away_score": 3,
+        "ht_home": 1,
+        "ht_away": 1,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "05/11/2025",
+        "home_team": "Marseille U19",
+        "home_score": 0,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Atalanta U19",
+        "competition": ""
+      },
+      {
+        "date": "26/10/2025",
+        "home_team": "Fiorentina U19",
+        "home_score": 2,
+        "away_score": 2,
+        "ht_home": 2,
+        "ht_away": 2,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "04/10/2025",
+        "home_team": "Parma U19",
+        "home_score": 1,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "26/09/2025",
+        "home_team": "Bologna U19",
+        "home_score": 1,
+        "away_score": 2,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "17/09/2025",
+        "home_team": "PSG U19",
+        "home_score": 5,
+        "away_score": 1,
+        "ht_home": 2,
+        "ht_away": 1,
+        "away_team": "Atalanta U19",
+        "competition": ""
+      },
+      {
+        "date": "13/09/2025",
+        "home_team": "Frosinone U19",
+        "home_score": 3,
+        "away_score": 3,
+        "ht_home": 1,
+        "ht_away": 1,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      },
+      {
+        "date": "24/08/2025",
+        "home_team": "Roma U19",
+        "home_score": 0,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Atalanta U19",
+        "competition": "ItP"
+      }
+    ],
+    "head_to_head": {
+      "matches": [
+        {
+          "date": "17/01/2026",
+          "home_team": "Verona U19",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "18/08/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "14/04/2025",
+          "home_team": "Atalanta U19",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "26/10/2024",
+          "home_team": "Verona U19",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 2,
+          "ht_away": 2,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "11/05/2024",
+          "home_team": "Atalanta U19",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "28/10/2023",
+          "home_team": "Verona U19",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "16/04/2023",
+          "home_team": "Verona U19",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "31/10/2022",
+          "home_team": "Atalanta U19",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "30/04/2022",
+          "home_team": "Atalanta U19",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 2,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "29/01/2022",
+          "home_team": "Verona U19",
+          "home_score": 3,
+          "away_score": 3,
+          "ht_home": 2,
+          "ht_away": 2,
+          "away_team": "Atalanta U19",
+          "competition": "ItP"
+        },
+        {
+          "date": "17/02/2018",
+          "home_team": "Atalanta U19",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Verona U19",
+          "competition": "ItP"
+        }
+      ],
+      "summary": {
+        "home_wins": 2,
+        "home_win_pct": 33,
+        "draws": 3,
+        "draw_pct": 50,
+        "away_wins": 1,
+        "away_win_pct": 17
+      }
+    },
+    "odds": {
+      "1": 1.9,
+      "X": 3.54,
+      "2": 3.32,
+      "over": null,
+      "under": null
+    },
+    "predictions": {
+      "result": "X",
+      "probability": null,
+      "over_under": null
+    },
+    "goals_stats": {
+      "home": {
+        "scored": 37,
+        "conceded": 33,
+        "scored_avg": 1.48,
+        "conceded_avg": 1.32,
+        "games": 25
+      },
+      "away": {
+        "scored": 53,
+        "conceded": 48,
+        "scored_avg": 1.606060606060606,
+        "conceded_avg": 1.4545454545454546,
+        "games": 33
+      }
+    },
+    "over_under_stats": {
+      "home": {},
+      "away": {}
+    },
+    "both_to_score": {
+      "home": {
+        "yes_pct": 78,
+        "no_pct": 18
+      },
+      "away": {
+        "yes_pct": 78,
+        "no_pct": 18
+      }
+    },
+    "shots_stats": {
+      "home": {
+        "total": [
+          274,
+          150,
+          124
+        ],
+        "on_target": [
+          107,
+          53,
+          54
+        ],
+        "off_target": [
+          127,
+          73,
+          54
+        ],
+        "inside_box": [
+          104,
+          67,
+          37
+        ],
+        "outside_box": [
+          59,
+          28,
+          31
+        ],
+        "blocked": [
+          45,
+          25,
+          20
+        ]
+      },
+      "away": {
+        "total": [
+          281,
+          180,
+          101
+        ],
+        "on_target": [
+          104,
+          64,
+          40
+        ],
+        "off_target": [
+          146,
+          94,
+          52
+        ],
+        "inside_box": [
+          81,
+          52,
+          29
+        ],
+        "outside_box": [
+          45,
+          26,
+          19
+        ],
+        "blocked": [
+          39,
+          22,
+          17
+        ]
+      }
+    },
+    "passes_stats": {
+      "home": {
+        "total": [
+          3993,
+          1964,
+          2029
+        ],
+        "accurate": [
+          3050,
+          1517,
+          1533
+        ],
+        "ball_poss": [
+          47.13,
+          47.18,
+          47.08
+        ]
+      },
+      "away": {
+        "total": [
+          4273,
+          2149,
+          2124
+        ],
+        "accurate": [
+          3458,
+          1711,
+          1747
+        ],
+        "ball_poss": [
+          48.24,
+          47.93,
+          48.64
+        ]
+      }
+    },
+    "attacks_stats": {
+      "home": {
+        "total": [
+          1108,
+          413,
+          695
+        ],
+        "dangerous": [
+          816,
+          312,
+          504
+        ]
+      },
+      "away": {
+        "total": [
+          1678,
+          1091,
+          587
+        ],
+        "dangerous": [
+          1299,
+          885,
+          414
+        ]
+      }
+    },
+    "discipline": {
+      "home": {
+        "fouls": [
+          232,
+          103,
+          129
+        ],
+        "yellow_cards": [
+          35,
+          17,
+          18
+        ],
+        "red_cards": [
+          6,
+          2,
+          4
+        ]
+      },
+      "away": {
+        "fouls": [
+          231,
+          95,
+          136
+        ],
+        "yellow_cards": [
+          37,
+          17,
+          20
+        ],
+        "red_cards": [
+          2,
+          1,
+          1
+        ]
+      }
+    },
+    "other_stats": {
+      "home": {
+        "corners": [
+          110,
+          60,
+          50
+        ],
+        "throw_ins": [
+          284,
+          128,
+          156
+        ],
+        "goal_kicks": [
+          95,
+          46,
+          49
+        ],
+        "offsides": [
+          27,
+          12,
+          15
+        ],
+        "saves": [
+          47,
+          14,
+          33
+        ]
+      },
+      "away": {
+        "corners": [
+          139,
+          92,
+          47
+        ],
+        "throw_ins": [
+          301,
+          160,
+          141
+        ],
+        "goal_kicks": [
+          71,
+          31,
+          40
+        ],
+        "offsides": [
+          35,
+          9,
+          26
+        ],
+        "saves": [
+          33,
+          14,
+          19
+        ]
+      }
+    },
+    "trends": [],
+    "match_intro": "",
+    "injuries": {
+      "home": [],
+      "away": []
+    },
+    "next_matches": {
+      "home": [
+        {
+          "date": "11/02/2026",
+          "match": "Verona U"
+        },
+        {
+          "date": "14/02/2026",
+          "match": "Verona U"
+        },
+        {
+          "date": "21/02/2026",
+          "match": "Monza U"
+        },
+        {
+          "date": "28/02/2026",
+          "match": "Verona U"
+        },
+        {
+          "date": "04/03/2026",
+          "match": "Genoa U"
+        },
+        {
+          "date": "07/03/2026",
+          "match": "Verona U"
+        },
+        {
+          "date": "14/03/2026",
+          "match": "Sassuolo U"
+        },
+        {
+          "date": "21/03/2026",
+          "match": "Verona U"
+        },
+        {
+          "date": "04/04/2026",
+          "match": "Bologna U"
+        },
+        {
+          "date": "11/04/2026",
+          "match": "Verona U"
+        },
+        {
+          "date": "18/04/2026",
+          "match": "Cremonese U"
+        },
+        {
+          "date": "25/04/2026",
+          "match": "Lecce U"
+        },
+        {
+          "date": "02/05/2026",
+          "match": "Verona U"
+        },
+        {
+          "date": "09/05/2026",
+          "match": "Inter U"
+        },
+        {
+          "date": "16/05/2026",
+          "match": "Verona U"
+        }
+      ],
+      "away": [
+        {
+          "date": "11/02/2026",
+          "match": "Verona U"
+        },
+        {
+          "date": "16/02/2026",
+          "match": "Sassuolo U"
+        },
+        {
+          "date": "21/02/2026",
+          "match": "Atalanta U"
+        },
+        {
+          "date": "28/02/2026",
+          "match": "Inter U"
+        },
+        {
+          "date": "04/03/2026",
+          "match": "Atalanta U"
+        },
+        {
+          "date": "07/03/2026",
+          "match": "Cremonese U"
+        },
+        {
+          "date": "14/03/2026",
+          "match": "Atalanta U"
+        },
+        {
+          "date": "21/03/2026",
+          "match": "Lecce U"
+        },
+        {
+          "date": "04/04/2026",
+          "match": "Atalanta U"
+        },
+        {
+          "date": "11/04/2026",
+          "match": "Milan U"
+        },
+        {
+          "date": "18/04/2026",
+          "match": "Atalanta U"
+        },
+        {
+          "date": "25/04/2026",
+          "match": "Torino U"
+        },
+        {
+          "date": "02/05/2026",
+          "match": "Atalanta U"
+        },
+        {
+          "date": "09/05/2026",
+          "match": "Atalanta U"
+        },
+        {
+          "date": "16/05/2026",
+          "match": "Juventus U"
+        }
+      ]
+    },
+    "js_detailed_stats": {
+      "home_stats": {
+        "scr": [
+          37,
+          21,
+          16
+        ],
+        "un1.5": [
+          6,
+          3,
+          3
+        ],
+        "un2.5": [
+          12,
+          6,
+          6
+        ],
+        "un3.5": [
+          18,
+          10,
+          8
+        ],
+        "bts": [
+          15,
+          8,
+          7
+        ],
+        "cnd": [
+          33,
+          15,
+          18
+        ],
+        "ch": [
+          6,
+          3,
+          3
+        ],
+        "sn": [
+          20,
+          11,
+          9
+        ],
+        "pl": [
+          25,
+          13,
+          12
+        ],
+        "shots_total": [
+          274,
+          150,
+          124
+        ],
+        "shots_on_target": [
+          107,
+          53,
+          54
+        ],
+        "shots_off_target": [
+          127,
+          73,
+          54
+        ],
+        "shots_insidebox": [
+          104,
+          67,
+          37
+        ],
+        "shots_outsidebox": [
+          59,
+          28,
+          31
+        ],
+        "shots_blocked": [
+          45,
+          25,
+          20
+        ],
+        "passes_total": [
+          3993,
+          1964,
+          2029
+        ],
+        "passes_accurate": [
+          3050,
+          1517,
+          1533
+        ],
+        "attacks": [
+          1108,
+          413,
+          695
+        ],
+        "dan_attacks": [
+          816,
+          312,
+          504
+        ],
+        "fouls": [
+          232,
+          103,
+          129
+        ],
+        "total_corners": [
+          110,
+          60,
+          50
+        ],
+        "offsides": [
+          27,
+          12,
+          15
+        ],
+        "ball_poss": [
+          47.13,
+          47.18,
+          47.08
+        ],
+        "yellowcards": [
+          35,
+          17,
+          18
+        ],
+        "redcards": [
+          6,
+          2,
+          4
+        ],
+        "yellowredcards": [
+          0,
+          0,
+          0
+        ],
+        "saves": [
+          47,
+          14,
+          33
+        ],
+        "substitutions": [
+          54,
+          22,
+          32
+        ],
+        "goal_kick": [
+          95,
+          46,
+          49
+        ],
+        "goal_attempts": [
+          54,
+          18,
+          36
+        ],
+        "free_kick": [
+          39,
+          24,
+          15
+        ],
+        "throw_in": [
+          284,
+          128,
+          156
+        ],
+        "ball_safe": [
+          802,
+          295,
+          507
+        ],
+        "pen_awarded": [
+          0,
+          0,
+          0
+        ],
+        "pen_scored": [
+          0,
+          0,
+          0
+        ],
+        "injuries": [
+          10,
+          4,
+          6
+        ],
+        "tackles": [
+          48,
+          22,
+          26
+        ],
+        "scr_min_0_15": [
+          4,
+          4,
+          0
+        ],
+        "scr_min_15_30": [
+          5,
+          2,
+          3
+        ],
+        "scr_min_30_45": [
+          4,
+          2,
+          2
+        ],
+        "scr_min_45_60": [
+          5,
+          3,
+          2
+        ],
+        "scr_min_60_75": [
+          3,
+          2,
+          1
+        ],
+        "scr_min_75_90": [
+          6,
+          2,
+          4
+        ],
+        "cnd_min_0_15": [
+          2,
+          0,
+          2
+        ],
+        "cnd_min_15_30": [
+          4,
+          2,
+          2
+        ],
+        "cnd_min_30_45": [
+          4,
+          2,
+          2
+        ],
+        "cnd_min_45_60": [
+          3,
+          1,
+          2
+        ],
+        "cnd_min_60_75": [
+          8,
+          3,
+          5
+        ],
+        "cnd_min_75_90": [
+          9,
+          4,
+          5
+        ],
+        "1st_goal_scr_min": [
+          40,
+          23,
+          54
+        ],
+        "1st_goal_cnd_min": [
+          37,
+          40,
+          34
+        ],
+        "1st_card_min": [
+          46,
+          54,
+          39
+        ],
+        "1st_corner_min": [
+          0,
+          0,
+          0
+        ]
+      },
+      "home_stats_ht": {
+        "scr": [
+          19,
+          12,
+          7
+        ],
+        "un1.5": [
+          13,
+          6,
+          7
+        ],
+        "un2.5": [
+          24,
+          12,
+          12
+        ],
+        "un3.5": [
+          25,
+          13,
+          12
+        ],
+        "bts": [
+          7,
+          5,
+          2
+        ],
+        "cnd": [
+          12,
+          6,
+          6
+        ],
+        "ch": [
+          14,
+          7,
+          7
+        ],
+        "sn": [
+          14,
+          9,
+          5
+        ],
+        "pl": [
+          25,
+          13,
+          12
+        ],
+        "shots_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_on_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_off_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_insidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_outsidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_blocked": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_accurate": [
+          "-",
+          "-",
+          "-"
+        ],
+        "attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "dan_attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "fouls": [
+          "-",
+          "-",
+          "-"
+        ],
+        "total_corners": [
+          "-",
+          "-",
+          "-"
+        ],
+        "offsides": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_poss": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "redcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowredcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "saves": [
+          "-",
+          "-",
+          "-"
+        ],
+        "substitutions": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_attempts": [
+          "-",
+          "-",
+          "-"
+        ],
+        "free_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "throw_in": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_safe": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_awarded": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_scored": [
+          "-",
+          "-",
+          "-"
+        ],
+        "injuries": [
+          "-",
+          "-",
+          "-"
+        ],
+        "tackles": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_scr_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_cnd_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_card_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_corner_min": [
+          "-",
+          "-",
+          "-"
+        ]
+      },
+      "away_stats": {
+        "scr": [
+          53,
+          29,
+          24
+        ],
+        "un1.5": [
+          9,
+          5,
+          4
+        ],
+        "un2.5": [
+          15,
+          10,
+          5
+        ],
+        "un3.5": [
+          18,
+          10,
+          8
+        ],
+        "bts": [
+          19,
+          8,
+          11
+        ],
+        "cnd": [
+          48,
+          19,
+          29
+        ],
+        "ch": [
+          9,
+          6,
+          3
+        ],
+        "sn": [
+          23,
+          10,
+          13
+        ],
+        "pl": [
+          33,
+          17,
+          16
+        ],
+        "shots_total": [
+          281,
+          180,
+          101
+        ],
+        "shots_on_target": [
+          104,
+          64,
+          40
+        ],
+        "shots_off_target": [
+          146,
+          94,
+          52
+        ],
+        "shots_insidebox": [
+          81,
+          52,
+          29
+        ],
+        "shots_outsidebox": [
+          45,
+          26,
+          19
+        ],
+        "shots_blocked": [
+          39,
+          22,
+          17
+        ],
+        "passes_total": [
+          4273,
+          2149,
+          2124
+        ],
+        "passes_accurate": [
+          3458,
+          1711,
+          1747
+        ],
+        "attacks": [
+          1678,
+          1091,
+          587
+        ],
+        "dan_attacks": [
+          1299,
+          885,
+          414
+        ],
+        "fouls": [
+          231,
+          95,
+          136
+        ],
+        "total_corners": [
+          139,
+          92,
+          47
+        ],
+        "offsides": [
+          35,
+          9,
+          26
+        ],
+        "ball_poss": [
+          48.24,
+          47.93,
+          48.64
+        ],
+        "yellowcards": [
+          37,
+          17,
+          20
+        ],
+        "redcards": [
+          2,
+          1,
+          1
+        ],
+        "yellowredcards": [
+          0,
+          0,
+          0
+        ],
+        "saves": [
+          33,
+          14,
+          19
+        ],
+        "substitutions": [
+          80,
+          47,
+          33
+        ],
+        "goal_kick": [
+          71,
+          31,
+          40
+        ],
+        "goal_attempts": [
+          61,
+          29,
+          32
+        ],
+        "free_kick": [
+          58,
+          32,
+          26
+        ],
+        "throw_in": [
+          301,
+          160,
+          141
+        ],
+        "ball_safe": [
+          1008,
+          727,
+          281
+        ],
+        "pen_awarded": [
+          0,
+          0,
+          0
+        ],
+        "pen_scored": [
+          0,
+          0,
+          0
+        ],
+        "injuries": [
+          12,
+          9,
+          3
+        ],
+        "tackles": [
+          25,
+          19,
+          6
+        ],
+        "scr_min_0_15": [
+          7,
+          2,
+          5
+        ],
+        "scr_min_15_30": [
+          4,
+          2,
+          2
+        ],
+        "scr_min_30_45": [
+          5,
+          5,
+          0
+        ],
+        "scr_min_45_60": [
+          6,
+          4,
+          2
+        ],
+        "scr_min_60_75": [
+          11,
+          7,
+          4
+        ],
+        "scr_min_75_90": [
+          10,
+          6,
+          4
+        ],
+        "cnd_min_0_15": [
+          6,
+          2,
+          4
+        ],
+        "cnd_min_15_30": [
+          3,
+          1,
+          2
+        ],
+        "cnd_min_30_45": [
+          3,
+          1,
+          2
+        ],
+        "cnd_min_45_60": [
+          5,
+          3,
+          2
+        ],
+        "cnd_min_60_75": [
+          5,
+          4,
+          1
+        ],
+        "cnd_min_75_90": [
+          10,
+          4,
+          6
+        ],
+        "1st_goal_scr_min": [
+          40,
+          42,
+          38
+        ],
+        "1st_goal_cnd_min": [
+          35,
+          57,
+          17
+        ],
+        "1st_card_min": [
+          41,
+          38,
+          43
+        ],
+        "1st_corner_min": [
+          0,
+          0,
+          0
+        ]
+      },
+      "away_stats_ht": {
+        "scr": [
+          22,
+          10,
+          12
+        ],
+        "un1.5": [
+          20,
+          12,
+          8
+        ],
+        "un2.5": [
+          28,
+          15,
+          13
+        ],
+        "un3.5": [
+          32,
+          17,
+          15
+        ],
+        "bts": [
+          7,
+          2,
+          5
+        ],
+        "cnd": [
+          19,
+          6,
+          13
+        ],
+        "ch": [
+          19,
+          12,
+          7
+        ],
+        "sn": [
+          15,
+          6,
+          9
+        ],
+        "pl": [
+          33,
+          17,
+          16
+        ],
+        "shots_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_on_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_off_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_insidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_outsidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_blocked": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_accurate": [
+          "-",
+          "-",
+          "-"
+        ],
+        "attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "dan_attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "fouls": [
+          "-",
+          "-",
+          "-"
+        ],
+        "total_corners": [
+          "-",
+          "-",
+          "-"
+        ],
+        "offsides": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_poss": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "redcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowredcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "saves": [
+          "-",
+          "-",
+          "-"
+        ],
+        "substitutions": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_attempts": [
+          "-",
+          "-",
+          "-"
+        ],
+        "free_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "throw_in": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_safe": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_awarded": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_scored": [
+          "-",
+          "-",
+          "-"
+        ],
+        "injuries": [
+          "-",
+          "-",
+          "-"
+        ],
+        "tackles": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_scr_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_cnd_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_card_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_corner_min": [
+          "-",
+          "-",
+          "-"
+        ]
+      }
+    },
+    "actual_result": {
+      "home_score": 2,
+      "away_score": 2,
+      "result": "X",
+      "total_goals": 4,
+      "over_under_2_5": "Over"
+    },
+    "saved_at": "2026-02-11T18:30:26.815005"
   }
 ]
