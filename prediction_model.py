@@ -789,10 +789,19 @@ class FootballPredictor:
     # Training
     # ------------------------------------------------------------------
 
-    def train(self, training_data: List[Dict] = None, league: str = None) -> Dict:
+    def train(self, training_data: List[Dict] = None, league: str = None, 
+              test_examples: List[Dict] = None, test_size: float = 0.2) -> Dict:
         """
-        Train models. If league is specified, train league-specific model.
-        Otherwise train global model.
+        Train models with optional time-based test split for accurate accuracy.
+        
+        Args:
+            training_data: Training examples (league-formatted or flat list)
+            league: League name for league-specific model
+            test_examples: Optional pre-split test examples
+            test_size: Fraction of data to use for testing (default 20%)
+        
+        Returns:
+            Dict with training and test accuracy metrics
         """
         # Lazy import to avoid circular dependency
         from data_storage import MatchDataStorage
@@ -819,35 +828,75 @@ class FootballPredictor:
             # Old structure: [{'features': ..., 'labels': ...}, ...]
             examples = training_data
         
-        if len(examples) < 10:
+        # Split examples into train/test (time-based: oldest for train, newest for test)
+        if test_examples is None:
+            # Sort by timestamp if available, otherwise use order
+            examples_sorted = sorted(examples, key=lambda x: x.get('timestamp', ''))
+            split_idx = int(len(examples_sorted) * (1 - test_size))
+            train_examples = examples_sorted[:split_idx]
+            test_examples = examples_sorted[split_idx:]
+        else:
+            train_examples = examples
+        
+        if len(train_examples) < 10:
             return {
                 'error': 'Insufficient training data', 
                 'required': 10, 
-                'available': len(examples),
+                'available': len(train_examples),
                 'league': league or 'global'
             }
 
-        X, y_result, y_ou = [], [], []
-        for ex in examples:
+        # Convert training examples to arrays
+        X_train, y_result_train, y_ou_train = [], [], []
+        for ex in train_examples:
             feats = ex.get('features', {})
             labels = ex.get('labels', {})
             vec = self._features_to_array(feats).flatten().tolist()
-            X.append(vec)
-            y_result.append(labels.get('result', 'X'))
-            y_ou.append(labels.get('over_under_2_5', 'Under'))
+            X_train.append(vec)
+            y_result_train.append(labels.get('result', 'X'))
+            y_ou_train.append(labels.get('over_under_2_5', 'Under'))
 
-        X = np.array(X)
-        y_result = np.array(y_result)
-        y_ou = np.array(y_ou)
+        X_train = np.array(X_train)
+        y_result_train = np.array(y_result_train)
+        y_ou_train = np.array(y_ou_train)
 
         scaler = StandardScaler()
-        X_scaled = scaler.fit_transform(X)
+        X_train_scaled = scaler.fit_transform(X_train)
 
         result_model = RandomForestClassifier(n_estimators=200, max_depth=12, random_state=42)
-        result_model.fit(X_scaled, y_result)
+        result_model.fit(X_train_scaled, y_result_train)
 
         ou_model = GradientBoostingClassifier(n_estimators=200, max_depth=6, random_state=42)
-        ou_model.fit(X_scaled, y_ou)
+        ou_model.fit(X_train_scaled, y_ou_train)
+
+        # Calculate training accuracy
+        train_result_acc = float(result_model.score(X_train_scaled, y_result_train))
+        train_ou_acc = float(ou_model.score(X_train_scaled, y_ou_train))
+        
+        # Calculate test accuracy if test data available
+        test_result_acc = None
+        test_ou_acc = None
+        test_examples_count = 0
+        
+        if test_examples and len(test_examples) > 0:
+            X_test, y_result_test, y_ou_test = [], [], []
+            for ex in test_examples:
+                feats = ex.get('features', {})
+                labels = ex.get('labels', {})
+                vec = self._features_to_array(feats).flatten().tolist()
+                X_test.append(vec)
+                y_result_test.append(labels.get('result', 'X'))
+                y_ou_test.append(labels.get('over_under_2_5', 'Under'))
+            
+            if X_test:
+                X_test = np.array(X_test)
+                X_test_scaled = scaler.transform(X_test)
+                y_result_test = np.array(y_result_test)
+                y_ou_test = np.array(y_ou_test)
+                
+                test_result_acc = float(result_model.score(X_test_scaled, y_result_test))
+                test_ou_acc = float(ou_model.score(X_test_scaled, y_ou_test))
+                test_examples_count = len(test_examples)
 
         if league:
             # Save league-specific model
@@ -866,18 +915,26 @@ class FootballPredictor:
             
             # Save training history
             self._save_training_history({
-                'training_examples': len(examples),
-                'result_accuracy': float(result_model.score(X_scaled, y_result)),
-                'ou_accuracy': float(ou_model.score(X_scaled, y_ou)),
+                'training_examples': len(train_examples),
+                'test_examples': test_examples_count,
+                'result_accuracy': test_result_acc if test_result_acc is not None else train_result_acc,
+                'ou_accuracy': test_ou_acc if test_ou_acc is not None else train_ou_acc,
+                'train_result_acc': train_result_acc,
+                'train_ou_acc': train_ou_acc,
+                'test_result_acc': test_result_acc,
+                'test_ou_acc': test_ou_acc,
                 'model_type': 'league_specific',
                 'league': league
             })
             
             return {
                 'league': league,
-                'training_examples': len(examples),
-                'result_accuracy': float(result_model.score(X_scaled, y_result)),
-                'ou_accuracy': float(ou_model.score(X_scaled, y_ou)),
+                'training_examples': len(train_examples),
+                'test_examples': test_examples_count,
+                'train_result_accuracy': train_result_acc,
+                'train_ou_accuracy': train_ou_acc,
+                'result_accuracy': test_result_acc if test_result_acc is not None else train_result_acc,
+                'ou_accuracy': test_ou_acc if test_ou_acc is not None else train_ou_acc,
                 'model_type': 'league_specific'
             }
         else:
@@ -889,16 +946,24 @@ class FootballPredictor:
             
             # Save training history
             self._save_training_history({
-                'training_examples': len(examples),
-                'result_accuracy': float(self.result_model.score(X_scaled, y_result)),
-                'ou_accuracy': float(self.ou_model.score(X_scaled, y_ou)),
+                'training_examples': len(train_examples),
+                'test_examples': test_examples_count,
+                'result_accuracy': test_result_acc if test_result_acc is not None else train_result_acc,
+                'ou_accuracy': test_ou_acc if test_ou_acc is not None else train_ou_acc,
+                'train_result_acc': train_result_acc,
+                'train_ou_acc': train_ou_acc,
+                'test_result_acc': test_result_acc,
+                'test_ou_acc': test_ou_acc,
                 'model_type': 'global'
             })
             
             return {
-                'training_examples': len(examples),
-                'result_accuracy': float(self.result_model.score(X_scaled, y_result)),
-                'ou_accuracy': float(self.ou_model.score(X_scaled, y_ou)),
+                'training_examples': len(train_examples),
+                'test_examples': test_examples_count,
+                'train_result_accuracy': train_result_acc,
+                'train_ou_accuracy': train_ou_acc,
+                'result_accuracy': test_result_acc if test_result_acc is not None else train_result_acc,
+                'ou_accuracy': test_ou_acc if test_ou_acc is not None else train_ou_acc,
                 'model_type': 'global'
             }
 

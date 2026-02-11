@@ -1,33 +1,53 @@
 #!/usr/bin/env python3
 """
 Auto-Training Script for Football Prediction Model
-Automatically trains the model using links from results.txt if more than 20 hours
-have passed since the last training. This ensures the model learns from scraped
-match data before making predictions.
+Automatically trains the model daily by:
+1. Scraping yesterday's match results from Forebet
+2. Checking for new leagues and updating database
+3. Retraining the model with all available data
+4. Showing training statistics
+
+Designed to run via cron at 8 AM daily (after yesterday's games completed).
 """
 
 import os
+import sys
 import json
 import time
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 import argparse
 
+# Add parent directory to path for imports
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 # Constants
+DATA_DIR = "data"
 RESULTS_FILE = "results.txt"
 LAST_TRAIN_FILE = "data/last_training.json"
-TRAINING_THRESHOLD_HOURS = 20
-MATCH_DATA_DIR = "match_data"
+LAST_SCRAPE_FILE = "data/last_scrape.json"
+TRAINING_THRESHOLD_HOURS = 24  # Daily training
+MATCHES_FILE = "data/matches.json"
 
 
 class AutoTrainer:
-    """Handles automatic model training based on time and data availability."""
+    """Handles automatic daily model training with scraping and league updates."""
     
     def __init__(self, results_file: str = RESULTS_FILE, 
                  last_train_file: str = LAST_TRAIN_FILE):
         self.results_file = results_file
         self.last_train_file = last_train_file
-        self.matches_file = os.path.join(MATCH_DATA_DIR, "matches.json")
+        self.matches_file = MATCHES_FILE
+        self.data_dir = DATA_DIR
+        
+    def get_yesterday_date(self) -> str:
+        """Get yesterday's date in YYYY-MM-DD format."""
+        yesterday = datetime.now() - timedelta(days=1)
+        return yesterday.strftime('%Y-%m-%d')
+    
+    def get_today_date(self) -> str:
+        """Get today's date in YYYY-MM-DD format."""
+        return datetime.now().strftime('%Y-%m-%d')
         
     def get_last_training_time(self) -> Optional[datetime]:
         """Get the timestamp of the last training."""

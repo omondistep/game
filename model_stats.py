@@ -35,8 +35,12 @@ def get_training_stats() -> Dict:
     
     stats = {
         'total_trainings': len(history),
-        'training_history': history[-10:] if history else [],  # Last 10
+        'training_history': history[-10:] if history else [],
         'training_count': 0,
+        'train_result_accuracy': 0.0,
+        'train_ou_accuracy': 0.0,
+        'test_result_accuracy': None,
+        'test_ou_accuracy': None,
         'result_accuracy': 0.0,
         'ou_accuracy': 0.0,
         'improvement_trend': None,
@@ -57,30 +61,57 @@ def get_training_stats() -> Dict:
                     # Old format: [{'features': ..., 'labels': ...}, ...]
                     stats['training_count'] = len(data)
     
-    # Get latest training metrics
+    # Get latest training metrics (use test accuracy if available)
     if history:
         latest = history[-1]
-        stats['result_accuracy'] = latest.get('result_accuracy', 0)
-        stats['ou_accuracy'] = latest.get('ou_accuracy', 0)
+        
+        # Get train and test accuracy
+        stats['train_result_accuracy'] = latest.get('train_result_acc', 0)
+        stats['train_ou_accuracy'] = latest.get('train_ou_acc', 0)
+        stats['test_result_accuracy'] = latest.get('test_result_acc')
+        stats['test_ou_accuracy'] = latest.get('test_ou_acc')
+        
+        # Use test accuracy for display if available
+        if stats['test_result_accuracy'] is not None:
+            stats['result_accuracy'] = stats['test_result_accuracy']
+            stats['ou_accuracy'] = stats['test_ou_accuracy'] if stats['test_ou_accuracy'] is not None else stats['train_ou_accuracy']
+        else:
+            stats['result_accuracy'] = stats['train_result_accuracy']
+            stats['ou_accuracy'] = stats['train_ou_accuracy']
+        
         stats['last_training'] = latest.get('timestamp')
         
-        # Calculate improvement trend
+        # Calculate improvement trend (test accuracy if available)
         if len(history) >= 2:
             prev = history[-2]
-            result_diff = stats['result_accuracy'] - prev.get('result_accuracy', 0)
-            ou_diff = stats['ou_accuracy'] - prev.get('ou_accuracy', 0)
+            
+            # Use test accuracy if available, else train
+            curr_test = stats['test_result_accuracy'] if stats['test_result_accuracy'] is not None else stats['train_result_accuracy']
+            prev_test = prev.get('test_result_acc') if prev.get('test_result_acc') is not None else prev.get('train_result_acc', 0)
+            
+            curr_ou = stats['test_ou_accuracy'] if stats['test_ou_accuracy'] is not None else stats['train_ou_accuracy']
+            prev_ou = prev.get('test_ou_acc') if prev.get('test_ou_acc') is not None else prev.get('train_ou_acc', 0)
+            
             stats['improvement_trend'] = {
-                'result_change': result_diff,
-                'ou_change': ou_diff
+                'result_change': curr_test - prev_test,
+                'ou_change': curr_ou - prev_ou
             }
         
         # Recent improvement (last 5 trainings)
         if len(history) >= 5:
             first_of_5 = history[-5]
             last_of_5 = history[-1]
+            
+            # Use test accuracy if available
+            first_test = first_of_5.get('test_result_acc') if first_of_5.get('test_result_acc') is not None else first_of_5.get('train_result_acc', 0)
+            last_test = last_of_5.get('test_result_acc') if last_of_5.get('test_result_acc') is not None else last_of_5.get('train_result_acc', 0)
+            
+            first_ou = first_of_5.get('test_ou_acc') if first_of_5.get('test_ou_acc') is not None else first_of_5.get('train_ou_acc', 0)
+            last_ou = last_of_5.get('test_ou_acc') if last_of_5.get('test_ou_acc') is not None else last_of_5.get('train_ou_acc', 0)
+            
             stats['recent_improvement'] = {
-                'result_change': last_of_5.get('result_accuracy', 0) - first_of_5.get('result_accuracy', 0),
-                'ou_change': last_of_5.get('ou_accuracy', 0) - first_of_5.get('ou_accuracy', 0),
+                'result_change': last_test - first_test,
+                'ou_change': last_ou - first_ou,
                 'samples_added': last_of_5.get('training_examples', 0) - first_of_5.get('training_examples', 0)
             }
     
@@ -113,10 +144,16 @@ def main():
     
     # Latest accuracy
     print("Latest Training Accuracy:")
-    result_str = format_percentage(stats['result_accuracy'])
-    ou_str = format_percentage(stats['ou_accuracy'])
-    print(f"  Match Result (1/X/2): {result_str}")
-    print(f"  Over/Under 2.5:      {ou_str}")
+    
+    # Show test accuracy if available
+    if stats['test_result_accuracy'] is not None:
+        print(f"  Test Match Result (1/X/2): {format_percentage(stats['test_result_accuracy'])}")
+        print(f"  Test Over/Under 2.5:      {format_percentage(stats['test_ou_accuracy'])}")
+        print(f"  Train Match Result:        {format_percentage(stats['train_result_accuracy'])}")
+        print(f"  Train Over/Under:          {format_percentage(stats['train_ou_accuracy'])}")
+    else:
+        print(f"  Match Result (1/X/2): {format_percentage(stats['result_accuracy'])}")
+        print(f"  Over/Under 2.5:      {format_percentage(stats['ou_accuracy'])}")
     print()
     
     # Training count

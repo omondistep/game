@@ -256,5 +256,17 @@
     "ou_accuracy": 1.0,
     "model_type": "league_specific",
     "league": "Spain La Liga"
+  },
+  {
+    "timestamp": "2026-02-11T18:20:27.885232",
+    "training_examples": 2270,
+    "test_examples": 568,
+    "result_accuracy": 0.4665492957746479,
+    "ou_accuracy": 0.5352112676056338,
+    "train_result_acc": 0.771806167400881,
+    "train_ou_acc": 1.0,
+    "test_result_acc": 0.4665492957746479,
+    "test_ou_acc": 0.5352112676056338,
+    "model_type": "global"
   }
 ]
