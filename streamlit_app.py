@@ -640,48 +640,9 @@ def display_stats():
             </div>
             """, unsafe_allow_html=True)
         
-        # Show accuracy interpretation
-        if test_acc is not None:
-            if test_acc >= 50:
-                st.success(f"✅ Model accuracy ({test_acc:.1f}%) is good! Better than random guessing.")
-            elif test_acc >= 40:
-                st.warning(f"⚠️ Model accuracy ({test_acc:.1f}%) is moderate. More data may help.")
-            else:
-                st.error(f"❌ Model accuracy ({test_acc:.1f}%) needs improvement.")
-        
-        st.markdown("### 📊 Prediction Statistics")
-        
-        col1, col2, col3 = st.columns(3)
-        
-        with col1:
-            accuracy = stats.get('accuracy', 0) * 100
-            st.markdown(f"""
-            <div class="card" style="text-align: center;">
-                <h1 style="font-size: 3rem; margin: 0;">🎯</h1>
-                <p style="color: #94a3b8; margin: 0;">Live Accuracy</p>
-                <h2 style="margin: 0.5rem 0 0 0;">{accuracy:.1f}%</h2>
-            </div>
-            """.format(accuracy), unsafe_allow_html=True)
-        
-        with col2:
-            correct = stats.get('correct_predictions', 0)
-            st.markdown(f"""
-            <div class="card" style="text-align: center;">
-                <h1 style="font-size: 3rem; margin: 0;">✅</h1>
-                <p style="color: #94a3b8; margin: 0;">Correct Predictions</p>
-                <h2 style="margin: 0.5rem 0 0 0;">{correct}</h2>
-            </div>
-            """, unsafe_allow_html=True)
-        
-        with col3:
-            total = stats.get('total_predictions', 0)
-            st.markdown(f"""
-            <div class="card" style="text-align: center;">
-                <h1 style="font-size: 3rem; margin: 0;">📈</h1>
-                <p style="color: #94a3b8; margin: 0;">Total Predictions</p>
-                <h2 style="margin: 0.5rem 0 0 0;">{total}</h2>
-            </div>
-            """, unsafe_allow_html=True)
+        # Show O/U test accuracy
+        if training_stats.get('test_ou_accuracy') is not None:
+            st.markdown(f"**Over/Under Test Accuracy:** {training_stats.get('test_ou_accuracy', 0) * 100:.1f}%")
         
         st.markdown("### 🏆 League Statistics")
         
