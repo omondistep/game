@@ -195,13 +195,18 @@ def render_prediction_badge(prediction, confidence, color="green"):
         "green": ("🟢", "High Confidence"),
         "yellow": ("🟡", "Medium Confidence"),
         "red": ("🔴", "Low Confidence"),
+        "gray": ("⚪", "Low Confidence"),
     }
     icon, label = color_map.get(color, ("⚪", "Unknown"))
+    
+    # Handle case where confidence is 0 or None
+    conf_pct = confidence if confidence and confidence > 0 else 0
+    
     st.markdown(f"""
     <div style="text-align: center; padding: 1rem; background: rgba(99, 102, 241, 0.1); border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.3);">
         <div style="font-size: 2rem; margin-bottom: 0.5rem;">{icon}</div>
         <div style="font-size: 1.5rem; font-weight: 700;">{prediction}</div>
-        <div style="color: #94a3b8; font-size: 0.875rem;">{label} • {confidence:.0f}%</div>
+        <div style="color: #94a3b8; font-size: 0.875rem;">{label} • {conf_pct:.0f}%</div>
     </div>
     """, unsafe_allow_html=True)
 

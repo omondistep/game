@@ -92006,5 +92006,2328 @@
       "over_under_2_5": "Over"
     },
     "saved_at": "2026-02-11T18:30:26.815005"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/digenis-morfou-pafos-2420755",
+    "timestamp": 1770826526.5878358,
+    "teams": {
+      "home": "Digenis Morfou",
+      "away": "Pafos"
+    },
+    "match_info": {
+      "date": null,
+      "time": null,
+      "league": "CyC",
+      "league_code": "24207",
+      "venue": null
+    },
+    "standings": {
+      "home": 2,
+      "away": 4,
+      "home_points": null,
+      "away_points": null
+    },
+    "league_table": [],
+    "form": {
+      "home": [
+        "L",
+        "D",
+        "D",
+        "D",
+        "W",
+        "L"
+      ],
+      "away": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "home_summary": {},
+      "away_summary": {}
+    },
+    "last_6_matches": {
+      "home": [
+        {
+          "date": "07/02/2026",
+          "home_team": "Digenis Morfou",
+          "home_score": 1,
+          "away_score": 5,
+          "ht_home": 0,
+          "ht_away": 4,
+          "away_team": "Spartakos",
+          "competition": "Kitiou"
+        },
+        {
+          "date": "31/01/2026",
+          "home_team": "Halkanoras Idaliou",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Digenis",
+          "competition": "Morfou"
+        },
+        {
+          "date": "25/01/2026",
+          "home_team": "Digenis Morfou",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "APEA",
+          "competition": "Cy2"
+        },
+        {
+          "date": "21/01/2026",
+          "home_team": "Nea Salamina",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Digenis",
+          "competition": "Morfou"
+        },
+        {
+          "date": "18/01/2026",
+          "home_team": "Digenis Morfou",
+          "home_score": 5,
+          "away_score": 1,
+          "ht_home": 3,
+          "ht_away": 0,
+          "away_team": "Ahironas /",
+          "competition": "Onisilos"
+        },
+        {
+          "date": "10/01/2026",
+          "home_team": "Spartakos Kitiou",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Digenis",
+          "competition": "Morfou"
+        },
+        {
+          "date": "03/01/2026",
+          "home_team": "Digenis Morfou",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 2,
+          "away_team": "PAEEK",
+          "competition": "Kyrenia"
+        },
+        {
+          "date": "20/12/2025",
+          "home_team": "Omonia 29is Maiou",
+          "home_score": 0,
+          "away_score": 3,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Digenis",
+          "competition": "Morfou"
+        },
+        {
+          "date": "13/12/2025",
+          "home_team": "Digenis Morfou",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "AE",
+          "competition": "Zakakiou"
+        },
+        {
+          "date": "05/12/2025",
+          "home_team": "ASIL Lysi",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Digenis",
+          "competition": "Morfou"
+        },
+        {
+          "date": "28/11/2025",
+          "home_team": "Digenis Morfou",
+          "home_score": 3,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Halkanoras",
+          "competition": "Idaliou"
+        },
+        {
+          "date": "22/11/2025",
+          "home_team": "MEAP Nisou",
+          "home_score": 0,
+          "away_score": 3,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Digenis",
+          "competition": "Morfou"
+        },
+        {
+          "date": "07/11/2025",
+          "home_team": "Digenis Morfou",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Ahironas /",
+          "competition": "Onisilos"
+        },
+        {
+          "date": "01/11/2025",
+          "home_team": "Digenis Morfou",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Ayia",
+          "competition": "Napa"
+        },
+        {
+          "date": "25/10/2025",
+          "home_team": "Iraklis Yerolakkos",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Digenis",
+          "competition": "Morfou"
+        },
+        {
+          "date": "18/10/2025",
+          "home_team": "Digenis Morfou",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Doxa",
+          "competition": "Katokopia"
+        },
+        {
+          "date": "05/10/2025",
+          "home_team": "APEA",
+          "home_score": 0,
+          "away_score": 4,
+          "ht_home": 0,
+          "ht_away": 2,
+          "away_team": "Digenis",
+          "competition": "Morfou"
+        },
+        {
+          "date": "28/09/2025",
+          "home_team": "Digenis Morfou",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Nea",
+          "competition": "Salamina"
+        },
+        {
+          "date": "19/09/2025",
+          "home_team": "Ethnikos Latsion",
+          "home_score": 0,
+          "away_score": 3,
+          "ht_home": 0,
+          "ht_away": 2,
+          "away_team": "Digenis",
+          "competition": "Morfou"
+        },
+        {
+          "date": "13/09/2025",
+          "home_team": "Digenis Morfou",
+          "home_score": 3,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Karmiotissa",
+          "competition": "Cy2"
+        }
+      ],
+      "away": [
+        {
+          "date": "08/02/2026",
+          "home_team": "Pafos",
+          "home_score": 2,
+          "away_score": 4,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Omonia",
+          "competition": "Nicosia"
+        },
+        {
+          "date": "04/02/2026",
+          "home_team": "Pafos",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "APOEL",
+          "competition": "Cy1"
+        },
+        {
+          "date": "31/01/2026",
+          "home_team": "Ethnikos Achnas",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Pafos",
+          "competition": "Cy1"
+        },
+        {
+          "date": "28/01/2026",
+          "home_team": "Pafos",
+          "home_score": 4,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Slavia",
+          "competition": "Praha"
+        },
+        {
+          "date": "25/01/2026",
+          "home_team": "Pafos",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "AEK",
+          "competition": "Larnaka"
+        },
+        {
+          "date": "21/01/2026",
+          "home_team": "Chelsea",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Pafos",
+          "competition": "UCL"
+        },
+        {
+          "date": "17/01/2026",
+          "home_team": "Olympiakos Nicosia",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Pafos",
+          "competition": "Cy1"
+        },
+        {
+          "date": "12/01/2026",
+          "home_team": "Pafos",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Omonia",
+          "competition": "Aradippou"
+        },
+        {
+          "date": "07/01/2026",
+          "home_team": "Pafos",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Akritas",
+          "competition": ""
+        },
+        {
+          "date": "04/01/2026",
+          "home_team": "Apollon Limassol",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Pafos",
+          "competition": "Cy1"
+        },
+        {
+          "date": "14/12/2025",
+          "home_team": "EN Paralimni",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Pafos",
+          "competition": "Cy1"
+        },
+        {
+          "date": "10/12/2025",
+          "home_team": "Juventus",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Pafos",
+          "competition": "UCL"
+        },
+        {
+          "date": "05/12/2025",
+          "home_team": "Pafos",
+          "home_score": 4,
+          "away_score": 0,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Akritas",
+          "competition": "Cy1"
+        },
+        {
+          "date": "30/11/2025",
+          "home_team": "Ypsonas FC",
+          "home_score": 2,
+          "away_score": 3,
+          "ht_home": 0,
+          "ht_away": 2,
+          "away_team": "Pafos",
+          "competition": "Cy1"
+        },
+        {
+          "date": "26/11/2025",
+          "home_team": "Pafos",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 2,
+          "away_team": "Monaco",
+          "competition": "UCL"
+        },
+        {
+          "date": "21/11/2025",
+          "home_team": "Pafos",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Aris",
+          "competition": "Limassol"
+        },
+        {
+          "date": "09/11/2025",
+          "home_team": "Anorthosis FC",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Pafos",
+          "competition": "Cy1"
+        },
+        {
+          "date": "05/11/2025",
+          "home_team": "Pafos",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Villarreal",
+          "competition": "UCL"
+        },
+        {
+          "date": "02/11/2025",
+          "home_team": "Pafos",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "AEL",
+          "competition": "Limassol"
+        },
+        {
+          "date": "27/10/2025",
+          "home_team": "Omonia Nicosia",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Pafos",
+          "competition": "Cy1"
+        },
+        {
+          "date": "21/10/2025",
+          "home_team": "Kairat Almaty",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Pafos",
+          "competition": "UCL"
+        },
+        {
+          "date": "17/10/2025",
+          "home_team": "Pafos",
+          "home_score": 4,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Ethnikos",
+          "competition": "Achnas"
+        },
+        {
+          "date": "05/10/2025",
+          "home_team": "AEK Larnaka",
+          "home_score": 2,
+          "away_score": 4,
+          "ht_home": 1,
+          "ht_away": 2,
+          "away_team": "Pafos",
+          "competition": "Cy1"
+        },
+        {
+          "date": "30/09/2025",
+          "home_team": "Pafos",
+          "home_score": 1,
+          "away_score": 5,
+          "ht_home": 1,
+          "ht_away": 4,
+          "away_team": "Bayern",
+          "competition": "Munich"
+        },
+        {
+          "date": "27/09/2025",
+          "home_team": "Pafos",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Olympiakos",
+          "competition": "Nicosia"
+        },
+        {
+          "date": "24/09/2025",
+          "home_team": "Pafos",
+          "home_score": 3,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "EN",
+          "competition": "Paralimni"
+        },
+        {
+          "date": "21/09/2025",
+          "home_team": "Omonia Aradippou",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Pafos",
+          "competition": "Cy1"
+        },
+        {
+          "date": "17/09/2025",
+          "home_team": "Olympiacos FC",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Pafos",
+          "competition": "UCL"
+        },
+        {
+          "date": "13/09/2025",
+          "home_team": "Pafos",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Apollon",
+          "competition": "Limassol"
+        },
+        {
+          "date": "31/08/2025",
+          "home_team": "APOEL",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Pafos",
+          "competition": "Cy1"
+        },
+        {
+          "date": "26/08/2025",
+          "home_team": "Pafos",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Crvena",
+          "competition": "Zvezda"
+        },
+        {
+          "date": "19/08/2025",
+          "home_team": "Crvena Zvezda",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Pafos",
+          "competition": "UCL"
+        },
+        {
+          "date": "12/08/2025",
+          "home_team": "Pafos",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Dynamo",
+          "competition": "Kyiv"
+        },
+        {
+          "date": "05/08/2025",
+          "home_team": "Dynamo Kyiv",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Pafos",
+          "competition": "UCL"
+        },
+        {
+          "date": "30/07/2025",
+          "home_team": "Maccabi Tel Aviv",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Pafos",
+          "competition": "UCL"
+        },
+        {
+          "date": "22/07/2025",
+          "home_team": "Pafos",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Maccabi Tel",
+          "competition": "Aviv"
+        }
+      ]
+    },
+    "home_matches": [
+      {
+        "date": "07/02/2026",
+        "home_team": "Digenis Morfou",
+        "home_score": 1,
+        "away_score": 5,
+        "ht_home": 0,
+        "ht_away": 4,
+        "away_team": "Spartakos",
+        "competition": "Kitiou"
+      },
+      {
+        "date": "25/01/2026",
+        "home_team": "Digenis Morfou",
+        "home_score": 1,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "APEA",
+        "competition": "Cy2"
+      },
+      {
+        "date": "18/01/2026",
+        "home_team": "Digenis Morfou",
+        "home_score": 5,
+        "away_score": 1,
+        "ht_home": 3,
+        "ht_away": 0,
+        "away_team": "Ahironas /",
+        "competition": "Onisilos"
+      },
+      {
+        "date": "03/01/2026",
+        "home_team": "Digenis Morfou",
+        "home_score": 0,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 2,
+        "away_team": "PAEEK",
+        "competition": "Kyrenia"
+      },
+      {
+        "date": "13/12/2025",
+        "home_team": "Digenis Morfou",
+        "home_score": 1,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "AE",
+        "competition": "Zakakiou"
+      },
+      {
+        "date": "28/11/2025",
+        "home_team": "Digenis Morfou",
+        "home_score": 3,
+        "away_score": 2,
+        "ht_home": 1,
+        "ht_away": 1,
+        "away_team": "Halkanoras",
+        "competition": "Idaliou"
+      },
+      {
+        "date": "07/11/2025",
+        "home_team": "Digenis Morfou",
+        "home_score": 1,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Ahironas /",
+        "competition": "Onisilos"
+      },
+      {
+        "date": "01/11/2025",
+        "home_team": "Digenis Morfou",
+        "home_score": 1,
+        "away_score": 2,
+        "ht_home": 1,
+        "ht_away": 1,
+        "away_team": "Ayia",
+        "competition": "Napa"
+      },
+      {
+        "date": "18/10/2025",
+        "home_team": "Digenis Morfou",
+        "home_score": 0,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Doxa",
+        "competition": "Katokopia"
+      },
+      {
+        "date": "28/09/2025",
+        "home_team": "Digenis Morfou",
+        "home_score": 0,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Nea",
+        "competition": "Salamina"
+      },
+      {
+        "date": "13/09/2025",
+        "home_team": "Digenis Morfou",
+        "home_score": 3,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Karmiotissa",
+        "competition": "Cy2"
+      }
+    ],
+    "away_matches": [
+      {
+        "date": "31/01/2026",
+        "home_team": "Ethnikos Achnas",
+        "home_score": 2,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Pafos",
+        "competition": "Cy1"
+      },
+      {
+        "date": "21/01/2026",
+        "home_team": "Chelsea",
+        "home_score": 1,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Pafos",
+        "competition": "UCL"
+      },
+      {
+        "date": "17/01/2026",
+        "home_team": "Olympiakos Nicosia",
+        "home_score": 2,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Pafos",
+        "competition": "Cy1"
+      },
+      {
+        "date": "04/01/2026",
+        "home_team": "Apollon Limassol",
+        "home_score": 2,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 1,
+        "away_team": "Pafos",
+        "competition": "Cy1"
+      },
+      {
+        "date": "14/12/2025",
+        "home_team": "EN Paralimni",
+        "home_score": 0,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Pafos",
+        "competition": "Cy1"
+      },
+      {
+        "date": "10/12/2025",
+        "home_team": "Juventus",
+        "home_score": 2,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Pafos",
+        "competition": "UCL"
+      },
+      {
+        "date": "30/11/2025",
+        "home_team": "Ypsonas FC",
+        "home_score": 2,
+        "away_score": 3,
+        "ht_home": 0,
+        "ht_away": 2,
+        "away_team": "Pafos",
+        "competition": "Cy1"
+      },
+      {
+        "date": "09/11/2025",
+        "home_team": "Anorthosis FC",
+        "home_score": 1,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Pafos",
+        "competition": "Cy1"
+      },
+      {
+        "date": "27/10/2025",
+        "home_team": "Omonia Nicosia",
+        "home_score": 2,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Pafos",
+        "competition": "Cy1"
+      },
+      {
+        "date": "21/10/2025",
+        "home_team": "Kairat Almaty",
+        "home_score": 0,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Pafos",
+        "competition": "UCL"
+      },
+      {
+        "date": "05/10/2025",
+        "home_team": "AEK Larnaka",
+        "home_score": 2,
+        "away_score": 4,
+        "ht_home": 1,
+        "ht_away": 2,
+        "away_team": "Pafos",
+        "competition": "Cy1"
+      },
+      {
+        "date": "21/09/2025",
+        "home_team": "Omonia Aradippou",
+        "home_score": 0,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Pafos",
+        "competition": "Cy1"
+      },
+      {
+        "date": "17/09/2025",
+        "home_team": "Olympiacos FC",
+        "home_score": 0,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Pafos",
+        "competition": "UCL"
+      },
+      {
+        "date": "31/08/2025",
+        "home_team": "APOEL",
+        "home_score": 0,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Pafos",
+        "competition": "Cy1"
+      },
+      {
+        "date": "19/08/2025",
+        "home_team": "Crvena Zvezda",
+        "home_score": 1,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Pafos",
+        "competition": "UCL"
+      },
+      {
+        "date": "05/08/2025",
+        "home_team": "Dynamo Kyiv",
+        "home_score": 0,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Pafos",
+        "competition": "UCL"
+      },
+      {
+        "date": "30/07/2025",
+        "home_team": "Maccabi Tel Aviv",
+        "home_score": 0,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Pafos",
+        "competition": "UCL"
+      }
+    ],
+    "head_to_head": {
+      "matches": [],
+      "summary": {
+        "home_wins": 2,
+        "home_win_pct": 33,
+        "draws": 2,
+        "draw_pct": 33,
+        "away_wins": 2,
+        "away_win_pct": 33
+      }
+    },
+    "odds": {
+      "1": 25.0,
+      "X": 7.8,
+      "2": 1.07,
+      "over": null,
+      "under": null
+    },
+    "predictions": {
+      "result": "X",
+      "probability": null,
+      "over_under": null
+    },
+    "goals_stats": {
+      "home": {
+        "scored": 34,
+        "conceded": 29,
+        "scored_avg": 1.7,
+        "conceded_avg": 1.45,
+        "games": 20
+      },
+      "away": {
+        "scored": 57,
+        "conceded": 37,
+        "scored_avg": 1.5833333333333333,
+        "conceded_avg": 1.0277777777777777,
+        "games": 36
+      }
+    },
+    "over_under_stats": {
+      "home": {},
+      "away": {}
+    },
+    "both_to_score": {
+      "home": {
+        "yes_pct": 82,
+        "no_pct": 26
+      },
+      "away": {
+        "yes_pct": 82,
+        "no_pct": 26
+      }
+    },
+    "shots_stats": {
+      "home": {
+        "total": [
+          178,
+          107,
+          71
+        ],
+        "on_target": [
+          63,
+          35,
+          28
+        ],
+        "off_target": [
+          115,
+          72,
+          43
+        ],
+        "inside_box": [
+          0,
+          0,
+          0
+        ],
+        "outside_box": [
+          0,
+          0,
+          0
+        ],
+        "blocked": [
+          0,
+          0,
+          0
+        ]
+      },
+      "away": {
+        "total": [
+          398,
+          225,
+          173
+        ],
+        "on_target": [
+          176,
+          91,
+          85
+        ],
+        "off_target": [
+          187,
+          116,
+          71
+        ],
+        "inside_box": [
+          118,
+          63,
+          55
+        ],
+        "outside_box": [
+          55,
+          30,
+          25
+        ],
+        "blocked": [
+          39,
+          20,
+          19
+        ]
+      }
+    },
+    "passes_stats": {
+      "home": {
+        "total": [
+          0,
+          0,
+          0
+        ],
+        "accurate": [
+          0,
+          0,
+          0
+        ],
+        "ball_poss": [
+          49.19,
+          50.89,
+          47
+        ]
+      },
+      "away": {
+        "total": [
+          5975,
+          3159,
+          2816
+        ],
+        "accurate": [
+          4766,
+          2526,
+          2240
+        ],
+        "ball_poss": [
+          49.22,
+          51.53,
+          46.65
+        ]
+      }
+    },
+    "attacks_stats": {
+      "home": {
+        "total": [
+          1536,
+          850,
+          686
+        ],
+        "dangerous": [
+          976,
+          542,
+          434
+        ]
+      },
+      "away": {
+        "total": [
+          3212,
+          1862,
+          1350
+        ],
+        "dangerous": [
+          1827,
+          1044,
+          783
+        ]
+      }
+    },
+    "discipline": {
+      "home": {
+        "fouls": [
+          152,
+          89,
+          63
+        ],
+        "yellow_cards": [
+          30,
+          13,
+          17
+        ],
+        "red_cards": [
+          2,
+          1,
+          1
+        ]
+      },
+      "away": {
+        "fouls": [
+          512,
+          257,
+          255
+        ],
+        "yellow_cards": [
+          79,
+          34,
+          45
+        ],
+        "red_cards": [
+          3,
+          1,
+          2
+        ]
+      }
+    },
+    "other_stats": {
+      "home": {
+        "corners": [
+          64,
+          35,
+          29
+        ],
+        "throw_ins": [
+          0,
+          0,
+          0
+        ],
+        "goal_kicks": [
+          0,
+          0,
+          0
+        ],
+        "offsides": [
+          23,
+          13,
+          10
+        ],
+        "saves": [
+          0,
+          0,
+          0
+        ]
+      },
+      "away": {
+        "corners": [
+          168,
+          90,
+          78
+        ],
+        "throw_ins": [
+          626,
+          324,
+          302
+        ],
+        "goal_kicks": [
+          169,
+          70,
+          99
+        ],
+        "offsides": [
+          62,
+          31,
+          31
+        ],
+        "saves": [
+          102,
+          63,
+          39
+        ]
+      }
+    },
+    "trends": [],
+    "match_intro": "",
+    "injuries": {
+      "home": [],
+      "away": []
+    },
+    "next_matches": {
+      "home": [
+        {
+          "date": "11/02/2026",
+          "match": "Digenis Morfou"
+        },
+        {
+          "date": "14/02/2026",
+          "match": "Iraklis Yerolakkos"
+        },
+        {
+          "date": "21/02/2026",
+          "match": "Digenis Morfou"
+        },
+        {
+          "date": "28/02/2026",
+          "match": "AE Zakakiou"
+        },
+        {
+          "date": "07/03/2026",
+          "match": "Ahironas / Onisilos"
+        },
+        {
+          "date": "14/03/2026",
+          "match": "APEA"
+        },
+        {
+          "date": "18/03/2026",
+          "match": "Digenis Morfou"
+        },
+        {
+          "date": "21/03/2026",
+          "match": "Spartakos Kitiou"
+        },
+        {
+          "date": "04/04/2026",
+          "match": "Digenis Morfou"
+        },
+        {
+          "date": "18/04/2026",
+          "match": "Ethnikos Latsion"
+        },
+        {
+          "date": "25/04/2026",
+          "match": "Digenis Morfou"
+        }
+      ],
+      "away": [
+        {
+          "date": "11/02/2026",
+          "match": "Digenis Morfou"
+        },
+        {
+          "date": "15/02/2026",
+          "match": "AEL Limassol"
+        },
+        {
+          "date": "21/02/2026",
+          "match": "Pafos"
+        },
+        {
+          "date": "28/02/2026",
+          "match": "Aris Limassol"
+        },
+        {
+          "date": "07/03/2026",
+          "match": "Pafos"
+        },
+        {
+          "date": "14/03/2026",
+          "match": "Akritas"
+        }
+      ]
+    },
+    "js_detailed_stats": {
+      "home_stats": {
+        "scr": [
+          34,
+          16,
+          18
+        ],
+        "un1.5": [
+          1,
+          0,
+          1
+        ],
+        "un2.5": [
+          8,
+          5,
+          3
+        ],
+        "un3.5": [
+          13,
+          7,
+          6
+        ],
+        "bts": [
+          11,
+          8,
+          3
+        ],
+        "cnd": [
+          29,
+          21,
+          8
+        ],
+        "ch": [
+          4,
+          0,
+          4
+        ],
+        "sn": [
+          15,
+          8,
+          7
+        ],
+        "pl": [
+          20,
+          11,
+          9
+        ],
+        "shots_total": [
+          178,
+          107,
+          71
+        ],
+        "shots_on_target": [
+          63,
+          35,
+          28
+        ],
+        "shots_off_target": [
+          115,
+          72,
+          43
+        ],
+        "shots_insidebox": [
+          0,
+          0,
+          0
+        ],
+        "shots_outsidebox": [
+          0,
+          0,
+          0
+        ],
+        "shots_blocked": [
+          0,
+          0,
+          0
+        ],
+        "passes_total": [
+          0,
+          0,
+          0
+        ],
+        "passes_accurate": [
+          0,
+          0,
+          0
+        ],
+        "attacks": [
+          1536,
+          850,
+          686
+        ],
+        "dan_attacks": [
+          976,
+          542,
+          434
+        ],
+        "fouls": [
+          152,
+          89,
+          63
+        ],
+        "total_corners": [
+          64,
+          35,
+          29
+        ],
+        "offsides": [
+          23,
+          13,
+          10
+        ],
+        "ball_poss": [
+          49.19,
+          50.89,
+          47
+        ],
+        "yellowcards": [
+          30,
+          13,
+          17
+        ],
+        "redcards": [
+          2,
+          1,
+          1
+        ],
+        "yellowredcards": [
+          0,
+          0,
+          0
+        ],
+        "saves": [
+          0,
+          0,
+          0
+        ],
+        "substitutions": [
+          68,
+          39,
+          29
+        ],
+        "goal_kick": [
+          0,
+          0,
+          0
+        ],
+        "goal_attempts": [
+          0,
+          0,
+          0
+        ],
+        "free_kick": [
+          143,
+          73,
+          70
+        ],
+        "throw_in": [
+          0,
+          0,
+          0
+        ],
+        "ball_safe": [
+          867,
+          335,
+          532
+        ],
+        "pen_awarded": [
+          0,
+          0,
+          0
+        ],
+        "pen_scored": [
+          1,
+          0,
+          1
+        ],
+        "injuries": [
+          10,
+          5,
+          5
+        ],
+        "tackles": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_0_15": [
+          3,
+          2,
+          1
+        ],
+        "scr_min_15_30": [
+          5,
+          1,
+          4
+        ],
+        "scr_min_30_45": [
+          4,
+          2,
+          2
+        ],
+        "scr_min_45_60": [
+          2,
+          1,
+          1
+        ],
+        "scr_min_60_75": [
+          12,
+          8,
+          4
+        ],
+        "scr_min_75_90": [
+          4,
+          2,
+          2
+        ],
+        "cnd_min_0_15": [
+          4,
+          4,
+          0
+        ],
+        "cnd_min_15_30": [
+          4,
+          2,
+          2
+        ],
+        "cnd_min_30_45": [
+          3,
+          3,
+          0
+        ],
+        "cnd_min_45_60": [
+          4,
+          4,
+          0
+        ],
+        "cnd_min_60_75": [
+          3,
+          2,
+          1
+        ],
+        "cnd_min_75_90": [
+          8,
+          3,
+          5
+        ],
+        "1st_goal_scr_min": [
+          37,
+          44,
+          28
+        ],
+        "1st_goal_cnd_min": [
+          44,
+          47,
+          41
+        ],
+        "1st_card_min": [
+          62,
+          85,
+          51
+        ],
+        "1st_corner_min": [
+          0,
+          0,
+          0
+        ]
+      },
+      "home_stats_ht": {
+        "scr": [
+          13,
+          6,
+          7
+        ],
+        "un1.5": [
+          12,
+          6,
+          6
+        ],
+        "un2.5": [
+          18,
+          9,
+          9
+        ],
+        "un3.5": [
+          19,
+          10,
+          9
+        ],
+        "bts": [
+          3,
+          2,
+          1
+        ],
+        "cnd": [
+          13,
+          11,
+          2
+        ],
+        "ch": [
+          11,
+          4,
+          7
+        ],
+        "sn": [
+          9,
+          4,
+          5
+        ],
+        "pl": [
+          20,
+          11,
+          9
+        ],
+        "shots_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_on_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_off_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_insidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_outsidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_blocked": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_accurate": [
+          "-",
+          "-",
+          "-"
+        ],
+        "attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "dan_attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "fouls": [
+          "-",
+          "-",
+          "-"
+        ],
+        "total_corners": [
+          "-",
+          "-",
+          "-"
+        ],
+        "offsides": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_poss": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "redcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowredcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "saves": [
+          "-",
+          "-",
+          "-"
+        ],
+        "substitutions": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_attempts": [
+          "-",
+          "-",
+          "-"
+        ],
+        "free_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "throw_in": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_safe": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_awarded": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_scored": [
+          "-",
+          "-",
+          "-"
+        ],
+        "injuries": [
+          "-",
+          "-",
+          "-"
+        ],
+        "tackles": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_scr_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_cnd_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_card_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_corner_min": [
+          "-",
+          "-",
+          "-"
+        ]
+      },
+      "away_stats": {
+        "scr": [
+          57,
+          37,
+          20
+        ],
+        "un1.5": [
+          9,
+          3,
+          6
+        ],
+        "un2.5": [
+          19,
+          8,
+          11
+        ],
+        "un3.5": [
+          28,
+          13,
+          15
+        ],
+        "bts": [
+          17,
+          10,
+          7
+        ],
+        "cnd": [
+          37,
+          20,
+          17
+        ],
+        "ch": [
+          15,
+          8,
+          7
+        ],
+        "sn": [
+          30,
+          18,
+          12
+        ],
+        "pl": [
+          36,
+          19,
+          17
+        ],
+        "shots_total": [
+          398,
+          225,
+          173
+        ],
+        "shots_on_target": [
+          176,
+          91,
+          85
+        ],
+        "shots_off_target": [
+          187,
+          116,
+          71
+        ],
+        "shots_insidebox": [
+          118,
+          63,
+          55
+        ],
+        "shots_outsidebox": [
+          55,
+          30,
+          25
+        ],
+        "shots_blocked": [
+          39,
+          20,
+          19
+        ],
+        "passes_total": [
+          5975,
+          3159,
+          2816
+        ],
+        "passes_accurate": [
+          4766,
+          2526,
+          2240
+        ],
+        "attacks": [
+          3212,
+          1862,
+          1350
+        ],
+        "dan_attacks": [
+          1827,
+          1044,
+          783
+        ],
+        "fouls": [
+          512,
+          257,
+          255
+        ],
+        "total_corners": [
+          168,
+          90,
+          78
+        ],
+        "offsides": [
+          62,
+          31,
+          31
+        ],
+        "ball_poss": [
+          49.22,
+          51.53,
+          46.65
+        ],
+        "yellowcards": [
+          79,
+          34,
+          45
+        ],
+        "redcards": [
+          3,
+          1,
+          2
+        ],
+        "yellowredcards": [
+          0,
+          0,
+          0
+        ],
+        "saves": [
+          102,
+          63,
+          39
+        ],
+        "substitutions": [
+          167,
+          86,
+          81
+        ],
+        "goal_kick": [
+          169,
+          70,
+          99
+        ],
+        "goal_attempts": [
+          101,
+          45,
+          56
+        ],
+        "free_kick": [
+          343,
+          182,
+          161
+        ],
+        "throw_in": [
+          626,
+          324,
+          302
+        ],
+        "ball_safe": [
+          874,
+          458,
+          416
+        ],
+        "pen_awarded": [
+          0,
+          0,
+          0
+        ],
+        "pen_scored": [
+          0,
+          0,
+          0
+        ],
+        "injuries": [
+          9,
+          2,
+          7
+        ],
+        "tackles": [
+          158,
+          82,
+          76
+        ],
+        "scr_min_0_15": [
+          8,
+          4,
+          4
+        ],
+        "scr_min_15_30": [
+          7,
+          4,
+          3
+        ],
+        "scr_min_30_45": [
+          8,
+          5,
+          3
+        ],
+        "scr_min_45_60": [
+          7,
+          6,
+          1
+        ],
+        "scr_min_60_75": [
+          4,
+          2,
+          2
+        ],
+        "scr_min_75_90": [
+          19,
+          13,
+          6
+        ],
+        "cnd_min_0_15": [
+          6,
+          3,
+          3
+        ],
+        "cnd_min_15_30": [
+          4,
+          4,
+          0
+        ],
+        "cnd_min_30_45": [
+          3,
+          3,
+          0
+        ],
+        "cnd_min_45_60": [
+          3,
+          2,
+          1
+        ],
+        "cnd_min_60_75": [
+          7,
+          2,
+          5
+        ],
+        "cnd_min_75_90": [
+          9,
+          4,
+          5
+        ],
+        "1st_goal_scr_min": [
+          39,
+          38,
+          41
+        ],
+        "1st_goal_cnd_min": [
+          20,
+          18,
+          23
+        ],
+        "1st_card_min": [
+          46,
+          53,
+          39
+        ],
+        "1st_corner_min": [
+          13,
+          13,
+          0
+        ]
+      },
+      "away_stats_ht": {
+        "scr": [
+          24,
+          14,
+          10
+        ],
+        "un1.5": [
+          27,
+          13,
+          14
+        ],
+        "un2.5": [
+          33,
+          17,
+          16
+        ],
+        "un3.5": [
+          35,
+          18,
+          17
+        ],
+        "bts": [
+          7,
+          5,
+          2
+        ],
+        "cnd": [
+          13,
+          10,
+          3
+        ],
+        "ch": [
+          27,
+          13,
+          14
+        ],
+        "sn": [
+          21,
+          13,
+          8
+        ],
+        "pl": [
+          36,
+          19,
+          17
+        ],
+        "shots_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_on_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_off_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_insidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_outsidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_blocked": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_accurate": [
+          "-",
+          "-",
+          "-"
+        ],
+        "attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "dan_attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "fouls": [
+          "-",
+          "-",
+          "-"
+        ],
+        "total_corners": [
+          "-",
+          "-",
+          "-"
+        ],
+        "offsides": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_poss": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "redcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowredcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "saves": [
+          "-",
+          "-",
+          "-"
+        ],
+        "substitutions": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_attempts": [
+          "-",
+          "-",
+          "-"
+        ],
+        "free_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "throw_in": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_safe": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_awarded": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_scored": [
+          "-",
+          "-",
+          "-"
+        ],
+        "injuries": [
+          "-",
+          "-",
+          "-"
+        ],
+        "tackles": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_scr_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_cnd_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_card_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_corner_min": [
+          "-",
+          "-",
+          "-"
+        ]
+      }
+    },
+    "actual_result": {
+      "home_score": 0,
+      "away_score": 3,
+      "result": "2",
+      "total_goals": 3,
+      "over_under_2_5": "Over"
+    },
+    "saved_at": "2026-02-11T19:15:27.127750"
   }
 ]
