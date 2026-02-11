@@ -581,39 +581,109 @@ def display_prediction_result(result):
 def display_stats():
     """Display system statistics."""
     try:
+        # Get training stats
+        from model_stats import get_training_stats
+        training_stats = get_training_stats()
+        
+        # Get prediction stats
         stats = system.get_statistics()
+        
+        # Training metrics
+        train_examples = training_stats.get('training_count', 0)
+        train_acc = training_stats.get('train_result_accuracy', 0) * 100
+        test_acc = training_stats.get('test_result_accuracy')
+        test_acc_display = f"{test_acc:.1f}%" if test_acc is not None else "N/A"
+        
+        st.markdown("""
+        <div class="card" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.2));">
+            <h2 style="text-align: center; margin-bottom: 1rem;">📊 Model Performance</h2>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        col1, col2, col3, col4 = st.columns(4)
+        
+        with col1:
+            st.markdown(f"""
+            <div class="card" style="text-align: center;">
+                <h1 style="font-size: 2.5rem; margin: 0;">📚</h1>
+                <p style="color: #94a3b8; margin: 0;">Training Examples</p>
+                <h2 style="margin: 0.5rem 0 0 0;">{train_examples}</h2>
+            </div>
+            """.format(train_examples), unsafe_allow_html=True)
+        
+        with col2:
+            acc_color = "#10b981" if (test_acc or train_acc) >= 50 else "#f59e0b" if (test_acc or train_acc) >= 40 else "#ef4444"
+            st.markdown(f"""
+            <div class="card" style="text-align: center;">
+                <h1 style="font-size: 2.5rem; margin: 0;">🎯</h1>
+                <p style="color: #94a3b8; margin: 0;">Test Accuracy</p>
+                <h2 style="margin: 0.5rem 0 0 0; color: {acc_color};">{test_acc_display}</h2>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        with col3:
+            st.markdown(f"""
+            <div class="card" style="text-align: center;">
+                <h1 style="font-size: 2.5rem; margin: 0;">📈</h1>
+                <p style="color: #94a3b8; margin: 0;">Train Accuracy</p>
+                <h2 style="margin: 0.5rem 0 0 0;">{train_acc:.1f}%</h2>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        with col4:
+            total_preds = stats.get('total_predictions', 0)
+            st.markdown(f"""
+            <div class="card" style="text-align: center;">
+                <h1 style="font-size: 2.5rem; margin: 0;">🔮</h1>
+                <p style="color: #94a3b8; margin: 0;">Total Predictions</p>
+                <h2 style="margin: 0.5rem 0 0 0;">{total_preds}</h2>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        # Show accuracy interpretation
+        if test_acc is not None:
+            if test_acc >= 50:
+                st.success(f"✅ Model accuracy ({test_acc:.1f}%) is good! Better than random guessing.")
+            elif test_acc >= 40:
+                st.warning(f"⚠️ Model accuracy ({test_acc:.1f}%) is moderate. More data may help.")
+            else:
+                st.error(f"❌ Model accuracy ({test_acc:.1f}%) needs improvement.")
+        
+        st.markdown("### 📊 Prediction Statistics")
         
         col1, col2, col3 = st.columns(3)
         
         with col1:
-            st.markdown("""
-            <div class="card" style="text-align: center;">
-                <h1 style="font-size: 3rem; margin: 0;">📊</h1>
-                <p style="color: #94a3b8; margin: 0;">Total Predictions</p>
-                <h2 style="margin: 0.5rem 0 0 0;">{}</h2>
-            </div>
-            """.format(stats.get('total_predictions', 0)), unsafe_allow_html=True)
-        
-        with col2:
             accuracy = stats.get('accuracy', 0) * 100
-            st.markdown("""
+            st.markdown(f"""
             <div class="card" style="text-align: center;">
                 <h1 style="font-size: 3rem; margin: 0;">🎯</h1>
-                <p style="color: #94a3b8; margin: 0;">Accuracy</p>
-                <h2 style="margin: 0.5rem 0 0 0;">{:.1f}%</h2>
+                <p style="color: #94a3b8; margin: 0;">Live Accuracy</p>
+                <h2 style="margin: 0.5rem 0 0 0;">{accuracy:.1f}%</h2>
             </div>
             """.format(accuracy), unsafe_allow_html=True)
         
-        with col3:
-            st.markdown("""
+        with col2:
+            correct = stats.get('correct_predictions', 0)
+            st.markdown(f"""
             <div class="card" style="text-align: center;">
-                <h1 style="font-size: 3rem; margin: 0;">🏆</h1>
+                <h1 style="font-size: 3rem; margin: 0;">✅</h1>
                 <p style="color: #94a3b8; margin: 0;">Correct Predictions</p>
-                <h2 style="margin: 0.5rem 0 0 0;">{}</h2>
+                <h2 style="margin: 0.5rem 0 0 0;">{correct}</h2>
             </div>
-            """.format(stats.get('correct_predictions', 0)), unsafe_allow_html=True)
+            """, unsafe_allow_html=True)
         
-        st.markdown("### 📊 League Statistics")
+        with col3:
+            total = stats.get('total_predictions', 0)
+            st.markdown(f"""
+            <div class="card" style="text-align: center;">
+                <h1 style="font-size: 3rem; margin: 0;">📈</h1>
+                <p style="color: #94a3b8; margin: 0;">Total Predictions</p>
+                <h2 style="margin: 0.5rem 0 0 0;">{total}</h2>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        st.markdown("### 🏆 League Statistics")
         
         league_stats = stats.get('league_stats', {})
         if league_stats:
