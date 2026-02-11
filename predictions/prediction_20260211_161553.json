@@ -1,0 +1,231 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/csm-slatina-cs-metaloglobus-2402566",
+  "timestamp": "2026-02-11T16:15:53.141845",
+  "features": {
+    "home_position": 14,
+    "away_position": 16,
+    "position_diff": -2,
+    "away_points": 1,
+    "home_points": 0,
+    "home_form_points": 9,
+    "away_form_points": 0,
+    "home_recent_form": 6,
+    "away_recent_form": 0,
+    "home_wins_l6": 3,
+    "home_draws_l6": 0,
+    "home_losses_l6": 3,
+    "away_wins_l6": 0,
+    "away_draws_l6": 0,
+    "away_losses_l6": 6,
+    "home_scored_avg": 1.4285714285714286,
+    "home_conceded_avg": 1.380952380952381,
+    "away_scored_avg": 0.9310344827586207,
+    "away_conceded_avg": 2.1379310344827585,
+    "expected_total_goals": 2.939244663382594,
+    "home_home_win_rate": 30.0,
+    "home_home_goals_avg": 1.1,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 2.5,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 8.333333333333334,
+    "away_shots_avg": 10.137931034482758,
+    "home_shots_on_target_pct": 36.57142857142857,
+    "away_shots_on_target_pct": 39.1156462585034,
+    "home_dangerous_attacks_avg": 48.904761904761905,
+    "away_dangerous_attacks_avg": 55.51724137931034,
+    "home_possession": 48.13,
+    "away_possession": 48.79,
+    "home_pass_accuracy": 75.71566420070762,
+    "away_pass_accuracy": 78.0388151174668,
+    "home_fouls_avg": 7.619047619047619,
+    "away_fouls_avg": 12.206896551724139,
+    "home_yellow_avg": 1.4761904761904763,
+    "away_yellow_avg": 2.310344827586207,
+    "odds_home": 2.95,
+    "odds_draw": 3.15,
+    "odds_away": 2.42,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3564,
+        "2": 0.3638,
+        "X": 0.2797
+      },
+      "computed_odds": {
+        "1": 2.81,
+        "2": 2.75,
+        "X": 3.58
+      },
+      "confidence": 0.3638
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.5517,
+        "Under": 0.4483
+      },
+      "computed_odds": {
+        "Over": 1.81,
+        "Under": 2.23
+      },
+      "confidence": 0.5517
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3564,
+        "2": 0.3638,
+        "X": 0.2797
+      },
+      "computed_odds": {
+        "1": 2.81,
+        "2": 2.75,
+        "X": 3.58
+      },
+      "confidence": 0.3638
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.5517,
+        "Under": 0.4483
+      },
+      "computed_odds": {
+        "Over": 1.81,
+        "Under": 2.23
+      },
+      "confidence": 0.5517
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4322,
+        "X": 0.3335,
+        "2": 0.2343
+      },
+      "computed_odds": {
+        "1": 2.31,
+        "X": 3.0,
+        "2": 4.27
+      },
+      "confidence": 0.4322
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.3157894736842105,
+        "away": 0.21052631578947367,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.31690536074331205,
+        "away": 0.38631025379866557,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5119047619047619,
+        "away": 0.19827586206896552,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.5,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.2998911111111111,
+        "away": 0.3640043678160919,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 2.939244663382594
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 10.0
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 4.7
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.94,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.36,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": true,
+    "ml_result": "2",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (0 win in last 6)"
+    ],
+    "value_bets": [],
+    "confidence": "MEDIUM"
+  },
+  "injuries": {
+    "CSM Slatina": [],
+    "CS Metaloglobus": []
+  }
+}

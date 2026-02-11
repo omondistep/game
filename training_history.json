@@ -47,5 +47,33 @@
     "result_accuracy": 0.9796582587469488,
     "ou_accuracy": 0.9991863303498779,
     "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T16:26:11.656209",
+    "training_examples": 2463,
+    "result_accuracy": 0.9792935444579781,
+    "ou_accuracy": 0.998375964271214,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T16:33:01.340141",
+    "training_examples": 2463,
+    "result_accuracy": 0.9792935444579781,
+    "ou_accuracy": 0.998375964271214,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T16:36:37.467677",
+    "training_examples": 3165,
+    "result_accuracy": 0.9873617693522907,
+    "ou_accuracy": 0.9993680884676145,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T16:38:21.084842",
+    "training_examples": 3165,
+    "result_accuracy": 0.9873617693522907,
+    "ou_accuracy": 0.9993680884676145,
+    "model_type": "global"
   }
 ]

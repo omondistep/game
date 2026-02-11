@@ -8,15 +8,20 @@ Features:
 - System Statistics & Training Data
 - Model Training Interface
 - Match Results Entry
+- Historical Data Import
 """
 
 import streamlit as st
 import pandas as pd
 from datetime import datetime
 import json
+import re
+import os
+import glob
 
 # Import prediction system
 from football_prediction_system import FootballPredictionSystem
+from scrape_historical import HistoricalForebetScraper
 
 # Initialize system
 system = FootballPredictionSystem()
@@ -167,7 +172,7 @@ st.markdown("""
         background: rgba(30, 41, 59, 0.5);
         border-radius: 12px;
     }
-</style>
+ </style>
 """, unsafe_allow_html=True)
 
 # ════════════════════════════════════════════════════════════════════════
@@ -258,10 +263,10 @@ def display_injury_info(home_team, away_team, injuries_data):
     # Generate narrative summary
     injury_narrative = generate_injury_narrative(home_team, away_team, injuries_data)
     if injury_narrative:
-        st.markdown("""
+        st.markdown(f"""
         <div style="background: rgba(99, 102, 241, 0.1); padding: 1rem; border-radius: 8px; border-left: 4px solid #6366f1; margin: 1rem 0;">
             <h4 style="margin: 0 0 0.5rem 0; color: #6366f1;">📋 Injury Impact Analysis</h4>
-            <p style="margin: 0; color: #94a3b8;">""" + injury_narrative + """</p>
+            <p style="margin: 0; color: #94a3b8;">{injury_narrative}</p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -305,7 +310,7 @@ def generate_injury_narrative(home_team, away_team, injuries_data):
 
 def main():
     # Header
-    st.markdown("""
+    st.markdown(f"""
     <div style="text-align: center; padding: 2rem 0;">
         <h1 style="font-size: 3rem; margin: 0; background: linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
             ⚽ Football AI Predictor
@@ -317,12 +322,13 @@ def main():
     """, unsafe_allow_html=True)
     
     # Tabbed interface
-    tab_predict, tab_stats, tab_train, tab_results, tab_leagues, tab_settings = st.tabs([
+    tab_predict, tab_stats, tab_train, tab_results, tab_leagues, tab_historical, tab_settings = st.tabs([
         "🔮 Predict", 
         "📊 Statistics", 
         "🧠 Train Model", 
         "✅ Add Result", 
         "🏆 Leagues",
+        "📅 Historical Data",
         "⚙️ Settings"
     ])
     
@@ -371,9 +377,15 @@ def main():
     
     # ════════════════════════════════════════════════════════════════════════
     # LEAGUES TAB
-    # ═══════════════════════════════════════════════════════════════════════=
+    # ════════════════════════════════════════════════════════════════════════
     with tab_leagues:
         display_leagues_tab()
+    
+    # ════════════════════════════════════════════════════════════════════════
+    # HISTORICAL DATA TAB
+    # ════════════════════════════════════════════════════════════════════════
+    with tab_historical:
+        display_historical_data()
     
     # ════════════════════════════════════════════════════════════════════════
     # SETTINGS TAB
@@ -381,9 +393,9 @@ def main():
     with tab_settings:
         display_settings()
 
-# ════════════════════════════════════════════════════════════════════════
+# ════════════════════════════════════════════════════════════════════════════════
 # PREDICTION DISPLAY
-# ════════════════════════════════════════════════════════════════════════
+# ════════════════════════════════════════════════════════════════════════════════
 
 def display_prediction_result(result):
     """Display complete prediction results in a modern format."""
@@ -500,566 +512,419 @@ def display_prediction_result(result):
         ou_pred = op.get('prediction', 'Over')
         ou_conf = op.get('confidence', 0) * 100
         
-        col_a, col_b = st.columns(2)
-        with col_a:
+        col_o, col_u = st.columns(2)
+        with col_o:
             render_prediction_badge("Over 2.5", min(ou_conf, 100), "green" if ou_pred == 'Over' else "gray")
-        with col_b:
-            render_prediction_badge("Under 2.5", 100 - ou_conf, "yellow" if ou_pred == 'Under' else "gray")
+        with col_u:
+            render_prediction_badge("Under 2.5", 100 - ou_conf, "red" if ou_pred == 'Under' else "gray")
         
         st.markdown(f"**Recommended:** {ou_pred} 2.5 • Confidence: {ou_conf:.0f}%")
     
-    # Convergence Analysis
-    st.markdown("### 🔗 Convergence Analysis")
-    st.markdown("How well do ML and Statistical models agree?")
-    
-    ml_r = conv.get('ml_result', '?')
-    w_r = conv.get('weighted_result', '?')
-    ml_conf = result.get('ml_prediction', {}).get('result', {}).get('confidence', 0) * 100
-    w_conf = result.get('weighted_prediction', {}).get('result', {}).get('confidence', 0) * 100
-    
-    r_match = conv.get('result_match', False)
-    
-    ml_o = conv.get('ml_ou', '?')
-    w_o = conv.get('weighted_ou', '?')
-    o_match = conv.get('ou_match', False)
-    
-    # Calculate convergence
-    ml_probs = result.get('ml_prediction', {}).get('result', {}).get('probabilities', {})
-    w_probs = result.get('weighted_prediction', {}).get('result', {}).get('probabilities', {})
-    
-    if ml_probs and w_probs:
-        prob_diff = sum(abs(ml_probs.get(k, 0) - w_probs.get(k, 0)) for k in ['1', 'X', '2']) / 3 * 100
-        r_deg = max(0, 100 - prob_diff)
-    else:
-        r_deg = 0
-    
-    ml_ou_probs = result.get('ml_prediction', {}).get('over_under', {}).get('probabilities', {})
-    w_ou_probs = result.get('weighted_prediction', {}).get('over_under', {}).get('probabilities', {})
-    
-    if ml_ou_probs and w_ou_probs:
-        ou_diff = sum(abs(ml_ou_probs.get(k, 0) - w_ou_probs.get(k, 0)) for k in ['Over', 'Under']) / 2 * 100
-        o_deg = max(0, 100 - ou_diff)
-    else:
-        o_deg = 0
-    
-    c = sum([r_match, o_match])
-    conf_level = "🟢 HIGH" if c == 2 else ("🟡 MEDIUM" if c == 1 else "🔴 LOW")
-    
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.metric("ML Model", f"{ml_r}", f"{ml_conf:.0f}% conf")
-    with col2:
-        st.metric("Statistical Model", f"{w_r}", f"{w_conf:.0f}% conf")
-    with col3:
-        st.metric("Agreement", "✅ Agree" if r_match else "⚠️ Disagree", f"{r_deg:.0f}%")
-    
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.metric("ML O/U", ml_o)
-    with col2:
-        st.metric("Statistical O/U", w_o)
-    with col3:
-        st.metric("O/U Agreement", "✅ Agree" if o_match else "⚠️ Disagree", f"{o_deg:.0f}%")
-    
-    st.info(f"**Overall Confidence:** {conf_level}")
-    
-    # Injury Report
+    # Injuries
     injuries_data = result.get('injuries', {})
     if injuries_data:
         display_injury_info(home, away, injuries_data)
     
-    # Standings
-    st.markdown("### 📊 Standings")
-    standings = md.get('standings', {})
+    # Analysis
+    st.markdown("---")
+    st.markdown("### 📊 Detailed Analysis")
     
-    if isinstance(standings, dict):
-        col_h, col_a = st.columns(2)
-        
-        with col_h:
-            sh = standings.get('home', {})
-            if isinstance(sh, dict):
-                st.markdown(f"""
-                <div class="card">
-                    <h4 style="color: #6366f1;">#{sh.get('position', '?')} {home}</h4>
-                    <p style="margin: 0;"><strong>{sh.get('points', '?')} pts</strong> | W:{sh.get('won','?')} D:{sh.get('drawn','?')} L:{sh.get('lost','?')}</p>
-                    <p style="margin: 0; color: #94a3b8;">GF:{sh.get('gf','?')} GA:{sh.get('ga','?')} GD:{sh.get('gd','?')}</p>
-                </div>
-                """, unsafe_allow_html=True)
-        
-        with col_a:
-            sa = standings.get('away', {})
-            if isinstance(sa, dict):
-                st.markdown(f"""
-                <div class="card">
-                    <h4 style="color: #a855f7;">#{sa.get('position', '?')} {away}</h4>
-                    <p style="margin: 0;"><strong>{sa.get('points', '?')} pts</strong> | W:{sa.get('won','?')} D:{sa.get('drawn','?')} L:{sa.get('lost','?')}</p>
-                    <p style="margin: 0; color: #94a3b8;">GF:{sa.get('gf','?')} GA:{sa.get('ga','?')} GD:{sa.get('gd','?')}</p>
-                </div>
-                """, unsafe_allow_html=True)
+    key_factors = analysis.get('key_factors', [])
+    if key_factors:
+        st.markdown("#### 🔑 Key Factors")
+        for factor in key_factors[:5]:
+            st.markdown(f"* {factor}")
     
-    # Head to Head
-    h2h = md.get('head_to_head', {})
-    if h2h.get('matches'):
-        st.markdown("### 🤝 Head to Head")
-        h2h_matches = h2h['matches'][:6]
+    # Convergence
+    if conv:
+        st.markdown("### 🔗 Convergence Analysis")
+        col_conv1, col_conv2 = st.columns(2)
         
-        h2h_data = []
-        for m in h2h_matches:
-            h2h_data.append({
-                'Date': m.get('date', '?'),
-                'Home': m.get('home_team', '?'),
-                'Score': f"{m.get('home_score','?')}-{m.get('away_score','?')}",
-                'Away': m.get('away_team', '?'),
-                'Comp': m.get('competition', '')
-            })
+        with col_conv1:
+            st.markdown("#### Match Result")
+            ml_pred = conv.get('ml_result', '?')
+            w_pred = conv.get('weighted_result', '?')
+            agreement = conv.get('result_agreement', False)
+            convergence = conv.get('result_convergence', 0)
+            
+            st.markdown(f"* ML Prediction: {ml_pred}")
+            st.markdown(f"* Weighted Prediction: {w_pred}")
+            st.markdown(f"* Agreement: {'✅ AGREE' if agreement else '⚠️ DISAGREE'}")
+            st.markdown(f"* Convergence: {convergence:.0f}%")
         
-        if h2h_data:
-            df = pd.DataFrame(h2h_data)
-            st.table(df)
-        
-        s = h2h.get('summary', {})
-        if s:
-            st.markdown(f"""
-            <div style="display: flex; gap: 2rem; justify-content: center;">
-                <span style="color: #6366f1;">{home}: {s.get('home_wins',0)} ({s.get('home_win_pct',0)}%)</span>
-                <span style="color: #f59e0b;">Draws: {s.get('draws',0)} ({s.get('draw_pct',0)}%)</span>
-                <span style="color: #a855f7;">{away}: {s.get('away_wins',0)} ({s.get('away_win_pct',0)}%)</span>
-            </div>
-            """, unsafe_allow_html=True)
+        with col_conv2:
+            st.markdown("#### Over/Under")
+            ml_ou = conv.get('ml_ou', '?')
+            w_ou = conv.get('weighted_ou', '?')
+            ou_agreement = conv.get('ou_agreement', False)
+            ou_convergence = conv.get('ou_convergence', 0)
+            
+            st.markdown(f"* ML Prediction: {ml_ou}")
+            st.markdown(f"* Weighted Prediction: {w_ou}")
+            st.markdown(f"* Agreement: {'✅ AGREE' if ou_agreement else '⚠️ DISAGREE'}")
+            st.markdown(f"* Convergence: {ou_convergence:.0f}%")
     
-    # Key Factors
-    if analysis.get('key_factors'):
-        st.markdown("### 🔑 Key Factors")
-        for f in analysis['key_factors']:
-            st.write(f"• {f}")
-    
-    # Value Bets
-    if analysis.get('value_bets'):
-        st.markdown("### 💰 Value Bets")
-        for vb in analysis['value_bets']:
-            lbl = {'1': f'{home} Win', 'X': 'Draw', '2': f'{away} Win'}.get(vb['outcome'], vb['outcome'])
-            st.success(f"✓ **{lbl}**: Market {vb['market']:.2f} vs Fair {vb['fair']:.2f} (+{vb['value_pct']:.1f}% value)")
-    
-    # Model info
-    ml_pred_info = result.get('ml_prediction', {})
-    if ml_pred_info.get('prediction_method') in ['ml', 'league_ml']:
-        league = info.get('league', '')
-        st.info(f"✓ **ML Model Trained** - Using learned patterns from {league}")
+    # Features
+    if feats:
+        st.markdown("### 📈 Feature Values")
+        feat_cols = st.columns(4)
+        feature_list = list(feats.items())[:8]
+        for i, (name, value) in enumerate(feature_list):
+            with feat_cols[i % 4]:
+                st.metric(name.replace('_', ' ').title(), f"{value:.3f}" if isinstance(value, float) else value)
 
-# ════════════════════════════════════════════════════════════════════════
-# STATS DISPLAY
-# ════════════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════════════════════
+# STATS TAB
+# ════════════════════════════════════════════════════════════════════════════════
 
 def display_stats():
     """Display system statistics."""
-    st.markdown("### 📊 System Statistics")
-    
     try:
         stats = system.get_statistics()
         
-        # Calculate leagues from training data
-        training = system.storage.get_training_data()
-        total_leagues = len(training)
+        col1, col2, col3 = st.columns(3)
         
-        col1, col2, col3, col4 = st.columns(4)
         with col1:
-            st.metric("Total Matches", stats.get('total_matches', 0))
-        with col2:
-            st.metric("Leagues", total_leagues)
-        with col3:
-            trained = "✅ Yes" if stats.get('model_trained') else "❌ No"
-            st.metric("Model Trained", trained)
-        with col4:
-            st.metric("Predictions Made", stats.get('predictions_count', 0))
+            st.markdown("""
+            <div class="card" style="text-align: center;">
+                <h1 style="font-size: 3rem; margin: 0;">📊</h1>
+                <p style="color: #94a3b8; margin: 0;">Total Predictions</p>
+                <h2 style="margin: 0.5rem 0 0 0;">{}</h2>
+            </div>
+            """.format(stats.get('total_predictions', 0)), unsafe_allow_html=True)
         
-        # League distribution chart
-        if training:
-            st.markdown("### 📈 League Distribution")
-            league_data = {}
-            for entry in training:
-                league_val = entry.get('league', 'Unknown')
-                # Ensure league name is a string, not a dict
-                if league_val is None:
-                    league_name = 'Unknown'
-                elif isinstance(league_val, str):
-                    league_name = league_val
-                else:
-                    # If it's not a string or None, skip or use str()
-                    league_name = str(league_val)
-                examples = entry.get('examples', [])
-                league_data[league_name] = league_data.get(league_name, 0) + len(examples)
+        with col2:
+            accuracy = stats.get('accuracy', 0) * 100
+            st.markdown("""
+            <div class="card" style="text-align: center;">
+                <h1 style="font-size: 3rem; margin: 0;">🎯</h1>
+                <p style="color: #94a3b8; margin: 0;">Accuracy</p>
+                <h2 style="margin: 0.5rem 0 0 0;">{:.1f}%</h2>
+            </div>
+            """.format(accuracy), unsafe_allow_html=True)
+        
+        with col3:
+            st.markdown("""
+            <div class="card" style="text-align: center;">
+                <h1 style="font-size: 3rem; margin: 0;">🏆</h1>
+                <p style="color: #94a3b8; margin: 0;">Correct Predictions</p>
+                <h2 style="margin: 0.5rem 0 0 0;">{}</h2>
+            </div>
+            """.format(stats.get('correct_predictions', 0)), unsafe_allow_html=True)
+        
+        st.markdown("### 📊 League Statistics")
+        
+        league_stats = stats.get('league_stats', {})
+        if league_stats:
+            data = []
+            for league, s in league_stats.items():
+                data.append({
+                    'League': league,
+                    'Matches': s.get('count', 0),
+                    'Accuracy': f"{s.get('accuracy', 0) * 100:.1f}%"
+                })
             
-            if league_data:
-                df = pd.DataFrame(list(league_data.items()), columns=['League', 'Matches'])
-                st.bar_chart(df.set_index('League'))
+            if data:
+                df = pd.DataFrame(data)
+                st.dataframe(df, use_container_width=True)
+        
+        if 'recent_predictions' in stats:
+            st.markdown("### 🕐 Recent Predictions")
+            recent = stats['recent_predictions'][-10:]
+            for p in recent:
+                emoji = "✅" if p.get('correct') else "❌" if p.get('correct') is False else "⏳"
+                st.markdown(f"{emoji} {p.get('home', '?')} vs {p.get('away', '?')}: {p.get('prediction', '?')} ({p.get('confidence', 0) * 100:.0f}%)")
     
     except Exception as e:
-        st.error(f"Error loading statistics: {e}")
+        st.error(f"Error loading stats: {e}")
 
-# ════════════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════════════════════
 # TRAIN TAB
-# ════════════════════════════════════════════════════════════════════════
+# ════════════════════════════════════════════════════════════════════════════════
 
 def display_train():
     """Display model training interface."""
-    st.markdown("### 🧠 Train Prediction Model")
-    st.markdown("Train the ML model on historical match data for better predictions.")
-    
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns([2, 1])
     
     with col1:
+        st.markdown("### 🧠 Train Models")
+        
         st.markdown("""
         <div class="card">
-            <h4>📋 Training Requirements</h4>
-            <ul style="color: #94a3b8;">
-                <li>Minimum 10 matches per league</li>
-                <li>Historical data with known results</li>
-                <li>League-specific patterns learned</li>
-            </ul>
+            <p style="color: #94a3b8;">Training the models will use all available historical data with known results to improve prediction accuracy.</p>
         </div>
         """, unsafe_allow_html=True)
-    
-    with col2:
-        try:
-            stats = system.get_statistics()
-            td = system.storage.get_league_training_data()
-            st.metric("Available Training Data", len(td))
-            
-            if len(td) < 10:
-                st.warning(f"⚠️ Need 10+ matches, have {len(td)}")
-            else:
-                st.success(f"✅ Ready to train ({len(td)} matches available)")
-        except:
-            st.error("Error loading training data")
-    
-    col1, col2 = st.columns(2)
-    with col1:
-        train_btn = st.button("🧠 Train Model", use_container_width=True)
-    with col2:
-        force_train = st.checkbox("Force retrain (overwrite existing model)")
-    
-    if train_btn:
-        with st.spinner("Training model..."):
-            result = system.train_model()
-            
-            if 'error' in result:
-                st.error(f"❌ {result['error']}")
-            else:
-                st.success("✅ Model trained successfully!")
-                st.json(result)
-
-# ═══════════════════════════════════════════════════════════════════════=
-# BATCH PROCESSING
-# ═══════════════════════════════════════════════════════════════════════=
-
-def process_batch_results(urls):
-    """Process multiple URLs to add match results."""
-    results_summary = {
-        'success': 0,
-        'failed': 0,
-        'not_played': 0,
-        'details': []
-    }
-    
-    progress_bar = st.progress(0)
-    
-    for i, url in enumerate(urls):
-        progress_bar.progress((i + 1) / len(urls))
         
-        with st.spinner(f"Processing {i+1}/{len(urls)}: {url[-20:] if len(url) > 20 else url}..."):
-            result = system.add_match_result(url)
-            
-            if result:
-                results_summary['success'] += 1
-                results_summary['details'].append({'url': url, 'status': 'success'})
-            else:
-                # Check if match was already played or not
-                results_summary['failed'] += 1
-                results_summary['details'].append({'url': url, 'status': 'failed'})
+        if st.button("🚀 Train Model Now", use_container_width=True):
+            with st.spinner("Training in progress..."):
+                success = system.train_model()
+                
+                if success:
+                    st.success("✅ Models trained successfully!")
+                else:
+                    st.warning("⚠️ No new data to train on (or training was skipped)")
     
-    progress_bar.empty()
-    
-    # Display results
-    st.markdown("### 📊 Batch Processing Results")
-    
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.metric("✅ Success", results_summary['success'])
     with col2:
-        st.metric("❌ Failed", results_summary['failed'])
-    with col3:
-        st.metric("📄 Total Processed", len(urls))
-    
-    if results_summary['success'] > 0:
-        st.success(f"✅ Successfully added {results_summary['success']} results!")
-    
-    if results_summary['failed'] > 0:
-        st.warning(f"⚠️ {results_summary['failed']} results could not be extracted")
-    
-    # Show details
-    if results_summary['details']:
-        with st.expander("View Details"):
-            for detail in results_summary['details'][:20]:  # Show first 20
-                status_emoji = "✅" if detail['status'] == 'success' else "❌"
-                st.write(f"{status_emoji} {detail['url']}")
+        st.markdown("### 📊 Training Info")
+        
+        # Get training statistics from storage
+        stats = system.get_statistics()
+        total_examples = stats.get('training_examples', 0)
+        total_matches = stats.get('total_matches', 0)
+        total_results = stats.get('total_results', 0)
+        
+        st.markdown(f"* **Total Matches:** {total_matches}")
+        st.markdown(f"* **Matches with Results:** {total_results}")
+        st.markdown(f"* **Training Examples:** {total_examples}")
+        
+        # Show league breakdown
+        training_data = system.storage.get_training_data()
+        if training_data:
+            st.markdown("### 📈 Training by League")
+            for entry in training_data[:5]:
+                count = len(entry.get('examples', []))
+                if count > 0:
+                    st.markdown(f"* **{entry.get('league', 'Unknown')}**: {count} examples")
+        else:
+            st.info("No training data available yet.")
 
-# ════════════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════════════════════
 # RESULTS TAB
-# ════════════════════════════════════════════════════════════════════════
+# ════════════════════════════════════════════════════════════════════════════════
 
 def display_results():
-    """Display add result interface."""
+    """Display match results interface."""
     st.markdown("### ✅ Add Match Result")
-    st.markdown("Update training data with actual match results from completed games.")
     
-    # Single URL input
-    st.markdown("#### Single Result")
-    col1, col2 = st.columns([2, 1])
+    col1, col2 = st.columns([3, 1])
+    
     with col1:
-        url = st.text_input("Match URL", placeholder="https://www.forebet.com/...")
-    with col2:
-        st.markdown("<br>", unsafe_allow_html=True)
-        add_btn = st.button("✅ Add Result", use_container_width=True)
+        result_url = st.text_input(
+            "Match URL",
+            placeholder="https://www.forebet.com/en/football/matches/..."
+        )
     
-    if add_btn and url:
-        with st.spinner("Adding result..."):
-            result = system.add_match_result(url)
-            if result:
-                st.success("✅ Result added successfully!")
-            else:
-                st.error("❌ Could not extract result")
+    with col2:
+        add_btn = st.button("➕ Add Result", use_container_width=True)
+    
+    if add_btn and result_url:
+        result = system.scraper.extract_actual_result(result_url)
+        
+        if result and result.get('home_score') is not None:
+            st.success(f"✅ Result: {result['home_score']} - {result['away_score']}")
+            
+            col_h, col_a = st.columns(2)
+            with col_h:
+                home_score = st.number_input("Home Score", value=result['home_score'], min_value=0)
+            with col_a:
+                away_score = st.number_input("Away Score", value=result['away_score'], min_value=0)
+            
+            if st.button("💾 Save Result"):
+                success = system.record_result(result_url, home_score, away_score)
+                
+                if success:
+                    st.success("✅ Result saved successfully!")
+                else:
+                    st.error("❌ Failed to save result")
+        else:
+            st.error("❌ Could not extract result - match may not have been played yet.")
     
     st.markdown("---")
     
-    # Batch upload
-    st.markdown("#### Batch Upload")
-    st.markdown("Upload a text file with one URL per line (e.g., results.txt) to add multiple results.")
-    
-    uploaded_file = st.file_uploader(
-        "Choose a text file with URLs",
-        type=['txt'],
-        accept_multiple_files=False,
-        key="batch_urls_file",
-        help="Upload a file containing Forebet URLs, one per line"
-    )
-    
-    if uploaded_file is not None:
-        # Read URLs from file
-        urls = uploaded_file.read().decode('utf-8').strip().split('\n')
-        urls = [u.strip() for u in urls if u.strip() and u.strip().startswith('http')]
-        
-        if urls:
-            st.info(f"📄 Found {len(urls)} URLs in uploaded file")
-            
-            # Process options
-            col1, col2 = st.columns(2)
-            with col1:
-                max_urls = st.number_input("Max URLs to process", min_value=1, value=len(urls))
-            with col2:
-                st.markdown("<br>", unsafe_allow_html=True)
-                
-            if st.button("🚀 Process Batch Results", use_container_width=True):
-                process_batch_results(urls[:max_urls])
-
-# ═══════════════════════════════════════════════════════════════════════=
-# LEAGUES TAB
-# ═══════════════════════════════════════════════════════════════════════=
-
-def load_unknown_leagues():
-    """Load unknown leagues from JSON file."""
+    # Show recent results
     try:
-        with open('data/unknown_leagues.json', 'r') as f:
-            return json.load(f)
-    except:
-        return {}
+        with open('data/results.json', 'r') as f:
+            results = json.load(f)
+        
+        st.markdown("### 📊 Recent Results")
+        
+        if results:
+            recent = list(results.items())[-10:][::-1]
+            data = []
+            for url, r in recent:
+                teams = r.get('teams', {})
+                data.append({
+                    'Home': teams.get('home', '?'),
+                    'Away': teams.get('away', '?'),
+                    'Score': f"{r.get('home_score', '?')}-{r.get('away_score', '?')}",
+                    'Date': r.get('date', '')[:10] if r.get('date') else ''
+                })
+            
+            if data:
+                df = pd.DataFrame(data)
+                st.dataframe(df, use_container_width=True)
+    except Exception as e:
+        st.info("No results available yet.")
+
+
+# ════════════════════════════════════════════════════════════════════════════════
+# LEAGUES TAB
+# ════════════════════════════════════════════════════════════════════════════════
 
 def load_league_mapping():
-    """Load league mapping from JSON file."""
+    """Load league code to name mapping from file."""
     try:
         with open('data/league_mapping.json', 'r', encoding='utf-8') as f:
             return json.load(f)
     except:
         return {}
 
-def save_league(code, name):
-    """Save a league name for a code."""
-    # Update league_mapping.json
-    mapping = load_league_mapping()
-    if code not in mapping:
-        mapping[code] = {
-            'short_code': '',
-            'league_name': name,
-            'country': '',
-            'source': 'manual'
-        }
-        with open('data/league_mapping.json', 'w', encoding='utf-8') as f:
-            json.dump(mapping, f, indent=2)
-    
-    # Also update unknown_leagues.json for backwards compatibility
-    unknown = load_unknown_leagues()
-    unknown[code] = name
-    with open('data/unknown_leagues.json', 'w') as f:
-        json.dump(unknown, f, indent=2)
-    return True
 
-def upload_leagues_json(json_data):
-    """Upload multiple leagues from JSON data."""
+def save_league(code: str, name: str) -> bool:
+    """Save a league code to the mapping."""
     mapping = load_league_mapping()
-    unknown = load_unknown_leagues()
+    
+    if code in mapping:
+        return False
+    
+    mapping[code] = name
+    
+    try:
+        with open('data/league_mapping.json', 'w', encoding='utf-8') as f:
+            json.dump(mapping, f, indent=2, ensure_ascii=False)
+        return True
+    except:
+        return False
+
+
+def upload_leagues_json(json_data: dict) -> int:
+    """Upload leagues from JSON data."""
+    mapping = load_league_mapping()
     count = 0
     
-    for code, value in json_data.items():
-        if isinstance(value, str):
-            if code not in mapping:
-                mapping[code] = {
-                    'short_code': '',
-                    'league_name': value,
-                    'country': '',
-                    'source': 'upload'
-                }
-            unknown[code] = value
+    for code, name in json_data.items():
+        if code not in mapping:
+            mapping[code] = name
             count += 1
-        elif isinstance(value, dict):
-            league_name = value.get('league_name') or value.get('suggested_name') or value.get('name')
-            short_code = value.get('short_code', '')
-            country = value.get('country', '')
-            
-            if league_name and code not in mapping:
-                mapping[code] = {
-                    'short_code': short_code,
-                    'league_name': league_name,
-                    'country': country,
-                    'source': 'upload'
-                }
-            if league_name:
-                unknown[code] = league_name
-                count += 1
     
-    with open('data/league_mapping.json', 'w', encoding='utf-8') as f:
-        json.dump(mapping, f, indent=2)
-    with open('data/unknown_leagues.json', 'w') as f:
-        json.dump(unknown, f, indent=2)
+    if count > 0:
+        with open('data/league_mapping.json', 'w', encoding='utf-8') as f:
+            json.dump(mapping, f, indent=2, ensure_ascii=False)
     
     return count
 
+
 def display_leagues_tab():
-    """Display the leagues management tab."""
+    """Display league management interface."""
     st.markdown("### 🏆 League Management")
-    st.markdown("Manage league names for codes that aren't recognized automatically.")
-    st.markdown("League info is automatically extracted from match pages and saved to the database.")
     
-    # Load current leagues from both sources
+    st.markdown("""
+    <div class="card">
+        <p style="color: #94a3b8;">
+            Manage league code mappings. When you encounter an unknown league code during prediction,
+            enter it here with the full league name for future reference.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Show current leagues
+    st.markdown("#### 📋 Current Leagues")
+    
     mapping = load_league_mapping()
-    unknown = load_unknown_leagues()
+    st.markdown(f"**Total leagues mapped:** {len(mapping)}")
     
-    # Combine all leagues
-    all_leagues = {}
-    
-    # Add from mapping
-    for code, info in mapping.items():
-        if isinstance(info, dict):
-            name = info.get('league_name') or info.get('short_code') or f"League {code}"
-            country = info.get('country', '')
-            source = info.get('source', 'unknown')
-        else:
-            name = info
-            country = ''
-            source = 'unknown'
-        all_leagues[code] = {'name': name, 'country': country, 'source': source}
-    
-    # Add from unknown (not already in mapping)
-    for code, value in unknown.items():
-        if code not in all_leagues:
-            if isinstance(value, str):
-                all_leagues[code] = {'name': value, 'country': '', 'source': 'manual'}
-            elif isinstance(value, dict):
-                name = value.get('suggested_name') or value.get('name', f"League {code}")
-                all_leagues[code] = {'name': name, 'country': '', 'source': 'manual'}
-    
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        st.markdown("#### 📋 View All Leagues")
-        if all_leagues:
-            # Convert to DataFrame for display
-            league_list = []
-            for code, info in all_leagues.items():
-                league_list.append({
-                    'Code': code, 
-                    'Name': info['name'],
-                    'Country': info.get('country', ''),
-                    'Source': info.get('source', 'unknown')
-                })
+    if mapping:
+        # Convert to DataFrame for display
+        data = []
+        for code, info in mapping.items():
+            if isinstance(info, dict):
+                name = info.get('league_name', info.get('name', str(info)))
+                country = info.get('country', '')
+            else:
+                name = str(info)
+                country = ''
             
-            if league_list:
-                df = pd.DataFrame(league_list)
-                st.dataframe(df, use_container_width=True)
-                st.caption(f"Total: {len(league_list)} leagues")
-        else:
-            st.info("No leagues found! 🎉")
-    
-    with col2:
-        st.markdown("#### ➕ Add Single League")
-        with st.form("add_league_form"):
-            code = st.text_input("League Code (5 digits)", placeholder="24236")
-            name = st.text_input("League Name", placeholder="Bahrain Premier League")
-            submit = st.form_submit_button("💾 Save League")
+            # Try to extract country from name if not present
+            if not country and name:
+                # Common country prefixes in league names
+                country_prefixes = ['England', 'Spain', 'Italy', 'Germany', 'France', 'Netherlands', 
+                                   'Portugal', 'Turkey', 'Greece', 'Russia', 'Scotland', 'Austria',
+                                   'Switzerland', 'Belgium', 'Poland', 'Ukraine', 'Czech', 'Hungary',
+                                   'Romania', 'Denmark', 'Sweden', 'Norway', 'Finland', 'Ireland',
+                                   'Brazil', 'Argentina', 'USA', 'Mexico', 'Japan', 'South Korea',
+                                   'China', 'Australia', 'Saudi', 'UAE', 'Qatar', 'Kenya', 'Uganda',
+                                           'Tanzania', 'South Africa', 'Egypt', 'Morocco', 'Tunisia']
+                for prefix in country_prefixes:
+                    if name.lower().startswith(prefix.lower()):
+                        country = prefix
+                        break
             
-            if submit and code and name:
-                if save_league(code.strip(), name.strip()):
-                    st.success(f"✅ Saved: {name}")
-                    st.rerun()
+            data.append({
+                'Code': code,
+                'Name': name,
+                'Country': country if country else 'Unknown'
+            })
+        
+        if data:
+            df = pd.DataFrame(data)
+            st.dataframe(df, use_container_width=True)
     
     st.markdown("---")
     
+    # Add single league
+    st.markdown("#### ➕ Add Single League")
+    
+    col1, col2 = st.columns(2)
+    with col1:
+        code = st.text_input("League Code (5 digits)", placeholder="24236")
+    with col2:
+        name = st.text_input("League Name", placeholder="Bahrain Premier League")
+    
+    if st.button("💾 Save League"):
+        if code and name:
+            if save_league(code.strip(), name.strip()):
+                st.success(f"✅ Saved: {name}")
+                st.rerun()
+            else:
+                st.warning(f"⚠️ League {code} already exists")
+        else:
+            st.error("Please enter both code and name")
+    
+    st.markdown("---")
+    
+    # Upload multiple leagues
     st.markdown("#### 📤 Upload Multiple Leagues")
-    st.markdown("Upload a JSON file with league code-to-name mappings.")
     
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown("**Option 1: Upload JSON file**")
-        league_file = st.file_uploader(
-            "Choose a JSON file",
-            type=['json'],
-            key="league_json_file"
-        )
+        league_file = st.file_uploader("Choose a JSON file", type=['json'], key="league_json")
         
         if league_file is not None:
             try:
                 json_data = json.load(league_file)
-                st.write(f"Found {len(json_data)} entries in file")
+                st.write(f"Found {len(json_data)} entries")
                 
-                if st.button("📤 Upload All Leagues"):
+                if st.button("📤 Upload All"):
                     count = upload_leagues_json(json_data)
                     if count > 0:
                         st.success(f"✅ Uploaded {count} leagues!")
                         st.rerun()
                     else:
-                        st.warning("No valid leagues found in file")
+                        st.warning("No new leagues to add")
             except Exception as e:
                 st.error(f"Error reading file: {e}")
     
     with col2:
-        st.markdown("**Option 2: Paste JSON directly**")
-        json_text = st.text_area(
-            "Paste JSON here",
-            placeholder='{\n  "24236": "Bahrain Premier League",\n  "24206": "Kenya Premier League"\n}',
-            height=150
-        )
+        st.markdown("**Option 2: Paste JSON**")
+        json_text = st.text_area("Paste JSON here", placeholder='{"24236": "Bahrain Premier League", "24206": "Kenya Premier League"}', height=100)
         
         if json_text:
             try:
                 json_data = json.loads(json_text)
                 st.write(f"Found {len(json_data)} entries")
                 
-                if st.button("📤 Upload Pasted JSON"):
+                if st.button("📤 Upload Pasted"):
                     count = upload_leagues_json(json_data)
                     if count > 0:
                         st.success(f"✅ Uploaded {count} leagues!")
                         st.rerun()
                     else:
-                        st.warning("No valid leagues found")
+                        st.warning("No new leagues to add")
             except json.JSONDecodeError:
                 st.error("Invalid JSON format")
     
@@ -1067,9 +932,8 @@ def display_leagues_tab():
     
     # Download current leagues
     st.markdown("#### 📥 Download League List")
-    st.markdown("Download the complete league database (league_mapping.json)")
     
-    if st.button("📥 Download League Database"):
+    if st.button("📥 Download Database"):
         mapping = load_league_mapping()
         st.download_button(
             label="💾 Download league_mapping.json",
@@ -1078,9 +942,176 @@ def display_leagues_tab():
             mime="application/json"
         )
 
-# ════════════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════════════════════
+# HISTORICAL DATA TAB
+# ════════════════════════════════════════════════════════════════════════════════
+
+def display_historical_data():
+    """Display interface for adding historical match data."""
+    st.markdown("### 📅 Add Historical Match Data")
+    
+    st.markdown("""
+    <div class="card">
+        <p style="color: #94a3b8;">
+            Add historical match data by pasting a Forebet predictions page URL for a specific date.
+            This will extract all match URLs, save league information, and organize data by date.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    col1, col2 = st.columns([3, 1])
+    
+    with col1:
+        date_url = st.text_input(
+            "Forebet Date URL",
+            placeholder="https://www.forebet.com/en/football-predictions/predictions-1x2/2026-02-19",
+            help="URL format: https://www.forebet.com/en/football-predictions/predictions-1x2/YYYY-MM-DD"
+        )
+    
+    with col2:
+        extract_btn = st.button("📅 Extract Matches", use_container_width=True)
+    
+    if extract_btn and date_url:
+        # Extract date from URL using simple pattern
+        date_match = re.search(r'/(\d{4}-\d{2}-\d{2})/?$', date_url)
+        if not date_match:
+            st.error("Invalid URL format. Use: https://www.forebet.com/en/football-predictions/predictions-1x2/YYYY-MM-DD")
+            return
+        
+        date_str = date_match.group(1)
+        
+        with st.spinner(f"Extracting matches for {date_str}..."):
+            try:
+                # Initialize scraper
+                scraper = HistoricalForebetScraper()
+                
+                # Scrape matches
+                matches = scraper.scrape_historical_matches(date_str)
+                
+                if not matches:
+                    st.warning("No matches found for this date.")
+                    return
+                
+                # Save to JSON file with date
+                os.makedirs('data', exist_ok=True)
+                filename = f"data/historical_matches_{date_str}.json"
+                
+                with open(filename, 'w', encoding='utf-8') as f:
+                    json.dump(matches, f, indent=2, default=str)
+                
+                # Display results
+                st.success(f"Extracted {len(matches)} matches for {date_str}")
+                
+                # Show summary
+                with_results = sum(1 for m in matches if m.get('has_result'))
+                st.info(f"Matches with results: {with_results}")
+                
+                # Show match list
+                st.markdown("#### Extracted Matches")
+                
+                # Create a DataFrame for display
+                match_data = []
+                for m in matches:
+                    if m.get('home_team') and m.get('away_team'):
+                        row = {
+                            'Home': m.get('home_team', ''),
+                            'Away': m.get('away_team', ''),
+                            'League': m.get('short_code', m.get('league_name', '')),
+                            'Result': f"{m.get('home_score', '?')}-{m.get('away_score', '?')}" if m.get('has_result') else 'Pending',
+                            'URL': m.get('url', '')
+                        }
+                        match_data.append(row)
+                
+                if match_data:
+                    df = pd.DataFrame(match_data)
+                    st.dataframe(df, use_container_width=True)
+                
+                # Show leagues found
+                leagues = set()
+                for m in matches:
+                    if m.get('league_name'):
+                        leagues.add(m.get('league_name'))
+                    if m.get('short_code'):
+                        leagues.add(m.get('short_code'))
+                
+                if leagues:
+                    st.markdown("#### Leagues Found")
+                    for league in sorted(leagues):
+                        st.markdown(f"* {league}")
+                
+                st.markdown(f"""
+                <div class="card" style="background: rgba(16, 185, 129, 0.2); border-color: #10b981;">
+                    <h4 style="margin: 0 0 0.5rem 0; color: #10b981;">Data Saved</h4>
+                    <p style="margin: 0; color: #94a3b8;">
+                        File: <code>{filename}</code><br>
+                        Matches: {len(matches)}<br>
+                        With Results: {with_results}
+                    </p>
+                </div>
+                """, unsafe_allow_html=True)
+                
+            except Exception as e:
+                st.error(f"Error: {str(e)}")
+    
+    st.markdown("---")
+    
+    # Show existing historical data files
+    st.markdown("#### Existing Historical Data Files")
+    
+    # Find all historical data files
+    historical_files = sorted(glob.glob('data/historical_matches_*.json'), reverse=True)
+    
+    if historical_files:
+        file_data = []
+        for f in historical_files:
+            filename = os.path.basename(f)
+            # Extract date from filename
+            date_match = re.search(r'historical_matches_(\d{4}-\d{2}-\d{2})\.json', filename)
+            if date_match:
+                date_str = date_match.group(1)
+                # Count matches in file
+                try:
+                    with open(f, 'r', encoding='utf-8') as fp:
+                        data = json.load(fp)
+                        with_results = sum(1 for m in data if m.get('has_result'))
+                        file_data.append({
+                            'Date': date_str,
+                            'File': filename,
+                            'Total': len(data),
+                            'Results': with_results,
+                            'Path': f
+                        })
+                except:
+                    pass
+        
+        if file_data:
+            df = pd.DataFrame(file_data)
+            st.dataframe(df[['Date', 'Total', 'Results']], use_container_width=True)
+            
+            # Download buttons
+            st.markdown("##### Download Files")
+            cols = st.columns(3)
+            for i, row in enumerate(file_data[:6]):
+                with cols[i % 3]:
+                    try:
+                        with open(row['Path'], 'r', encoding='utf-8') as f:
+                            file_content = f.read()
+                        st.download_button(
+                            label=f"📥 {row['Date']}",
+                            data=file_content,
+                            file_name=row['File'],
+                            mime='application/json'
+                        )
+                    except:
+                        pass
+    else:
+        st.info("No historical data files found.")
+
+
+# ════════════════════════════════════════════════════════════════════════════════
 # SETTINGS TAB
-# ════════════════════════════════════════════════════════════════════════
+# ════════════════════════════════════════════════════════════════════════════════
 
 def display_settings():
     """Display settings."""
@@ -1110,6 +1141,7 @@ def display_settings():
         <p style="color: #94a3b8;">Deploy on <a href="https://share.streamlit.io" target="_blank">Streamlit Community Cloud</a> or <a href="https://huggingface.co/spaces" target="_blank">HuggingFace Spaces</a> for free.</p>
     </div>
     """, unsafe_allow_html=True)
+
 
 if __name__ == "__main__":
     main()

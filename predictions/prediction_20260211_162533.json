@@ -1,0 +1,253 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/arkadag-al-nassr-2423633",
+  "timestamp": "2026-02-11T16:25:33.292828",
+  "features": {
+    "home_position": 1,
+    "away_position": 22,
+    "position_diff": -21,
+    "home_points": 7,
+    "away_points": 18,
+    "home_form_points": 18,
+    "away_form_points": 18,
+    "home_recent_form": 9,
+    "away_recent_form": 9,
+    "home_wins_l6": 6,
+    "home_draws_l6": 0,
+    "home_losses_l6": 0,
+    "away_wins_l6": 6,
+    "away_draws_l6": 0,
+    "away_losses_l6": 0,
+    "home_scored_avg": 3.1470588235294117,
+    "home_conceded_avg": 0.5882352941176471,
+    "away_scored_avg": 2.7333333333333334,
+    "away_conceded_avg": 0.8333333333333334,
+    "expected_total_goals": 3.650980392156863,
+    "home_home_win_rate": 85.71428571428571,
+    "home_home_goals_avg": 3.642857142857143,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 0.7857142857142857,
+    "h2h_home_win_pct": null,
+    "h2h_draw_pct": null,
+    "h2h_away_win_pct": null,
+    "home_shots_avg": 1.8529411764705883,
+    "away_shots_avg": 17.266666666666666,
+    "home_shots_on_target_pct": 19.047619047619047,
+    "away_shots_on_target_pct": 36.486486486486484,
+    "home_dangerous_attacks_avg": 9.882352941176471,
+    "away_dangerous_attacks_avg": 64.33333333333333,
+    "home_possession": 44.0,
+    "away_possession": 61.54,
+    "home_pass_accuracy": 75.28675703858185,
+    "away_pass_accuracy": 87.46303962152572,
+    "home_fouls_avg": 2.4411764705882355,
+    "away_fouls_avg": 9.7,
+    "home_yellow_avg": 0.4117647058823529,
+    "away_yellow_avg": 1.6,
+    "odds_home": 15.0,
+    "odds_draw": 6.5,
+    "odds_away": 1.18,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 56
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1238,
+        "2": 0.6493,
+        "X": 0.2269
+      },
+      "computed_odds": {
+        "1": 8.08,
+        "2": 1.54,
+        "X": 4.41
+      },
+      "confidence": 0.6493
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.1675,
+        "Under": 0.8325
+      },
+      "computed_odds": {
+        "Over": 5.97,
+        "Under": 1.2
+      },
+      "confidence": 0.8325
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1238,
+        "2": 0.6493,
+        "X": 0.2269
+      },
+      "computed_odds": {
+        "1": 8.08,
+        "2": 1.54,
+        "X": 4.41
+      },
+      "confidence": 0.6493
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.1675,
+        "Under": 0.8325
+      },
+      "computed_odds": {
+        "Over": 5.97,
+        "Under": 1.2
+      },
+      "confidence": 0.8325
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4238,
+        "X": 0.1882,
+        "2": 0.388
+      },
+      "computed_odds": {
+        "1": 2.36,
+        "X": 5.31,
+        "2": 2.58
+      },
+      "confidence": 0.4238
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.65,
+        "Under": 0.35
+      },
+      "computed_odds": {
+        "Over": 1.54,
+        "Under": 2.86
+      },
+      "confidence": 0.65
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 1.0,
+        "away": 0,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.06242369984536501,
+        "away": 0.7935216082037927,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 1.0,
+        "away": 1.0,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.3333333333333333,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 1.1397058823529411,
+        "away": 0.975,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.264,
+        "away": 0.6781288888888888,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 3.650980392156863
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 20.0
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 11.0
+        },
+        {
+          "factor": "shots_possession",
+          "direction": "away",
+          "impact": 4.1
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 2.5
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.65,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 5.88,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": false,
+    "ml_result": "2",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (6 wins in last 6)",
+      "\ud83d\udd25 Away team in excellent form (6 wins in last 6)",
+      "\ud83c\udfdf\ufe0f  Home team dominant at home (86% win rate)",
+      "\u26bd High-scoring match expected (avg 3.7 goals)",
+      "\ud83d\udcca Home team significantly higher in table (#1 vs #22)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 15.0,
+        "fair": 8.08,
+        "value_pct": 85.6
+      },
+      {
+        "outcome": "X",
+        "market": 6.5,
+        "fair": 4.41,
+        "value_pct": 47.4
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Arkadag": [],
+    "Al Nassr": []
+  }
+}
