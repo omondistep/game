@@ -30,8 +30,8 @@ def save_training_history(history: List[Dict]):
 def get_training_stats() -> Dict:
     """Get comprehensive training statistics."""
     history = load_training_history()
-    matches_file = "match_data/results.json"
-    training_file = "match_data/training_data.pkl"
+    matches_file = "data/results.json"
+    training_file = "data/training_data.pkl"
     
     stats = {
         'total_trainings': len(history),
@@ -49,7 +49,13 @@ def get_training_stats() -> Dict:
         with open(training_file, 'rb') as f:
             data = pickle.load(f)
             if isinstance(data, list):
-                stats['training_count'] = len(data)
+                # Check if new format (league entries with 'examples' key) or old format (flat list)
+                if data and isinstance(data[0], dict) and 'examples' in data[0]:
+                    # New format: [{'league': '...', 'examples': [...]}, ...]
+                    stats['training_count'] = sum(len(entry.get('examples', [])) for entry in data)
+                else:
+                    # Old format: [{'features': ..., 'labels': ...}, ...]
+                    stats['training_count'] = len(data)
     
     # Get latest training metrics
     if history:

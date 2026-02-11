@@ -13,7 +13,6 @@ https://www.forebet.com/en/football/matches/stratford-town-halesowen-town-234315
 https://www.forebet.com/en/football/matches/ballymena-united-crusaders-belfast-2336112
 https://www.forebet.com/en/football/matches/brickfield-rangers-guilsfield-2384819
 https://www.forebet.com/en/football/matches/cwmbran-celtic-llantwit-major-2403564
-https://www.forebet.com/en/football/matches/hua-hin-city-thonburi-united-2388128
 https://www.forebet.com/en/football/matches/lao-army-luangprabang-united-2347888
 https://www.forebet.com/en/football/matches/werder-bremen-w-wolfsburg-w-2370243
 https://www.forebet.com/en/football/matches/uni%C3%A3o-leiria-u23-vizela-u23-2422138
@@ -90,20 +89,7 @@ https://www.forebet.com/en/football/matches/turriff-united-inverurie-loco-works-
 https://www.forebet.com/en/football/matches/formartine-united-banks-o'-dee-2331317
 https://www.forebet.com/en/football/matches/antequera-cf-algeciras-cf-2365163
 https://www.forebet.com/en/football/matches/mechelen-w-patro-eisden-w-2362680
-https://www.forebet.com/en/football/matches/chelsea-leeds-united-2315994
-https://www.forebet.com/en/football/matches/ss-san-giovanni-sp-tre-penne-2363356
-https://www.forebet.com/en/football/matches/west-ham-manchester-united-2315998
-https://www.forebet.com/en/football/matches/uni%C3%B3n-santa-fe-res-aldosivi-res-2424303
-https://www.forebet.com/en/football/matches/birmingham-city-west-bromwich-2335497
-https://www.forebet.com/en/football/matches/ebbsfleet-utd-enfield-town-2341317
-https://www.forebet.com/en/football/matches/kidderminster-merthyr-town-2340767
-https://www.forebet.com/en/football/matches/macclesfield-leamington-2340766
-https://www.forebet.com/en/football/matches/dorking-wanderers-dover-athletic-2341312
-https://www.forebet.com/en/football/matches/crawley-town-cambridge-utd-2330110
-https://www.forebet.com/en/football/matches/linfield-belfast-dungannon-swifts-2336115
 https://www.forebet.com/en/football/matches/manchester-city-fulham-2315993
-https://www.forebet.com/en/football/matches/deportivo-tachira-the-strongest-2423702
-https://www.forebet.com/en/football/matches/khonkaen-mordindang-fc-yasothon-united-2387779
 https://www.forebet.com/en/football/matches/aston-villa-brighton-2315997
 /en/football/matches/boca-juniors-cali-deportes-quindío-2419026|Boca Juniors Cali|Deportes Quindío|Primera B|Co2
 /en/football/matches/valledupar-fc-envigado-fc-2419027|Valledupar FC|Envigado FC|Primera B|Co2
@@ -924,5 +910,4 @@ https://www.forebet.com/en/football/matches/aston-villa-brighton-2315997
 /en/football/matches/atletico-madrid-w-granada-w-2365786|Atletico Madrid W|Granada W|EsW|Primera Division Women|Spain
 /en/football/matches/levante-w-madrid-cff-w-2365790|Levante W|Madrid CFF W|EsW|Primera Division Women|Spain
 /en/football/matches/leixões-u23-benfica-u23-2419525|Leixões U23|Benfica U23|PtU|Liga Revelacao U23|Portugal
-https://www.forebet.com/en/football/matches/csm-slatina-cs-metaloglobus-2402566
 https://www.forebet.com/en/football/matches/arkadag-al-nassr-2423633

@@ -75,5 +75,186 @@
     "result_accuracy": 0.9873617693522907,
     "ou_accuracy": 0.9993680884676145,
     "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T17:51:50.705194",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Spain La Liga"
+  },
+  {
+    "timestamp": "2026-02-11T17:51:51.836411",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Mexico Liga MX"
+  },
+  {
+    "timestamp": "2026-02-11T17:51:52.997949",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Australia A-League"
+  },
+  {
+    "timestamp": "2026-02-11T17:51:54.268790",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "League 24228"
+  },
+  {
+    "timestamp": "2026-02-11T17:51:55.351148",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "League 24231"
+  },
+  {
+    "timestamp": "2026-02-11T17:53:21.389157",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Spain La Liga"
+  },
+  {
+    "timestamp": "2026-02-11T17:53:22.629551",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Premier League"
+  },
+  {
+    "timestamp": "2026-02-11T17:53:28.576916",
+    "training_examples": 2820,
+    "result_accuracy": 0.7946808510638298,
+    "ou_accuracy": 1.0,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T17:54:03.548087",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Spain La Liga"
+  },
+  {
+    "timestamp": "2026-02-11T17:54:04.749946",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Premier League"
+  },
+  {
+    "timestamp": "2026-02-11T17:54:10.098185",
+    "training_examples": 2820,
+    "result_accuracy": 0.7946808510638298,
+    "ou_accuracy": 1.0,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T17:55:01.175023",
+    "training_examples": 2820,
+    "result_accuracy": 0.7946808510638298,
+    "ou_accuracy": 1.0,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T17:55:02.417644",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Spain La Liga"
+  },
+  {
+    "timestamp": "2026-02-11T17:55:03.579951",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Mexico Liga MX"
+  },
+  {
+    "timestamp": "2026-02-11T17:55:04.600018",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Australia A-League"
+  },
+  {
+    "timestamp": "2026-02-11T17:55:05.629431",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "League 24228"
+  },
+  {
+    "timestamp": "2026-02-11T17:55:06.692831",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "League 24231"
+  },
+  {
+    "timestamp": "2026-02-11T17:55:07.838466",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Switzerland Super League"
+  },
+  {
+    "timestamp": "2026-02-11T17:55:09.090354",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "League 23519"
+  },
+  {
+    "timestamp": "2026-02-11T17:55:10.338733",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "League 23216"
+  },
+  {
+    "timestamp": "2026-02-11T17:55:11.629325",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "England Premier League"
+  },
+  {
+    "timestamp": "2026-02-11T17:55:12.945635",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Algeria League 2"
+  },
+  {
+    "timestamp": "2026-02-11T18:00:38.802288",
+    "training_examples": 33,
+    "result_accuracy": 1.0,
+    "ou_accuracy": 1.0,
+    "model_type": "league_specific",
+    "league": "Spain La Liga"
   }
 ]

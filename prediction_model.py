@@ -805,11 +805,16 @@ class FootballPredictor:
                 training_data = storage.get_training_data()
         
         # For new structure: [{'league': 'Serie A', 'examples': [...]}, ...]
-        if training_data and isinstance(training_data[0], dict) and 'league' in training_data[0]:
-            # League-specific training
+        if training_data and isinstance(training_data[0], dict) and 'examples' in training_data[0]:
+            # League-specific training with combined data
             if not league:
                 league = training_data[0].get('league')
             examples = training_data[0].get('examples', [])
+            # If league not specified and we want global model, combine all examples
+            if not league and len(training_data) > 1:
+                examples = []
+                for entry in training_data:
+                    examples.extend(entry.get('examples', []))
         else:
             # Old structure: [{'features': ..., 'labels': ...}, ...]
             examples = training_data
