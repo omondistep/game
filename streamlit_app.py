@@ -578,6 +578,39 @@ def display_prediction_result(result):
             with feat_cols[i % 4]:
                 st.metric(name.replace('_', ' ').title(), f"{value:.3f}" if isinstance(value, float) else value)
 
+    # Edit league name option
+    info = md.get('match_info', md.get('info', {}))
+    current_league = info.get('league', 'Unknown')
+    import re
+    code_match = re.search(r'-(\d{5})\d{1,3}$', result.get('url', ''))
+    league_code = code_match.group(1) if code_match else None
+    
+    if league_code:
+        st.markdown("---")
+        st.markdown("### ✏️ Edit League Name")
+        
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            new_league_name = st.text_input(
+                f"Current: {current_league}",
+                value="",
+                placeholder="Enter correct league name...",
+                label_visibility="collapsed",
+                key=f"edit_league_{league_code}"
+            )
+        with col2:
+            update_btn = st.button("Update", width='stretch', key=f"update_btn_{league_code}")
+        
+        if update_btn and new_league_name:
+            from football_scraper import ForebetScraper
+            scraper = ForebetScraper()
+            if scraper.update_league_name(league_code, new_league_name):
+                system.storage.update_league_name(current_league, new_league_name)
+                st.success(f"✅ Updated league from '{current_league}' to '{new_league_name}'")
+                st.rerun()
+            else:
+                st.error("❌ Failed to update league name")
+
 
 # ════════════════════════════════════════════════════════════════════════════════
 # STATS TAB

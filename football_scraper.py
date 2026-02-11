@@ -108,12 +108,58 @@ class ForebetScraper:
         # Return placeholder with code so training can proceed without user input
         return f"League {code}"
 
+    def update_league_name(self, code: str, new_name: str) -> bool:
+        """Update league name for a given code.
+        
+        Args:
+            code: League code (5-digit code from URL)
+            new_name: New league name to use
+            
+        Returns:
+            True if update was successful, False otherwise
+        """
+        if not code or not new_name:
+            return False
+        
+        # Update in unknown_leagues.json
+        try:
+            with open('data/unknown_leagues.json', 'r') as f:
+                unknown = json.load(f)
+        except:
+            unknown = {}
+        
+        # Check if code exists in unknown_leagues or is a known league
+        if code in self.LEAGUE_CODES or code in unknown:
+            unknown[code] = new_name
+            with open('data/unknown_leagues.json', 'w') as f:
+                json.dump(unknown, f, indent=2)
+            return True
+        
+        return False
+
+
     # ------------------------------------------------------------------
     # Public API
     # ------------------------------------------------------------------
 
     def _extract_league_from_page(self, soup: BeautifulSoup, url: str) -> Optional[str]:
         """Extract league name from match page HTML."""
+        # First, check if we have a saved league name for this URL's code
+        league_code = self._extract_league_code(url)
+        if league_code:
+            try:
+                with open('data/unknown_leagues.json', 'r') as f:
+                    unknown = json.load(f)
+                if league_code in unknown:
+                    value = unknown[league_code]
+                    # Handle both old format (string) and new format (dict with suggested_name)
+                    if isinstance(value, str):
+                        return value
+                    elif isinstance(value, dict):
+                        return value.get('suggested_name') or value.get('name')
+            except:
+                pass
+        
         # Method 1: Try to find league info from onclick attributes (for major leagues)
         img_with_onclick = soup.find('img', onclick=True)
         if img_with_onclick:

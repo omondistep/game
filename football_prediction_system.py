@@ -1011,13 +1011,36 @@ class FootballPredictionSystem:
         if pred.get('result_accuracy'):
             print(f"  {C.DIM}  Model accuracy: {pred['result_accuracy']:.1%}{C.RESET}")
         
-        print()
-        print()
+
+        # Edit league name option
+        import re
+        url = result.get('url', '')
+        code_match = re.search(r'-(\d{5})\d{1,3}$', url) if url else None
+        league_code = code_match.group(1) if code_match else None
+        current_league = info.get('league', 'Unknown')
+        
+        if league_code:
+            print()
+            print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
+            print(f"  {C.BOLD}✏️  EDIT LEAGUE NAME{C.RESET}")
+            print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
+            print(f"  {C.DIM}Current league: {current_league}{C.RESET}")
+            print(f"  {C.DIM}League code: {league_code}{C.RESET}")
+            new_league = input(f"  {C.BOLD}Enter correct league name (or press Enter to skip): {C.RESET}").strip()
+            
+            if new_league:
+                from football_scraper import ForebetScraper
+                scraper = ForebetScraper()
+                if scraper.update_league_name(league_code, new_league):
+                    self.storage.update_league_name(current_league, new_league)
+                    print(f"  {C.GREEN}✓ Updated league from '{current_league}' to '{new_league}'{C.RESET}")
+                else:
+                    print(f"  {C.RED}✗ Failed to update league name{C.RESET}")
 
 
 # ======================================================================
 # CLI
-# ======================================================================
+# =====================================================================═
 
 def main():
     parser = argparse.ArgumentParser(description='Football Match Prediction System')
