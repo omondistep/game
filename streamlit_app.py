@@ -753,16 +753,20 @@ def display_train():
         st.markdown(f"* **Matches with Results:** {total_results}")
         st.markdown(f"* **Training Examples:** {total_examples}")
         
-        # Show league breakdown
+        # Show top 5 leagues by example count
         training_data = system.storage.get_training_data()
         if training_data:
-            st.markdown("### 📈 Training by League")
-            for entry in training_data[:5]:
-                count = len(entry.get('examples', []))
-                if count > 0:
-                    st.markdown(f"* **{entry.get('league', 'Unknown')}**: {count} examples")
-        else:
-            st.info("No training data available yet.")
+            # Get top 5 leagues by example count
+            league_counts = [(e.get('league', 'Unknown'), len(e.get('examples', []))) for e in training_data]
+            league_counts.sort(key=lambda x: x[1], reverse=True)
+            top_leagues = [(league, count) for league, count in league_counts if count > 0][:5]
+            
+            if top_leagues:
+                st.markdown("### 📈 Top 5 Leagues by Training Examples")
+                for league, count in top_leagues:
+                    st.markdown(f"* **{league}**: {count} examples")
+            else:
+                st.info("No training data available yet.")
 
 
 # ════════════════════════════════════════════════════════════════════════════════
