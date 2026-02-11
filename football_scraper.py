@@ -340,10 +340,12 @@ class ForebetScraper:
             }
             return match_data
         except Exception as e:
-            print(f"Error scraping match: {e}")
+            error_msg = f"Error scraping match: {e}"
+            print(error_msg)
             import traceback
             traceback.print_exc()
-            return None
+            # Return error details instead of None
+            return {'error': error_msg, 'url': url}
     
     def _extract_result_from_soup(self, soup: BeautifulSoup) -> Optional[Dict]:
         """Extract actual result from parsed HTML if match has been played."""
