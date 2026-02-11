@@ -242,10 +242,9 @@ class FootballPredictionSystem:
         return self.storage.save_match_result(url, result)
 
     def train_model(self) -> Dict:
-        # Use get_league_training_data() to get flat list of all examples
+        # Get flattened list of all training examples
         td = self.storage.get_league_training_data()
-        # Count total examples across all leagues
-        total_examples = sum(len(entry.get('examples', [])) for entry in td)
+        total_examples = len(td)  # Already flattened
         if total_examples < 10:
             return {'error': 'Insufficient training data', 'available': total_examples, 'required': 10}
         
