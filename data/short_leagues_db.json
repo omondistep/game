@@ -1,0 +1,447 @@
+{
+  "FA Trophy": {
+    "league_name": "MtC",
+    "country": "",
+    "five_digit_code": "24190"
+  },
+  "Campeonato Ga\u00facho": {
+    "league_name": "BrG",
+    "country": "",
+    "five_digit_code": "24129"
+  },
+  "BrC": {
+    "league_name": "Campeonato Carioca",
+    "country": "Brazil",
+    "five_digit_code": "24140"
+  },
+  "Campeonato Piauiense": {
+    "league_name": "BrP",
+    "country": "",
+    "five_digit_code": "24131"
+  },
+  "Mo1": {
+    "league_name": "Elite League",
+    "country": "Macau",
+    "five_digit_code": "24159"
+  },
+  "Co2": {
+    "league_name": "Primera B",
+    "country": "Colombia",
+    "five_digit_code": "24189"
+  },
+  "Campeonato Paulista": {
+    "league_name": "BrP",
+    "country": "",
+    "five_digit_code": "24137"
+  },
+  "MxW": {
+    "league_name": "Liga MX Women",
+    "country": "Mexico",
+    "five_digit_code": "24123"
+  },
+  "PtU": {
+    "league_name": "Liga Revelacao U23",
+    "country": "Portugal",
+    "five_digit_code": "24195"
+  },
+  "Cr2": {
+    "league_name": "Liga de Ascenso",
+    "country": "Costa Rica",
+    "five_digit_code": "24135"
+  },
+  "Pa1": {
+    "league_name": "Football League",
+    "country": "Panama",
+    "five_digit_code": "24187"
+  },
+  "Cr1": {
+    "league_name": "Primera Divisi\u00f3n",
+    "country": "Costa Rica",
+    "five_digit_code": "24141"
+  },
+  "Mx3": {
+    "league_name": "Liga Premier Serie B",
+    "country": "Mexico",
+    "five_digit_code": "24087"
+  },
+  "InT": {
+    "league_name": "Santosh Trophy",
+    "country": "India",
+    "five_digit_code": "24165"
+  },
+  "CzT": {
+    "league_name": "Tipsport liga",
+    "country": "Czech Republic",
+    "five_digit_code": "24134"
+  },
+  "Football League": {
+    "league_name": "Ae1",
+    "country": "",
+    "five_digit_code": "24194"
+  },
+  "Sultan Cup": {
+    "league_name": "OmC",
+    "country": "",
+    "five_digit_code": "24164"
+  },
+  "ClC": {
+    "league_name": "Copa Chile",
+    "country": "Chile",
+    "five_digit_code": "24192"
+  },
+  "Premier League": {
+    "league_name": "Bh1",
+    "country": "",
+    "five_digit_code": "24183"
+  },
+  "Et1": {
+    "league_name": "Premier League",
+    "country": "Ethiopia",
+    "five_digit_code": "24009"
+  },
+  "OFC": {
+    "league_name": "",
+    "country": "",
+    "five_digit_code": "24191"
+  },
+  "Qa1": {
+    "league_name": "Stars League",
+    "country": "Qatar",
+    "five_digit_code": "24156"
+  },
+  "Za2": {
+    "league_name": "National First Division",
+    "country": "South Africa",
+    "five_digit_code": "23928"
+  },
+  "Eg1": {
+    "league_name": "Premier League",
+    "country": "Egypt",
+    "five_digit_code": "23349"
+  },
+  "Bf1": {
+    "league_name": "Premier League",
+    "country": "Burkina Faso",
+    "five_digit_code": "23906"
+  },
+  "Ke2": {
+    "league_name": "Super League",
+    "country": "Kenya",
+    "five_digit_code": "24199"
+  },
+  "Premier Soccer League": {
+    "league_name": "Za1",
+    "country": "",
+    "five_digit_code": "23392"
+  },
+  "Challenger Pro League": {
+    "league_name": "Be2",
+    "country": "",
+    "five_digit_code": "23328"
+  },
+  "Campeonato Paraense": {
+    "league_name": "BrP",
+    "country": "",
+    "five_digit_code": "24169"
+  },
+  "Il3": {
+    "league_name": "Liga Alef North",
+    "country": "Israel",
+    "five_digit_code": "23688"
+  },
+  "League Two": {
+    "league_name": "L2",
+    "country": "",
+    "five_digit_code": "23301"
+  },
+  "Bundesliga": {
+    "league_name": "De1",
+    "country": "",
+    "five_digit_code": "23440"
+  },
+  "League One": {
+    "league_name": "L1",
+    "country": "",
+    "five_digit_code": "23269"
+  },
+  "National League": {
+    "league_name": "NL",
+    "country": "",
+    "five_digit_code": "23394"
+  },
+  "National League North": {
+    "league_name": "NLn",
+    "country": "",
+    "five_digit_code": "23407"
+  },
+  "Co1": {
+    "league_name": "Primera A",
+    "country": "Colombia",
+    "five_digit_code": "24151"
+  },
+  "Gt1": {
+    "league_name": "Liga Nacional",
+    "country": "Guatemala",
+    "five_digit_code": "24160"
+  },
+  "Hn1": {
+    "league_name": "Liga Nacional",
+    "country": "Honduras",
+    "five_digit_code": "24168"
+  },
+  "BrB": {
+    "league_name": "Campeonato Baiano",
+    "country": "Brazil",
+    "five_digit_code": "24128"
+  },
+  "Eg2": {
+    "league_name": "Second Division A",
+    "country": "Egypt",
+    "five_digit_code": "24171"
+  },
+  "Campeonato Roraimense": {
+    "league_name": "BrR",
+    "country": "",
+    "five_digit_code": "24176"
+  },
+  "Campeonato Matogrossense": {
+    "league_name": "BrM",
+    "country": "",
+    "five_digit_code": "24139"
+  },
+  "Tr3": {
+    "league_name": "TFF 2. Lig",
+    "country": "T\u00fcrkiye",
+    "five_digit_code": "24202"
+  },
+  "AuW": {
+    "league_name": "A-League Women",
+    "country": "Australia",
+    "five_digit_code": "24028"
+  },
+  "Elite One": {
+    "league_name": "Cm1",
+    "country": "",
+    "five_digit_code": "24177"
+  },
+  "Professional Football League": {
+    "league_name": "Ng1",
+    "country": "",
+    "five_digit_code": "23883"
+  },
+  "JO1": {
+    "league_name": "Premier League",
+    "country": "Jordan",
+    "five_digit_code": "24170"
+  },
+  "Sa1": {
+    "league_name": "Professional League",
+    "country": "Saudi Arabia",
+    "five_digit_code": "23621"
+  },
+  "Segunda B Grupo 5": {
+    "league_name": "Es3",
+    "country": "",
+    "five_digit_code": "23805"
+  },
+  "KNVB Beker Women": {
+    "league_name": "NlW",
+    "country": "",
+    "five_digit_code": "24116"
+  },
+  "Primera Division": {
+    "league_name": "Sv1",
+    "country": "",
+    "five_digit_code": "24153"
+  },
+  "Gt2": {
+    "league_name": "Primera Division",
+    "country": "Guatemala",
+    "five_digit_code": "24198"
+  },
+  "Brasileiro Serie A": {
+    "league_name": "Br1",
+    "country": "",
+    "five_digit_code": "24178"
+  },
+  "BrP": {
+    "league_name": "Campeonato Paulista A3",
+    "country": "Brazil",
+    "five_digit_code": "24167"
+  },
+  "BrG": {
+    "league_name": "Campeonato Goiano",
+    "country": "Brazil",
+    "five_digit_code": "24130"
+  },
+  "Campeonato Paulista A2": {
+    "league_name": "BrP",
+    "country": "",
+    "five_digit_code": "24138"
+  },
+  "Br1": {
+    "league_name": "Brasileiro Serie A",
+    "country": "Brazil",
+    "five_digit_code": "24179"
+  },
+  "Vn2": {
+    "league_name": "V-League 2",
+    "country": "Vietnam",
+    "five_digit_code": "24201"
+  },
+  "Ae2": {
+    "league_name": "Division 1",
+    "country": "UAE",
+    "five_digit_code": "23903"
+  },
+  "Th3": {
+    "league_name": "Thai League 3",
+    "country": "Thailand",
+    "five_digit_code": "24204"
+  },
+  "Au1": {
+    "league_name": "A-League",
+    "country": "Australia",
+    "five_digit_code": "24005"
+  },
+  "Id1": {
+    "league_name": "Liga 1",
+    "country": "Indonesia",
+    "five_digit_code": "23216"
+  },
+  "Az1": {
+    "league_name": "Premier League",
+    "country": "Azerbaijan",
+    "five_digit_code": "23829"
+  },
+  "Sg1": {
+    "league_name": "S-League",
+    "country": "Singapore",
+    "five_digit_code": "23577"
+  },
+  "Th2": {
+    "league_name": "Thai League 2",
+    "country": "Thailand",
+    "five_digit_code": "24203"
+  },
+  "Al2": {
+    "league_name": "League 1",
+    "country": "Albania",
+    "five_digit_code": "23576"
+  },
+  "Sa2": {
+    "league_name": "1st Division",
+    "country": "Saudi Arabia",
+    "five_digit_code": "23827"
+  },
+  "My1": {
+    "league_name": "Super League",
+    "country": "Malaysia",
+    "five_digit_code": "23350"
+  },
+  "Il2": {
+    "league_name": "Liga Leumit",
+    "country": "Israel",
+    "five_digit_code": "23605"
+  },
+  "Tz1": {
+    "league_name": "Ligi Kuu Bara",
+    "country": "Tanzania",
+    "five_digit_code": "24209"
+  },
+  "PL2": {
+    "league_name": "Premier League 2",
+    "country": "England",
+    "five_digit_code": "23489"
+  },
+  "Ro1": {
+    "league_name": "Divizia A",
+    "country": "Romania",
+    "five_digit_code": "24157"
+  },
+  "Si1": {
+    "league_name": "Prva Liga",
+    "country": "Slovenia",
+    "five_digit_code": "23107"
+  },
+  "Tg1": {
+    "league_name": "Championnat National",
+    "country": "Togo",
+    "five_digit_code": "24071"
+  },
+  "Es5": {
+    "league_name": "Tercera Division Group 12 - Canarias",
+    "country": "Spain",
+    "five_digit_code": "23713"
+  },
+  "Ve1": {
+    "league_name": "Primera Division",
+    "country": "Venezuela",
+    "five_digit_code": "24200"
+  },
+  "Cl1": {
+    "league_name": "Primera Division",
+    "country": "Chile",
+    "five_digit_code": "24196"
+  },
+  "Mx2": {
+    "league_name": "Liga de Expansion MX",
+    "country": "Mexico",
+    "five_digit_code": "24133"
+  },
+  "Mx1": {
+    "league_name": "Liga MX",
+    "country": "Mexico",
+    "five_digit_code": "24132"
+  },
+  "Bm1": {
+    "league_name": "Premier Division",
+    "country": "Bermuda",
+    "five_digit_code": "23997"
+  },
+  "TwW": {
+    "league_name": "Mulan Football League Women",
+    "country": "Taiwan",
+    "five_digit_code": "23519"
+  },
+  "La1": {
+    "league_name": "Lao League",
+    "country": "Laos",
+    "five_digit_code": "23478"
+  },
+  "Kh1": {
+    "league_name": "Premier League",
+    "country": "Cambodia",
+    "five_digit_code": "23365"
+  },
+  "Tr4": {
+    "league_name": "TFF 3. Lig",
+    "country": "T\u00fcrkiye",
+    "five_digit_code": "23813"
+  },
+  "ItP": {
+    "league_name": "Primavera 1",
+    "country": "Italy",
+    "five_digit_code": "23485"
+  },
+  "Tr2": {
+    "league_name": "TFF 1. Lig ",
+    "country": "T\u00fcrkiye",
+    "five_digit_code": "23385"
+  },
+  "Pt2": {
+    "league_name": "Liga Portugal 2",
+    "country": "Portugal",
+    "five_digit_code": "23451"
+  },
+  "DeW": {
+    "league_name": "Bundesliga Women",
+    "country": "Germany",
+    "five_digit_code": "23702"
+  },
+  "EsW": {
+    "league_name": "Primera Division Women",
+    "country": "Spain",
+    "five_digit_code": "23657"
+  }
+}

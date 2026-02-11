@@ -1,0 +1,362 @@
+{
+  "Co1": {
+    "name": "Primera A",
+    "country": "Colombia"
+  },
+  "Py1": {
+    "name": "Primera Division",
+    "country": "Paraguay"
+  },
+  "BrC": {
+    "name": "Campeonato Capixaba",
+    "country": "Brazil"
+  },
+  "Cr1": {
+    "name": "Primera Divisi\u00f3n",
+    "country": "Costa Rica"
+  },
+  "Ar1": {
+    "name": "Liga Profesional",
+    "country": "Argentina"
+  },
+  "BrB": {
+    "name": "Campeonato Baiano",
+    "country": "Brazil"
+  },
+  "BrP": {
+    "name": "Campeonato Paraibano",
+    "country": "Brazil"
+  },
+  "BrG": {
+    "name": "Campeonato Goiano",
+    "country": "Brazil"
+  },
+  "Br1": {
+    "name": "Brasileiro Serie A",
+    "country": "Brazil"
+  },
+  "BrA": {
+    "name": "Campeonato Acreano",
+    "country": "Brazil"
+  },
+  "Hn1": {
+    "name": "Liga Nacional",
+    "country": "Honduras"
+  },
+  "Sd1": {
+    "name": "Premier League",
+    "country": "Sudan"
+  },
+  "Gt1": {
+    "name": "Liga Nacional",
+    "country": "Guatemala"
+  },
+  "Cr2": {
+    "name": "Liga de Ascenso",
+    "country": "Costa Rica"
+  },
+  "Gt2": {
+    "name": "Primera Division",
+    "country": "Guatemala"
+  },
+  "InT": {
+    "name": "Santosh Trophy",
+    "country": "India"
+  },
+  "Au1": {
+    "name": "A-League",
+    "country": "Australia"
+  },
+  "Id1": {
+    "name": "Liga 1",
+    "country": "Indonesia"
+  },
+  "Id2": {
+    "name": "Liga 2",
+    "country": "Indonesia"
+  },
+  "MNL": {
+    "name": "National League",
+    "country": "Myanmar"
+  },
+  "Vn2": {
+    "name": "V-League 2",
+    "country": "Vietnam"
+  },
+  "AuW": {
+    "name": "A-League Women",
+    "country": "Australia"
+  },
+  "CzT": {
+    "name": "Tipsport liga",
+    "country": "Czech Republic"
+  },
+  "Il3": {
+    "name": "Liga Alef North",
+    "country": "Israel"
+  },
+  "Az1": {
+    "name": "Premier League",
+    "country": "Azerbaijan"
+  },
+  "Rw1": {
+    "name": "Premier League",
+    "country": "Rwanda"
+  },
+  "Vn1": {
+    "name": "V-League",
+    "country": "Vietnam"
+  },
+  "Bi1": {
+    "name": "Primus League",
+    "country": "Burundi"
+  },
+  "Sg1": {
+    "name": "S-League",
+    "country": "Singapore"
+  },
+  "Sy1": {
+    "name": "Premier League",
+    "country": "Syria"
+  },
+  "CD1": {
+    "name": "Ligue 1",
+    "country": "DR Congo"
+  },
+  "Et1": {
+    "name": "Premier League",
+    "country": "Ethiopia"
+  },
+  "Th2": {
+    "name": "Thai League 2",
+    "country": "Thailand"
+  },
+  "Lb": {
+    "name": "Premier League",
+    "country": "Lebanon"
+  },
+  "Al2": {
+    "name": "League 1",
+    "country": "Albania"
+  },
+  "Eg2": {
+    "name": "Second Division A",
+    "country": "Egypt"
+  },
+  "Sa2": {
+    "name": "1st Division",
+    "country": "Saudi Arabia"
+  },
+  "My1": {
+    "name": "Super League",
+    "country": "Malaysia"
+  },
+  "JO1": {
+    "name": "Premier League",
+    "country": "Jordan"
+  },
+  "Il2": {
+    "name": "Liga Leumit",
+    "country": "Israel"
+  },
+  "Tz1": {
+    "name": "Ligi Kuu Bara",
+    "country": "Tanzania"
+  },
+  "Ug1": {
+    "name": "Premier League",
+    "country": "Uganda"
+  },
+  "Mo1": {
+    "name": "Elite League",
+    "country": "Macau"
+  },
+  "Ae2": {
+    "name": "Division 1",
+    "country": "UAE"
+  },
+  "Za2": {
+    "name": "National First Division",
+    "country": "South Africa"
+  },
+  "Sa1": {
+    "name": "Professional League",
+    "country": "Saudi Arabia"
+  },
+  "PL2": {
+    "name": "Premier League 2",
+    "country": "England"
+  },
+  "Qa1": {
+    "name": "Stars League",
+    "country": "Qatar"
+  },
+  "Ro1": {
+    "name": "Divizia A",
+    "country": "Romania"
+  },
+  "Si1": {
+    "name": "Prva Liga",
+    "country": "Slovenia"
+  },
+  "Eg1": {
+    "name": "Premier League",
+    "country": "Egypt"
+  },
+  "Ao1": {
+    "name": "Girabola",
+    "country": "Angola"
+  },
+  "Tg1": {
+    "name": "Championnat National",
+    "country": "Togo"
+  },
+  "Gh1": {
+    "name": "Premier League",
+    "country": "Ghana"
+  },
+  "CI1": {
+    "name": "Ligue 1",
+    "country": "Ivory Coast"
+  },
+  "Bf1": {
+    "name": "Premier League",
+    "country": "Burkina Faso"
+  },
+  "EPL": {
+    "name": "Premier League",
+    "country": "England"
+  },
+  "CNL": {
+    "name": "",
+    "country": ""
+  },
+  "TT1": {
+    "name": "TT Pro League",
+    "country": "Trinidad and Tobago"
+  },
+  "Mx3": {
+    "name": "Liga Premier Serie B",
+    "country": "Mexico"
+  },
+  "Co2": {
+    "name": "Primera B",
+    "country": "Colombia"
+  },
+  "ClC": {
+    "name": "Copa Chile",
+    "country": "Chile"
+  },
+  "Es5": {
+    "name": "Tercera Division Group 12 - Canarias",
+    "country": "Spain"
+  },
+  "Ve1": {
+    "name": "Primera Division",
+    "country": "Venezuela"
+  },
+  "Cl1": {
+    "name": "Primera Division",
+    "country": "Chile"
+  },
+  "Mx2": {
+    "name": "Liga de Expansion MX",
+    "country": "Mexico"
+  },
+  "OFC": {
+    "name": "",
+    "country": ""
+  },
+  "Cm2": {
+    "name": "Elite Two",
+    "country": "Cameroon"
+  },
+  "Ml1": {
+    "name": "Premi\u00e8re Division",
+    "country": "Mali"
+  },
+  "MxW": {
+    "name": "Liga MX Women",
+    "country": "Mexico"
+  },
+  "Mx1": {
+    "name": "Liga MX",
+    "country": "Mexico"
+  },
+  "Bm1": {
+    "name": "Premier Division",
+    "country": "Bermuda"
+  },
+  "Pa1": {
+    "name": "Football League",
+    "country": "Panama"
+  },
+  "HK1": {
+    "name": "Premier League",
+    "country": "Hong Kong"
+  },
+  "TwW": {
+    "name": "Mulan Football League Women",
+    "country": "Taiwan"
+  },
+  "La1": {
+    "name": "Lao League",
+    "country": "Laos"
+  },
+  "Kh1": {
+    "name": "Premier League",
+    "country": "Cambodia"
+  },
+  "Th3": {
+    "name": "Thai League 3",
+    "country": "Thailand"
+  },
+  "Tr4": {
+    "name": "TFF 3. Lig",
+    "country": "T\u00fcrkiye"
+  },
+  "Ke2": {
+    "name": "Super League",
+    "country": "Kenya"
+  },
+  "ItP": {
+    "name": "Primavera 1",
+    "country": "Italy"
+  },
+  "Tr2": {
+    "name": "TFF 1. Lig ",
+    "country": "T\u00fcrkiye"
+  },
+  "PtU": {
+    "name": "Liga Revelacao U23",
+    "country": "Portugal"
+  },
+  "Pt2": {
+    "name": "Liga Portugal 2",
+    "country": "Portugal"
+  },
+  "Th1": {
+    "name": "Premier League",
+    "country": "Thailand"
+  },
+  "Ke1": {
+    "name": "Premier League",
+    "country": "Kenya"
+  },
+  "Tr3": {
+    "name": "TFF 2. Lig",
+    "country": "T\u00fcrkiye"
+  },
+  "De5": {
+    "name": "Oberliga Hamburg",
+    "country": "Germany"
+  },
+  "DeW": {
+    "name": "Bundesliga Women",
+    "country": "Germany"
+  },
+  "EsW": {
+    "name": "Primera Division Women",
+    "country": "Spain"
+  }
+}

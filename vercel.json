@@ -1,7 +1,0 @@
-{
-  "$schema": "https://openapi.vercel.sh/2.0/schema.json",
-  "buildCommand": "pip install beautifulsoup4 requests scikit-learn numpy python-dateutil lxml openpyxl joblib fastapi uvicorn --break-system-packages",
-  "devCommand": "uvicorn api.main:app --host 0.0.0.0 --port 8000",
-  "installCommand": "pip install beautifulsoup4 requests scikit-learn numpy python-dateutil lxml openpyxl joblib fastapi uvicorn --break-system-packages",
-  "framework": "fastapi"
-}

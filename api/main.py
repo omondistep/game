@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Football Prediction System - Web API for Vercel Serverless
-Uses Vercel's Python Runtime with ASGI adapter
+Football Prediction System - Web API
+A FastAPI-based web interface for the football prediction system
 """
 
 import sys

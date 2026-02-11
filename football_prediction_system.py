@@ -165,8 +165,8 @@ class FootballPredictionSystem:
 
     def predict_match(self, url: str, save_data: bool = True) -> Dict:
         """Scrape, analyse, and predict a match."""
-        # prompt_user=True so user is asked for league name if unknown
-        match_data = self.scraper.scrape_match(url, prompt_user=True)
+        # prompt_user=False so auto-extraction is used, with placeholder if unknown
+        match_data = self.scraper.scrape_match(url, prompt_user=False)
         if not match_data:
             return {'error': 'Failed to scrape match data', 'url': url}
 
@@ -177,7 +177,9 @@ class FootballPredictionSystem:
         features = FootballPredictor.extract_features(match_data)
         
         # Extract league for league-specific prediction
-        league = match_data.get('info', {}).get('league')
+        # Note: scraper stores info as 'match_info'
+        league_info = match_data.get('match_info', match_data.get('info', {}))
+        league = league_info.get('league')
         
         # Get ML prediction
         ml_prediction = self.predictor.predict(features, league)
@@ -206,6 +208,19 @@ class FootballPredictionSystem:
         else:
             primary_prediction = weighted_prediction
 
+        # Scrape injury data for both teams
+        teams = match_data.get('teams', {})
+        home_team = teams.get('home', '')
+        away_team = teams.get('away', '')
+        
+        injuries_data = {}
+        if home_team:
+            home_injuries = self.scraper.scrape_team_injuries(home_team)
+            injuries_data[home_team] = home_injuries
+        if away_team:
+            away_injuries = self.scraper.scrape_team_injuries(away_team)
+            injuries_data[away_team] = away_injuries
+
         return {
             'url': url,
             'timestamp': datetime.now().isoformat(),
@@ -216,6 +231,7 @@ class FootballPredictionSystem:
             'weighted_prediction': weighted_prediction,
             'convergence': convergence,
             'analysis': self._analyse(match_data, features, primary_prediction),
+            'injuries': injuries_data,
         }
 
     def add_match_result(self, url: str) -> bool:
@@ -765,22 +781,96 @@ class FootballPredictionSystem:
             print(f"      W: {w_bar} {w_pct:5.1f}%")
             print(f"      Fair:{odds_c:.2f}  Mkt:{odds_m:.2f}{C.GREEN}{thresh}{match}{C.RESET}")
         
+        # ── INJURY REPORT ──
+        injuries_data = result.get('injuries', {}) if isinstance(result, dict) else {}
+        if injuries_data:
+            print()
+            print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
+            print(f"  {C.BOLD}🏥 INJURY REPORT{C.RESET}")
+            print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
+            
+            for team, players in injuries_data.items():
+                if not players:
+                    continue
+                
+                # Check if this is home or away team
+                team_lower = team.lower()
+                is_home = any(part in team_lower for part in home.lower().split())
+                is_away = any(part in team_lower for part in away.lower().split())
+                
+                if not is_home and not is_away:
+                    continue
+                
+                team_label = home if is_home else away
+                emoji = "🏠" if is_home else "✈️"
+                
+                key_out = [p for p in players if 'will not play' in p.get('status', '').lower()]
+                
+                if key_out:
+                    print(f"\n  {emoji} {C.RED}{team_label} - Key players OUT:{C.RESET}")
+                    for p in key_out[:3]:
+                        name = p.get('name', 'Unknown')
+                        status = p.get('status', '')
+                        print(f"    🔴 {name} - {status}")
+                elif players:
+                    count = len(players)
+                    print(f"\n  {emoji} {team_label} - {count} injured player(s)")
+                    for p in players[:2]:
+                        name = p.get('name', 'Unknown')
+                        status = p.get('status', '')
+                        print(f"    ⚠️ {name} - {status}")
+        
         # Narrative Summary
         print()
         print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
         print(f"  {C.BOLD}📝 PREDICTION SUMMARY{C.RESET}")
         print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
         
-        # Generate narrative
+        # Sort recommendations by confidence
+        recommendations = []
+        
+        # Add result recommendation
+        result_conf = rp.get('confidence', 0) * 100
+        result_label = rmap.get(rp['prediction'], '?')
+        recommendations.append({
+            'type': 'Match Result',
+            'label': result_label,
+            'confidence': result_conf,
+            'prediction': rp['prediction']
+        })
+        
+        # Add O/U recommendation
+        ou_conf = op.get('confidence', 0) * 100
+        recommendations.append({
+            'type': 'Over/Under 2.5',
+            'label': f"{ou_prediction} 2.5 Goals",
+            'confidence': ou_conf,
+            'prediction': ou_prediction
+        })
+        
+        # Sort by confidence (highest first)
+        recommendations.sort(key=lambda x: x['confidence'], reverse=True)
+        
+        # Print recommendations in order
+        for i, rec in enumerate(recommendations):
+            emoji = "🎯" if i == 0 else "  "
+            conf_label = "HIGH" if rec['confidence'] >= 60 else ("MEDIUM" if rec['confidence'] >= 40 else "LOW")
+            print(f"  {emoji} {rec['type']}: {rec['label']} ({rec['confidence']:.0f}% {conf_label})")
+        
+        # Generate detailed narrative for the top recommendation
         narrative_lines = []
         
-        # Result narrative
-        if rp['prediction'] == '1':
-            narrative_lines.append(f"{home} is favored to win based on the following key factors:")
-        elif rp['prediction'] == '2':
-            narrative_lines.append(f"{away} is favored to win based on the following key factors:")
+        top_rec = recommendations[0]
+        if top_rec['type'] == 'Match Result':
+            if top_rec['prediction'] == '1':
+                narrative_lines.append(f"{home} is favored to win based on the following key factors:")
+            elif top_rec['prediction'] == '2':
+                narrative_lines.append(f"{away} is favored to win based on the following key factors:")
+            else:
+                narrative_lines.append(f"A draw is predicted due to the following factors:")
         else:
-            narrative_lines.append(f"A draw is predicted due to the following factors:")
+            # O/U is top recommendation
+            narrative_lines.append(f"{top_rec['label']} is recommended ({top_rec['confidence']:.0f}%) due to:")
         
         # Add key factors
         if pred.get('key_factors', {}).get('match_result'):
@@ -799,16 +889,40 @@ class FootballPredictionSystem:
                 narrative_lines.append(f"  • {direction_name}'s {desc} ({f['impact']}% impact)")
         
         # O/U narrative
-        narrative_lines.append("")
-        if ou_prediction == 'Over':
-            narrative_lines.append(f"Over 2.5 goals is recommended ({over_prob:.0f}%) due to:")
-        else:
-            narrative_lines.append(f"Under 2.5 goals is recommended ({under_prob:.0f}%) due to:")
+        if recommendations[0]['type'] != 'Over/Under 2.5':
+            narrative_lines.append("")
+            if ou_prediction == 'Over':
+                narrative_lines.append(f"Over 2.5 goals is recommended ({over_prob:.0f}%) due to:")
+            else:
+                narrative_lines.append(f"Under 2.5 goals is recommended ({under_prob:.0f}%) due to:")
         
         # Add O/U factors
         if pred.get('key_factors', {}).get('over_under'):
             for f in pred['key_factors']['over_under']:
                 narrative_lines.append(f"  • {f['factor']}: {f['value']}")
+        
+        # Add injury impact to narrative
+        if injuries_data:
+            for team, players in injuries_data.items():
+                if not players:
+                    continue
+                team_lower = team.lower()
+                is_home = any(part in team_lower for part in home.lower().split())
+                is_away = any(part in team_lower for part in away.lower().split())
+                
+                if not is_home and not is_away:
+                    continue
+                
+                team_label = home if is_home else away
+                key_out = [p for p in players if 'will not play' in p.get('status', '').lower()]
+                
+                if key_out:
+                    narrative_lines.append("")
+                    player_names = [p.get('name', 'Unknown') for p in key_out[:2]]
+                    if len(player_names) == 1:
+                        narrative_lines.append(f"⚠️ {team_label} will be missing key player {player_names[0]}")
+                    else:
+                        narrative_lines.append(f"⚠️ {team_label} will be missing {player_names[0]} and {player_names[1]}")
         
         # Print narrative
         for line in narrative_lines:

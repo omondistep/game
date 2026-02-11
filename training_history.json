@@ -5,5 +5,47 @@
     "result_accuracy": 0.9907692307692307,
     "ou_accuracy": 0.9987692307692307,
     "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T01:32:56.239102",
+    "training_examples": 1625,
+    "result_accuracy": 0.9907692307692307,
+    "ou_accuracy": 0.9987692307692307,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T12:20:56.189603",
+    "training_examples": 2286,
+    "result_accuracy": 0.9886264216972879,
+    "ou_accuracy": 0.9991251093613298,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T12:33:18.204300",
+    "training_examples": 2350,
+    "result_accuracy": 0.9893617021276596,
+    "ou_accuracy": 0.9991489361702127,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T14:37:58.765335",
+    "training_examples": 2351,
+    "result_accuracy": 0.9880901743938749,
+    "ou_accuracy": 0.9991492981709911,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T14:41:24.576206",
+    "training_examples": 2351,
+    "result_accuracy": 0.9880901743938749,
+    "ou_accuracy": 0.9991492981709911,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-11T15:00:13.380393",
+    "training_examples": 2458,
+    "result_accuracy": 0.9796582587469488,
+    "ou_accuracy": 0.9991863303498779,
+    "model_type": "global"
   }
 ]

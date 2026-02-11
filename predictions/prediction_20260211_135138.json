@@ -1,0 +1,313 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/aston-villa-brighton-2315997",
+  "timestamp": "2026-02-11T13:51:38.217979",
+  "features": {
+    "home_position": 3,
+    "away_position": 14,
+    "position_diff": -11,
+    "home_points": 47,
+    "away_points": 31,
+    "home_form_points": 10,
+    "away_form_points": 6,
+    "home_recent_form": 4,
+    "away_recent_form": 1,
+    "home_wins_l6": 3,
+    "home_draws_l6": 1,
+    "home_losses_l6": 2,
+    "away_wins_l6": 1,
+    "away_draws_l6": 3,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.5142857142857142,
+    "home_conceded_avg": 1.0,
+    "away_scored_avg": 1.6551724137931034,
+    "away_conceded_avg": 1.2413793103448276,
+    "expected_total_goals": 2.7054187192118224,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 31.25,
+    "away_away_goals_avg": 1.75,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 12.571428571428571,
+    "away_shots_avg": 13.482758620689655,
+    "home_shots_on_target_pct": 39.31818181818182,
+    "away_shots_on_target_pct": 35.294117647058826,
+    "home_dangerous_attacks_avg": 50.05714285714286,
+    "away_dangerous_attacks_avg": 51.96551724137931,
+    "home_possession": 54.54,
+    "away_possession": 52.9,
+    "home_pass_accuracy": 85.7986326911125,
+    "away_pass_accuracy": 84.617657923901,
+    "home_fouls_avg": 10.514285714285714,
+    "away_fouls_avg": 12.275862068965518,
+    "home_yellow_avg": 1.6285714285714286,
+    "away_yellow_avg": 2.2758620689655173,
+    "odds_home": 1.85,
+    "odds_draw": 3.8,
+    "odds_away": 4.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 52
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4028,
+        "2": 0.3661,
+        "X": 0.2311
+      },
+      "computed_odds": {
+        "1": 2.48,
+        "2": 2.73,
+        "X": 4.33
+      },
+      "confidence": 0.4028
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9454,
+        "Under": 0.0546
+      },
+      "computed_odds": {
+        "Over": 1.06,
+        "Under": 18.32
+      },
+      "confidence": 0.9454
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4028,
+        "2": 0.3661,
+        "X": 0.2311
+      },
+      "computed_odds": {
+        "1": 2.48,
+        "2": 2.73,
+        "X": 4.33
+      },
+      "confidence": 0.4028
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9454,
+        "Under": 0.0546
+      },
+      "computed_odds": {
+        "Over": 1.06,
+        "Under": 18.32
+      },
+      "confidence": 0.9454
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5069,
+        "X": 0.2048,
+        "2": 0.2884
+      },
+      "computed_odds": {
+        "1": 1.97,
+        "X": 4.88,
+        "2": 3.47
+      },
+      "confidence": 0.5069
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.8947368421052632,
+        "away": 0.3157894736842105,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.5129935875801552,
+        "away": 0.2372595342558218,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5555555555555556,
+        "away": 0.3333333333333333,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.3333333333333333,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.6285714285714286,
+        "away": 0.603448275862069,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.17,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.47962095238095237,
+        "away": 0.5001586206896552,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 2.7054187192118224
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 11.6
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 4.4
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 4.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.71,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.17,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcca Home team significantly higher in table (#3 vs #14)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 4.0,
+        "fair": 2.73,
+        "value_pct": 46.5
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Aston Villa": [
+      {
+        "name": "Alysson (F)",
+        "games_played": "",
+        "injury": "Knee",
+        "status": "Will not play - 17.1.2026"
+      },
+      {
+        "name": "Andres Garcia (D)",
+        "games_played": "2",
+        "injury": "Hamstring",
+        "status": "Will not play - 29.1.2026"
+      },
+      {
+        "name": "Boubacar Kamara (M)",
+        "games_played": "18",
+        "injury": "Knee",
+        "status": "Will not play - 11.1.2026"
+      },
+      {
+        "name": "John McGinn (M)",
+        "games_played": "21",
+        "injury": "Knee",
+        "status": "Will not play - 19.1.2026"
+      },
+      {
+        "name": "Youri Tielemans (M)",
+        "games_played": "15",
+        "injury": "Ankle",
+        "status": "Will not play - 26.1.2026"
+      }
+    ],
+    "Brighton": [
+      {
+        "name": "Adam Webster (D)",
+        "games_played": "",
+        "injury": "Knee",
+        "status": "Will not play - 26.12.2026"
+      },
+      {
+        "name": "Jan Paul van Hecke (D)",
+        "games_played": "20",
+        "injury": "Hamstring",
+        "status": "Uncertain - 9.2.2026"
+      },
+      {
+        "name": "Mats Wieffer (M)",
+        "games_played": "16",
+        "injury": "Toe",
+        "status": "Will not play - 3.1.2026"
+      },
+      {
+        "name": "Solomon March (F)",
+        "games_played": "",
+        "injury": "Knee",
+        "status": "Will not play - 26.12.2026"
+      },
+      {
+        "name": "Stefanos Tzimas (F)",
+        "games_played": "9",
+        "injury": "Knee",
+        "status": "Will not play - 26.12.2026"
+      },
+      {
+        "name": "Yasin Ayari (M)",
+        "games_played": "19",
+        "injury": "Shoulder",
+        "status": "Will not play - 6.2.2026"
+      }
+    ]
+  }
+}

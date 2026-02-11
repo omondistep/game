@@ -818,6 +818,120 @@ class ForebetScraper:
             print(f"Error extracting injuries: {e}")
         return inj
 
+    def scrape_team_injuries(self, team_name: str) -> List[Dict]:
+        """Scrape injured players for a specific team from Forebet injured players page.
+        
+        The injuries page has one main table with team sections. Structure:
+        - Team name header
+        - Headers: Player, Games played, Injury, Status for a date
+        - Player rows with injury data
+        
+        Args:
+            team_name: Name of the team to search for
+            
+        Returns:
+            List of dictionaries containing injured player information
+        """
+        injuries: List[Dict] = []
+        try:
+            url = "https://www.forebet.com/en/injured-players"
+            
+            response = requests.get(url, headers=self.headers, timeout=15)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Get all team names from h4 tags
+            team_headers = soup.find_all('h4')
+            team_names = [h4.get_text(strip=True) for h4 in team_headers]
+            
+            # Find our team in the list
+            team_idx = None
+            for i, name in enumerate(team_names):
+                if team_name.lower() in name.lower():
+                    team_idx = i
+                    break
+            
+            if team_idx is None:
+                return injuries
+            
+            # Find the table that contains team data
+            # The table structure: team name in first th, then player rows
+            main_table = soup.find('table', class_='main')
+            
+            if not main_table:
+                # Try any table
+                tables = soup.find_all('table')
+                for table in tables:
+                    if 'injury' in table.get_text().lower():
+                        main_table = table
+                        break
+            
+            if main_table:
+                rows = main_table.find_all('tr')
+                
+                # Track which team we're currently in
+                current_team = None
+                
+                for row in rows:
+                    cells = row.find_all(['td', 'th'])
+                    if not cells:
+                        continue
+                    
+                    first_cell = cells[0].get_text(strip=True)
+                    
+                    # Check if this row is a team header
+                    is_team_header = False
+                    for h4 in team_headers:
+                        if h4.get_text(strip=True) == first_cell:
+                            current_team = first_cell
+                            is_team_header = True
+                            break
+                    
+                    if is_team_header:
+                        # Check if this is our team
+                        if team_name.lower() not in first_cell.lower():
+                            # We moved to another team, stop processing
+                            if current_team and team_name.lower() in current_team.lower():
+                                # Found our team earlier, now we left it
+                                break
+                        else:
+                            # This is our team, reset and continue
+                            current_team = first_cell
+                        continue
+                    
+                    # If we're in our team section, extract player data
+                    if current_team and team_name.lower() in current_team.lower():
+                        # Check if this is a player row (has player name with position)
+                        if len(cells) >= 2 and '(' in first_cell and ')' in first_cell:
+                            games = cells[1].get_text(strip=True) if len(cells) > 1 else ""
+                            injury = cells[2].get_text(strip=True) if len(cells) > 2 else "Unknown"
+                            status = cells[3].get_text(strip=True) if len(cells) > 3 else ""
+                            
+                            injuries.append({
+                                'name': first_cell,
+                                'games_played': games,
+                                'injury': injury,
+                                'status': status,
+                                'team': current_team
+                            })
+            
+            # Remove duplicates
+            seen = set()
+            unique_injuries = []
+            for inj in injuries:
+                key = inj['name'].lower()
+                if key not in seen:
+                    seen.add(key)
+                    unique_injuries.append(inj)
+            injuries = unique_injuries
+            
+        except Exception as e:
+            print(f"Error scraping injuries for {team_name}: {e}")
+            import traceback
+            traceback.print_exc()
+        
+        return injuries
+
     def _extract_next_matches(self, soup: BeautifulSoup) -> Dict:
         nxt: Dict = {'home': [], 'away': []}
         try:
