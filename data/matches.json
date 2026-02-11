@@ -94329,5 +94329,2269 @@
       "over_under_2_5": "Over"
     },
     "saved_at": "2026-02-11T19:15:27.127750"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/zalaegerszegi-te-vasas-sc-2423709",
+    "timestamp": 1770826773.2287214,
+    "teams": {
+      "home": "Zalaegerszegi TE",
+      "away": "Vasas SC"
+    },
+    "match_info": {
+      "date": null,
+      "time": null,
+      "league": "HuC",
+      "league_code": "24237",
+      "venue": null
+    },
+    "standings": {
+      "home": 7,
+      "away": 2,
+      "home_points": null,
+      "away_points": null
+    },
+    "league_table": [],
+    "form": {
+      "home": [
+        "W",
+        "L",
+        "W",
+        "D",
+        "D",
+        "W"
+      ],
+      "away": [
+        "W",
+        "D",
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "home_summary": {},
+      "away_summary": {}
+    },
+    "last_6_matches": {
+      "home": [
+        {
+          "date": "08/02/2026",
+          "home_team": "Puskas Akademia",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "01/02/2026",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Nyiregyhaza",
+          "competition": "Hu1"
+        },
+        {
+          "date": "25/01/2026",
+          "home_team": "Kazincbarcikai SC",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "20/12/2025",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "MTK",
+          "competition": "Budapest"
+        },
+        {
+          "date": "14/12/2025",
+          "home_team": "Kisv\u00e1rda FC",
+          "home_score": 3,
+          "away_score": 3,
+          "ht_home": 2,
+          "ht_away": 2,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "07/12/2025",
+          "home_team": "Ujpest FC",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "29/11/2025",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Paksi",
+          "competition": "Hu1"
+        },
+        {
+          "date": "21/11/2025",
+          "home_team": "Gyori ETO FC",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "08/11/2025",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Diosgyori VTK",
+          "competition": "Hu1"
+        },
+        {
+          "date": "02/11/2025",
+          "home_team": "Debrecen VSC",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "30/10/2025",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 3,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Budafoki LC",
+          "competition": ""
+        },
+        {
+          "date": "26/10/2025",
+          "home_team": "Ferencvaros",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "19/10/2025",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 0,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Puskas",
+          "competition": "Akademia"
+        },
+        {
+          "date": "04/10/2025",
+          "home_team": "Nyiregyhaza",
+          "home_score": 3,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "27/09/2025",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 5,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Kazincbarcikai SC",
+          "competition": "Hu1"
+        },
+        {
+          "date": "21/09/2025",
+          "home_team": "MTK Budapest",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "13/09/2025",
+          "home_team": "Vasarosnameny SE",
+          "home_score": 0,
+          "away_score": 13,
+          "ht_home": 0,
+          "ht_away": 4,
+          "away_team": "Zalaegerszegi TE",
+          "competition": ""
+        },
+        {
+          "date": "30/08/2025",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 2,
+          "away_team": "Kisv\u00e1rda FC",
+          "competition": "Hu1"
+        },
+        {
+          "date": "23/08/2025",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 1,
+          "away_score": 4,
+          "ht_home": 1,
+          "ht_away": 2,
+          "away_team": "Ujpest FC",
+          "competition": "Hu1"
+        },
+        {
+          "date": "17/08/2025",
+          "home_team": "Paksi",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "10/08/2025",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Gyori ETO FC",
+          "competition": "Hu1"
+        },
+        {
+          "date": "02/08/2025",
+          "home_team": "Diosgyori VTK",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 2,
+          "ht_away": 0,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "26/07/2025",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 3,
+          "away_score": 3,
+          "ht_home": 2,
+          "ht_away": 1,
+          "away_team": "Debrecen VSC",
+          "competition": "Hu1"
+        }
+      ],
+      "away": [
+        {
+          "date": "08/02/2026",
+          "home_team": "Vasas SC",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Kecskemeti TE",
+          "competition": "Hu2"
+        },
+        {
+          "date": "01/02/2026",
+          "home_team": "Csakvari TK",
+          "home_score": 2,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Vasas SC",
+          "competition": "Hu2"
+        },
+        {
+          "date": "30/11/2025",
+          "home_team": "FC Ajka",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Vasas SC",
+          "competition": "Hu2"
+        },
+        {
+          "date": "24/11/2025",
+          "home_team": "Vasas SC",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Budapest",
+          "competition": "Honved"
+        },
+        {
+          "date": "09/11/2025",
+          "home_team": "Budafoki LC",
+          "home_score": 0,
+          "away_score": 3,
+          "ht_home": 0,
+          "ht_away": 3,
+          "away_team": "Vasas SC",
+          "competition": "Hu2"
+        },
+        {
+          "date": "03/11/2025",
+          "home_team": "Vasas SC",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Fehervar",
+          "competition": "Hu2"
+        },
+        {
+          "date": "29/10/2025",
+          "home_team": "Vasas SC",
+          "home_score": 3,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Mez\u0151\u00f6rs",
+          "competition": ""
+        },
+        {
+          "date": "26/10/2025",
+          "home_team": "Budapesti VSC",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Vasas SC",
+          "competition": "Hu2"
+        },
+        {
+          "date": "19/10/2025",
+          "home_team": "Vasas SC",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Szentlorinc SE",
+          "competition": "Hu2"
+        },
+        {
+          "date": "05/10/2025",
+          "home_team": "Vasas SC",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Szegedi AK",
+          "competition": "Hu2"
+        },
+        {
+          "date": "28/09/2025",
+          "home_team": "Soroksar",
+          "home_score": 0,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Vasas SC",
+          "competition": "Hu2"
+        },
+        {
+          "date": "22/09/2025",
+          "home_team": "Vasas SC",
+          "home_score": 4,
+          "away_score": 3,
+          "ht_home": 2,
+          "ht_away": 2,
+          "away_team": "Mezokovesdi SE",
+          "competition": "Hu2"
+        },
+        {
+          "date": "13/09/2025",
+          "home_team": "Vasas SC",
+          "home_score": 4,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Puskas",
+          "competition": "Akademia"
+        },
+        {
+          "date": "31/08/2025",
+          "home_team": "Kozarmisleny SE",
+          "home_score": 0,
+          "away_score": 4,
+          "ht_home": 0,
+          "ht_away": 3,
+          "away_team": "Vasas SC",
+          "competition": "Hu2"
+        },
+        {
+          "date": "25/08/2025",
+          "home_team": "Vasas SC",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Tiszak\u00e9cske",
+          "competition": "Hu2"
+        },
+        {
+          "date": "17/08/2025",
+          "home_team": "Karcagi SE",
+          "home_score": 1,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Vasas SC",
+          "competition": "Hu2"
+        },
+        {
+          "date": "11/08/2025",
+          "home_team": "Vasas SC",
+          "home_score": 4,
+          "away_score": 3,
+          "ht_home": 2,
+          "ht_away": 2,
+          "away_team": "Bekescsaba",
+          "competition": "Elore"
+        },
+        {
+          "date": "04/08/2025",
+          "home_team": "Kecskemeti TE",
+          "home_score": 1,
+          "away_score": 2,
+          "ht_home": 0,
+          "ht_away": 2,
+          "away_team": "Vasas SC",
+          "competition": "Hu2"
+        },
+        {
+          "date": "27/07/2025",
+          "home_team": "Vasas SC",
+          "home_score": 1,
+          "away_score": 4,
+          "ht_home": 1,
+          "ht_away": 3,
+          "away_team": "Csakvari TK",
+          "competition": "Hu2"
+        }
+      ]
+    },
+    "home_matches": [
+      {
+        "date": "01/02/2026",
+        "home_team": "Zalaegerszegi TE",
+        "home_score": 0,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Nyiregyhaza",
+        "competition": "Hu1"
+      },
+      {
+        "date": "20/12/2025",
+        "home_team": "Zalaegerszegi TE",
+        "home_score": 1,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "MTK",
+        "competition": "Budapest"
+      },
+      {
+        "date": "29/11/2025",
+        "home_team": "Zalaegerszegi TE",
+        "home_score": 1,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Paksi",
+        "competition": "Hu1"
+      },
+      {
+        "date": "08/11/2025",
+        "home_team": "Zalaegerszegi TE",
+        "home_score": 2,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Diosgyori VTK",
+        "competition": "Hu1"
+      },
+      {
+        "date": "30/10/2025",
+        "home_team": "Zalaegerszegi TE",
+        "home_score": 3,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Budafoki LC",
+        "competition": ""
+      },
+      {
+        "date": "19/10/2025",
+        "home_team": "Zalaegerszegi TE",
+        "home_score": 0,
+        "away_score": 1,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Puskas",
+        "competition": "Akademia"
+      },
+      {
+        "date": "27/09/2025",
+        "home_team": "Zalaegerszegi TE",
+        "home_score": 5,
+        "away_score": 0,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Kazincbarcikai SC",
+        "competition": "Hu1"
+      },
+      {
+        "date": "30/08/2025",
+        "home_team": "Zalaegerszegi TE",
+        "home_score": 1,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 2,
+        "away_team": "Kisv\u00e1rda FC",
+        "competition": "Hu1"
+      },
+      {
+        "date": "23/08/2025",
+        "home_team": "Zalaegerszegi TE",
+        "home_score": 1,
+        "away_score": 4,
+        "ht_home": 1,
+        "ht_away": 2,
+        "away_team": "Ujpest FC",
+        "competition": "Hu1"
+      },
+      {
+        "date": "10/08/2025",
+        "home_team": "Zalaegerszegi TE",
+        "home_score": 1,
+        "away_score": 1,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Gyori ETO FC",
+        "competition": "Hu1"
+      },
+      {
+        "date": "26/07/2025",
+        "home_team": "Zalaegerszegi TE",
+        "home_score": 3,
+        "away_score": 3,
+        "ht_home": 2,
+        "ht_away": 1,
+        "away_team": "Debrecen VSC",
+        "competition": "Hu1"
+      }
+    ],
+    "away_matches": [
+      {
+        "date": "01/02/2026",
+        "home_team": "Csakvari TK",
+        "home_score": 2,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 1,
+        "away_team": "Vasas SC",
+        "competition": "Hu2"
+      },
+      {
+        "date": "30/11/2025",
+        "home_team": "FC Ajka",
+        "home_score": 1,
+        "away_score": 0,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Vasas SC",
+        "competition": "Hu2"
+      },
+      {
+        "date": "09/11/2025",
+        "home_team": "Budafoki LC",
+        "home_score": 0,
+        "away_score": 3,
+        "ht_home": 0,
+        "ht_away": 3,
+        "away_team": "Vasas SC",
+        "competition": "Hu2"
+      },
+      {
+        "date": "26/10/2025",
+        "home_team": "Budapesti VSC",
+        "home_score": 0,
+        "away_score": 0,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Vasas SC",
+        "competition": "Hu2"
+      },
+      {
+        "date": "28/09/2025",
+        "home_team": "Soroksar",
+        "home_score": 0,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 0,
+        "away_team": "Vasas SC",
+        "competition": "Hu2"
+      },
+      {
+        "date": "31/08/2025",
+        "home_team": "Kozarmisleny SE",
+        "home_score": 0,
+        "away_score": 4,
+        "ht_home": 0,
+        "ht_away": 3,
+        "away_team": "Vasas SC",
+        "competition": "Hu2"
+      },
+      {
+        "date": "17/08/2025",
+        "home_team": "Karcagi SE",
+        "home_score": 1,
+        "away_score": 0,
+        "ht_home": 1,
+        "ht_away": 0,
+        "away_team": "Vasas SC",
+        "competition": "Hu2"
+      },
+      {
+        "date": "04/08/2025",
+        "home_team": "Kecskemeti TE",
+        "home_score": 1,
+        "away_score": 2,
+        "ht_home": 0,
+        "ht_away": 2,
+        "away_team": "Vasas SC",
+        "competition": "Hu2"
+      }
+    ],
+    "head_to_head": {
+      "matches": [
+        {
+          "date": "13/05/2023",
+          "home_team": "Vasas SC",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "19/02/2023",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 0,
+          "away_score": 0,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Vasas SC",
+          "competition": "Hu1"
+        },
+        {
+          "date": "01/10/2022",
+          "home_team": "Vasas SC",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "19/05/2019",
+          "home_team": "Vasas SC",
+          "home_score": 0,
+          "away_score": 5,
+          "ht_home": 0,
+          "ht_away": 2,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu2"
+        },
+        {
+          "date": "01/12/2018",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 2,
+          "away_score": 3,
+          "ht_home": 0,
+          "ht_away": 1,
+          "away_team": "Vasas SC",
+          "competition": "Hu2"
+        },
+        {
+          "date": "24/03/2012",
+          "home_team": "Vasas SC",
+          "home_score": 3,
+          "away_score": 2,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "19/08/2011",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 1,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Vasas SC",
+          "competition": "Hu1"
+        },
+        {
+          "date": "30/04/2011",
+          "home_team": "Vasas SC",
+          "home_score": 2,
+          "away_score": 0,
+          "ht_home": 1,
+          "ht_away": 0,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "22/10/2010",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 2,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Vasas SC",
+          "competition": "Hu1"
+        },
+        {
+          "date": "19/05/2010",
+          "home_team": "Vasas SC",
+          "home_score": 2,
+          "away_score": 3,
+          "ht_home": 1,
+          "ht_away": 2,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        },
+        {
+          "date": "07/11/2009",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 4,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Vasas SC",
+          "competition": "Hu1"
+        },
+        {
+          "date": "25/04/2009",
+          "home_team": "Zalaegerszegi TE",
+          "home_score": 3,
+          "away_score": 1,
+          "ht_home": 1,
+          "ht_away": 1,
+          "away_team": "Vasas SC",
+          "competition": "Hu1"
+        },
+        {
+          "date": "27/09/2008",
+          "home_team": "Vasas SC",
+          "home_score": 3,
+          "away_score": 1,
+          "ht_home": 0,
+          "ht_away": 0,
+          "away_team": "Zalaegerszegi TE",
+          "competition": "Hu1"
+        }
+      ],
+      "summary": {
+        "home_wins": 1,
+        "home_win_pct": 17,
+        "draws": 3,
+        "draw_pct": 50,
+        "away_wins": 2,
+        "away_win_pct": 33
+      }
+    },
+    "odds": {
+      "1": 2.05,
+      "X": 3.8,
+      "2": 3.15,
+      "over": null,
+      "under": null
+    },
+    "predictions": {
+      "result": "X",
+      "probability": null,
+      "over_under": null
+    },
+    "goals_stats": {
+      "home": {
+        "scored": 47,
+        "conceded": 28,
+        "scored_avg": 2.0434782608695654,
+        "conceded_avg": 1.2173913043478262,
+        "games": 23
+      },
+      "away": {
+        "scored": 36,
+        "conceded": 18,
+        "scored_avg": 1.894736842105263,
+        "conceded_avg": 0.9473684210526315,
+        "games": 19
+      }
+    },
+    "over_under_stats": {
+      "home": {},
+      "away": {}
+    },
+    "both_to_score": {
+      "home": {
+        "yes_pct": 70,
+        "no_pct": 15
+      },
+      "away": {
+        "yes_pct": 70,
+        "no_pct": 15
+      }
+    },
+    "shots_stats": {
+      "home": {
+        "total": [
+          285,
+          146,
+          139
+        ],
+        "on_target": [
+          107,
+          52,
+          55
+        ],
+        "off_target": [
+          131,
+          69,
+          62
+        ],
+        "inside_box": [
+          168,
+          93,
+          75
+        ],
+        "outside_box": [
+          107,
+          43,
+          64
+        ],
+        "blocked": [
+          46,
+          24,
+          22
+        ]
+      },
+      "away": {
+        "total": [
+          255,
+          161,
+          94
+        ],
+        "on_target": [
+          106,
+          68,
+          38
+        ],
+        "off_target": [
+          120,
+          71,
+          49
+        ],
+        "inside_box": [
+          49,
+          38,
+          11
+        ],
+        "outside_box": [
+          45,
+          34,
+          11
+        ],
+        "blocked": [
+          29,
+          22,
+          7
+        ]
+      }
+    },
+    "passes_stats": {
+      "home": {
+        "total": [
+          8704,
+          4290,
+          4414
+        ],
+        "accurate": [
+          7116,
+          3499,
+          3617
+        ],
+        "ball_poss": [
+          50.73,
+          54.36,
+          47.09
+        ]
+      },
+      "away": {
+        "total": [
+          2836,
+          1890,
+          946
+        ],
+        "accurate": [
+          2434,
+          1630,
+          804
+        ],
+        "ball_poss": [
+          56.89,
+          57.73,
+          55.75
+        ]
+      }
+    },
+    "attacks_stats": {
+      "home": {
+        "total": [
+          2125,
+          1103,
+          1022
+        ],
+        "dangerous": [
+          1165,
+          649,
+          516
+        ]
+      },
+      "away": {
+        "total": [
+          2134,
+          1240,
+          894
+        ],
+        "dangerous": [
+          1247,
+          749,
+          498
+        ]
+      }
+    },
+    "discipline": {
+      "home": {
+        "fouls": [
+          260,
+          139,
+          121
+        ],
+        "yellow_cards": [
+          58,
+          26,
+          32
+        ],
+        "red_cards": [
+          5,
+          1,
+          4
+        ]
+      },
+      "away": {
+        "fouls": [
+          103,
+          70,
+          33
+        ],
+        "yellow_cards": [
+          56,
+          31,
+          25
+        ],
+        "red_cards": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "other_stats": {
+      "home": {
+        "corners": [
+          87,
+          46,
+          41
+        ],
+        "throw_ins": [
+          383,
+          192,
+          191
+        ],
+        "goal_kicks": [
+          169,
+          74,
+          95
+        ],
+        "offsides": [
+          25,
+          12,
+          13
+        ],
+        "saves": [
+          73,
+          28,
+          45
+        ]
+      },
+      "away": {
+        "corners": [
+          133,
+          74,
+          59
+        ],
+        "throw_ins": [
+          148,
+          101,
+          47
+        ],
+        "goal_kicks": [
+          39,
+          23,
+          16
+        ],
+        "offsides": [
+          21,
+          16,
+          5
+        ],
+        "saves": [
+          14,
+          7,
+          7
+        ]
+      }
+    },
+    "trends": [],
+    "match_intro": "",
+    "injuries": {
+      "home": [],
+      "away": []
+    },
+    "next_matches": {
+      "home": [
+        {
+          "date": "11/02/2026",
+          "match": "Zalaegerszegi TE"
+        },
+        {
+          "date": "14/02/2026",
+          "match": "Zalaegerszegi TE"
+        },
+        {
+          "date": "21/02/2026",
+          "match": "Zalaegerszegi TE"
+        },
+        {
+          "date": "28/02/2026",
+          "match": "Diosgyori VTK"
+        },
+        {
+          "date": "07/03/2026",
+          "match": "Zalaegerszegi TE"
+        },
+        {
+          "date": "14/03/2026",
+          "match": "Paksi"
+        },
+        {
+          "date": "21/03/2026",
+          "match": "Zalaegerszegi TE"
+        },
+        {
+          "date": "04/04/2026",
+          "match": "Zalaegerszegi TE"
+        },
+        {
+          "date": "11/04/2026",
+          "match": "MTK Budapest"
+        },
+        {
+          "date": "18/04/2026",
+          "match": "Zalaegerszegi TE"
+        },
+        {
+          "date": "25/04/2026",
+          "match": "Nyiregyhaza"
+        },
+        {
+          "date": "02/05/2026",
+          "match": "Zalaegerszegi TE"
+        },
+        {
+          "date": "16/05/2026",
+          "match": "Ferencvaros"
+        }
+      ],
+      "away": [
+        {
+          "date": "11/02/2026",
+          "match": "Zalaegerszegi TE"
+        },
+        {
+          "date": "15/02/2026",
+          "match": "Bekescsaba Elore"
+        },
+        {
+          "date": "22/02/2026",
+          "match": "Vasas SC"
+        },
+        {
+          "date": "01/03/2026",
+          "match": "Tiszak\u00e9cske"
+        },
+        {
+          "date": "08/03/2026",
+          "match": "Vasas SC"
+        },
+        {
+          "date": "14/03/2026",
+          "match": "Mezokovesdi SE"
+        },
+        {
+          "date": "22/03/2026",
+          "match": "Vasas SC"
+        },
+        {
+          "date": "05/04/2026",
+          "match": "Szegedi AK"
+        },
+        {
+          "date": "12/04/2026",
+          "match": "Szentlorinc SE"
+        },
+        {
+          "date": "19/04/2026",
+          "match": "Vasas SC"
+        },
+        {
+          "date": "26/04/2026",
+          "match": "Fehervar"
+        },
+        {
+          "date": "03/05/2026",
+          "match": "Vasas SC"
+        },
+        {
+          "date": "10/05/2026",
+          "match": "Budapest Honved"
+        },
+        {
+          "date": "17/05/2026",
+          "match": "Vasas SC"
+        }
+      ]
+    },
+    "js_detailed_stats": {
+      "home_stats": {
+        "scr": [
+          47,
+          18,
+          29
+        ],
+        "un1.5": [
+          7,
+          3,
+          4
+        ],
+        "un2.5": [
+          11,
+          6,
+          5
+        ],
+        "un3.5": [
+          14,
+          7,
+          7
+        ],
+        "bts": [
+          12,
+          6,
+          6
+        ],
+        "cnd": [
+          28,
+          14,
+          14
+        ],
+        "ch": [
+          8,
+          3,
+          5
+        ],
+        "sn": [
+          20,
+          9,
+          11
+        ],
+        "pl": [
+          23,
+          11,
+          12
+        ],
+        "shots_total": [
+          285,
+          146,
+          139
+        ],
+        "shots_on_target": [
+          107,
+          52,
+          55
+        ],
+        "shots_off_target": [
+          131,
+          69,
+          62
+        ],
+        "shots_insidebox": [
+          168,
+          93,
+          75
+        ],
+        "shots_outsidebox": [
+          107,
+          43,
+          64
+        ],
+        "shots_blocked": [
+          46,
+          24,
+          22
+        ],
+        "passes_total": [
+          8704,
+          4290,
+          4414
+        ],
+        "passes_accurate": [
+          7116,
+          3499,
+          3617
+        ],
+        "attacks": [
+          2125,
+          1103,
+          1022
+        ],
+        "dan_attacks": [
+          1165,
+          649,
+          516
+        ],
+        "fouls": [
+          260,
+          139,
+          121
+        ],
+        "total_corners": [
+          87,
+          46,
+          41
+        ],
+        "offsides": [
+          25,
+          12,
+          13
+        ],
+        "ball_poss": [
+          50.73,
+          54.36,
+          47.09
+        ],
+        "yellowcards": [
+          58,
+          26,
+          32
+        ],
+        "redcards": [
+          5,
+          1,
+          4
+        ],
+        "yellowredcards": [
+          0,
+          0,
+          0
+        ],
+        "saves": [
+          73,
+          28,
+          45
+        ],
+        "substitutions": [
+          96,
+          47,
+          49
+        ],
+        "goal_kick": [
+          169,
+          74,
+          95
+        ],
+        "goal_attempts": [
+          57,
+          31,
+          26
+        ],
+        "free_kick": [
+          298,
+          154,
+          144
+        ],
+        "throw_in": [
+          383,
+          192,
+          191
+        ],
+        "ball_safe": [
+          1696,
+          944,
+          752
+        ],
+        "pen_awarded": [
+          0,
+          0,
+          0
+        ],
+        "pen_scored": [
+          0,
+          0,
+          0
+        ],
+        "injuries": [
+          32,
+          19,
+          13
+        ],
+        "tackles": [
+          342,
+          184,
+          158
+        ],
+        "scr_min_0_15": [
+          1,
+          1,
+          0
+        ],
+        "scr_min_15_30": [
+          2,
+          1,
+          1
+        ],
+        "scr_min_30_45": [
+          5,
+          0,
+          5
+        ],
+        "scr_min_45_60": [
+          9,
+          5,
+          4
+        ],
+        "scr_min_60_75": [
+          8,
+          2,
+          6
+        ],
+        "scr_min_75_90": [
+          14,
+          6,
+          8
+        ],
+        "cnd_min_0_15": [
+          3,
+          1,
+          2
+        ],
+        "cnd_min_15_30": [
+          2,
+          1,
+          1
+        ],
+        "cnd_min_30_45": [
+          4,
+          1,
+          3
+        ],
+        "cnd_min_45_60": [
+          7,
+          4,
+          3
+        ],
+        "cnd_min_60_75": [
+          2,
+          2,
+          0
+        ],
+        "cnd_min_75_90": [
+          8,
+          3,
+          5
+        ],
+        "1st_goal_scr_min": [
+          62,
+          70,
+          57
+        ],
+        "1st_goal_cnd_min": [
+          23,
+          27,
+          20
+        ],
+        "1st_card_min": [
+          44,
+          43,
+          45
+        ],
+        "1st_corner_min": [
+          0,
+          0,
+          0
+        ]
+      },
+      "home_stats_ht": {
+        "scr": [
+          14,
+          6,
+          8
+        ],
+        "un1.5": [
+          15,
+          8,
+          7
+        ],
+        "un2.5": [
+          19,
+          9,
+          10
+        ],
+        "un3.5": [
+          21,
+          11,
+          10
+        ],
+        "bts": [
+          4,
+          2,
+          2
+        ],
+        "cnd": [
+          13,
+          6,
+          7
+        ],
+        "ch": [
+          15,
+          7,
+          8
+        ],
+        "sn": [
+          9,
+          5,
+          4
+        ],
+        "pl": [
+          23,
+          11,
+          12
+        ],
+        "shots_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_on_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_off_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_insidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_outsidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_blocked": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_accurate": [
+          "-",
+          "-",
+          "-"
+        ],
+        "attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "dan_attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "fouls": [
+          "-",
+          "-",
+          "-"
+        ],
+        "total_corners": [
+          "-",
+          "-",
+          "-"
+        ],
+        "offsides": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_poss": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "redcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowredcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "saves": [
+          "-",
+          "-",
+          "-"
+        ],
+        "substitutions": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_attempts": [
+          "-",
+          "-",
+          "-"
+        ],
+        "free_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "throw_in": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_safe": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_awarded": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_scored": [
+          "-",
+          "-",
+          "-"
+        ],
+        "injuries": [
+          "-",
+          "-",
+          "-"
+        ],
+        "tackles": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_scr_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_cnd_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_card_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_corner_min": [
+          "-",
+          "-",
+          "-"
+        ]
+      },
+      "away_stats": {
+        "scr": [
+          36,
+          23,
+          13
+        ],
+        "un1.5": [
+          6,
+          3,
+          3
+        ],
+        "un2.5": [
+          9,
+          5,
+          4
+        ],
+        "un3.5": [
+          13,
+          7,
+          6
+        ],
+        "bts": [
+          7,
+          5,
+          2
+        ],
+        "cnd": [
+          18,
+          13,
+          5
+        ],
+        "ch": [
+          10,
+          6,
+          4
+        ],
+        "sn": [
+          15,
+          10,
+          5
+        ],
+        "pl": [
+          19,
+          11,
+          8
+        ],
+        "shots_total": [
+          255,
+          161,
+          94
+        ],
+        "shots_on_target": [
+          106,
+          68,
+          38
+        ],
+        "shots_off_target": [
+          120,
+          71,
+          49
+        ],
+        "shots_insidebox": [
+          49,
+          38,
+          11
+        ],
+        "shots_outsidebox": [
+          45,
+          34,
+          11
+        ],
+        "shots_blocked": [
+          29,
+          22,
+          7
+        ],
+        "passes_total": [
+          2836,
+          1890,
+          946
+        ],
+        "passes_accurate": [
+          2434,
+          1630,
+          804
+        ],
+        "attacks": [
+          2134,
+          1240,
+          894
+        ],
+        "dan_attacks": [
+          1247,
+          749,
+          498
+        ],
+        "fouls": [
+          103,
+          70,
+          33
+        ],
+        "total_corners": [
+          133,
+          74,
+          59
+        ],
+        "offsides": [
+          21,
+          16,
+          5
+        ],
+        "ball_poss": [
+          56.89,
+          57.73,
+          55.75
+        ],
+        "yellowcards": [
+          56,
+          31,
+          25
+        ],
+        "redcards": [
+          0,
+          0,
+          0
+        ],
+        "yellowredcards": [
+          0,
+          0,
+          0
+        ],
+        "saves": [
+          14,
+          7,
+          7
+        ],
+        "substitutions": [
+          75,
+          45,
+          30
+        ],
+        "goal_kick": [
+          39,
+          23,
+          16
+        ],
+        "goal_attempts": [
+          0,
+          0,
+          0
+        ],
+        "free_kick": [
+          33,
+          28,
+          5
+        ],
+        "throw_in": [
+          148,
+          101,
+          47
+        ],
+        "ball_safe": [
+          1491,
+          945,
+          546
+        ],
+        "pen_awarded": [
+          0,
+          0,
+          0
+        ],
+        "pen_scored": [
+          0,
+          0,
+          0
+        ],
+        "injuries": [
+          6,
+          4,
+          2
+        ],
+        "tackles": [
+          20,
+          11,
+          9
+        ],
+        "scr_min_0_15": [
+          2,
+          1,
+          1
+        ],
+        "scr_min_15_30": [
+          6,
+          3,
+          3
+        ],
+        "scr_min_30_45": [
+          3,
+          2,
+          1
+        ],
+        "scr_min_45_60": [
+          6,
+          3,
+          3
+        ],
+        "scr_min_60_75": [
+          5,
+          5,
+          0
+        ],
+        "scr_min_75_90": [
+          8,
+          6,
+          2
+        ],
+        "cnd_min_0_15": [
+          2,
+          1,
+          1
+        ],
+        "cnd_min_15_30": [
+          1,
+          1,
+          0
+        ],
+        "cnd_min_30_45": [
+          3,
+          3,
+          0
+        ],
+        "cnd_min_45_60": [
+          3,
+          3,
+          0
+        ],
+        "cnd_min_60_75": [
+          3,
+          2,
+          1
+        ],
+        "cnd_min_75_90": [
+          4,
+          2,
+          2
+        ],
+        "1st_goal_scr_min": [
+          49,
+          55,
+          39
+        ],
+        "1st_goal_cnd_min": [
+          23,
+          20,
+          28
+        ],
+        "1st_card_min": [
+          40,
+          42,
+          38
+        ],
+        "1st_corner_min": [
+          0,
+          0,
+          0
+        ]
+      },
+      "away_stats_ht": {
+        "scr": [
+          18,
+          9,
+          9
+        ],
+        "un1.5": [
+          13,
+          8,
+          5
+        ],
+        "un2.5": [
+          14,
+          8,
+          6
+        ],
+        "un3.5": [
+          16,
+          8,
+          8
+        ],
+        "bts": [
+          3,
+          3,
+          0
+        ],
+        "cnd": [
+          10,
+          8,
+          2
+        ],
+        "ch": [
+          13,
+          7,
+          6
+        ],
+        "sn": [
+          11,
+          7,
+          4
+        ],
+        "pl": [
+          19,
+          11,
+          8
+        ],
+        "shots_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_on_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_off_target": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_insidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_outsidebox": [
+          "-",
+          "-",
+          "-"
+        ],
+        "shots_blocked": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_total": [
+          "-",
+          "-",
+          "-"
+        ],
+        "passes_accurate": [
+          "-",
+          "-",
+          "-"
+        ],
+        "attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "dan_attacks": [
+          "-",
+          "-",
+          "-"
+        ],
+        "fouls": [
+          "-",
+          "-",
+          "-"
+        ],
+        "total_corners": [
+          "-",
+          "-",
+          "-"
+        ],
+        "offsides": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_poss": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "redcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "yellowredcards": [
+          "-",
+          "-",
+          "-"
+        ],
+        "saves": [
+          "-",
+          "-",
+          "-"
+        ],
+        "substitutions": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "goal_attempts": [
+          "-",
+          "-",
+          "-"
+        ],
+        "free_kick": [
+          "-",
+          "-",
+          "-"
+        ],
+        "throw_in": [
+          "-",
+          "-",
+          "-"
+        ],
+        "ball_safe": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_awarded": [
+          "-",
+          "-",
+          "-"
+        ],
+        "pen_scored": [
+          "-",
+          "-",
+          "-"
+        ],
+        "injuries": [
+          "-",
+          "-",
+          "-"
+        ],
+        "tackles": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "scr_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_0_15": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_15_30": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_30_45": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_45_60": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_60_75": [
+          "-",
+          "-",
+          "-"
+        ],
+        "cnd_min_75_90": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_scr_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_goal_cnd_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_card_min": [
+          "-",
+          "-",
+          "-"
+        ],
+        "1st_corner_min": [
+          "-",
+          "-",
+          "-"
+        ]
+      }
+    },
+    "actual_result": {
+      "home_score": 0,
+      "away_score": 0,
+      "result": "X",
+      "total_goals": 0,
+      "over_under_2_5": "Under"
+    },
+    "saved_at": "2026-02-11T19:19:33.725989"
   }
 ]

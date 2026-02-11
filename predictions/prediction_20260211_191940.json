@@ -1,0 +1,231 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/zalaegerszegi-te-vasas-sc-2423709",
+  "timestamp": "2026-02-11T19:19:40.109312",
+  "features": {
+    "home_position": 7,
+    "away_position": 2,
+    "position_diff": 5,
+    "home_form_points": 11,
+    "away_form_points": 10,
+    "home_recent_form": 6,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 2,
+    "home_losses_l6": 1,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 2.0434782608695654,
+    "home_conceded_avg": 1.2173913043478262,
+    "away_scored_avg": 1.894736842105263,
+    "away_conceded_avg": 0.9473684210526315,
+    "expected_total_goals": 3.051487414187643,
+    "home_home_win_rate": 36.36363636363637,
+    "home_home_goals_avg": 1.6363636363636365,
+    "away_away_win_rate": 50.0,
+    "away_away_goals_avg": 1.625,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 50.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 12.391304347826088,
+    "away_shots_avg": 13.421052631578947,
+    "home_shots_on_target_pct": 37.54385964912281,
+    "away_shots_on_target_pct": 41.568627450980394,
+    "home_dangerous_attacks_avg": 50.65217391304348,
+    "away_dangerous_attacks_avg": 65.63157894736842,
+    "home_possession": 50.73,
+    "away_possession": 56.89,
+    "home_pass_accuracy": 81.75551470588235,
+    "away_pass_accuracy": 85.82510578279266,
+    "home_fouls_avg": 11.304347826086957,
+    "away_fouls_avg": 5.421052631578948,
+    "home_yellow_avg": 2.5217391304347827,
+    "away_yellow_avg": 2.9473684210526314,
+    "odds_home": 2.05,
+    "odds_draw": 3.8,
+    "odds_away": 3.15,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.337,
+        "2": 0.5175,
+        "X": 0.1455
+      },
+      "computed_odds": {
+        "1": 2.97,
+        "2": 1.93,
+        "X": 6.87
+      },
+      "confidence": 0.5175
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 1.0,
+        "Under": 0.0
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.337,
+        "2": 0.5175,
+        "X": 0.1455
+      },
+      "computed_odds": {
+        "1": 2.97,
+        "2": 1.93,
+        "X": 6.87
+      },
+      "confidence": 0.5175
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 1.0,
+        "Under": 0.0
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3704,
+        "X": 0.2284,
+        "2": 0.4012
+      },
+      "computed_odds": {
+        "1": 2.7,
+        "X": 4.38,
+        "2": 2.49
+      },
+      "confidence": 0.4012
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.58,
+        "Under": 0.42
+      },
+      "computed_odds": {
+        "Over": 1.72,
+        "Under": 2.38
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.6842105263157895,
+        "away": 0.9473684210526316,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.45656527128826163,
+        "away": 0.29712977972728133,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6111111111111112,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.7065217391304348,
+        "away": 0.7368421052631579,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.4507568115942029,
+        "away": 0.5220417543859649,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.5,
+      "expected_goals": 3.051487414187643
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 5.3
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 2.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.05,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.94,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "2",
+    "weighted_result": "2",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26bd High-scoring match expected (avg 3.1 goals)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 3.15,
+        "fair": 1.93,
+        "value_pct": 63.2
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Zalaegerszegi TE": [],
+    "Vasas SC": []
+  }
+}

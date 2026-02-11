@@ -1,0 +1,14 @@
+[Unit]
+Description=Daily Football Model Training
+After=network.target
+
+[Service]
+Type=oneshot
+User=stom
+WorkingDirectory=/home/stom/game
+ExecStart=/home/stom/game/football_env/bin/python /home/stom/game/daily_train.py
+StandardOutput=append:/var/log/football_training.log
+StandardError=append:/var/log/football_training.log
+
+[Install]
+WantedBy=multi-user.target
