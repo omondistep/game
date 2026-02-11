@@ -346,7 +346,7 @@ def main():
                 label_visibility="collapsed"
             )
         with col2:
-            predict_btn = st.button("🔮 Predict", use_container_width=True)
+            predict_btn = st.button("🔮 Predict", width='stretch')
         
         if predict_btn and match_url:
             with st.spinner("🤖 AI is analyzing match data..."):
@@ -697,7 +697,7 @@ def display_stats():
             
             if data:
                 df = pd.DataFrame(data)
-                st.dataframe(df, use_container_width=True)
+                st.dataframe(df, width='stretch')
         
         if 'recent_predictions' in stats:
             st.markdown("### 🕐 Recent Predictions")
@@ -727,7 +727,7 @@ def display_train():
         </div>
         """, unsafe_allow_html=True)
         
-        if st.button("🚀 Train Model Now", use_container_width=True):
+        if st.button("🚀 Train Model Now", width='stretch'):
             with st.spinner("Training in progress..."):
                 result = system.train_model()
                 
@@ -782,7 +782,7 @@ def display_results():
         )
     
     with col2:
-        add_btn = st.button("➕ Add Result", use_container_width=True)
+        add_btn = st.button("➕ Add Result", width='stretch')
     
     if add_btn and result_url:
         result = system.scraper.extract_actual_result(result_url)
@@ -829,7 +829,7 @@ def display_results():
             
             if data:
                 df = pd.DataFrame(data)
-                st.dataframe(df, use_container_width=True)
+                st.dataframe(df, width='stretch')
     except Exception as e:
         st.info("No results available yet.")
 
@@ -934,7 +934,7 @@ def display_leagues_tab():
         
         if data:
             df = pd.DataFrame(data)
-            st.dataframe(df, use_container_width=True)
+            st.dataframe(df, width='stretch')
     
     st.markdown("---")
     
@@ -1044,7 +1044,7 @@ def display_historical_data():
         )
     
     with col2:
-        extract_btn = st.button("📅 Extract Matches", use_container_width=True)
+        extract_btn = st.button("📅 Extract Matches", width='stretch')
     
     if extract_btn and date_url:
         # Extract date from URL using simple pattern
@@ -1099,7 +1099,7 @@ def display_historical_data():
                 
                 if match_data:
                     df = pd.DataFrame(match_data)
-                    st.dataframe(df, use_container_width=True)
+                    st.dataframe(df, width='stretch')
                 
                 # Show leagues found
                 leagues = set()
@@ -1161,7 +1161,7 @@ def display_historical_data():
         
         if file_data:
             df = pd.DataFrame(file_data)
-            st.dataframe(df[['Date', 'Total', 'Results']], use_container_width=True)
+            st.dataframe(df[['Date', 'Total', 'Results']], width='stretch')
             
             # Download buttons
             st.markdown("##### Download Files")
