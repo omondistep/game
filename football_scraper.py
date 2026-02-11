@@ -112,6 +112,127 @@ class ForebetScraper:
     # Public API
     # ------------------------------------------------------------------
 
+    def _extract_league_from_page(self, soup: BeautifulSoup, url: str) -> Optional[str]:
+        """Extract league name from match page HTML."""
+        # Method 1: Try to find league info from onclick attributes (for major leagues)
+        img_with_onclick = soup.find('img', onclick=True)
+        if img_with_onclick:
+            onclick = img_with_onclick.get('onclick', '')
+            # Pattern: getstag(this,match_id,'Country','League',...)
+            stag_match = re.search(r"getstag\(this,\d+,'([^']+)','([^']+)'", onclick)
+            if stag_match:
+                country = stag_match.group(1)
+                league = stag_match.group(2)
+                if league and len(league) > 2:
+                    return league
+        
+        # Method 2: Try shortTag span (returns abbreviated codes like "RoC", "EPL")
+        short_tag = soup.find('span', class_='shortTag')
+        if short_tag:
+            short_code = short_tag.get_text(strip=True)
+            if short_code and len(short_code) >= 2:
+                # Try to expand short code using known mappings
+                expanded = self._expand_league_code(short_code, url)
+                if expanded:
+                    return expanded
+                # If we can't expand, use the short code as fallback
+                return short_code
+        
+        # Method 3: Extract from meta description
+        meta_desc = soup.find('meta', attrs={'name': 'description'})
+        if meta_desc and meta_desc.get('content'):
+            content = meta_desc.get('content')
+            # Pattern: "...this match of {Country} {League}..."
+            match = re.search(r'this match of ([A-Za-z]+(?:\s+[A-Za-z]+)*)', content)
+            if match:
+                league_text = match.group(1).strip()
+                # Filter out common non-league words
+                words_to_skip = ['football', 'predictions', 'statistics', 'match']
+                words = [w for w in league_text.split() if w.lower() not in words_to_skip]
+                if words:
+                    return ' '.join(words)
+        
+        # Method 4: Look for country in URL or page
+        return None
+    
+    def _expand_league_code(self, short_code: str, url: str) -> Optional[str]:
+        """Expand abbreviated league code to full name."""
+        # Common short codes mapped to full names
+        league_mappings = {
+            'RoC': 'Romania Cupa',
+            'RoL': 'Romania Liga 1',
+            'RoL2': 'Romania Liga 2',
+            'EPL': 'England Premier League',
+            'ELC': 'England Championship',
+            'EL1': 'England League One',
+            'EL2': 'England League Two',
+            'LL': 'Spain La Liga',
+            'LL2': 'Spain Segunda Division',
+            'SA': 'Italy Serie A',
+            'SB': 'Italy Serie B',
+            'BL1': 'Germany Bundesliga',
+            'BL2': 'Germany Bundesliga 2',
+            'FL1': 'France Ligue 1',
+            'FL2': 'France Ligue 2',
+            'NL': 'Netherlands Eredivisie',
+            'PL': 'Portugal Primeira Liga',
+            'SC': 'Scotland Premiership',
+            'BEL': 'Belgium Pro League',
+        }
+        
+        # Try exact match first
+        if short_code in league_mappings:
+            return league_mappings[short_code]
+        
+        # Try to find league info from URL
+        url_lower = url.lower()
+        
+        # Common league names to check in URL
+        for full_name in ['cupa', 'liga', 'premier', 'championship', 'bundesliga', 
+                          'ligue', 'eredivisie', 'primeira', 'premiership']:
+            if full_name in url_lower:
+                if 'cupa' in url_lower:
+                    return 'Romania Cupa'
+                if 'liga' in url_lower:
+                    # Try to determine which liga
+                    if 'liga-1' in url_lower or 'liga-2' in url_lower:
+                        continue  # Will be handled by code
+                    if 'romania' in url_lower:
+                        return 'Romania Liga'
+                    return 'Liga'
+                if 'premier' in url_lower:
+                    if 'england' in url_lower or 'ukraine' in url_lower:
+                        return 'Premier League'
+                    return 'Premier League'
+                if 'championship' in url_lower:
+                    return 'Championship'
+        
+        return None
+    
+    def _auto_save_league(self, code: str, league_name: str):
+        """Auto-save league to database."""
+        if not code or not league_name:
+            return
+        
+        # Check if already known
+        if code in self.LEAGUE_CODES:
+            return
+        
+        # Check unknown_leagues.json
+        try:
+            with open('data/unknown_leagues.json', 'r') as f:
+                unknown = json.load(f)
+            if code in unknown:
+                return
+        except:
+            unknown = {}
+        
+        # Save new league
+        unknown[code] = league_name
+        with open('data/unknown_leagues.json', 'w') as f:
+            json.dump(unknown, f, indent=2)
+        print(f"  📚 Auto-saved league: {code} -> {league_name}")
+
     def scrape_match(self, url: str, prompt_user: bool = False) -> Optional[Dict]:
         """Scrape all available match data from a Forebet URL.
         
@@ -130,7 +251,17 @@ class ForebetScraper:
             
             # Extract league from URL
             league_code = self._extract_league_code(url)
-            league_name = self._get_league_name(league_code, prompt_user) if league_code else None
+            
+            # Try to extract league name from page HTML
+            page_league = self._extract_league_from_page(soup, url)
+            
+            # If page has league info, save to database and use it
+            if page_league:
+                self._auto_save_league(league_code, page_league)
+                league_name = page_league
+            else:
+                # Fallback to database/prompt
+                league_name = self._get_league_name(league_code, prompt_user) if league_code else None
             
             match_data = {
                 'url': url,
