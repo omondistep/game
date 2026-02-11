@@ -6,7 +6,11 @@
     "league_code": "Co2",
     "match_id": "2419026",
     "country": "Colombia",
-    "league": "Primera B",
+    "league_name": "Primera B",
+    "league_url_path": "football-tips-and-predictions-for-colombia/primera-b",
+    "country_code": "co",
+    "short_code": "Co2",
+    "url_5digit_code": "24190",
     "prob_home": 39.0,
     "prob_draw": 26.0,
     "prob_away": 35.0,
@@ -14,7 +18,9 @@
     "home_score": 0,
     "away_score": 1,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.4,
+    "odds": 2.38
   },
   {
     "url": "/en/football/matches/valledupar-fc-envigado-fc-2419027",
@@ -23,7 +29,11 @@
     "league_code": "Co2",
     "match_id": "2419027",
     "country": "Colombia",
-    "league": "Primera B",
+    "league_name": "Primera B",
+    "league_url_path": "football-tips-and-predictions-for-colombia/primera-b",
+    "country_code": "co",
+    "short_code": "Co2",
+    "url_5digit_code": "24190",
     "prob_home": 37.0,
     "prob_draw": 22.0,
     "prob_away": 41.0,
@@ -31,7 +41,9 @@
     "home_score": 0,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.21,
+    "odds": 2.88
   },
   {
     "url": "/en/football/matches/ec-s\u00e3o-jos\u00e9-caxias-rs-2412990",
@@ -40,7 +52,11 @@
     "league_code": "BrG",
     "match_id": "2412990",
     "country": "Brazil",
-    "league": "Campeonato Ga\u00facho",
+    "league_name": "Campeonato Ga\u00facho",
+    "league_url_path": "football-tips-and-predictions-for-brazil/gaucho",
+    "country_code": "br",
+    "short_code": "BrG",
+    "url_5digit_code": "24129",
     "prob_home": 26.0,
     "prob_draw": 38.0,
     "prob_away": 36.0,
@@ -48,7 +64,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.97,
+    "odds": 3.5
   },
   {
     "url": "/en/football/matches/vilavelhense-es-real-noroeste-es-2414085",
@@ -57,7 +75,11 @@
     "league_code": "BrC",
     "match_id": "2414085",
     "country": "Brazil",
-    "league": "Campeonato Capixaba",
+    "league_name": "Campeonato Capixaba",
+    "league_url_path": "football-tips-and-predictions-for-brazil/capixaba",
+    "country_code": "br",
+    "short_code": "BrC",
+    "url_5digit_code": "24140",
     "prob_home": 28.0,
     "prob_draw": 40.0,
     "prob_away": 32.0,
@@ -65,7 +87,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.75,
+    "odds": 3.5
   },
   {
     "url": "/en/football/matches/piaui-pi-parnahyba-pi-2413135",
@@ -74,7 +98,11 @@
     "league_code": "BrP",
     "match_id": "2413135",
     "country": "Brazil",
-    "league": "Campeonato Piauiense",
+    "league_name": "Campeonato Piauiense",
+    "league_url_path": "football-tips-and-predictions-for-brazil/piauiense",
+    "country_code": "br",
+    "short_code": "BrP",
+    "url_5digit_code": "24131",
     "prob_home": 34.0,
     "prob_draw": 40.0,
     "prob_away": 27.0,
@@ -82,7 +110,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.36,
+    "odds": 3.4
   },
   {
     "url": "/en/football/matches/vasco-da-gama-ac-adesg-ac-2415944",
@@ -91,7 +121,11 @@
     "league_code": "BrA",
     "match_id": "2415944",
     "country": "Brazil",
-    "league": "Campeonato Acreano",
+    "league_name": "Campeonato Acreano",
+    "league_url_path": "football-tips-and-predictions-for-brazil/acreano",
+    "country_code": "br",
+    "short_code": "BrA",
+    "url_5digit_code": "24159",
     "prob_home": 26.0,
     "prob_draw": 53.0,
     "prob_away": 21.0,
@@ -99,7 +133,9 @@
     "home_score": 3,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.0,
+    "odds": 3.5
   },
   {
     "url": "/en/football/matches/uni\u00f3n-magdalena-bogot\u00e1-fc-2418913",
@@ -108,7 +144,11 @@
     "league_code": "Co2",
     "match_id": "2418913",
     "country": "Colombia",
-    "league": "Primera B",
+    "league_name": "Primera B",
+    "league_url_path": "football-tips-and-predictions-for-colombia/primera-b",
+    "country_code": "co",
+    "short_code": "Co2",
+    "url_5digit_code": "24189",
     "prob_home": 46.0,
     "prob_draw": 25.0,
     "prob_away": 30.0,
@@ -116,7 +156,9 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.87,
+    "odds": 1.5
   },
   {
     "url": "/en/football/matches/portuguesa-sp-guarani-2413744",
@@ -125,7 +167,11 @@
     "league_code": "BrP",
     "match_id": "2413744",
     "country": "Brazil",
-    "league": "Campeonato Paulista",
+    "league_name": "Campeonato Paulista",
+    "league_url_path": "football-tips-and-predictions-for-brazil/paulista",
+    "country_code": "br",
+    "short_code": "BrP",
+    "url_5digit_code": "24137",
     "prob_home": 33.0,
     "prob_draw": 41.0,
     "prob_away": 25.0,
@@ -133,7 +179,9 @@
     "home_score": 0,
     "away_score": 1,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.94,
+    "odds": 3.1
   },
   {
     "url": "/en/football/matches/quer\u00e9taro-w-toluca-w-2412331",
@@ -142,7 +190,11 @@
     "league_code": "MxW",
     "match_id": "2412331",
     "country": "Mexico",
-    "league": "Liga MX Women",
+    "league_name": "Liga MX Women",
+    "league_url_path": "football-tips-and-predictions-for-mexico/liga-mx-women",
+    "country_code": "mx",
+    "short_code": "MxW",
+    "url_5digit_code": "24123",
     "prob_home": 20.0,
     "prob_draw": 22.0,
     "prob_away": 58.0,
@@ -150,7 +202,9 @@
     "home_score": 1,
     "away_score": 4,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.5,
+    "odds": 1.26
   },
   {
     "url": "/en/football/matches/nova-iguacu-rj-volta-redonda-2414053",
@@ -159,7 +213,11 @@
     "league_code": "BrC",
     "match_id": "2414053",
     "country": "Brazil",
-    "league": "Campeonato Carioca",
+    "league_name": "Campeonato Carioca",
+    "league_url_path": "football-tips-and-predictions-for-brazil/carioca",
+    "country_code": "br",
+    "short_code": "BrC",
+    "url_5digit_code": "24140",
     "prob_home": 37.0,
     "prob_draw": 22.0,
     "prob_away": 41.0,
@@ -167,7 +225,9 @@
     "home_score": 2,
     "away_score": 2,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.71,
+    "odds": 4.5
   },
   {
     "url": "/en/football/matches/fortaleza-floresta-ce-2419512",
@@ -176,7 +236,11 @@
     "league_code": "BrC",
     "match_id": "2419512",
     "country": "Brazil",
-    "league": "Campeonato Cearense",
+    "league_name": "Campeonato Cearense",
+    "league_url_path": "football-tips-and-predictions-for-brazil/cearense",
+    "country_code": "br",
+    "short_code": "BrC",
+    "url_5digit_code": "24195",
     "prob_home": 53.0,
     "prob_draw": 17.0,
     "prob_away": 30.0,
@@ -184,7 +248,8 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.65
   },
   {
     "url": "/en/football/matches/necaxa-w-pachuca-w-2412332",
@@ -193,7 +258,11 @@
     "league_code": "MxW",
     "match_id": "2412332",
     "country": "Mexico",
-    "league": "Liga MX Women",
+    "league_name": "Liga MX Women",
+    "league_url_path": "football-tips-and-predictions-for-mexico/liga-mx-women",
+    "country_code": "mx",
+    "short_code": "MxW",
+    "url_5digit_code": "24123",
     "prob_home": 13.0,
     "prob_draw": 12.0,
     "prob_away": 76.0,
@@ -201,7 +270,9 @@
     "home_score": 0,
     "away_score": 6,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.71,
+    "odds": 1.07
   },
   {
     "url": "/en/football/matches/aserr\u00ed-consultants-moravia-2413570",
@@ -210,7 +281,11 @@
     "league_code": "Cr2",
     "match_id": "2413570",
     "country": "Costa Rica",
-    "league": "Liga de Ascenso",
+    "league_name": "Liga de Ascenso",
+    "league_url_path": "football-tips-and-predictions-for-costa-rica/liga-de-ascenso",
+    "country_code": "cr",
+    "short_code": "Cr2",
+    "url_5digit_code": "24135",
     "prob_home": 26.0,
     "prob_draw": 31.0,
     "prob_away": 43.0,
@@ -218,7 +293,9 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.44,
+    "odds": 2.05
   },
   {
     "url": "/en/football/matches/le\u00f3n-w-monterrey-w-2412333",
@@ -227,7 +304,11 @@
     "league_code": "MxW",
     "match_id": "2412333",
     "country": "Mexico",
-    "league": "Liga MX Women",
+    "league_name": "Liga MX Women",
+    "league_url_path": "football-tips-and-predictions-for-mexico/liga-mx-women",
+    "country_code": "mx",
+    "short_code": "MxW",
+    "url_5digit_code": "24123",
     "prob_home": 17.0,
     "prob_draw": 18.0,
     "prob_away": 65.0,
@@ -235,7 +316,9 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.16,
+    "odds": 1.53
   },
   {
     "url": "/en/football/matches/umecit-cd-plaza-amador-2418776",
@@ -244,7 +327,11 @@
     "league_code": "Pa1",
     "match_id": "2418776",
     "country": "Panama",
-    "league": "Football League",
+    "league_name": "Football League",
+    "league_url_path": "predictions-for-panama/football-league",
+    "country_code": "pa",
+    "short_code": "Pa1",
+    "url_5digit_code": "24187",
     "prob_home": 39.0,
     "prob_draw": 26.0,
     "prob_away": 35.0,
@@ -252,7 +339,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.04,
+    "odds": 3.6
   },
   {
     "url": "/en/football/matches/p\u00e9rez-zeled\u00f3n-sporting-(crc)-2414126",
@@ -261,7 +350,11 @@
     "league_code": "Cr1",
     "match_id": "2414126",
     "country": "Costa Rica",
-    "league": "Primera Divisi\u00f3n",
+    "league_name": "Primera Divisi\u00f3n",
+    "league_url_path": "football-tips-and-predictions-for-costa-rica/primera-division",
+    "country_code": "cr",
+    "short_code": "Cr1",
+    "url_5digit_code": "24141",
     "prob_home": 56.0,
     "prob_draw": 26.0,
     "prob_away": 18.0,
@@ -269,7 +362,9 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.4,
+    "odds": 2.45
   },
   {
     "url": "/en/football/matches/deportivo-ayense-aguacateros-cdu-2408719",
@@ -278,7 +373,11 @@
     "league_code": "Mx3",
     "match_id": "2408719",
     "country": "Mexico",
-    "league": "Liga Premier Serie B",
+    "league_name": "Liga Premier Serie B",
+    "league_url_path": "football-tips-and-predictions-for-mexico/liga-premier-serie-b",
+    "country_code": "mx",
+    "short_code": "Mx3",
+    "url_5digit_code": "24087",
     "prob_home": 24.0,
     "prob_draw": 37.0,
     "prob_away": 38.0,
@@ -286,7 +385,9 @@
     "home_score": 2,
     "away_score": 3,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.1,
+    "odds": 3.2
   },
   {
     "url": "/en/football/matches/meghalaya-services-2416519",
@@ -295,7 +396,11 @@
     "league_code": "InT",
     "match_id": "2416519",
     "country": "India",
-    "league": "Santosh Trophy",
+    "league_name": "Santosh Trophy",
+    "league_url_path": "football-tips-and-predictions-for-india/santosh-trophy",
+    "country_code": "in",
+    "short_code": "InT",
+    "url_5digit_code": "24165",
     "prob_home": 16.0,
     "prob_draw": 21.0,
     "prob_away": 63.0,
@@ -303,7 +408,9 @@
     "home_score": 2,
     "away_score": 2,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.05,
+    "odds": 2.18
   },
   {
     "url": "/en/football/matches/kerala-orissa-2416520",
@@ -312,7 +419,11 @@
     "league_code": "InT",
     "match_id": "2416520",
     "country": "India",
-    "league": "Santosh Trophy",
+    "league_name": "Santosh Trophy",
+    "league_url_path": "football-tips-and-predictions-for-india/santosh-trophy",
+    "country_code": "in",
+    "short_code": "InT",
+    "url_5digit_code": "24165",
     "prob_home": 46.0,
     "prob_draw": 9.0,
     "prob_away": 44.0,
@@ -320,7 +431,8 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.0
   },
   {
     "url": "/en/football/matches/dukla-praha-b-teplice-b-2413443",
@@ -329,7 +441,11 @@
     "league_code": "CzT",
     "match_id": "2413443",
     "country": "Czech Republic",
-    "league": "Tipsport liga",
+    "league_name": "Tipsport liga",
+    "league_url_path": "football-tips-and-predictions-for-czech-rep/tipsport-liga",
+    "country_code": "747",
+    "short_code": "CzT",
+    "url_5digit_code": "24134",
     "prob_home": 25.0,
     "prob_draw": 21.0,
     "prob_away": 54.0,
@@ -337,7 +453,9 @@
     "home_score": 2,
     "away_score": 2,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.11,
+    "odds": 2.15
   },
   {
     "url": "/en/football/matches/hekimoglu-trabzon-belediye-derincespor-2419480",
@@ -346,7 +464,11 @@
     "league_code": "Tr3",
     "match_id": "2419480",
     "country": "T\u00fcrkiye",
-    "league": "TFF 2. Lig",
+    "league_name": "TFF 2. Lig",
+    "league_url_path": "football-tips-and-predictions-for-turkey/tff-2-lig",
+    "country_code": "tr",
+    "short_code": "Tr3",
+    "url_5digit_code": "24194",
     "prob_home": 37.0,
     "prob_draw": 39.0,
     "prob_away": 24.0,
@@ -354,7 +476,8 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.1
   },
   {
     "url": "/en/football/matches/nassaji-mazandaran-pars-jonoubi-jam-2416466",
@@ -363,7 +486,11 @@
     "league_code": "Ir2",
     "match_id": "2416466",
     "country": "Iran",
-    "league": "League 1",
+    "league_name": "League 1",
+    "league_url_path": "football-tips-and-predictions-for-iran/league-1",
+    "country_code": "ir",
+    "short_code": "Ir2",
+    "url_5digit_code": "24164",
     "prob_home": 25.0,
     "prob_draw": 52.0,
     "prob_away": 23.0,
@@ -371,7 +498,8 @@
     "home_score": 1,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.25
   },
   {
     "url": "/en/football/matches/mes-soongoun-ario-eslamshahr-2416469",
@@ -380,7 +508,11 @@
     "league_code": "Ir2",
     "match_id": "2416469",
     "country": "Iran",
-    "league": "League 1",
+    "league_name": "League 1",
+    "league_url_path": "football-tips-and-predictions-for-iran/league-1",
+    "country_code": "ir",
+    "short_code": "Ir2",
+    "url_5digit_code": "24164",
     "prob_home": 30.0,
     "prob_draw": 43.0,
     "prob_away": 27.0,
@@ -388,7 +520,8 @@
     "home_score": 0,
     "away_score": 1,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.8
   },
   {
     "url": "/en/football/matches/besat-kermanshah-navad-urmia-2416470",
@@ -397,7 +530,11 @@
     "league_code": "Ir2",
     "match_id": "2416470",
     "country": "Iran",
-    "league": "League 1",
+    "league_name": "League 1",
+    "league_url_path": "football-tips-and-predictions-for-iran/league-1",
+    "country_code": "ir",
+    "short_code": "Ir2",
+    "url_5digit_code": "24164",
     "prob_home": 36.0,
     "prob_draw": 56.0,
     "prob_away": 8.0,
@@ -405,7 +542,8 @@
     "home_score": 3,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 0.75
   },
   {
     "url": "/en/football/matches/mes-shahr-e-babak-sorkhpooshan-pakdasht-2416471",
@@ -414,7 +552,11 @@
     "league_code": "Ir2",
     "match_id": "2416471",
     "country": "Iran",
-    "league": "League 1",
+    "league_name": "League 1",
+    "league_url_path": "football-tips-and-predictions-for-iran/league-1",
+    "country_code": "ir",
+    "short_code": "Ir2",
+    "url_5digit_code": "24164",
     "prob_home": 26.0,
     "prob_draw": 55.0,
     "prob_away": 19.0,
@@ -422,7 +564,8 @@
     "home_score": 3,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.0
   },
   {
     "url": "/en/football/matches/niroye-zamini-mes-kerman-2416472",
@@ -431,7 +574,11 @@
     "league_code": "Ir2",
     "match_id": "2416472",
     "country": "Iran",
-    "league": "League 1",
+    "league_name": "League 1",
+    "league_url_path": "football-tips-and-predictions-for-iran/league-1",
+    "country_code": "ir",
+    "short_code": "Ir2",
+    "url_5digit_code": "24164",
     "prob_home": 22.0,
     "prob_draw": 51.0,
     "prob_away": 27.0,
@@ -439,7 +586,8 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.71
   },
   {
     "url": "/en/football/matches/naft-gachsaran-fard-alborz-2416474",
@@ -448,7 +596,11 @@
     "league_code": "Ir2",
     "match_id": "2416474",
     "country": "Iran",
-    "league": "League 1",
+    "league_name": "League 1",
+    "league_url_path": "football-tips-and-predictions-for-iran/league-1",
+    "country_code": "ir",
+    "short_code": "Ir2",
+    "url_5digit_code": "24164",
     "prob_home": 15.0,
     "prob_draw": 72.0,
     "prob_away": 13.0,
@@ -456,7 +608,8 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 0.5
   },
   {
     "url": "/en/football/matches/aluminium-arak-teraktor-sazi-2419267",
@@ -465,7 +618,11 @@
     "league_code": "Ir1",
     "match_id": "2419267",
     "country": "Iran",
-    "league": "Persian Gulf Pro League",
+    "league_name": "Persian Gulf Pro League",
+    "league_url_path": "football-tips-and-predictions-for-iran/persian-gulf-pro-league",
+    "country_code": "ir",
+    "short_code": "Ir1",
+    "url_5digit_code": "24192",
     "prob_home": 15.0,
     "prob_draw": 43.0,
     "prob_away": 41.0,
@@ -473,7 +630,9 @@
     "home_score": 0,
     "away_score": 1,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.58,
+    "odds": 3.0
   },
   {
     "url": "/en/football/matches/benfica-u23-santa-clara-u23-2418375",
@@ -482,7 +641,11 @@
     "league_code": "PtU",
     "match_id": "2418375",
     "country": "Portugal",
-    "league": "Liga Revelacao U23",
+    "league_name": "Liga Revelacao U23",
+    "league_url_path": "football-tips-and-predictions-for-portugal/liga-revelacao-u23",
+    "country_code": "pt",
+    "short_code": "PtU",
+    "url_5digit_code": "24183",
     "prob_home": 60.0,
     "prob_draw": 12.0,
     "prob_away": 29.0,
@@ -490,7 +653,9 @@
     "home_score": 1,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.17,
+    "odds": 1.57
   },
   {
     "url": "/en/football/matches/portimonense-u23-gil-vicente-u23-2418376",
@@ -499,7 +664,11 @@
     "league_code": "PtU",
     "match_id": "2418376",
     "country": "Portugal",
-    "league": "Liga Revelacao U23",
+    "league_name": "Liga Revelacao U23",
+    "league_url_path": "football-tips-and-predictions-for-portugal/liga-revelacao-u23",
+    "country_code": "pt",
+    "short_code": "PtU",
+    "url_5digit_code": "24183",
     "prob_home": 41.0,
     "prob_draw": 22.0,
     "prob_away": 37.0,
@@ -507,7 +676,9 @@
     "home_score": 1,
     "away_score": 3,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 5.0,
+    "odds": 2.3
   },
   {
     "url": "/en/football/matches/halide-edip-adivar-elaz\u0131gspor-2419479",
@@ -516,7 +687,11 @@
     "league_code": "Tr3",
     "match_id": "2419479",
     "country": "T\u00fcrkiye",
-    "league": "TFF 2. Lig",
+    "league_name": "TFF 2. Lig",
+    "league_url_path": "football-tips-and-predictions-for-turkey/tff-2-lig",
+    "country_code": "tr",
+    "short_code": "Tr3",
+    "url_5digit_code": "24194",
     "prob_home": 22.0,
     "prob_draw": 45.0,
     "prob_away": 33.0,
@@ -524,7 +699,8 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.67
   },
   {
     "url": "/en/football/matches/najaf-fc-zakho-fc-2419224",
@@ -533,7 +709,11 @@
     "league_code": "Iq1",
     "match_id": "2419224",
     "country": "Iraq",
-    "league": "Stars League",
+    "league_name": "Stars League",
+    "league_url_path": "predictions-iraq/stars-league",
+    "country_code": "iq",
+    "short_code": "Iq1",
+    "url_5digit_code": "24192",
     "prob_home": 22.0,
     "prob_draw": 34.0,
     "prob_away": 44.0,
@@ -541,7 +721,9 @@
     "home_score": 1,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.55,
+    "odds": 1.8
   },
   {
     "url": "/en/football/matches/karkh-sc-arbil-fc-2419225",
@@ -550,7 +732,11 @@
     "league_code": "Iq1",
     "match_id": "2419225",
     "country": "Iraq",
-    "league": "Stars League",
+    "league_name": "Stars League",
+    "league_url_path": "predictions-iraq/stars-league",
+    "country_code": "iq",
+    "short_code": "Iq1",
+    "url_5digit_code": "24192",
     "prob_home": 28.0,
     "prob_draw": 41.0,
     "prob_away": 31.0,
@@ -558,7 +744,9 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.0,
+    "odds": 2.85
   },
   {
     "url": "/en/football/matches/negele-arsi-ketema-sidama-bunna-2400934",
@@ -567,7 +755,11 @@
     "league_code": "Et1",
     "match_id": "2400934",
     "country": "Ethiopia",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "predictions-ethiopia/premier-league",
+    "country_code": "et",
+    "short_code": "Et1",
+    "url_5digit_code": "24009",
     "prob_home": 26.0,
     "prob_draw": 40.0,
     "prob_away": 33.0,
@@ -575,7 +767,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.25,
+    "odds": 2.8
   },
   {
     "url": "/en/football/matches/sheger-ketema-dire-dawa-kenema-2400943",
@@ -584,7 +778,11 @@
     "league_code": "Et1",
     "match_id": "2400943",
     "country": "Ethiopia",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "predictions-ethiopia/premier-league",
+    "country_code": "et",
+    "short_code": "Et1",
+    "url_5digit_code": "24009",
     "prob_home": 30.0,
     "prob_draw": 43.0,
     "prob_away": 27.0,
@@ -592,7 +790,9 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 0.75,
+    "odds": 2.5
   },
   {
     "url": "/en/football/matches/al-fajr-merreikh-abyad-2419465",
@@ -601,7 +801,11 @@
     "league_code": "Sd1",
     "match_id": "2419465",
     "country": "Sudan",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "sudan/premier-league",
+    "country_code": "sd",
+    "short_code": "Sd1",
+    "url_5digit_code": "24194",
     "prob_home": 37.0,
     "prob_draw": 32.0,
     "prob_away": 31.0,
@@ -609,7 +813,8 @@
     "home_score": 3,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.63
   },
   {
     "url": "/en/football/matches/esteghlal-tehran-esteghlal-khuzestan-2419266",
@@ -618,7 +823,11 @@
     "league_code": "Ir1",
     "match_id": "2419266",
     "country": "Iran",
-    "league": "Persian Gulf Pro League",
+    "league_name": "Persian Gulf Pro League",
+    "league_url_path": "football-tips-and-predictions-for-iran/persian-gulf-pro-league",
+    "country_code": "ir",
+    "short_code": "Ir1",
+    "url_5digit_code": "24192",
     "prob_home": 46.0,
     "prob_draw": 37.0,
     "prob_away": 17.0,
@@ -626,7 +835,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.74,
+    "odds": 1.48
   },
   {
     "url": "/en/football/matches/ahli-khartoum-ahli-wad-madani-2419466",
@@ -635,7 +846,11 @@
     "league_code": "Sd1",
     "match_id": "2419466",
     "country": "Sudan",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "sudan/premier-league",
+    "country_code": "sd",
+    "short_code": "Sd1",
+    "url_5digit_code": "24194",
     "prob_home": 17.0,
     "prob_draw": 14.0,
     "prob_away": 69.0,
@@ -643,7 +858,8 @@
     "home_score": 1,
     "away_score": 4,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.72
   },
   {
     "url": "/en/football/matches/abha-club-al-jabalain-2416553",
@@ -652,7 +868,11 @@
     "league_code": "Sa2",
     "match_id": "2416553",
     "country": "Saudi Arabia",
-    "league": "1st Division",
+    "league_name": "1st Division",
+    "league_url_path": "football-tips-and-predictions-for-saudi-arabia/1st-division",
+    "country_code": "sa",
+    "short_code": "Sa2",
+    "url_5digit_code": "24165",
     "prob_home": 33.0,
     "prob_draw": 34.0,
     "prob_away": 32.0,
@@ -660,7 +880,9 @@
     "home_score": 3,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.55,
+    "odds": 3.0
   },
   {
     "url": "/en/football/matches/al-jndal-al-anwar-(ksa)-2416554",
@@ -669,7 +891,11 @@
     "league_code": "Sa2",
     "match_id": "2416554",
     "country": "Saudi Arabia",
-    "league": "1st Division",
+    "league_name": "1st Division",
+    "league_url_path": "football-tips-and-predictions-for-saudi-arabia/1st-division",
+    "country_code": "sa",
+    "short_code": "Sa2",
+    "url_5digit_code": "24165",
     "prob_home": 40.0,
     "prob_draw": 41.0,
     "prob_away": 19.0,
@@ -677,7 +903,9 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.33,
+    "odds": 3.3
   },
   {
     "url": "/en/football/matches/esperance-st-js-kairouanaise-2419249",
@@ -686,7 +914,11 @@
     "league_code": "Tn1",
     "match_id": "2419249",
     "country": "Tunisia",
-    "league": "Ligue Professionnelle 1",
+    "league_name": "Ligue Professionnelle 1",
+    "league_url_path": "football-tips-and-predictions-for-tunisia/ligue-1",
+    "country_code": "tn",
+    "short_code": "Tn1",
+    "url_5digit_code": "24192",
     "prob_home": 73.0,
     "prob_draw": 18.0,
     "prob_away": 9.0,
@@ -694,7 +926,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.64,
+    "odds": 1.14
   },
   {
     "url": "/en/football/matches/ca-bizertin-js-omranienne-2419250",
@@ -703,7 +937,11 @@
     "league_code": "Tn1",
     "match_id": "2419250",
     "country": "Tunisia",
-    "league": "Ligue Professionnelle 1",
+    "league_name": "Ligue Professionnelle 1",
+    "league_url_path": "football-tips-and-predictions-for-tunisia/ligue-1",
+    "country_code": "tn",
+    "short_code": "Tn1",
+    "url_5digit_code": "24192",
     "prob_home": 45.0,
     "prob_draw": 36.0,
     "prob_away": 19.0,
@@ -711,7 +949,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.08,
+    "odds": 1.67
   },
   {
     "url": "/en/football/matches/esperance-zarzis-club-africain-tunis-2419251",
@@ -720,7 +960,11 @@
     "league_code": "Tn1",
     "match_id": "2419251",
     "country": "Tunisia",
-    "league": "Ligue Professionnelle 1",
+    "league_name": "Ligue Professionnelle 1",
+    "league_url_path": "football-tips-and-predictions-for-tunisia/ligue-1",
+    "country_code": "tn",
+    "short_code": "Tn1",
+    "url_5digit_code": "24192",
     "prob_home": 13.0,
     "prob_draw": 35.0,
     "prob_away": 52.0,
@@ -728,7 +972,9 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.68,
+    "odds": 2.3
   },
   {
     "url": "/en/football/matches/cs-sfaxien-es-metlaoui-2419252",
@@ -737,7 +983,11 @@
     "league_code": "Tn1",
     "match_id": "2419252",
     "country": "Tunisia",
-    "league": "Ligue Professionnelle 1",
+    "league_name": "Ligue Professionnelle 1",
+    "league_url_path": "football-tips-and-predictions-for-tunisia/ligue-1",
+    "country_code": "tn",
+    "short_code": "Tn1",
+    "url_5digit_code": "24192",
     "prob_home": 36.0,
     "prob_draw": 45.0,
     "prob_away": 19.0,
@@ -745,7 +995,9 @@
     "home_score": 2,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.78,
+    "odds": 3.4
   },
   {
     "url": "/en/football/matches/al-suqoor-tobruk-al-sadaka-2419191",
@@ -754,7 +1006,11 @@
     "league_code": "Ly1",
     "match_id": "2419191",
     "country": "Libya",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "libya/premier-league",
+    "country_code": "ly",
+    "short_code": "Ly1",
+    "url_5digit_code": "24191",
     "prob_home": 33.0,
     "prob_draw": 47.0,
     "prob_away": 19.0,
@@ -762,7 +1018,8 @@
     "home_score": 0,
     "away_score": 4,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.75
   },
   {
     "url": "/en/football/matches/wa-tlemcen-na-hussein-dey-2415681",
@@ -771,7 +1028,11 @@
     "league_code": "Dz2",
     "match_id": "2415681",
     "country": "Algeria",
-    "league": "Ligue 2",
+    "league_name": "Ligue 2",
+    "league_url_path": "tips-and-predictions-for-algeria/ligue-2",
+    "country_code": "dz",
+    "short_code": "Dz2",
+    "url_5digit_code": "24156",
     "prob_home": 22.0,
     "prob_draw": 48.0,
     "prob_away": 30.0,
@@ -779,7 +1040,9 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.69,
+    "odds": 2.8
   },
   {
     "url": "/en/football/matches/kitayosce-namungo-2419043",
@@ -788,10 +1051,16 @@
     "league_code": "Tz1",
     "match_id": "2419043",
     "country": "Tanzania",
-    "league": "Ligi Kuu Bara",
+    "league_name": "Ligi Kuu Bara",
+    "league_url_path": "predictions-tanzania/ligi-kuu-bara",
+    "country_code": "tz",
+    "short_code": "Tz1",
+    "url_5digit_code": "24190",
     "prob_home": 30.0,
     "prob_draw": 32.0,
-    "prob_away": 38.0
+    "prob_away": 38.0,
+    "predicted_avg_goals": 3.13,
+    "odds": 3.2
   },
   {
     "url": "/en/football/matches/buhimba-united-saints-nec-2419240",
@@ -800,7 +1069,11 @@
     "league_code": "Ug1",
     "match_id": "2419240",
     "country": "Uganda",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "predictions-uganda/premier-league",
+    "country_code": "ug",
+    "short_code": "Ug1",
+    "url_5digit_code": "24192",
     "prob_home": 31.0,
     "prob_draw": 40.0,
     "prob_away": 29.0,
@@ -808,7 +1081,9 @@
     "home_score": 0,
     "away_score": 1,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.0,
+    "odds": 3.5
   },
   {
     "url": "/en/football/matches/kcc-kampala-updf-fc-2419241",
@@ -817,7 +1092,11 @@
     "league_code": "Ug1",
     "match_id": "2419241",
     "country": "Uganda",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "predictions-uganda/premier-league",
+    "country_code": "ug",
+    "short_code": "Ug1",
+    "url_5digit_code": "24192",
     "prob_home": 63.0,
     "prob_draw": 26.0,
     "prob_away": 10.0,
@@ -825,7 +1104,9 @@
     "home_score": 4,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.58,
+    "odds": 1.41
   },
   {
     "url": "/en/football/matches/lugazi-municipal-bul-fc-2419242",
@@ -834,7 +1115,11 @@
     "league_code": "Ug1",
     "match_id": "2419242",
     "country": "Uganda",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "predictions-uganda/premier-league",
+    "country_code": "ug",
+    "short_code": "Ug1",
+    "url_5digit_code": "24192",
     "prob_home": 30.0,
     "prob_draw": 26.0,
     "prob_away": 44.0,
@@ -842,7 +1127,9 @@
     "home_score": 2,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.0,
+    "odds": 2.35
   },
   {
     "url": "/en/football/matches/calvary-ura-kampala-2419243",
@@ -851,7 +1138,11 @@
     "league_code": "Ug1",
     "match_id": "2419243",
     "country": "Uganda",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "predictions-uganda/premier-league",
+    "country_code": "ug",
+    "short_code": "Ug1",
+    "url_5digit_code": "24192",
     "prob_home": 37.0,
     "prob_draw": 35.0,
     "prob_away": 28.0,
@@ -859,7 +1150,9 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 0.88,
+    "odds": 5.0
   },
   {
     "url": "/en/football/matches/gaddafi-fc-maroons-fc-2419244",
@@ -868,7 +1161,11 @@
     "league_code": "Ug1",
     "match_id": "2419244",
     "country": "Uganda",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "predictions-uganda/premier-league",
+    "country_code": "ug",
+    "short_code": "Ug1",
+    "url_5digit_code": "24192",
     "prob_home": 39.0,
     "prob_draw": 31.0,
     "prob_away": 30.0,
@@ -876,7 +1173,9 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.0,
+    "odds": 1.8
   },
   {
     "url": "/en/football/matches/ittihad-kalba-al-ain-2419488",
@@ -885,7 +1184,11 @@
     "league_code": "Ae1",
     "match_id": "2419488",
     "country": "UAE",
-    "league": "Football League",
+    "league_name": "Football League",
+    "league_url_path": "predictions-uae/football-league",
+    "country_code": "ae",
+    "short_code": "Ae1",
+    "url_5digit_code": "24194",
     "prob_home": 9.0,
     "prob_draw": 39.0,
     "prob_away": 53.0,
@@ -893,7 +1196,9 @@
     "home_score": 1,
     "away_score": 3,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.4,
+    "odds": 1.4
   },
   {
     "url": "/en/football/matches/al-hilal-al-manaqil-umm-mughad-2420777",
@@ -902,7 +1207,11 @@
     "league_code": "Sd1",
     "match_id": "2420777",
     "country": "Sudan",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "sudan/premier-league",
+    "country_code": "sd",
+    "short_code": "Sd1",
+    "url_5digit_code": "24207",
     "prob_home": 26.0,
     "prob_draw": 49.0,
     "prob_away": 25.0,
@@ -910,7 +1219,8 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.15
   },
   {
     "url": "/en/football/matches/al-khums-al-watan-2419190",
@@ -919,7 +1229,11 @@
     "league_code": "Ly1",
     "match_id": "2419190",
     "country": "Libya",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "libya/premier-league",
+    "country_code": "ly",
+    "short_code": "Ly1",
+    "url_5digit_code": "24191",
     "prob_home": 35.0,
     "prob_draw": 26.0,
     "prob_away": 39.0,
@@ -927,7 +1241,8 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.13
   },
   {
     "url": "/en/football/matches/venda-fa-casric-stars-2392848",
@@ -936,7 +1251,11 @@
     "league_code": "Za2",
     "match_id": "2392848",
     "country": "South Africa",
-    "league": "National First Division",
+    "league_name": "National First Division",
+    "league_url_path": "football-tips-and-predictions-for-south-africa/national-first-division",
+    "country_code": "za",
+    "short_code": "Za2",
+    "url_5digit_code": "23928",
     "prob_home": 25.0,
     "prob_draw": 43.0,
     "prob_away": 31.0,
@@ -944,7 +1263,9 @@
     "home_score": 1,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.4,
+    "odds": 2.7
   },
   {
     "url": "/en/football/matches/cape-town-city-pretoria-university-2392849",
@@ -953,7 +1274,11 @@
     "league_code": "Za2",
     "match_id": "2392849",
     "country": "South Africa",
-    "league": "National First Division",
+    "league_name": "National First Division",
+    "league_url_path": "football-tips-and-predictions-for-south-africa/national-first-division",
+    "country_code": "za",
+    "short_code": "Za2",
+    "url_5digit_code": "23928",
     "prob_home": 46.0,
     "prob_draw": 36.0,
     "prob_away": 18.0,
@@ -961,7 +1286,9 @@
     "home_score": 4,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.5,
+    "odds": 1.91
   },
   {
     "url": "/en/football/matches/lerumo-lions-gomora-2392850",
@@ -970,7 +1297,11 @@
     "league_code": "Za2",
     "match_id": "2392850",
     "country": "South Africa",
-    "league": "National First Division",
+    "league_name": "National First Division",
+    "league_url_path": "football-tips-and-predictions-for-south-africa/national-first-division",
+    "country_code": "za",
+    "short_code": "Za2",
+    "url_5digit_code": "23928",
     "prob_home": 48.0,
     "prob_draw": 42.0,
     "prob_away": 10.0,
@@ -978,7 +1309,9 @@
     "home_score": 3,
     "away_score": 3,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.0,
+    "odds": 2.56
   },
   {
     "url": "/en/football/matches/markhiya-sc-khor-sc-2419066",
@@ -987,7 +1320,11 @@
     "league_code": "QaC",
     "match_id": "2419066",
     "country": "Qatar",
-    "league": "Qatar Stars Cup",
+    "league_name": "Qatar Stars Cup",
+    "league_url_path": "predictions-qatar/stars-cup",
+    "country_code": "qa",
+    "short_code": "QaC",
+    "url_5digit_code": "24190",
     "prob_home": 54.0,
     "prob_draw": 24.0,
     "prob_away": 22.0,
@@ -995,7 +1332,9 @@
     "home_score": 2,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.22,
+    "odds": 2.0
   },
   {
     "url": "/en/football/matches/newroz-sc-(irq)-al-karma-2419227",
@@ -1004,7 +1343,11 @@
     "league_code": "Iq1",
     "match_id": "2419227",
     "country": "Iraq",
-    "league": "Stars League",
+    "league_name": "Stars League",
+    "league_url_path": "predictions-iraq/stars-league",
+    "country_code": "iq",
+    "short_code": "Iq1",
+    "url_5digit_code": "24192",
     "prob_home": 18.0,
     "prob_draw": 9.0,
     "prob_away": 73.0,
@@ -1012,7 +1355,9 @@
     "home_score": 0,
     "away_score": 1,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.5,
+    "odds": 2.05
   },
   {
     "url": "/en/football/matches/shorta-baghdad-naft-maysan-2419228",
@@ -1021,7 +1366,11 @@
     "league_code": "Iq1",
     "match_id": "2419228",
     "country": "Iraq",
-    "league": "Stars League",
+    "league_name": "Stars League",
+    "league_url_path": "predictions-iraq/stars-league",
+    "country_code": "iq",
+    "short_code": "Iq1",
+    "url_5digit_code": "24192",
     "prob_home": 58.0,
     "prob_draw": 25.0,
     "prob_away": 17.0,
@@ -1029,7 +1378,9 @@
     "home_score": 2,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.48,
+    "odds": 1.36
   },
   {
     "url": "/en/football/matches/ahly-cairo-wadi-degla-sc-2334902",
@@ -1038,7 +1389,11 @@
     "league_code": "Eg1",
     "match_id": "2334902",
     "country": "Egypt",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "football-tips-and-predictions-for-egypt/premier-league",
+    "country_code": "eg",
+    "short_code": "Eg1",
+    "url_5digit_code": "23349",
     "prob_home": 37.0,
     "prob_draw": 41.0,
     "prob_away": 22.0,
@@ -1046,7 +1401,9 @@
     "home_score": 3,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.3,
+    "odds": 3.3
   },
   {
     "url": "/en/football/matches/ethiopian-coffee-ethiopia-nigd-bank-2400941",
@@ -1055,7 +1412,11 @@
     "league_code": "Et1",
     "match_id": "2400941",
     "country": "Ethiopia",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "predictions-ethiopia/premier-league",
+    "country_code": "et",
+    "short_code": "Et1",
+    "url_5digit_code": "24009",
     "prob_home": 34.0,
     "prob_draw": 42.0,
     "prob_away": 24.0,
@@ -1063,7 +1424,9 @@
     "home_score": 0,
     "away_score": 1,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.3,
+    "odds": 2.7
   },
   {
     "url": "/en/football/matches/famalic\u00e3o-u23-academico-viseu-u23-2418374",
@@ -1072,7 +1435,11 @@
     "league_code": "PtU",
     "match_id": "2418374",
     "country": "Portugal",
-    "league": "Liga Revelacao U23",
+    "league_name": "Liga Revelacao U23",
+    "league_url_path": "football-tips-and-predictions-for-portugal/liga-revelacao-u23",
+    "country_code": "pt",
+    "short_code": "PtU",
+    "url_5digit_code": "24183",
     "prob_home": 31.0,
     "prob_draw": 28.0,
     "prob_away": 42.0,
@@ -1080,7 +1447,9 @@
     "home_score": 2,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.17,
+    "odds": 2.75
   },
   {
     "url": "/en/football/matches/golden-arrows-stellenbosch-fc-2339268",
@@ -1089,10 +1458,15 @@
     "league_code": "Za1",
     "match_id": "2339268",
     "country": "South Africa",
-    "league": "Premier Soccer League",
+    "league_name": "Premier Soccer League",
+    "league_url_path": "football-tips-and-predictions-for-south-africa/premier-league",
+    "country_code": "za",
+    "short_code": "Za1",
+    "url_5digit_code": "23392",
     "prob_home": 37.0,
     "prob_draw": 31.0,
-    "prob_away": 32.0
+    "prob_away": 32.0,
+    "predicted_avg_goals": 2.01
   },
   {
     "url": "/en/football/matches/as-douanes-rahimo-2390633",
@@ -1101,7 +1475,11 @@
     "league_code": "Bf1",
     "match_id": "2390633",
     "country": "Burkina Faso",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "predictions-burkina-faso/premier-league",
+    "country_code": "bf",
+    "short_code": "Bf1",
+    "url_5digit_code": "23906",
     "prob_home": 14.0,
     "prob_draw": 51.0,
     "prob_away": 35.0,
@@ -1109,7 +1487,9 @@
     "home_score": 1,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.36,
+    "odds": 3.0
   },
   {
     "url": "/en/football/matches/shahaniya-sc-shamal-sc-2419067",
@@ -1118,7 +1498,11 @@
     "league_code": "QaC",
     "match_id": "2419067",
     "country": "Qatar",
-    "league": "Qatar Stars Cup",
+    "league_name": "Qatar Stars Cup",
+    "league_url_path": "predictions-qatar/stars-cup",
+    "country_code": "qa",
+    "short_code": "QaC",
+    "url_5digit_code": "24190",
     "prob_home": 29.0,
     "prob_draw": 24.0,
     "prob_away": 47.0,
@@ -1126,7 +1510,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.49,
+    "odds": 1.81
   },
   {
     "url": "/en/football/matches/sailiya-sc-al-bidda-sc-2419068",
@@ -1135,7 +1521,11 @@
     "league_code": "QaC",
     "match_id": "2419068",
     "country": "Qatar",
-    "league": "Qatar Stars Cup",
+    "league_name": "Qatar Stars Cup",
+    "league_url_path": "predictions-qatar/stars-cup",
+    "country_code": "qa",
+    "short_code": "QaC",
+    "url_5digit_code": "24190",
     "prob_home": 38.0,
     "prob_draw": 29.0,
     "prob_away": 33.0,
@@ -1143,7 +1533,9 @@
     "home_score": 1,
     "away_score": 3,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.3,
+    "odds": 2.35
   },
   {
     "url": "/en/football/matches/wahda-abu-dhabi-dubba-al-fujairah-2419489",
@@ -1152,7 +1544,11 @@
     "league_code": "Ae1",
     "match_id": "2419489",
     "country": "UAE",
-    "league": "Football League",
+    "league_name": "Football League",
+    "league_url_path": "predictions-uae/football-league",
+    "country_code": "ae",
+    "short_code": "Ae1",
+    "url_5digit_code": "24194",
     "prob_home": 65.0,
     "prob_draw": 20.0,
     "prob_away": 15.0,
@@ -1160,7 +1556,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.32,
+    "odds": 1.22
   },
   {
     "url": "/en/football/matches/al-saham-ad-damer-merreikh-al-sudan-2419469",
@@ -1169,7 +1567,11 @@
     "league_code": "Sd1",
     "match_id": "2419469",
     "country": "Sudan",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "sudan/premier-league",
+    "country_code": "sd",
+    "short_code": "Sd1",
+    "url_5digit_code": "24194",
     "prob_home": 10.0,
     "prob_draw": 27.0,
     "prob_away": 63.0,
@@ -1177,7 +1579,8 @@
     "home_score": 1,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.75
   },
   {
     "url": "/en/football/matches/muharraq-sc-shabab-manama-2418394",
@@ -1186,7 +1589,11 @@
     "league_code": "Bh1",
     "match_id": "2418394",
     "country": "Bahrain",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "bahrain/premier-league",
+    "country_code": "bh",
+    "short_code": "Bh1",
+    "url_5digit_code": "24183",
     "prob_home": 70.0,
     "prob_draw": 23.0,
     "prob_away": 7.0,
@@ -1194,7 +1601,9 @@
     "home_score": 3,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.53,
+    "odds": 1.28
   },
   {
     "url": "/en/football/matches/al-hidd-club-bahrain-club-2418395",
@@ -1203,7 +1612,11 @@
     "league_code": "Bh1",
     "match_id": "2418395",
     "country": "Bahrain",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "bahrain/premier-league",
+    "country_code": "bh",
+    "short_code": "Bh1",
+    "url_5digit_code": "24183",
     "prob_home": 56.0,
     "prob_draw": 25.0,
     "prob_away": 19.0,
@@ -1211,7 +1624,9 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.44,
+    "odds": 1.68
   },
   {
     "url": "/en/football/matches/coastal-union-kmc-2419042",
@@ -1220,7 +1635,11 @@
     "league_code": "Tz1",
     "match_id": "2419042",
     "country": "Tanzania",
-    "league": "Ligi Kuu Bara",
+    "league_name": "Ligi Kuu Bara",
+    "league_url_path": "predictions-tanzania/ligi-kuu-bara",
+    "country_code": "tz",
+    "short_code": "Tz1",
+    "url_5digit_code": "24190",
     "prob_home": 55.0,
     "prob_draw": 33.0,
     "prob_away": 12.0,
@@ -1228,7 +1647,9 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.79,
+    "odds": 1.6
   },
   {
     "url": "/en/football/matches/young-africans-dodoma-jiji-2419913",
@@ -1237,7 +1658,11 @@
     "league_code": "Tz1",
     "match_id": "2419913",
     "country": "Tanzania",
-    "league": "Ligi Kuu Bara",
+    "league_name": "Ligi Kuu Bara",
+    "league_url_path": "predictions-tanzania/ligi-kuu-bara",
+    "country_code": "tz",
+    "short_code": "Tz1",
+    "url_5digit_code": "24199",
     "prob_home": 61.0,
     "prob_draw": 25.0,
     "prob_away": 14.0,
@@ -1245,7 +1670,8 @@
     "home_score": 3,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.21
   },
   {
     "url": "/en/football/matches/pompiers-nouadhibou-2416491",
@@ -1254,7 +1680,11 @@
     "league_code": "Mr1",
     "match_id": "2416491",
     "country": "Mauritania",
-    "league": "Ligue 1",
+    "league_name": "Ligue 1",
+    "league_url_path": "predictions-mauritania/ligue-1",
+    "country_code": "mr",
+    "short_code": "Mr1",
+    "url_5digit_code": "24164",
     "prob_home": 12.0,
     "prob_draw": 43.0,
     "prob_away": 46.0,
@@ -1262,7 +1692,9 @@
     "home_score": 0,
     "away_score": 4,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.8,
+    "odds": 2.62
   },
   {
     "url": "/en/football/matches/al-hilal-al-sudani-kober-khartoum-2413479",
@@ -1271,7 +1703,11 @@
     "league_code": "Sd1",
     "match_id": "2413479",
     "country": "Sudan",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "sudan/premier-league",
+    "country_code": "sd",
+    "short_code": "Sd1",
+    "url_5digit_code": "24134",
     "prob_home": 73.0,
     "prob_draw": 18.0,
     "prob_away": 9.0,
@@ -1279,7 +1715,8 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.55
   },
   {
     "url": "/en/football/matches/east-end-lions-fc-slifa-mount-aureol-2419032",
@@ -1288,7 +1725,11 @@
     "league_code": "Sl1",
     "match_id": "2419032",
     "country": "Sierra Leone",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "sierra-leone-predictions/premier-league",
+    "country_code": "sl",
+    "short_code": "Sl1",
+    "url_5digit_code": "24190",
     "prob_home": 33.0,
     "prob_draw": 39.0,
     "prob_away": 28.0,
@@ -1296,7 +1737,9 @@
     "home_score": 2,
     "away_score": 2,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.06,
+    "odds": 3.0
   },
   {
     "url": "/en/football/matches/al-ahli-benghazi-al-borouq-2419189",
@@ -1305,7 +1748,11 @@
     "league_code": "Ly1",
     "match_id": "2419189",
     "country": "Libya",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "libya/premier-league",
+    "country_code": "ly",
+    "short_code": "Ly1",
+    "url_5digit_code": "24191",
     "prob_home": 44.0,
     "prob_draw": 29.0,
     "prob_away": 27.0,
@@ -1313,7 +1760,8 @@
     "home_score": 2,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.17
   },
   {
     "url": "/en/football/matches/talaba-baghdad-diyala-fc-2419226",
@@ -1322,7 +1770,11 @@
     "league_code": "Iq1",
     "match_id": "2419226",
     "country": "Iraq",
-    "league": "Stars League",
+    "league_name": "Stars League",
+    "league_url_path": "predictions-iraq/stars-league",
+    "country_code": "iq",
+    "short_code": "Iq1",
+    "url_5digit_code": "24192",
     "prob_home": 34.0,
     "prob_draw": 46.0,
     "prob_away": 20.0,
@@ -1330,7 +1782,9 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.88,
+    "odds": 3.2
   },
   {
     "url": "/en/football/matches/abu-salim-al-ahli-tripoli-2419188",
@@ -1339,7 +1793,11 @@
     "league_code": "Ly1",
     "match_id": "2419188",
     "country": "Libya",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "libya/premier-league",
+    "country_code": "ly",
+    "short_code": "Ly1",
+    "url_5digit_code": "24191",
     "prob_home": 15.0,
     "prob_draw": 28.0,
     "prob_away": 57.0,
@@ -1347,7 +1805,8 @@
     "home_score": 0,
     "away_score": 1,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.45
   },
   {
     "url": "/en/football/matches/vipers-sc-police-fc-(uga)-2419239",
@@ -1356,7 +1815,11 @@
     "league_code": "Ug1",
     "match_id": "2419239",
     "country": "Uganda",
-    "league": "Premier League",
+    "league_name": "Premier League",
+    "league_url_path": "predictions-uganda/premier-league",
+    "country_code": "ug",
+    "short_code": "Ug1",
+    "url_5digit_code": "24192",
     "prob_home": 37.0,
     "prob_draw": 32.0,
     "prob_away": 31.0,
@@ -1364,7 +1827,9 @@
     "home_score": 4,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.84,
+    "odds": 1.66
   },
   {
     "url": "/en/football/matches/hamrun-spartans-fgura-united-2419085",
@@ -1373,7 +1838,11 @@
     "league_code": "MtC",
     "match_id": "2419085",
     "country": "Malta",
-    "league": "FA Trophy",
+    "league_name": "FA Trophy",
+    "league_url_path": "football-tips-and-predictions-for-malta/fa-trrophy",
+    "country_code": "mt",
+    "short_code": "MtC",
+    "url_5digit_code": "24190",
     "prob_home": 45.0,
     "prob_draw": 30.0,
     "prob_away": 25.0,
@@ -1381,7 +1850,9 @@
     "home_score": 5,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.88,
+    "odds": 1.22
   },
   {
     "url": "/en/football/matches/sekhukhune-utd-sundowns-fc-2339221",
@@ -1390,7 +1861,11 @@
     "league_code": "Za1",
     "match_id": "2339221",
     "country": "South Africa",
-    "league": "Premier Soccer League",
+    "league_name": "Premier Soccer League",
+    "league_url_path": "football-tips-and-predictions-for-south-africa/premier-league",
+    "country_code": "za",
+    "short_code": "Za1",
+    "url_5digit_code": "23392",
     "prob_home": 14.0,
     "prob_draw": 42.0,
     "prob_away": 44.0,
@@ -1398,7 +1873,9 @@
     "home_score": 0,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.65,
+    "odds": 1.7
   },
   {
     "url": "/en/football/matches/krc-genk-ii-rwd-molenbeek-2332840",
@@ -1407,7 +1884,11 @@
     "league_code": "Be2",
     "match_id": "2332840",
     "country": "Belgium",
-    "league": "Challenger Pro League",
+    "league_name": "Challenger Pro League",
+    "league_url_path": "football-tips-and-predictions-for-belgium/challenger-pro-league",
+    "country_code": "be",
+    "short_code": "Be2",
+    "url_5digit_code": "23328",
     "prob_home": 29.0,
     "prob_draw": 36.0,
     "prob_away": 34.0,
@@ -1415,7 +1896,9 @@
     "home_score": 0,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.25,
+    "odds": 3.7
   },
   {
     "url": "/en/football/matches/club-brugge-ii-kv-kortrijk-2332841",
@@ -1424,7 +1907,11 @@
     "league_code": "Be2",
     "match_id": "2332841",
     "country": "Belgium",
-    "league": "Challenger Pro League",
+    "league_name": "Challenger Pro League",
+    "league_url_path": "football-tips-and-predictions-for-belgium/challenger-pro-league",
+    "country_code": "be",
+    "short_code": "Be2",
+    "url_5digit_code": "23328",
     "prob_home": 11.0,
     "prob_draw": 33.0,
     "prob_away": 56.0,
@@ -1432,7 +1919,9 @@
     "home_score": 2,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.63,
+    "odds": 1.53
   },
   {
     "url": "/en/football/matches/rfc-li\u00e8ge-lommel-united-2332842",
@@ -1441,7 +1930,11 @@
     "league_code": "Be2",
     "match_id": "2332842",
     "country": "Belgium",
-    "league": "Challenger Pro League",
+    "league_name": "Challenger Pro League",
+    "league_url_path": "football-tips-and-predictions-for-belgium/challenger-pro-league",
+    "country_code": "be",
+    "short_code": "Be2",
+    "url_5digit_code": "23328",
     "prob_home": 22.0,
     "prob_draw": 28.0,
     "prob_away": 50.0,
@@ -1449,7 +1942,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.43,
+    "odds": 2.25
   },
   {
     "url": "/en/football/matches/beerschot-wilrijk-fc-seraing-2332843",
@@ -1458,7 +1953,11 @@
     "league_code": "Be2",
     "match_id": "2332843",
     "country": "Belgium",
-    "league": "Challenger Pro League",
+    "league_name": "Challenger Pro League",
+    "league_url_path": "football-tips-and-predictions-for-belgium/challenger-pro-league",
+    "country_code": "be",
+    "short_code": "Be2",
+    "url_5digit_code": "23328",
     "prob_home": 58.0,
     "prob_draw": 26.0,
     "prob_away": 16.0,
@@ -1466,7 +1965,9 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.95,
+    "odds": 1.48
   },
   {
     "url": "/en/football/matches/eupen-ksv-temse-2332846",
@@ -1475,7 +1976,11 @@
     "league_code": "Be2",
     "match_id": "2332846",
     "country": "Belgium",
-    "league": "Challenger Pro League",
+    "league_name": "Challenger Pro League",
+    "league_url_path": "football-tips-and-predictions-for-belgium/challenger-pro-league",
+    "country_code": "be",
+    "short_code": "Be2",
+    "url_5digit_code": "23328",
     "prob_home": 20.0,
     "prob_draw": 51.0,
     "prob_away": 30.0,
@@ -1483,7 +1988,9 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.4,
+    "odds": 3.4
   },
   {
     "url": "/en/football/matches/patro-eisden-charleroi-marchienne-2332847",
@@ -1492,7 +1999,11 @@
     "league_code": "Be2",
     "match_id": "2332847",
     "country": "Belgium",
-    "league": "Challenger Pro League",
+    "league_name": "Challenger Pro League",
+    "league_url_path": "football-tips-and-predictions-for-belgium/challenger-pro-league",
+    "country_code": "be",
+    "short_code": "Be2",
+    "url_5digit_code": "23328",
     "prob_home": 51.0,
     "prob_draw": 34.0,
     "prob_away": 15.0,
@@ -1500,7 +2011,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.2,
+    "odds": 1.57
   },
   {
     "url": "/en/football/matches/s\u00e3o-francisco-pa-capit\u00e3o-po\u00e7o-2416973",
@@ -1509,7 +2022,11 @@
     "league_code": "BrP",
     "match_id": "2416973",
     "country": "Brazil",
-    "league": "Campeonato Paraense",
+    "league_name": "Campeonato Paraense",
+    "league_url_path": "football-tips-and-predictions-for-brazil/paraense",
+    "country_code": "br",
+    "short_code": "BrP",
+    "url_5digit_code": "24169",
     "prob_home": 23.0,
     "prob_draw": 14.0,
     "prob_away": 63.0,
@@ -1517,7 +2034,8 @@
     "home_score": 3,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.5
   },
   {
     "url": "/en/football/matches/stockport-county-u21-burnley-fc-u23s-2361659",
@@ -1526,10 +2044,16 @@
     "league_code": "PLC",
     "match_id": "2361659",
     "country": "England",
-    "league": "Premier League Cup",
+    "league_name": "Premier League Cup",
+    "league_url_path": "football-tips-and-predictions-for-england/premier-league-cup",
+    "country_code": "gb-en",
+    "short_code": "PLC",
+    "url_5digit_code": "23616",
     "prob_home": 31.0,
     "prob_draw": 30.0,
-    "prob_away": 39.0
+    "prob_away": 39.0,
+    "predicted_avg_goals": 3.64,
+    "odds": 1.44
   },
   {
     "url": "/en/football/matches/sheffield-utd-u23-bournemouth-u23-2419086",
@@ -1538,7 +2062,11 @@
     "league_code": "PLC",
     "match_id": "2419086",
     "country": "England",
-    "league": "Premier League Cup",
+    "league_name": "Premier League Cup",
+    "league_url_path": "football-tips-and-predictions-for-england/premier-league-cup",
+    "country_code": "gb-en",
+    "short_code": "PLC",
+    "url_5digit_code": "24190",
     "prob_home": 40.0,
     "prob_draw": 26.0,
     "prob_away": 34.0,
@@ -1546,7 +2074,9 @@
     "home_score": 1,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 3.86,
+    "odds": 1.5
   },
   {
     "url": "/en/football/matches/hapoel-ironi-arraba-maccabi-neve-shaanan-2368859",
@@ -1555,7 +2085,11 @@
     "league_code": "Il3",
     "match_id": "2368859",
     "country": "Israel",
-    "league": "Liga Alef North",
+    "league_name": "Liga Alef North",
+    "league_url_path": "football-tips-and-predictions-for-israel/liga-alef-north",
+    "country_code": "il",
+    "short_code": "Il3",
+    "url_5digit_code": "23688",
     "prob_home": 16.0,
     "prob_draw": 45.0,
     "prob_away": 39.0,
@@ -1563,7 +2097,9 @@
     "home_score": 3,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.17,
+    "odds": 3.4
   },
   {
     "url": "/en/football/matches/newport-county-accrington-stanley-2330139",
@@ -1572,7 +2108,11 @@
     "league_code": "L2",
     "match_id": "2330139",
     "country": "England",
-    "league": "League Two",
+    "league_name": "League Two",
+    "league_url_path": "football-tips-and-predictions-for-england/league-two",
+    "country_code": "gb-en",
+    "short_code": "L2",
+    "url_5digit_code": "23301",
     "prob_home": 28.0,
     "prob_draw": 33.0,
     "prob_away": 38.0,
@@ -1580,7 +2120,9 @@
     "home_score": 1,
     "away_score": 4,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.98,
+    "odds": 2.15
   },
   {
     "url": "/en/football/matches/st-pauli\n-rb-leipzig-2344037",
@@ -1589,7 +2131,11 @@
     "league_code": "De1",
     "match_id": "2344037",
     "country": "Germany",
-    "league": "Bundesliga",
+    "league_name": "Bundesliga",
+    "league_url_path": "football-tips-and-predictions-for-germany/bundesliga",
+    "country_code": "de",
+    "short_code": "De1",
+    "url_5digit_code": "23440",
     "prob_home": 33.0,
     "prob_draw": 18.0,
     "prob_away": 50.0,
@@ -1597,7 +2143,9 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.89,
+    "odds": 1.8
   },
   {
     "url": "/en/football/matches/werder-bremen-hoffenheim-2344041",
@@ -1606,7 +2154,11 @@
     "league_code": "De1",
     "match_id": "2344041",
     "country": "Germany",
-    "league": "Bundesliga",
+    "league_name": "Bundesliga",
+    "league_url_path": "football-tips-and-predictions-for-germany/bundesliga",
+    "country_code": "de",
+    "short_code": "De1",
+    "url_5digit_code": "23440",
     "prob_home": 19.0,
     "prob_draw": 28.0,
     "prob_away": 52.0,
@@ -1614,7 +2166,9 @@
     "home_score": 0,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 4.21,
+    "odds": 3.75
   },
   {
     "url": "/en/football/matches/huddersfield-luton-town-2326990",
@@ -1623,7 +2177,11 @@
     "league_code": "L1",
     "match_id": "2326990",
     "country": "England",
-    "league": "League One",
+    "league_name": "League One",
+    "league_url_path": "football-tips-and-predictions-for-england/league-one",
+    "country_code": "gb-en",
+    "short_code": "L1",
+    "url_5digit_code": "23269",
     "prob_home": 38.0,
     "prob_draw": 37.0,
     "prob_away": 25.0,
@@ -1631,7 +2189,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.87,
+    "odds": 2.1
   },
   {
     "url": "/en/football/matches/cardiff-city-barnsley-2326991",
@@ -1640,7 +2200,11 @@
     "league_code": "L1",
     "match_id": "2326991",
     "country": "England",
-    "league": "League One",
+    "league_name": "League One",
+    "league_url_path": "football-tips-and-predictions-for-england/league-one",
+    "country_code": "gb-en",
+    "short_code": "L1",
+    "url_5digit_code": "23269",
     "prob_home": 47.0,
     "prob_draw": 34.0,
     "prob_away": 19.0,
@@ -1648,7 +2212,9 @@
     "home_score": 4,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.26,
+    "odds": 1.65
   },
   {
     "url": "/en/football/matches/plymouth-argyle-mansfield-2326992",
@@ -1657,7 +2223,11 @@
     "league_code": "L1",
     "match_id": "2326992",
     "country": "England",
-    "league": "League One",
+    "league_name": "League One",
+    "league_url_path": "football-tips-and-predictions-for-england/league-one",
+    "country_code": "gb-en",
+    "short_code": "L1",
+    "url_5digit_code": "23269",
     "prob_home": 31.0,
     "prob_draw": 34.0,
     "prob_away": 35.0,
@@ -1665,7 +2235,9 @@
     "home_score": 1,
     "away_score": 1,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.89,
+    "odds": 3.6
   },
   {
     "url": "/en/football/matches/bolton-wanderers-burton-albion-2326994",
@@ -1674,7 +2246,11 @@
     "league_code": "L1",
     "match_id": "2326994",
     "country": "England",
-    "league": "League One",
+    "league_name": "League One",
+    "league_url_path": "football-tips-and-predictions-for-england/league-one",
+    "country_code": "gb-en",
+    "short_code": "L1",
+    "url_5digit_code": "23269",
     "prob_home": 57.0,
     "prob_draw": 22.0,
     "prob_away": 21.0,
@@ -1682,7 +2258,9 @@
     "home_score": 2,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.41,
+    "odds": 1.4
   },
   {
     "url": "/en/football/matches/stevenage-peterborough-2326996",
@@ -1691,7 +2269,11 @@
     "league_code": "L1",
     "match_id": "2326996",
     "country": "England",
-    "league": "League One",
+    "league_name": "League One",
+    "league_url_path": "football-tips-and-predictions-for-england/league-one",
+    "country_code": "gb-en",
+    "short_code": "L1",
+    "url_5digit_code": "23269",
     "prob_home": 36.0,
     "prob_draw": 32.0,
     "prob_away": 33.0,
@@ -1699,7 +2281,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.37,
+    "odds": 2.3
   },
   {
     "url": "/en/football/matches/wycombe-wigan-athletic-2326997",
@@ -1708,7 +2292,11 @@
     "league_code": "L1",
     "match_id": "2326997",
     "country": "England",
-    "league": "League One",
+    "league_name": "League One",
+    "league_url_path": "football-tips-and-predictions-for-england/league-one",
+    "country_code": "gb-en",
+    "short_code": "L1",
+    "url_5digit_code": "23269",
     "prob_home": 41.0,
     "prob_draw": 39.0,
     "prob_away": 20.0,
@@ -1716,7 +2304,9 @@
     "home_score": 2,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.23,
+    "odds": 1.85
   },
   {
     "url": "/en/football/matches/rotherham-northampton-town-2326998",
@@ -1725,7 +2315,11 @@
     "league_code": "L1",
     "match_id": "2326998",
     "country": "England",
-    "league": "League One",
+    "league_name": "League One",
+    "league_url_path": "football-tips-and-predictions-for-england/league-one",
+    "country_code": "gb-en",
+    "short_code": "L1",
+    "url_5digit_code": "23269",
     "prob_home": 40.0,
     "prob_draw": 41.0,
     "prob_away": 19.0,
@@ -1733,7 +2327,9 @@
     "home_score": 2,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.79,
+    "odds": 3.1
   },
   {
     "url": "/en/football/matches/blackpool-stockport-county-2326999",
@@ -1742,7 +2338,11 @@
     "league_code": "L1",
     "match_id": "2326999",
     "country": "England",
-    "league": "League One",
+    "league_name": "League One",
+    "league_url_path": "football-tips-and-predictions-for-england/league-one",
+    "country_code": "gb-en",
+    "short_code": "L1",
+    "url_5digit_code": "23269",
     "prob_home": 23.0,
     "prob_draw": 32.0,
     "prob_away": 45.0,
@@ -1750,7 +2350,9 @@
     "home_score": 1,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.44,
+    "odds": 2.25
   },
   {
     "url": "/en/football/matches/lincoln-city-bradford-city-2327000",
@@ -1759,7 +2361,11 @@
     "league_code": "L1",
     "match_id": "2327000",
     "country": "England",
-    "league": "League One",
+    "league_name": "League One",
+    "league_url_path": "football-tips-and-predictions-for-england/league-one",
+    "country_code": "gb-en",
+    "short_code": "L1",
+    "url_5digit_code": "23270",
     "prob_home": 45.0,
     "prob_draw": 33.0,
     "prob_away": 22.0,
@@ -1767,7 +2373,9 @@
     "home_score": 3,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.98,
+    "odds": 1.95
   },
   {
     "url": "/en/football/matches/cheltenham-gillingham-2330140",
@@ -1776,10 +2384,16 @@
     "league_code": "L2",
     "match_id": "2330140",
     "country": "England",
-    "league": "League Two",
+    "league_name": "League Two",
+    "league_url_path": "football-tips-and-predictions-for-england/league-two",
+    "country_code": "gb-en",
+    "short_code": "L2",
+    "url_5digit_code": "23301",
     "prob_home": 26.0,
     "prob_draw": 35.0,
-    "prob_away": 39.0
+    "prob_away": 39.0,
+    "predicted_avg_goals": 1.97,
+    "odds": 2.3
   },
   {
     "url": "/en/football/matches/bromley-fc-crewe-alexandra-2330141",
@@ -1788,7 +2402,11 @@
     "league_code": "L2",
     "match_id": "2330141",
     "country": "England",
-    "league": "League Two",
+    "league_name": "League Two",
+    "league_url_path": "football-tips-and-predictions-for-england/league-two",
+    "country_code": "gb-en",
+    "short_code": "L2",
+    "url_5digit_code": "23301",
     "prob_home": 43.0,
     "prob_draw": 25.0,
     "prob_away": 33.0,
@@ -1796,7 +2414,9 @@
     "home_score": 2,
     "away_score": 2,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.0,
+    "odds": 1.75
   },
   {
     "url": "/en/football/matches/milton-keynes-dons-bristol-rovers-2330142",
@@ -1805,7 +2425,11 @@
     "league_code": "L2",
     "match_id": "2330142",
     "country": "England",
-    "league": "League Two",
+    "league_name": "League Two",
+    "league_url_path": "football-tips-and-predictions-for-england/league-two",
+    "country_code": "gb-en",
+    "short_code": "L2",
+    "url_5digit_code": "23301",
     "prob_home": 64.0,
     "prob_draw": 15.0,
     "prob_away": 21.0,
@@ -1813,7 +2437,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.58,
+    "odds": 1.65
   },
   {
     "url": "/en/football/matches/harrogate-town-fleetwood-town-2330143",
@@ -1822,7 +2448,11 @@
     "league_code": "L2",
     "match_id": "2330143",
     "country": "England",
-    "league": "League Two",
+    "league_name": "League Two",
+    "league_url_path": "football-tips-and-predictions-for-england/league-two",
+    "country_code": "gb-en",
+    "short_code": "L2",
+    "url_5digit_code": "23301",
     "prob_home": 38.0,
     "prob_draw": 25.0,
     "prob_away": 37.0,
@@ -1830,7 +2460,9 @@
     "home_score": 1,
     "away_score": 2,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.46,
+    "odds": 3.2
   },
   {
     "url": "/en/football/matches/barnet-tranmere-rovers-2330144",
@@ -1839,7 +2471,11 @@
     "league_code": "L2",
     "match_id": "2330144",
     "country": "England",
-    "league": "League Two",
+    "league_name": "League Two",
+    "league_url_path": "football-tips-and-predictions-for-england/league-two",
+    "country_code": "gb-en",
+    "short_code": "L2",
+    "url_5digit_code": "23301",
     "prob_home": 54.0,
     "prob_draw": 25.0,
     "prob_away": 22.0,
@@ -1847,7 +2483,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.38,
+    "odds": 1.62
   },
   {
     "url": "/en/football/matches/colchester-utd-grimsby-town-2330145",
@@ -1856,7 +2494,11 @@
     "league_code": "L2",
     "match_id": "2330145",
     "country": "England",
-    "league": "League Two",
+    "league_name": "League Two",
+    "league_url_path": "football-tips-and-predictions-for-england/league-two",
+    "country_code": "gb-en",
+    "short_code": "L2",
+    "url_5digit_code": "23301",
     "prob_home": 27.0,
     "prob_draw": 32.0,
     "prob_away": 41.0,
@@ -1864,7 +2506,9 @@
     "home_score": 0,
     "away_score": 1,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.84,
+    "odds": 3.0
   },
   {
     "url": "/en/football/matches/barrow-afc-oldham-athletic-2330146",
@@ -1873,10 +2517,16 @@
     "league_code": "L2",
     "match_id": "2330146",
     "country": "England",
-    "league": "League Two",
+    "league_name": "League Two",
+    "league_url_path": "football-tips-and-predictions-for-england/league-two",
+    "country_code": "gb-en",
+    "short_code": "L2",
+    "url_5digit_code": "23301",
     "prob_home": 25.0,
     "prob_draw": 41.0,
-    "prob_away": 33.0
+    "prob_away": 33.0,
+    "predicted_avg_goals": 1.85,
+    "odds": 3.1
   },
   {
     "url": "/en/football/matches/salford-city-chesterfield-2330147",
@@ -1885,7 +2535,11 @@
     "league_code": "L2",
     "match_id": "2330147",
     "country": "England",
-    "league": "League Two",
+    "league_name": "League Two",
+    "league_url_path": "football-tips-and-predictions-for-england/league-two",
+    "country_code": "gb-en",
+    "short_code": "L2",
+    "url_5digit_code": "23301",
     "prob_home": 32.0,
     "prob_draw": 42.0,
     "prob_away": 26.0,
@@ -1893,7 +2547,9 @@
     "home_score": 0,
     "away_score": 1,
     "actual_result": "away",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.42,
+    "odds": 3.5
   },
   {
     "url": "/en/football/matches/walsall-fc-crawley-town-2330148",
@@ -1902,7 +2558,11 @@
     "league_code": "L2",
     "match_id": "2330148",
     "country": "England",
-    "league": "League Two",
+    "league_name": "League Two",
+    "league_url_path": "football-tips-and-predictions-for-england/league-two",
+    "country_code": "gb-en",
+    "short_code": "L2",
+    "url_5digit_code": "23301",
     "prob_home": 57.0,
     "prob_draw": 25.0,
     "prob_away": 18.0,
@@ -1910,7 +2570,9 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.75,
+    "odds": 1.73
   },
   {
     "url": "/en/football/matches/cambridge-utd-shrewsbury-2330149",
@@ -1919,7 +2581,11 @@
     "league_code": "L2",
     "match_id": "2330149",
     "country": "England",
-    "league": "League Two",
+    "league_name": "League Two",
+    "league_url_path": "football-tips-and-predictions-for-england/league-two",
+    "country_code": "gb-en",
+    "short_code": "L2",
+    "url_5digit_code": "23301",
     "prob_home": 62.0,
     "prob_draw": 20.0,
     "prob_away": 18.0,
@@ -1927,7 +2593,9 @@
     "home_score": 1,
     "away_score": 0,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.74,
+    "odds": 1.57
   },
   {
     "url": "/en/football/matches/notts-county-swindon-town-2330150",
@@ -1936,7 +2604,11 @@
     "league_code": "L2",
     "match_id": "2330150",
     "country": "England",
-    "league": "League Two",
+    "league_name": "League Two",
+    "league_url_path": "football-tips-and-predictions-for-england/league-two",
+    "country_code": "gb-en",
+    "short_code": "L2",
+    "url_5digit_code": "23301",
     "prob_home": 40.0,
     "prob_draw": 29.0,
     "prob_away": 31.0,
@@ -1944,7 +2616,9 @@
     "home_score": 2,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 1.81,
+    "odds": 2.1
   },
   {
     "url": "/en/football/matches/rochdale-southend-utd-2339484",
@@ -1953,7 +2627,11 @@
     "league_code": "NL",
     "match_id": "2339484",
     "country": "England",
-    "league": "National League",
+    "league_name": "National League",
+    "league_url_path": "football-tips-and-predictions-for-england/national-league",
+    "country_code": "gb-en",
+    "short_code": "NL",
+    "url_5digit_code": "23394",
     "prob_home": 32.0,
     "prob_draw": 35.0,
     "prob_away": 33.0,
@@ -1961,7 +2639,9 @@
     "home_score": 2,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.4,
+    "odds": 3.3
   },
   {
     "url": "/en/football/matches/peterborough-sports-macclesfield-2340726",
@@ -1970,7 +2650,11 @@
     "league_code": "NLn",
     "match_id": "2340726",
     "country": "England",
-    "league": "National League North",
+    "league_name": "National League North",
+    "league_url_path": "football-tips-and-predictions-for-england/national-league-north",
+    "country_code": "gb-en",
+    "short_code": "NLn",
+    "url_5digit_code": "23407",
     "prob_home": 23.0,
     "prob_draw": 19.0,
     "prob_away": 58.0,
@@ -1978,7 +2662,9 @@
     "home_score": 4,
     "away_score": 3,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.9,
+    "odds": 1.85
   },
   {
     "url": "/en/football/matches/marine-chester-fc-2340727",
@@ -1987,7 +2673,11 @@
     "league_code": "NLn",
     "match_id": "2340727",
     "country": "England",
-    "league": "National League North",
+    "league_name": "National League North",
+    "league_url_path": "football-tips-and-predictions-for-england/national-league-north",
+    "country_code": "gb-en",
+    "short_code": "NLn",
+    "url_5digit_code": "23407",
     "prob_home": 31.0,
     "prob_draw": 33.0,
     "prob_away": 36.0,
@@ -1995,7 +2685,9 @@
     "home_score": 2,
     "away_score": 1,
     "actual_result": "home",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.97,
+    "odds": 2.3
   },
   {
     "url": "/en/football/matches/bedford-town-kidderminster-2340728",
@@ -2004,7 +2696,11 @@
     "league_code": "NLn",
     "match_id": "2340728",
     "country": "England",
-    "league": "National League North",
+    "league_name": "National League North",
+    "league_url_path": "football-tips-and-predictions-for-england/national-league-north",
+    "country_code": "gb-en",
+    "short_code": "NLn",
+    "url_5digit_code": "23407",
     "prob_home": 13.0,
     "prob_draw": 24.0,
     "prob_away": 63.0,
@@ -2012,7 +2708,9 @@
     "home_score": 0,
     "away_score": 0,
     "actual_result": "draw",
-    "has_result": true
+    "has_result": true,
+    "predicted_avg_goals": 2.63,
+    "odds": 1.67
   },
   {
     "url": "/en/football/matches/nottingham-forest-wolverhampton-2315995",
@@ -2021,12 +2719,18 @@
     "league_code": "EPL",
     "match_id": "2315995",
     "country": "England",
-    "league": "Premier League"
+    "league_name": "Premier League",
+    "league_url_path": "football-tips-and-predictions-for-england/premier-league",
+    "country_code": "gb-en",
+    "short_code": "EPL",
+    "url_5digit_code": "23159"
   },
   {
     "url": "/en/football/matches/club-am\u00e9rica-cd-olimpia-2420637",
     "home_team": "Club Am\u00e9rica",
     "away_team": "CD Olimpia",
-    "league_code": "CNL"
+    "league_code": "CNL",
+    "short_code": "CNL",
+    "url_5digit_code": "24206"
   }
 ]
