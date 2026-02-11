@@ -1,19 +1,11 @@
 {
-  "24236": {
-    "first_seen_url": "https://www.forebet.com/en/football/matches/east-riffa-busaiteen-2423610",
-    "timestamp": "2026-02-10T14:36:45.694417",
-    "suggested_name": "Bahrain Premier League"
-  },
+  "24236": "Bosnia and Herzegovina Cup",
   "23345": {
     "first_seen_url": "https://www.forebet.com/en/football/matches/emmen-cambuur-2334591",
     "timestamp": "2026-02-10T14:27:37.671248",
     "suggested_name": null
   },
-  "24206": {
-    "first_seen_url": "https://www.forebet.com/en/football/matches/muranga-seal-aps-bomet-2420612",
-    "timestamp": "2026-02-10T14:51:45.876959",
-    "suggested_name": "Kenya Premier League"
-  },
+  "24206": "Germany DFB Pokal",
   "23444": {
     "first_seen_url": "https://www.forebet.com/en/football/matches/juventus-lazio-2344437",
     "timestamp": "2026-02-10T11:55:00Z",
@@ -66,7 +58,7 @@
   "23595": "Italy Serie C",
   "24232": "Switzerland Super League",
   "24152": "Colombia Primera A",
-  "24237": "Coppa Italia Primavera",
+  "24237": "Hungarian Cup",
   "24227": "Jamaica Premier League",
   "23877": "Thailand League 3",
   "24245": "CD1",
@@ -75,7 +67,7 @@
   "23478": "La1",
   "23702": "DeW",
   "23878": "Th3",
-  "24207": "TnC",
+  "24207": "Greece Greek Cup",
   "23297": "De5",
   "23550": "De5",
   "23772": "Es5",
@@ -95,5 +87,13 @@
   "23313": "Sc5",
   "23651": "Es3",
   "23626": "BeW",
-  "23737": "It4"
+  "23737": "It4",
+  "24251": "Jamaica Premier League",
+  "20216": "Costa Rica Liga de Ascenso",
+  "24136": "Costa Rica Liga de Ascenso",
+  "23301": "England League Two",
+  "23710": "Spain Tercera Division Group 5 -Cataluna",
+  "23587": "Italy Serie C",
+  "24191": "Iceland League Cup",
+  "24169": "Brazil Campeonato Paraense"
 }
