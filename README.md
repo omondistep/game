@@ -44,10 +44,31 @@ football_env\Scripts\activate  # On Windows
 
 2. **Install required packages**:
 ```bash
-pip install requests beautifulsoup4 lxml scikit-learn numpy
+pip install requests beautifulsoup4 lxml scikit-learn numpy streamlit
+```
+
+3. **Run the Streamlit app**:
+```bash
+streamlit run streamlit_app.py
 ```
 
 ## Usage
+
+### Streamlit Web Interface (Recommended)
+
+Launch the modern web interface:
+```bash
+streamlit run streamlit_app.py
+```
+
+Features:
+- **🔮 Predict Tab**: Enter a match URL and get instant predictions
+- **📊 Statistics Tab**: View model performance and league statistics
+- **🧠 Train Model Tab**: Train or retrain the ML models
+- **✅ Add Result Tab**: Record match results for training
+- **🏆 Leagues Tab**: Manage league mappings and mappings database
+- **📅 Historical Data Tab**: Import historical match data from Forebet date pages
+- **⚙️ Settings Tab**: View configuration and deployment options
 
 ### 1. Predict a Match
 
@@ -367,36 +388,44 @@ python football_prediction_system.py stats
 
 ```
 game/
+├── streamlit_app.py              # Modern Streamlit web interface
 ├── football_prediction_system.py  # Main system with CLI
 ├── football_scraper.py            # Web scraping module
 ├── data_storage.py                # Data persistence module
 ├── prediction_model.py            # ML models (Random Forest, Gradient Boosting)
 ├── auto_train.py                  # Auto-training script (20-hour threshold)
-├── train.sh                       # Quick training script
-├── fbtrain                        # Training command (executable)
-├── fbextract                      # Extract results command (executable)
-├── fbstats                        # Model statistics command (executable)
-├── extract_results.py             # Extract results script
+├── scrape_historical.py          # Historical match data scraper
+├── train.sh                      # Quick training script
+├── fbtrain                       # Training command (executable)
+├── fbextract                     # Extract results command (executable)
+├── fbstats                       # Model statistics command (executable)
+├── extract_results.py            # Extract results script
 ├── model_stats.py                # Statistics script
-├── test_scraper.py                # Testing script
-├── README.md                      # This file
-├── results.txt                    # URL queue (persists, cleared after training)
-├── training_history.json          # Training history for tracking improvement
-├── last_training.json             # Last training timestamp
-├── match_data/                    # Data directory (created automatically)
-│   ├── matches.json              # Scraped match data
-│   ├── results.json              # Actual results
-│   └── training_data.pkl         # Training dataset
-├── models/                        # Models directory (created automatically)
-│   ├── result_model.pkl          # Trained global result model
-│   ├── ou_model.pkl              # Trained global O/U model
-│   ├── scaler.pkl                # Feature scaler
-│   └── leagues/                  # League-specific models
+├── test_scraper.py               # Testing script
+├── README.md                     # This file
+├── results.txt                   # URL queue (persists, cleared after training)
+├── training_history.json         # Training history for tracking improvement
+├── last_training.json            # Last training timestamp
+├── data/                         # Data directory
+│   ├── matches.json             # Scraped match data
+│   ├── results.json             # Actual results
+│   ├── training_data.pkl        # Training dataset
+│   ├── league_mapping.json      # League code to name mappings
+│   ├── leagues_db.json          # League database
+│   └── historical_matches_*.json # Historical match data by date
+├── models/                      # Models directory
+│   ├── result_model.pkl         # Trained global result model
+│   ├── ou_model.pkl             # Trained global O/U model
+│   ├── scaler.pkl               # Feature scaler
+│   └── leagues/                 # League-specific models
 │       └── {league_name}/
 │           ├── result_model.pkl  # League result model
-│           ├── ou_model.pkl      # League O/U model
-│           └── scaler.pkl        # League scaler
-└── prediction_*.json              # Saved predictions
+│           ├── ou_model.pkl     # League O/U model
+│           └── scaler.pkl      # League scaler
+├── api/                          # FastAPI web API
+│   └── main.py                   # API endpoints
+├── old_game/                     # Legacy code
+└── prediction_*.json             # Saved predictions
 ```
 
 ## Advanced Usage
