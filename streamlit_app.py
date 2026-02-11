@@ -605,8 +605,8 @@ def display_prediction_result(result):
             from football_scraper import ForebetScraper
             scraper = ForebetScraper()
             if scraper.update_league_name(league_code, new_league_name):
-                system.storage.update_league_name(current_league, new_league_name)
-                st.success(f"✅ Updated league from '{current_league}' to '{new_league_name}'")
+                updated = system.storage.update_league_name(current_league, new_league_name)
+                st.success(f"✅ Updated league from '{current_league}' to '{new_league_name}' (updated {updated} entries)")
                 st.rerun()
             else:
                 st.error("❌ Failed to update league name")

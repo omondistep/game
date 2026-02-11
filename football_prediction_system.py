@@ -1032,8 +1032,9 @@ class FootballPredictionSystem:
                 from football_scraper import ForebetScraper
                 scraper = ForebetScraper()
                 if scraper.update_league_name(league_code, new_league):
-                    self.storage.update_league_name(current_league, new_league)
+                    updated = self.storage.update_league_name(current_league, new_league)
                     print(f"  {C.GREEN}✓ Updated league from '{current_league}' to '{new_league}'{C.RESET}")
+                    print(f"  {C.DIM}  Updated {updated} entries across all data files{C.RESET}")
                 else:
                     print(f"  {C.RED}✗ Failed to update league name{C.RESET}")
 

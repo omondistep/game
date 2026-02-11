@@ -311,20 +311,73 @@ class MatchDataStorage:
         return [entry.get('league') for entry in training_data if entry.get('league')]
     
     def update_league_name(self, old_name: str, new_name: str) -> int:
-        """Update league name in training data. Returns number of examples updated."""
-        training_data = self.get_training_data()
-        updated_count = 0
+        """Update league name in all data files. Returns total number of updates."""
+        total_updates = 0
         
-        for entry in training_data:
-            if entry.get('league') == old_name:
-                entry['league'] = new_name
-                updated_count += 1
+        # 1. Update training_data.pkl
+        try:
+            training_data = self.get_training_data()
+            for entry in training_data:
+                if entry.get('league') == old_name:
+                    entry['league'] = new_name
+                    total_updates += 1
+            if total_updates > 0:
+                with open(self.training_data_file, 'wb') as f:
+                    pickle.dump(training_data, f)
+                print(f"  Updated {total_matches} entries in training_data.pkl")
+        except Exception as e:
+            print(f"  Error updating training_data.pkl: {e}")
         
-        if updated_count > 0:
-            with open(self.training_data_file, 'wb') as f:
-                pickle.dump(training_data, f)
+        # 2. Update matches.json
+        try:
+            matches = self._load_json(self.matches_file)
+            match_count = 0
+            for match in matches:
+                info = match.get('match_info', {})
+                if info.get('league') == old_name:
+                    info['league'] = new_name
+                    match_count += 1
+            if match_count > 0:
+                self._save_json(self.matches_file, matches)
+                print(f"  Updated {match_count} entries in matches.json")
+                total_updates += match_count
+        except Exception as e:
+            print(f"  Error updating matches.json: {e}")
         
-        return updated_count
+        # 3. Update results.json
+        try:
+            results = self._load_json(self.results_file)
+            result_count = 0
+            for result in results:
+                info = result.get('match_info', {})
+                if info.get('league') == old_name:
+                    info['league'] = new_name
+                    result_count += 1
+            if result_count > 0:
+                self._save_json(self.results_file, results)
+                print(f"  Updated {result_count} entries in results.json")
+                total_updates += result_count
+        except Exception as e:
+            print(f"  Error updating results.json: {e}")
+        
+        # 4. Update predictions.json
+        try:
+            predictions = self._load_json(self.predictions_file)
+            pred_count = 0
+            for pred in predictions:
+                md = pred.get('match_data', {})
+                info = md.get('match_info', {})
+                if info.get('league') == old_name:
+                    info['league'] = new_name
+                    pred_count += 1
+            if pred_count > 0:
+                self._save_json(self.predictions_file, predictions)
+                print(f"  Updated {pred_count} entries in predictions.json")
+                total_updates += pred_count
+        except Exception as e:
+            print(f"  Error updating predictions.json: {e}")
+        
+        return total_updates
 
     # ------------------------------------------------------------------
     # Getters
