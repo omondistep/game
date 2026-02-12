@@ -262,6 +262,41 @@ The system uses a **continuous learning approach**:
 
 The system includes an **auto-training script** (`auto_train.py`) that automatically trains the model using URLs from `results.txt` when enough time has passed since the last training.
 
+### Quick Start with Aliases
+
+Add the aliases to your shell:
+
+```bash
+# Add to ~/.bashrc
+source ~/game/fb_aliases
+
+# Or manually add:
+alias pf='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py predict --url'
+```
+
+### Available Aliases
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `pf <url>` | predict --url | Predict match from URL |
+| `pr <url>` | result --url | Add match result from URL |
+| `pt` | train | Train model |
+| `pa` | auto_train.py | Auto-train (if 20+ hours since last) |
+| `paf` | auto_train.py --force | Force auto-train now |
+| `pas` | auto_train.py --status | Check training status |
+| `pd` | daily_train.py | Run daily training script |
+| `ph` | scrape_historical.py | Scrape historical matches |
+| `phd <date>` | scrape_historical.py --date | Scrape specific date |
+| `phn <days>` | scrape_historical.py --days | Scrape last N days |
+| `prb` | rebuild_data.py | Rebuild training database |
+| `pld` | build_league_db.py | Build league database |
+| `psl` | scrape_all_leagues.py | Scrape all leagues |
+| `ps` | model_stats.py | Show model statistics |
+| `pss` | stats | Show system statistics |
+| `pcw` | calculate_weights.py | Calculate data-driven weights |
+| `pe` | extract_results.py | Extract results from results.txt |
+| `phelp` | - | Show help message |
+
 ### Quick Start
 
 ```bash

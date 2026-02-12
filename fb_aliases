@@ -1,0 +1,128 @@
+#!/bin/bash
+# Football Predictor Aliases
+# Add to ~/.bashrc or source this file: source ~/game/fb_aliases
+
+# ============================================================
+# PREDICTION ALIASES
+# ============================================================
+
+# Predict match from URL
+alias pf='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py predict --url'
+
+# Add match result
+alias pr='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py result --url'
+
+# ============================================================
+# TRAINING ALIASES
+# ============================================================
+
+# Train model
+alias pt='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py train'
+
+# Auto-train (trains if 20+ hours since last training)
+alias pa='source ~/game/football_env/bin/activate && python ~/game/auto_train.py'
+
+# Force train (trains regardless of time)
+alias paf='source ~/game/football_env/bin/activate && python ~/game/auto_train.py --force'
+
+# Check training status
+alias pas='source ~/game/football_env/bin/activate && python ~/game/auto_train.py --status'
+
+# Daily training script
+alias pd='source ~/game/football_env/bin/activate && python ~/game/daily_train.py'
+
+# ============================================================
+# HISTORICAL DATA ALIASES
+# ============================================================
+
+# Scrape historical matches for a date range
+alias ph='source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py'
+
+# Scrape historical matches for specific date
+alias phd='source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py --date'
+
+# Scrape last N days
+alias phn='source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py --days'
+
+# Rebuild training database
+alias prb='source ~/game/football_env/bin/activate && python ~/game/rebuild_data.py'
+
+# ============================================================
+# LEAGUE DATABASE ALIASES
+# ============================================================
+
+# Build league database
+alias pld='source ~/game/football_env/bin/activate && python ~/game/build_league_db.py'
+
+# Scrape all leagues
+alias psl='source ~/game/football_env/bin/activate && python ~/game/scrape_all_leagues.py'
+
+# Update league database
+alias plu='source ~/game/football_env/bin/activate && python ~/game/update_league_db.py'
+
+# ============================================================
+# MODEL STATISTICS ALIASES
+# ============================================================
+
+# Show model statistics
+alias ps='source ~/game/football_env/bin/activate && python ~/game/model_stats.py'
+
+# Show system statistics
+alias pss='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py stats'
+
+# Calculate weights
+alias pcw='source ~/game/football_env/bin/activate && python ~/game/calculate_weights.py'
+
+# ============================================================
+# EXTRACTION ALIASES
+# ============================================================
+
+# Extract results from results.txt
+alias pe='source ~/game/football_env/bin/activate && python ~/game/extract_results.py'
+
+# ============================================================
+# HELPER FUNCTIONS
+# ============================================================
+
+# Show help
+phelp() {
+    echo "Football Predictor Commands:"
+    echo ""
+    echo "PREDICTION:"
+    echo "  pf <url>     - Predict match from URL"
+    echo "  pr <url>     - Add match result from URL"
+    echo ""
+    echo "TRAINING:"
+    echo "  pt           - Train model"
+    echo "  pa           - Auto-train (if 20+ hours since last)"
+    echo "  paf          - Force auto-train now"
+    echo "  pas          - Check training status"
+    echo "  pd           - Run daily training script"
+    echo ""
+    echo "HISTORICAL DATA:"
+    echo "  ph           - Scrape historical matches (interactive)"
+    echo "  phd <date>   - Scrape specific date (YYYY-MM-DD)"
+    echo "  phn <days>   - Scrape last N days"
+    echo "  prb          - Rebuild training database"
+    echo ""
+    echo "LEAGUE DATABASE:"
+    echo "  pld          - Build league database"
+    echo "  psl          - Scrape all leagues"
+    echo "  plu          - Update league database"
+    echo ""
+    echo "STATISTICS:"
+    echo "  ps           - Show model statistics"
+    echo "  pss          - Show system statistics"
+    echo "  pcw          - Calculate data-driven weights"
+    echo ""
+    echo "EXTRACTION:"
+    echo "  pe           - Extract results from results.txt"
+    echo ""
+    echo "HELP:"
+    echo "  phelp        - Show this help message"
+}
+
+# Quick prediction with URL
+p() {
+    source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py predict --url "$1"
+}
