@@ -122,5 +122,10 @@ def main():
         print(f"   Matches: {info.get('match_count', 0)}")
 
 
+def update_leagues_from_historical():
+    """Update leagues database from historical matches files."""
+    main()
+
+
 if __name__ == "__main__":
     main()
