@@ -10,52 +10,52 @@
 alias pf='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py predict --url'
 
 # Add match result
-alias pr='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py result --url'
+alias pfr='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py result --url'
 
 # ============================================================
 # TRAINING ALIASES
 # ============================================================
 
 # Train model
-alias pt='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py train'
+alias pft='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py train'
 
 # Auto-train (trains if 20+ hours since last training)
-alias pa='source ~/game/football_env/bin/activate && python ~/game/auto_train.py'
+alias pfa='source ~/game/football_env/bin/activate && python ~/game/auto_train.py'
 
 # Force train (trains regardless of time)
-alias paf='source ~/game/football_env/bin/activate && python ~/game/auto_train.py --force'
+alias pfaf='source ~/game/football_env/bin/activate && python ~/game/auto_train.py --force'
 
 # Check training status
-alias pas='source ~/game/football_env/bin/activate && python ~/game/auto_train.py --status'
+alias pfas='source ~/game/football_env/bin/activate && python ~/game/auto_train.py --status'
 
 # Daily training script
-alias pd='source ~/game/football_env/bin/activate && python ~/game/daily_train.py'
+alias pfd='source ~/game/football_env/bin/activate && python ~/game/daily_train.py'
 
 # ============================================================
 # HISTORICAL DATA FUNCTIONS (require arguments)
 # ============================================================
 
 # Scrape historical matches for a date range
-# Usage: ph --start 2026-01-25 --end 2026-02-11
-ph() {
+# Usage: pfh --start 2026-01-25 --end 2026-02-11
+pfh() {
     source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py "$@"
 }
 
 # Scrape historical matches for specific date
-# Usage: phd 2026-01-25
-phd() {
+# Usage: pfhd 2026-01-25
+pfhd() {
     source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py --date "$1"
 }
 
 # Scrape last N days
-# Usage: phn 7
-phn() {
+# Usage: pfhn 7
+pfhn() {
     source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py --days "$1"
 }
 
 # Rebuild training database
-# Usage: prb (rebuild all) or prb --start 2026-01-25 --end 2026-02-11
-prb() {
+# Usage: pfrb (rebuild all) or pfrb --start 2026-01-25 --end 2026-02-11
+pfrb() {
     source ~/game/football_env/bin/activate && python ~/game/rebuild_data.py "$@"
 }
 
@@ -64,73 +64,73 @@ prb() {
 # ============================================================
 
 # Build league database
-alias pld='source ~/game/football_env/bin/activate && python ~/game/build_league_db.py'
+alias pfld='source ~/game/football_env/bin/activate && python ~/game/build_league_db.py'
 
 # Scrape all leagues
-alias psl='source ~/game/football_env/bin/activate && python ~/game/scrape_all_leagues.py'
+alias pfsl='source ~/game/football_env/bin/activate && python ~/game/scrape_all_leagues.py'
 
 # Update league database
-alias plu='source ~/game/football_env/bin/activate && python ~/game/update_league_db.py'
+alias pflu='source ~/game/football_env/bin/activate && python ~/game/update_league_db.py'
 
 # ============================================================
 # MODEL STATISTICS ALIASES
 # ============================================================
 
 # Show model statistics
-alias ps='source ~/game/football_env/bin/activate && python ~/game/model_stats.py'
+alias pfms='source ~/game/football_env/bin/activate && python ~/game/model_stats.py'
 
 # Show system statistics
-alias pss='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py stats'
+alias pfss='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py stats'
 
 # Calculate weights
-alias pcw='source ~/game/football_env/bin/activate && python ~/game/calculate_weights.py'
+alias pfcw='source ~/game/football_env/bin/activate && python ~/game/calculate_weights.py'
 
 # ============================================================
 # EXTRACTION ALIASES
 # ============================================================
 
 # Extract results from results.txt
-alias pe='source ~/game/football_env/bin/activate && python ~/game/extract_results.py'
+alias pfe='source ~/game/football_env/bin/activate && python ~/game/extract_results.py'
 
 # ============================================================
 # HELPER FUNCTIONS
 # ============================================================
 
 # Show help
-phelp() {
+pfhelp() {
     echo "Football Predictor Commands:"
     echo ""
     echo "PREDICTION:"
     echo "  pf <url>              - Predict match from URL"
-    echo "  pr <url>              - Add match result from URL"
+    echo "  pfr <url>             - Add match result from URL"
     echo ""
     echo "TRAINING:"
-    echo "  pt                    - Train model"
-    echo "  pa                    - Auto-train (if 20+ hours since last)"
-    echo "  paf                   - Force auto-train now"
-    echo "  pas                   - Check training status"
-    echo "  pd                    - Run daily training script"
+    echo "  pft                   - Train model"
+    echo "  pfa                   - Auto-train (if 20+ hours since last)"
+    echo "  pfaf                  - Force auto-train now"
+    echo "  pfas                  - Check training status"
+    echo "  pfd                   - Run daily training script"
     echo ""
     echo "HISTORICAL DATA:"
-    echo "  ph --start DATE --end DATE  - Scrape date range"
-    echo "  phd DATE              - Scrape specific date (e.g., phd 2026-01-25)"
-    echo "  phn DAYS              - Scrape last N days (e.g., phn 7)"
-    echo "  prb                   - Rebuild training database"
-    echo "  prb --start DATE --end DATE - Rebuild specific range"
+    echo "  pfh --start DATE --end DATE  - Scrape date range"
+    echo "  pfhd DATE             - Scrape specific date (e.g., pfhd 2026-01-25)"
+    echo "  pfhn DAYS             - Scrape last N days (e.g., pfhn 7)"
+    echo "  pfrb                  - Rebuild training database"
+    echo "  pfrb --start DATE --end DATE - Rebuild specific range"
     echo ""
     echo "LEAGUE DATABASE:"
-    echo "  pld                   - Build league database"
-    echo "  psl                   - Scrape all leagues"
-    echo "  plu                   - Update league database"
+    echo "  pfld                  - Build league database"
+    echo "  pfsl                  - Scrape all leagues"
+    echo "  pflu                  - Update league database"
     echo ""
     echo "STATISTICS:"
-    echo "  ps                    - Show model statistics"
-    echo "  pss                   - Show system statistics"
-    echo "  pcw                   - Calculate data-driven weights"
+    echo "  pfms                  - Show model statistics"
+    echo "  pfss                  - Show system statistics"
+    echo "  pfcw                  - Calculate data-driven weights"
     echo ""
     echo "EXTRACTION:"
-    echo "  pe                    - Extract results from results.txt"
+    echo "  pfe                   - Extract results from results.txt"
     echo ""
     echo "HELP:"
-    echo "  phelp                 - Show this help message"
+    echo "  pfhelp                - Show this help message"
 }
