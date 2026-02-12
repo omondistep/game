@@ -25,10 +25,13 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Optional
 import subprocess
 
-# Constants
-DATA_DIR = "data"
-MODELS_DIR = "models"
-LOGS_DIR = "logs"
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Constants - use absolute paths
+DATA_DIR = os.path.join(SCRIPT_DIR, "data")
+MODELS_DIR = os.path.join(SCRIPT_DIR, "models")
+LOGS_DIR = os.path.join(SCRIPT_DIR, "logs")
 LAST_TRAINING_FILE = os.path.join(DATA_DIR, "last_training.json")
 
 
@@ -119,10 +122,12 @@ def run_training(dry_run: bool = False) -> bool:
     print("Running model training...")
     print("-" * 60)
     
+    rebuild_script = os.path.join(SCRIPT_DIR, 'rebuild_data.py')
     result = subprocess.run(
-        [sys.executable, 'rebuild_data.py'],
+        [sys.executable, rebuild_script],
         capture_output=False,
-        text=True
+        text=True,
+        cwd=SCRIPT_DIR
     )
     
     if result.returncode != 0:
