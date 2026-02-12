@@ -279,23 +279,23 @@ alias pf='source ~/game/football_env/bin/activate && python ~/game/football_pred
 | Alias | Command | Description |
 |-------|---------|-------------|
 | `pf <url>` | predict --url | Predict match from URL |
-| `pr <url>` | result --url | Add match result from URL |
-| `pt` | train | Train model |
-| `pa` | auto_train.py | Auto-train (if 20+ hours since last) |
-| `paf` | auto_train.py --force | Force auto-train now |
-| `pas` | auto_train.py --status | Check training status |
-| `pd` | daily_train.py | Run daily training script |
-| `ph` | scrape_historical.py | Scrape historical matches |
-| `phd <date>` | scrape_historical.py --date | Scrape specific date |
-| `phn <days>` | scrape_historical.py --days | Scrape last N days |
-| `prb` | rebuild_data.py | Rebuild training database |
-| `pld` | build_league_db.py | Build league database |
-| `psl` | scrape_all_leagues.py | Scrape all leagues |
-| `ps` | model_stats.py | Show model statistics |
-| `pss` | stats | Show system statistics |
-| `pcw` | calculate_weights.py | Calculate data-driven weights |
-| `pe` | extract_results.py | Extract results from results.txt |
-| `phelp` | - | Show help message |
+| `pfr <url>` | result --url | Add match result from URL |
+| `pft` | train | Train model |
+| `pfa` | auto_train.py | Auto-train (if 20+ hours since last) |
+| `pfaf` | auto_train.py --force | Force auto-train now |
+| `pfas` | auto_train.py --status | Check training status |
+| `pfd` | daily_train.py | Run daily training script |
+| `pfh` | scrape_historical.py | Scrape historical matches |
+| `pfhd <date>` | scrape_historical.py --date | Scrape specific date |
+| `pfhn <days>` | scrape_historical.py --days | Scrape last N days |
+| `pfrb` | rebuild_data.py | Rebuild training database |
+| `pfld` | build_league_db.py | Build league database |
+| `pfsl` | scrape_all_leagues.py | Scrape all leagues |
+| `pfms` | model_stats.py | Show model statistics |
+| `pfss` | stats | Show system statistics |
+| `pfcw` | calculate_weights.py | Calculate data-driven weights |
+| `pfe` | extract_results.py | Extract results from results.txt |
+| `pfhelp` | - | Show help message |
 
 ### Quick Start
 
