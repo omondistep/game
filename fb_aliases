@@ -32,20 +32,32 @@ alias pas='source ~/game/football_env/bin/activate && python ~/game/auto_train.p
 alias pd='source ~/game/football_env/bin/activate && python ~/game/daily_train.py'
 
 # ============================================================
-# HISTORICAL DATA ALIASES
+# HISTORICAL DATA FUNCTIONS (require arguments)
 # ============================================================
 
 # Scrape historical matches for a date range
-alias ph='source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py'
+# Usage: ph --start 2026-01-25 --end 2026-02-11
+ph() {
+    source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py "$@"
+}
 
 # Scrape historical matches for specific date
-alias phd='source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py --date'
+# Usage: phd 2026-01-25
+phd() {
+    source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py --date "$1"
+}
 
 # Scrape last N days
-alias phn='source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py --days'
+# Usage: phn 7
+phn() {
+    source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py --days "$1"
+}
 
 # Rebuild training database
-alias prb='source ~/game/football_env/bin/activate && python ~/game/rebuild_data.py'
+# Usage: prb (rebuild all) or prb --start 2026-01-25 --end 2026-02-11
+prb() {
+    source ~/game/football_env/bin/activate && python ~/game/rebuild_data.py "$@"
+}
 
 # ============================================================
 # LEAGUE DATABASE ALIASES
@@ -89,40 +101,36 @@ phelp() {
     echo "Football Predictor Commands:"
     echo ""
     echo "PREDICTION:"
-    echo "  pf <url>     - Predict match from URL"
-    echo "  pr <url>     - Add match result from URL"
+    echo "  pf <url>              - Predict match from URL"
+    echo "  pr <url>              - Add match result from URL"
     echo ""
     echo "TRAINING:"
-    echo "  pt           - Train model"
-    echo "  pa           - Auto-train (if 20+ hours since last)"
-    echo "  paf          - Force auto-train now"
-    echo "  pas          - Check training status"
-    echo "  pd           - Run daily training script"
+    echo "  pt                    - Train model"
+    echo "  pa                    - Auto-train (if 20+ hours since last)"
+    echo "  paf                   - Force auto-train now"
+    echo "  pas                   - Check training status"
+    echo "  pd                    - Run daily training script"
     echo ""
     echo "HISTORICAL DATA:"
-    echo "  ph           - Scrape historical matches (interactive)"
-    echo "  phd <date>   - Scrape specific date (YYYY-MM-DD)"
-    echo "  phn <days>   - Scrape last N days"
-    echo "  prb          - Rebuild training database"
+    echo "  ph --start DATE --end DATE  - Scrape date range"
+    echo "  phd DATE              - Scrape specific date (e.g., phd 2026-01-25)"
+    echo "  phn DAYS              - Scrape last N days (e.g., phn 7)"
+    echo "  prb                   - Rebuild training database"
+    echo "  prb --start DATE --end DATE - Rebuild specific range"
     echo ""
     echo "LEAGUE DATABASE:"
-    echo "  pld          - Build league database"
-    echo "  psl          - Scrape all leagues"
-    echo "  plu          - Update league database"
+    echo "  pld                   - Build league database"
+    echo "  psl                   - Scrape all leagues"
+    echo "  plu                   - Update league database"
     echo ""
     echo "STATISTICS:"
-    echo "  ps           - Show model statistics"
-    echo "  pss          - Show system statistics"
-    echo "  pcw          - Calculate data-driven weights"
+    echo "  ps                    - Show model statistics"
+    echo "  pss                   - Show system statistics"
+    echo "  pcw                   - Calculate data-driven weights"
     echo ""
     echo "EXTRACTION:"
-    echo "  pe           - Extract results from results.txt"
+    echo "  pe                    - Extract results from results.txt"
     echo ""
     echo "HELP:"
-    echo "  phelp        - Show this help message"
-}
-
-# Quick prediction with URL
-p() {
-    source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py predict --url "$1"
+    echo "  phelp                 - Show this help message"
 }
