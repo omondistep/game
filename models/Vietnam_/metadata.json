@@ -1,0 +1,64 @@
+{
+  "league_key": "Vn2_242",
+  "league_info": {
+    "league_code": "Vn2",
+    "match_id_prefix": "242",
+    "country": "Vietnam",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-vietnam/v-league-2",
+    "country_code": "vn",
+    "match_count": 20,
+    "teams": {
+      "B\u00e0 Ria V\u0169ng T\u00e0u": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Bac Ninh": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Ph\u00fa Th\u1ecd": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Qu\u1ea3ng Ninh": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Dong Thap FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Binh Dinh FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Long An FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "PVF-CAND II": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "B\u00ecnh Ph\u01b0\u1edbc": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sanna Khanh Hoa": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "H\u1ed3 Ch\u00ed Minh II": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Dai Hoc Van Hien": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 20,
+  "trained_at": "2026-02-12T10:10:13.958594"
+}

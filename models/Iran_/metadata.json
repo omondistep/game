@@ -1,0 +1,88 @@
+{
+  "league_key": "Ir2_242",
+  "league_info": {
+    "league_code": "Ir2",
+    "match_id_prefix": "242",
+    "country": "Iran",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-iran/league-1",
+    "country_code": "ir",
+    "match_count": 28,
+    "teams": {
+      "Navad Urmia": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Naft Gachsaran": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Damash Gilan": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Shahrdari Noshahr": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Mes Kerman": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Shenavarsazi Qeshm": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Ario Eslamshahr": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Sorkhpooshan Pakdasht": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Fard Alborz": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Mes Shahr-e Babak": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Saipa Karaj": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Be'sat Kermanshah": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Naft Bandar Abbas": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Niroye Zamini": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Pars Jonoubi Jam": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Mes Soongoun": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sanat Naft AC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Nassaji Mazandaran": {
+        "home_matches": 2,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 28,
+  "trained_at": "2026-02-12T10:09:45.919144"
+}

@@ -1,0 +1,112 @@
+{
+  "league_key": "Sd1_242",
+  "league_info": {
+    "league_code": "Sd1",
+    "match_id_prefix": "242",
+    "country": "Sudan",
+    "league": "",
+    "league_url_path": "sudan/premier-league",
+    "country_code": "sd",
+    "match_count": 60,
+    "teams": {
+      "Al Hilal Al Manaqil": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Umm Mughad": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Shorta (SUD)": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Merghani Kassala": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Merikh Kosti": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Rabeta Kosti": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Al Taqadom": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Hilal Al Sahel": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Merreikh Al Sudan": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Ahli Marawi": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Al Hilal Karima": {
+        "home_matches": 6,
+        "away_matches": 0
+      },
+      "Alfalah Atbra": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Al Saham Ad Damer": {
+        "home_matches": 6,
+        "away_matches": 0
+      },
+      "Al Amal Atbara": {
+        "home_matches": 0,
+        "away_matches": 6
+      },
+      "Ahli Khartoum": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Hay Al Wadi": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Hilal Al Fasher": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Al Zamala SC": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Haidoub FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Kober Khartoum": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Al Hilal Al Sudani": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Ahli Wad Madani": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Merreikh Abyad": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Fajr": {
+        "home_matches": 0,
+        "away_matches": 4
+      }
+    }
+  },
+  "example_count": 60,
+  "trained_at": "2026-02-12T10:10:05.848497"
+}

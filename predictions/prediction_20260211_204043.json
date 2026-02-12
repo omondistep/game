@@ -1,0 +1,245 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/swindon-town-newport-county-2330105",
+  "timestamp": "2026-02-11T20:40:19.959359",
+  "features": {
+    "home_position": 4,
+    "away_position": 23,
+    "position_diff": -19,
+    "home_points": 55,
+    "away_points": 21,
+    "home_form_points": 9,
+    "away_form_points": 4,
+    "home_recent_form": 9,
+    "away_recent_form": 1,
+    "home_wins_l6": 3,
+    "home_draws_l6": 0,
+    "home_losses_l6": 3,
+    "away_wins_l6": 1,
+    "away_draws_l6": 1,
+    "away_losses_l6": 4,
+    "home_scored_avg": 1.794871794871795,
+    "home_conceded_avg": 1.1794871794871795,
+    "away_scored_avg": 0.9444444444444444,
+    "away_conceded_avg": 1.7777777777777777,
+    "expected_total_goals": 2.848290598290598,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 12.615384615384615,
+    "away_shots_avg": 10.527777777777779,
+    "home_shots_on_target_pct": 40.447154471544714,
+    "away_shots_on_target_pct": 33.24538258575198,
+    "home_dangerous_attacks_avg": 40.794871794871796,
+    "away_dangerous_attacks_avg": 34.47222222222222,
+    "home_possession": 51.1,
+    "away_possession": 45.61,
+    "home_pass_accuracy": 72.16413635061588,
+    "away_pass_accuracy": 71.61077793732579,
+    "home_fouls_avg": 10.794871794871796,
+    "away_fouls_avg": 11.777777777777779,
+    "home_yellow_avg": 2.051282051282051,
+    "away_yellow_avg": 1.9166666666666667,
+    "odds_home": 1.53,
+    "odds_draw": 4.0,
+    "odds_away": 6.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 62
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5477,
+        "2": 0.0886,
+        "X": 0.3637
+      },
+      "computed_odds": {
+        "1": 1.83,
+        "2": 11.29,
+        "X": 2.75
+      },
+      "confidence": 0.5477
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9997,
+        "Under": 0.0003
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 0.9997
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5477,
+        "2": 0.0886,
+        "X": 0.3637
+      },
+      "computed_odds": {
+        "1": 1.83,
+        "2": 11.29,
+        "X": 2.75
+      },
+      "confidence": 0.5477
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9997,
+        "Under": 0.0003
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 0.9997
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5645,
+        "X": 0.2261,
+        "2": 0.2094
+      },
+      "computed_odds": {
+        "1": 1.77,
+        "X": 4.42,
+        "2": 4.78
+      },
+      "confidence": 0.5645
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.8421052631578947,
+        "away": 0,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.6106870229007634,
+        "away": 0.15572519083969466,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5,
+        "away": 0.2222222222222222,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.6538461538461539,
+        "away": 0.2916666666666667,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.46044615384615384,
+        "away": 0.3579192592592593,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.848290598290598
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 16.8
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 6.8
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 5.6
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 5.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.85,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.74,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcca Home team significantly higher in table (#4 vs #23)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 4.0,
+        "fair": 2.75,
+        "value_pct": 45.5
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Swindon Town": [],
+    "Newport County": []
+  }
+}

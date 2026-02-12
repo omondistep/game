@@ -1,0 +1,64 @@
+{
+  "league_key": "Bh1_241",
+  "league_info": {
+    "league_code": "Bh1",
+    "match_id_prefix": "241",
+    "country": "Bahrain",
+    "league": "",
+    "league_url_path": "bahrain/premier-league",
+    "country_code": "bh",
+    "match_count": 12,
+    "teams": {
+      "Al Khaldiya": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Ahli Manama": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Budaiya": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Malkiya": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Muharraq SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Shabab Manama": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Al Hidd Club": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Bahrain Club": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sitra Club": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Riffa Club": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Al Ali CSC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Najma Manama": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 12,
+  "trained_at": "2026-02-12T10:09:21.766125"
+}

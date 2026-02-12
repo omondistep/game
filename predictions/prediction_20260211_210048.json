@@ -1,0 +1,324 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/crystal-palace-burnley-2315989",
+  "timestamp": "2026-02-11T20:59:55.594553",
+  "features": {
+    "home_position": 13,
+    "away_position": 19,
+    "position_diff": -6,
+    "home_points": 32,
+    "away_points": 15,
+    "home_form_points": 5,
+    "away_form_points": 6,
+    "home_recent_form": 4,
+    "away_recent_form": 1,
+    "home_wins_l6": 1,
+    "home_draws_l6": 2,
+    "home_losses_l6": 3,
+    "away_wins_l6": 1,
+    "away_draws_l6": 3,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.1891891891891893,
+    "home_conceded_avg": 1.054054054054054,
+    "away_scored_avg": 1.1785714285714286,
+    "away_conceded_avg": 1.8928571428571428,
+    "expected_total_goals": 2.657335907335907,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 8.333333333333332,
+    "away_away_goals_avg": 1.0833333333333333,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 12.891891891891891,
+    "away_shots_avg": 9.607142857142858,
+    "home_shots_on_target_pct": 33.75262054507338,
+    "away_shots_on_target_pct": 34.572490706319705,
+    "home_dangerous_attacks_avg": 45.729729729729726,
+    "away_dangerous_attacks_avg": 39.607142857142854,
+    "home_possession": 46.95,
+    "away_possession": 43.29,
+    "home_pass_accuracy": 78.84680078046155,
+    "away_pass_accuracy": 79.70805550549649,
+    "home_fouls_avg": 10.35135135135135,
+    "away_fouls_avg": 9.714285714285714,
+    "home_yellow_avg": 1.8918918918918919,
+    "away_yellow_avg": 1.7857142857142858,
+    "odds_home": 1.6,
+    "odds_draw": 3.9,
+    "odds_away": 5.75,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 43
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.74,
+        "2": 0.22,
+        "X": 0.04
+      },
+      "computed_odds": {
+        "1": 1.35,
+        "2": 4.55,
+        "X": 25.0
+      },
+      "confidence": 0.74
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 1.0,
+        "Under": 0.0
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.74,
+        "2": 0.22,
+        "X": 0.04
+      },
+      "computed_odds": {
+        "1": 1.35,
+        "2": 4.55,
+        "X": 25.0
+      },
+      "confidence": 0.74
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 1.0,
+        "Under": 0.0
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4431,
+        "X": 0.3081,
+        "2": 0.2487
+      },
+      "computed_odds": {
+        "1": 2.26,
+        "X": 3.25,
+        "2": 4.02
+      },
+      "confidence": 0.4431
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.368421052631579,
+        "away": 0.052631578947368474,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.5922355737488446,
+        "away": 0.16479598573880894,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.2777777777777778,
+        "away": 0.3333333333333333,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5337837837837838,
+        "away": 0.32142857142857145,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.5,
+        "away": 0.17,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.44476306306306307,
+        "away": 0.3133114285714286,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.657335907335907
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 6.4
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 6.3
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 3.3
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 3.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.66,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.37,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (1 win in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcc9 Away team struggles away (8% win rate)",
+      "\ud83d\udcca Home team significantly higher in table (#13 vs #19)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 1.6,
+        "fair": 1.35,
+        "value_pct": 18.5
+      },
+      {
+        "outcome": "2",
+        "market": 5.75,
+        "fair": 4.55,
+        "value_pct": 26.4
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Crystal Palace": [
+      {
+        "name": "Cheick Doucoure (M)",
+        "games_played": "",
+        "injury": "Knee",
+        "status": "Will not play - 26.12.2026",
+        "team": "Crystal Palace"
+      },
+      {
+        "name": "Eddie Nketiah (F)",
+        "games_played": "12",
+        "injury": "Strain",
+        "status": "Will not play - 1.1.2026",
+        "team": "Crystal Palace"
+      },
+      {
+        "name": "Jean-Philippe Mateta (F)",
+        "games_played": "21",
+        "injury": "Knee",
+        "status": "Will not play - 31.1.2026",
+        "team": "Crystal Palace"
+      },
+      {
+        "name": "Justin Devenny (M)",
+        "games_played": "17",
+        "injury": "Ankle",
+        "status": "Uncertain - 31.1.2026",
+        "team": "Crystal Palace"
+      }
+    ],
+    "Burnley": [
+      {
+        "name": "Axel Tuanzebe (D)",
+        "games_played": "8",
+        "injury": "Achilles",
+        "status": "Will not play - 8.2.2026",
+        "team": "Burnley"
+      },
+      {
+        "name": "Connor Roberts (D)",
+        "games_played": "",
+        "injury": "Strain",
+        "status": "Will not play - 26.12.2026",
+        "team": "Burnley"
+      },
+      {
+        "name": "Jordan Beyer (D)",
+        "games_played": "",
+        "injury": "Hamstring",
+        "status": "Will not play - 26.12.2026",
+        "team": "Burnley"
+      },
+      {
+        "name": "Josh Cullen (M)",
+        "games_played": "18",
+        "injury": "Knee",
+        "status": "Will not play - 28.12.2026",
+        "team": "Burnley"
+      },
+      {
+        "name": "Mike Tresor (F)",
+        "games_played": "4",
+        "injury": "Ankle",
+        "status": "Will not play - 8.1.2026",
+        "team": "Burnley"
+      },
+      {
+        "name": "Zeki Amdouni (F)",
+        "games_played": "",
+        "injury": "Knee",
+        "status": "Will not play - 26.12.2026",
+        "team": "Burnley"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "league_key": "Hn1_242",
+  "league_info": {
+    "league_code": "Hn1",
+    "match_id_prefix": "242",
+    "country": "Honduras",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-honduras/liga-nacional",
+    "country_code": "hn",
+    "match_count": 20,
+    "teams": {
+      "CD Victoria": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CD Marath\u00f3n": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CD Olimpia": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Juticalpa": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "G\u00e9nesis": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Atl\u00e9tico Choloma": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Real Espa\u00f1a": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CD Motagua": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Olancho": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Lobos UPNFM": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Platense (HON)": {
+        "home_matches": 2,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 20,
+  "trained_at": "2026-02-12T10:09:41.893636"
+}

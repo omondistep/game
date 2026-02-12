@@ -1,0 +1,52 @@
+{
+  "league_key": "Bi1_242",
+  "league_info": {
+    "league_code": "Bi1",
+    "match_id_prefix": "242",
+    "country": "Burundi",
+    "league": "",
+    "league_url_path": "predictions-burundi/primus-league",
+    "country_code": "bi",
+    "match_count": 10,
+    "teams": {
+      "Royal Vision": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Flambeau du Centre": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Rukinzo FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Kayanza United": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Inter Star": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Ngozi City": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Green Farmers": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Dynamik": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Le Messager Ngozi": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 10,
+  "trained_at": "2026-02-12T10:09:22.440492"
+}

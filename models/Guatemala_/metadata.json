@@ -1,0 +1,88 @@
+{
+  "league_key": "Gt2_242",
+  "league_info": {
+    "league_code": "Gt2",
+    "match_id_prefix": "242",
+    "country": "Guatemala",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-guatemala/primera-division",
+    "country_code": "gt",
+    "match_count": 30,
+    "teams": {
+      "Santa Rosa": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "AFF Guatemala": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Quich\u00e9": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Gomerano": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Ipala": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Peten": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Aguacat\u00e1n": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Suchitep\u00e9quez": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Deportivo Carch\u00e1": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CSD Sacachispas": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Chimaltenango": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Puerto de Iztapa": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "San Pedro": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Huehuetecos": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Cotzumalguapa": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Chiquimulilla": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Chichicasteco": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "CD Nueva Concepci\u00f3n": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 30,
+  "trained_at": "2026-02-12T10:09:40.480945"
+}

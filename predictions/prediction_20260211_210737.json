@@ -1,0 +1,245 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/aurora-pro-patria-cittadella-2358771",
+  "timestamp": "2026-02-11T21:07:29.510832",
+  "features": {
+    "home_position": 19,
+    "away_position": 5,
+    "position_diff": 14,
+    "away_points": 39,
+    "home_points": 13,
+    "home_form_points": 1,
+    "away_form_points": 7,
+    "home_recent_form": 1,
+    "away_recent_form": 3,
+    "home_wins_l6": 0,
+    "home_draws_l6": 1,
+    "home_losses_l6": 5,
+    "away_wins_l6": 2,
+    "away_draws_l6": 1,
+    "away_losses_l6": 3,
+    "home_scored_avg": 0.7307692307692307,
+    "home_conceded_avg": 1.8461538461538463,
+    "away_scored_avg": 1.0769230769230769,
+    "away_conceded_avg": 1.0769230769230769,
+    "expected_total_goals": 2.3653846153846154,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 42.857142857142854,
+    "away_away_goals_avg": 0.9285714285714286,
+    "h2h_home_win_pct": 0.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 67.0,
+    "home_shots_avg": 7.615384615384615,
+    "away_shots_avg": 10.076923076923077,
+    "home_shots_on_target_pct": 31.818181818181817,
+    "away_shots_on_target_pct": 36.6412213740458,
+    "home_dangerous_attacks_avg": 54.07692307692308,
+    "away_dangerous_attacks_avg": 66.88461538461539,
+    "home_possession": 47.88,
+    "away_possession": 51.31,
+    "home_pass_accuracy": 78.20848611838659,
+    "away_pass_accuracy": 83.44615384615385,
+    "home_fouls_avg": 9.884615384615385,
+    "away_fouls_avg": 11.23076923076923,
+    "home_yellow_avg": 2.230769230769231,
+    "away_yellow_avg": 2.076923076923077,
+    "odds_home": 4.3,
+    "odds_draw": 3.35,
+    "odds_away": 1.87,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 41
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2321,
+        "2": 0.4194,
+        "X": 0.3485
+      },
+      "computed_odds": {
+        "1": 4.31,
+        "2": 2.38,
+        "X": 2.87
+      },
+      "confidence": 0.4194
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.2469,
+        "Under": 0.7531
+      },
+      "computed_odds": {
+        "Over": 4.05,
+        "Under": 1.33
+      },
+      "confidence": 0.7531
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2321,
+        "2": 0.4194,
+        "X": 0.3485
+      },
+      "computed_odds": {
+        "1": 4.31,
+        "2": 2.38,
+        "X": 2.87
+      },
+      "confidence": 0.4194
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.2469,
+        "Under": 0.7531
+      },
+      "computed_odds": {
+        "Over": 4.05,
+        "Under": 1.33
+      },
+      "confidence": 0.7531
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2009,
+        "X": 0.2708,
+        "2": 0.5283
+      },
+      "computed_odds": {
+        "1": 4.98,
+        "X": 3.69,
+        "2": 1.89
+      },
+      "confidence": 0.5283
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.052631578947368474,
+        "away": 0.7894736842105263,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.21819543372633707,
+        "away": 0.5017328155204541,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.05555555555555555,
+        "away": 0.3888888888888889,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.3333333333333333,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.22115384615384615,
+        "away": 0.5,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.67,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.28728,
+        "away": 0.3770907692307692,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.3653846153846154
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 14.7
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 6.7
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 4.3
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 4.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.37,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 1.81,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "2",
+    "weighted_result": "2",
+    "ml_ou": "Under",
+    "weighted_ou": "Under"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 6)",
+      "\ud83d\udcca Away team significantly higher in table (#5 vs #19)",
+      "\ud83d\udcdc Away team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.35,
+        "fair": 2.87,
+        "value_pct": 16.7
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Aurora Pro Patria": [],
+    "Cittadella": []
+  }
+}

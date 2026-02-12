@@ -1,0 +1,249 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/inter-u23-ac-lumezzane-2358767",
+  "timestamp": "2026-02-11T21:04:18.818577",
+  "features": {
+    "home_position": 7,
+    "away_position": 11,
+    "position_diff": -4,
+    "home_points": 38,
+    "away_points": 32,
+    "home_form_points": 11,
+    "away_form_points": 10,
+    "home_recent_form": 4,
+    "away_recent_form": 3,
+    "home_wins_l6": 3,
+    "home_draws_l6": 2,
+    "home_losses_l6": 1,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.2857142857142858,
+    "home_conceded_avg": 1.1071428571428572,
+    "away_scored_avg": 1.1153846153846154,
+    "away_conceded_avg": 1.2692307692307692,
+    "expected_total_goals": 2.3887362637362637,
+    "home_home_win_rate": 15.384615384615385,
+    "home_home_goals_avg": 1.0,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.3076923076923077,
+    "h2h_home_win_pct": 100.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 9.642857142857142,
+    "away_shots_avg": 8.807692307692308,
+    "home_shots_on_target_pct": 35.55555555555556,
+    "away_shots_on_target_pct": 36.681222707423586,
+    "home_dangerous_attacks_avg": 54.892857142857146,
+    "away_dangerous_attacks_avg": 70.96153846153847,
+    "home_possession": 48.28,
+    "away_possession": 49.32,
+    "home_pass_accuracy": 84.34408602150538,
+    "away_pass_accuracy": 79.01615969581749,
+    "home_fouls_avg": 8.392857142857142,
+    "away_fouls_avg": 9.807692307692308,
+    "home_yellow_avg": 1.6785714285714286,
+    "away_yellow_avg": 1.7692307692307692,
+    "odds_home": 2.1,
+    "odds_draw": 3.2,
+    "odds_away": 3.55,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 47
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2135,
+        "2": 0.4298,
+        "X": 0.3567
+      },
+      "computed_odds": {
+        "1": 4.68,
+        "2": 2.33,
+        "X": 2.8
+      },
+      "confidence": 0.4298
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9925,
+        "Under": 0.0075
+      },
+      "computed_odds": {
+        "Over": 1.01,
+        "Under": 99.0
+      },
+      "confidence": 0.9925
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2135,
+        "2": 0.4298,
+        "X": 0.3567
+      },
+      "computed_odds": {
+        "1": 4.68,
+        "2": 2.33,
+        "X": 2.8
+      },
+      "confidence": 0.4298
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9925,
+        "Under": 0.0075
+      },
+      "computed_odds": {
+        "Over": 1.01,
+        "Under": 99.0
+      },
+      "confidence": 0.9925
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4216,
+        "X": 0.2367,
+        "2": 0.3417
+      },
+      "computed_odds": {
+        "1": 2.37,
+        "X": 4.22,
+        "2": 2.93
+      },
+      "confidence": 0.4216
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.6842105263157895,
+        "away": 0.4736842105263158,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.4448795770511063,
+        "away": 0.26316820050910517,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6111111111111112,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 1.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5446428571428572,
+        "away": 0.46153846153846156,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 1.0,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3444419047619047,
+        "away": 0.32284307692307695,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.3887362637362637
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 6.7
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "away",
+          "impact": 5.0
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 4.2
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 2.7
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.39,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.4,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": false,
+    "ml_result": "2",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Under"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udcdc Home team dominates H2H (100% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 3.2,
+        "fair": 2.8,
+        "value_pct": 14.3
+      },
+      {
+        "outcome": "2",
+        "market": 3.55,
+        "fair": 2.33,
+        "value_pct": 52.4
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Inter U23": [],
+    "AC Lumezzane": []
+  }
+}

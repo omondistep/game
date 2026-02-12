@@ -9,6 +9,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import json
+import os
 from typing import Dict, List, Optional, Tuple
 import time
 from datetime import datetime, timedelta
@@ -17,33 +18,6 @@ from datetime import datetime, timedelta
 class ForebetScraper:
     """Scraper for extracting football match data from Forebet"""
 
-    # League code mapping (5-digit codes from URL)
-    LEAGUE_CODES = {
-        '23159': 'England Premier League',
-        '23351': 'England Championship',
-        '23161': 'Spain La Liga',
-        '23531': 'Spain Segunda Division',
-        '23441': 'Italy Serie A',
-        '23444': 'Italy Serie A',
-        '23551': 'Italy Serie B',
-        '23331': 'France Ligue 2',
-        '23341': 'Netherlands Eerste Divisie',
-        '24111': 'Portugal Liga Portugal',
-        '23171': 'Scotland Premiership',
-        '24171': 'Argentina Liga Profesional',
-        '24151': 'Colombia Primera A',
-        '23579': 'Cyprus First Division',
-        '23261': 'England League One',
-        '23301': 'England League Two',
-        '23391': 'England National League',
-        '23401': 'England National League North',
-        '23411': 'England National League South',
-        '24091': 'England Isthmian League',
-        '23481': 'England Premier League 2',
-        '23431': 'England SPL Premier Division',
-        '24236': 'Bulgaria First League',
-    }
-
     def __init__(self):
         self.headers = {
             'User-Agent': (
@@ -51,6 +25,105 @@ class ForebetScraper:
                 '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             )
         }
+        
+        # Load leagues database
+        self.leagues_db = {}
+        self._load_leagues_db()
+    
+    def _load_leagues_db(self):
+        """Load leagues from data/leagues_db.json."""
+        db_path = 'data/leagues_db.json'
+        if os.path.exists(db_path):
+            try:
+                with open(db_path, 'r', encoding='utf-8') as f:
+                    self.leagues_db = json.load(f)
+                print(f"Loaded {len(self.leagues_db)} leagues from database")
+            except Exception as e:
+                print(f"Error loading leagues_db: {e}")
+    
+    def _extract_league_info_from_page(self, soup: BeautifulSoup) -> Dict:
+        """Extract league info from page using the historical_matches approach.
+        
+        Returns dict with: league_code, country, league, league_url_path, country_code
+        """
+        info = {
+            'league_code': None,
+            'country': None,
+            'league': None,
+            'league_url_path': None,
+            'country_code': None
+        }
+        
+        # Method 1: Get shortTag (like "Az2", "Ve1", "Cl1")
+        short_tag = soup.find('span', class_='shortTag')
+        if short_tag:
+            short_code = short_tag.get_text(strip=True)
+            if short_code and len(short_code) >= 2:
+                info['league_code'] = short_code
+        
+        # Method 2: Get full info from getstag onclick
+        img_with_onclick = soup.find('img', onclick=True)
+        if img_with_onclick:
+            onclick = img_with_onclick.get('onclick', '')
+            # Pattern: getstag(this,match_id,'Country','League','url_path','country_code')
+            stag_match = re.search(r"getstag\(this,(\d+),'([^']+)','([^']+)','([^']+)','([^']+)'", onclick)
+            if stag_match:
+                if not info['country']:
+                    info['country'] = stag_match.group(2)
+                if not info['league']:
+                    info['league'] = stag_match.group(3)
+                if not info['league_url_path']:
+                    info['league_url_path'] = stag_match.group(4)
+                if not info['country_code']:
+                    info['country_code'] = stag_match.group(5)
+        
+        return info
+    
+    def _get_league_info(self, soup: BeautifulSoup, url: str) -> Dict:
+        """Get complete league info from leagues_db.
+        
+        This is the historical_matches approach:
+        - Extract match_id from URL (e.g., 2420044)
+        - Use match_id prefix + look up in leagues_db
+        """
+        # Extract match_id from URL
+        match_id_match = re.search(r'-(\d{5,7})$', url) if url else None
+        match_id = match_id_match.group(1) if match_id_match else None
+        
+        if match_id:
+            # Try exact match_id lookup first
+            if match_id in self.leagues_db:
+                db_info = self.leagues_db[match_id]
+                return {
+                    'league_code': db_info.get('league_code'),
+                    'country': db_info.get('country'),
+                    'league': db_info.get('league'),
+                    'league_url_path': db_info.get('league_url_path'),
+                    'country_code': db_info.get('country_code')
+                }
+            
+            # Try lookup by match_id prefix + league_code if available
+            # First extract page league_code if present
+            page_info = self._extract_league_info_from_page(soup)
+            league_code = page_info.get('league_code')
+            
+            if league_code:
+                # Look for entry like "Az2_238"
+                prefix = match_id[:3]
+                lookup_key = f"{league_code}_{prefix}"
+                if lookup_key in self.leagues_db:
+                    db_info = self.leagues_db[lookup_key]
+                    return {
+                        'league_code': db_info.get('league_code'),
+                        'country': db_info.get('country'),
+                        'league': db_info.get('league'),
+                        'league_url_path': db_info.get('league_url_path'),
+                        'country_code': db_info.get('country_code')
+                    }
+        
+        # Fallback: extract from page if not in db
+        page_info = self._extract_league_info_from_page(soup)
+        return page_info
 
     def _extract_league_code(self, url: str) -> Optional[str]:
         """Extract league code (first 5 digits) from URL.
@@ -295,25 +368,14 @@ class ForebetScraper:
             # Check if match has been played and extract result
             result = self._extract_result_from_soup(soup)
             
-            # Extract league from URL
-            league_code = self._extract_league_code(url)
-            
-            # Try to extract league name from page HTML
-            page_league = self._extract_league_from_page(soup, url)
-            
-            # If page has league info, save to database and use it
-            if page_league:
-                self._auto_save_league(league_code, page_league)
-                league_name = page_league
-            else:
-                # Fallback to database/prompt
-                league_name = self._get_league_name(league_code, prompt_user) if league_code else None
+            # Get league info using the historical approach (from page + database)
+            league_info = self._get_league_info(soup, url)
             
             match_data = {
                 'url': url,
                 'timestamp': time.time(),
                 'teams': self._extract_teams(soup),
-                'match_info': self._extract_match_info(soup, league_code, league_name),
+                'match_info': league_info,
                 'standings': self._extract_standings(soup),
                 'league_table': self._extract_league_table(soup),
                 'form': self._extract_form(soup),

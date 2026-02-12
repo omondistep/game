@@ -1,0 +1,72 @@
+{
+  "league_key": "Tz1_242",
+  "league_info": {
+    "league_code": "Tz1",
+    "match_id_prefix": "242",
+    "country": "Tanzania",
+    "league": "",
+    "league_url_path": "predictions-tanzania/ligi-kuu-bara",
+    "country_code": "tz",
+    "match_count": 24,
+    "teams": {
+      "Simba": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Mashujaa": {
+        "home_matches": 0,
+        "away_matches": 6
+      },
+      "Azam": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Kitayosce": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Mbeya City": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Pamba Jiji": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Mtibwa Sugar": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Tanzania Prisons": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "JKT Tanzania": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Dodoma Jiji": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "KMC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Singida Big Stars": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Namungo": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Coastal Union": {
+        "home_matches": 0,
+        "away_matches": 4
+      }
+    }
+  },
+  "example_count": 24,
+  "trained_at": "2026-02-12T10:10:11.908171"
+}

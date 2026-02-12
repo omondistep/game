@@ -1,0 +1,40 @@
+{
+  "league_key": "NlW_241",
+  "league_info": {
+    "league_code": "NlW",
+    "match_id_prefix": "241",
+    "country": "Netherlands",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-netherlands/knvb-beker-women",
+    "country_code": "nl",
+    "match_count": 6,
+    "teams": {
+      "PSV W": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Utrecht W": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Feyenoord W": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "AZ W": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sparta Rotterdam W": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "HERA W": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T10:09:58.902143"
+}

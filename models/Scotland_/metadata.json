@@ -1,0 +1,40 @@
+{
+  "league_key": "Sc5_233",
+  "league_info": {
+    "league_code": "Sc5",
+    "match_id_prefix": "233",
+    "country": "Scotland",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-scotland/highland-league",
+    "country_code": "gb-sct",
+    "match_count": 6,
+    "teams": {
+      "Nairn County": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Brora Rangers": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Banks O' Dee": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Rothes FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Deveronvale FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Strathspey Thistle": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T10:10:05.147232"
+}

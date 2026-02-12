@@ -3,9 +3,9 @@
 Daily Training Script for Football Prediction Model
 Automates daily model training by:
 1. Scraping yesterday's match results from Forebet
-2. Checking for new leagues and updating database
-3. Retraining the model with all available data
-4. Showing training statistics
+2. Saving to JSON format
+3. Retraining models using rebuild_data.py
+4. Auto-discovers new leagues from JSON data
 
 Usage:
     python daily_train.py              # Run full daily training
@@ -20,6 +20,7 @@ Cron setup (run at 8 AM daily):
 import os
 import sys
 import json
+import glob
 import time
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
@@ -33,16 +34,14 @@ DATA_DIR = "data"
 RESULTS_FILE = "results.txt"
 LAST_TRAIN_FILE = "data/last_training.json"
 LAST_SCRAPE_FILE = "data/last_scrape.json"
-MATCHES_FILE = "data/matches.json"
 LEAGUES_DB_FILE = "data/leagues_db.json"
 
 
 class DailyTrainer:
-    """Handles daily model training with scraping and league updates."""
+    """Handles daily model training with scraping and league auto-discovery."""
     
     def __init__(self):
         self.data_dir = DATA_DIR
-        self.matches_file = MATCHES_FILE
         self.leagues_db_file = LEAGUES_DB_FILE
         
     def get_yesterday_date(self) -> str:
@@ -74,24 +73,19 @@ class DailyTrainer:
     
     def scrape_yesterday_matches(self) -> Dict:
         """
-        Scrape yesterday's matches from Forebet.
+        Scrape yesterday's matches from Forebet and save to JSON.
         Returns dict with scraped_count, new_leagues_found, errors.
         """
-        from football_scraper import FootballScraper
-        from data_storage import MatchDataStorage
+        from scrape_historical import HistoricalForebetScraper
         
-        scraper = FootballScraper()
-        storage = MatchDataStorage()
+        scraper = HistoricalForebetScraper()
         
         yesterday = self.get_yesterday_date()
         print(f"\n📅 Scraping matches for {yesterday}...")
         
         # Scrape historical matches for yesterday
         try:
-            historical_url = f"https://www.forebet.com/en/football-matches-predictions/{yesterday}/results"
-            print(f"   URL: {historical_url}")
-            
-            matches = scraper.scrape_historical_matches(historical_url)
+            matches = scraper.scrape_historical_matches(yesterday)
             
             if not matches:
                 print(f"   ⚠ No matches found for {yesterday}")
@@ -99,91 +93,121 @@ class DailyTrainer:
             
             print(f"   ✓ Found {len(matches)} matches")
             
-            # Save matches and extract results
-            saved_count = 0
-            new_leagues = set()
+            # Save to JSON file
+            json_file = f"data/historical_matches_{yesterday}.json"
+            with open(json_file, 'w', encoding='utf-8') as f:
+                json.dump(matches, f, indent=2, default=str)
             
-            for match in matches:
-                league = match.get('league', 'Unknown')
-                url = match.get('url', '')
-                home_score = match.get('home_score')
-                away_score = match.get('away_score')
-                
-                # Check if this is a new league
-                if league not in storage.get_all_leagues():
-                    new_leagues.add(league)
-                
-                # Save match with result
-                if home_score is not None and away_score is not None:
-                    ok = storage.save_match_with_result(match)
-                    if ok:
-                        saved_count += 1
+            print(f"   ✓ Saved to {json_file}")
             
-            # Update leagues database if new leagues found
-            if new_leagues:
-                print(f"   🆕 New leagues found: {len(new_leagues)}")
-                for league in new_leagues:
-                    print(f"      - {league}")
-                self.update_league_database(list(new_leagues))
+            # Count matches with results
+            with_results = sum(1 for m in matches if m.get('has_result'))
+            
+            # Auto-discover leagues from JSON
+            leagues_seen = set()
+            for m in matches:
+                league_code = m.get('league_code', '')
+                match_id = m.get('match_id', '')
+                league_key = f"{league_code}_{match_id[:3]}" if len(match_id) >= 3 else league_code
+                leagues_seen.add(league_key)
             
             self.save_scrape_date(yesterday)
             
             return {
-                'scraped_count': saved_count,
-                'total_found': len(matches),
-                'new_leagues': len(new_leagues),
+                'scraped_count': len(matches),
+                'with_results': with_results,
+                'new_leagues': len(leagues_seen),
+                'json_file': json_file,
                 'errors': []
             }
             
         except Exception as e:
             print(f"   ❌ Error scraping: {e}")
-            return {'scraped_count': 0, 'total_found': 0, 'new_leagues': 0, 'errors': [str(e)]}
+            return {'scraped_count': 0, 'with_results': 0, 'new_leagues': 0, 'errors': [str(e)]}
     
-    def update_league_database(self, new_leagues: List[str]):
-        """Update leagues database with new leagues."""
+    # ==================== LEAGUE AUTO-DISCOVERY ====================
+    
+    def check_new_leagues(self) -> List[str]:
+        """
+        Auto-discover leagues from JSON files.
+        Returns list of unique league keys found.
+        """
+        json_files = glob.glob(f"{self.data_dir}/historical_matches_*.json")
+        
+        if not json_files:
+            return []
+        
+        leagues_db = set()
+        if os.path.exists(self.leagues_db_file):
+            try:
+                with open(self.leagues_db_file, 'r', encoding='utf-8') as f:
+                    leagues_data = json.load(f)
+                    leagues_db = set(leagues_data.keys())
+            except:
+                pass
+        
+        new_leagues = []
+        for json_file in json_files:
+            try:
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    matches = json.load(f)
+                    for match in matches:
+                        league_code = match.get('league_code', '')
+                        match_id = match.get('match_id', '')
+                        league_key = f"{league_code}_{match_id[:3]}" if len(match_id) >= 3 else league_code
+                        if league_key and league_key not in leagues_db:
+                            new_leagues.append(league_key)
+            except:
+                pass
+        
+        return list(set(new_leagues))
+    
+    def update_league_database(self):
+        """
+        Update leagues database by auto-discovering from all JSON files.
+        Uses comprehensive league info from historical_matches JSON.
+        """
         leagues_db = {}
         
         if os.path.exists(self.leagues_db_file):
             try:
-                with open(self.leagues_db_file, 'r') as f:
+                with open(self.leagues_db_file, 'r', encoding='utf-8') as f:
                     leagues_db = json.load(f)
-            except Exception:
-                leagues_db = {}
+            except:
+                pass
         
-        for league in new_leagues:
-            leagues_db[league] = {
-                'name': league,
-                'added_date': self.get_today_date(),
-                'country': 'Unknown',
-                'tier': 3,
-                'active': True
-            }
+        # Scan all JSON files for league info
+        json_files = glob.glob(f"{self.data_dir}/historical_matches_*.json")
         
-        with open(self.leagues_db_file, 'w') as f:
-            json.dump(leagues_db, f, indent=2)
+        for json_file in json_files:
+            try:
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    matches = json.load(f)
+                    for match in matches:
+                        league_code = match.get('league_code', '')
+                        match_id = match.get('match_id', '')
+                        league_key = f"{league_code}_{match_id[:3]}" if len(match_id) >= 3 else league_code
+                        
+                        if league_key not in leagues_db:
+                            leagues_db[league_key] = {
+                                'league_code': league_code,
+                                'country': match.get('country', 'Unknown'),
+                                'league': match.get('league', 'Unknown'),
+                                'league_url_path': match.get('league_url_path', ''),
+                                'country_code': match.get('country_code', ''),
+                                'added_date': self.get_today_date(),
+                                'match_count': 0
+                            }
+                        
+                        leagues_db[league_key]['match_count'] += 1
+            except Exception as e:
+                print(f"   ⚠ Error reading {json_file}: {e}")
         
-        print(f"   ✅ Updated league database with {len(new_leagues)} new leagues")
-    
-    def check_new_leagues(self) -> List[str]:
-        """Check if there are new leagues in matches that need database updates."""
-        if not os.path.exists(self.matches_file):
-            return []
+        with open(self.leagues_db_file, 'w', encoding='utf-8') as f:
+            json.dump(leagues_db, f, indent=2, ensure_ascii=False)
         
-        with open(self.matches_file, 'r') as f:
-            matches = json.load(f)
-        
-        leagues_db = {}
-        if os.path.exists(self.leagues_db_file):
-            with open(self.leagues_db_file, 'r') as f:
-                leagues_db = json.load(f)
-        
-        new_leagues = []
-        for match in matches:
-            league = match.get('info', {}).get('league')
-            if league and league not in leagues_db:
-                new_leagues.append(league)
-        
-        return list(set(new_leagues))
+        print(f"   ✅ League database updated: {len(leagues_db)} leagues")
+        return leagues_db
     
     # ==================== TRAINING ====================
     
@@ -212,117 +236,85 @@ class DailyTrainer:
         time_since = datetime.now() - last_train
         return time_since.total_seconds() > (24 * 3600)  # 24 hours
     
-    def get_training_data_stats(self) -> Dict:
-        """Get statistics about the training data."""
-        if not os.path.exists(MATCHES_FILE):
-            return {'total_matches': 0, 'leagues': 0}
-        
-        with open(MATCHES_FILE, 'r') as f:
-            matches = json.load(f)
-        
-        leagues = set()
-        for match in matches:
-            league = match.get('info', {}).get('league')
-            if league:
-                leagues.add(league)
-        
-        return {
-            'total_matches': len(matches),
-            'leagues': len(leagues)
-        }
-    
     def train_model(self) -> Dict:
         """
-        Train the prediction model with all available data.
+        Train the prediction model using rebuild_data.py.
+        Reads from historical_matches JSON files.
         """
-        from prediction_model import FootballPredictor
-        import pickle
+        import subprocess
         
-        print("\n🔧 Training models...")
+        print("\n🔧 Training models using JSON data...")
         
-        predictor = FootballPredictor()
+        # First update league database
+        print("\n📋 Auto-discovering leagues from JSON files...")
+        self.update_league_database()
         
-        # Load training data
-        training_file = "data/training_data.pkl"
-        if not os.path.exists(training_file):
-            print("   ❌ No training data found!")
-            return {'error': 'No training data'}
-        
-        with open(training_file, 'rb') as f:
-            training_data = pickle.load(f)
-        
-        # Combine all examples for global model
-        all_examples = []
-        for entry in training_data:
-            examples = entry.get('examples', [])
-            all_examples.extend(examples)
-        
-        print(f"   Training on {len(all_examples)} examples...")
-        
-        # Train global model
-        global_result = predictor.train(all_examples)
-        
-        if 'error' in global_result:
-            print(f"   ⚠ Global model training: {global_result['error']}")
-        else:
-            print(f"   ✅ Global model trained ({global_result.get('training_examples', 0)} examples)")
-        
-        # Train league-specific models
-        league_results = {}
-        leagues_trained = 0
-        
-        for entry in training_data:
-            league = entry.get('league')
-            examples = entry.get('examples', [])
+        try:
+            # Run rebuild_data.py to train models
+            result = subprocess.run(
+                [sys.executable, 'rebuild_data.py'],
+                capture_output=True,
+                text=True,
+                cwd=os.path.dirname(os.path.abspath(__file__))
+            )
             
-            if len(examples) >= 10:  # Minimum for league-specific model
-                result = predictor.train(training_data, league=league)
-                if 'error' not in result:
-                    leagues_trained += 1
-                    league_results[league] = {
-                        'examples': len(examples),
-                        'accuracy': result.get('result_accuracy', 0)
-                    }
-        
-        print(f"   ✅ Trained {leagues_trained} league-specific models")
-        
-        # Save training timestamp
-        self.save_training_time()
-        
-        return {
-            'global_model': global_result,
-            'league_models': league_results,
-            'total_examples': len(all_examples),
-            'leagues_trained': leagues_trained
-        }
+            if result.returncode != 0:
+                print(f"   ❌ Training error: {result.stderr}")
+                return {'error': result.stderr}
+            
+            # Parse output for stats
+            output = result.stdout
+            print(output)
+            
+            # Save training timestamp
+            self.save_training_time()
+            
+            return {
+                'success': True,
+                'message': 'Training completed successfully'
+            }
+        except Exception as e:
+            print(f"   ❌ Training error: {e}")
+            return {'error': str(e)}
     
     # ==================== STATS ====================
     
     def show_stats(self):
         """Show current training statistics."""
-        from model_stats import get_training_stats
-        
-        stats = get_training_stats()
-        
         print("\n" + "=" * 60)
         print("📊 FOOTBALL PREDICTION MODEL - DAILY STATUS")
         print("=" * 60)
         
-        print(f"\n🗄️  Training Data:")
-        print(f"   Total examples: {stats.get('training_count', 0)}")
+        # Count JSON files and matches
+        json_files = glob.glob(f"{self.data_dir}/historical_matches_*.json")
+        total_matches = 0
+        for jf in json_files:
+            try:
+                with open(jf, 'r', encoding='utf-8') as f:
+                    matches = json.load(f)
+                    total_matches += len(matches)
+            except:
+                pass
+        
+        print(f"\n🗄️  Data Files:")
+        print(f"   JSON files: {len(json_files)}")
+        print(f"   Total matches: {total_matches}")
+        
+        # League stats
+        if os.path.exists(self.leagues_db_file):
+            try:
+                with open(self.leagues_db_file, 'r', encoding='utf-8') as f:
+                    leagues_db = json.load(f)
+                    print(f"   Leagues: {len(leagues_db)}")
+            except:
+                pass
         
         print(f"\n📈 Latest Training:")
-        if stats.get('last_training'):
-            last = datetime.fromisoformat(stats['last_training'])
-            print(f"   Last training: {last.strftime('%Y-%m-%d %H:%M')}")
-        
-        result_acc = stats.get('result_accuracy', 0)
-        ou_acc = stats.get('ou_accuracy', 0)
-        
-        print(f"\n   Match Result Accuracy: {result_acc:.1%}")
-        print(f"   Over/Under Accuracy:   {ou_acc:.1%}")
-        
-        print(f"\n📜 Training History: {stats.get('total_trainings', 0)} trainings")
+        last_train = self.get_last_training_time()
+        if last_train:
+            print(f"   Last training: {last_train.strftime('%Y-%m-%d %H:%M')}")
+        else:
+            print(f"   No training recorded")
         
         print("\n" + "=" * 60)
     
@@ -358,23 +350,23 @@ class DailyTrainer:
             results['scrape'] = scrape_result
             print(f"\n📥 Scrape Results:")
             print(f"   Matches saved: {scrape_result.get('scraped_count', 0)}")
-            print(f"   New leagues: {scrape_result.get('new_leagues', 0)}")
+            print(f"   With results: {scrape_result.get('with_results', 0)}")
         
-        # Step 2: Check for new leagues
-        new_leagues = self.check_new_leagues()
-        if new_leagues and not train_only:
-            print(f"\n🆕 New leagues in matches: {len(new_leagues)}")
-            self.update_league_database(new_leagues)
+        # Step 2: Auto-discover leagues from JSON
+        if not train_only:
+            print(f"\n🔍 Auto-discovering leagues...")
+            new_leagues = self.check_new_leagues()
+            if new_leagues:
+                print(f"   Found {len(new_leagues)} leagues")
+            self.update_league_database()
         
         # Step 3: Train model
         if not scrape_only:
             train_result = self.train_model()
             results['train'] = train_result
             
-            if 'error' not in train_result.get('global_model', {}):
-                print(f"\n✅ Training completed:")
-                print(f"   Examples: {train_result.get('total_examples', 0)}")
-                print(f"   League models: {train_result.get('leagues_trained', 0)}")
+            if 'error' not in train_result:
+                print(f"\n✅ Training completed successfully")
         
         # Step 4: Show stats
         self.show_stats()

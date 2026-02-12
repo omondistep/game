@@ -1,0 +1,36 @@
+{
+  "league_key": "Mr1_242",
+  "league_info": {
+    "league_code": "Mr1",
+    "match_id_prefix": "242",
+    "country": "Mauritania",
+    "league": "",
+    "league_url_path": "predictions-mauritania/ligue-1",
+    "country_code": "mr",
+    "match_count": 6,
+    "teams": {
+      "Chemal": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Nouakchott Academie": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Nouakchott King's": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Ksar": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Nouadhibou": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T10:09:53.964890"
+}

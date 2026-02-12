@@ -1,0 +1,92 @@
+{
+  "league_key": "Ng1_238",
+  "league_info": {
+    "league_code": "Ng1",
+    "match_id_prefix": "238",
+    "country": "Nigeria",
+    "league": "",
+    "league_url_path": "nigeria/npfl",
+    "country_code": "ng",
+    "match_count": 28,
+    "teams": {
+      "Remo Stars": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Kun Khalifa": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Kano Pillars": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Katsina United": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Plateau United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Enugu Rangers": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Abia Warriors": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Wikki Tourists": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Nasarawa Utd": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Enyimba": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Bayelsa United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Niger Tornadoes": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Bendel Insurance": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Barau": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Warri Wolves": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Ikorodu City": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Shooting Stars SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Kwara United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "El Kanemi Warriors": {
+        "home_matches": 2,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 28,
+  "trained_at": "2026-02-12T10:09:57.789910"
+}

@@ -1,0 +1,96 @@
+{
+  "league_key": "CD1_242",
+  "league_info": {
+    "league_code": "CD1",
+    "match_id_prefix": "242",
+    "country": "DR Congo",
+    "league": "",
+    "league_url_path": "predictions-dr-congo/ligue-1",
+    "country_code": "cd",
+    "match_count": 30,
+    "teams": {
+      "Groupe Bazano": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Lubumbashi Sport": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Blessing": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "US Panda": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "CS Don Bosco": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "CS Manika": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "SM Sanga Balende": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "TP Mazembe": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Tanganyika": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "FC Tshikas": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "New Soger": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Malole": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "FC Mk de Kinshasa": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "DC Motema Pembe": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Dauphins Noirs": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Celeste": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "New Jack": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "AC Rangers": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "AS Vita Club": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "US Tshinkunku": {
+        "home_matches": 2,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 30,
+  "trained_at": "2026-02-12T10:09:29.889682"
+}

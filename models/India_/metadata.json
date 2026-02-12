@@ -1,0 +1,48 @@
+{
+  "league_key": "InT_242",
+  "league_info": {
+    "league_code": "InT",
+    "match_id_prefix": "242",
+    "country": "India",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-india/santosh-trophy",
+    "country_code": "in",
+    "match_count": 12,
+    "teams": {
+      "Tamilnadu": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Punjab": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Railway": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Rajasthan United": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "West Bengal": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Services": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Kerala": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Assam": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 12,
+  "trained_at": "2026-02-12T10:09:44.024769"
+}

@@ -1,0 +1,56 @@
+{
+  "league_key": "Bb1_241",
+  "league_info": {
+    "league_code": "Bb1",
+    "match_id_prefix": "241",
+    "country": "Barbados",
+    "league": "",
+    "league_url_path": "predictions-barbados/premier-league",
+    "country_code": "bb",
+    "match_count": 20,
+    "teams": {
+      "Ellerton": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "UWI Blackbirds": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Brittons Hill": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Pride of Gall Hill": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Bagatelle": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Paradise": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Weymouth Wales": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "St. Andrew Lions": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Wotton": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Kick Start": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 20,
+  "trained_at": "2026-02-12T10:09:20.546864"
+}

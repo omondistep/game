@@ -1,0 +1,96 @@
+{
+  "league_key": "Iq1_242",
+  "league_info": {
+    "league_code": "Iq1",
+    "match_id_prefix": "242",
+    "country": "Iraq",
+    "league": "",
+    "league_url_path": "predictions-iraq/stars-league",
+    "country_code": "iq",
+    "match_count": 20,
+    "teams": {
+      "Gharraf": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Shorta Baghdad": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Diyala FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Karkh SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Najaf FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Qasim SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Arbil FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Naft SC Baghdad": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Al-Karma": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Talaba Baghdad": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Zawra'a Baghdad": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Zakho FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Kahraba Baghdad": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Duhok SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Baghdad SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Mina'a Basra": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Quwa Al Jawiya": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Naft Maysan": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Mosul FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Newroz SC (IRQ)": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 20,
+  "trained_at": "2026-02-12T10:09:44.775829"
+}

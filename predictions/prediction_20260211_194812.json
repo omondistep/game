@@ -1,0 +1,245 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/fc-s%C3%BCdtirol-monza-2355737",
+  "timestamp": "2026-02-11T19:48:12.464458",
+  "features": {
+    "home_position": 10,
+    "away_position": 2,
+    "position_diff": 8,
+    "away_points": 47,
+    "home_points": 29,
+    "home_form_points": 13,
+    "away_form_points": 13,
+    "home_recent_form": 7,
+    "away_recent_form": 9,
+    "home_wins_l6": 4,
+    "home_draws_l6": 1,
+    "home_losses_l6": 1,
+    "away_wins_l6": 4,
+    "away_draws_l6": 1,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.0416666666666667,
+    "home_conceded_avg": 1.0833333333333333,
+    "away_scored_avg": 1.5,
+    "away_conceded_avg": 0.8333333333333334,
+    "expected_total_goals": 2.2291666666666665,
+    "home_home_win_rate": 45.45454545454545,
+    "home_home_goals_avg": 1.3636363636363635,
+    "away_away_win_rate": 45.45454545454545,
+    "away_away_goals_avg": 1.3636363636363635,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 67.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 11.916666666666666,
+    "away_shots_avg": 14.583333333333334,
+    "home_shots_on_target_pct": 29.72027972027972,
+    "away_shots_on_target_pct": 31.142857142857146,
+    "home_dangerous_attacks_avg": 54.541666666666664,
+    "away_dangerous_attacks_avg": 44.75,
+    "home_possession": 37.33,
+    "away_possession": 54.0,
+    "home_pass_accuracy": 66.50194669062593,
+    "away_pass_accuracy": 83.09178743961353,
+    "home_fouls_avg": 16.625,
+    "away_fouls_avg": 13.625,
+    "home_yellow_avg": 2.25,
+    "away_yellow_avg": 2.25,
+    "odds_home": 3.8,
+    "odds_draw": 3.1,
+    "odds_away": 2.1,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 40
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1363,
+        "2": 0.5739,
+        "X": 0.2898
+      },
+      "computed_odds": {
+        "1": 7.34,
+        "2": 1.74,
+        "X": 3.45
+      },
+      "confidence": 0.5739
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0262,
+        "Under": 0.9738
+      },
+      "computed_odds": {
+        "Over": 38.17,
+        "Under": 1.03
+      },
+      "confidence": 0.9738
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1363,
+        "2": 0.5739,
+        "X": 0.2898
+      },
+      "computed_odds": {
+        "1": 7.34,
+        "2": 1.74,
+        "X": 3.45
+      },
+      "confidence": 0.5739
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0262,
+        "Under": 0.9738
+      },
+      "computed_odds": {
+        "Over": 38.17,
+        "Under": 1.03
+      },
+      "confidence": 0.9738
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3415,
+        "X": 0.2771,
+        "2": 0.3813
+      },
+      "computed_odds": {
+        "1": 2.93,
+        "X": 3.61,
+        "2": 2.62
+      },
+      "confidence": 0.3813
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.9473684210526316,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.2478111914731633,
+        "away": 0.4484202512371526,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.7222222222222222,
+        "away": 0.7222222222222222,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 1.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.48958333333333337,
+        "away": 0.6666666666666666,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.17,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3545355555555555,
+        "away": 0.5434444444444445,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.67,
+      "expected_goals": 2.2291666666666665
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 10.0
+        },
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 8.4
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 3.0
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 2.7
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.23,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.54,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "2",
+    "weighted_result": "2",
+    "ml_ou": "Under",
+    "weighted_ou": "Under"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\ud83d\udd25 Away team in excellent form (4 wins in last 6)",
+      "\ud83d\udcca Away team significantly higher in table (#2 vs #10)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 2.1,
+        "fair": 1.74,
+        "value_pct": 20.7
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "FC S\u00fcdtirol": [],
+    "Monza": []
+  }
+}

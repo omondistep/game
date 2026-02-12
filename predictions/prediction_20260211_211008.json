@@ -1,0 +1,237 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/velez-mostar-siroki-brijeg-2423668",
+  "timestamp": "2026-02-11T21:09:28.689345",
+  "features": {
+    "home_position": 4,
+    "away_position": 5,
+    "position_diff": -1,
+    "home_form_points": 10,
+    "away_form_points": 6,
+    "home_recent_form": 5,
+    "away_recent_form": 4,
+    "home_wins_l6": 2,
+    "home_draws_l6": 4,
+    "home_losses_l6": 0,
+    "away_wins_l6": 1,
+    "away_draws_l6": 3,
+    "away_losses_l6": 2,
+    "home_scored_avg": 0.9523809523809523,
+    "home_conceded_avg": 0.9047619047619048,
+    "away_scored_avg": 1.1904761904761905,
+    "away_conceded_avg": 1.2380952380952381,
+    "expected_total_goals": 2.1428571428571432,
+    "home_home_win_rate": 40.0,
+    "home_home_goals_avg": 0.7,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.1818181818181819,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 9.333333333333334,
+    "away_shots_avg": 8.857142857142858,
+    "home_shots_on_target_pct": 35.714285714285715,
+    "away_shots_on_target_pct": 36.55913978494624,
+    "home_dangerous_attacks_avg": 56.714285714285715,
+    "away_dangerous_attacks_avg": 46.80952380952381,
+    "home_possession": 52.7,
+    "away_possession": 43.9,
+    "home_pass_accuracy": 81.03487576931843,
+    "away_pass_accuracy": 76.4730999146029,
+    "home_fouls_avg": 8.19047619047619,
+    "away_fouls_avg": 10.714285714285714,
+    "home_yellow_avg": 2.0476190476190474,
+    "away_yellow_avg": 1.7142857142857142,
+    "odds_home": 1.8,
+    "odds_draw": 3.1,
+    "odds_away": 4.2,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 37
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2598,
+        "2": 0.4152,
+        "X": 0.3251
+      },
+      "computed_odds": {
+        "1": 3.85,
+        "2": 2.41,
+        "X": 3.08
+      },
+      "confidence": 0.4152
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0,
+        "Under": 1.0
+      },
+      "computed_odds": {
+        "Over": 99.0,
+        "Under": 1.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2598,
+        "2": 0.4152,
+        "X": 0.3251
+      },
+      "computed_odds": {
+        "1": 3.85,
+        "2": 2.41,
+        "X": 3.08
+      },
+      "confidence": 0.4152
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0,
+        "Under": 1.0
+      },
+      "computed_odds": {
+        "Over": 99.0,
+        "Under": 1.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4328,
+        "X": 0.2396,
+        "2": 0.3275
+      },
+      "computed_odds": {
+        "1": 2.31,
+        "X": 4.17,
+        "2": 3.05
+      },
+      "confidence": 0.4328
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.8421052631578947,
+        "away": 0.7894736842105263,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.49770642201834864,
+        "away": 0.21330275229357798,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5555555555555556,
+        "away": 0.3333333333333333,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5119047619047619,
+        "away": 0.4880952380952381,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.36064444444444443,
+        "away": 0.29197142857142855,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.1428571428571432
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 4.4
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 4.3
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 3.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.14,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.14,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": true,
+    "ml_result": "2",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Under"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 4.2,
+        "fair": 2.41,
+        "value_pct": 74.3
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Velez Mostar": [],
+    "Siroki Brijeg": []
+  }
+}

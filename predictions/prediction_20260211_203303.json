@@ -1,0 +1,239 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/ad-sarch%C3%AD-santa-cruz-fc-2413602",
+  "timestamp": "2026-02-11T20:29:41.403791",
+  "features": {
+    "home_position": 3,
+    "away_position": 5,
+    "position_diff": -2,
+    "home_points": 18,
+    "away_points": 13,
+    "home_form_points": 10,
+    "away_form_points": 5,
+    "home_recent_form": 5,
+    "away_recent_form": 1,
+    "home_wins_l6": 2,
+    "home_draws_l6": 4,
+    "home_losses_l6": 0,
+    "away_wins_l6": 1,
+    "away_draws_l6": 2,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.3333333333333333,
+    "home_conceded_avg": 1.3888888888888888,
+    "away_scored_avg": 0.8421052631578947,
+    "away_conceded_avg": 1.368421052631579,
+    "expected_total_goals": 2.466374269005848,
+    "home_home_win_rate": 22.22222222222222,
+    "home_home_goals_avg": 1.3333333333333333,
+    "away_away_win_rate": 14.285714285714285,
+    "away_away_goals_avg": 0.5714285714285714,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 50.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 7.888888888888889,
+    "away_shots_avg": 5.684210526315789,
+    "home_shots_on_target_pct": 40.140845070422536,
+    "away_shots_on_target_pct": 23.14814814814815,
+    "home_dangerous_attacks_avg": 34.666666666666664,
+    "away_dangerous_attacks_avg": 21.05263157894737,
+    "home_possession": 47.31,
+    "away_possession": 49.89,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 9.0,
+    "away_fouls_avg": 4.0,
+    "home_yellow_avg": 2.1666666666666665,
+    "away_yellow_avg": 1.263157894736842,
+    "odds_home": 1.8,
+    "odds_draw": 3.7,
+    "odds_away": 3.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 45
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4786,
+        "2": 0.3563,
+        "X": 0.1652
+      },
+      "computed_odds": {
+        "1": 2.09,
+        "2": 2.81,
+        "X": 6.05
+      },
+      "confidence": 0.4786
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9909,
+        "Under": 0.0091
+      },
+      "computed_odds": {
+        "Over": 1.01,
+        "Under": 99.0
+      },
+      "confidence": 0.9909
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4786,
+        "2": 0.3563,
+        "X": 0.1652
+      },
+      "computed_odds": {
+        "1": 2.09,
+        "2": 2.81,
+        "X": 6.05
+      },
+      "confidence": 0.4786
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9909,
+        "Under": 0.0091
+      },
+      "computed_odds": {
+        "Over": 1.01,
+        "Under": 99.0
+      },
+      "confidence": 0.9909
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4249,
+        "X": 0.28,
+        "2": 0.2951
+      },
+      "computed_odds": {
+        "1": 2.35,
+        "X": 3.57,
+        "2": 3.39
+      },
+      "confidence": 0.4249
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.8947368421052632,
+        "away": 0.7894736842105263,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.49980702431493634,
+        "away": 0.2570436125048244,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5555555555555556,
+        "away": 0.2777777777777778,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.16666666666666666,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.4861111111111111,
+        "away": 0.3684210526315789,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.5,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.28386,
+        "away": 0.29934,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.5,
+      "expected_goals": 2.466374269005848
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 5.6
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 3.6
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.47,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.18,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": false,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Under"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcc9 Away team struggles away (14% win rate)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 3.5,
+        "fair": 2.81,
+        "value_pct": 24.6
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "AD Sarch\u00ed": [],
+    "Santa Cruz FC": []
+  }
+}

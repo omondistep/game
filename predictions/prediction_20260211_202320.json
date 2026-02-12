@@ -1,0 +1,244 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/sp-la-fiorita-fc-fiorentino-2363359",
+  "timestamp": "2026-02-11T20:22:14.447294",
+  "features": {
+    "home_position": 5,
+    "away_position": 9,
+    "position_diff": -4,
+    "home_points": 35,
+    "away_points": 27,
+    "home_form_points": 13,
+    "away_form_points": 9,
+    "home_recent_form": 6,
+    "away_recent_form": 3,
+    "home_wins_l6": 4,
+    "home_draws_l6": 1,
+    "home_losses_l6": 1,
+    "away_wins_l6": 3,
+    "away_draws_l6": 0,
+    "away_losses_l6": 3,
+    "home_scored_avg": 2.0476190476190474,
+    "home_conceded_avg": 1.0476190476190477,
+    "away_scored_avg": 1.0526315789473684,
+    "away_conceded_avg": 1.5263157894736843,
+    "expected_total_goals": 2.837092731829574,
+    "home_home_win_rate": 40.0,
+    "home_home_goals_avg": 1.9,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.4444444444444444,
+    "h2h_home_win_pct": 100.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 9.571428571428571,
+    "away_shots_avg": 7.473684210526316,
+    "home_shots_on_target_pct": 44.27860696517413,
+    "away_shots_on_target_pct": 38.732394366197184,
+    "home_dangerous_attacks_avg": 49.23809523809524,
+    "away_dangerous_attacks_avg": 39.31578947368421,
+    "home_possession": 51.21,
+    "away_possession": 51.31,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 8.095238095238095,
+    "away_fouls_avg": 7.052631578947368,
+    "home_yellow_avg": 1.6666666666666667,
+    "away_yellow_avg": 1.3157894736842106,
+    "odds_home": 1.33,
+    "odds_draw": 4.75,
+    "odds_away": 7.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 48
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.611,
+        "2": 0.0961,
+        "X": 0.2929
+      },
+      "computed_odds": {
+        "1": 1.64,
+        "2": 10.41,
+        "X": 3.41
+      },
+      "confidence": 0.611
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 1.0,
+        "Under": 0.0
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.611,
+        "2": 0.0961,
+        "X": 0.2929
+      },
+      "computed_odds": {
+        "1": 1.64,
+        "2": 10.41,
+        "X": 3.41
+      },
+      "confidence": 0.611
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 1.0,
+        "Under": 0.0
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5076,
+        "X": 0.2154,
+        "2": 0.277
+      },
+      "computed_odds": {
+        "1": 1.97,
+        "X": 4.64,
+        "2": 3.61
+      },
+      "confidence": 0.5076
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.7894736842105263,
+        "away": 0.5789473684210527,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.6802721088435375,
+        "away": 0.1292517006802721,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.7222222222222222,
+        "away": 0.5,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.75,
+        "away": 0.381578947368421,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 1.0,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.35964095238095234,
+        "away": 0.30785999999999997,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.837092731829574
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 8.3
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 6.7
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 5.5
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 4.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.84,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.1,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\ud83d\udcdc Home team dominates H2H (100% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 4.75,
+        "fair": 3.41,
+        "value_pct": 39.3
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "SP La Fiorita": [],
+    "FC Fiorentino": []
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "league_key": "JO1_242",
+  "league_info": {
+    "league_code": "JO1",
+    "match_id_prefix": "242",
+    "country": "Jordan",
+    "league": "",
+    "league_url_path": "jordan/premier-league",
+    "country_code": "jo",
+    "match_count": 12,
+    "teams": {
+      "Shabab Al Urdun": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Faisaly Amman": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Ramtha Club": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Hussein Irbid": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Sama Al Sarhan": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Jazeera Amman": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Wihdat Amman": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Ahli Amman": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Al Salt": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Buqa'a Amman": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 12,
+  "trained_at": "2026-02-12T10:09:47.974662"
+}

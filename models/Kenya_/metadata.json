@@ -1,0 +1,40 @@
+{
+  "league_key": "Ke1_242",
+  "league_info": {
+    "league_code": "Ke1",
+    "match_id_prefix": "242",
+    "country": "Kenya",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-kenya/premier-league",
+    "country_code": "ke",
+    "match_count": 6,
+    "teams": {
+      "Mathare United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "KCB Nairobi": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Homeboyz FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Mara Sugar": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Kenya Police FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Bidco United": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T10:09:50.042063"
+}

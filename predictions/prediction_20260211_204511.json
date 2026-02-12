@@ -1,0 +1,247 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/lugano-servette-2423208",
+  "timestamp": "2026-02-11T20:44:31.773936",
+  "features": {
+    "home_position": 2,
+    "away_position": 9,
+    "position_diff": -7,
+    "home_points": 41,
+    "away_points": 25,
+    "home_form_points": 14,
+    "away_form_points": 6,
+    "home_recent_form": 5,
+    "away_recent_form": 4,
+    "home_wins_l6": 4,
+    "home_draws_l6": 2,
+    "home_losses_l6": 0,
+    "away_wins_l6": 1,
+    "away_draws_l6": 3,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.6071428571428572,
+    "home_conceded_avg": 1.3571428571428572,
+    "away_scored_avg": 1.6129032258064515,
+    "away_conceded_avg": 1.8387096774193548,
+    "expected_total_goals": 3.2079493087557602,
+    "home_home_win_rate": 53.84615384615385,
+    "home_home_goals_avg": 1.7692307692307692,
+    "away_away_win_rate": 37.5,
+    "away_away_goals_avg": 1.75,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 67.0,
+    "home_shots_avg": 14.035714285714286,
+    "away_shots_avg": 13.129032258064516,
+    "home_shots_on_target_pct": 33.33333333333333,
+    "away_shots_on_target_pct": 32.186732186732186,
+    "home_dangerous_attacks_avg": 45.035714285714285,
+    "away_dangerous_attacks_avg": 46.38709677419355,
+    "home_possession": 56.81,
+    "away_possession": 51.06,
+    "home_pass_accuracy": 85.92899504427655,
+    "away_pass_accuracy": 79.61102106969206,
+    "home_fouls_avg": 11.821428571428571,
+    "away_fouls_avg": 10.32258064516129,
+    "home_yellow_avg": 2.3214285714285716,
+    "away_yellow_avg": 2.4516129032258065,
+    "odds_home": 2.15,
+    "odds_draw": 3.5,
+    "odds_away": 3.2,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 44
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.57,
+        "2": 0.215,
+        "X": 0.215
+      },
+      "computed_odds": {
+        "1": 1.75,
+        "2": 4.65,
+        "X": 4.65
+      },
+      "confidence": 0.57
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0,
+        "Under": 1.0
+      },
+      "computed_odds": {
+        "Over": 99.0,
+        "Under": 1.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.57,
+        "2": 0.215,
+        "X": 0.215
+      },
+      "computed_odds": {
+        "1": 1.75,
+        "2": 4.65,
+        "X": 4.65
+      },
+      "confidence": 0.57
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0,
+        "Under": 1.0
+      },
+      "computed_odds": {
+        "Over": 99.0,
+        "Under": 1.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4746,
+        "X": 0.1942,
+        "2": 0.3312
+      },
+      "computed_odds": {
+        "1": 2.11,
+        "X": 5.15,
+        "2": 3.02
+      },
+      "confidence": 0.4746
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.58,
+        "Under": 0.42
+      },
+      "computed_odds": {
+        "Over": 1.72,
+        "Under": 2.38
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.9473684210526316,
+        "away": 0.5789473684210527,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.4374145674672915,
+        "away": 0.2938879125170865,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.7777777777777778,
+        "away": 0.3333333333333333,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.3333333333333333,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.5625,
+        "away": 0.4435483870967742,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.67,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.5420504761904763,
+        "away": 0.4773277419354839,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 3.2079493087557602
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 8.9
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 7.4
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 3.4
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 2.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.21,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.22,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": false,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\u26bd High-scoring match expected (avg 3.2 goals)",
+      "\ud83d\udcca Home team significantly higher in table (#2 vs #9)",
+      "\ud83d\udcdc Away team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 2.15,
+        "fair": 1.75,
+        "value_pct": 22.9
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Lugano": [],
+    "Servette": []
+  }
+}

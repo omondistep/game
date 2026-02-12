@@ -1,133 +1,125 @@
 #!/usr/bin/env python3
 """
-Update the league database by mapping 5-digit codes to short codes.
-This allows future match URLs to automatically find their league names.
+Update the league database from historical matches.
+This extracts league information from historical JSON files to build a league database.
 """
 
 import json
-import re
+import glob
 import os
+import re
 
 
-def extract_5digit_code(url: str) -> str:
-    """Extract 5-digit code from match URL."""
-    match = re.search(r'-(\d{5})\d{1,4}$', url)
-    if match:
-        return match.group(1)
-    return None
+def extract_match_info(url: str) -> tuple:
+    """Extract match ID from URL and determine league code prefix.
+    URL format: /en/football/matches/carabobo-portuguesa-2420044
+    """
+    parts = url.rstrip('/').split('-')
+    if parts:
+        match_id = parts[-1]
+        # Extract prefix from match_id (first 3 digits)
+        prefix = match_id[:3] if len(match_id) >= 3 else match_id
+        return match_id, prefix
+    return None, None
 
 
 def main():
-    # Load existing leagues (short code -> name/country)
+    # Load existing leagues database
     leagues_db = {}
-    if os.path.exists('data/leagues_db.json'):
-        with open('data/leagues_db.json', 'r', encoding='utf-8') as f:
+    leagues_db_path = 'data/leagues_db.json'
+    if os.path.exists(leagues_db_path):
+        with open(leagues_db_path, 'r', encoding='utf-8') as f:
             leagues_db = json.load(f)
     
-    # Load results.txt and build 5-digit code mapping
-    five_digit_to_short = {}
+    print(f"Loaded {len(leagues_db)} existing leagues")
     
-    if os.path.exists('results.txt'):
-        with open('results.txt', 'r', encoding='utf-8') as f:
-            for line in f:
-                parts = line.strip().split('|')
-                url = parts[0]
-                short_code = parts[3] if len(parts) > 3 else ''
-                league_name = parts[4] if len(parts) > 4 else ''
-                country = parts[5] if len(parts) > 5 else ''
+    # Find all historical matches JSON files
+    json_files = []
+    for pattern in ['historical_matches_*.json', 'data/historical_matches_*.json']:
+        json_files.extend(glob.glob(pattern))
+    
+    # Also check data directory for dated files
+    data_files = glob.glob('data/historical_matches_????-??-??.json')
+    json_files.extend(data_files)
+    json_files = list(set(json_files))  # Remove duplicates
+    json_files.sort()
+    
+    print(f"Found {len(json_files)} historical match files")
+    
+    # Track teams per league
+    league_teams = {}
+    
+    # Extract league info from all files
+    match_count = 0
+    
+    for json_file in json_files:
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                matches = json.load(f)
+            
+            for match in matches:
+                match_count += 1
                 
-                five_digit = extract_5digit_code(url)
-                if five_digit and short_code:
-                    five_digit_to_short[five_digit] = {
-                        'short_code': short_code,
-                        'league_name': league_name,
-                        'country': country
-                    }
+                url = match.get('url', '')
+                league_code = match.get('league_code', '')
+                country = match.get('country', '')
+                league = match.get('league', '')
+                league_url_path = match.get('league_url_path', '')
+                country_code = match.get('country_code', '')
+                home_team = match.get('home_team', '')
+                away_team = match.get('away_team', '')
+                
+                match_id, prefix = extract_match_info(url)
+                
+                if league_code and prefix:
+                    # Create combined key
+                    key = f"{league_code}_{prefix}"
+                    
+                    if key not in leagues_db:
+                        leagues_db[key] = {
+                            'league_code': league_code,
+                            'match_id_prefix': prefix,
+                            'country': country,
+                            'league': league,
+                            'league_url_path': league_url_path,
+                            'country_code': country_code,
+                            'match_count': 0,
+                            'teams': {}
+                        }
+                    
+                    # Update match count
+                    leagues_db[key]['match_count'] = leagues_db[key].get('match_count', 0) + 1
+                    
+                    # Track teams
+                    if 'teams' not in leagues_db[key]:
+                        leagues_db[key]['teams'] = {}
+                    
+                    for team in [home_team, away_team]:
+                        if team and team not in leagues_db[key]['teams']:
+                            leagues_db[key]['teams'][team] = {'home_matches': 0, 'away_matches': 0}
+        
+        except (json.JSONDecodeError, FileNotFoundError) as e:
+            print(f"Error reading {json_file}: {e}")
+            continue
     
-    # Build complete mapping: 5-digit -> full info
-    # Also check for divergence and use scraped data as precedence
-    
-    # Load existing 5-digit mappings from football_scraper.py
-    existing_5digit_codes = {
-        '23159': 'England Premier League',
-        '23351': 'England Championship',
-        '23161': 'Spain La Liga',
-        '23531': 'Spain Segunda Division',
-        '23441': 'Italy Serie A',
-        '23444': 'Italy Serie A',
-        '23551': 'Italy Serie B',
-        '23331': 'France Ligue 2',
-        '23341': 'Netherlands Eerste Divisie',
-        '24111': 'Portugal Liga Portugal',
-        '23171': 'Scotland Premiership',
-        '24171': 'Argentina Liga Profesional',
-        '24151': 'Colombia Primera A',
-        '23579': 'Cyprus First Division',
-        '23261': 'England League One',
-        '23301': 'England League Two',
-        '23391': 'England National League',
-        '23401': 'England National League North',
-        '23411': 'England National League South',
-        '24091': 'England Isthmian League',
-        '23481': 'England Premier League 2',
-        '23431': 'England SPL Premier Division',
-        '24236': 'Bulgaria First League',
-    }
-    
-    # Merge: scraped data takes precedence
-    final_mapping = {}
-    
-    for code, info in five_digit_to_short.items():
-        final_mapping[code] = {
-            'short_code': info['short_code'],
-            'league_name': info['league_name'],
-            'country': info['country'],
-            'source': 'scraped'
-        }
-        print(f"Scraped: {code} -> {info['short_code']} ({info['league_name']}, {info['country']})")
-    
-    for code, name in existing_5digit_codes.items():
-        if code not in final_mapping:
-            final_mapping[code] = {
-                'short_code': '',
-                'league_name': name,
-                'country': '',
-                'source': 'existing'
-            }
-            print(f"Existing: {code} -> {name}")
-    
-    # Save comprehensive mapping
+    # Save the updated leagues database
     os.makedirs('data', exist_ok=True)
     
-    with open('data/league_mapping.json', 'w', encoding='utf-8') as f:
-        json.dump(final_mapping, f, indent=2)
+    with open(leagues_db_path, 'w', encoding='utf-8') as f:
+        json.dump(leagues_db, f, indent=2, ensure_ascii=False)
     
-    print(f"\nTotal mappings: {len(final_mapping)}")
-    print("Saved to data/league_mapping.json")
+    print(f"\nTotal matches processed: {match_count}")
+    print(f"Total unique leagues: {len(leagues_db)}")
+    print(f"Saved to {leagues_db_path}")
     
-    # Also save short code -> full info mapping
-    short_code_db = {}
-    for code, info in final_mapping.items():
-        short = info['short_code']
-        if short and short not in short_code_db:
-            short_code_db[short] = {
-                'league_name': info['league_name'],
-                'country': info['country'],
-                'five_digit_code': code
-            }
-    
-    with open('data/short_leagues_db.json', 'w', encoding='utf-8') as f:
-        json.dump(short_code_db, f, indent=2)
-    
-    print(f"Short codes: {len(short_code_db)}")
-    print("Saved to data/short_leagues_db.json")
-    
-    # Print sample of the new league mapping
+    # Print sample of the league database
     print("\n" + "=" * 60)
-    print("Sample League Mapping:")
+    print("Sample League Database:")
     print("=" * 60)
-    for i, (code, info) in enumerate(list(final_mapping.items())[:10]):
-        print(f"{code}: {info['short_code']} - {info['league_name']} ({info['country']})")
+    for i, (key, info) in enumerate(list(leagues_db.items())[:10]):
+        print(f"{key}: {info['league']} ({info['country']})")
+        print(f"   URL path: {info['league_url_path']}")
+        print(f"   Matches: {info.get('match_count', 0)}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,244 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/giana-erminio-calcio-lecco-2358762",
+  "timestamp": "2026-02-11T21:06:07.139855",
+  "features": {
+    "home_position": 9,
+    "away_position": 3,
+    "position_diff": 6,
+    "away_points": 45,
+    "home_points": 35,
+    "home_form_points": 9,
+    "away_form_points": 8,
+    "home_recent_form": 6,
+    "away_recent_form": 1,
+    "home_wins_l6": 3,
+    "home_draws_l6": 0,
+    "home_losses_l6": 3,
+    "away_wins_l6": 2,
+    "away_draws_l6": 2,
+    "away_losses_l6": 2,
+    "home_scored_avg": 0.9615384615384616,
+    "home_conceded_avg": 1.0769230769230769,
+    "away_scored_avg": 1.1923076923076923,
+    "away_conceded_avg": 0.7307692307692307,
+    "expected_total_goals": 1.9807692307692308,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 0.75,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 8.461538461538462,
+    "away_shots_avg": 9.307692307692308,
+    "home_shots_on_target_pct": 39.09090909090909,
+    "away_shots_on_target_pct": 35.53719008264463,
+    "home_dangerous_attacks_avg": 66.3076923076923,
+    "away_dangerous_attacks_avg": 54.96153846153846,
+    "home_possession": 50.0,
+    "away_possession": 53.65,
+    "home_pass_accuracy": 81.97751322751323,
+    "away_pass_accuracy": 85.0585393049619,
+    "home_fouls_avg": 10.73076923076923,
+    "away_fouls_avg": 10.038461538461538,
+    "home_yellow_avg": 1.9615384615384615,
+    "away_yellow_avg": 1.8076923076923077,
+    "odds_home": 3.05,
+    "odds_draw": 3.1,
+    "odds_away": 2.38,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 40
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3788,
+        "2": 0.3092,
+        "X": 0.312
+      },
+      "computed_odds": {
+        "1": 2.64,
+        "2": 3.23,
+        "X": 3.21
+      },
+      "confidence": 0.3788
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0,
+        "Under": 1.0
+      },
+      "computed_odds": {
+        "Over": 99.0,
+        "Under": 1.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3788,
+        "2": 0.3092,
+        "X": 0.312
+      },
+      "computed_odds": {
+        "1": 2.64,
+        "2": 3.23,
+        "X": 3.21
+      },
+      "confidence": 0.3788
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0,
+        "Under": 1.0
+      },
+      "computed_odds": {
+        "Over": 99.0,
+        "Under": 1.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.324,
+        "X": 0.2959,
+        "2": 0.3801
+      },
+      "computed_odds": {
+        "1": 3.09,
+        "X": 3.38,
+        "2": 2.63
+      },
+      "confidence": 0.3801
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.32,
+        "Under": 0.68
+      },
+      "computed_odds": {
+        "Over": 3.12,
+        "Under": 1.47
+      },
+      "confidence": 0.68
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5789473684210527,
+        "away": 0.8947368421052632,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.30624273617798436,
+        "away": 0.39245392661464384,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5,
+        "away": 0.4444444444444444,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.47115384615384615,
+        "away": 0.6153846153846154,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3153846153846154,
+        "away": 0.36548974358974357,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 1.9807692307692308
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 6.3
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 3.3
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 2.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 1.98,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.15,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "2",
+    "ml_ou": "Under",
+    "weighted_ou": "Under"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udee1\ufe0f  Low-scoring match expected (avg 2.0 goals)",
+      "\ud83d\udcca Away team significantly higher in table (#3 vs #9)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 3.05,
+        "fair": 2.64,
+        "value_pct": 15.5
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Giana Erminio": [],
+    "Calcio Lecco": []
+  }
+}

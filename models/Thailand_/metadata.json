@@ -1,0 +1,56 @@
+{
+  "league_key": "ThL_241",
+  "league_info": {
+    "league_code": "ThL",
+    "match_id_prefix": "241",
+    "country": "Thailand",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-thailand/league-cup",
+    "country_code": "th",
+    "match_count": 10,
+    "teams": {
+      "Lamphun Warrior": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Chonburi FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Thap Luang United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sukhothai FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Mahasarakham Sambaitao FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Nakhonratchasima": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Pattani FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Uthai Thani FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Port FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Ayutthaya United": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 10,
+  "trained_at": "2026-02-12T10:10:09.055950"
+}

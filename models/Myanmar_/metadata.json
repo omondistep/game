@@ -1,0 +1,64 @@
+{
+  "league_key": "MNL_242",
+  "league_info": {
+    "league_code": "MNL",
+    "match_id_prefix": "242",
+    "country": "Myanmar",
+    "league": "",
+    "league_url_path": "predictions-myanmar/national-league",
+    "country_code": "mm",
+    "match_count": 20,
+    "teams": {
+      "Yangon United": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Yarmanya Utd": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Dagon Port": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Dagon FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Hantharwady United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "ISPE FC": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Rakhine United": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Yadanarbon FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sagaing United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Thitsar Arman": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Ayeyawady United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Shan United": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 20,
+  "trained_at": "2026-02-12T10:09:53.596717"
+}

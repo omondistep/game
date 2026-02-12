@@ -1,0 +1,72 @@
+{
+  "league_key": "Eg2_242",
+  "league_info": {
+    "league_code": "Eg2",
+    "match_id_prefix": "242",
+    "country": "Egypt",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-egypt/second-division-a",
+    "country_code": "eg",
+    "match_count": 14,
+    "teams": {
+      "Petrol Asyut": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Masar": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Mansoura SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Qanah": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Raya Ghazl": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Dakhleya": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Tersana Giza": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Maleyeit Kafr El Zayiat": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Baladiyyat Al Mahalla": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Dairut SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "La Viena": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Aswan FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Itesalat": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Proxy": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 14,
+  "trained_at": "2026-02-12T10:09:37.268729"
+}

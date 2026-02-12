@@ -1,0 +1,252 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/celtic-livingston-2317391",
+  "timestamp": "2026-02-11T20:57:38.350591",
+  "features": {
+    "home_position": 3,
+    "away_position": 12,
+    "position_diff": -9,
+    "home_points": 48,
+    "away_points": 11,
+    "home_form_points": 12,
+    "away_form_points": 3,
+    "home_recent_form": 7,
+    "away_recent_form": 0,
+    "home_wins_l6": 3,
+    "home_draws_l6": 3,
+    "home_losses_l6": 0,
+    "away_wins_l6": 0,
+    "away_draws_l6": 3,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.725,
+    "home_conceded_avg": 1.1,
+    "away_scored_avg": 1.1612903225806452,
+    "away_conceded_avg": 1.8387096774193548,
+    "expected_total_goals": 2.9125,
+    "home_home_win_rate": 60.0,
+    "home_home_goals_avg": 1.95,
+    "away_away_win_rate": 7.142857142857142,
+    "away_away_goals_avg": 0.7857142857142857,
+    "h2h_home_win_pct": 100.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 13.1,
+    "away_shots_avg": 10.161290322580646,
+    "home_shots_on_target_pct": 37.213740458015266,
+    "away_shots_on_target_pct": 39.04761904761905,
+    "home_dangerous_attacks_avg": 61.45,
+    "away_dangerous_attacks_avg": 48.16129032258065,
+    "home_possession": 63.16,
+    "away_possession": 47.73,
+    "home_pass_accuracy": 84.2752846275591,
+    "away_pass_accuracy": 75.7244855102898,
+    "home_fouls_avg": 11.05,
+    "away_fouls_avg": 13.290322580645162,
+    "home_yellow_avg": 1.7,
+    "away_yellow_avg": 2.3225806451612905,
+    "odds_home": 1.17,
+    "odds_draw": 6.5,
+    "odds_away": 13.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 73
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4739,
+        "2": 0.1814,
+        "X": 0.3447
+      },
+      "computed_odds": {
+        "1": 2.11,
+        "2": 5.51,
+        "X": 2.9
+      },
+      "confidence": 0.4739
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 1.0,
+        "Under": 0.0
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4739,
+        "2": 0.1814,
+        "X": 0.3447
+      },
+      "computed_odds": {
+        "1": 2.11,
+        "2": 5.51,
+        "X": 2.9
+      },
+      "confidence": 0.4739
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 1.0,
+        "Under": 0.0
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5868,
+        "X": 0.2016,
+        "2": 0.2116
+      },
+      "computed_odds": {
+        "1": 1.7,
+        "X": 4.96,
+        "2": 4.72
+      },
+      "confidence": 0.5868
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.8947368421052632,
+        "away": 0.42105263157894735,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.7874015748031498,
+        "away": 0.07086614173228348,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6666666666666666,
+        "away": 0.16666666666666666,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.65625,
+        "away": 0.3306451612903226,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 1.0,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.54896,
+        "away": 0.3584230107526882,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.9125
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 10.7
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 10.0
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 9.5
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 6.7
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.91,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.89,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (0 win in last 6)",
+      "\ud83d\udcc9 Away team struggles away (7% win rate)",
+      "\ud83d\udcca Home team significantly higher in table (#3 vs #12)",
+      "\ud83d\udcdc Home team dominates H2H (100% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 6.5,
+        "fair": 2.9,
+        "value_pct": 124.1
+      },
+      {
+        "outcome": "2",
+        "market": 13.0,
+        "fair": 5.51,
+        "value_pct": 135.9
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Celtic": [],
+    "Livingston": []
+  }
+}

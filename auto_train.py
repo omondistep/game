@@ -74,6 +74,39 @@ class AutoTrainer:
         time_since = datetime.now() - last_train
         return time_since.total_seconds() > (TRAINING_THRESHOLD_HOURS * 3600)
     
+    def _clean_url(self, url: str) -> Optional[str]:
+        """Clean a URL by removing pipe-separated parts and adding scheme if needed.
+        
+        Input formats handled:
+        - 'https://www.forebet.com/en/football/matches/al-dhafra-sharjah-sc-2419491' -> clean
+        - '/en/football/matches/al-dhafra-sharjah-sc-2419491' -> adds scheme
+        - '/en/football/matches/al-dhafra-sharjah-sc-2419491|Al Dhafra|Sharjah SC|...' -> removes pipe parts
+        
+        Returns None if URL is invalid.
+        """
+        if not url:
+            return None
+        
+        # Remove pipe-separated parts if present
+        if '|' in url:
+            url = url.split('|')[0]
+        
+        url = url.strip()
+        
+        # Must contain /en/football/matches/ to be valid
+        if '/en/football/matches/' not in url:
+            return None
+        
+        # Add scheme if missing
+        if url.startswith('/'):
+            url = 'https://www.forebet.com' + url
+        
+        # Validate URL has scheme
+        if not url.startswith('http://') and not url.startswith('https://'):
+            return None
+        
+        return url
+    
     def get_pending_urls(self) -> List[str]:
         """Get URLs from results.txt that need to be processed."""
         urls = []
@@ -82,7 +115,9 @@ class AutoTrainer:
                 for line in f:
                     line = line.strip()
                     if line and not line.startswith('#'):
-                        urls.append(line)
+                        cleaned_url = self._clean_url(line)
+                        if cleaned_url:
+                            urls.append(cleaned_url)
         return urls
     
     def get_saved_match_count(self) -> int:

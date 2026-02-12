@@ -1,0 +1,64 @@
+{
+  "league_key": "Sv1_241",
+  "league_info": {
+    "league_code": "Sv1",
+    "match_id_prefix": "241",
+    "country": "El Salvador",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-el-salvador/primera-division",
+    "country_code": "sv",
+    "match_count": 52,
+    "teams": {
+      "Inter F.A": {
+        "home_matches": 4,
+        "away_matches": 6
+      },
+      "Cacahuatique": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Alianza FC": {
+        "home_matches": 6,
+        "away_matches": 4
+      },
+      "Lu\u00eds \u00c1ngel Firpo": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "CD \u00c1guila": {
+        "home_matches": 6,
+        "away_matches": 4
+      },
+      "Hercules": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Fuerte San Francisco": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "CD FAS": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Municipal Lime\u00f1o": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Isidro Metap\u00e1n": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Zacatecoluca": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Platense (SLV)": {
+        "home_matches": 4,
+        "away_matches": 6
+      }
+    }
+  },
+  "example_count": 52,
+  "trained_at": "2026-02-12T10:10:07.219884"
+}

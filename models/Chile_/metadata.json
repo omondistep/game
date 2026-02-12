@@ -1,0 +1,80 @@
+{
+  "league_key": "ClC_241",
+  "league_info": {
+    "league_code": "ClC",
+    "match_id_prefix": "241",
+    "country": "Chile",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-chile/copa-chile",
+    "country_code": "cl",
+    "match_count": 32,
+    "teams": {
+      "Antofagasta": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Cobreloa": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Puerto Montt": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportes Temuco": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportes Santa Cruz": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CD Magallanes": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportes Copiap\u00f3": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "San Luis Quillota": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportes Iquique": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "San Marcos Arica": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportes Recoleta": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Uni\u00f3n Espa\u00f1ola": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Uni\u00f3n San Felipe": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Santiago Wanderers": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Curic\u00f3 Unido": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Rangers Talca": {
+        "home_matches": 2,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 32,
+  "trained_at": "2026-02-12T10:09:31.710210"
+}

@@ -1,0 +1,341 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/athletic-bilbao-real-sociedad-2423731",
+  "timestamp": "2026-02-11T20:38:58.640703",
+  "features": {
+    "home_position": 10,
+    "away_position": 8,
+    "position_diff": 2,
+    "home_form_points": 10,
+    "away_form_points": 14,
+    "home_recent_form": 7,
+    "away_recent_form": 7,
+    "home_wins_l6": 3,
+    "home_draws_l6": 1,
+    "home_losses_l6": 2,
+    "away_wins_l6": 4,
+    "away_draws_l6": 2,
+    "away_losses_l6": 0,
+    "home_scored_avg": 1.1142857142857143,
+    "home_conceded_avg": 1.6,
+    "away_scored_avg": 1.6071428571428572,
+    "away_conceded_avg": 1.2857142857142858,
+    "expected_total_goals": 2.803571428571429,
+    "home_home_win_rate": 43.75,
+    "home_home_goals_avg": 1.25,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.1333333333333333,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 13.82857142857143,
+    "away_shots_avg": 13.464285714285714,
+    "home_shots_on_target_pct": 30.785123966942145,
+    "away_shots_on_target_pct": 39.257294429708224,
+    "home_dangerous_attacks_avg": 50.77142857142857,
+    "away_dangerous_attacks_avg": 47.5,
+    "home_possession": 46.77,
+    "away_possession": 50.68,
+    "home_pass_accuracy": 79.03892770568943,
+    "away_pass_accuracy": 82.01268498942918,
+    "home_fouls_avg": 13.8,
+    "away_fouls_avg": 14.964285714285714,
+    "home_yellow_avg": 2.1714285714285713,
+    "away_yellow_avg": 2.107142857142857,
+    "odds_home": 2.15,
+    "odds_draw": 3.4,
+    "odds_away": 3.3,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 42
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4245,
+        "2": 0.3746,
+        "X": 0.2008
+      },
+      "computed_odds": {
+        "1": 2.36,
+        "2": 2.67,
+        "X": 4.98
+      },
+      "confidence": 0.4245
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9998,
+        "Under": 0.0002
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 0.9998
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4245,
+        "2": 0.3746,
+        "X": 0.2008
+      },
+      "computed_odds": {
+        "1": 2.36,
+        "2": 2.67,
+        "X": 4.98
+      },
+      "confidence": 0.4245
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9998,
+        "Under": 0.0002
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 0.9998
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.346,
+        "X": 0.2535,
+        "2": 0.4006
+      },
+      "computed_odds": {
+        "1": 2.89,
+        "X": 3.95,
+        "2": 2.5
+      },
+      "confidence": 0.4006
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.631578947368421,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.43785365853658537,
+        "away": 0.28526829268292686,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5555555555555556,
+        "away": 0.7777777777777778,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.37857142857142856,
+        "away": 0.5803571428571428,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.47490571428571426,
+        "away": 0.4862228571428572,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.803571428571429
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 4.4
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 3.0
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 2.3
+        },
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.8,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.72,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "2",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Away team in excellent form (4 wins in last 6)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 3.3,
+        "fair": 2.67,
+        "value_pct": 23.6
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Athletic Bilbao": [
+      {
+        "name": "Alex Berenguer (F)",
+        "games_played": "17",
+        "injury": "",
+        "status": "Uncertain - 8.2.2026",
+        "team": "Athletic Bilbao"
+      },
+      {
+        "name": "Benat Prados Diaz (M)",
+        "games_played": "2",
+        "injury": "Knee",
+        "status": "Will not play - 26.12.2026",
+        "team": "Athletic Bilbao"
+      },
+      {
+        "name": "Dani Vivian (D)",
+        "games_played": "17",
+        "injury": "Thigh",
+        "status": "Uncertain - 28.1.2026",
+        "team": "Athletic Bilbao"
+      },
+      {
+        "name": "Maroan Sannadi (F)",
+        "games_played": "8",
+        "injury": "Knee",
+        "status": "Will not play - 26.12.2026",
+        "team": "Athletic Bilbao"
+      },
+      {
+        "name": "Oihan Sancet (F)",
+        "games_played": "14",
+        "injury": "Hamstring",
+        "status": "Will not play - 29.1.2026",
+        "team": "Athletic Bilbao"
+      },
+      {
+        "name": "Unai Egiluz (D)",
+        "games_played": "",
+        "injury": "Knee",
+        "status": "Will not play - 26.12.2026",
+        "team": "Athletic Bilbao"
+      },
+      {
+        "name": "Yuri Berchiche (D)",
+        "games_played": "16",
+        "injury": "",
+        "status": "Uncertain - 9.2.2026",
+        "team": "Athletic Bilbao"
+      }
+    ],
+    "Real Sociedad": [
+      {
+        "name": "Ander Barrenetxea (F)",
+        "games_played": "17",
+        "injury": "Strain",
+        "status": "Uncertain - 3.2.2026",
+        "team": "Real Sociedad"
+      },
+      {
+        "name": "Arsen Zakharyan (M)",
+        "games_played": "12",
+        "injury": "Calf",
+        "status": "Uncertain - 18.1.2026",
+        "team": "Real Sociedad"
+      },
+      {
+        "name": "Brais Mendez (M)",
+        "games_played": "18",
+        "injury": "",
+        "status": "Suspended - 2.2.2026",
+        "team": "Real Sociedad"
+      },
+      {
+        "name": "Inaki Ruperez (M)",
+        "games_played": "",
+        "injury": "Knee",
+        "status": "Will not play - 26.12.2026",
+        "team": "Real Sociedad"
+      },
+      {
+        "name": "Luka Sucic (M)",
+        "games_played": "7",
+        "injury": "Groin",
+        "status": "Uncertain - 8.2.2026",
+        "team": "Real Sociedad"
+      },
+      {
+        "name": "Takefusa Kubo (F)",
+        "games_played": "17",
+        "injury": "Hamstring",
+        "status": "Will not play - 20.1.2026",
+        "team": "Real Sociedad"
+      },
+      {
+        "name": "Unai Marrero (G)",
+        "games_played": "",
+        "injury": "Face",
+        "status": "Will not play - 30.1.2026",
+        "team": "Real Sociedad"
+      }
+    ]
+  }
+}

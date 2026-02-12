@@ -1,0 +1,251 @@
+{
+  "url": "https://www.forebet.com/en/football/matchesSS%20Virtus%20%E2%80%93%20SP%20Libertasss-virtus-ac-libertas-2363361",
+  "timestamp": "2026-02-11T20:20:08.429070",
+  "features": {
+    "home_position": 3,
+    "away_position": 10,
+    "position_diff": -7,
+    "home_points": 46,
+    "away_points": 21,
+    "home_form_points": 14,
+    "away_form_points": 10,
+    "home_recent_form": 7,
+    "away_recent_form": 7,
+    "home_wins_l6": 4,
+    "home_draws_l6": 2,
+    "home_losses_l6": 0,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.96,
+    "home_conceded_avg": 0.84,
+    "away_scored_avg": 1.0526315789473684,
+    "away_conceded_avg": 1.9473684210526316,
+    "expected_total_goals": 2.9000000000000004,
+    "home_home_win_rate": 69.23076923076923,
+    "home_home_goals_avg": 2.1538461538461537,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 2.3,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 6.76,
+    "away_shots_avg": 3.263157894736842,
+    "home_shots_on_target_pct": 43.19526627218935,
+    "away_shots_on_target_pct": 37.096774193548384,
+    "home_dangerous_attacks_avg": 40.16,
+    "away_dangerous_attacks_avg": 21.57894736842105,
+    "home_possession": 52.43,
+    "away_possession": 49.2,
+    "home_pass_accuracy": 100.0,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 9.16,
+    "away_fouls_avg": 3.9473684210526314,
+    "home_yellow_avg": 1.84,
+    "away_yellow_avg": 0.8421052631578947,
+    "odds_home": 1.09,
+    "odds_draw": 9.5,
+    "odds_away": 21.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 45
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.6433,
+        "2": 0.0808,
+        "X": 0.2759
+      },
+      "computed_odds": {
+        "1": 1.55,
+        "2": 12.38,
+        "X": 3.62
+      },
+      "confidence": 0.6433
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9971,
+        "Under": 0.0029
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 0.9971
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.6433,
+        "2": 0.0808,
+        "X": 0.2759
+      },
+      "computed_odds": {
+        "1": 1.55,
+        "2": 12.38,
+        "X": 3.62
+      },
+      "confidence": 0.6433
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9971,
+        "Under": 0.0029
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 0.9971
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5953,
+        "X": 0.159,
+        "2": 0.2457
+      },
+      "computed_odds": {
+        "1": 1.68,
+        "X": 6.29,
+        "2": 4.07
+      },
+      "confidence": 0.5953
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.8947368421052632,
+        "away": 0.5263157894736843,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.8571612709188167,
+        "away": 0.044490751681024295,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.7777777777777778,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.75,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.78,
+        "away": 0.2763157894736842,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.17,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.31457999999999997,
+        "away": 0.2952,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 2.9000000000000004
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 12.2
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 7.6
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 7.5
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 7.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.9,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.01,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\ud83d\udcca Home team significantly higher in table (#3 vs #10)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 9.5,
+        "fair": 3.62,
+        "value_pct": 162.4
+      },
+      {
+        "outcome": "2",
+        "market": 21.0,
+        "fair": 12.38,
+        "value_pct": 69.6
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "SS Virtus": [],
+    "AC Libertas": []
+  }
+}

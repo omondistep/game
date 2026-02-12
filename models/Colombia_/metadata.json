@@ -1,0 +1,76 @@
+{
+  "league_key": "Co2_241",
+  "league_info": {
+    "league_code": "Co2",
+    "match_id_prefix": "241",
+    "country": "Colombia",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-colombia/primera-b",
+    "country_code": "co",
+    "match_count": 36,
+    "teams": {
+      "Barranquilla FC": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Orsomarso SC": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Cortulu\u00e1": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Patriotas Boyac\u00e1": {
+        "home_matches": 2,
+        "away_matches": 6
+      },
+      "Independiente Yumbo": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Atl\u00e9tico FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Boca Juniors Cali": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportes Quind\u00edo": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Valledupar FC": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Envigado FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Uni\u00f3n Magdalena": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Bogot\u00e1 FC": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Real San Andr\u00e9s": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Real Cartagena": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Leones": {
+        "home_matches": 2,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 36,
+  "trained_at": "2026-02-12T10:09:33.257714"
+}

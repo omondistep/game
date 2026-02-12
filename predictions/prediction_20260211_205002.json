@@ -1,0 +1,237 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/brackley-town-halifax-2339758",
+  "timestamp": "2026-02-11T20:49:21.710509",
+  "features": {
+    "home_position": 19,
+    "away_position": 7,
+    "position_diff": 12,
+    "away_points": 47,
+    "home_points": 32,
+    "home_form_points": 9,
+    "away_form_points": 13,
+    "home_recent_form": 3,
+    "away_recent_form": 4,
+    "home_wins_l6": 2,
+    "home_draws_l6": 3,
+    "home_losses_l6": 1,
+    "away_wins_l6": 4,
+    "away_draws_l6": 1,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.088235294117647,
+    "home_conceded_avg": 1.3823529411764706,
+    "away_scored_avg": 1.6857142857142857,
+    "away_conceded_avg": 1.3142857142857143,
+    "expected_total_goals": 2.735294117647059,
+    "home_home_win_rate": 41.17647058823529,
+    "home_home_goals_avg": 1.2352941176470589,
+    "away_away_win_rate": 41.17647058823529,
+    "away_away_goals_avg": 1.2941176470588236,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 50.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 8.852941176470589,
+    "away_shots_avg": 8.8,
+    "home_shots_on_target_pct": 39.8671096345515,
+    "away_shots_on_target_pct": 46.42857142857143,
+    "home_dangerous_attacks_avg": 51.8235294117647,
+    "away_dangerous_attacks_avg": 58.34285714285714,
+    "home_possession": 44.94,
+    "away_possession": 49.83,
+    "home_pass_accuracy": 74.30789133247089,
+    "away_pass_accuracy": 80.8303148509334,
+    "home_fouls_avg": 8.205882352941176,
+    "away_fouls_avg": 8.542857142857143,
+    "home_yellow_avg": 2.1176470588235294,
+    "away_yellow_avg": 1.8285714285714285,
+    "odds_home": 2.6,
+    "odds_draw": 3.1,
+    "odds_away": 2.6,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 45
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3987,
+        "2": 0.3592,
+        "X": 0.2421
+      },
+      "computed_odds": {
+        "1": 2.51,
+        "2": 2.78,
+        "X": 4.13
+      },
+      "confidence": 0.3987
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9777,
+        "Under": 0.0223
+      },
+      "computed_odds": {
+        "Over": 1.02,
+        "Under": 44.84
+      },
+      "confidence": 0.9777
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3987,
+        "2": 0.3592,
+        "X": 0.2421
+      },
+      "computed_odds": {
+        "1": 2.51,
+        "2": 2.78,
+        "X": 4.13
+      },
+      "confidence": 0.3987
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9777,
+        "Under": 0.0223
+      },
+      "computed_odds": {
+        "Over": 1.02,
+        "Under": 44.84
+      },
+      "confidence": 0.9777
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2786,
+        "X": 0.3014,
+        "2": 0.42
+      },
+      "computed_odds": {
+        "1": 3.59,
+        "X": 3.32,
+        "2": 2.38
+      },
+      "confidence": 0.42
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.052631578947368474,
+        "away": 0.6842105263157895,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.3522727272727273,
+        "away": 0.3522727272727273,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.5,
+        "away": 0.7222222222222222,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.4264705882352941,
+        "away": 0.5928571428571429,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.2980713725490196,
+        "away": 0.32564666666666664,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.5,
+      "expected_goals": 2.735294117647059
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 12.6
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 4.4
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 2.5
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.74,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.77,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "2",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Away team in excellent form (4 wins in last 6)",
+      "\ud83d\udcca Away team significantly higher in table (#7 vs #19)"
+    ],
+    "value_bets": [],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Brackley Town": [],
+    "Halifax": []
+  }
+}

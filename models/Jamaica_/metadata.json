@@ -1,0 +1,60 @@
+{
+  "league_key": "Jm_242",
+  "league_info": {
+    "league_code": "Jm",
+    "match_id_prefix": "242",
+    "country": "Jamaica",
+    "league": "",
+    "league_url_path": "predictions-jamaica/premier-league",
+    "country_code": "jm",
+    "match_count": 16,
+    "teams": {
+      "Waterhouse FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Treasure Beach": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Arnett Gardens": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Dunbeholden FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Cavalier FC": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Mount Pleasant": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Harbour View": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Portmore United": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Racing United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Montego Bay Utd": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Spanish Town Police": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 16,
+  "trained_at": "2026-02-12T10:09:48.334444"
+}

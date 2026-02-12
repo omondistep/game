@@ -1,0 +1,48 @@
+{
+  "league_key": "ArC_241",
+  "league_info": {
+    "league_code": "ArC",
+    "match_id_prefix": "241",
+    "country": "Argentina",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-argentina/copa-argentina",
+    "country_code": "ar",
+    "match_count": 8,
+    "teams": {
+      "Talleres C\u00f3rdoba": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Argentino Merlo": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "CA Platense": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Argentino Monte Ma\u00edz": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Deportivo Riestra": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Deportivo Maip\u00fa": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Barracas Central": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Temperley": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T10:09:18.034960"
+}

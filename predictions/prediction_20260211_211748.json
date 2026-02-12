@@ -1,0 +1,245 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/paksi-diosgyori-vtk-2423706",
+  "timestamp": "2026-02-11T21:15:52.692713",
+  "features": {
+    "home_position": 4,
+    "away_position": 11,
+    "position_diff": -7,
+    "home_form_points": 12,
+    "away_form_points": 5,
+    "home_recent_form": 3,
+    "away_recent_form": 2,
+    "home_wins_l6": 4,
+    "home_draws_l6": 0,
+    "home_losses_l6": 2,
+    "away_wins_l6": 1,
+    "away_draws_l6": 2,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.8620689655172413,
+    "home_conceded_avg": 1.3448275862068966,
+    "away_scored_avg": 1.434782608695652,
+    "away_conceded_avg": 1.565217391304348,
+    "expected_total_goals": 3.103448275862069,
+    "home_home_win_rate": 53.84615384615385,
+    "home_home_goals_avg": 2.0,
+    "away_away_win_rate": 18.181818181818183,
+    "away_away_goals_avg": 1.3636363636363635,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 14.96551724137931,
+    "away_shots_avg": 11.695652173913043,
+    "home_shots_on_target_pct": 37.327188940092164,
+    "away_shots_on_target_pct": 31.970260223048324,
+    "home_dangerous_attacks_avg": 73.55172413793103,
+    "away_dangerous_attacks_avg": 40.34782608695652,
+    "home_possession": 47.68,
+    "away_possession": 48.17,
+    "home_pass_accuracy": 70.05911672655616,
+    "away_pass_accuracy": 75.55588063194851,
+    "home_fouls_avg": 13.482758620689655,
+    "away_fouls_avg": 13.91304347826087,
+    "home_yellow_avg": 1.8275862068965518,
+    "away_yellow_avg": 2.347826086956522,
+    "odds_home": 1.57,
+    "odds_draw": 3.86,
+    "odds_away": 4.41,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 53
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.6057,
+        "2": 0.2559,
+        "X": 0.1384
+      },
+      "computed_odds": {
+        "1": 1.65,
+        "2": 3.91,
+        "X": 7.23
+      },
+      "confidence": 0.6057
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 1.0,
+        "Under": 0.0
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.6057,
+        "2": 0.2559,
+        "X": 0.1384
+      },
+      "computed_odds": {
+        "1": 1.65,
+        "2": 3.91,
+        "X": 7.23
+      },
+      "confidence": 0.6057
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 1.0,
+        "Under": 0.0
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.503,
+        "X": 0.177,
+        "2": 0.32
+      },
+      "computed_odds": {
+        "1": 1.99,
+        "X": 5.65,
+        "2": 3.13
+      },
+      "confidence": 0.503
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.58,
+        "Under": 0.42
+      },
+      "computed_odds": {
+        "Over": 1.72,
+        "Under": 2.38
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.8421052631578947,
+        "away": 0.4736842105263158,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.5672970856314464,
+        "away": 0.20196290803659203,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6666666666666666,
+        "away": 0.2777777777777778,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.6293103448275862,
+        "away": 0.46739130434782605,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.518263908045977,
+        "away": 0.41220840579710144,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 3.103448275862069
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 7.8
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 7.4
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 5.5
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 2.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.1,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.3,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udcc9 Away team struggles away (18% win rate)",
+      "\u26bd High-scoring match expected (avg 3.1 goals)",
+      "\ud83d\udcca Home team significantly higher in table (#4 vs #11)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 4.41,
+        "fair": 3.91,
+        "value_pct": 12.8
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Paksi": [],
+    "Diosgyori VTK": []
+  }
+}

@@ -1,0 +1,42 @@
+I need us to rebuild the database and model learning to use the data in historical_matches_2026-02-01.json for training instead of results.txt. That means that the way teh database is tructured has to change, for example, rather than use 5 code for identifying the league, we will use the json file to identify and save leagues. sample data from one url in the json file:  {
+    "url": "/en/football/matches/cobresal-huachipato-2419652",
+    "home_team": "Cobresal",
+    "away_team": "Huachipato",
+    "datetime": "2026-01-31",
+    "date": "2026-01-31",
+    "time": "00:00",
+    "league_code": "Cl1",
+    "match_id": "2419652",
+    "country": "Chile",
+    "league": "Primera Division",
+    "league_url_path": "football-tips-and-predictions-for-chile/primera-division",
+    "country_code": "cl",
+    "prob_home": 48.0,
+    "prob_draw": 24.0,
+    "prob_away": 27.0,
+    "prediction": "home",
+    "home_score": 1,
+    "away_score": 0,
+    "actual_result": "home",
+    "has_result": true,
+    "predicted_avg_goals": 2.8,
+    "odds": 2.15
+  },. therefore, each league will be identified by "league_code": "Cl1",
+    "match_id": "2419652",
+    "country": "Chile",
+    "league": "Primera Division",
+    "league_url_path": "football-tips-and-predictions-for-chile/primera-division",
+    "country_code": "cl",
+
+also recheck scrape_historical.py which is the source file for historical_matches_2026-02-01 to ensure game urls are scarpped correctly. for example, if the url name is wrong, e.g  "url": "/en/football/matches/diriang\u00e9n-fc-unan-managua-2420380",
+    "home_team": "Diriang\u00e9n FC",
+    "away_team": "UNAN Managua",
+    "datetime": "2026-01-31",
+    "date": "2026-01-31",
+    "time": "00:00", the resulting team names will be incorect Diriang\u00e9n FC instead of Diriangen FC. 
+    Consequently, model training will be based on the same json file since it has the results. in a nut shell given the complete information from each url in this historical_matches_2026-02-01, decide how best we can structure the database so that league information and other important detaiols are captured correctly.
+
+
+
+
+    since we are rebuilding the historical db afresh, clear all the old data so that new learning should start a fresh from 2026-01-25  to /2026-02-11

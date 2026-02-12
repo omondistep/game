@@ -1,0 +1,72 @@
+{
+  "league_key": "Cr2_241",
+  "league_info": {
+    "league_code": "Cr2",
+    "match_id_prefix": "241",
+    "country": "Costa Rica",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-costa-rica/liga-de-ascenso",
+    "country_code": "cr",
+    "match_count": 28,
+    "teams": {
+      "Santa Cruz FC": {
+        "home_matches": 6,
+        "away_matches": 2
+      },
+      "AD Cofutpa": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Aserr\u00ed": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Consultants Moravia": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "AD Sarch\u00ed": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "ADR Jicaral": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Santa Ana": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Escorpiones Bel\u00e9n": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CS Uruguay de Coronado": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Pitbulls": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "AD Carmelita": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Grecia": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Inter San Carlos": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Quepos Cambute": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 28,
+  "trained_at": "2026-02-12T10:09:33.990785"
+}

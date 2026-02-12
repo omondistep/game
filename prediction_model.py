@@ -987,14 +987,39 @@ class FootballPredictor:
     # Prediction
     # ------------------------------------------------------------------
 
-    def predict(self, features: Dict, league: str = None) -> Dict:
+    def predict(self, features: Dict, league: str = None, country: str = None) -> Dict:
         """
         Predict match outcome. Uses league-specific model if available.
         Falls back to global model, then statistical prediction.
         """
         # Try league-specific model first
+        model_league = None
+        
+        # First try exact match with league code
         if league and league in self.league_models:
-            models = self.league_models[league]
+            model_league = league
+        # Try to find a model by checking if any key starts with the league
+        elif league:
+            for model_key in self.league_models:
+                if model_key.startswith(league + '_') or model_key == league:
+                    model_league = model_key
+                    break
+        
+        # If no league model found, try country name
+        if not model_league and country:
+            # Try country name as stored in models (e.g., "Azerbaijan_")
+            country_model_key = country + '_'
+            if country_model_key in self.league_models:
+                model_league = country_model_key
+            else:
+                # Try to find any model that matches the country
+                for model_key in self.league_models:
+                    if model_key.lower().startswith(country.lower() + '_'):
+                        model_league = model_key
+                        break
+        
+        if model_league:
+            models = self.league_models[model_league]
             return self._ml_prediction_with_models(features, models, is_league_specific=True)
         
         # Fall back to global model

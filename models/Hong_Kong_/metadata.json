@@ -1,0 +1,72 @@
+{
+  "league_key": "HK2_242",
+  "league_info": {
+    "league_code": "HK2",
+    "match_id_prefix": "242",
+    "country": "Hong Kong",
+    "league": "",
+    "league_url_path": "predictions-for-hong-kong/first-division",
+    "country_code": "hk",
+    "match_count": 16,
+    "teams": {
+      "3 Sing": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Tung Sing FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Resources Capital": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Lucky Mile": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Hoi King": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Citizen AA": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Supreme": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Central & Western": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Shatin SA": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Kwun Tong FA": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Yuen Long": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sham Shui Po SA": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "South China AA": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "WSE": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 16,
+  "trained_at": "2026-02-12T10:09:41.162472"
+}

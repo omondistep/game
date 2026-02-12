@@ -352,5 +352,31 @@
     "test_result_acc": 0.4780316344463972,
     "test_ou_acc": 0.5377855887521968,
     "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-12T08:59:57.700505",
+    "training_examples": 26,
+    "test_examples": 7,
+    "result_accuracy": 0.7142857142857143,
+    "ou_accuracy": 0.8571428571428571,
+    "train_result_acc": 1.0,
+    "train_ou_acc": 1.0,
+    "test_result_acc": 0.7142857142857143,
+    "test_ou_acc": 0.8571428571428571,
+    "model_type": "league_specific",
+    "league": "Spain La Liga"
+  },
+  {
+    "timestamp": "2026-02-12T09:24:35.191285",
+    "training_examples": 26,
+    "test_examples": 7,
+    "result_accuracy": 0.7142857142857143,
+    "ou_accuracy": 0.8571428571428571,
+    "train_result_acc": 1.0,
+    "train_ou_acc": 1.0,
+    "test_result_acc": 0.7142857142857143,
+    "test_ou_acc": 0.8571428571428571,
+    "model_type": "league_specific",
+    "league": "Spain La Liga"
   }
 ]

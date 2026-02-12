@@ -1,0 +1,243 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/avellino-frosinone-2355740",
+  "timestamp": "2026-02-11T21:20:03.975426",
+  "features": {
+    "home_position": 13,
+    "away_position": 3,
+    "position_diff": 10,
+    "away_points": 46,
+    "home_points": 28,
+    "home_form_points": 7,
+    "away_form_points": 9,
+    "home_recent_form": 3,
+    "away_recent_form": 4,
+    "home_wins_l6": 2,
+    "home_draws_l6": 1,
+    "home_losses_l6": 3,
+    "away_wins_l6": 2,
+    "away_draws_l6": 3,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.1666666666666667,
+    "home_conceded_avg": 1.5833333333333333,
+    "away_scored_avg": 1.72,
+    "away_conceded_avg": 1.0,
+    "expected_total_goals": 2.7350000000000003,
+    "home_home_win_rate": 41.66666666666667,
+    "home_home_goals_avg": 1.4166666666666667,
+    "away_away_win_rate": 50.0,
+    "away_away_goals_avg": 1.5,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 9.25,
+    "away_shots_avg": 15.36,
+    "home_shots_on_target_pct": 35.585585585585584,
+    "away_shots_on_target_pct": 34.11458333333333,
+    "home_dangerous_attacks_avg": 33.083333333333336,
+    "away_dangerous_attacks_avg": 43.0,
+    "home_possession": 49.74,
+    "away_possession": 48.08,
+    "home_pass_accuracy": 81.55074595503257,
+    "away_pass_accuracy": 77.56371903793227,
+    "home_fouls_avg": 12.583333333333334,
+    "away_fouls_avg": 16.56,
+    "home_yellow_avg": 2.4166666666666665,
+    "away_yellow_avg": 2.44,
+    "odds_home": 3.4,
+    "odds_draw": 3.1,
+    "odds_away": 2.25,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 45
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3132,
+        "2": 0.549,
+        "X": 0.1378
+      },
+      "computed_odds": {
+        "1": 3.19,
+        "2": 1.82,
+        "X": 7.26
+      },
+      "confidence": 0.549
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9974,
+        "Under": 0.0026
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 0.9974
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3132,
+        "2": 0.549,
+        "X": 0.1378
+      },
+      "computed_odds": {
+        "1": 3.19,
+        "2": 1.82,
+        "X": 7.26
+      },
+      "confidence": 0.549
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9974,
+        "Under": 0.0026
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 0.9974
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2654,
+        "X": 0.2561,
+        "2": 0.4785
+      },
+      "computed_odds": {
+        "1": 3.77,
+        "X": 3.9,
+        "2": 2.09
+      },
+      "confidence": 0.4785
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.368421052631579,
+        "away": 0.8947368421052632,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.27717067355454006,
+        "away": 0.41883568448241604,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.3888888888888889,
+        "away": 0.5,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.39583333333333337,
+        "away": 0.6799999999999999,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.34010666666666667,
+        "away": 0.5338133333333334,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.7350000000000003
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 10.5
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 4.3
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 3.3
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 2.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.74,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.89,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "2",
+    "weighted_result": "2",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udcca Away team significantly higher in table (#3 vs #13)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 2.25,
+        "fair": 1.82,
+        "value_pct": 23.6
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Avellino": [],
+    "Frosinone": []
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/manchester-city-fulham-2315993",
+  "timestamp": "2026-02-11T20:59:09.145398",
+  "features": {
+    "home_position": 2,
+    "away_position": 12,
+    "position_diff": -10,
+    "home_points": 50,
+    "away_points": 34,
+    "home_form_points": 13,
+    "away_form_points": 9,
+    "home_recent_form": 7,
+    "away_recent_form": 3,
+    "home_wins_l6": 4,
+    "home_draws_l6": 1,
+    "home_losses_l6": 1,
+    "away_wins_l6": 3,
+    "away_draws_l6": 0,
+    "away_losses_l6": 3,
+    "home_scored_avg": 2.2564102564102564,
+    "home_conceded_avg": 0.9230769230769231,
+    "away_scored_avg": 1.4333333333333333,
+    "away_conceded_avg": 1.3666666666666667,
+    "expected_total_goals": 2.98974358974359,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 100.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 15.102564102564102,
+    "away_shots_avg": 11.866666666666667,
+    "home_shots_on_target_pct": 38.37011884550085,
+    "away_shots_on_target_pct": 33.70786516853933,
+    "home_dangerous_attacks_avg": 63.15384615384615,
+    "away_dangerous_attacks_avg": 48.2,
+    "home_possession": 60.72,
+    "away_possession": 53.31,
+    "home_pass_accuracy": 89.16832024846863,
+    "away_pass_accuracy": 84.89315184427674,
+    "home_fouls_avg": 10.051282051282051,
+    "away_fouls_avg": 10.2,
+    "home_yellow_avg": 1.794871794871795,
+    "away_yellow_avg": 1.7666666666666666,
+    "odds_home": 1.33,
+    "odds_draw": 5.5,
+    "odds_away": 8.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 61
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.73,
+        "2": 0.155,
+        "X": 0.115
+      },
+      "computed_odds": {
+        "1": 1.37,
+        "2": 6.45,
+        "X": 8.7
+      },
+      "confidence": 0.73
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0519,
+        "Under": 0.9481
+      },
+      "computed_odds": {
+        "Over": 19.27,
+        "Under": 1.05
+      },
+      "confidence": 0.9481
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.73,
+        "2": 0.155,
+        "X": 0.115
+      },
+      "computed_odds": {
+        "1": 1.37,
+        "2": 6.45,
+        "X": 8.7
+      },
+      "confidence": 0.73
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0519,
+        "Under": 0.9481
+      },
+      "computed_odds": {
+        "Over": 19.27,
+        "Under": 1.05
+      },
+      "confidence": 0.9481
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.54,
+        "X": 0.1774,
+        "2": 0.2827
+      },
+      "computed_odds": {
+        "1": 1.85,
+        "X": 5.64,
+        "2": 3.54
+      },
+      "confidence": 0.54
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.9473684210526316,
+        "away": 0.42105263157894735,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.7151598592626587,
+        "away": 0.11190148386109836,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.7222222222222222,
+        "away": 0.5,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.8333333333333333,
+        "away": 0.5166666666666666,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 1.0,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.6010721367521368,
+        "away": 0.44874888888888886,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.98974358974359
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 10.5
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 9.0
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 6.7
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 4.7
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.99,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.69,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": false,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\ud83d\udcca Home team significantly higher in table (#2 vs #12)",
+      "\ud83d\udcdc Home team dominates H2H (100% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 8.5,
+        "fair": 6.45,
+        "value_pct": 31.8
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Manchester City": [
+      {
+        "name": "Jeremy Doku (F)",
+        "games_played": "18",
+        "injury": "Calf",
+        "status": "Will not play - 29.1.2026",
+        "team": "Manchester City"
+      },
+      {
+        "name": "John Stones (D)",
+        "games_played": "7",
+        "injury": "Thigh",
+        "status": "Uncertain - 26.12.2026",
+        "team": "Manchester City"
+      },
+      {
+        "name": "Josko Gvardiol (D)",
+        "games_played": "16",
+        "injury": "Fracture",
+        "status": "Will not play - 5.1.2026",
+        "team": "Manchester City"
+      },
+      {
+        "name": "Mateo Kovacic (M)",
+        "games_played": "1",
+        "injury": "Achilles",
+        "status": "Will not play - 26.12.2026",
+        "team": "Manchester City"
+      },
+      {
+        "name": "Savinho (F)",
+        "games_played": "",
+        "injury": "",
+        "status": "Will not play - 2.1.2026",
+        "team": "Manchester City"
+      }
+    ],
+    "Fulham": [
+      {
+        "name": "Sasa Lukic (M)",
+        "games_played": "18",
+        "injury": "Hamstring",
+        "status": "Will not play - 18.1.2026",
+        "team": "Fulham"
+      },
+      {
+        "name": "Tom Cairney (M)",
+        "games_played": "13",
+        "injury": "Calf",
+        "status": "Will not play - 8.2.2026",
+        "team": "Fulham"
+      }
+    ]
+  }
+}

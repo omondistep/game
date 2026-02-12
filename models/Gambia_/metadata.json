@@ -1,0 +1,80 @@
+{
+  "league_key": "Gm1_241",
+  "league_info": {
+    "league_code": "Gm1",
+    "match_id_prefix": "241",
+    "country": "Gambia",
+    "league": "",
+    "league_url_path": "gambia-predictions/gfa-league",
+    "country_code": "gm",
+    "match_count": 16,
+    "teams": {
+      "Medina United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Steve Biko FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "BST Galaxy": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Falcons": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Hart Academy": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Gambia Ports A.": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Bombada": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Hawks": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Team Rhino": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Dutch Lions": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Greater Tomorrow": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "TMT": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Brikama United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Real de Banjul": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Samger": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Fortune": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 16,
+  "trained_at": "2026-02-12T10:09:38.619185"
+}

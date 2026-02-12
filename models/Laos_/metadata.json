@@ -1,0 +1,52 @@
+{
+  "league_key": "La1_234",
+  "league_info": {
+    "league_code": "La1",
+    "match_id_prefix": "234",
+    "country": "Laos",
+    "league": "",
+    "league_url_path": "predictions-laos/lao-league",
+    "country_code": "la",
+    "match_count": 16,
+    "teams": {
+      "Namtha United": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Salavan United": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Viengchanh": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Savannakhet": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Luangprabang United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Master 7 FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Lao Army": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Ezra": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Young Elephant": {
+        "home_matches": 2,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 16,
+  "trained_at": "2026-02-12T10:09:51.518150"
+}

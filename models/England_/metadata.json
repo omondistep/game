@@ -1,0 +1,48 @@
+{
+  "league_key": "PL2_234",
+  "league_info": {
+    "league_code": "PL2",
+    "match_id_prefix": "234",
+    "country": "England",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-england/premier-league-2",
+    "country_code": "gb-en",
+    "match_count": 8,
+    "teams": {
+      "Man United U23s": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Brighton U23s": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Blackburn U23s": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Birmingham U21": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Crystal Palace U21": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Derby U23s": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Stoke City U23s": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Man City U23s": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T10:09:59.896156"
+}

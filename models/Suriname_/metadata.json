@@ -1,0 +1,44 @@
+{
+  "league_key": "Sr1_242",
+  "league_info": {
+    "league_code": "Sr1",
+    "match_id_prefix": "242",
+    "country": "Suriname",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-Suriname/hoofdklasse",
+    "country_code": "sr",
+    "match_count": 8,
+    "teams": {
+      "SV Voorwaarts": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Inter Wanica": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "SV Robinhood": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "SV Broki": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "SV Transvaal": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "SV Leo Victor Paramaribo": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Inter Moengotapoe": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T10:10:06.855951"
+}

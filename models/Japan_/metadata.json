@@ -1,0 +1,80 @@
+{
+  "league_key": "Jp1_242",
+  "league_info": {
+    "league_code": "Jp1",
+    "match_id_prefix": "242",
+    "country": "Japan",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-japan/j1-league",
+    "country_code": "jp",
+    "match_count": 16,
+    "teams": {
+      "Kyoto Sanga": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Vissel Kobe": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "V-Varen Nagasaki": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sanfrecce": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Yokohama Marinos": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Machida Zelvia": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "JEF United Chiba": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Urawa Red Diamonds": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "FC Tokyo": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Kashima Antlers": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Cerezo Osaka": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Gamba Osaka": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Avispa Fukuoka": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Fagiano Okayama": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Nagoya Grampus": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Shimizu S-Pulse": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 16,
+  "trained_at": "2026-02-12T10:09:48.660169"
+}

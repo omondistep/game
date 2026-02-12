@@ -1,4 +1,4 @@
-#!/bin/bash
+t#!/bin/bash
 # Football Prediction System - Daily Training Script
 # Usage: ./train.sh [status|scrape-only|train-only|force]
 #

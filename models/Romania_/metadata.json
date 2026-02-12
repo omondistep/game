@@ -1,0 +1,40 @@
+{
+  "league_key": "RoC_240",
+  "league_info": {
+    "league_code": "RoC",
+    "match_id_prefix": "240",
+    "country": "Romania",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-romania/romanian-cup",
+    "country_code": "ro",
+    "match_count": 6,
+    "teams": {
+      "Sanatatea Cluj": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Petrolul Ploiesti": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Dumbravita": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Arges Pitesti": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Cluj": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Rapid Bucuresti": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T10:10:03.771055"
+}

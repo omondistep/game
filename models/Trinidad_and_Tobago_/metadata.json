@@ -1,0 +1,64 @@
+{
+  "league_key": "TT1_241",
+  "league_info": {
+    "league_code": "TT1",
+    "match_id_prefix": "241",
+    "country": "Trinidad and Tobago",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-trinidad-and-tobago/tt-pro-league",
+    "country_code": "tt",
+    "match_count": 18,
+    "teams": {
+      "Caledonia AIA": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Point Fortin Civic": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Club Sando": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Police FC (T&T)": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "La Horquetta Rangers": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Defence Force": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Central FC (T&T)": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "San Juan Jabloteh": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Prison Service": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "AC Port of Spain": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Cunupia FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Phoenix": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 18,
+  "trained_at": "2026-02-12T10:10:07.977055"
+}

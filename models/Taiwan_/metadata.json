@@ -1,0 +1,48 @@
+{
+  "league_key": "TwW_235",
+  "league_info": {
+    "league_code": "TwW",
+    "match_id_prefix": "235",
+    "country": "Taiwan",
+    "league": "",
+    "league_url_path": "predictions-taiwan/mulan-football-league-w",
+    "country_code": "tw",
+    "match_count": 14,
+    "teams": {
+      "Valkyrie W": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Taichung Blue Whale W": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Taipei Bear W": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Kaohsiung Yangxin W": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Hualien W": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "AC Taipei W": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Sakura W": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "New Taipei City W": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 14,
+  "trained_at": "2026-02-12T10:10:11.559774"
+}

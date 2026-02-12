@@ -1,0 +1,80 @@
+{
+  "league_key": "Ug1_241",
+  "league_info": {
+    "league_code": "Ug1",
+    "match_id_prefix": "241",
+    "country": "Uganda",
+    "league": "",
+    "league_url_path": "predictions-uganda/premier-league",
+    "country_code": "ug",
+    "match_count": 16,
+    "teams": {
+      "Buhimba United Saints": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "NEC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "KCC Kampala": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "UPDF FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Lugazi Municipal": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Bul FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Calvary": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "URA Kampala": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Gaddafi FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Maroons FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Vipers SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Police FC (UGA)": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Kitara FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Express FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Villa SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Mbarara City": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 16,
+  "trained_at": "2026-02-12T10:10:12.610518"
+}

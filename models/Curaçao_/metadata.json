@@ -1,0 +1,48 @@
+{
+  "league_key": "Cw1_240",
+  "league_info": {
+    "league_code": "Cw1",
+    "match_id_prefix": "240",
+    "country": "Cura\u00e7ao",
+    "league": "",
+    "league_url_path": "predictions-curacao/prome-divishon",
+    "country_code": "cw",
+    "match_count": 8,
+    "teams": {
+      "SUBT": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Centro Barber": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Atl\u00e9tiko Sali\u00f1a": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Victory Boys": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Centro Dominguito": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Jong Holland": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Inter Willemstad": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Scherpenheuvel": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T10:09:34.308015"
+}

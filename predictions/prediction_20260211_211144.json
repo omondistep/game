@@ -1,0 +1,245 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/st-gallen-young-boys-2423206",
+  "timestamp": "2026-02-11T21:11:34.451387",
+  "features": {
+    "home_position": 3,
+    "away_position": 6,
+    "position_diff": -3,
+    "home_points": 39,
+    "away_points": 33,
+    "home_form_points": 11,
+    "away_form_points": 4,
+    "home_recent_form": 5,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 2,
+    "home_losses_l6": 1,
+    "away_wins_l6": 1,
+    "away_draws_l6": 1,
+    "away_losses_l6": 4,
+    "home_scored_avg": 2.230769230769231,
+    "home_conceded_avg": 1.1538461538461537,
+    "away_scored_avg": 1.7837837837837838,
+    "away_conceded_avg": 1.945945945945946,
+    "expected_total_goals": 3.5571725571725574,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 2.1,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 67.0,
+    "home_shots_avg": 14.576923076923077,
+    "away_shots_avg": 11.297297297297296,
+    "home_shots_on_target_pct": 37.73087071240106,
+    "away_shots_on_target_pct": 37.32057416267943,
+    "home_dangerous_attacks_avg": 41.80769230769231,
+    "away_dangerous_attacks_avg": 40.2972972972973,
+    "home_possession": 43.76,
+    "away_possession": 51.85,
+    "home_pass_accuracy": 69.96108949416342,
+    "away_pass_accuracy": 81.43426294820716,
+    "home_fouls_avg": 14.153846153846153,
+    "away_fouls_avg": 10.486486486486486,
+    "home_yellow_avg": 2.6153846153846154,
+    "away_yellow_avg": 1.5945945945945945,
+    "odds_home": 2.45,
+    "odds_draw": 3.6,
+    "odds_away": 2.62,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 41
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.65,
+        "2": 0.21,
+        "X": 0.14
+      },
+      "computed_odds": {
+        "1": 1.54,
+        "2": 4.76,
+        "X": 7.14
+      },
+      "confidence": 0.65
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0,
+        "Under": 1.0
+      },
+      "computed_odds": {
+        "Over": 99.0,
+        "Under": 1.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.65,
+        "2": 0.21,
+        "X": 0.14
+      },
+      "computed_odds": {
+        "1": 1.54,
+        "2": 4.76,
+        "X": 7.14
+      },
+      "confidence": 0.65
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0,
+        "Under": 1.0
+      },
+      "computed_odds": {
+        "Over": 99.0,
+        "Under": 1.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.469,
+        "X": 0.2027,
+        "2": 0.3282
+      },
+      "computed_odds": {
+        "1": 2.13,
+        "X": 4.93,
+        "2": 3.05
+      },
+      "confidence": 0.469
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.65,
+        "Under": 0.35
+      },
+      "computed_odds": {
+        "Over": 1.54,
+        "Under": 2.86
+      },
+      "confidence": 0.65
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.8947368421052632,
+        "away": 0.736842105263158,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.38231121559725995,
+        "away": 0.35750476267682707,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6111111111111112,
+        "away": 0.2222222222222222,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.7692307692307693,
+        "away": 0.45945945945945943,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.67,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.4817907692307692,
+        "away": 0.4210099099099099,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 3.5571725571725574
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 7.8
+        },
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 4.6
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 3.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.56,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 4.01,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": false,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\u26bd High-scoring match expected (avg 3.6 goals)",
+      "\ud83d\udcdc Away team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 2.45,
+        "fair": 1.54,
+        "value_pct": 59.1
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "St Gallen": [],
+    "Young Boys": []
+  }
+}

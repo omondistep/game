@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Historical data scraper for Forebet.
-Scrapes match data and saves URLs to results.txt for model training.
+Scrapes match data and saves to JSON files for model training.
 Also saves league info to database.
 
 Usage:
@@ -17,6 +17,7 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Optional
 import time
 import os
+import unicodedata
 
 
 class HistoricalForebetScraper:
@@ -39,6 +40,21 @@ class HistoricalForebetScraper:
         # Database for leagues
         self.leagues_db = {}
         self._load_leagues_db()
+    
+    @staticmethod
+    def normalize_team_name(name: str) -> str:
+        """Normalize team name by removing accents and special Unicode characters."""
+        if not name:
+            return name
+        # Normalize Unicode characters (NFD decomposition) and remove accents
+        normalized = unicodedata.normalize('NFD', name)
+        # Remove combining diacritical marks (accents)
+        ascii_name = ''.join(c for c in normalized if unicodedata.category(c) != 'Mn')
+        # Replace & with 'and' for consistency
+        ascii_name = ascii_name.replace('&', 'and')
+        # Clean up any remaining special characters
+        ascii_name = re.sub(r'[^\w\s-]', '', ascii_name)
+        return ascii_name.strip()
     
     def _load_leagues_db(self):
         """Load existing leagues from database."""
@@ -114,11 +130,13 @@ class HistoricalForebetScraper:
             
             if home_team:
                 home_name = home_team.find('span', itemprop='name')
-                match['home_team'] = home_name.get_text(strip=True) if home_name else ''
+                raw_home = home_name.get_text(strip=True) if home_name else ''
+                match['home_team'] = self.normalize_team_name(raw_home)
             
             if away_team:
                 away_name = away_team.find('span', itemprop='name')
-                match['away_team'] = away_name.get_text(strip=True) if away_name else ''
+                raw_away = away_name.get_text(strip=True) if away_name else ''
+                match['away_team'] = self.normalize_team_name(raw_away)
         
         short_tag = container.find('span', class_='shortTag')
         if short_tag:
@@ -141,20 +159,31 @@ class HistoricalForebetScraper:
         if short_tag:
             match['short_code'] = short_tag.get_text(strip=True)
         
-        # Auto-save league mapping to data/league_mapping.json
-        if match.get('url_5digit_code'):
-            self._save_league_mapping(
-                match['url_5digit_code'],
-                match.get('short_code', ''),
-                match.get('league_name', ''),
-                match.get('country', '')
-            )
-        
-        # Extract 5-digit code from URL
+        # Extract 5-digit code from URL and add league info
         if match.get('url'):
+            # Extract match_id from URL
+            url_match_id = re.search(r'-(\d{5,7})$', match['url'])
+            if url_match_id:
+                match['match_id'] = url_match_id.group(1)
+            
+            # Extract 5-digit code for league mapping
             url_5digit_match = re.search(r'-(\d{5})\d{1,4}$', match['url'])
             if url_5digit_match:
                 match['url_5digit_code'] = url_5digit_match.group(1)
+        
+        # Use league_name as the standard 'league' field (to match JSON format)
+        if match.get('league_name'):
+            match['league'] = match['league_name']
+        
+        # Fallback: Extract league name from URL path if not available
+        if not match.get('league') and match.get('league_url_path'):
+            # URL path format: football-tips-and-predictions-for-{country}/{league-name}
+            url_path = match['league_url_path']
+            # Extract league name from the last part of URL
+            league_from_url = url_path.split('/')[-1] if '/' in url_path else url_path
+            # Convert dash-separated to title case
+            league_from_url = league_from_url.replace('-', ' ').title()
+            match['league'] = league_from_url
         
         # Auto-save league mapping to data/league_mapping.json
         if match.get('url_5digit_code') and match.get('league'):
@@ -220,32 +249,6 @@ class HistoricalForebetScraper:
         return match if match.get('home_team') and match.get('away_team') else None
 
 
-def format_url_for_training(match: Dict) -> str:
-    """Format a match URL for results.txt training format."""
-    url = match.get('url', '')
-    
-    home_team = match.get('home_team', '')
-    away_team = match.get('away_team', '')
-    league_code = match.get('league_code', '')
-    league_name = match.get('league', '')
-    country = match.get('country', '')
-    
-    return f"{url}|{home_team}|{away_team}|{league_code}|{league_name}|{country}"
-
-
-def save_to_results_txt(matches: List[Dict], filename: str = "results.txt", append: bool = False):
-    """Save match URLs to results.txt in training format."""
-    mode = 'a' if append else 'w'
-    
-    with open(filename, mode, encoding='utf-8') as f:
-        for match in matches:
-            if match.get('url') and match.get('has_result'):
-                line = format_url_for_training(match)
-                f.write(line + "\n")
-    
-    print(f"  Saved {sum(1 for m in matches if m.get('has_result'))} matches to {filename}")
-
-
 def save_to_json(matches: List[Dict], date_str: str):
     """Save detailed match data to JSON."""
     os.makedirs('data', exist_ok=True)
@@ -259,7 +262,6 @@ def main():
     parser = argparse.ArgumentParser(description='Scrape historical football data from Forebet')
     parser.add_argument('--start', default='2026-01-01', help='Start date (YYYY-MM-DD)')
     parser.add_argument('--end', default='2026-02-11', help='End date (YYYY-MM-DD)')
-    parser.add_argument('--output', default='results.txt', help='Output file for URLs')
     parser.add_argument('--delay', type=float, default=1.0, help='Delay between requests (seconds)')
     
     args = parser.parse_args()
@@ -288,7 +290,6 @@ def main():
         print(f"  Total: {len(matches)} | With Results: {with_results}")
         
         save_to_json(matches, date_str)
-        save_to_results_txt(matches, args.output, append=True)
         
         time.sleep(args.delay)
         current_date += timedelta(days=1)
@@ -306,9 +307,9 @@ def main():
     if with_results > 0:
         print(f"Forebet Accuracy: {correct / with_results * 100:.1f}%")
     
-    print(f"\nURLs saved to: {args.start}")
-    print("\nUse these URLs to train our model with:")
-    print("  python football_prediction_system.py --train results.txt")
+    print("\nData saved to: data/historical_matches_YYYY-MM-DD.json")
+    print("\nUse these JSON files to train the model with:")
+    print("  python rebuild_data.py")
 
 
 if __name__ == "__main__":

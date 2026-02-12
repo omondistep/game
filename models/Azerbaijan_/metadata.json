@@ -1,0 +1,48 @@
+{
+  "league_key": "AzC_242",
+  "league_info": {
+    "league_code": "AzC",
+    "match_id_prefix": "242",
+    "country": "Azerbaijan",
+    "league": "",
+    "league_url_path": "tips-and-predictions-for-azerbaijan/azerbaijan-cup",
+    "country_code": "az",
+    "match_count": 8,
+    "teams": {
+      "Sumqayit FK": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Zira": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sabah": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Gabala FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Keshla FK": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Qarabag": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Turan Tovuz": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Kapaz PFK": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T10:09:19.926483"
+}

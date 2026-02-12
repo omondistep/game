@@ -1,0 +1,238 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/grotta-ia-akranes-2419125",
+  "timestamp": "2026-02-11T21:13:14.420381",
+  "features": {
+    "home_position": 2,
+    "away_position": 2,
+    "position_diff": 0,
+    "away_points": 1,
+    "home_points": 0,
+    "home_form_points": 12,
+    "away_form_points": 10,
+    "home_recent_form": 3,
+    "away_recent_form": 4,
+    "home_wins_l6": 4,
+    "home_draws_l6": 0,
+    "home_losses_l6": 2,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.9230769230769231,
+    "home_conceded_avg": 1.3076923076923077,
+    "away_scored_avg": 1.5833333333333333,
+    "away_conceded_avg": 1.7777777777777777,
+    "expected_total_goals": 3.295940170940171,
+    "home_home_win_rate": 53.84615384615385,
+    "home_home_goals_avg": 1.9230769230769231,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 2.2941176470588234,
+    "h2h_home_win_pct": 0.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 83.0,
+    "home_shots_avg": 9.576923076923077,
+    "away_shots_avg": 12.583333333333334,
+    "home_shots_on_target_pct": 46.98795180722892,
+    "away_shots_on_target_pct": 40.618101545253865,
+    "home_dangerous_attacks_avg": 47.84615384615385,
+    "away_dangerous_attacks_avg": 54.138888888888886,
+    "home_possession": 54.06,
+    "away_possession": 47.0,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": 78.23319360347773,
+    "home_fouls_avg": 3.8461538461538463,
+    "away_fouls_avg": 6.361111111111111,
+    "home_yellow_avg": 1.5384615384615385,
+    "away_yellow_avg": 2.0277777777777777,
+    "odds_home": 5.0,
+    "odds_draw": 4.0,
+    "odds_away": 1.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 47
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1611,
+        "2": 0.7234,
+        "X": 0.1155
+      },
+      "computed_odds": {
+        "1": 6.21,
+        "2": 1.38,
+        "X": 8.66
+      },
+      "confidence": 0.7234
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.756,
+        "Under": 0.244
+      },
+      "computed_odds": {
+        "Over": 1.32,
+        "Under": 4.1
+      },
+      "confidence": 0.756
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1611,
+        "2": 0.7234,
+        "X": 0.1155
+      },
+      "computed_odds": {
+        "1": 6.21,
+        "2": 1.38,
+        "X": 8.66
+      },
+      "confidence": 0.7234
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.756,
+        "Under": 0.244
+      },
+      "computed_odds": {
+        "Over": 1.32,
+        "Under": 4.1
+      },
+      "confidence": 0.756
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3875,
+        "X": 0.1801,
+        "2": 0.4324
+      },
+      "computed_odds": {
+        "1": 2.58,
+        "X": 5.55,
+        "2": 2.31
+      },
+      "confidence": 0.4324
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.58,
+        "Under": 0.42
+      },
+      "computed_odds": {
+        "Over": 1.72,
+        "Under": 2.38
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.9473684210526316,
+        "away": 0.9473684210526316,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.17910447761194032,
+        "away": 0.5970149253731343,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6666666666666666,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.6538461538461539,
+        "away": 0.4513888888888889,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.83,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3769241025641025,
+        "away": 0.43477777777777776,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 3.295940170940171
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 6.3
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 5.0
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 3.0
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 2.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.3,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.51,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "2",
+    "weighted_result": "2",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)",
+      "\u26bd High-scoring match expected (avg 3.3 goals)",
+      "\ud83d\udcdc Away team dominates H2H (83% wins)"
+    ],
+    "value_bets": [],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Grotta": [],
+    "IA Akranes": []
+  }
+}

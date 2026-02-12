@@ -1,0 +1,244 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/union-saint-gilloise-sporting-charleroi-2420751",
+  "timestamp": "2026-02-11T21:08:41.490495",
+  "features": {
+    "home_position": 1,
+    "away_position": 7,
+    "position_diff": -6,
+    "home_form_points": 11,
+    "away_form_points": 13,
+    "home_recent_form": 7,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 2,
+    "home_losses_l6": 1,
+    "away_wins_l6": 4,
+    "away_draws_l6": 1,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.5277777777777777,
+    "home_conceded_avg": 0.8611111111111112,
+    "away_scored_avg": 1.2666666666666666,
+    "away_conceded_avg": 1.0333333333333334,
+    "expected_total_goals": 2.344444444444444,
+    "home_home_win_rate": 76.47058823529412,
+    "home_home_goals_avg": 1.8235294117647058,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.1428571428571428,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 13.694444444444445,
+    "away_shots_avg": 11.8,
+    "home_shots_on_target_pct": 37.93103448275862,
+    "away_shots_on_target_pct": 35.59322033898305,
+    "home_dangerous_attacks_avg": 49.25,
+    "away_dangerous_attacks_avg": 49.43333333333333,
+    "home_possession": 49.61,
+    "away_possession": 47.77,
+    "home_pass_accuracy": 79.89244099193307,
+    "away_pass_accuracy": 80.15444832328362,
+    "home_fouls_avg": 12.11111111111111,
+    "away_fouls_avg": 11.933333333333334,
+    "home_yellow_avg": 2.0833333333333335,
+    "away_yellow_avg": 2.2666666666666666,
+    "odds_home": 1.57,
+    "odds_draw": 4.1,
+    "odds_away": 6.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 53
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "X",
+      "probabilities": {
+        "1": 0.3903,
+        "2": 0.1608,
+        "X": 0.4489
+      },
+      "computed_odds": {
+        "1": 2.56,
+        "2": 6.22,
+        "X": 2.23
+      },
+      "confidence": 0.4489
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.2362,
+        "Under": 0.7638
+      },
+      "computed_odds": {
+        "Over": 4.23,
+        "Under": 1.31
+      },
+      "confidence": 0.7638
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "X",
+      "probabilities": {
+        "1": 0.3903,
+        "2": 0.1608,
+        "X": 0.4489
+      },
+      "computed_odds": {
+        "1": 2.56,
+        "2": 6.22,
+        "X": 2.23
+      },
+      "confidence": 0.4489
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.2362,
+        "Under": 0.7638
+      },
+      "computed_odds": {
+        "Over": 4.23,
+        "Under": 1.31
+      },
+      "confidence": 0.7638
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4502,
+        "X": 0.2096,
+        "2": 0.3402
+      },
+      "computed_odds": {
+        "1": 2.22,
+        "X": 4.77,
+        "2": 2.94
+      },
+      "confidence": 0.4502
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 1.0,
+        "away": 0.6842105263157895,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.6080529945374101,
+        "away": 0.15910720023728897,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.6111111111111112,
+        "away": 0.7222222222222222,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.6666666666666666,
+        "away": 0.5583333333333333,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.4874748148148148,
+        "away": 0.4132866666666667,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.344444444444444
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 6.7
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 6.3
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 3.4
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 2.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.34,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.79,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": true,
+    "ml_result": "X",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Under"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Away team in excellent form (4 wins in last 6)",
+      "\ud83c\udfdf\ufe0f  Home team dominant at home (76% win rate)",
+      "\ud83d\udcca Home team significantly higher in table (#1 vs #7)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 4.1,
+        "fair": 2.23,
+        "value_pct": 83.9
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Union Saint-Gilloise": [],
+    "Sporting Charleroi": []
+  }
+}

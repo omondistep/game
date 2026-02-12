@@ -1,0 +1,64 @@
+{
+  "league_key": "Ag1_242",
+  "league_info": {
+    "league_code": "Ag1",
+    "match_id_prefix": "242",
+    "country": "Antigua and Barbuda",
+    "league": "",
+    "league_url_path": "antigua-and-barbuda/premier-division",
+    "country_code": "ag",
+    "match_count": 16,
+    "teams": {
+      "John Hughes": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Garden Stars": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Green City": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Grenades": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "All Saints United": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Jennings United": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Pigotts Bullets": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Aston Villa": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Potters Tigers": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Ottos Rangers": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Attacking Saints": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Old Road": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 16,
+  "trained_at": "2026-02-12T10:09:17.078323"
+}

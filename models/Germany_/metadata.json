@@ -1,0 +1,72 @@
+{
+  "league_key": "De6_242",
+  "league_info": {
+    "league_code": "De6",
+    "match_id_prefix": "242",
+    "country": "Germany",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-germany/junioren-bundesliga",
+    "country_code": "de",
+    "match_count": 14,
+    "teams": {
+      "Wacker Burghausen U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Carl Zeiss Jena U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Viktoria K\u00f6ln U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Duisburg U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Ulm U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Hamburger SV U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Hertha U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Bielefeld U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Kaiserslautern U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Bayern U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Nurnberg U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Union Berlin U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Stuttgart U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Energie Cottbus U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 14,
+  "trained_at": "2026-02-12T10:09:34.961789"
+}

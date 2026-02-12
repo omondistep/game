@@ -1,0 +1,237 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/motherwell-rangers-2317393",
+  "timestamp": "2026-02-11T20:34:56.866844",
+  "features": {
+    "home_position": 4,
+    "away_position": 2,
+    "position_diff": 2,
+    "away_points": 51,
+    "home_points": 43,
+    "home_form_points": 16,
+    "away_form_points": 13,
+    "home_recent_form": 9,
+    "away_recent_form": 7,
+    "home_wins_l6": 5,
+    "home_draws_l6": 1,
+    "home_losses_l6": 0,
+    "away_wins_l6": 4,
+    "away_draws_l6": 1,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.5,
+    "home_conceded_avg": 0.75,
+    "away_scored_avg": 1.7045454545454546,
+    "away_conceded_avg": 1.0681818181818181,
+    "expected_total_goals": 2.5113636363636367,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 11.84375,
+    "away_shots_avg": 12.727272727272727,
+    "home_shots_on_target_pct": 37.73087071240106,
+    "away_shots_on_target_pct": 37.142857142857146,
+    "home_dangerous_attacks_avg": 48.34375,
+    "away_dangerous_attacks_avg": 49.68181818181818,
+    "home_possession": 56.43,
+    "away_possession": 56.95,
+    "home_pass_accuracy": 85.32833917755818,
+    "away_pass_accuracy": 84.85021724216784,
+    "home_fouls_avg": 9.28125,
+    "away_fouls_avg": 11.272727272727273,
+    "home_yellow_avg": 1.125,
+    "away_yellow_avg": 1.8636363636363635,
+    "odds_home": 3.3,
+    "odds_draw": 3.3,
+    "odds_away": 2.1,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 46
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2243,
+        "2": 0.4887,
+        "X": 0.287
+      },
+      "computed_odds": {
+        "1": 4.46,
+        "2": 2.05,
+        "X": 3.48
+      },
+      "confidence": 0.4887
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9998,
+        "Under": 0.0002
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 0.9998
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2243,
+        "2": 0.4887,
+        "X": 0.287
+      },
+      "computed_odds": {
+        "1": 4.46,
+        "2": 2.05,
+        "X": 3.48
+      },
+      "confidence": 0.4887
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9998,
+        "Under": 0.0002
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 0.9998
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3766,
+        "X": 0.2196,
+        "2": 0.4038
+      },
+      "computed_odds": {
+        "1": 2.66,
+        "X": 4.55,
+        "2": 2.48
+      },
+      "confidence": 0.4038
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.8421052631578947,
+        "away": 0.9473684210526316,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.28,
+        "away": 0.44,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.8888888888888888,
+        "away": 0.7222222222222222,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.6875,
+        "away": 0.6590909090909092,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.46670500000000004,
+        "away": 0.4992757575757576,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.5113636363636367
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 3.3
+        },
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 3.3
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 2.4
+        },
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.51,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.2,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "2",
+    "weighted_result": "2",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (5 wins in last 6)",
+      "\ud83d\udd25 Away team in excellent form (4 wins in last 6)"
+    ],
+    "value_bets": [],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Motherwell": [],
+    "Rangers": []
+  }
+}

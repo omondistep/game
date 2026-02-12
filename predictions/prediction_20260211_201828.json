@@ -1,0 +1,246 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/ss-pennarossa-sp-tre-fiori-2363357",
+  "timestamp": "2026-02-11T20:18:18.509883",
+  "features": {
+    "home_position": 11,
+    "away_position": 1,
+    "position_diff": 10,
+    "away_points": 51,
+    "home_points": 19,
+    "home_form_points": 2,
+    "away_form_points": 18,
+    "home_recent_form": 1,
+    "away_recent_form": 9,
+    "home_wins_l6": 0,
+    "home_draws_l6": 2,
+    "home_losses_l6": 4,
+    "away_wins_l6": 6,
+    "away_draws_l6": 0,
+    "away_losses_l6": 0,
+    "home_scored_avg": 1.0526315789473684,
+    "home_conceded_avg": 2.0,
+    "away_scored_avg": 2.142857142857143,
+    "away_conceded_avg": 0.47619047619047616,
+    "expected_total_goals": 2.8358395989974934,
+    "home_home_win_rate": 30.0,
+    "home_home_goals_avg": 1.1,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 0.8181818181818182,
+    "h2h_home_win_pct": 0.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 100.0,
+    "home_shots_avg": 3.526315789473684,
+    "away_shots_avg": 8.571428571428571,
+    "home_shots_on_target_pct": 55.223880597014926,
+    "away_shots_on_target_pct": 37.77777777777778,
+    "home_dangerous_attacks_avg": 28.68421052631579,
+    "away_dangerous_attacks_avg": 42.0,
+    "home_possession": 47.91,
+    "away_possession": 53.39,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 6.157894736842105,
+    "away_fouls_avg": 5.428571428571429,
+    "home_yellow_avg": 1.0,
+    "away_yellow_avg": 1.5714285714285714,
+    "odds_home": 17.0,
+    "odds_draw": 6.5,
+    "odds_away": 1.12,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 71
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.005,
+        "2": 0.725,
+        "X": 0.27
+      },
+      "computed_odds": {
+        "1": 99.0,
+        "2": 1.38,
+        "X": 3.7
+      },
+      "confidence": 0.725
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 1.0,
+        "Under": 0.0
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.005,
+        "2": 0.725,
+        "X": 0.27
+      },
+      "computed_odds": {
+        "1": 99.0,
+        "2": 1.38,
+        "X": 3.7
+      },
+      "confidence": 0.725
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 1.0,
+        "Under": 0.0
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2014,
+        "X": 0.1632,
+        "2": 0.6354
+      },
+      "computed_odds": {
+        "1": 4.97,
+        "X": 6.13,
+        "2": 1.57
+      },
+      "confidence": 0.6354
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.4736842105263158,
+        "away": 1.0,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.05320859523461482,
+        "away": 0.8076304633825463,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.1111111111111111,
+        "away": 1.0,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.25,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.2631578947368421,
+        "away": 0.9166666666666666,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 1.0,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.28746,
+        "away": 0.33938761904761905,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.8358395989974934
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 17.8
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 11.3
+        },
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 10.5
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 9.8
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.84,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.2,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "2",
+    "weighted_result": "2",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 6)",
+      "\ud83d\udd25 Away team in excellent form (6 wins in last 6)",
+      "\ud83d\udcca Away team significantly higher in table (#1 vs #11)",
+      "\ud83d\udcdc Away team dominates H2H (100% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "X",
+        "market": 6.5,
+        "fair": 3.7,
+        "value_pct": 75.7
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "SS Pennarossa": [],
+    "SP Tre Fiori": []
+  }
+}

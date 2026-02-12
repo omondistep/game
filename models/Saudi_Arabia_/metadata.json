@@ -1,0 +1,88 @@
+{
+  "league_key": "Sa2_241",
+  "league_info": {
+    "league_code": "Sa2",
+    "match_id_prefix": "241",
+    "country": "Saudi Arabia",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-saudi-arabia/1st-division",
+    "country_code": "sa",
+    "match_count": 48,
+    "teams": {
+      "Al Baten": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Al Raed Club": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Arabi (KSA)": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Faisaly (KSA)": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Al Jubail Club": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Zulfi": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Abha Club": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Al Jabalain": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Al Jndal": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Al Anwar (KSA)": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Al Bukiryah": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Al Ula": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Al Ta'i": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Oruba (KSA)": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Adalah": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Al Dir'iya": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Al Wahda Mecca": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Jeddah Club": {
+        "home_matches": 2,
+        "away_matches": 4
+      }
+    }
+  },
+  "example_count": 48,
+  "trained_at": "2026-02-12T10:10:04.830963"
+}

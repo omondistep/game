@@ -1,0 +1,40 @@
+{
+  "league_key": "Bg1_238",
+  "league_info": {
+    "league_code": "Bg1",
+    "match_id_prefix": "238",
+    "country": "Bulgaria",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-bulgaria/parva-liga",
+    "country_code": "bg",
+    "match_count": 6,
+    "teams": {
+      "Montana": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "CSKA 1948": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "CSKA-Sofia": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Arda Kardzhali": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Cherno More Varna": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Spartak Varna": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T10:09:21.442602"
+}

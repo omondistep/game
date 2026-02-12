@@ -1,0 +1,60 @@
+{
+  "league_key": "AuW_240",
+  "league_info": {
+    "league_code": "AuW",
+    "match_id_prefix": "240",
+    "country": "Australia",
+    "league": "",
+    "league_url_path": "tips-and-predictions-for-australia/a-league-women",
+    "country_code": "au",
+    "match_count": 24,
+    "teams": {
+      "Wellington Phoenix W": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Adelaide United W": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Melbourne Victory W": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Sydney W": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Perth Glory W": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Brisbane Roar W": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Central Coast Mariners W": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Melbourne City W": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "WS Wanderers W": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Canberra United W": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Newcastle Jets W": {
+        "home_matches": 2,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 24,
+  "trained_at": "2026-02-12T10:09:19.009230"
+}

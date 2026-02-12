@@ -1,0 +1,235 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/inter-u19-juventus-u19-2423720",
+  "timestamp": "2026-02-11T20:15:07.770510",
+  "features": {
+    "home_position": 5,
+    "away_position": 8,
+    "position_diff": -3,
+    "home_form_points": 8,
+    "away_form_points": 10,
+    "home_recent_form": 7,
+    "away_recent_form": 7,
+    "home_wins_l6": 2,
+    "home_draws_l6": 2,
+    "home_losses_l6": 2,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.96875,
+    "home_conceded_avg": 1.34375,
+    "away_scored_avg": 1.4838709677419355,
+    "away_conceded_avg": 1.4193548387096775,
+    "expected_total_goals": 3.1078629032258065,
+    "home_home_win_rate": 62.5,
+    "home_home_goals_avg": 2.6875,
+    "away_away_win_rate": 26.666666666666668,
+    "away_away_goals_avg": 1.4,
+    "h2h_home_win_pct": 0.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 67.0,
+    "home_shots_avg": 11.78125,
+    "away_shots_avg": 10.387096774193548,
+    "home_shots_on_target_pct": 35.54376657824933,
+    "away_shots_on_target_pct": 39.130434782608695,
+    "home_dangerous_attacks_avg": 50.15625,
+    "away_dangerous_attacks_avg": 51.61290322580645,
+    "home_possession": 58.37,
+    "away_possession": 53.19,
+    "home_pass_accuracy": 87.20039946737683,
+    "away_pass_accuracy": 82.91212613030373,
+    "home_fouls_avg": 5.6875,
+    "away_fouls_avg": 6.387096774193548,
+    "home_yellow_avg": 1.0,
+    "away_yellow_avg": 1.1290322580645162,
+    "odds_home": 2.0,
+    "odds_draw": 3.6,
+    "odds_away": 3.1,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 45
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.514,
+        "2": 0.3419,
+        "X": 0.1441
+      },
+      "computed_odds": {
+        "1": 1.95,
+        "2": 2.92,
+        "X": 6.94
+      },
+      "confidence": 0.514
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.6078,
+        "Under": 0.3922
+      },
+      "computed_odds": {
+        "Over": 1.65,
+        "Under": 2.55
+      },
+      "confidence": 0.6078
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.514,
+        "2": 0.3419,
+        "X": 0.1441
+      },
+      "computed_odds": {
+        "1": 1.95,
+        "2": 2.92,
+        "X": 6.94
+      },
+      "confidence": 0.514
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.6078,
+        "Under": 0.3922
+      },
+      "computed_odds": {
+        "Over": 1.65,
+        "Under": 2.55
+      },
+      "confidence": 0.6078
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3979,
+        "X": 0.2249,
+        "2": 0.3772
+      },
+      "computed_odds": {
+        "1": 2.51,
+        "X": 4.45,
+        "2": 2.65
+      },
+      "confidence": 0.3979
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.58,
+        "Under": 0.42
+      },
+      "computed_odds": {
+        "Over": 1.72,
+        "Under": 2.38
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.7894736842105263,
+        "away": 0.631578947368421,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.4543973941368078,
+        "away": 0.29315960912052114,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.4444444444444444,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.65625,
+        "away": 0.5161290322580645,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.67,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.4762616666666667,
+        "away": 0.39870989247311817,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 3.1078629032258065
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "h2h",
+          "direction": "away",
+          "impact": 3.4
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 3.2
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 2.4
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 2.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.11,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.45,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26bd High-scoring match expected (avg 3.1 goals)",
+      "\ud83d\udcdc Away team dominates H2H (67% wins)"
+    ],
+    "value_bets": [],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Inter U19": [],
+    "Juventus U19": []
+  }
+}

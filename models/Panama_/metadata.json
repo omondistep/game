@@ -1,0 +1,64 @@
+{
+  "league_key": "Pa1_241",
+  "league_info": {
+    "league_code": "Pa1",
+    "match_id_prefix": "241",
+    "country": "Panama",
+    "league": "",
+    "league_url_path": "predictions-for-panama/football-league",
+    "country_code": "pa",
+    "match_count": 34,
+    "teams": {
+      "CD Universitario": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "CAI de La Chorrera": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "CD \u00c1rabe Unido": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Alianza FC (PAN)": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Uni\u00f3n Cocl\u00e9": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Veraguas CD": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Tauro FC": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Sporting SM FC": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "UMECIT": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "CD Plaza Amador": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Herrera FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "San Francisco FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 34,
+  "trained_at": "2026-02-12T10:10:00.252922"
+}

@@ -1,0 +1,36 @@
+{
+  "league_key": "Lb_242",
+  "league_info": {
+    "league_code": "Lb",
+    "match_id_prefix": "242",
+    "country": "Lebanon",
+    "league": "",
+    "league_url_path": "predictions-lebanon/premier-league",
+    "country_code": "lb",
+    "match_count": 6,
+    "teams": {
+      "Al Ansar Club": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Hikma Beirut": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Safa SC Beirut": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Jwaya": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Ahed Beirut": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T10:09:51.898219"
+}

@@ -1,0 +1,36 @@
+{
+  "league_key": "Gr3_239",
+  "league_info": {
+    "league_code": "Gr3",
+    "match_id_prefix": "239",
+    "country": "Greece",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-greece/gamma-ethniki-group-2",
+    "country_code": "gr",
+    "match_count": 6,
+    "teams": {
+      "Ermis Exochi": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Pierikos FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "AE Mykonos": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Aias Salamina": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "PO Atsalenios": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T10:09:39.354725"
+}

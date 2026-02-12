@@ -1,0 +1,44 @@
+{
+  "league_key": "Bz1_241",
+  "league_info": {
+    "league_code": "Bz1",
+    "match_id_prefix": "241",
+    "country": "Belize",
+    "league": "",
+    "league_url_path": "predictions-belize/premier-league",
+    "country_code": "bz",
+    "match_count": 18,
+    "teams": {
+      "Progresso": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Port Layola": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Benque": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Napoles": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Verdes FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Wagiya SC": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Belmopan Bandits": {
+        "home_matches": 2,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 18,
+  "trained_at": "2026-02-12T10:09:29.035098"
+}

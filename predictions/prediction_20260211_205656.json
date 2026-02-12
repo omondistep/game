@@ -1,0 +1,234 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/kilmarnock-st-mirren-2317390",
+  "timestamp": "2026-02-11T20:56:50.809178",
+  "features": {
+    "home_position": 11,
+    "away_position": 9,
+    "position_diff": 2,
+    "away_points": 23,
+    "home_points": 17,
+    "home_form_points": 4,
+    "away_form_points": 7,
+    "home_recent_form": 3,
+    "away_recent_form": 5,
+    "home_wins_l6": 1,
+    "home_draws_l6": 1,
+    "home_losses_l6": 4,
+    "away_wins_l6": 1,
+    "away_draws_l6": 4,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.125,
+    "home_conceded_avg": 1.65625,
+    "away_scored_avg": 1.2352941176470589,
+    "away_conceded_avg": 1.2352941176470589,
+    "expected_total_goals": 2.625919117647059,
+    "home_home_win_rate": 29.411764705882355,
+    "home_home_goals_avg": 1.2352941176470589,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.588235294117647,
+    "h2h_home_win_pct": 33.0,
+    "h2h_draw_pct": 50.0,
+    "h2h_away_win_pct": 17.0,
+    "home_shots_avg": 9.90625,
+    "away_shots_avg": 10.911764705882353,
+    "home_shots_on_target_pct": 36.90851735015773,
+    "away_shots_on_target_pct": 32.34501347708895,
+    "home_dangerous_attacks_avg": 44.6875,
+    "away_dangerous_attacks_avg": 48.588235294117645,
+    "home_possession": 41.0,
+    "away_possession": 46.16,
+    "home_pass_accuracy": 72.11688311688312,
+    "away_pass_accuracy": 72.19500244977952,
+    "home_fouls_avg": 11.25,
+    "away_fouls_avg": 10.970588235294118,
+    "home_yellow_avg": 2.0,
+    "away_yellow_avg": 1.8529411764705883,
+    "odds_home": 2.62,
+    "odds_draw": 3.1,
+    "odds_away": 2.6,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 38
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.361,
+        "2": 0.4968,
+        "X": 0.1422
+      },
+      "computed_odds": {
+        "1": 2.77,
+        "2": 2.01,
+        "X": 7.03
+      },
+      "confidence": 0.4968
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0348,
+        "Under": 0.9652
+      },
+      "computed_odds": {
+        "Over": 28.74,
+        "Under": 1.04
+      },
+      "confidence": 0.9652
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.361,
+        "2": 0.4968,
+        "X": 0.1422
+      },
+      "computed_odds": {
+        "1": 2.77,
+        "2": 2.01,
+        "X": 7.03
+      },
+      "confidence": 0.4968
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0348,
+        "Under": 0.9652
+      },
+      "computed_odds": {
+        "Over": 28.74,
+        "Under": 1.04
+      },
+      "confidence": 0.9652
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "X",
+      "probabilities": {
+        "1": 0.2912,
+        "X": 0.3565,
+        "2": 0.3523
+      },
+      "computed_odds": {
+        "1": 3.43,
+        "X": 2.81,
+        "2": 2.84
+      },
+      "confidence": 0.3565
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.4736842105263158,
+        "away": 0.5789473684210527,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.3505262242324085,
+        "away": 0.353222579803427,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.2222222222222222,
+        "away": 0.3888888888888889,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.3671875,
+        "away": 0.5,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.17,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.3095416666666666,
+        "away": 0.37401882352941174,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.5,
+      "expected_goals": 2.625919117647059
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 3.3
+        },
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.63,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.36,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": false,
+    "ml_result": "2",
+    "weighted_result": "X",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (1 win in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 2.6,
+        "fair": 2.01,
+        "value_pct": 29.4
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Kilmarnock": [],
+    "St Mirren": []
+  }
+}

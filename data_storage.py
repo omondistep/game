@@ -6,6 +6,7 @@ Handles storing and retrieving match data for training.
 
 import json
 import os
+import re
 from typing import Dict, List, Optional
 from datetime import datetime
 import pickle
@@ -292,6 +293,25 @@ class MatchDataStorage:
     def get_league_training_data(self, league: str = None) -> List[Dict]:
         """Get training data for a specific league or all data."""
         training_data = self.get_training_data()
+        
+        # Handle new dictionary format
+        if isinstance(training_data, dict):
+            if not league:
+                # Return all examples flattened
+                all_examples = []
+                for league_data in training_data.values():
+                    examples = league_data.get('examples', [])
+                    all_examples.extend(examples)
+                return all_examples
+            
+            # Return specific league - try exact match first
+            for league_key, league_data in training_data.items():
+                info = league_data.get('league_info', {})
+                if info.get('league') == league or info.get('league_code') == league:
+                    return league_data.get('examples', [])
+            return []
+        
+        # Handle old list format
         if not league:
             # Return all examples flattened
             all_examples = []

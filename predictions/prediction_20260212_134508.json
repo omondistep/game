@@ -1,0 +1,243 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/baku-sporting-moik-baku-2382436",
+  "timestamp": "2026-02-12T13:45:08.087218",
+  "features": {
+    "home_position": 2,
+    "away_position": 7,
+    "position_diff": -5,
+    "home_points": 26,
+    "away_points": 15,
+    "home_form_points": 13,
+    "away_form_points": 10,
+    "home_recent_form": 7,
+    "away_recent_form": 4,
+    "home_wins_l6": 4,
+    "home_draws_l6": 1,
+    "home_losses_l6": 1,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.5333333333333334,
+    "home_conceded_avg": 0.8666666666666667,
+    "away_scored_avg": 1.2857142857142858,
+    "away_conceded_avg": 1.7857142857142858,
+    "expected_total_goals": 2.7357142857142858,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 0.0,
+    "h2h_draw_pct": 75.0,
+    "h2h_away_win_pct": 25.0,
+    "home_shots_avg": 7.733333333333333,
+    "away_shots_avg": 9.142857142857142,
+    "home_shots_on_target_pct": 50.86206896551724,
+    "away_shots_on_target_pct": 43.75,
+    "home_dangerous_attacks_avg": 39.666666666666664,
+    "away_dangerous_attacks_avg": 48.142857142857146,
+    "home_possession": 46.6,
+    "away_possession": 52.0,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 13.666666666666666,
+    "away_fouls_avg": 13.5,
+    "home_yellow_avg": 1.6,
+    "away_yellow_avg": 1.9285714285714286,
+    "odds_home": 1.66,
+    "odds_draw": 3.4,
+    "odds_away": 4.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4557,
+        "2": 0.3284,
+        "X": 0.2159
+      },
+      "computed_odds": {
+        "1": 2.19,
+        "2": 3.05,
+        "X": 4.63
+      },
+      "confidence": 0.4557
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9896,
+        "Under": 0.0104
+      },
+      "computed_odds": {
+        "Over": 1.01,
+        "Under": 96.15
+      },
+      "confidence": 0.9896
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4557,
+        "2": 0.3284,
+        "X": 0.2159
+      },
+      "computed_odds": {
+        "1": 2.19,
+        "2": 3.05,
+        "X": 4.63
+      },
+      "confidence": 0.4557
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9896,
+        "Under": 0.0104
+      },
+      "computed_odds": {
+        "Over": 1.01,
+        "Under": 96.15
+      },
+      "confidence": 0.9896
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.427,
+        "X": 0.2699,
+        "2": 0.303
+      },
+      "computed_odds": {
+        "1": 2.34,
+        "X": 3.7,
+        "2": 3.3
+      },
+      "confidence": 0.427
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.9473684210526316,
+        "away": 0.6842105263157895,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.5384669529105371,
+        "away": 0.19863447596255368,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.7222222222222222,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.6666666666666667,
+        "away": 0.375,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.25,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.2796,
+        "away": 0.35009523809523807,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.75,
+      "expected_goals": 2.7357142857142858
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 5.3
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 5.1
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 4.4
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 3.3
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.74,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.82,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Home team in excellent form (4 wins in last 6)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 4.5,
+        "fair": 3.05,
+        "value_pct": 47.5
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Baku Sporting": [],
+    "MOIK Baku": []
+  }
+}

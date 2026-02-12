@@ -1,0 +1,246 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/z%C3%BCrich-fc-winterthur-2423207",
+  "timestamp": "2026-02-11T20:43:23.980281",
+  "features": {
+    "home_position": 10,
+    "away_position": 12,
+    "position_diff": -2,
+    "home_points": 25,
+    "away_points": 14,
+    "home_form_points": 1,
+    "away_form_points": 5,
+    "home_recent_form": 0,
+    "away_recent_form": 4,
+    "home_wins_l6": 0,
+    "home_draws_l6": 1,
+    "home_losses_l6": 5,
+    "away_wins_l6": 1,
+    "away_draws_l6": 2,
+    "away_losses_l6": 3,
+    "home_scored_avg": 1.44,
+    "home_conceded_avg": 1.84,
+    "away_scored_avg": 1.44,
+    "away_conceded_avg": 2.36,
+    "expected_total_goals": 3.54,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 67.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 14.36,
+    "away_shots_avg": 11.44,
+    "home_shots_on_target_pct": 38.16155988857939,
+    "away_shots_on_target_pct": 36.01398601398601,
+    "home_dangerous_attacks_avg": 51.16,
+    "away_dangerous_attacks_avg": 35.2,
+    "home_possession": 52.68,
+    "away_possession": 43.42,
+    "home_pass_accuracy": 77.12357458692111,
+    "away_pass_accuracy": 75.18708152816069,
+    "home_fouls_avg": 13.84,
+    "away_fouls_avg": 12.04,
+    "home_yellow_avg": 2.52,
+    "away_yellow_avg": 2.12,
+    "odds_home": 1.62,
+    "odds_draw": 4.0,
+    "odds_away": 5.0,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 49
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.485,
+        "2": 0.415,
+        "X": 0.1
+      },
+      "computed_odds": {
+        "1": 2.06,
+        "2": 2.41,
+        "X": 10.0
+      },
+      "confidence": 0.485
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0,
+        "Under": 1.0
+      },
+      "computed_odds": {
+        "Over": 99.0,
+        "Under": 1.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.485,
+        "2": 0.415,
+        "X": 0.1
+      },
+      "computed_odds": {
+        "1": 2.06,
+        "2": 2.41,
+        "X": 10.0
+      },
+      "confidence": 0.485
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.0,
+        "Under": 1.0
+      },
+      "computed_odds": {
+        "Over": 99.0,
+        "Under": 1.0
+      },
+      "confidence": 1.0
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4137,
+        "X": 0.2721,
+        "2": 0.3142
+      },
+      "computed_odds": {
+        "1": 2.42,
+        "X": 3.68,
+        "2": 3.18
+      },
+      "confidence": 0.4137
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.65,
+        "Under": 0.35
+      },
+      "computed_odds": {
+        "Over": 1.54,
+        "Under": 2.86
+      },
+      "confidence": 0.65
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.42105263157894735,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.578368999421631,
+        "away": 0.18739155581260844,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.05555555555555555,
+        "away": 0.2777777777777778,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.39999999999999997,
+        "away": 0.27,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.52808,
+        "away": 0.37518666666666667,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 3.54
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 5.9
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 4.4
+        },
+        {
+          "factor": "h2h",
+          "direction": "home",
+          "impact": 3.4
+        },
+        {
+          "factor": "league_position",
+          "direction": "home",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.54,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.88,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": false,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 6)",
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\u26bd High-scoring match expected (avg 3.5 goals)",
+      "\ud83d\udcdc Home team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 5.0,
+        "fair": 2.41,
+        "value_pct": 107.5
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Z\u00fcrich": [],
+    "FC Winterthur": []
+  }
+}

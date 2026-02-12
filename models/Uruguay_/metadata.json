@@ -1,0 +1,56 @@
+{
+  "league_key": "Uy1_242",
+  "league_info": {
+    "league_code": "Uy1",
+    "match_id_prefix": "242",
+    "country": "Uruguay",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-uruguay/primera-division",
+    "country_code": "uy",
+    "match_count": 10,
+    "teams": {
+      "Albion FC (URU)": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Liverpool (URU)": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Montevideo Wanderers": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Defensor Sporting": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Pe\u00f1arol": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "CA Torque": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Boston River": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Nacional (URU)": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "CA Cerro": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Danubio FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 10,
+  "trained_at": "2026-02-12T10:10:12.937086"
+}

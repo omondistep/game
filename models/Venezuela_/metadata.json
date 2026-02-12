@@ -1,0 +1,72 @@
+{
+  "league_key": "Ve1_242",
+  "league_info": {
+    "league_code": "Ve1",
+    "match_id_prefix": "242",
+    "country": "Venezuela",
+    "league": "",
+    "league_url_path": "football-tips-and-predictions-for-venezuela/primera-division",
+    "country_code": "ve",
+    "match_count": 22,
+    "teams": {
+      "Puerto Cabello": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Metropolitanos": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Carabobo": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Portuguesa": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportivo La Guaira": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Monagas SC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Estudiantes FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Caracas": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "UCV FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Trujillanos FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Deportivo Tachira": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Academia Anzo\u00e1tegui": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Rayo Zuliano": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Zamora": {
+        "home_matches": 2,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 22,
+  "trained_at": "2026-02-12T10:10:13.292571"
+}

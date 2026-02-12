@@ -1,0 +1,221 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/hh-export-cd-walter-ferretti-2420379",
+  "timestamp": "2026-02-12T12:16:04.954203",
+  "features": {
+    "home_position": null,
+    "away_position": null,
+    "position_diff": 0,
+    "home_points": 30,
+    "away_points": 26,
+    "home_form_points": 6,
+    "away_form_points": 8,
+    "home_recent_form": 0,
+    "away_recent_form": 5,
+    "home_wins_l6": 2,
+    "home_draws_l6": 0,
+    "home_losses_l6": 4,
+    "away_wins_l6": 2,
+    "away_draws_l6": 2,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.391304347826087,
+    "home_conceded_avg": 1.608695652173913,
+    "away_scored_avg": 1.5714285714285714,
+    "away_conceded_avg": 1.2857142857142858,
+    "expected_total_goals": 2.9285714285714284,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 4.3478260869565215,
+    "away_away_goals_avg": 2.130434782608696,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 3.6956521739130435,
+    "away_shots_avg": 6.380952380952381,
+    "home_shots_on_target_pct": 34.11764705882353,
+    "away_shots_on_target_pct": 48.507462686567166,
+    "home_dangerous_attacks_avg": 16.608695652173914,
+    "away_dangerous_attacks_avg": 32.523809523809526,
+    "home_possession": 46.67,
+    "away_possession": 48.87,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": null,
+    "away_fouls_avg": 0.5238095238095238,
+    "home_yellow_avg": 0.6956521739130435,
+    "away_yellow_avg": 2.4285714285714284,
+    "odds_home": 2.3,
+    "odds_draw": 3.25,
+    "odds_away": 2.7,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3728,
+        "2": 0.312,
+        "X": 0.3152
+      },
+      "computed_odds": {
+        "1": 2.68,
+        "2": 3.21,
+        "X": 3.17
+      },
+      "confidence": 0.3728
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9999,
+        "Under": 0.0001
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 0.9999
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3728,
+        "2": 0.312,
+        "X": 0.3152
+      },
+      "computed_odds": {
+        "1": 2.68,
+        "2": 3.21,
+        "X": 3.17
+      },
+      "confidence": 0.3728
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9999,
+        "Under": 0.0001
+      },
+      "computed_odds": {
+        "Over": 1.0,
+        "Under": 99.0
+      },
+      "confidence": 0.9999
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3462,
+        "X": 0.2937,
+        "2": 0.3601
+      },
+      "computed_odds": {
+        "1": 2.89,
+        "X": 3.4,
+        "2": 2.78
+      },
+      "confidence": 0.3601
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.5263157894736843,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.3906945681211042,
+        "away": 0.33281389136242207,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.3333333333333333,
+        "away": 0.4444444444444444,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.3333333333333333,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.44565217391304346,
+        "away": 0.5714285714285714,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.28002,
+        "away": 0.29322,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.9285714285714284
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 2.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.93,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.96,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "2",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udcc9 Away team struggles away (4% win rate)"
+    ],
+    "value_bets": [],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "H&H Export": [],
+    "CD Walter Ferretti": []
+  }
+}

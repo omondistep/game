@@ -1,0 +1,231 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/arzignano-valchiampo-ac-trento-2358765",
+  "timestamp": "2026-02-11T21:06:46.720282",
+  "features": {
+    "home_position": 12,
+    "away_position": 8,
+    "position_diff": 4,
+    "away_points": 38,
+    "home_points": 30,
+    "home_form_points": 6,
+    "away_form_points": 11,
+    "home_recent_form": 3,
+    "away_recent_form": 7,
+    "home_wins_l6": 2,
+    "home_draws_l6": 0,
+    "home_losses_l6": 4,
+    "away_wins_l6": 3,
+    "away_draws_l6": 2,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.3928571428571428,
+    "home_conceded_avg": 1.4642857142857142,
+    "away_scored_avg": 1.2592592592592593,
+    "away_conceded_avg": 1.0,
+    "expected_total_goals": 2.558201058201058,
+    "home_home_win_rate": 38.46153846153847,
+    "home_home_goals_avg": 1.6153846153846154,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.0714285714285714,
+    "h2h_home_win_pct": 0.0,
+    "h2h_draw_pct": 50.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 9.035714285714286,
+    "away_shots_avg": 11.11111111111111,
+    "home_shots_on_target_pct": 39.130434782608695,
+    "away_shots_on_target_pct": 37.0,
+    "home_dangerous_attacks_avg": 52.964285714285715,
+    "away_dangerous_attacks_avg": 69.29629629629629,
+    "home_possession": 46.04,
+    "away_possession": 55.88,
+    "home_pass_accuracy": 80.59071729957806,
+    "away_pass_accuracy": 83.46906948535782,
+    "home_fouls_avg": 11.25,
+    "away_fouls_avg": 10.444444444444445,
+    "home_yellow_avg": 2.107142857142857,
+    "away_yellow_avg": 1.5555555555555556,
+    "odds_home": 2.75,
+    "odds_draw": 3.2,
+    "odds_away": 2.55,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 40
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5125,
+        "2": 0.2667,
+        "X": 0.2209
+      },
+      "computed_odds": {
+        "1": 1.95,
+        "2": 3.75,
+        "X": 4.53
+      },
+      "confidence": 0.5125
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.1304,
+        "Under": 0.8696
+      },
+      "computed_odds": {
+        "Over": 7.67,
+        "Under": 1.15
+      },
+      "confidence": 0.8696
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5125,
+        "2": 0.2667,
+        "X": 0.2209
+      },
+      "computed_odds": {
+        "1": 1.95,
+        "2": 3.75,
+        "X": 4.53
+      },
+      "confidence": 0.5125
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.1304,
+        "Under": 0.8696
+      },
+      "computed_odds": {
+        "Over": 7.67,
+        "Under": 1.15
+      },
+      "confidence": 0.8696
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2874,
+        "X": 0.3031,
+        "2": 0.4096
+      },
+      "computed_odds": {
+        "1": 3.48,
+        "X": 3.3,
+        "2": 2.44
+      },
+      "confidence": 0.4096
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.42105263157894735,
+        "away": 0.631578947368421,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.34039003024298675,
+        "away": 0.3670872875169465,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.3333333333333333,
+        "away": 0.6111111111111112,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.48214285714285715,
+        "away": 0.5648148148148149,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.5,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.31076380952380955,
+        "away": 0.4389837037037037,
+        "weight": 0.1
+      },
+      "h2h_draws": 0.5,
+      "expected_goals": 2.558201058201058
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 5.6
+        },
+        {
+          "factor": "league_position",
+          "direction": "away",
+          "impact": 4.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.56,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.65,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": false,
+    "ml_result": "1",
+    "weighted_result": "2",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 2.75,
+        "fair": 1.95,
+        "value_pct": 41.0
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Arzignano Valchiampo": [],
+    "AC Trento": []
+  }
+}

@@ -3,7 +3,7 @@ Description=Daily Football Model Training Timer
 Requires=football_train.service
 
 [Timer]
-OnCalendar=*-*-* 08:00:00
+OnCalendar=*-*-* 08:40:00
 Persistent=true
 
 [Install]

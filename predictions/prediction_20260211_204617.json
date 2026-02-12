@@ -1,0 +1,241 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/vic-cp-san-crist%C3%B3bal-2371016",
+  "timestamp": "2026-02-11T20:45:27.376423",
+  "features": {
+    "home_position": null,
+    "away_position": null,
+    "position_diff": 0,
+    "away_points": 25,
+    "home_points": 15,
+    "home_form_points": 8,
+    "away_form_points": 10,
+    "home_recent_form": 3,
+    "away_recent_form": 7,
+    "home_wins_l6": 2,
+    "home_draws_l6": 2,
+    "home_losses_l6": 2,
+    "away_wins_l6": 2,
+    "away_draws_l6": 4,
+    "away_losses_l6": 0,
+    "home_scored_avg": 0.9444444444444444,
+    "home_conceded_avg": 1.5555555555555556,
+    "away_scored_avg": 1.5,
+    "away_conceded_avg": 1.4444444444444444,
+    "expected_total_goals": 2.7222222222222223,
+    "home_home_win_rate": 37.5,
+    "home_home_goals_avg": 1.375,
+    "away_away_win_rate": 37.5,
+    "away_away_goals_avg": 1.125,
+    "h2h_home_win_pct": 0.0,
+    "h2h_draw_pct": 100.0,
+    "h2h_away_win_pct": 0.0,
+    "home_shots_avg": 5.444444444444445,
+    "away_shots_avg": 7.666666666666667,
+    "home_shots_on_target_pct": 36.734693877551024,
+    "away_shots_on_target_pct": 43.47826086956522,
+    "home_dangerous_attacks_avg": 30.61111111111111,
+    "away_dangerous_attacks_avg": 34.94444444444444,
+    "home_possession": 41.92,
+    "away_possession": 50.27,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 8.11111111111111,
+    "away_fouls_avg": 11.38888888888889,
+    "home_yellow_avg": 2.2222222222222223,
+    "away_yellow_avg": 1.8888888888888888,
+    "odds_home": 2.05,
+    "odds_draw": 3.0,
+    "odds_away": 3.05,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 54
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4256,
+        "2": 0.4087,
+        "X": 0.1657
+      },
+      "computed_odds": {
+        "1": 2.35,
+        "2": 2.45,
+        "X": 6.04
+      },
+      "confidence": 0.4256
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9087,
+        "Under": 0.0913
+      },
+      "computed_odds": {
+        "Over": 1.1,
+        "Under": 10.95
+      },
+      "confidence": 0.9087
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4256,
+        "2": 0.4087,
+        "X": 0.1657
+      },
+      "computed_odds": {
+        "1": 2.35,
+        "2": 2.45,
+        "X": 6.04
+      },
+      "confidence": 0.4256
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.9087,
+        "Under": 0.0913
+      },
+      "computed_odds": {
+        "Over": 1.1,
+        "Under": 10.95
+      },
+      "confidence": 0.9087
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "X",
+      "probabilities": {
+        "1": 0.3187,
+        "X": 0.3769,
+        "2": 0.3045
+      },
+      "computed_odds": {
+        "1": 3.14,
+        "X": 2.65,
+        "2": 3.28
+      },
+      "confidence": 0.3769
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.5263157894736843,
+        "weight": 0.2
+      },
+      "odds_analysis": {
+        "home": 0.42454471639020996,
+        "away": 0.28534972740981324,
+        "weight": 0.15
+      },
+      "recent_form": {
+        "home": 0.4444444444444444,
+        "away": 0.5555555555555556,
+        "weight": 0.2
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.1
+      },
+      "goals_stats": {
+        "home": 0.3472222222222222,
+        "away": 0.5138888888888888,
+        "weight": 0.15
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.1
+      },
+      "shots_possession": {
+        "home": 0.25152,
+        "away": 0.30162,
+        "weight": 0.1
+      },
+      "h2h_draws": 1.0,
+      "expected_goals": 2.7222222222222223
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "top5_performance",
+          "direction": "home",
+          "impact": 5.0
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 2.5
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 2.2
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.72,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.44,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors"
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "X",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 3.05,
+        "fair": 2.45,
+        "value_pct": 24.5
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Vic": [],
+    "CP San Crist\u00f3bal": []
+  }
+}

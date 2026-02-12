@@ -170,19 +170,17 @@ class FootballPredictionSystem:
         if not match_data:
             return {'error': 'Failed to scrape match data', 'url': url}
 
-        if save_data:
-            # Use save_match_with_result to also update training data if result available
-            self.storage.save_match_with_result(match_data)
-
         features = FootballPredictor.extract_features(match_data)
         
         # Extract league for league-specific prediction
-        # Note: scraper stores info as 'match_info'
+        # Note: scraper stores info as 'match_info' with league_code and league fields
         league_info = match_data.get('match_info', match_data.get('info', {}))
+        league_code = league_info.get('league_code')
         league = league_info.get('league')
+        country = league_info.get('country')
         
-        # Get ML prediction
-        ml_prediction = self.predictor.predict(features, league)
+        # Get ML prediction with league and country for model lookup
+        ml_prediction = self.predictor.predict(features, league_code, country)
         
         # Generate weighted prediction
         weighted_prediction = self.weighted_predictor.predict(match_data, features)
@@ -1015,8 +1013,9 @@ class FootballPredictionSystem:
         # Edit league name option
         import re
         url = result.get('url', '')
-        code_match = re.search(r'-(\d{5})\d{1,3}$', url) if url else None
-        league_code = code_match.group(1) if code_match else None
+        # Use league_code from match_info (from leagues_db lookup)
+        info = result.get('match_info', {})
+        league_code = info.get('league_code')
         current_league = info.get('league', 'Unknown')
         
         if league_code:
