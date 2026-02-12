@@ -14,7 +14,7 @@ import sys
 import json
 import glob
 import argparse
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Tuple
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
@@ -29,18 +29,48 @@ DATA_DIR = "data"
 MODELS_DIR = "models"
 TRAINING_DATA_FILE = os.path.join(DATA_DIR, "training_data.pkl")
 LEAGUES_DB_FILE = os.path.join(DATA_DIR, "leagues_db.json")
+COMPREHENSIVE_DB_FILE = os.path.join(DATA_DIR, "comprehensive_leagues_db.json")
 
 
 class LeagueDatabase:
-    """Manages league information from JSON data."""
+    """Manages league information from JSON data using comprehensive database."""
     
     def __init__(self):
         self.leagues = {}
+        self.short_code_lookup = {}
         self.teams = {}
         self.load_existing()
     
     def load_existing(self):
-        """Load existing league database."""
+        """Load existing league database - prefer comprehensive database."""
+        # Try comprehensive database first
+        if os.path.exists(COMPREHENSIVE_DB_FILE):
+            try:
+                with open(COMPREHENSIVE_DB_FILE, 'r', encoding='utf-8') as f:
+                    comp_db = json.load(f)
+                
+                lookups = comp_db.get('lookups', {})
+                self.short_code_lookup = lookups.get('by_short_code', {})
+                
+                # Build leagues from short_code_lookup
+                self.leagues = {}
+                for code, info in self.short_code_lookup.items():
+                    self.leagues[code] = {
+                        'league_code': code,
+                        'country': info.get('country', ''),
+                        'league': info.get('league', ''),
+                        'league_url_path': info.get('league_url_path', ''),
+                        'country_code': info.get('country_code', ''),
+                        'match_count': info.get('match_count', 0),
+                        'teams': info.get('teams', {})
+                    }
+                
+                print(f"Loaded {len(self.leagues)} leagues from comprehensive database")
+                return
+            except Exception as e:
+                print(f"Error loading comprehensive database: {e}")
+        
+        # Fallback to old leagues_db.json
         if os.path.exists(LEAGUES_DB_FILE):
             try:
                 with open(LEAGUES_DB_FILE, 'r', encoding='utf-8') as f:
@@ -57,18 +87,22 @@ class LeagueDatabase:
             json.dump(self.leagues, f, indent=2, ensure_ascii=False)
         print(f"Saved {len(self.leagues)} leagues to database")
     
-    def add_league(self, league_info: Dict):
-        """Add or update a league from match data."""
+    def get_league_info(self, league_code: str) -> Dict:
+        """Get league info from short_code lookup."""
+        if league_code in self.short_code_lookup:
+            return self.short_code_lookup[league_code]
+        return self.leagues.get(league_code, {})
+    
+    def add_league(self, league_info: Dict) -> str:
+        """Add or update a league from match data. Returns league_key (short_code)."""
         league_code = league_info.get('league_code', '')
-        match_id = league_info.get('match_id', '')
         
-        # Create unique league key
-        league_key = f"{league_code}_{match_id[:3]}" if len(match_id) >= 3 else league_code
+        # Use short_code as the primary key (consistent with scraper)
+        league_key = league_code if league_code else 'Unknown'
         
         if league_key not in self.leagues:
             self.leagues[league_key] = {
                 'league_code': league_code,
-                'match_id_prefix': match_id[:3] if len(match_id) >= 3 else '',
                 'country': league_info.get('country', ''),
                 'league': league_info.get('league', ''),
                 'league_url_path': league_info.get('league_url_path', ''),
@@ -176,11 +210,9 @@ class TrainingDataBuilder:
         if not match.get('has_result', False):
             return None
         
-        # Get league key
-        self.league_db.add_league(match)
-        
-        league_code = match.get('league_code', 'Unknown')
-        league_key = f"{league_code}_{match.get('match_id', '000')[:3]}"
+        # Get league key (use short_code as primary key)
+        league_code = match.get('league_code', '')
+        league_key = self.league_db.add_league(match)
         
         # Extract features and labels
         features = self.extract_features(match)
@@ -264,7 +296,7 @@ class ModelTrainer:
         self.scalers = {}
     
     def train_league(self, league_key: str, league_data: Dict) -> bool:
-        """Train models for a specific league."""
+        """Train models for a specific league with train/test split."""
         examples = league_data.get('examples', [])
         if len(examples) < 5:
             print(f"  Skipping {league_key}: only {len(examples)} examples")
@@ -303,9 +335,21 @@ class ModelTrainer:
         y_result = np.array(y_result)
         y_over_2_5 = np.array(y_over_2_5)
         
+        # Split data into train/test sets (80/20)
+        if len(examples) >= 10:
+            X_train, X_test, y_result_train, y_result_test, y_ou_train, y_ou_test = train_test_split(
+                X, y_result, y_over_2_5, test_size=0.2, random_state=42
+            )
+        else:
+            # Too few examples for split, use all for training
+            X_train, X_test = X, X
+            y_result_train, y_result_test = y_result, y_result
+            y_ou_train, y_ou_test = y_over_2_5, y_over_2_5
+        
         # Scale features
         scaler = StandardScaler()
-        X_scaled = scaler.fit_transform(X)
+        X_train_scaled = scaler.fit_transform(X_train)
+        X_test_scaled = scaler.transform(X_test) if len(X_test) > 0 else X_train_scaled
         
         # Train result model
         result_model = RandomForestClassifier(
@@ -316,7 +360,7 @@ class ModelTrainer:
         )
         
         try:
-            result_model.fit(X_scaled, y_result)
+            result_model.fit(X_train_scaled, y_result_train)
         except Exception as e:
             print(f"  Error training result model: {e}")
             return False
@@ -329,17 +373,17 @@ class ModelTrainer:
         )
         
         try:
-            ou_model.fit(X_scaled, y_over_2_5)
+            ou_model.fit(X_train_scaled, y_ou_train)
         except Exception as e:
             print(f"  Error training O/U model: {e}")
             return False
         
-        # Calculate accuracy
-        result_acc = result_model.score(X_scaled, y_result)
-        ou_acc = ou_model.score(X_scaled, y_over_2_5)
+        # Calculate accuracy on test set
+        result_acc = result_model.score(X_test_scaled, y_result_test)
+        ou_acc = ou_model.score(X_test_scaled, y_ou_test)
         
-        print(f"  Result accuracy: {result_acc:.2%}")
-        print(f"  O/U accuracy: {ou_acc:.2%}")
+        print(f"  Result accuracy (test): {result_acc:.2%}")
+        print(f"  O/U accuracy (test): {ou_acc:.2%}")
         
         # Store models
         league_name = league_data['league_info'].get('league', 'Unknown')
@@ -351,7 +395,9 @@ class ModelTrainer:
             'ou_model': ou_model,
             'scaler': scaler,
             'league_info': league_data['league_info'],
-            'example_count': len(examples)
+            'example_count': len(examples),
+            'result_accuracy': result_acc,
+            'ou_accuracy': ou_acc
         }
         
         # Save models
@@ -383,6 +429,8 @@ class ModelTrainer:
             'league_key': league_key,
             'league_info': model_data['league_info'],
             'example_count': model_data['example_count'],
+            'result_accuracy': model_data.get('result_accuracy', 0),
+            'ou_accuracy': model_data.get('ou_accuracy', 0),
             'trained_at': datetime.now().isoformat()
         }
         
@@ -402,11 +450,127 @@ class ModelTrainer:
             if self.train_league(league_key, league_data):
                 success_count += 1
         
+        # Train global model with all data
+        print("\n" + "-" * 60)
+        print("TRAINING GLOBAL MODEL (all leagues combined)")
+        print("-" * 60)
+        self.train_global_model(training_data)
+        
         print(f"\n" + "=" * 60)
         print(f"TRAINING COMPLETE")
         print(f"=" * 60)
         print(f"Leagues trained successfully: {success_count}/{len(training_data)}")
         print(f"Models saved to: {MODELS_DIR}")
+    
+    def train_global_model(self, training_data: Dict):
+        """Train a global model using all available data."""
+        # Collect all examples from all leagues
+        all_examples = []
+        for league_data in training_data.values():
+            all_examples.extend(league_data.get('examples', []))
+        
+        if len(all_examples) < 50:
+            print(f"  Skipping global model: only {len(all_examples)} examples")
+            return
+        
+        print(f"  Total examples: {len(all_examples)}")
+        
+        # Extract features and labels
+        X = []
+        y_result = []
+        y_over_2_5 = []
+        
+        for ex in all_examples:
+            feat = ex['features']
+            label = ex['labels']
+            
+            feature_vec = [
+                feat.get('prob_home', 0.33),
+                feat.get('prob_draw', 0.33),
+                feat.get('prob_away', 0.34),
+                feat.get('prob_home_away_ratio', 1.0),
+                feat.get('prob_draw_diff', 0.0),
+                feat.get('predicted_avg_goals', 2.5),
+                feat.get('odds', 2.0),
+                feat.get('league_code_encoded', 0),
+            ]
+            
+            X.append(feature_vec)
+            y_result.append(label.get('result', 1))
+            y_over_2_5.append(label.get('over_2_5', 0))
+        
+        X = np.array(X)
+        y_result = np.array(y_result)
+        y_over_2_5 = np.array(y_over_2_5)
+        
+        # Split for validation
+        X_train, X_test, y_result_train, y_result_test, y_ou_train, y_ou_test = train_test_split(
+            X, y_result, y_over_2_5, test_size=0.2, random_state=42
+        )
+        
+        # Scale features
+        scaler = StandardScaler()
+        X_train_scaled = scaler.fit_transform(X_train)
+        X_test_scaled = scaler.transform(X_test)
+        
+        # Train result model
+        result_model = RandomForestClassifier(
+            n_estimators=200,
+            max_depth=10,
+            random_state=42,
+            class_weight='balanced',
+            n_jobs=-1
+        )
+        
+        try:
+            result_model.fit(X_train_scaled, y_result_train)
+            result_acc = result_model.score(X_test_scaled, y_result_test)
+            print(f"  Result model accuracy: {result_acc:.2%}")
+        except Exception as e:
+            print(f"  Error training result model: {e}")
+            return
+        
+        # Train over/under model
+        ou_model = GradientBoostingClassifier(
+            n_estimators=100,
+            max_depth=5,
+            random_state=42
+        )
+        
+        try:
+            ou_model.fit(X_train_scaled, y_ou_train)
+            ou_acc = ou_model.score(X_test_scaled, y_ou_test)
+            print(f"  O/U model accuracy: {ou_acc:.2%}")
+        except Exception as e:
+            print(f"  Error training O/U model: {e}")
+            return
+        
+        # Save global model
+        global_dir = os.path.join(MODELS_DIR, 'Global_Model')
+        os.makedirs(global_dir, exist_ok=True)
+        
+        with open(os.path.join(global_dir, 'result_model.pkl'), 'wb') as f:
+            pickle.dump(result_model, f)
+        
+        with open(os.path.join(global_dir, 'ou_model.pkl'), 'wb') as f:
+            pickle.dump(ou_model, f)
+        
+        with open(os.path.join(global_dir, 'scaler.pkl'), 'wb') as f:
+            pickle.dump(scaler, f)
+        
+        metadata = {
+            'league_key': 'Global',
+            'league_info': {'league': 'All Leagues', 'country': 'Global'},
+            'example_count': len(all_examples),
+            'result_accuracy': result_acc,
+            'ou_accuracy': ou_acc,
+            'trained_at': datetime.now().isoformat()
+        }
+        
+        with open(os.path.join(global_dir, 'metadata.json'), 'w') as f:
+            json.dump(metadata, f, indent=2)
+        
+        print(f"  Global model saved to {global_dir}")
 
 
 def main():

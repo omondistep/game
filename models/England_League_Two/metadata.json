@@ -1,0 +1,99 @@
+{
+  "league_key": "L2",
+  "league_info": {
+    "league_code": "L2",
+    "country": "England",
+    "league": "League Two",
+    "league_url_path": "",
+    "country_code": "gb-en",
+    "match_count": 38,
+    "teams": {
+      "Newport County": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Accrington Stanley": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Bromley FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Crewe Alexandra": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Milton Keynes Dons": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Bristol Rovers": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Harrogate Town": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Fleetwood Town": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Barnet": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Tranmere Rovers": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Colchester Utd": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Grimsby Town": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Salford City": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Chesterfield": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Walsall FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Crawley Town": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Cambridge Utd": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Shrewsbury": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Notts County": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Swindon Town": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Barrow AFC": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 24,
+  "trained_at": "2026-02-12T19:22:03.217989"
+}

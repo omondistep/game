@@ -1,0 +1,68 @@
+{
+  "league_key": "Cr1_241",
+  "league_info": {
+    "league_code": "Cr1",
+    "match_id_prefix": "241",
+    "country": "Costa Rica",
+    "league": "Primera Division",
+    "league_url_path": "football-tips-and-predictions-for-costa-rica/primera-division",
+    "country_code": "cr",
+    "match_count": 140,
+    "teams": {
+      "Puntarenas": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Guadalupe FC": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "LD Alajuelense": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "San Carlos": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Municipal Liberia": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "CS Herediano": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Saprissa": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "CS Cartagin\u00e9s": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "P\u00e9rez Zeled\u00f3n": {
+        "home_matches": 10,
+        "away_matches": 0
+      },
+      "Sporting (CRC)": {
+        "home_matches": 5,
+        "away_matches": 10
+      },
+      "CS Cartagines": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Perez Zeledon": {
+        "home_matches": 6,
+        "away_matches": 0
+      },
+      "Sporting CRC": {
+        "home_matches": 3,
+        "away_matches": 6
+      }
+    }
+  },
+  "example_count": 28,
+  "trained_at": "2026-02-12T19:11:22.703317"
+}

@@ -1,0 +1,63 @@
+{
+  "league_key": "InT",
+  "league_info": {
+    "league_code": "InT",
+    "country": "India",
+    "league": "Santosh Trophy",
+    "league_url_path": "",
+    "country_code": "in",
+    "match_count": 72,
+    "teams": {
+      "Nagaland": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Tamilnadu": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Rajasthan United": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "West Bengal": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Assam": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Uttarakhand": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Railway": {
+        "home_matches": 6,
+        "away_matches": 4
+      },
+      "Punjab": {
+        "home_matches": 4,
+        "away_matches": 6
+      },
+      "Meghalaya": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Services": {
+        "home_matches": 4,
+        "away_matches": 6
+      },
+      "Kerala": {
+        "home_matches": 6,
+        "away_matches": 4
+      },
+      "Orissa": {
+        "home_matches": 2,
+        "away_matches": 4
+      }
+    }
+  },
+  "example_count": 48,
+  "trained_at": "2026-02-12T19:21:57.304810"
+}

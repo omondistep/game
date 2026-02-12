@@ -1,0 +1,71 @@
+{
+  "league_key": "Ae1",
+  "league_info": {
+    "league_code": "Ae1",
+    "country": "UAE",
+    "league": "Football League",
+    "league_url_path": "",
+    "country_code": "ae",
+    "match_count": 36,
+    "teams": {
+      "Ittihad Kalba": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Ain": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Wahda Abu Dhabi": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Dubba Al Fujairah": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Ajman Club": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Ahli Dubai": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Al Dhafra": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Sharjah SC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Wasl Dubai": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Khor Fakkan Club": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Bataeh SC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Jazira Abu Dhabi": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Nasr Dubai": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Baniyas": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 24,
+  "trained_at": "2026-02-12T19:21:29.146675"
+}

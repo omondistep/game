@@ -1,0 +1,63 @@
+{
+  "league_key": "It2",
+  "league_info": {
+    "league_code": "It2",
+    "country": "Italy",
+    "league": "Serie B",
+    "league_url_path": "",
+    "country_code": "it",
+    "match_count": 18,
+    "teams": {
+      "Sampdoria": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Palermo": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Pescara": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Catanzaro": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Venezia": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Modena FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Padova Calcio": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Carrarese Calcio": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Virtus Entella": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Cesena": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Reggiana": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Mantova FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 12,
+  "trained_at": "2026-02-12T19:21:58.847661"
+}

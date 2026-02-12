@@ -1,0 +1,88 @@
+{
+  "league_key": "Tr3_242",
+  "league_info": {
+    "league_code": "Tr3",
+    "match_id_prefix": "242",
+    "country": "T\u00fcrkiye",
+    "league": "Tff 2 Lig",
+    "league_url_path": "football-tips-and-predictions-for-turkey/tff-2-lig",
+    "country_code": "tr",
+    "match_count": 81,
+    "teams": {
+      "Yeni Malatyaspor": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Fethiyespor": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Hekimoglu Trabzon": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Mardin BB": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Antalya Kestelspor": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Buca FK": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Karacabey Bld.": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Adana 1954 FK": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Alia\u011fa FK": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Somaspor": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Arnavutk\u00f6y Bld.": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Gebzespor": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Adanaspor": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Kahramanmara\u015f \u0130stiklalsp": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Karacabey Bld": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Aliaga FK": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Arnavutkoy Bld": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Kahramanmaras Istiklalsp": {
+        "home_matches": 0,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 16,
+  "trained_at": "2026-02-12T19:11:56.420614"
+}

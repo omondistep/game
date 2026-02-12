@@ -1,0 +1,47 @@
+{
+  "league_key": "XkC",
+  "league_info": {
+    "league_code": "XkC",
+    "country": "Kosovo",
+    "league": "Kosovar Cup",
+    "league_url_path": "",
+    "country_code": "xk",
+    "match_count": 10,
+    "teams": {
+      "Drita": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "KF Llapi": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "KF Drenica": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "KF Ferizaj": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "FK Dukagjin": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Prishtina e Re": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "FC Prishtina": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Ballkani": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:22:24.209931"
+}

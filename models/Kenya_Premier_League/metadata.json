@@ -1,0 +1,51 @@
+{
+  "league_key": "Ke1",
+  "league_info": {
+    "league_code": "Ke1",
+    "country": "Kenya",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "ke",
+    "match_count": 15,
+    "teams": {
+      "Bandari FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Kenya Police FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Mathare United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "KCB Nairobi": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Homeboyz FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Mara Sugar": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Bidco United": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Nairobi United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "APS Bomet": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 10,
+  "trained_at": "2026-02-12T19:22:02.162322"
+}

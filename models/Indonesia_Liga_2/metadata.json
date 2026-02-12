@@ -1,0 +1,75 @@
+{
+  "league_key": "Id2",
+  "league_info": {
+    "league_code": "Id2",
+    "country": "Indonesia",
+    "league": "Liga 2",
+    "league_url_path": "",
+    "country_code": "id",
+    "match_count": 27,
+    "teams": {
+      "Garudayaksa FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "PSMS Medan": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deltras Sidoarjo": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Aceh United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Persekat": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sulut United": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Adhyaksa": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sriwijaya FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "PSIS Semarang": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Tornado Pekanbaru": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Persiku Kudus": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Persipura Jayapura": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "PSG Pati": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sumsel United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Persela Lamongan": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 18,
+  "trained_at": "2026-02-12T19:21:56.144638"
+}

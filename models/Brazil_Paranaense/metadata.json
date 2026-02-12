@@ -1,0 +1,140 @@
+{
+  "league_key": "BrP_242",
+  "league_info": {
+    "league_code": "BrP",
+    "match_id_prefix": "242",
+    "country": "Brazil",
+    "league": "Paranaense",
+    "league_url_path": "football-tips-and-predictions-for-brazil/paranaense",
+    "country_code": "br",
+    "match_count": 150,
+    "teams": {
+      "Aruko Sports": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Maring\u00e1 FC PR": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Oper\u00e1rio PR": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Azuriz FC PR": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Atl\u00e9tico PR": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Foz do Igua\u00e7u PR": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Serra Branca": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "Confian\u00e7a EC": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Esporte PB": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Pombal": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Andraus Brasil": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Cascavel PR": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Nacional PB": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Botafogo PB": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Retr\u00f4 PE": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Maguary PE": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Londrina": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Independente FSJ": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Treze": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Campinense PB": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Santa Cruz": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Decis\u00e3o PE": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Coritiba": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Cianorte PR": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Maringa FC PR": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Operario PR": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Atletico PR": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Foz do Iguacu PR": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Confianca EC": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Retro PE": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Decisao PE": {
+        "home_matches": 0,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 30,
+  "trained_at": "2026-02-12T19:11:17.275113"
+}

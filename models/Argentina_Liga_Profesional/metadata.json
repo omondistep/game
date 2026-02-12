@@ -1,0 +1,175 @@
+{
+  "league_key": "Ar1",
+  "league_info": {
+    "league_code": "Ar1",
+    "country": "Argentina",
+    "league": "Liga Profesional",
+    "league_url_path": "",
+    "country_code": "ar",
+    "match_count": 117,
+    "teams": {
+      "Gimnasia La Plata": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Racing Club": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Rosario Central": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Belgrano Cordoba": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Boca Juniors": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Deportivo Riestra": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "CA Tigre": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Estudiantes Rio Cuarto": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Argentinos Juniors": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Sarmiento Junin": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "CA Huracan": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Independiente Rivadavia": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Gimnasia Mendoza": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "San Lorenzo": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Atletico Tucuman": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Central Cordoba SdE": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Newells Old Boys": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Independiente": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "River Plate": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Estudiantes La Plata": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Lanus": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Union Santa Fe": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "CA Banfield": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Velez Sarsfield": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Talleres Cordoba": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "CA Platense": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Defensa y Justicia": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Instituto Cordoba": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Belgrano C\u00f3rdoba": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Estudiantes R\u00edo Cuarto": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Sarmiento Jun\u00edn": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "CA Hurac\u00e1n": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Atl\u00e9tico Tucum\u00e1n": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Central C\u00f3rdoba SdE": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Newell's Old Boys": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Lan\u00fas": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Uni\u00f3n Santa Fe": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "V\u00e9lez S\u00e1rsfield": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Talleres C\u00f3rdoba": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Instituto C\u00f3rdoba": {
+        "home_matches": 1,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 78,
+  "trained_at": "2026-02-12T19:21:31.358976"
+}

@@ -1,0 +1,51 @@
+{
+  "league_key": "KW",
+  "league_info": {
+    "league_code": "KW",
+    "country": "Kuwait",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "kw",
+    "match_count": 9,
+    "teams": {
+      "Shabab KUW": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Fahaheel SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Tadamon KUW": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Al Nasr KUW": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Qadisiya Kuwait": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Kuwait SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Shabab (KUW)": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Tadamon (KUW)": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Al Nasr (KUW)": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:22:01.531761"
+}

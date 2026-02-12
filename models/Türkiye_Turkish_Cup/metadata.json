@@ -1,0 +1,96 @@
+{
+  "league_key": "TrC_241",
+  "league_info": {
+    "league_code": "TrC",
+    "match_id_prefix": "241",
+    "country": "T\u00fcrkiye",
+    "league": "Turkish Cup",
+    "league_url_path": "football-tips-and-predictions-for-turkey/turkish-cup",
+    "country_code": "tr",
+    "match_count": 80,
+    "teams": {
+      "76 Igd\u0131r Belediye Spor": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Antalyaspor": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Samsunspor": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Bodrumspor SK": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Rizespor": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Halide Edip Adivar": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Genclerbirligi": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Ey\u00fcpspor": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Ke\u00e7i\u00f6reng\u00fcc\u00fc": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Gaziantep": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Konyaspor": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Alia\u011fa FK": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Kocaelispor": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Besiktas": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Fenerbah\u00e7e": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Erzurum BB": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Eyupspor": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Keciorengucu": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Aliaga FK": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Fenerbahce": {
+        "home_matches": 3,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 16,
+  "trained_at": "2026-02-12T19:11:57.058860"
+}

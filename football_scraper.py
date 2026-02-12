@@ -31,17 +31,59 @@ class ForebetScraper:
         self._load_leagues_db()
     
     def _load_leagues_db(self):
-        """Load leagues from data/leagues_db.json."""
-        db_path = 'data/leagues_db.json'
-        if os.path.exists(db_path):
+        """Load leagues from data/leagues_db.json and data/comprehensive_leagues_db.json."""
+        # Load comprehensive database first (has more details)
+        comprehensive_path = 'data/comprehensive_leagues_db.json'
+        if os.path.exists(comprehensive_path):
             try:
-                with open(db_path, 'r', encoding='utf-8') as f:
-                    self.leagues_db = json.load(f)
-                print(f"Loaded {len(self.leagues_db)} leagues from database")
+                with open(comprehensive_path, 'r', encoding='utf-8') as f:
+                    comp_db = json.load(f)
+                
+                # Load lookups
+                lookups = comp_db.get('lookups', {})
+                self.short_code_lookup = lookups.get('by_short_code', {})
+                self.url_path_lookup = lookups.get('by_url_path', {})
+                self.match_id_prefix_lookup = lookups.get('by_match_id_prefix', {})
+                
+                # Build leagues_db from match_id_prefix_lookup for backward compatibility
+                self.leagues_db = self.match_id_prefix_lookup.copy()
+                
+                print(f"Loaded comprehensive database: {len(self.short_code_lookup)} short codes, {len(self.match_id_prefix_lookup)} prefixes")
             except Exception as e:
-                print(f"Error loading leagues_db: {e}")
+                print(f"Error loading comprehensive database: {e}")
+                self.leagues_db = {}
+                self.short_code_lookup = {}
+                self.url_path_lookup = {}
+                self.match_id_prefix_lookup = {}
+        else:
+            # Fallback to old leagues_db.json
+            db_path = 'data/leagues_db.json'
+            if os.path.exists(db_path):
+                try:
+                    with open(db_path, 'r', encoding='utf-8') as f:
+                        self.leagues_db = json.load(f)
+                    print(f"Loaded {len(self.leagues_db)} leagues from database")
+                except Exception as e:
+                    print(f"Error loading leagues_db: {e}")
+                    self.leagues_db = {}
+            
+            self.short_code_lookup = {}
+            self.url_path_lookup = {}
+            self.match_id_prefix_lookup = {}
+        
+        # Also load league_mapping.json for 5-digit code lookups
+        mapping_path = 'data/league_mapping.json'
+        if os.path.exists(mapping_path):
+            try:
+                with open(mapping_path, 'r', encoding='utf-8') as f:
+                    self.league_mapping = json.load(f)
+            except Exception as e:
+                print(f"Error loading league_mapping: {e}")
+                self.league_mapping = {}
+        else:
+            self.league_mapping = {}
     
-    def _extract_league_info_from_page(self, soup: BeautifulSoup) -> Dict:
+    def _extract_league_info_from_page(self, soup: BeautifulSoup, url: str = None) -> Dict:
         """Extract league info from page using the historical_matches approach.
         
         Returns dict with: league_code, country, league, league_url_path, country_code
@@ -54,47 +96,256 @@ class ForebetScraper:
             'country_code': None
         }
         
-        # Method 1: Get shortTag (like "Az2", "Ve1", "Cl1")
+        # Country code to country name mapping (for numeric codes like '281' = Gibraltar)
+        country_code_map = {
+            '281': 'Gibraltar',
+            # Add more as needed
+        }
+        
+        # Extract match_id from URL
+        match_id_match = re.search(r'-(\d{5,8})$', url) if url else None
+        url_match_id = match_id_match.group(1) if match_id_match else None
+        
+        # Method 1: Find onclick handler that matches the URL match_id
+        # This is the most reliable method
+        if url_match_id:
+            for img in soup.find_all('img', onclick=True):
+                onclick = img.get('onclick', '')
+                
+                # Pattern: getstag(this,match_id,'Country','League','url_path','country_code')
+                stag_match = re.search(r"getstag\(this,(\d+),'([^']*)','([^']*)','([^']*)','([^']*)'", onclick)
+                if stag_match:
+                    match_id = stag_match.group(1)
+                    if match_id == url_match_id:
+                        country = stag_match.group(2)
+                        league = stag_match.group(3)
+                        if country or league:  # At least one field populated
+                            info['country'] = country if country else None
+                            info['league'] = league if league else None
+                            info['league_url_path'] = stag_match.group(4)
+                            info['country_code'] = stag_match.group(5)
+                            # Get shortTag from parent elements of this img (not global find)
+                            parent = img.parent
+                            for _ in range(5):  # Check up to 5 levels up
+                                if parent is None:
+                                    break
+                                short_tag = parent.find('span', class_='shortTag')
+                                if short_tag:
+                                    info['league_code'] = short_tag.get_text(strip=True)
+                                    break
+                                parent = parent.parent
+                            return info
+                
+                # Pattern: getstag(this,match_id,'','','','numeric_code')
+                empty_match = re.search(r"getstag\(this,\s*(\d+),\s*'',\s*'',\s*'',\s*'(\d+)'\)", onclick)
+                if empty_match:
+                    match_id = empty_match.group(1)
+                    if match_id == url_match_id:
+                        numeric_code = empty_match.group(2)
+                        if numeric_code in country_code_map:
+                            info['country'] = country_code_map[numeric_code]
+                            info['country_code'] = numeric_code
+                            # Generate short_code from country name
+                            country_prefix = info['country'][:2].capitalize()
+                            info['league_code'] = f"{country_prefix}1"
+                            return info
+        
+        # Method 2: Get shortTag (like "Az2", "Ve1", "Cl1")
         short_tag = soup.find('span', class_='shortTag')
         if short_tag:
             short_code = short_tag.get_text(strip=True)
             if short_code and len(short_code) >= 2:
                 info['league_code'] = short_code
+                
+                # Try to look up in comprehensive database using short_code
+                if hasattr(self, 'short_code_lookup') and self.short_code_lookup:
+                    if short_code in self.short_code_lookup:
+                        db_info = self.short_code_lookup[short_code]
+                        info['country'] = db_info.get('country')
+                        info['league'] = db_info.get('league')
+                        info['league_url_path'] = db_info.get('league_url_path')
+                        info['country_code'] = db_info.get('country_code')
+                        return info  # Found in database, return early
         
-        # Method 2: Get full info from getstag onclick
-        img_with_onclick = soup.find('img', onclick=True)
-        if img_with_onclick:
-            onclick = img_with_onclick.get('onclick', '')
+        # Method 3: Check onclick handlers for any with populated country/league
+        for img in soup.find_all('img', onclick=True):
+            onclick = img.get('onclick', '')
+            
             # Pattern: getstag(this,match_id,'Country','League','url_path','country_code')
-            stag_match = re.search(r"getstag\(this,(\d+),'([^']+)','([^']+)','([^']+)','([^']+)'", onclick)
+            stag_match = re.search(r"getstag\(this,(\d+),'([^']*)','([^']*)','([^']*)','([^']*)'", onclick)
             if stag_match:
-                if not info['country']:
-                    info['country'] = stag_match.group(2)
-                if not info['league']:
-                    info['league'] = stag_match.group(3)
-                if not info['league_url_path']:
+                country = stag_match.group(2)
+                league = stag_match.group(3)
+                if country and league:  # Both fields populated
+                    info['country'] = country
+                    info['league'] = league
                     info['league_url_path'] = stag_match.group(4)
-                if not info['country_code']:
                     info['country_code'] = stag_match.group(5)
+                    # Generate league_code from country if not set
+                    if not info['league_code']:
+                        country_prefix = country[:2].capitalize()
+                        info['league_code'] = f"{country_prefix}1"
+                    return info  # Found reliable info, return early
+        
+        # Method 4: Check for numeric country codes (less reliable)
+        for img in soup.find_all('img', onclick=True):
+            onclick = img.get('onclick', '')
+            
+            # Pattern: getstag(this,match_id,'','','','numeric_code') - empty country/league
+            empty_match = re.search(r"getstag\(this,\s*(\d+),\s*'',\s*'',\s*'',\s*'(\d+)'\)", onclick)
+            if empty_match:
+                numeric_code = empty_match.group(2)
+                if numeric_code in country_code_map:
+                    info['country'] = country_code_map[numeric_code]
+                    info['country_code'] = numeric_code
+                    # Generate short_code from country name (e.g., Gibraltar -> Gi1)
+                    if info['country']:
+                        country_prefix = info['country'][:2].capitalize()
+                        info['league_code'] = f"{country_prefix}1"
+                    return info  # Found info, return early
+        
+        # Method 3: Try to extract from breadcrumb or page title
+        if not info['league'] or not info['country']:
+            # Look for league info in breadcrumb links
+            breadcrumb = soup.find('div', class_='breadcrumb') or soup.find('nav', class_='breadcrumb')
+            if breadcrumb:
+                links = breadcrumb.find_all('a')
+                for link in links:
+                    href = link.get('href', '')
+                    text = link.get_text(strip=True)
+                    # Pattern: /football-predictions-for-{country}/{league}
+                    if 'predictions-for' in href:
+                        parts = href.split('/')
+                        if len(parts) >= 2:
+                            if not info['country']:
+                                # Extract country from URL
+                                country_part = parts[-2] if len(parts) > 1 else ''
+                                country_match = re.search(r'predictions-for-(.+)', country_part)
+                                if country_match:
+                                    info['country'] = country_match.group(1).replace('-', ' ').title()
+                            if not info['league']:
+                                info['league'] = parts[-1].replace('-', ' ').title()
+        
+        # Method 4: Try meta tags
+        if not info['league']:
+            meta_desc = soup.find('meta', attrs={'name': 'description'})
+            if meta_desc and meta_desc.get('content'):
+                content = meta_desc.get('content')
+                # Pattern: "...Netherlands Eerste Divisie..." or similar
+                league_patterns = [
+                    r'(\w+)\s+(Premier League|La Liga|Serie A|Bundesliga|Ligue \d|Eredivisie|Eerste Divisie|Championship|League \d|Primera Division|Liga)',
+                    r'(Netherlands|England|Spain|Italy|Germany|France|Brazil|Argentina)\s+([\w\s]+?)(?:\s+predictions|\s+match|\.)',
+                ]
+                for pattern in league_patterns:
+                    match = re.search(pattern, content, re.IGNORECASE)
+                    if match:
+                        if not info['country']:
+                            info['country'] = match.group(1)
+                        if not info['league']:
+                            info['league'] = match.group(2).strip()
+                        break
+        
+        # Method 5: Look for league info in any script tags
+        if not info['league']:
+            scripts = soup.find_all('script')
+            for script in scripts:
+                if script.string and 'league' in script.string.lower():
+                    # Try to extract league name from JSON-like content
+                    league_match = re.search(r'"league"\s*:\s*"([^"]+)"', script.string)
+                    if league_match:
+                        info['league'] = league_match.group(1)
+                        break
+                    country_match = re.search(r'"country"\s*:\s*"([^"]+)"', script.string)
+                    if country_match and not info['country']:
+                        info['country'] = country_match.group(1)
+        
+        # Method 6: Extract league name from standings section or tabs
+        if not info['league']:
+            # Look for league name in standings header
+            # Pattern: "4th place\nGibraltar National League\n2nd place"
+            standings_div = soup.find('div', class_=re.compile(r'standings|table', re.I))
+            if standings_div:
+                # Get text and look for league name patterns
+                text = standings_div.get_text(separator='\n', strip=True)
+                lines = [l.strip() for l in text.split('\n') if l.strip()]
+                for i, line in enumerate(lines):
+                    # Look for lines that look like league names (contain "League", "Division", "Liga", etc.)
+                    if any(kw in line for kw in ['League', 'Division', 'Liga', 'Serie', 'Premier', 'Championship', 'Cup']):
+                        # Skip if it's a team name with form (WWLLW pattern)
+                        if not re.search(r'[WL]{3,}', line):
+                            info['league'] = line
+                            break
+            
+            # Also try tab links (e.g., "All National League Champions League...")
+            if not info['league']:
+                tabs = soup.find('div', class_=re.compile(r'tabs|filter', re.I))
+                if tabs:
+                    tab_links = tabs.find_all('a')
+                    for link in tab_links:
+                        text = link.get_text(strip=True)
+                        # Skip "All" and short texts
+                        if text and text != 'All' and len(text) > 3:
+                            # Check if it looks like a league name
+                            if any(kw in text for kw in ['League', 'Division', 'Liga', 'Serie', 'Premier', 'Championship']):
+                                info['league'] = text
+                                break
+        
+        # Method 7: Look for league name in page headings
+        if not info['league']:
+            # Look for h1, h2, h3 with league-like content
+            for heading in soup.find_all(['h1', 'h2', 'h3']):
+                text = heading.get_text(strip=True)
+                if any(kw in text for kw in ['League', 'Division', 'Liga', 'Serie', 'Premier', 'Championship', 'Cup']):
+                    # Skip if it contains team names or scores
+                    if ' - ' not in text and ' vs ' not in text.lower():
+                        info['league'] = text
+                        break
         
         return info
     
     def _get_league_info(self, soup: BeautifulSoup, url: str) -> Dict:
-        """Get complete league info from leagues_db.
+        """Get complete league info from comprehensive leagues database.
         
-        This is the historical_matches approach:
-        - Extract match_id from URL (e.g., 2420044)
-        - Use match_id prefix + look up in leagues_db
+        Uses multiple lookup methods in order of reliability:
+        1. By short_code + url_path match (most reliable)
+        2. By full match_id - for known matches
+        3. By url_path only
+        4. Use page_info if it has valid league name (from onclick handler)
         """
         # Extract match_id from URL
-        match_id_match = re.search(r'-(\d{5,7})$', url) if url else None
+        match_id_match = re.search(r'-(\d{5,8})$', url) if url else None
         match_id = match_id_match.group(1) if match_id_match else None
         
+        # Get page info for short_code - pass URL for matching
+        page_info = self._extract_league_info_from_page(soup, url)
+        league_code = page_info.get('league_code')
+        page_url_path = page_info.get('league_url_path')
+        
         if match_id:
-            # Try exact match_id lookup first
+            # Method 1: Try short_code lookup with url_path verification
+            # This ensures we don't use wrong data when short_code is ambiguous
+            if league_code and hasattr(self, 'short_code_lookup') and self.short_code_lookup:
+                if league_code in self.short_code_lookup:
+                    db_info = self.short_code_lookup[league_code]
+                    db_url_path = db_info.get('url_path', db_info.get('league_url_path', ''))
+                    # Only use db_info if url_path matches (same league)
+                    if page_url_path and db_url_path and page_url_path == db_url_path:
+                        return {
+                            'match_id': match_id,
+                            'league_code': league_code,
+                            'country': db_info.get('country'),
+                            'league': db_info.get('league'),
+                            'league_url_path': db_url_path,
+                            'country_code': db_info.get('country_code')
+                        }
+                    # url_path mismatch - short_code is ambiguous, use page_info instead
+                    # Fall through to Method 4
+            
+            # Method 2: Try exact match_id lookup (for known matches)
             if match_id in self.leagues_db:
                 db_info = self.leagues_db[match_id]
                 return {
+                    'match_id': match_id,
                     'league_code': db_info.get('league_code'),
                     'country': db_info.get('country'),
                     'league': db_info.get('league'),
@@ -102,28 +353,75 @@ class ForebetScraper:
                     'country_code': db_info.get('country_code')
                 }
             
-            # Try lookup by match_id prefix + league_code if available
-            # First extract page league_code if present
-            page_info = self._extract_league_info_from_page(soup)
-            league_code = page_info.get('league_code')
-            
-            if league_code:
-                # Look for entry like "Az2_238"
-                prefix = match_id[:3]
-                lookup_key = f"{league_code}_{prefix}"
-                if lookup_key in self.leagues_db:
-                    db_info = self.leagues_db[lookup_key]
+            # Method 3: Try url_path lookup
+            if page_url_path and hasattr(self, 'url_path_lookup') and self.url_path_lookup:
+                if page_url_path in self.url_path_lookup:
+                    db_info = self.url_path_lookup[page_url_path]
                     return {
-                        'league_code': db_info.get('league_code'),
+                        'match_id': match_id,
+                        'league_code': db_info.get('short_code') or db_info.get('league_code'),
                         'country': db_info.get('country'),
                         'league': db_info.get('league'),
-                        'league_url_path': db_info.get('league_url_path'),
+                        'league_url_path': page_url_path,
                         'country_code': db_info.get('country_code')
                     }
+            
+            # Method 4: Use page_info if it has valid league name (from onclick handler)
+            if page_info.get('league') and page_info.get('league_code'):
+                # Save to database for future lookups
+                self._save_new_league_to_db(league_code, page_info, match_id)
+                return {
+                    'match_id': match_id,
+                    'league_code': league_code,
+                    'country': page_info.get('country'),
+                    'league': page_info.get('league'),
+                    'league_url_path': page_info.get('league_url_path'),
+                    'country_code': page_info.get('country_code')
+                }
+            
+            # Not in database - save new league entry using short_code
+            if league_code:
+                self._save_new_league_to_db(league_code, page_info, match_id)
         
-        # Fallback: extract from page if not in db
-        page_info = self._extract_league_info_from_page(soup)
+        # Fallback: return page info
+        if match_id:
+            page_info['match_id'] = match_id
         return page_info
+    
+    def _save_new_league_to_db(self, short_code: str, page_info: Dict, match_id: str):
+        """Save a new league entry to the database using short_code as key."""
+        if not short_code or not page_info:
+            return
+        
+        try:
+            # Create new entry
+            new_entry = {
+                'league_code': page_info.get('league_code', ''),
+                'country': page_info.get('country', ''),
+                'league': page_info.get('league', ''),
+                'league_url_path': page_info.get('league_url_path', ''),
+                'country_code': page_info.get('country_code', ''),
+                'match_count': 1,
+                'teams': {},
+                'source': 'live_prediction'
+            }
+            
+            # Add to short_code_lookup
+            if hasattr(self, 'short_code_lookup'):
+                self.short_code_lookup[short_code] = new_entry
+            
+            # Add to leagues_db for backward compatibility
+            self.leagues_db[short_code] = new_entry
+            
+            # Save to file
+            import os
+            os.makedirs('data', exist_ok=True)
+            with open('data/leagues_db.json', 'w', encoding='utf-8') as f:
+                json.dump(self.leagues_db, f, indent=2, ensure_ascii=False)
+            
+            print(f"  ✓ Added new league to database: {short_code} -> {new_entry.get('country', '')} {new_entry.get('league', '')}")
+        except Exception as e:
+            print(f"  ⚠ Could not save new league: {e}")
 
     def _extract_league_code(self, url: str) -> Optional[str]:
         """Extract league code (first 5 digits) from URL.

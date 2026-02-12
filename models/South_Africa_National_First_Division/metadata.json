@@ -1,0 +1,79 @@
+{
+  "league_key": "Za2",
+  "league_info": {
+    "league_code": "Za2",
+    "country": "South Africa",
+    "league": "National First Division",
+    "league_url_path": "",
+    "country_code": "za",
+    "match_count": 30,
+    "teams": {
+      "Venda FA": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Casric Stars": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Cape Town City": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Pretoria University": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Lerumo Lions": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Gomora": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Upington City": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Black Leopards": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Baroka FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Highbury": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Kruger United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Hungry Lions FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Milford FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Leicesterfield City": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Midlands Wanderers": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "The Bees": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 20,
+  "trained_at": "2026-02-12T19:22:24.758693"
+}

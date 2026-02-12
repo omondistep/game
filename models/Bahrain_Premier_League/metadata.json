@@ -1,0 +1,63 @@
+{
+  "league_key": "Bh1",
+  "league_info": {
+    "league_code": "Bh1",
+    "country": "Bahrain",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "bh",
+    "match_count": 20,
+    "teams": {
+      "Al Khaldiya": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Al Ahli Manama": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Budaiya": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Malkiya": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Muharraq SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Shabab Manama": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Al Hidd Club": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Bahrain Club": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sitra Club": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Riffa Club": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Al Ali CSC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Najma Manama": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 13,
+  "trained_at": "2026-02-12T19:21:36.638917"
+}

@@ -1,0 +1,131 @@
+{
+  "league_key": "UYL",
+  "league_info": {
+    "league_code": "UYL",
+    "country": "",
+    "league": "",
+    "league_url_path": "",
+    "country_code": "",
+    "match_count": 28,
+    "teams": {
+      "AZ Alkmaar U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Borussia Dortmund U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Real Madrid U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Marseille U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Club Brugge U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Monaco U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Zilina U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Liverpool U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Chelsea U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "PSV U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Athletic Bilbao U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Eintracht Frankfurt U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Dynamo Kyiv U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Atl Madrid U19": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Legia Warszawa U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Ajax U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "PSG U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Dinamo Minsk U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Benfica U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Slavia Prague U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Villarreal U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Bayer Leverkusen U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Maccabi Haifa U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Barcelona U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "HJK U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Manchester City U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Puskas Akademia U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sporting CP U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Atl. Madrid U19": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 28,
+  "trained_at": "2026-02-12T19:22:22.051419"
+}

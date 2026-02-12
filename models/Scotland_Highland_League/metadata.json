@@ -1,0 +1,43 @@
+{
+  "league_key": "Sc5",
+  "league_info": {
+    "league_code": "Sc5",
+    "country": "Scotland",
+    "league": "Highland League",
+    "league_url_path": "",
+    "country_code": "gb-sct",
+    "match_count": 11,
+    "teams": {
+      "Nairn County": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Brora Rangers": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Banks O Dee": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Rothes FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Deveronvale FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Strathspey Thistle": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Banks O' Dee": {
+        "home_matches": 1,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:22:15.158138"
+}

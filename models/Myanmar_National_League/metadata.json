@@ -1,0 +1,63 @@
+{
+  "league_key": "MNL",
+  "league_info": {
+    "league_code": "MNL",
+    "country": "Myanmar",
+    "league": "National League",
+    "league_url_path": "",
+    "country_code": "mm",
+    "match_count": 45,
+    "teams": {
+      "Yarmanya Utd": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Sagaing United": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Ayeyawady United": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Dagon FC": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Yadanarbon FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Thitsar Arman": {
+        "home_matches": 0,
+        "away_matches": 6
+      },
+      "Dagon Port": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Hantharwady United": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "ISPE FC": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Yangon United": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Rakhine United": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Shan United": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 30,
+  "trained_at": "2026-02-12T19:22:04.796465"
+}

@@ -1,0 +1,43 @@
+{
+  "league_key": "MtC",
+  "league_info": {
+    "league_code": "MtC",
+    "country": "Malta",
+    "league": "FA Trophy",
+    "league_url_path": "",
+    "country_code": "mt",
+    "match_count": 9,
+    "teams": {
+      "Hamrun Spartans": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Fgura United": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Floriana FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Zabbar St Patrick": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Tarxien Rainbows": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Valletta FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Zabbar St. Patrick": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:22:06.368941"
+}

@@ -1,0 +1,59 @@
+{
+  "league_key": "ArC",
+  "league_info": {
+    "league_code": "ArC",
+    "country": "Argentina",
+    "league": "Copa Argentina",
+    "league_url_path": "",
+    "country_code": "ar",
+    "match_count": 12,
+    "teams": {
+      "Talleres Cordoba": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Argentino Merlo": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "CA Platense": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Argentino Monte Maiz": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Deportivo Riestra": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Deportivo Maipu": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Barracas Central": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Temperley": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Talleres C\u00f3rdoba": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Argentino Monte Ma\u00edz": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Deportivo Maip\u00fa": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T19:21:31.702744"
+}

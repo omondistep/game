@@ -178,12 +178,20 @@ class FootballPredictionSystem:
         league_code = league_info.get('league_code')
         league = league_info.get('league')
         country = league_info.get('country')
+        match_id = league_info.get('match_id')
         
-        # Get ML prediction with league and country for model lookup
-        ml_prediction = self.predictor.predict(features, league_code, country)
+        # Extract match_id from URL if not in league_info
+        if not match_id:
+            import re
+            match_id_match = re.search(r'-(\d{5,7})$', url)
+            if match_id_match:
+                match_id = match_id_match.group(1)
         
-        # Generate weighted prediction
-        weighted_prediction = self.weighted_predictor.predict(match_data, features)
+        # Get ML prediction with league, country, and match_id for model lookup
+        ml_prediction = self.predictor.predict(features, league_code, country, match_id)
+        
+        # Generate weighted prediction with league-specific weights
+        weighted_prediction = self.weighted_predictor.predict(match_data, features, league_code)
         
         # Calculate convergence
         ml_result = ml_prediction.get('result', {}).get('prediction')
@@ -645,12 +653,12 @@ class FootballPredictionSystem:
         print(f"  {C.BG_GREEN}{C.WHITE}{C.BOLD}{'🎯  OUR PREDICTION  🎯':^{w - 4}}{C.RESET}")
         print(f"  {C.BG_GREEN}{C.WHITE}{C.BOLD}{'':^{w - 4}}{C.RESET}")
         
-        # ── CONVERGENCE ANALYSIS ──
+        # ── MODEL COMPARISON ──
         if 'convergence' in result and isinstance(result, dict):
             conv = result['convergence']
             print()
             print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
-            print(f"  {C.BOLD}🔗 CONVERGENCE ANALYSIS{C.RESET}")
+            print(f"  {C.BOLD}📊 MODEL COMPARISON{C.RESET}")
             print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
             
             ml_r = conv.get('ml_result', '?')
@@ -658,57 +666,36 @@ class FootballPredictionSystem:
             ml_conf = result.get('ml_prediction', {}).get('result', {}).get('confidence', 0) * 100
             w_conf = result.get('weighted_prediction', {}).get('result', {}).get('confidence', 0) * 100
             
-            # Result convergence
+            # Result agreement
             r_match = conv.get('result_match', False)
-            r_emoji = "✅ AGREE" if r_match else "⚠️ DISAGREE"
-            r_col = C.GREEN if r_match else C.YELLOW
-            
-            # Calculate probability difference for degree of convergence
-            ml_probs = result.get('ml_prediction', {}).get('result', {}).get('probabilities', {})
-            w_probs = result.get('weighted_prediction', {}).get('result', {}).get('probabilities', {})
-            
-            if ml_probs and w_probs:
-                prob_diff = sum(abs(ml_probs.get(k, 0) - w_probs.get(k, 0)) for k in ['1', 'X', '2']) / 3 * 100
-                convergence_degree = max(0, 100 - prob_diff)
-            else:
-                convergence_degree = 0
             
             print()
             print(f"  {C.CYAN}ML Model:{C.RESET}      {ml_r} ({ml_conf:.0f}% confidence)")
             print(f"  {C.YELLOW}Weighted Model:{C.RESET} {w_r} ({w_conf:.0f}% confidence)")
-            print()
-            print(f"  {C.BOLD}Agreement:{C.RESET} {r_emoji}")
-            print(f"  {C.BOLD}Convergence Degree:{C.RESET} {convergence_degree:.0f}% ({_bar(convergence_degree)})")
             
-            # O/U convergence
+            # Show agreement status
+            if r_match:
+                print(f"  {C.GREEN}✓ Both models agree on result{C.RESET}")
+            else:
+                print(f"  {C.YELLOW}⚠ Models disagree on result{C.RESET}")
+            
+            # O/U comparison
             ml_o = conv.get('ml_ou', '?')
             w_o = conv.get('weighted_ou', '?')
             o_match = conv.get('ou_match', False)
-            o_emoji = "✅ AGREE" if o_match else "⚠️ DISAGREE"
             
             ml_ou_conf = result.get('ml_prediction', {}).get('over_under', {}).get('confidence', 0) * 100
             w_ou_conf = result.get('weighted_prediction', {}).get('over_under', {}).get('confidence', 0) * 100
             
-            ml_ou_probs = result.get('ml_prediction', {}).get('over_under', {}).get('probabilities', {})
-            w_ou_probs = result.get('weighted_prediction', {}).get('over_under', {}).get('probabilities', {})
-            
-            if ml_ou_probs and w_ou_probs:
-                ou_diff = sum(abs(ml_ou_probs.get(k, 0) - w_ou_probs.get(k, 0)) for k in ['Over', 'Under']) / 2 * 100
-                ou_convergence_degree = max(0, 100 - ou_diff)
-            else:
-                ou_convergence_degree = 0
-            
             print()
             print(f"  {C.CYAN}ML Model O/U:{C.RESET}  {ml_o} ({ml_ou_conf:.0f}%)")
             print(f"  {C.YELLOW}Weighted O/U:{C.RESET}  {w_o} ({w_ou_conf:.0f}%)")
-            print(f"  {C.BOLD}O/U Agreement:{C.RESET} {o_emoji} ({ou_convergence_degree:.0f}%)")
             
-            # Overall confidence based on convergence
-            c = sum([r_match, o_match])
-            conf = "HIGH" if c == 2 else ("MEDIUM" if c == 1 else "LOW")
-            col = C.GREEN if conf == "HIGH" else (C.YELLOW if conf == "MEDIUM" else C.RED)
-            print()
-            print(f"  {C.BOLD}Overall Prediction Confidence:{C.RESET} {col}{C.BOLD}{conf}{C.RESET}")
+            if o_match:
+                print(f"  {C.GREEN}✓ Both models agree on O/U{C.RESET}")
+            else:
+                print(f"  {C.YELLOW}⚠ Models disagree on O/U{C.RESET}")
+            
             print()
         
         rp = pred['result']
@@ -979,31 +966,72 @@ class FootballPredictionSystem:
             
             print(f"  {C.BOLD}Model Agreement:{C.RESET}")
             if r_match:
-                print(f"    {C.GREEN}✓{C.RESET} Both models predict: {ml_r} ({r_deg:.0f}% convergence)")
+                print(f"    {C.GREEN}✓{C.RESET} Both models predict: {ml_r}")
             else:
-                print(f"    {C.YELLOW}⚠{C.RESET} ML predicts: {ml_r}, Weighted predicts: {w_r} ({r_deg:.0f}% convergence)")
+                print(f"    {C.YELLOW}⚠{C.RESET} ML predicts: {ml_r}, Weighted predicts: {w_r}")
             
             if o_match:
-                print(f"    {C.GREEN}✓{C.RESET} Both models predict: {ml_o} O/U ({o_deg:.0f}% convergence)")
+                print(f"    {C.GREEN}✓{C.RESET} Both models predict: {ml_o} O/U")
             else:
-                print(f"    {C.YELLOW}⚠{C.RESET} ML predicts: {ml_o}, Weighted predicts: {w_o} ({o_deg:.0f}% convergence)")
+                print(f"    {C.YELLOW}⚠{C.RESET} ML predicts: {ml_o}, Weighted predicts: {w_o}")
         
         # Show prediction method
         pred_method = pred.get('prediction_method', 'unknown')
         league = md.get('match_info', {}).get('league', 'Unknown League')
+        country = md.get('match_info', {}).get('country', '')
+        league_code = md.get('match_info', {}).get('league_code', '')
         
-        # Check if ML model is actually trained
-        ml_trained = self.predictor.result_model is not None and self.predictor.ou_model is not None and self.predictor.scaler is not None
+        # Check if ML model is actually trained (either main or league-specific or global)
+        ml_trained = (
+            (self.predictor.result_model is not None and self.predictor.ou_model is not None and self.predictor.scaler is not None) or
+            len(self.predictor.league_models) > 0
+        )
         
-        if pred_method in ['ml', 'league_ml'] and ml_trained:
-            training_count = pred.get('training_examples', len(self.storage.get_league_training_data(league)))
-            print(f"  {C.GREEN}✓ ML Model Trained{C.RESET} - Using learned patterns from {training_count} matches in {league}")
+        # Get league-specific model info
+        league_model_info = None
+        if league_code:
+            # Check if we have a league-specific model
+            for model_key in self.predictor.league_models:
+                if model_key.startswith(league_code + '_') or model_key == league_code:
+                    league_model_info = model_key
+                    break
+        
+        # Determine which model was actually used
+        if pred_method in ['ml', 'league_ml']:
+            if league_model_info:
+                print(f"  {C.GREEN}✓ League ML Model{C.RESET} - Using league-specific model for {league_code}")
+            elif 'Global_Model' in self.predictor.league_models:
+                print(f"  {C.GREEN}✓ Global ML Model{C.RESET} - Using model trained on all leagues (77.5% accuracy)")
+            elif ml_trained:
+                training_count = pred.get('training_examples', len(self.storage.get_league_training_data(league)))
+                print(f"  {C.GREEN}✓ ML Model Trained{C.RESET} - Using learned patterns from {training_count} matches")
+            else:
+                print(f"  {C.GREEN}✓ ML Model{C.RESET} - prediction_method: {pred_method}")
         elif pred_method == 'weighted_factors':
-            print(f"  {C.YELLOW}⚠ Statistical Model{C.RESET} - Using weighted factors analysis for {league}")
+            print(f"  {C.YELLOW}⚠ Weighted Factors Model{C.RESET} - Using statistical analysis (no ML model available)")
         elif pred_method == 'statistical':
             print(f"  {C.YELLOW}⚠ Fallback Statistical Model{C.RESET} - No ML model trained, using odds/form analysis for {league}")
         else:
             print(f"  {C.DIM}ℹ Model: {pred_method}{C.RESET}")
+        
+        # Show league model info if available
+        if league_model_info:
+            # Load metadata for this league model
+            import os
+            import json
+            model_dir = os.path.join('models', league_model_info)
+            metadata_path = os.path.join(model_dir, 'metadata.json')
+            if os.path.exists(metadata_path):
+                try:
+                    with open(metadata_path, 'r') as f:
+                        metadata = json.load(f)
+                    example_count = metadata.get('example_count', 0)
+                    trained_at = metadata.get('trained_at', 'Unknown')
+                    league_info = metadata.get('league_info', {})
+                    print(f"  {C.CYAN}📊 League Model:{C.RESET} {league_info.get('country', country)} {league_info.get('league', league)}")
+                    print(f"  {C.DIM}  Trained on {example_count} matches on {trained_at[:10]}{C.RESET}")
+                except:
+                    pass
         
         # Show accuracy if available
         if pred.get('result_accuracy'):

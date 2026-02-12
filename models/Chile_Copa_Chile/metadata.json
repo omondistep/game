@@ -1,0 +1,95 @@
+{
+  "league_key": "ClC",
+  "league_info": {
+    "league_code": "ClC",
+    "country": "Chile",
+    "league": "Copa Chile",
+    "league_url_path": "",
+    "country_code": "cl",
+    "match_count": 48,
+    "teams": {
+      "Antofagasta": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Cobreloa": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Puerto Montt": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportes Temuco": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportes Santa Cruz": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CD Magallanes": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportes Copiapo": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "San Luis Quillota": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportes Iquique": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "San Marcos Arica": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportes Recoleta": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Union Espanola": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Union San Felipe": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Santiago Wanderers": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Curico Unido": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Rangers Talca": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportes Copiap\u00f3": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Uni\u00f3n Espa\u00f1ola": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Uni\u00f3n San Felipe": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Curic\u00f3 Unido": {
+        "home_matches": 1,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 32,
+  "trained_at": "2026-02-12T19:21:44.390747"
+}

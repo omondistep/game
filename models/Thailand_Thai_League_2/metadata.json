@@ -1,0 +1,87 @@
+{
+  "league_key": "Th2",
+  "league_info": {
+    "league_code": "Th2",
+    "country": "Thailand",
+    "league": "Thai League 2",
+    "league_url_path": "",
+    "country_code": "th",
+    "match_count": 54,
+    "teams": {
+      "Chanthaburi": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Rasi Salai United": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "Chainat FC": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Kasetsart FC": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Nong Bua Pitchaya": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Chiangmai United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Police Tero FC": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Nakhon Si United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Mahasarakham Sambaitao FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Bangkok FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Khon Kaen United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Phrae United": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Trat FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Songkhla FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Nakhon Pathom": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Pattaya Dolphins": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Pattani FC": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Sisaket United": {
+        "home_matches": 2,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 35,
+  "trained_at": "2026-02-12T19:22:18.518964"
+}

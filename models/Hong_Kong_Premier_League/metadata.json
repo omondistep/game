@@ -1,0 +1,55 @@
+{
+  "league_key": "HK1",
+  "league_info": {
+    "league_code": "HK1",
+    "country": "Hong Kong",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "hk",
+    "match_count": 21,
+    "teams": {
+      "Kitchee SC": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Tai Po FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "HK Rangers": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Hong Kong FC": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Eastern AA": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "North District": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Southern District": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Eastern District SA": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Kowloon City": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Lee Man FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 14,
+  "trained_at": "2026-02-12T19:21:54.415229"
+}

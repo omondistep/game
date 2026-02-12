@@ -1,0 +1,83 @@
+{
+  "league_key": "Cm1",
+  "league_info": {
+    "league_code": "Cm1",
+    "country": "Cameroon",
+    "league": "Elite One",
+    "league_url_path": "",
+    "country_code": "cm",
+    "match_count": 27,
+    "teams": {
+      "Coton Sport": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Aigle Royal de Moungo": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Gazelle": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Colombe FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Stade Renard": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Victoria Utd Limbe": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Aigle Royal": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Canon Yaounde": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Panthere du Nde": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "AS Fortuna": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Dynamo Douala": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "PWD Bamenda": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Fauve Azur Elite": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Unisport Bafang": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Victoria Utd Limb\u00e9": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Canon Yaound\u00e9": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Panth\u00e8re du Nd\u00e9": {
+        "home_matches": 1,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 18,
+  "trained_at": "2026-02-12T19:21:44.857597"
+}

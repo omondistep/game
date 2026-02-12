@@ -1,0 +1,63 @@
+{
+  "league_key": "Au1",
+  "league_info": {
+    "league_code": "Au1",
+    "country": "Australia",
+    "league": "A-League",
+    "league_url_path": "",
+    "country_code": "au",
+    "match_count": 39,
+    "teams": {
+      "WS Wanderers": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Perth Glory": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Melbourne Victory": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Sydney FC": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Wellington Phoenix": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Melbourne City": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Adelaide United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Macarthur FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Newcastle Jets": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Brisbane Roar": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Auckland": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CC Mariners": {
+        "home_matches": 2,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 26,
+  "trained_at": "2026-02-12T19:21:32.442992"
+}

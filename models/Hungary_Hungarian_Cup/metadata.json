@@ -1,0 +1,63 @@
+{
+  "league_key": "HuC",
+  "league_info": {
+    "league_code": "HuC",
+    "country": "Hungary",
+    "league": "Hungarian Cup",
+    "league_url_path": "",
+    "country_code": "hu",
+    "match_count": 12,
+    "teams": {
+      "Debreceni EAC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Soroksar": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "FC Ajka": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Kazincbarcikai SC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Zalaegerszegi TE": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Vasas SC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Budapest Honved": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "ESMTK Budapest": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Ferencvaros": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Csakvari TK": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "MTK Budapest": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Kecskemeti TE": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:21:55.398700"
+}

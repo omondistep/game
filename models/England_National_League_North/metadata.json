@@ -1,0 +1,39 @@
+{
+  "league_key": "NLn",
+  "league_info": {
+    "league_code": "NLn",
+    "country": "England",
+    "league": "National League North",
+    "league_url_path": "",
+    "country_code": "gb-en",
+    "match_count": 10,
+    "teams": {
+      "Peterborough Sports": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Macclesfield": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Marine": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Chester FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Bedford Town": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Kidderminster": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:22:08.152928"
+}

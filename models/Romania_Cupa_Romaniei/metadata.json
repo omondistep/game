@@ -1,0 +1,47 @@
+{
+  "league_key": "RoC",
+  "league_info": {
+    "league_code": "RoC",
+    "country": "Romania",
+    "league": "Cupa Romaniei",
+    "league_url_path": "",
+    "country_code": "ro",
+    "match_count": 11,
+    "teams": {
+      "Sanatatea Cluj": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Petrolul Ploiesti": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Dumbravita": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Arges Pitesti": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Cluj": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Rapid Bucuresti": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "CSM Slatina": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "CS Metaloglobus": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 7,
+  "trained_at": "2026-02-12T19:22:13.649450"
+}

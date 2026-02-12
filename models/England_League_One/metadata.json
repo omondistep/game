@@ -1,0 +1,99 @@
+{
+  "league_key": "L1",
+  "league_info": {
+    "league_code": "L1",
+    "country": "England",
+    "league": "League One",
+    "league_url_path": "",
+    "country_code": "gb-en",
+    "match_count": 37,
+    "teams": {
+      "Huddersfield": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Luton Town": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Cardiff City": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Barnsley": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Plymouth Argyle": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Mansfield": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Bolton Wanderers": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Burton Albion": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Stevenage": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Peterborough": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Wycombe": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Wigan Athletic": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Rotherham": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Northampton Town": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Blackpool": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Stockport County": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Lincoln City": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Bradford City": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Port Vale": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "AFC Wimbledon": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Reading": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 24,
+  "trained_at": "2026-02-12T19:22:02.845729"
+}

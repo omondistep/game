@@ -1,0 +1,80 @@
+{
+  "league_key": "Mx3_242",
+  "league_info": {
+    "league_code": "Mx3",
+    "match_id_prefix": "242",
+    "country": "Mexico",
+    "league": "Liga Premier Serie A",
+    "league_url_path": "football-tips-and-predictions-for-mexico/liga-premier-serie-a",
+    "country_code": "mx",
+    "match_count": 70,
+    "teams": {
+      "UAG Tecos": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Cimarrones Sonora": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Ca\u00f1oneros Marina": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Montaneses": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "CD Zap": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Zacatepec": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Artesanos Metepec": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Dragones de Oaxaca": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Deportivo Ayense": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Poza Rica": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "CDM": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Aguacateros CDU": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Racing II": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Gorilas de Juanacatl\u00e1n": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Canoneros Marina": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Gorilas de Juanacatlan": {
+        "home_matches": 0,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 14,
+  "trained_at": "2026-02-12T19:11:43.672906"
+}

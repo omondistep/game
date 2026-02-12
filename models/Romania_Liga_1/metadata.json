@@ -1,0 +1,76 @@
+{
+  "league_key": "Ro1_241",
+  "league_info": {
+    "league_code": "Ro1",
+    "match_id_prefix": "241",
+    "country": "Romania",
+    "league": "Liga 1",
+    "league_url_path": "football-tips-and-predictions-for-romania/liga-1",
+    "country_code": "ro",
+    "match_count": 120,
+    "teams": {
+      "Otelul Galati": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Miercurea Ciuc": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Cluj": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "CS Metaloglobus": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "FC Botosani": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Petrolul Ploiesti": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Unirea Slobozia": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Univ Cluj-Napoca": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Arges Pitesti": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "FC Hermannstadt": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Rapid Bucuresti": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "UTA Arad": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "CS Univ Craiova": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "FCSB": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Farul Constanta": {
+        "home_matches": 0,
+        "away_matches": 8
+      }
+    }
+  },
+  "example_count": 24,
+  "trained_at": "2026-02-12T19:11:49.978690"
+}

@@ -1,0 +1,39 @@
+{
+  "league_key": "NlW",
+  "league_info": {
+    "league_code": "NlW",
+    "country": "Netherlands",
+    "league": "KNVB Beker Women",
+    "league_url_path": "",
+    "country_code": "nl",
+    "match_count": 9,
+    "teams": {
+      "PSV W": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Utrecht W": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Feyenoord W": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "AZ W": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sparta Rotterdam W": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "HERA W": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:22:09.224382"
+}

@@ -1,0 +1,56 @@
+{
+  "league_key": "BaC_242",
+  "league_info": {
+    "league_code": "BaC",
+    "match_id_prefix": "242",
+    "country": "Bosnia and Herzegovina",
+    "league": "Bih Cup",
+    "league_url_path": "tips-and-predictions-for-bosnia/bih-cup",
+    "country_code": "ba",
+    "match_count": 36,
+    "teams": {
+      "GOSK Gabela": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Rudar Prijedor": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Sloga Doboj": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Tekstilac Derventa": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Zrinjski Mostar": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Stupcanica": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Radnik Bijeljina": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Krusevo": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Celik Zenica": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "FK Sarajevo": {
+        "home_matches": 0,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T19:11:11.082044"
+}

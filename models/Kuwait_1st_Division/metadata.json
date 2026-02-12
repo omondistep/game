@@ -1,0 +1,55 @@
+{
+  "league_key": "KW2",
+  "league_info": {
+    "league_code": "KW2",
+    "country": "Kuwait",
+    "league": "1st Division",
+    "league_url_path": "",
+    "country_code": "kw",
+    "match_count": 12,
+    "teams": {
+      "Burgan SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Khaitan SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sulaibikhat": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Yarmouk KUW": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sahel KUW": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Al Jazira": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sporty": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Shamiya": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Yarmouk (KUW)": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sahel (KUW)": {
+        "home_matches": 1,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T19:22:01.842615"
+}

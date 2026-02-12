@@ -1,0 +1,83 @@
+{
+  "league_key": "Il2",
+  "league_info": {
+    "league_code": "Il2",
+    "country": "Israel",
+    "league": "Liga Leumit",
+    "league_url_path": "",
+    "country_code": "il",
+    "match_count": 39,
+    "teams": {
+      "Hapoel Acre": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Maccabi Petah Tikva": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Maccabi Kabilio Jaffa": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Ironi Modiin": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Hapoel Hadera": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Bnei Yehuda": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Hapoel Kfar Saba": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "FC Nazareth Ilit": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Kafr Qasim": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Hapoel Afula": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Hapoel Ramat Gan": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Hapoel Raanana": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Hapoel Rishon Lezion": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Maccabi Herzliya": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Hapoel Kfar Shalem": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Kiryat Yam SC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Ironi Modi'in": {
+        "home_matches": 1,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 26,
+  "trained_at": "2026-02-12T19:21:56.486039"
+}

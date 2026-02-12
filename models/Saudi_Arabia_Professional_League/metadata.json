@@ -1,0 +1,91 @@
+{
+  "league_key": "Sa1",
+  "league_info": {
+    "league_code": "Sa1",
+    "country": "Saudi Arabia",
+    "league": "Professional League",
+    "league_url_path": "",
+    "country_code": "sa",
+    "match_count": 45,
+    "teams": {
+      "Al Hazm": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Damak": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Al Najma KSA": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Al Riyadh SC": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Al Feiha": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Al Khaleej Club": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Ahli": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Ettifaq FC": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Al Fateh KSA": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Ittihad Jeddah": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Taawoun": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Akhdood": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Nassr": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Al Kholood Club": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Qadisiya Khubar": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Al Hilal": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Neom SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Najma (KSA)": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Al Fateh (KSA)": {
+        "home_matches": 1,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 30,
+  "trained_at": "2026-02-12T19:22:14.373277"
+}

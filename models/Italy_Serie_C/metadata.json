@@ -1,0 +1,127 @@
+{
+  "league_key": "It3",
+  "league_info": {
+    "league_code": "It3",
+    "country": "Italy",
+    "league": "Serie C",
+    "league_url_path": "",
+    "country_code": "it",
+    "match_count": 40,
+    "teams": {
+      "SS Cavese": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Monopoli": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Team Altamura": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Latina Calcio": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sorrento Calcio": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "SSC Giugliano": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Trapani 1905": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Benevento Calcio": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Casertana": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "FC Crotone": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Cosenza Calcio": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Siracusa": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Catania": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Audace Cerignola": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "US Foggia": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Picerno": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Salernitana": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Virtus Casarano": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Atalanta II": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Potenza SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Alcione": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Ospitaletto": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Novara": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "AlbinoLeffe": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "AC Renate": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Triestina": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Dolomiti Bellunesi": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Pergolettese": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 24,
+  "trained_at": "2026-02-12T19:21:59.225912"
+}

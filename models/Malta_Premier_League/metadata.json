@@ -1,0 +1,35 @@
+{
+  "league_key": "Mt1",
+  "league_info": {
+    "league_code": "Mt1",
+    "country": "Malta",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "mt",
+    "match_count": 9,
+    "teams": {
+      "Marsaxlokk": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Tarxien Rainbows": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sliema Wanderers": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Gzira United": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Hamrun Spartans": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:22:06.062119"
+}

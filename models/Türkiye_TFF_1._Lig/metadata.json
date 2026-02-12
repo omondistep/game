@@ -1,0 +1,51 @@
+{
+  "league_key": "Tr2",
+  "league_info": {
+    "league_code": "Tr2",
+    "country": "T\u00fcrkiye",
+    "league": "TFF 1. Lig",
+    "league_url_path": "",
+    "country_code": "tr",
+    "match_count": 15,
+    "teams": {
+      "76 Igd\u0131r Belediye Spor": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Manisa BBSK": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Erzurum BB": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sariyer SK": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Erokspor": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Umraniyespor": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Hatayspor": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sivasspor": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "\u00dcmraniyespor": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 10,
+  "trained_at": "2026-02-12T19:22:19.847886"
+}

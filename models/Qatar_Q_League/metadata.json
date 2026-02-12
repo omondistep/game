@@ -1,0 +1,47 @@
+{
+  "league_key": "Qa2",
+  "league_info": {
+    "league_code": "Qa2",
+    "country": "Qatar",
+    "league": "Q League",
+    "league_url_path": "",
+    "country_code": "qa",
+    "match_count": 12,
+    "teams": {
+      "Muaither SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Khor SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Mesaimeer SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Markhiya SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Lusail City FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Waab SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Al Bidda SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Kharaitiyat": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T19:22:12.660628"
+}

@@ -1,0 +1,79 @@
+{
+  "league_key": "Cm2",
+  "league_info": {
+    "league_code": "Cm2",
+    "country": "Cameroon",
+    "league": "Elite Two",
+    "league_url_path": "",
+    "country_code": "cm",
+    "match_count": 40,
+    "teams": {
+      "Kumba City": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Bafmeng United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Atlantic": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Eding Sport": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Union Douala": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Les Astres FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "AS Fap": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Foncha ST": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "APEJES": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Sable Batie": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Tonnerre Yaounde": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Union Abong-Mbang": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Yafoot FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Avion Academy": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Racing Bafoussam": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Tonnerre Yaound\u00e9": {
+        "home_matches": 2,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 26,
+  "trained_at": "2026-02-12T19:21:45.312260"
+}

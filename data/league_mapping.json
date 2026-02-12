@@ -1,0 +1,1214 @@
+{
+  "24168": {
+    "short_code": "Py1",
+    "league_name": "Primera Division",
+    "country": "Paraguay",
+    "source": "historical_scraper"
+  },
+  "24184": {
+    "short_code": "Ni1",
+    "league_name": "Primera Division",
+    "country": "Nicaragua",
+    "source": "historical_scraper"
+  },
+  "24129": {
+    "short_code": "BrG",
+    "league_name": "Campeonato Ga\u00facho",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24131": {
+    "short_code": "BrM",
+    "league_name": "Campeonato Mineiro",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24146": {
+    "short_code": "BrS",
+    "league_name": "Campeonato Sul-Matogrossense",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24153": {
+    "short_code": "BrT",
+    "league_name": "Campeonato Tocantinense",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24138": {
+    "short_code": "BrP",
+    "league_name": "Campeonato Paulista A2",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24167": {
+    "short_code": "BrP",
+    "league_name": "Campeonato Paulista A3",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24151": {
+    "short_code": "Co1",
+    "league_name": "Primera A",
+    "country": "Colombia",
+    "source": "historical_scraper"
+  },
+  "23542": {
+    "short_code": "Mx3",
+    "league_name": "Liga Premier Serie A",
+    "country": "Mexico",
+    "source": "historical_scraper"
+  },
+  "24163": {
+    "short_code": "Bz1",
+    "league_name": "Premier League",
+    "country": "Belize",
+    "source": "historical_scraper"
+  },
+  "24137": {
+    "short_code": "BrP",
+    "league_name": "Campeonato Paulista",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24176": {
+    "short_code": "BrR",
+    "league_name": "Campeonato Roraimense",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24189": {
+    "short_code": "Co2",
+    "league_name": "Primera B",
+    "country": "Colombia",
+    "source": "historical_scraper"
+  },
+  "24068": {
+    "short_code": "Mx3",
+    "league_name": "Liga Premier Serie B",
+    "country": "Mexico",
+    "source": "historical_scraper"
+  },
+  "24190": {
+    "short_code": "Do1",
+    "league_name": "Liga Dominicana de F\u00fatbol",
+    "country": "Dominican Republic",
+    "source": "historical_scraper"
+  },
+  "24140": {
+    "short_code": "BrC",
+    "league_name": "Campeonato Capixaba",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24130": {
+    "short_code": "BrG",
+    "league_name": "Campeonato Goiano",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24139": {
+    "short_code": "BrM",
+    "league_name": "Campeonato Matogrossense",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24195": {
+    "short_code": "Ag1",
+    "league_name": "Premier Division",
+    "country": "Antigua and Barbuda",
+    "source": "historical_scraper"
+  },
+  "24171": {
+    "short_code": "Ar1",
+    "league_name": "Liga Profesional",
+    "country": "Argentina",
+    "source": "historical_scraper"
+  },
+  "24123": {
+    "short_code": "MxW",
+    "league_name": "Liga MX Women",
+    "country": "Mexico",
+    "source": "historical_scraper"
+  },
+  "24133": {
+    "short_code": "Mx2",
+    "league_name": "Liga de Expansion MX",
+    "country": "Mexico",
+    "source": "historical_scraper"
+  },
+  "24188": {
+    "short_code": "TT1",
+    "league_name": "TT Pro League",
+    "country": "Trinidad and Tobago",
+    "source": "historical_scraper"
+  },
+  "24021": {
+    "short_code": "Cw1",
+    "league_name": "Prom\u00e9 Divishon",
+    "country": "Cura\u00e7ao",
+    "source": "historical_scraper"
+  },
+  "24187": {
+    "short_code": "Pa1",
+    "league_name": "Football League",
+    "country": "Panama",
+    "source": "historical_scraper"
+  },
+  "24141": {
+    "short_code": "Cr1",
+    "league_name": "Primera Divisi\u00f3n",
+    "country": "Costa Rica",
+    "source": "historical_scraper"
+  },
+  "24160": {
+    "short_code": "Gt1",
+    "league_name": "Liga Nacional",
+    "country": "Guatemala",
+    "source": "historical_scraper"
+  },
+  "24135": {
+    "short_code": "Cr2",
+    "league_name": "Liga de Ascenso",
+    "country": "Costa Rica",
+    "source": "historical_scraper"
+  },
+  "23543": {
+    "short_code": "Mx3",
+    "league_name": "Liga Premier Serie A",
+    "country": "Mexico",
+    "source": "historical_scraper"
+  },
+  "24028": {
+    "short_code": "AuW",
+    "league_name": "A-League Women",
+    "country": "Australia",
+    "source": "historical_scraper"
+  },
+  "24165": {
+    "short_code": "InT",
+    "league_name": "Santosh Trophy",
+    "country": "India",
+    "source": "historical_scraper"
+  },
+  "24085": {
+    "short_code": "HK1",
+    "league_name": "Premier League",
+    "country": "Hong Kong",
+    "source": "historical_scraper"
+  },
+  "24005": {
+    "short_code": "Au1",
+    "league_name": "A-League",
+    "country": "Australia",
+    "source": "historical_scraper"
+  },
+  "23216": {
+    "short_code": "Id1",
+    "league_name": "Liga 1",
+    "country": "Indonesia",
+    "source": "historical_scraper"
+  },
+  "24170": {
+    "short_code": "Id2",
+    "league_name": "Liga 2",
+    "country": "Indonesia",
+    "source": "historical_scraper"
+  },
+  "23478": {
+    "short_code": "La1",
+    "league_name": "Lao League",
+    "country": "Laos",
+    "source": "historical_scraper"
+  },
+  "23880": {
+    "short_code": "Th3",
+    "league_name": "Thai League 3",
+    "country": "Thailand",
+    "source": "historical_scraper"
+  },
+  "23877": {
+    "short_code": "Th3",
+    "league_name": "Thai League 3",
+    "country": "Thailand",
+    "source": "historical_scraper"
+  },
+  "23875": {
+    "short_code": "Th3",
+    "league_name": "Thai League 3",
+    "country": "Thailand",
+    "source": "historical_scraper"
+  },
+  "23881": {
+    "short_code": "Th3",
+    "league_name": "Thai League 3",
+    "country": "Thailand",
+    "source": "historical_scraper"
+  },
+  "23878": {
+    "short_code": "Th3",
+    "league_name": "Thai League 3",
+    "country": "Thailand",
+    "source": "historical_scraper"
+  },
+  "23876": {
+    "short_code": "Th3",
+    "league_name": "Thai League 3",
+    "country": "Thailand",
+    "source": "historical_scraper"
+  },
+  "23778": {
+    "short_code": "Es5",
+    "league_name": "Tercera Division Group 13 - Murcia",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "24145": {
+    "short_code": "MyC",
+    "league_name": "Malaysia Cup",
+    "country": "Malaysia",
+    "source": "historical_scraper"
+  },
+  "24134": {
+    "short_code": "CzT",
+    "league_name": "Tipsport liga",
+    "country": "Czech Republic",
+    "source": "historical_scraper"
+  },
+  "24192": {
+    "short_code": "Mt1",
+    "league_name": "Premier League",
+    "country": "Malta",
+    "source": "historical_scraper"
+  },
+  "23815": {
+    "short_code": "Tr4",
+    "league_name": "TFF 3. Lig",
+    "country": "T\u00fcrkiye",
+    "source": "historical_scraper"
+  },
+  "23813": {
+    "short_code": "Tr4",
+    "league_name": "TFF 3. Lig",
+    "country": "T\u00fcrkiye",
+    "source": "historical_scraper"
+  },
+  "23810": {
+    "short_code": "Tr4",
+    "league_name": "TFF 3. Lig",
+    "country": "T\u00fcrkiye",
+    "source": "historical_scraper"
+  },
+  "23811": {
+    "short_code": "Tr4",
+    "league_name": "TFF 3. Lig",
+    "country": "T\u00fcrkiye",
+    "source": "historical_scraper"
+  },
+  "23808": {
+    "short_code": "Tr4",
+    "league_name": "TFF 3. Lig",
+    "country": "T\u00fcrkiye",
+    "source": "historical_scraper"
+  },
+  "24009": {
+    "short_code": "Et1",
+    "league_name": "Premier League",
+    "country": "Ethiopia",
+    "source": "historical_scraper"
+  },
+  "24232": {
+    "short_code": "Ch1",
+    "league_name": "Super League",
+    "country": "Switzerland",
+    "source": "historical_scraper"
+  },
+  "24127": {
+    "short_code": "BrC",
+    "league_name": "Campeonato Catarinense",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24128": {
+    "short_code": "BrP",
+    "league_name": "Campeonato Pernambucano",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24169": {
+    "short_code": "BrP",
+    "league_name": "Campeonato Paraense",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24147": {
+    "short_code": "Bb1",
+    "league_name": "Premier League",
+    "country": "Barbados",
+    "source": "historical_scraper"
+  },
+  "24183": {
+    "short_code": "ClS",
+    "league_name": "Super Cup",
+    "country": "Chile",
+    "source": "historical_scraper"
+  },
+  "24191": {
+    "short_code": "Co1",
+    "league_name": "Primera A",
+    "country": "Colombia",
+    "source": "historical_scraper"
+  },
+  "24164": {
+    "short_code": "Ir2",
+    "league_name": "League 1",
+    "country": "Iran",
+    "source": "historical_scraper"
+  },
+  "23485": {
+    "short_code": "ItP",
+    "league_name": "Primavera 1",
+    "country": "Italy",
+    "source": "historical_scraper"
+  },
+  "23577": {
+    "short_code": "Sg1",
+    "league_name": "S-League",
+    "country": "Singapore",
+    "source": "historical_scraper"
+  },
+  "23118": {
+    "short_code": "De4",
+    "league_name": "Regionalliga West",
+    "country": "Germany",
+    "source": "historical_scraper"
+  },
+  "23489": {
+    "short_code": "PL2",
+    "league_name": "Premier League 2",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23916": {
+    "short_code": "ItP",
+    "league_name": "Primavera 3",
+    "country": "Italy",
+    "source": "historical_scraper"
+  },
+  "24157": {
+    "short_code": "Ro1",
+    "league_name": "Divizia A",
+    "country": "Romania",
+    "source": "historical_scraper"
+  },
+  "23305": {
+    "short_code": "Hr1",
+    "league_name": "HNL",
+    "country": "Croatia",
+    "source": "historical_scraper"
+  },
+  "23883": {
+    "short_code": "Ng1",
+    "league_name": "Professional Football League",
+    "country": "Nigeria",
+    "source": "historical_scraper"
+  },
+  "23621": {
+    "short_code": "Sa1",
+    "league_name": "Professional League",
+    "country": "Saudi Arabia",
+    "source": "historical_scraper"
+  },
+  "23906": {
+    "short_code": "Bf1",
+    "league_name": "Premier League",
+    "country": "Burkina Faso",
+    "source": "historical_scraper"
+  },
+  "24159": {
+    "short_code": "BrA",
+    "league_name": "Campeonato Acreano",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24087": {
+    "short_code": "Mx3",
+    "league_name": "Liga Premier Serie B",
+    "country": "Mexico",
+    "source": "historical_scraper"
+  },
+  "24194": {
+    "short_code": "Tr3",
+    "league_name": "TFF 2. Lig",
+    "country": "T\u00fcrkiye",
+    "source": "historical_scraper"
+  },
+  "24156": {
+    "short_code": "Dz2",
+    "league_name": "Ligue 2",
+    "country": "Algeria",
+    "source": "historical_scraper"
+  },
+  "24207": {
+    "short_code": "Sd1",
+    "league_name": "Premier League",
+    "country": "Sudan",
+    "source": "historical_scraper"
+  },
+  "23928": {
+    "short_code": "Za2",
+    "league_name": "National First Division",
+    "country": "South Africa",
+    "source": "historical_scraper"
+  },
+  "23349": {
+    "short_code": "Eg1",
+    "league_name": "Premier League",
+    "country": "Egypt",
+    "source": "historical_scraper"
+  },
+  "23392": {
+    "short_code": "Za1",
+    "league_name": "Premier Soccer League",
+    "country": "South Africa",
+    "source": "historical_scraper"
+  },
+  "24199": {
+    "short_code": "Tz1",
+    "league_name": "Ligi Kuu Bara",
+    "country": "Tanzania",
+    "source": "historical_scraper"
+  },
+  "23328": {
+    "short_code": "Be2",
+    "league_name": "Challenger Pro League",
+    "country": "Belgium",
+    "source": "historical_scraper"
+  },
+  "23616": {
+    "short_code": "PLC",
+    "league_name": "Premier League Cup",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23688": {
+    "short_code": "Il3",
+    "league_name": "Liga Alef North",
+    "country": "Israel",
+    "source": "historical_scraper"
+  },
+  "23301": {
+    "short_code": "L2",
+    "league_name": "League Two",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23440": {
+    "short_code": "De1",
+    "league_name": "Bundesliga",
+    "country": "Germany",
+    "source": "historical_scraper"
+  },
+  "23269": {
+    "short_code": "L1",
+    "league_name": "League One",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23270": {
+    "short_code": "L1",
+    "league_name": "League One",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23394": {
+    "short_code": "NL",
+    "league_name": "National League",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23407": {
+    "short_code": "NLn",
+    "league_name": "National League North",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "24202": {
+    "short_code": "Tr3",
+    "league_name": "TFF 2. Lig",
+    "country": "T\u00fcrkiye",
+    "source": "historical_scraper"
+  },
+  "23911": {
+    "short_code": "Ke1",
+    "league_name": "Premier League",
+    "country": "Kenya",
+    "source": "historical_scraper"
+  },
+  "24177": {
+    "short_code": "Cm1",
+    "league_name": "Elite One",
+    "country": "Cameroon",
+    "source": "historical_scraper"
+  },
+  "24205": {
+    "short_code": "Sd1",
+    "league_name": "Premier League",
+    "country": "Sudan",
+    "source": "historical_scraper"
+  },
+  "23695": {
+    "short_code": "Eg1",
+    "league_name": "Premier League",
+    "country": "Egypt",
+    "source": "historical_scraper"
+  },
+  "23805": {
+    "short_code": "Es3",
+    "league_name": "Segunda B Grupo 5",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "24116": {
+    "short_code": "NlW",
+    "league_name": "KNVB Beker Women",
+    "country": "Netherlands",
+    "source": "historical_scraper"
+  },
+  "24198": {
+    "short_code": "Gt2",
+    "league_name": "Primera Division",
+    "country": "Guatemala",
+    "source": "historical_scraper"
+  },
+  "24178": {
+    "short_code": "Br1",
+    "league_name": "Brasileiro Serie A",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24179": {
+    "short_code": "Br1",
+    "league_name": "Brasileiro Serie A",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24201": {
+    "short_code": "CD1",
+    "league_name": "Ligue 1",
+    "country": "DR Congo",
+    "source": "historical_scraper"
+  },
+  "23903": {
+    "short_code": "Ae2",
+    "league_name": "Division 1",
+    "country": "UAE",
+    "source": "historical_scraper"
+  },
+  "23691": {
+    "short_code": "Il3",
+    "league_name": "Liga Alef South",
+    "country": "Israel",
+    "source": "historical_scraper"
+  },
+  "24204": {
+    "short_code": "Sd1",
+    "league_name": "Premier League",
+    "country": "Sudan",
+    "source": "historical_scraper"
+  },
+  "23829": {
+    "short_code": "Az1",
+    "league_name": "Premier League",
+    "country": "Azerbaijan",
+    "source": "historical_scraper"
+  },
+  "24203": {
+    "short_code": "Th2",
+    "league_name": "Thai League 2",
+    "country": "Thailand",
+    "source": "historical_scraper"
+  },
+  "23576": {
+    "short_code": "Al2",
+    "league_name": "League 1",
+    "country": "Albania",
+    "source": "historical_scraper"
+  },
+  "23827": {
+    "short_code": "Sa2",
+    "league_name": "1st Division",
+    "country": "Saudi Arabia",
+    "source": "historical_scraper"
+  },
+  "23350": {
+    "short_code": "My1",
+    "league_name": "Super League",
+    "country": "Malaysia",
+    "source": "historical_scraper"
+  },
+  "23605": {
+    "short_code": "Il2",
+    "league_name": "Liga Leumit",
+    "country": "Israel",
+    "source": "historical_scraper"
+  },
+  "24209": {
+    "short_code": "Tz1",
+    "league_name": "Ligi Kuu Bara",
+    "country": "Tanzania",
+    "source": "historical_scraper"
+  },
+  "23107": {
+    "short_code": "Si1",
+    "league_name": "Prva Liga",
+    "country": "Slovenia",
+    "source": "historical_scraper"
+  },
+  "24071": {
+    "short_code": "Tg1",
+    "league_name": "Championnat National",
+    "country": "Togo",
+    "source": "historical_scraper"
+  },
+  "23713": {
+    "short_code": "Es5",
+    "league_name": "Tercera Division Group 12 - Canarias",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "24200": {
+    "short_code": "Ve1",
+    "league_name": "Primera Division",
+    "country": "Venezuela",
+    "source": "historical_scraper"
+  },
+  "24196": {
+    "short_code": "Cl1",
+    "league_name": "Primera Division",
+    "country": "Chile",
+    "source": "historical_scraper"
+  },
+  "24132": {
+    "short_code": "Mx1",
+    "league_name": "Liga MX",
+    "country": "Mexico",
+    "source": "historical_scraper"
+  },
+  "23997": {
+    "short_code": "Bm1",
+    "league_name": "Premier Division",
+    "country": "Bermuda",
+    "source": "historical_scraper"
+  },
+  "23519": {
+    "short_code": "TwW",
+    "league_name": "Mulan Football League Women",
+    "country": "Taiwan",
+    "source": "historical_scraper"
+  },
+  "24221": {
+    "short_code": "TwW",
+    "league_name": "Mulan Football League Women",
+    "country": "Taiwan",
+    "source": "historical_scraper"
+  },
+  "23365": {
+    "short_code": "Kh1",
+    "league_name": "Premier League",
+    "country": "Cambodia",
+    "source": "historical_scraper"
+  },
+  "23837": {
+    "short_code": "ItP",
+    "league_name": "Primavera 2",
+    "country": "Italy",
+    "source": "historical_scraper"
+  },
+  "23385": {
+    "short_code": "Tr2",
+    "league_name": "TFF 1. Lig ",
+    "country": "T\u00fcrkiye",
+    "source": "historical_scraper"
+  },
+  "23451": {
+    "short_code": "Pt2",
+    "league_name": "Liga Portugal 2",
+    "country": "Portugal",
+    "source": "historical_scraper"
+  },
+  "23491": {
+    "short_code": "De5",
+    "league_name": "Oberliga Hamburg",
+    "country": "Germany",
+    "source": "historical_scraper"
+  },
+  "23702": {
+    "short_code": "DeW",
+    "league_name": "Bundesliga Women",
+    "country": "Germany",
+    "source": "historical_scraper"
+  },
+  "23657": {
+    "short_code": "EsW",
+    "league_name": "Primera Division Women",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "24193": {
+    "short_code": "Pe1",
+    "league_name": "Primera Divisi\u00f3n",
+    "country": "Peru",
+    "source": "historical_scraper"
+  },
+  "23746": {
+    "short_code": "Es5",
+    "league_name": "Tercera Division Group 1 - Galicia",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "23752": {
+    "short_code": "Es5",
+    "league_name": "Tercera Division Group 3 - Cantabria",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "23755": {
+    "short_code": "Es5",
+    "league_name": "Tercera Division Group 4 - Pais Vasco",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "23769": {
+    "short_code": "Es5",
+    "league_name": "Tercera Division Group 9 - Andalucia Or. y Mellila",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "23772": {
+    "short_code": "Es5",
+    "league_name": "Tercera Division Group 10 - Andalucia Occ./Ceuta",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "23790": {
+    "short_code": "Es5",
+    "league_name": "Tercera Division Group 18 - Castilla La Mancha",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "24206": {
+    "short_code": "Ke1",
+    "league_name": "Premier League",
+    "country": "Kenya",
+    "source": "historical_scraper"
+  },
+  "23925": {
+    "short_code": "Gr3",
+    "league_name": "Gamma Ethniki Group 2",
+    "country": "Greece",
+    "source": "historical_scraper"
+  },
+  "23884": {
+    "short_code": "Ng1",
+    "league_name": "Professional Football League",
+    "country": "Nigeria",
+    "source": "historical_scraper"
+  },
+  "23381": {
+    "short_code": "Tr1",
+    "league_name": "S\u00fcper Lig",
+    "country": "T\u00fcrkiye",
+    "source": "historical_scraper"
+  },
+  "23947": {
+    "short_code": "ItW",
+    "league_name": "Serie A Women",
+    "country": "Italy",
+    "source": "historical_scraper"
+  },
+  "24235": {
+    "short_code": "BrC",
+    "league_name": "Campeonato Cearense",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24120": {
+    "short_code": "BdC",
+    "league_name": "Federation Cup",
+    "country": "Bangladesh",
+    "source": "historical_scraper"
+  },
+  "24106": {
+    "short_code": "TrC",
+    "league_name": "Turkiye Kupasi",
+    "country": "T\u00fcrkiye",
+    "source": "historical_scraper"
+  },
+  "24226": {
+    "short_code": "CD1",
+    "league_name": "Ligue 1",
+    "country": "DR Congo",
+    "source": "historical_scraper"
+  },
+  "24227": {
+    "short_code": "Th2",
+    "league_name": "Thai League 2",
+    "country": "Thailand",
+    "source": "historical_scraper"
+  },
+  "23562": {
+    "short_code": "Bw1",
+    "league_name": "Premier League",
+    "country": "Botswana",
+    "source": "historical_scraper"
+  },
+  "24109": {
+    "short_code": "Gm1",
+    "league_name": "GFA League",
+    "country": "Gambia",
+    "source": "historical_scraper"
+  },
+  "23391": {
+    "short_code": "Za1",
+    "league_name": "Premier Soccer League",
+    "country": "South Africa",
+    "source": "historical_scraper"
+  },
+  "24158": {
+    "short_code": "Mt1",
+    "league_name": "Premier League",
+    "country": "Malta",
+    "source": "historical_scraper"
+  },
+  "23683": {
+    "short_code": "De4",
+    "league_name": "Regionalliga Nordost",
+    "country": "Germany",
+    "source": "historical_scraper"
+  },
+  "23345": {
+    "short_code": "Nl2",
+    "league_name": "Eerste Divisie",
+    "country": "Netherlands",
+    "source": "historical_scraper"
+  },
+  "23083": {
+    "short_code": "Pl1",
+    "league_name": "Ekstraklasa",
+    "country": "Poland",
+    "source": "historical_scraper"
+  },
+  "23353": {
+    "short_code": "CH",
+    "league_name": "Championship",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23354": {
+    "short_code": "CH",
+    "league_name": "Championship",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23992": {
+    "short_code": "Gr3",
+    "league_name": "Gamma Ethniki Group 6",
+    "country": "Greece",
+    "source": "historical_scraper"
+  },
+  "23743": {
+    "short_code": "It4",
+    "league_name": "Serie D Group I",
+    "country": "Italy",
+    "source": "historical_scraper"
+  },
+  "24155": {
+    "short_code": "KW2",
+    "league_name": "1st Division",
+    "country": "Kuwait",
+    "source": "historical_scraper"
+  },
+  "23312": {
+    "short_code": "Sc5",
+    "league_name": "Highland League",
+    "country": "Scotland",
+    "source": "historical_scraper"
+  },
+  "23560": {
+    "short_code": "Gr1",
+    "league_name": "Super League",
+    "country": "Greece",
+    "source": "historical_scraper"
+  },
+  "24239": {
+    "short_code": "TT1",
+    "league_name": "TT Pro League",
+    "country": "Trinidad and Tobago",
+    "source": "historical_scraper"
+  },
+  "23824": {
+    "short_code": "Az2",
+    "league_name": "I Liqa",
+    "country": "Azerbaijan",
+    "source": "historical_scraper"
+  },
+  "24228": {
+    "short_code": "Eg2",
+    "league_name": "Second Division A",
+    "country": "Egypt",
+    "source": "historical_scraper"
+  },
+  "24149": {
+    "short_code": "KW",
+    "league_name": "Premier League",
+    "country": "Kuwait",
+    "source": "historical_scraper"
+  },
+  "24231": {
+    "short_code": "Jp1",
+    "league_name": "J1 League",
+    "country": "Japan",
+    "source": "historical_scraper"
+  },
+  "24230": {
+    "short_code": "Tz1",
+    "league_name": "Ligi Kuu Bara",
+    "country": "Tanzania",
+    "source": "historical_scraper"
+  },
+  "23574": {
+    "short_code": "Al1",
+    "league_name": "Super League",
+    "country": "Albania",
+    "source": "historical_scraper"
+  },
+  "23899": {
+    "short_code": "Bg1",
+    "league_name": "Parva Liga",
+    "country": "Bulgaria",
+    "source": "historical_scraper"
+  },
+  "23134": {
+    "short_code": "Ba1",
+    "league_name": "Premier League",
+    "country": "Bosnia and Herzegovina",
+    "source": "historical_scraper"
+  },
+  "23341": {
+    "short_code": "Fr3",
+    "league_name": "National",
+    "country": "France",
+    "source": "historical_scraper"
+  },
+  "24234": {
+    "short_code": "TT1",
+    "league_name": "TT Pro League",
+    "country": "Trinidad and Tobago",
+    "source": "historical_scraper"
+  },
+  "23397": {
+    "short_code": "NL",
+    "league_name": "National League",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23716": {
+    "short_code": "Es5",
+    "league_name": "Tercera Division Group 15 - Navarra",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "24244": {
+    "short_code": "Ag1",
+    "league_name": "Premier Division",
+    "country": "Antigua and Barbuda",
+    "source": "historical_scraper"
+  },
+  "23452": {
+    "short_code": "Pt2",
+    "league_name": "Liga Portugal 2",
+    "country": "Portugal",
+    "source": "historical_scraper"
+  },
+  "24152": {
+    "short_code": "Co1",
+    "league_name": "Primera A",
+    "country": "Colombia",
+    "source": "historical_scraper"
+  },
+  "23766": {
+    "short_code": "Es5",
+    "league_name": "Tercera Division Group 8 - Castilla y Leon",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "24154": {
+    "short_code": "Sv1",
+    "league_name": "Primera Division",
+    "country": "El Salvador",
+    "source": "historical_scraper"
+  },
+  "24136": {
+    "short_code": "Cr2",
+    "league_name": "Liga de Ascenso",
+    "country": "Costa Rica",
+    "source": "historical_scraper"
+  },
+  "24236": {
+    "short_code": "BrA",
+    "league_name": "Campeonato Amazonense",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "23830": {
+    "short_code": "Az1",
+    "league_name": "Premier League",
+    "country": "Azerbaijan",
+    "source": "historical_scraper"
+  },
+  "23105": {
+    "short_code": "Rs1",
+    "league_name": "Superliga",
+    "country": "Serbia",
+    "source": "historical_scraper"
+  },
+  "24237": {
+    "short_code": "Et1",
+    "league_name": "Premier League",
+    "country": "Ethiopia",
+    "source": "historical_scraper"
+  },
+  "24242": {
+    "short_code": "CD1",
+    "league_name": "Ligue 1",
+    "country": "DR Congo",
+    "source": "historical_scraper"
+  },
+  "24025": {
+    "short_code": "RoC",
+    "league_name": "Cupa Romaniei",
+    "country": "Romania",
+    "source": "historical_scraper"
+  },
+  "23357": {
+    "short_code": "Mk1",
+    "league_name": "Prva liga",
+    "country": "North Macedonia",
+    "source": "historical_scraper"
+  },
+  "23595": {
+    "short_code": "It3",
+    "league_name": "Serie C",
+    "country": "Italy",
+    "source": "historical_scraper"
+  },
+  "23557": {
+    "short_code": "It2",
+    "league_name": "Serie B",
+    "country": "Italy",
+    "source": "historical_scraper"
+  },
+  "23159": {
+    "short_code": "EPL",
+    "league_name": "Premier League",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "24035": {
+    "short_code": "Wl2",
+    "league_name": "Cymru Championship",
+    "country": "Wales",
+    "source": "historical_scraper"
+  },
+  "23268": {
+    "short_code": "L1",
+    "league_name": "League One",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23267": {
+    "short_code": "L1",
+    "league_name": "League One",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "24243": {
+    "short_code": "ArR",
+    "league_name": "Reserve League",
+    "country": "Argentina",
+    "source": "historical_scraper"
+  },
+  "23867": {
+    "short_code": "Gr3",
+    "league_name": "Gamma Ethniki Group 3",
+    "country": "Greece",
+    "source": "historical_scraper"
+  },
+  "24245": {
+    "short_code": "CD1",
+    "league_name": "Ligue 1",
+    "country": "DR Congo",
+    "source": "historical_scraper"
+  },
+  "24088": {
+    "short_code": "RsC",
+    "league_name": "Kup",
+    "country": "Serbia",
+    "source": "historical_scraper"
+  },
+  "24246": {
+    "short_code": "So1",
+    "league_name": "Championship",
+    "country": "Somalia",
+    "source": "historical_scraper"
+  },
+  "24251": {
+    "short_code": "Zm1",
+    "league_name": "Premier League",
+    "country": "Zambia",
+    "source": "historical_scraper"
+  },
+  "23924": {
+    "short_code": "Gr3",
+    "league_name": "Gamma Ethniki Group 1",
+    "country": "Greece",
+    "source": "historical_scraper"
+  },
+  "24249": {
+    "short_code": "Sd1",
+    "league_name": "Premier League",
+    "country": "Sudan",
+    "source": "historical_scraper"
+  },
+  "23737": {
+    "short_code": "It4",
+    "league_name": "Serie D Group G",
+    "country": "Italy",
+    "source": "historical_scraper"
+  },
+  "23348": {
+    "short_code": "Eg1",
+    "league_name": "Premier League",
+    "country": "Egypt",
+    "source": "historical_scraper"
+  },
+  "23591": {
+    "short_code": "It3",
+    "league_name": "Serie C",
+    "country": "Italy",
+    "source": "historical_scraper"
+  },
+  "23587": {
+    "short_code": "It3",
+    "league_name": "Serie C",
+    "country": "Italy",
+    "source": "historical_scraper"
+  },
+  "23169": {
+    "short_code": "Nl1",
+    "league_name": "Eredivisie",
+    "country": "Netherlands",
+    "source": "historical_scraper"
+  }
+}

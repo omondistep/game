@@ -1,0 +1,400 @@
+{
+  "league_key": "BrP_241",
+  "league_info": {
+    "league_code": "BrP",
+    "match_id_prefix": "241",
+    "country": "Brazil",
+    "league": "Paulista A2",
+    "league_url_path": "football-tips-and-predictions-for-brazil/paulista-a2",
+    "country_code": "br",
+    "match_count": 751,
+    "teams": {
+      "Votuporanguense SP": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "Linense SP": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "XV de Piracicaba SP": {
+        "home_matches": 16,
+        "away_matches": 16
+      },
+      "Oeste FC": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Gr\u00eamio Prudente": {
+        "home_matches": 10,
+        "away_matches": 5
+      },
+      "Juventus SP": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Uniao Barbarense SP": {
+        "home_matches": 16,
+        "away_matches": 24
+      },
+      "Rio Claro SP": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Palmeiras": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "S\u00e3o Paulo": {
+        "home_matches": 10,
+        "away_matches": 5
+      },
+      "S\u00e3o Jos\u00e9 EC": {
+        "home_matches": 10,
+        "away_matches": 10
+      },
+      "Monte Azul SP": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Bandeirante SP": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Portuguesa Santista SP": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Treze": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Atl\u00e9tico PB": {
+        "home_matches": 5,
+        "away_matches": 10
+      },
+      "Santa Cruz": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Nautico": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Ituano SP": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "Sao Bento": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Novorizontino SP": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "Botafogo SP": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "\u00c1guia de Marab\u00e1 PA": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Santa Rosa PA": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Velo Clube": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Corinthians": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Piaui PI": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Parnahyba PI": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Portuguesa SP": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Guarani": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "S\u00e3o Francisco PA": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Capit\u00e3o Po\u00e7o": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Itapirense": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Francana": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Mar\u00edlia SP": {
+        "home_matches": 15,
+        "away_matches": 5
+      },
+      "Sousa PB": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "Taubat\u00e9": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Uni\u00e3o S\u00e3o Jo\u00e3o SP": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Catanduva": {
+        "home_matches": 24,
+        "away_matches": 0
+      },
+      "Rio Preto SP": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Retr\u00f4 PE": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Santo Andr\u00e9 SP": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Ferrovi\u00e1ria SP": {
+        "home_matches": 10,
+        "away_matches": 5
+      },
+      "Inter Limeira SP": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Agua Santa SP": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Sert\u00e3ozinho SP": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Botafogo PB": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Pombal": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Serra Branca": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Esporte PB": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Nacional PB": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "USAC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "XV de Ja\u00fa": {
+        "home_matches": 10,
+        "away_matches": 0
+      },
+      "Paulista SP": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Castanhal PA": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Potyguar-CN RN": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "ABC Natal": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Santos": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Primavera SP": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "RB Bragantino": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "S\u00e3o Bernardo SP": {
+        "home_matches": 0,
+        "away_matches": 10
+      },
+      "Noroeste SP": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "EC S\u00e3o Bernardo": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Desportivo Brasil": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Camet\u00e1 PA": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Amaz\u00f4nia PA": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Globo FC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Potiguar-M RN": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Am\u00e9rica RN": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Bragantino PA": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Remo PA": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Capivariano SP": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Cor\u00ed-Sabb\u00e1": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Fluminense-PI": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Mirassol SP": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Gremio Prudente": {
+        "home_matches": 6,
+        "away_matches": 3
+      },
+      "Sao Paulo": {
+        "home_matches": 6,
+        "away_matches": 3
+      },
+      "Sao Jose EC": {
+        "home_matches": 6,
+        "away_matches": 6
+      },
+      "Atletico PB": {
+        "home_matches": 3,
+        "away_matches": 6
+      },
+      "Aguia de Maraba PA": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Sao Francisco PA": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Capitao Poco": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Marilia SP": {
+        "home_matches": 9,
+        "away_matches": 3
+      },
+      "Taubate": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Uniao Sao Joao SP": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Retro PE": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Santo Andre SP": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Ferroviaria SP": {
+        "home_matches": 6,
+        "away_matches": 3
+      },
+      "Sertaozinho SP": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "XV de Jau": {
+        "home_matches": 6,
+        "away_matches": 0
+      },
+      "Sao Bernardo SP": {
+        "home_matches": 0,
+        "away_matches": 6
+      },
+      "EC Sao Bernardo": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Cameta PA": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Amazonia PA": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "America RN": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Cori-Sabba": {
+        "home_matches": 3,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 148,
+  "trained_at": "2026-02-12T19:11:16.958507"
+}

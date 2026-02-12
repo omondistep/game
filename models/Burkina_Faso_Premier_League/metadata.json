@@ -1,0 +1,75 @@
+{
+  "league_key": "Bf1",
+  "league_info": {
+    "league_code": "Bf1",
+    "country": "Burkina Faso",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "bf",
+    "match_count": 27,
+    "teams": {
+      "Vitesse FC BFA": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Forces Armees": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Real du Faso": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "AJEB": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Salitas": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "ASFA-Yennenga": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "AS Douanes": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Rahimo": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Etoile Filante": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Rail Club Kadiogo": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "RC Bobo-Dioulasso": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Sporting Cascades": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "AS DE LA SONABEL": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Vitesse FC (BFA)": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "R\u00e9al du Faso": {
+        "home_matches": 1,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 18,
+  "trained_at": "2026-02-12T19:21:35.530752"
+}

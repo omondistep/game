@@ -1,0 +1,71 @@
+{
+  "league_key": "Uy1",
+  "league_info": {
+    "league_code": "Uy1",
+    "country": "Uruguay",
+    "league": "Primera Division",
+    "league_url_path": "",
+    "country_code": "uy",
+    "match_count": 15,
+    "teams": {
+      "Albion FC URU": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Liverpool URU": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Montevideo Wanderers": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Defensor Sporting": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Penarol": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "CA Torque": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Boston River": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Nacional URU": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "CA Cerro": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Danubio FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Albion FC (URU)": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Liverpool (URU)": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Pe\u00f1arol": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Nacional (URU)": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 10,
+  "trained_at": "2026-02-12T19:22:22.843381"
+}

@@ -355,6 +355,113 @@ python auto_train.py
 
 2. Schedule the batch file to run daily via Task Scheduler
 
+## Historical Data Scraping
+
+The system can scrape historical match data from Forebet's date pages to build a comprehensive training dataset.
+
+### Scrape Historical Matches
+
+```bash
+# Scrape matches for a specific date range
+python scrape_historical.py --start 2026-01-25 --end 2026-02-11
+
+# Scrape a single date
+python scrape_historical.py --date 2026-01-25
+
+# Scrape last N days
+python scrape_historical.py --days 7
+```
+
+This will:
+1. Fetch match listings from Forebet's date pages
+2. Scrape detailed match data for each match
+3. Extract actual results for completed matches
+4. Save data to `data/historical_matches_YYYY-MM-DD.json`
+5. Update the training dataset automatically
+
+### Rebuild Training Database
+
+To rebuild the entire training database from historical data:
+
+```bash
+# Rebuild from all historical data files
+python rebuild_data.py
+
+# Rebuild with specific date range
+python rebuild_data.py --start 2026-01-25 --end 2026-02-11
+```
+
+This will:
+1. Load all historical match data files
+2. Extract features and results
+3. Build a comprehensive training dataset
+4. Train models for each league with sufficient data
+5. Save training statistics
+
+### Build League Database
+
+The system maintains a comprehensive league database for accurate league identification:
+
+```bash
+# Build/update league database from historical data
+python build_league_db.py
+
+# This creates data/leagues_db.json with:
+# - short_codes: League short codes (e.g., "E0" for Premier League)
+# - url_paths: League URL paths for lookup
+# - country/league mappings
+```
+
+### Calculate Data-Driven Weights
+
+The prediction model uses data-driven weights based on model accuracy:
+
+```bash
+# Calculate weights from model performance
+python calculate_weights.py
+
+# This creates data/factor_weights.json with:
+# - Model accuracy-based weights
+# - League-specific performance metrics
+```
+
+## Daily Training Script
+
+The `daily_train.py` script provides automated daily training with historical data updates:
+
+```bash
+# Run daily training
+python daily_train.py
+
+# This will:
+# 1. Scrape yesterday's matches
+# 2. Update historical data
+# 3. Rebuild training database
+# 4. Retrain all models
+# 5. Log training results
+```
+
+### Systemd Service (Linux)
+
+The system includes systemd service files for automated daily training:
+
+```bash
+# Install the service
+sudo cp football_train.service /etc/systemd/system/
+sudo cp football_train.timer /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable football_train.timer
+sudo systemctl start football_train.timer
+
+# Check status
+systemctl status football_train.timer
+```
+
+The timer runs daily at 2 AM to:
+1. Scrape the previous day's matches
+2. Update results for completed matches
+3. Retrain models with new data
+
 ## League-Specific Models
 
 The system supports **league-specific models** that capture nuances of different leagues:

@@ -1,0 +1,47 @@
+{
+  "league_key": "Si1",
+  "league_info": {
+    "league_code": "Si1",
+    "country": "Slovenia",
+    "league": "Prva Liga",
+    "league_url_path": "",
+    "country_code": "si",
+    "match_count": 16,
+    "teams": {
+      "NK Radomlje": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "NK Aluminij": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "FC Koper": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "NK Primorje": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "NK Bravo": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "ND Mura": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Celje": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Olimpija Ljubljana": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 10,
+  "trained_at": "2026-02-12T19:22:16.323484"
+}

@@ -1,0 +1,59 @@
+{
+  "league_key": "Az2",
+  "league_info": {
+    "league_code": "Az2",
+    "country": "Azerbaijan",
+    "league": "I Liqa",
+    "league_url_path": "",
+    "country_code": "az",
+    "match_count": 15,
+    "teams": {
+      "C\u0259bray\u0131l": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "MOIK Baku": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Shafa Baku": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Baku Sporting": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Zaqatala FK": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sebail FK": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Shahdagh Qusar": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Difai Agsu": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Simal": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Energetik Mingachevir": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "\u015eimal": {
+        "home_matches": 1,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 10,
+  "trained_at": "2026-02-12T19:21:33.664757"
+}

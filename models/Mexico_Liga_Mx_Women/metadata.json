@@ -1,0 +1,112 @@
+{
+  "league_key": "MxW_241",
+  "league_info": {
+    "league_code": "MxW",
+    "match_id_prefix": "241",
+    "country": "Mexico",
+    "league": "Liga Mx Women",
+    "league_url_path": "football-tips-and-predictions-for-mexico/liga-mx-women",
+    "country_code": "mx",
+    "match_count": 302,
+    "teams": {
+      "Atl\u00e9tico San Luis W": {
+        "home_matches": 5,
+        "away_matches": 10
+      },
+      "Tijuana W": {
+        "home_matches": 8,
+        "away_matches": 19
+      },
+      "Ju\u00e1rez W": {
+        "home_matches": 10,
+        "away_matches": 10
+      },
+      "Cruz Azul W": {
+        "home_matches": 16,
+        "away_matches": 16
+      },
+      "Tigres UANL W": {
+        "home_matches": 24,
+        "away_matches": 8
+      },
+      "Atlas W": {
+        "home_matches": 16,
+        "away_matches": 11
+      },
+      "Am\u00e9rica W": {
+        "home_matches": 5,
+        "away_matches": 10
+      },
+      "Mazatl\u00e1n W": {
+        "home_matches": 5,
+        "away_matches": 15
+      },
+      "Quer\u00e9taro W": {
+        "home_matches": 15,
+        "away_matches": 5
+      },
+      "Toluca W": {
+        "home_matches": 16,
+        "away_matches": 16
+      },
+      "Necaxa W": {
+        "home_matches": 16,
+        "away_matches": 16
+      },
+      "Pachuca W": {
+        "home_matches": 16,
+        "away_matches": 11
+      },
+      "Le\u00f3n W": {
+        "home_matches": 10,
+        "away_matches": 5
+      },
+      "Monterrey W": {
+        "home_matches": 16,
+        "away_matches": 16
+      },
+      "Puebla W": {
+        "home_matches": 11,
+        "away_matches": 8
+      },
+      "Santos Laguna W": {
+        "home_matches": 11,
+        "away_matches": 8
+      },
+      "Guadalajara W": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Pumas UNAM W": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Atletico San Luis W": {
+        "home_matches": 6,
+        "away_matches": 6
+      },
+      "Juarez W": {
+        "home_matches": 6,
+        "away_matches": 6
+      },
+      "America W": {
+        "home_matches": 3,
+        "away_matches": 6
+      },
+      "Mazatlan W": {
+        "home_matches": 3,
+        "away_matches": 9
+      },
+      "Queretaro W": {
+        "home_matches": 9,
+        "away_matches": 3
+      },
+      "Leon W": {
+        "home_matches": 6,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 61,
+  "trained_at": "2026-02-12T19:11:44.007979"
+}

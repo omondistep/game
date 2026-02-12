@@ -1,245 +1,286 @@
 #!/usr/bin/env python3
 """
-Model Statistics Command
-Shows model accuracy stats and tracks improvement over time.
+Model Statistics and Prediction Accuracy Tracker
+
+This script:
+1. Shows model training statistics
+2. Tracks prediction accuracy over time
+3. Shows correct/incorrect prediction percentages
+
+Usage:
+    python model_stats.py                    # Show all model stats
+    python model_stats.py --league It2       # Show stats for specific league
+    python model_stats.py --predictions      # Show prediction accuracy
+    python model_stats.py --update           # Update prediction tracking
 """
 
-import json
 import os
-from datetime import datetime, timedelta
+import sys
+import json
+import glob
+import pickle
+from datetime import datetime
 from typing import Dict, List, Optional
+from collections import defaultdict
 import argparse
 
-
-def load_training_history() -> List[Dict]:
-    """Load training history from file."""
-    history_file = "training_history.json"
-    if os.path.exists(history_file):
-        with open(history_file, 'r') as f:
-            return json.load(f)
-    return []
+# Constants
+DATA_DIR = "data"
+MODELS_DIR = "models"
+PREDICTIONS_FILE = os.path.join(DATA_DIR, "predictions.json")
+RESULTS_FILE = os.path.join(DATA_DIR, "results.json")
+TRAINING_DATA_FILE = os.path.join(DATA_DIR, "training_data.pkl")
 
 
-def save_training_history(history: List[Dict]):
-    """Save training history to file."""
-    history_file = "training_history.json"
-    with open(history_file, 'w') as f:
-        json.dump(history, f, indent=2, default=str)
-
-
-def get_training_stats() -> Dict:
-    """Get comprehensive training statistics."""
-    history = load_training_history()
-    matches_file = "data/results.json"
-    training_file = "data/training_data.pkl"
+def load_model_metadata() -> Dict:
+    """Load metadata for all trained models."""
+    models = {}
     
-    stats = {
-        'total_trainings': len(history),
-        'training_history': history[-10:] if history else [],
-        'training_count': 0,
-        'train_result_accuracy': 0.0,
-        'train_ou_accuracy': 0.0,
-        'test_result_accuracy': None,
-        'test_ou_accuracy': None,
-        'result_accuracy': 0.0,
-        'ou_accuracy': 0.0,
-        'improvement_trend': None,
-        'recent_improvement': None
-    }
+    for model_dir in glob.glob(os.path.join(MODELS_DIR, '*')):
+        if not os.path.isdir(model_dir):
+            continue
+        
+        metadata_file = os.path.join(model_dir, 'metadata.json')
+        if os.path.exists(metadata_file):
+            try:
+                with open(metadata_file, 'r') as f:
+                    metadata = json.load(f)
+                model_name = os.path.basename(model_dir)
+                models[model_name] = metadata
+            except:
+                continue
     
-    # Count training examples
-    if os.path.exists(training_file):
-        import pickle
-        with open(training_file, 'rb') as f:
-            data = pickle.load(f)
-            if isinstance(data, list):
-                # Check if new format (league entries with 'examples' key) or old format (flat list)
-                if data and isinstance(data[0], dict) and 'examples' in data[0]:
-                    # New format: [{'league': '...', 'examples': [...]}, ...]
-                    stats['training_count'] = sum(len(entry.get('examples', [])) for entry in data)
-                else:
-                    # Old format: [{'features': ..., 'labels': ...}, ...]
-                    stats['training_count'] = len(data)
-    
-    # Get latest training metrics (use test accuracy if available)
-    if history:
-        latest = history[-1]
-        
-        # Get train and test accuracy
-        stats['train_result_accuracy'] = latest.get('train_result_acc', 0)
-        stats['train_ou_accuracy'] = latest.get('train_ou_acc', 0)
-        stats['test_result_accuracy'] = latest.get('test_result_acc')
-        stats['test_ou_accuracy'] = latest.get('test_ou_acc')
-        
-        # Use test accuracy for display if available
-        if stats['test_result_accuracy'] is not None:
-            stats['result_accuracy'] = stats['test_result_accuracy']
-            stats['ou_accuracy'] = stats['test_ou_accuracy'] if stats['test_ou_accuracy'] is not None else stats['train_ou_accuracy']
-        else:
-            stats['result_accuracy'] = stats['train_result_accuracy']
-            stats['ou_accuracy'] = stats['train_ou_accuracy']
-        
-        stats['last_training'] = latest.get('timestamp')
-        
-        # Calculate improvement trend (test accuracy if available)
-        if len(history) >= 2:
-            prev = history[-2]
-            
-            # Use test accuracy if available, else train
-            curr_test = stats['test_result_accuracy'] if stats['test_result_accuracy'] is not None else stats['train_result_accuracy']
-            prev_test = prev.get('test_result_acc') if prev.get('test_result_acc') is not None else prev.get('train_result_acc', 0)
-            
-            curr_ou = stats['test_ou_accuracy'] if stats['test_ou_accuracy'] is not None else stats['train_ou_accuracy']
-            prev_ou = prev.get('test_ou_acc') if prev.get('test_ou_acc') is not None else prev.get('train_ou_acc', 0)
-            
-            stats['improvement_trend'] = {
-                'result_change': curr_test - prev_test,
-                'ou_change': curr_ou - prev_ou
-            }
-        
-        # Recent improvement (last 5 trainings)
-        if len(history) >= 5:
-            first_of_5 = history[-5]
-            last_of_5 = history[-1]
-            
-            # Use test accuracy if available
-            first_test = first_of_5.get('test_result_acc') if first_of_5.get('test_result_acc') is not None else first_of_5.get('train_result_acc', 0)
-            last_test = last_of_5.get('test_result_acc') if last_of_5.get('test_result_acc') is not None else last_of_5.get('train_result_acc', 0)
-            
-            first_ou = first_of_5.get('test_ou_acc') if first_of_5.get('test_ou_acc') is not None else first_of_5.get('train_ou_acc', 0)
-            last_ou = last_of_5.get('test_ou_acc') if last_of_5.get('test_ou_acc') is not None else last_of_5.get('train_ou_acc', 0)
-            
-            stats['recent_improvement'] = {
-                'result_change': last_test - first_test,
-                'ou_change': last_ou - first_ou,
-                'samples_added': last_of_5.get('training_examples', 0) - first_of_5.get('training_examples', 0)
-            }
-    
-    return stats
+    return models
 
 
-def format_percentage(value: float) -> str:
-    """Format percentage with color indicator."""
-    if value >= 0.7:
-        return f"{value:.1%} ✓"
-    elif value >= 0.5:
-        return f"{value:.1%} ~"
-    else:
-        return f"{value:.1%} ⚠"
+def load_predictions() -> List[Dict]:
+    """Load saved predictions."""
+    if not os.path.exists(PREDICTIONS_FILE):
+        return []
+    
+    try:
+        with open(PREDICTIONS_FILE, 'r') as f:
+            content = f.read().strip()
+            if not content:
+                return []
+            return json.loads(content)
+    except:
+        return []
+
+
+def load_results() -> Dict:
+    """Load saved results."""
+    if not os.path.exists(RESULTS_FILE):
+        return {}
+    
+    try:
+        with open(RESULTS_FILE, 'r') as f:
+            content = f.read().strip()
+            if not content:
+                return {}
+            return json.loads(content)
+    except:
+        return {}
+
+
+def load_training_data() -> Dict:
+    """Load training data."""
+    if not os.path.exists(TRAINING_DATA_FILE):
+        return {}
+    
+    try:
+        with open(TRAINING_DATA_FILE, 'rb') as f:
+            return pickle.load(f)
+    except:
+        return {}
+
+
+def show_model_stats(league_code: Optional[str] = None):
+    """Show statistics for all trained models."""
+    models = load_model_metadata()
+    training_data = load_training_data()
+    
+    if not models:
+        print("No trained models found.")
+        return
+    
+    print("=" * 70)
+    print("MODEL STATISTICS")
+    print("=" * 70)
+    print(f"Total models: {len(models)}")
+    print(f"Training data file: {'Present' if training_data else 'Missing'}")
+    
+    # Group by country
+    by_country = defaultdict(list)
+    for name, meta in models.items():
+        country = meta.get('league_info', {}).get('country', 'Unknown')
+        by_country[country].append((name, meta))
+    
+    # Show stats
+    total_examples = 0
+    for country in sorted(by_country.keys()):
+        if league_code and league_code.lower() not in country.lower():
+            # Also check league name
+            found = False
+            for name, meta in by_country[country]:
+                league = meta.get('league_info', {}).get('league', '')
+                league_key = meta.get('league_key', '')
+                if (league_code.lower() in league.lower() or 
+                    league_code.lower() == league_key.lower()):
+                    found = True
+                    break
+            if not found:
+                continue
+        
+        print(f"\n{country}:")
+        print("-" * 50)
+        
+        for name, meta in sorted(by_country[country], key=lambda x: x[0]):
+            league_key = meta.get('league_key', 'N/A')
+            league_name = meta.get('league_info', {}).get('league', 'Unknown')
+            example_count = meta.get('example_count', 0)
+            result_acc = meta.get('result_accuracy', 0)
+            ou_acc = meta.get('ou_accuracy', 0)
+            trained_at = meta.get('trained_at', 'Unknown')
+            
+            total_examples += example_count
+            
+            # Filter by league code if specified
+            if league_code and league_code.lower() != league_key.lower():
+                if league_code.lower() not in league_name.lower():
+                    continue
+            
+            print(f"  {league_key}: {league_name}")
+            print(f"    Examples: {example_count}")
+            print(f"    Result accuracy: {result_acc:.1%}")
+            print(f"    O/U accuracy: {ou_acc:.1%}")
+            print(f"    Trained: {trained_at[:10] if trained_at else 'Unknown'}")
+
+
+def show_prediction_stats():
+    """Show prediction accuracy statistics."""
+    predictions = load_predictions()
+    results = load_results()
+    
+    print("\n" + "=" * 70)
+    print("PREDICTION ACCURACY")
+    print("=" * 70)
+    
+    if not predictions:
+        print("No predictions recorded yet.")
+        print("\nTo track predictions, use the prediction system and save results.")
+        return
+    
+    # Analyze predictions
+    total = len(predictions)
+    with_results = 0
+    correct_result = 0
+    correct_ou = 0
+    
+    by_league = defaultdict(lambda: {'total': 0, 'correct_result': 0, 'correct_ou': 0})
+    
+    for pred in predictions:
+        url = pred.get('url', '')
+        league_code = pred.get('league_code', 'Unknown')
+        
+        # Check if we have a result for this prediction
+        result = results.get(url)
+        if not result:
+            continue
+        
+        with_results += 1
+        by_league[league_code]['total'] += 1
+        
+        # Check result prediction
+        pred_result = pred.get('prediction', {}).get('result', {}).get('prediction')
+        actual_result = result.get('result')
+        
+        if pred_result and actual_result:
+            # Normalize predictions
+            pred_map = {'1': 'home', 'X': 'draw', '2': 'away', 'home': 'home', 'draw': 'draw', 'away': 'away'}
+            pred_normalized = pred_map.get(str(pred_result), pred_result)
+            if pred_normalized == actual_result:
+                correct_result += 1
+                by_league[league_code]['correct_result'] += 1
+        
+        # Check O/U prediction
+        pred_ou = pred.get('prediction', {}).get('over_under', {}).get('prediction')
+        actual_ou = result.get('over_under_2_5')
+        
+        if pred_ou and actual_ou is not None:
+            if pred_ou == actual_ou:
+                correct_ou += 1
+                by_league[league_code]['correct_ou'] += 1
+    
+    print(f"\nTotal predictions: {total}")
+    print(f"Predictions with results: {with_results}")
+    
+    if with_results > 0:
+        result_pct = correct_result / with_results * 100
+        ou_pct = correct_ou / with_results * 100
+        
+        print(f"\nOverall Accuracy:")
+        print(f"  Result predictions: {correct_result}/{with_results} ({result_pct:.1f}%)")
+        print(f"  O/U predictions: {correct_ou}/{with_results} ({ou_pct:.1f}%)")
+        
+        # Show by league
+        print(f"\nBy League:")
+        print("-" * 50)
+        
+        for league, stats in sorted(by_league.items(), key=lambda x: x[1]['total'], reverse=True):
+            if stats['total'] < 3:
+                continue
+            
+            res_pct = stats['correct_result'] / stats['total'] * 100 if stats['total'] > 0 else 0
+            ou_pct = stats['correct_ou'] / stats['total'] * 100 if stats['total'] > 0 else 0
+            
+            print(f"  {league}:")
+            print(f"    Result: {stats['correct_result']}/{stats['total']} ({res_pct:.1f}%)")
+            print(f"    O/U: {stats['correct_ou']}/{stats['total']} ({ou_pct:.1f}%)")
+
+
+def show_global_model_stats():
+    """Show global model statistics."""
+    global_meta_file = os.path.join(MODELS_DIR, 'Global_Model', 'metadata.json')
+    
+    if not os.path.exists(global_meta_file):
+        return
+    
+    try:
+        with open(global_meta_file, 'r') as f:
+            meta = json.load(f)
+        
+        print("\n" + "=" * 70)
+        print("GLOBAL MODEL (All Leagues Combined)")
+        print("=" * 70)
+        print(f"Total examples: {meta.get('example_count', 'N/A')}")
+        print(f"Result accuracy: {meta.get('result_accuracy', 0):.1%}")
+        print(f"O/U accuracy: {meta.get('ou_accuracy', 0):.1%}")
+        print(f"Trained: {meta.get('trained_at', 'Unknown')[:19]}")
+    except:
+        pass
 
 
 def main():
-    """Display model statistics."""
-    stats = get_training_stats()
+    parser = argparse.ArgumentParser(description='Model statistics and prediction accuracy tracker')
+    parser.add_argument('--league', '-l', help='Show stats for specific league code')
+    parser.add_argument('--predictions', '-p', action='store_true',
+                       help='Show prediction accuracy statistics')
+    parser.add_argument('--all', '-a', action='store_true',
+                       help='Show all statistics')
     
-    print("=" * 60)
-    print("FOOTBALL PREDICTION MODEL - STATISTICS")
-    print("=" * 60)
-    print()
+    args = parser.parse_args()
     
-    # Training count
-    print(f"Training Dataset:")
-    print(f"  Total examples: {stats['training_count']}")
-    print()
-    
-    # Latest accuracy
-    print("Latest Training Accuracy:")
-    
-    # Show test accuracy if available
-    if stats['test_result_accuracy'] is not None:
-        print(f"  Test Match Result (1/X/2): {format_percentage(stats['test_result_accuracy'])}")
-        print(f"  Test Over/Under 2.5:      {format_percentage(stats['test_ou_accuracy'])}")
-        print(f"  Train Match Result:        {format_percentage(stats['train_result_accuracy'])}")
-        print(f"  Train Over/Under:          {format_percentage(stats['train_ou_accuracy'])}")
+    if args.predictions:
+        show_prediction_stats()
+    elif args.all:
+        show_model_stats(args.league)
+        show_global_model_stats()
+        show_prediction_stats()
     else:
-        print(f"  Match Result (1/X/2): {format_percentage(stats['result_accuracy'])}")
-        print(f"  Over/Under 2.5:      {format_percentage(stats['ou_accuracy'])}")
-    print()
-    
-    # Training count
-    if stats['total_trainings'] > 0:
-        print(f"Total Trainings: {stats['total_trainings']}")
-        last_train = stats.get('last_training')
-        if last_train:
-            last_date = datetime.fromisoformat(last_train)
-            print(f"Last Training: {last_date.strftime('%Y-%m-%d %H:%M')}")
-        print()
-    
-    # Improvement trend (last training)
-    if stats['improvement_trend']:
-        trend = stats['improvement_trend']
-        result_change = trend['result_change']
-        ou_change = trend['ou_change']
-        
-        print("Last Training Improvement:")
-        if result_change > 0:
-            print(f"  Result Accuracy: +{result_change:.2%} ↑")
-        elif result_change < 0:
-            print(f"  Result Accuracy: {result_change:.2%} ↓")
-        else:
-            print(f"  Result Accuracy: 0.00% -")
-        
-        if ou_change > 0:
-            print(f"  O/U Accuracy:    +{ou_change:.2%} ↑")
-        elif ou_change < 0:
-            print(f"  O/U Accuracy:    {ou_change:.2%} ↓")
-        else:
-            print(f"  O/U Accuracy:    0.00% -")
-        print()
-    
-    # Recent improvement (last 5 trainings)
-    if stats['recent_improvement']:
-        recent = stats['recent_improvement']
-        print("Recent Improvement (Last 5 Trainings):")
-        result_change = recent['result_change']
-        ou_change = recent['ou_change']
-        samples = recent['samples_added']
-        
-        if result_change > 0:
-            print(f"  Result Accuracy: +{result_change:.2%} ↑")
-        elif result_change < 0:
-            print(f"  Result Accuracy: {result_change:.2%} ↓")
-        else:
-            print(f"  Result Accuracy: 0.00% -")
-        
-        if ou_change > 0:
-            print(f"  O/U Accuracy:    +{ou_change:.2%} ↑")
-        elif ou_change < 0:
-            print(f"  O/U Accuracy:    {ou_change:.2%} ↓")
-        else:
-            print(f"  O/U Accuracy:    0.00% -")
-        
-        print(f"  Samples added:   +{samples}")
-        print()
-    
-    # Training history
-    if stats['training_history']:
-        print("Training History (Last 10):")
-        print("-" * 50)
-        print(f"{'Date':<20} {'Result':<10} {'O/U':<10} {'Samples'}")
-        print("-" * 50)
-        for entry in reversed(stats['training_history']):
-            timestamp = entry.get('timestamp', '')[:10]  # Just date
-            result = entry.get('result_accuracy', 0)
-            ou = entry.get('ou_accuracy', 0)
-            samples = entry.get('training_examples', 0)
-            print(f"{timestamp:<20} {result:>8.1%} {ou:>8.1%} {samples:>8}")
-        print("-" * 50)
-        print()
-    
-    # Summary
-    print("Summary:")
-    if stats['result_accuracy'] >= 0.7:
-        print("  ✓ Model accuracy is good (>70%)")
-    elif stats['result_accuracy'] >= 0.5:
-        print("  ~ Model accuracy is moderate (50-70%)")
-        print("    More training data should improve accuracy")
-    else:
-        print("  ⚠ Model accuracy needs improvement (<50%)")
-        print("    Consider adding more match results and retraining")
-    
-    print()
-    print("=" * 60)
+        show_model_stats(args.league)
+        show_global_model_stats()
+        show_prediction_stats()
 
 
 if __name__ == '__main__':

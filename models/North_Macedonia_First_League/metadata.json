@@ -1,0 +1,48 @@
+{
+  "league_key": "Mk1_233",
+  "league_info": {
+    "league_code": "Mk1",
+    "match_id_prefix": "233",
+    "country": "North Macedonia",
+    "league": "First League",
+    "league_url_path": "tips-and-predictions-for-macedonia/first-league",
+    "country_code": "mk",
+    "match_count": 26,
+    "teams": {
+      "Shkendija 79": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "FC Struga": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "FK Shkupi": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Tikves Kavadarci": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Vardar Skopje": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Aresimi": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Sileks Kratovo": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Bashkimi Kumanovo": {
+        "home_matches": 0,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:11:41.224767"
+}

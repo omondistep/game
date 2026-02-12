@@ -1,0 +1,123 @@
+{
+  "league_key": "Gr3",
+  "league_info": {
+    "league_code": "Gr3",
+    "country": "Greece",
+    "league": "Gamma Ethniki Group 2",
+    "league_url_path": "",
+    "country_code": "gr",
+    "match_count": 31,
+    "teams": {
+      "Ermis Exochi": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Pierikos FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "AE Mykonos": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Aias Salamina": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "PO Atsalenios": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Asteras Stavros": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Lefkimmi": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Poseidon Nea Michaniona": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Doxa Drama": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Aetos Orfani": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Apollon Krya Vrysi": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "PAOK Dytiko": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Thermaikos": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Akrites Sykeon": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Alexandreia": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Anagennisi Artas": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Aris Filiates": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "A Schimatari": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Lamia FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Nea Selefkia": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Proodos Rogon": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Elassona": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Anthoupoli": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "AO Trikala": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Thesprotos": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "PAO Kristoni": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Kilkisiakos": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 17,
+  "trained_at": "2026-02-12T19:21:53.186295"
+}

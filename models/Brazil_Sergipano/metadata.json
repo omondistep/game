@@ -1,0 +1,68 @@
+{
+  "league_key": "BrS_242",
+  "league_info": {
+    "league_code": "BrS",
+    "match_id_prefix": "242",
+    "country": "Brazil",
+    "league": "Sergipano",
+    "league_url_path": "football-tips-and-predictions-for-brazil/sergipano",
+    "country_code": "br",
+    "match_count": 64,
+    "teams": {
+      "Sergipe SE": {
+        "home_matches": 11,
+        "away_matches": 8
+      },
+      "Confian\u00e7a": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Falcon": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Atl\u00e9tica Gloriense SE": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Itabaiana SE": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Dorense SE": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Desportiva Aracaju": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Lagarto SE": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Am\u00e9rica SE": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Guarany SE": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Confianca": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Atletica Gloriense SE": {
+        "home_matches": 0,
+        "away_matches": 6
+      },
+      "America SE": {
+        "home_matches": 0,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 13,
+  "trained_at": "2026-02-12T19:11:18.504916"
+}

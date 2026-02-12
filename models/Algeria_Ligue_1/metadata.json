@@ -1,0 +1,59 @@
+{
+  "league_key": "Dz1",
+  "league_info": {
+    "league_code": "Dz1",
+    "country": "Algeria",
+    "league": "Ligue 1",
+    "league_url_path": "",
+    "country_code": "dz",
+    "match_count": 15,
+    "teams": {
+      "CS Constantine": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "ES Mostaganem": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "MC Oran": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Olympique Akbou": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "USM Khenchla": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "ASO Chlef": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "MC El Bayadh": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "MB Rouisset": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "JS Saoura": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "ES Setif": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "ES S\u00e9tif": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 10,
+  "trained_at": "2026-02-12T19:21:48.841620"
+}

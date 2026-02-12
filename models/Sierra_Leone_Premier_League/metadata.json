@@ -1,0 +1,47 @@
+{
+  "league_key": "Sl1",
+  "league_info": {
+    "league_code": "Sl1",
+    "country": "Sierra Leone",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "sl",
+    "match_count": 13,
+    "teams": {
+      "East End Lions FC": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "SLIFA Mount Aureol": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Ports Authority": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Bai Bureh Warriors": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Abacha City": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Bhantal": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Wilberforce Strikers": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Freetown City": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T19:22:16.628383"
+}

@@ -1,0 +1,87 @@
+{
+  "league_key": "Eg2",
+  "league_info": {
+    "league_code": "Eg2",
+    "country": "Egypt",
+    "league": "Second Division A",
+    "league_url_path": "",
+    "country_code": "eg",
+    "match_count": 54,
+    "teams": {
+      "Dakhleya": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Tersana Giza": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Intagh Al Harbi": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Tanta FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Maleyeit Kafr El Zayiat": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "La Viena": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Proxy": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Dairut SC": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Sekka Al Hadid": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Petrol Asyut": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Masar": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Mansoura SC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Abu Qair Lel Asmeda": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Baladiyyat Al Mahalla": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Qanah": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Raya Ghazl": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Aswan FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Itesalat": {
+        "home_matches": 2,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 36,
+  "trained_at": "2026-02-12T19:21:50.474143"
+}

@@ -1,0 +1,155 @@
+{
+  "league_key": "ItP",
+  "league_info": {
+    "league_code": "ItP",
+    "country": "Italy",
+    "league": "Primavera 1",
+    "league_url_path": "",
+    "country_code": "it",
+    "match_count": 77,
+    "teams": {
+      "Cagliari U19": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Sassuolo U19": {
+        "home_matches": 1,
+        "away_matches": 4
+      },
+      "Parma U19": {
+        "home_matches": 4,
+        "away_matches": 3
+      },
+      "Torino U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Cesena U19": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Verona U19": {
+        "home_matches": 1,
+        "away_matches": 4
+      },
+      "Torres U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "AC Carpi U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Roma U19": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Bologna U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Frosinone U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Napoli U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Salernitana U19": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Pisa U19": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Spezia U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Avellino U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sampdoria U19": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Cittadella U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Benevento U19": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Ascoli U19": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Udinese U19": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Renate U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Lazio U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Atalanta U19": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Inter U19": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Genoa U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Monza U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Lecce U19": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Juventus U19": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Palermo U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Como U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sudtirol U19": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Crotone U19": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Fiorentina U19": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "S\u00fcdtirol U19": {
+        "home_matches": 1,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 50,
+  "trained_at": "2026-02-12T19:21:59.603419"
+}

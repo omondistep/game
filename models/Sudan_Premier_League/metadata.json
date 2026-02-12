@@ -1,0 +1,115 @@
+{
+  "league_key": "Sd1",
+  "league_info": {
+    "league_code": "Sd1",
+    "country": "Sudan",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "sd",
+    "match_count": 118,
+    "teams": {
+      "Alfalah Atbra": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Al Amal Atbara": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Al Hilal Karima": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Ahli Marawi": {
+        "home_matches": 2,
+        "away_matches": 6
+      },
+      "Al Fajr": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Merreikh Abyad": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Ahli Khartoum": {
+        "home_matches": 6,
+        "away_matches": 0
+      },
+      "Ahli Wad Madani": {
+        "home_matches": 0,
+        "away_matches": 6
+      },
+      "Al Hilal Al Manaqil": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Umm Mughad": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Saham Ad Damer": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Merreikh Al Sudan": {
+        "home_matches": 2,
+        "away_matches": 6
+      },
+      "Al Hilal Al Sudani": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "Kober Khartoum": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Al Zamala SC": {
+        "home_matches": 6,
+        "away_matches": 0
+      },
+      "Hilal Al Fasher": {
+        "home_matches": 2,
+        "away_matches": 6
+      },
+      "Al Shorta SUD": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Merghani Kassala": {
+        "home_matches": 1,
+        "away_matches": 4
+      },
+      "Haidoub FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Hay Al Wadi": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Merikh Kosti": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Rabeta Kosti": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Al Taqadom": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Hilal Al Sahel": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Al Shorta (SUD)": {
+        "home_matches": 2,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 78,
+  "trained_at": "2026-02-12T19:22:15.621482"
+}

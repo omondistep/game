@@ -1,0 +1,43 @@
+{
+  "league_key": "Al1",
+  "league_info": {
+    "league_code": "Al1",
+    "country": "Albania",
+    "league": "Super League",
+    "league_url_path": "",
+    "country_code": "al",
+    "match_count": 9,
+    "teams": {
+      "Bylis Ballsh": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Partizani Tirana": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Vllaznia Shkoder": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "FK Vora": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "AF Elbasani": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Teuta Durres": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Vllaznia Shkod\u00ebr": {
+        "home_matches": 1,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:21:30.268537"
+}

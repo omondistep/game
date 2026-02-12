@@ -1,0 +1,47 @@
+{
+  "league_key": "Mk1",
+  "league_info": {
+    "league_code": "Mk1",
+    "country": "North Macedonia",
+    "league": "Prva liga",
+    "league_url_path": "",
+    "country_code": "mk",
+    "match_count": 10,
+    "teams": {
+      "Shkendija 79": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "FC Struga": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "FK Shkupi": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Tikves Kavadarci": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Vardar Skopje": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Aresimi": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sileks Kratovo": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Bashkimi Kumanovo": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:22:05.114856"
+}

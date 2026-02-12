@@ -1,0 +1,83 @@
+{
+  "league_key": "Cr2",
+  "league_info": {
+    "league_code": "Cr2",
+    "country": "Costa Rica",
+    "league": "Liga de Ascenso",
+    "league_url_path": "",
+    "country_code": "cr",
+    "match_count": 51,
+    "teams": {
+      "Santa Cruz FC": {
+        "home_matches": 6,
+        "away_matches": 3
+      },
+      "AD Cofutpa": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Aserri": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Consultants Moravia": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "AD Sarchi": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "ADR Jicaral": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Santa Ana": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Escorpiones Belen": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "CS Uruguay de Coronado": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Pitbulls": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "AD Carmelita": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Grecia": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Inter San Carlos": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Quepos Cambute": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Aserr\u00ed": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "AD Sarch\u00ed": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Escorpiones Bel\u00e9n": {
+        "home_matches": 1,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 29,
+  "trained_at": "2026-02-12T19:21:46.887409"
+}

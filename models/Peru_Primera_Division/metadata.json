@@ -1,0 +1,44 @@
+{
+  "league_key": "Pe1_241",
+  "league_info": {
+    "league_code": "Pe1",
+    "match_id_prefix": "241",
+    "country": "Peru",
+    "league": "Primera Division",
+    "league_url_path": "football-tips-and-predictions-for-peru/primera-division",
+    "country_code": "pe",
+    "match_count": 41,
+    "teams": {
+      "FBC Melgar": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Cienciano": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Universitario": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "ADT": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Cusco FC": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Alianza Lima": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "CD Comerciantes": {
+        "home_matches": 0,
+        "away_matches": 8
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T19:11:47.289885"
+}

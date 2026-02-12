@@ -1,0 +1,79 @@
+{
+  "league_key": "BrA",
+  "league_info": {
+    "league_code": "BrA",
+    "country": "Brazil",
+    "league": "Campeonato Acreano",
+    "league_url_path": "",
+    "country_code": "br",
+    "match_count": 45,
+    "teams": {
+      "Princesa Solimoes": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "JC FC AM": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Vasco da Gama AC": {
+        "home_matches": 3,
+        "away_matches": 2
+      },
+      "ADESG AC": {
+        "home_matches": 3,
+        "away_matches": 4
+      },
+      "Independencia": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "Humaita": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Sao Francisco": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Rio Branco AC": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "Galvez AC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Manaus FC AM": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Amazonas": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Nacional AM": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Manauara": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Parintins": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Princesa Solim\u00f5es": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Humait\u00e1": {
+        "home_matches": 1,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 29,
+  "trained_at": "2026-02-12T19:21:37.857179"
+}

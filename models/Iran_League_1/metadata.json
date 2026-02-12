@@ -1,0 +1,91 @@
+{
+  "league_key": "Ir2",
+  "league_info": {
+    "league_code": "Ir2",
+    "country": "Iran",
+    "league": "League 1",
+    "league_url_path": "",
+    "country_code": "ir",
+    "match_count": 69,
+    "teams": {
+      "Saipa Karaj": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Sanat Naft AC": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Damash Gilan": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Naft Bandar Abbas": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Shenavarsazi Qeshm": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Shahrdari Noshahr": {
+        "home_matches": 0,
+        "away_matches": 6
+      },
+      "Nassaji Mazandaran": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Pars Jonoubi Jam": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Mes Soongoun": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Ario Eslamshahr": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Besat Kermanshah": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Navad Urmia": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Mes Shahr-e Babak": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Sorkhpooshan Pakdasht": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Niroye Zamini": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Mes Kerman": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Naft Gachsaran": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Fard Alborz": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Be'sat Kermanshah": {
+        "home_matches": 2,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 46,
+  "trained_at": "2026-02-12T19:21:58.527227"
+}

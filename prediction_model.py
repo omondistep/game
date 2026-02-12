@@ -23,45 +23,67 @@ import time
 
 class WeightedPredictor:
     """
-    Enhanced prediction model using weighted factors based on evidence and best practice.
+    Enhanced prediction model using weighted factors based on data-driven weights.
     
-    Factor Weights (totaling 100%):
-    - League Position: 20% (Direct indicator of team strength)
-    - Odds Analysis: 15% (Market wisdom, using 3 home + 3 away games)
-    - Recent Form: 20% (Most recent performance indicator)
-    - Top 5 Performance: 10% (Quality of opposition faced)
-    - Goals Scored/Conceded: 15% (Attacking and defensive strength)
-    - Head-to-Head: 10% (Specific matchup history)
-    - Shots & Possession: 10% (Tactical and dominance indicators)
+    Weights are calculated from historical data analysis:
+    - League-specific weights when enough data exists (20+ matches)
+    - Global weights as fallback
+    
+    Default weights (when no calculated weights available):
+    - Recent Form: 38% (Most predictive based on data analysis)
+    - Odds Analysis: 37% (Market wisdom)
+    - Goals Stats: 21% (Attacking and defensive strength)
+    - Other factors: 1% each (when data available)
     """
     
-    # Weight configuration
-    WEIGHTS = {
-        'league_position': 0.20,
-        'odds_analysis': 0.15,
-        'recent_form': 0.20,
-        'top5_performance': 0.10,
-        'goals_stats': 0.15,
-        'h2h': 0.10,
-        'shots_possession': 0.10,
+    # Default weight configuration (fallback)
+    DEFAULT_WEIGHTS = {
+        'league_position': 0.01,
+        'odds_analysis': 0.37,
+        'recent_form': 0.38,
+        'top5_performance': 0.01,
+        'goals_stats': 0.21,
+        'h2h': 0.01,
+        'shots_possession': 0.01,
     }
     
     def __init__(self):
-        pass
+        self.weights = self._load_weights()
     
-    def predict(self, match_data: Dict, features: Dict) -> Dict:
+    def _load_weights(self) -> Dict:
+        """Load calculated weights from file."""
+        weights_file = 'data/factor_weights.json'
+        if os.path.exists(weights_file):
+            try:
+                with open(weights_file, 'r') as f:
+                    return json.load(f)
+            except:
+                pass
+        return {'global': {'weights': self.DEFAULT_WEIGHTS}, 'leagues': {}}
+    
+    def get_weights(self, league_code: str = None) -> Dict[str, float]:
+        """Get weights for a specific league or global weights."""
+        if league_code and league_code in self.weights.get('leagues', {}):
+            return self.weights['leagues'][league_code].get('weights', self.DEFAULT_WEIGHTS)
+        return self.weights.get('global', {}).get('weights', self.DEFAULT_WEIGHTS)
+    
+    def predict(self, match_data: Dict, features: Dict, league_code: str = None) -> Dict:
         """
         Generate weighted prediction based on all factors.
         
         Args:
             match_data: Raw scraped match data
             features: Extracted features dictionary
+            league_code: League code for league-specific weights
             
         Returns:
             Dictionary with prediction, probabilities, and detailed analysis
         """
+        # Get data-driven weights for this league
+        weights = self.get_weights(league_code)
+        
         # Calculate factor scores
-        factor_scores = self._calculate_factor_scores(match_data, features)
+        factor_scores = self._calculate_factor_scores(match_data, features, weights)
         
         # Compute final probabilities
         result_probs = self._compute_result_probabilities(factor_scores, features)
@@ -90,12 +112,16 @@ class WeightedPredictor:
             'factor_analysis': factor_scores,
             'key_factors': self._extract_key_factors(factor_scores, features),
             'prediction_method': 'weighted_factors',
+            'weights_used': weights,
         }
     
-    def _calculate_factor_scores(self, match_data: Dict, features: Dict) -> Dict:
-        """Calculate individual factor scores for each team."""
+    def _calculate_factor_scores(self, match_data: Dict, features: Dict, weights: Dict = None) -> Dict:
+        """Calculate individual factor scores for each team using data-driven weights."""
         
-        # 1. LEAGUE POSITION (20% weight)
+        if weights is None:
+            weights = self.DEFAULT_WEIGHTS
+        
+        # 1. LEAGUE POSITION (weight from data)
         # Lower position = better team. Score from 0 to 1 where 1 is best.
         home_pos = features.get('home_position', 10) or 10
         away_pos = features.get('away_position', 10) or 10
@@ -191,13 +217,13 @@ class WeightedPredictor:
         shots_possession_away = (shots_score_away * 0.4 + poss_score_away * 0.6)
         
         return {
-            'league_position': {'home': pos_score_home, 'away': pos_score_away, 'weight': 0.20},
-            'odds_analysis': {'home': odds_score_home, 'away': odds_score_away, 'weight': 0.15},
-            'recent_form': {'home': form_score_home, 'away': form_score_away, 'weight': 0.20},
-            'top5_performance': {'home': top5_perf.get('home', 0.5), 'away': top5_perf.get('away', 0.5), 'weight': 0.10},
-            'goals_stats': {'home': goals_score_home, 'away': goals_score_away, 'weight': 0.15},
-            'h2h': {'home': h2h_score_home, 'away': h2h_score_away, 'weight': 0.10},
-            'shots_possession': {'home': shots_possession_home, 'away': shots_possession_away, 'weight': 0.10},
+            'league_position': {'home': pos_score_home, 'away': pos_score_away, 'weight': weights.get('league_position', 0.01)},
+            'odds_analysis': {'home': odds_score_home, 'away': odds_score_away, 'weight': weights.get('odds_analysis', 0.37)},
+            'recent_form': {'home': form_score_home, 'away': form_score_away, 'weight': weights.get('recent_form', 0.38)},
+            'top5_performance': {'home': top5_perf.get('home', 0.5), 'away': top5_perf.get('away', 0.5), 'weight': weights.get('top5_performance', 0.01)},
+            'goals_stats': {'home': goals_score_home, 'away': goals_score_away, 'weight': weights.get('goals_stats', 0.21)},
+            'h2h': {'home': h2h_score_home, 'away': h2h_score_away, 'weight': weights.get('h2h', 0.01)},
+            'shots_possession': {'home': shots_possession_home, 'away': shots_possession_away, 'weight': weights.get('shots_possession', 0.01)},
             # Additional data for analysis
             'h2h_draws': h2h_draws / 100,
             'expected_goals': features.get('expected_total_goals', 2.5),
@@ -454,14 +480,16 @@ class FootballPredictor:
             print(f"Error loading models: {e}")
     
     def _load_league_models(self):
-        """Load league-specific models."""
-        league_dir = os.path.join(self.model_dir, 'leagues')
-        os.makedirs(league_dir, exist_ok=True)
+        """Load league-specific models from models/ directory.
         
+        Models are stored in models/{Country}_{League_Name}/ format.
+        Also loads league database for matching.
+        """
+        # Load from root models directory (where rebuild_data.py saves them)
         try:
-            for entry in os.listdir(league_dir):
-                league_path = os.path.join(league_dir, entry)
-                if os.path.isdir(league_path):
+            for entry in os.listdir(self.model_dir):
+                league_path = os.path.join(self.model_dir, entry)
+                if os.path.isdir(league_path) and not entry.startswith('.'):
                     models = {}
                     for fname in ['result_model.pkl', 'ou_model.pkl', 'scaler.pkl']:
                         fpath = os.path.join(league_path, fname)
@@ -469,9 +497,24 @@ class FootballPredictor:
                             with open(fpath, 'rb') as f:
                                 models[fname.replace('.pkl', '')] = pickle.load(f)
                     if models:
+                        # Store with multiple keys for flexible lookup
                         self.league_models[entry] = models
+                        # Also store with normalized key (lowercase, underscores)
+                        normalized_key = entry.lower().replace(' ', '_').replace('-', '_')
+                        if normalized_key != entry:
+                            self.league_models[normalized_key] = models
         except Exception as e:
             print(f"Error loading league models: {e}")
+        
+        # Load leagues database for additional matching
+        self.leagues_db = {}
+        try:
+            db_path = 'data/leagues_db.json'
+            if os.path.exists(db_path):
+                with open(db_path, 'r') as f:
+                    self.leagues_db = json.load(f)
+        except Exception as e:
+            print(f"Error loading leagues database: {e}")
     
     def _load_prediction_feedback(self):
         """Load prediction feedback data."""
@@ -987,27 +1030,47 @@ class FootballPredictor:
     # Prediction
     # ------------------------------------------------------------------
 
-    def predict(self, features: Dict, league: str = None, country: str = None) -> Dict:
+    def predict(self, features: Dict, league: str = None, country: str = None, match_id: str = None) -> Dict:
         """
         Predict match outcome. Uses league-specific model if available.
         Falls back to global model, then statistical prediction.
+        
+        Args:
+            features: Feature dictionary for the match
+            league: League code (e.g., "Nl2", "En1")
+            country: Country name (e.g., "Netherlands", "England")
+            match_id: Match ID from URL (used for league lookup)
         """
         # Try league-specific model first
         model_league = None
         
-        # First try exact match with league code
-        if league and league in self.league_models:
+        # Method 1: Look up in leagues_db using league_code + match_id prefix
+        if league and match_id:
+            prefix = match_id[:3] if len(match_id) >= 3 else match_id
+            lookup_key = f"{league}_{prefix}"
+            if lookup_key in self.leagues_db:
+                db_entry = self.leagues_db[lookup_key]
+                db_country = db_entry.get('country', '')
+                db_league_name = db_entry.get('league', '')
+                # Try to find model by country_league_name format
+                model_key_candidate = f"{db_country}_{db_league_name}".replace(' ', '_')
+                if model_key_candidate in self.league_models:
+                    model_league = model_key_candidate
+        
+        # Method 2: Try exact match with league code
+        if not model_league and league and league in self.league_models:
             model_league = league
-        # Try to find a model by checking if any key starts with the league
-        elif league:
+        
+        # Method 3: Try to find a model by checking if any key starts with the league
+        if not model_league and league:
             for model_key in self.league_models:
                 if model_key.startswith(league + '_') or model_key == league:
                     model_league = model_key
                     break
         
-        # If no league model found, try country name
+        # Method 4: If no league model found, try country name
         if not model_league and country:
-            # Try country name as stored in models (e.g., "Azerbaijan_")
+            # Try country name as stored in models (e.g., "Netherlands_")
             country_model_key = country + '_'
             if country_model_key in self.league_models:
                 model_league = country_model_key
@@ -1018,11 +1081,27 @@ class FootballPredictor:
                         model_league = model_key
                         break
         
+        # Method 5: Look up in leagues_db by league_code only
+        if not model_league and league:
+            for db_key, db_entry in self.leagues_db.items():
+                if db_entry.get('league_code') == league:
+                    db_country = db_entry.get('country', '')
+                    db_league_name = db_entry.get('league', '')
+                    model_key_candidate = f"{db_country}_{db_league_name}".replace(' ', '_')
+                    if model_key_candidate in self.league_models:
+                        model_league = model_key_candidate
+                        break
+        
         if model_league:
             models = self.league_models[model_league]
             return self._ml_prediction_with_models(features, models, is_league_specific=True)
         
-        # Fall back to global model
+        # Fall back to global model (trained with all data)
+        if 'Global_Model' in self.league_models:
+            models = self.league_models['Global_Model']
+            return self._ml_prediction_with_models(features, models, is_league_specific=False)
+        
+        # Fall back to main model if available
         if self.result_model and self.ou_model and self.scaler:
             return self._ml_prediction(features, model_trained=True)
         
@@ -1038,7 +1117,16 @@ class FootballPredictor:
         if not (scaler and result_model and ou_model):
             return self._statistical_prediction(features)
         
-        X = self._features_to_array(features)
+        # Check if this is a league-specific model trained with 8 features
+        # (from rebuild_data.py) vs the full 51-feature model
+        n_features = getattr(scaler, 'n_features_in_', 51)
+        
+        if n_features == 8:
+            # Use simplified 8-feature format for league models
+            X = self._features_to_array_8(features)
+        else:
+            X = self._features_to_array(features)
+        
         X_scaled = scaler.transform(X)
 
         rp = result_model.predict(X_scaled)[0]
@@ -1048,6 +1136,53 @@ class FootballPredictor:
         oproba = dict(zip(ou_model.classes_, ou_model.predict_proba(X_scaled)[0]))
 
         return self._build_prediction(rp, rproba, op, oproba, model_trained=True, prediction_method='league_ml' if is_league_specific else 'ml')
+
+    def _features_to_array_8(self, features: Dict) -> np.ndarray:
+        """Convert feature dict to 8-feature array for league-specific models.
+        
+        These are the features used by rebuild_data.py for training:
+        - prob_home, prob_draw, prob_away
+        - prob_home_away_ratio, prob_draw_diff
+        - predicted_avg_goals, odds, league_code_encoded
+        """
+        # Get odds
+        odds_home = features.get('odds_home') or 2.5
+        odds_draw = features.get('odds_draw') or 3.0
+        odds_away = features.get('odds_away') or 3.5
+        
+        # Calculate implied probabilities
+        prob_home = 1 / odds_home
+        prob_draw = 1 / odds_draw
+        prob_away = 1 / odds_away
+        total = prob_home + prob_draw + prob_away
+        prob_home /= total
+        prob_draw /= total
+        prob_away /= total
+        
+        # Derived features
+        prob_home_away_ratio = prob_home / max(prob_away, 0.01)
+        prob_draw_diff = abs(prob_home - prob_away)
+        
+        # Predicted goals from expected_total_goals
+        predicted_avg_goals = features.get('expected_total_goals', 2.5) or 2.5
+        
+        # Use home odds as primary odds
+        odds = odds_home
+        
+        # League code encoding (default 0)
+        league_code_encoded = 0
+        
+        vec = [
+            prob_home,
+            prob_draw,
+            prob_away,
+            prob_home_away_ratio,
+            prob_draw_diff,
+            predicted_avg_goals,
+            odds,
+            league_code_encoded,
+        ]
+        return np.array(vec).reshape(1, -1)
 
     def _ml_prediction(self, features: Dict, model_trained: bool = True) -> Dict:
         X = self._features_to_array(features)
@@ -1201,22 +1336,36 @@ class FootballPredictor:
             return round(1 / p, 2) if p and p > 0.01 else 99.0
         
         def convert_key(k):
-            """Convert numpy types to Python types."""
+            """Convert numpy types to Python types and map result codes."""
             if hasattr(k, 'item'):  # numpy type
-                return k.item()
+                k = k.item()
+            # Map integer codes to string codes for result
+            if k == 0:
+                return '1'  # home win
+            elif k == 1:
+                return 'X'  # draw
+            elif k == 2:
+                return '2'  # away win
+            return str(k)
+        
+        def convert_ou_key(k):
+            """Convert over/under keys."""
+            if hasattr(k, 'item'):
+                k = k.item()
+            # Map integer codes for over/under
+            if k == 0:
+                return 'Under'
+            elif k == 1:
+                return 'Over'
             return str(k)
         
         # Convert result_pred to Python string
         result_pred = convert_key(result_pred)
-        ou_pred = convert_key(ou_pred)
+        ou_pred = convert_ou_key(ou_pred)
         
         # Convert dictionary keys to Python strings
         result_probs = {convert_key(k): round(float(v), 4) for k, v in result_probs.items()}
-        ou_probs = {convert_key(k): round(float(v), 4) for k, v in ou_probs.items()}
-        
-        # Convert computed odds keys
-        computed_odds_result = {convert_key(k): safe_odds(v) for k, v in zip(result_probs.keys(), [result_probs[k] for k in result_probs])}
-        computed_odds_ou = {convert_key(k): safe_odds(v) for k, v in zip(ou_probs.keys(), [ou_probs[k] for k in ou_probs])}
+        ou_probs = {convert_ou_key(k): round(float(v), 4) for k, v in ou_probs.items()}
         
         return {
             'prediction_method': prediction_method,

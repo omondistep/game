@@ -1,0 +1,35 @@
+{
+  "league_key": "Mo1",
+  "league_info": {
+    "league_code": "Mo1",
+    "country": "Macau",
+    "league": "Elite League",
+    "league_url_path": "",
+    "country_code": "mo",
+    "match_count": 9,
+    "teams": {
+      "Shao Jiang": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Hang Sai SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Gala": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Artilheiros": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Universidade de Macau": {
+        "home_matches": 2,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:22:05.427291"
+}

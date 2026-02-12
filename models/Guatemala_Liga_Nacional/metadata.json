@@ -1,0 +1,75 @@
+{
+  "league_key": "Gt1",
+  "league_info": {
+    "league_code": "Gt1",
+    "country": "Guatemala",
+    "league": "Liga Nacional",
+    "league_url_path": "",
+    "country_code": "gt",
+    "match_count": 63,
+    "teams": {
+      "Comunicaciones": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Coban Imperial": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CD Marquense": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Deportivo Achuapa": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Deportivo Mixco": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Malacateco": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Antigua GFC": {
+        "home_matches": 6,
+        "away_matches": 2
+      },
+      "Club Xelaju MC": {
+        "home_matches": 1,
+        "away_matches": 3
+      },
+      "Deportivo Guastatoya": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Aurora": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "CSD Municipal": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Deportivo Mictlan": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Cob\u00e1n Imperial": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Club Xelaj\u00fa MC": {
+        "home_matches": 1,
+        "away_matches": 3
+      },
+      "Deportivo Mictl\u00e1n": {
+        "home_matches": 1,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 42,
+  "trained_at": "2026-02-12T19:21:53.631108"
+}

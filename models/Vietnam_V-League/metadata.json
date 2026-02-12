@@ -1,0 +1,55 @@
+{
+  "league_key": "Vn1",
+  "league_info": {
+    "league_code": "Vn1",
+    "country": "Vietnam",
+    "league": "V-League",
+    "league_url_path": "",
+    "country_code": "vn",
+    "match_count": 18,
+    "teams": {
+      "Hong Linh Ha Tinh": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Binh Duong FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Song Lam Nghe An": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Ha Noi FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Hai Phong FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "The Cong": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Phu Dong FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Hoang Anh Gia Lai": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Pho Hien FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Nam Dinh FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 12,
+  "trained_at": "2026-02-12T19:22:23.574867"
+}

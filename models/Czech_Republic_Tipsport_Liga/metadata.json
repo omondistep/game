@@ -1,0 +1,56 @@
+{
+  "league_key": "CzT_241",
+  "league_info": {
+    "league_code": "CzT",
+    "match_id_prefix": "241",
+    "country": "Czech Republic",
+    "league": "Tipsport Liga",
+    "league_url_path": "football-tips-and-predictions-for-czech-rep/tipsport-liga",
+    "country_code": "747",
+    "match_count": 50,
+    "teams": {
+      "OFK Mal\u017eenice": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Han\u00e1ck\u00e1 Slavia Krom\u011b\u0159\u00ed\u017e": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Dukla Praha B": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Teplice B": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "STK Samorin": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "FC Vlasim": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "FK Zlin B": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Zlate Moravce": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "OFK Malzenice": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Hanacka Slavia Kromeriz": {
+        "home_matches": 0,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 10,
+  "trained_at": "2026-02-12T19:11:23.601985"
+}

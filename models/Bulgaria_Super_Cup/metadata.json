@@ -1,0 +1,39 @@
+{
+  "league_key": "BgC",
+  "league_info": {
+    "league_code": "BgC",
+    "country": "Bulgaria",
+    "league": "Super Cup",
+    "league_url_path": "",
+    "country_code": "bg",
+    "match_count": 10,
+    "teams": {
+      "Ludogorets": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Levski Sofia": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "CSKA-Sofia": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "CSKA 1948": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Botev Vratsa": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Arda Kardzhali": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:21:36.329108"
+}

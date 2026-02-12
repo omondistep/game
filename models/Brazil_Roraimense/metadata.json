@@ -1,0 +1,84 @@
+{
+  "league_key": "BrR_241",
+  "league_info": {
+    "league_code": "BrR",
+    "match_id_prefix": "241",
+    "country": "Brazil",
+    "league": "Roraimense",
+    "league_url_path": "football-tips-and-predictions-for-brazil/roraimense",
+    "country_code": "br",
+    "match_count": 128,
+    "teams": {
+      "Monte Roraima": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Bar\u00e9 RR": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "GAS RR": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "River": {
+        "home_matches": 3,
+        "away_matches": 16
+      },
+      "Rondoniense RO": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Barcelona RO": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "S\u00e3o Raimundo RR": {
+        "home_matches": 15,
+        "away_matches": 0
+      },
+      "Progresso RR": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Rio Negro RR": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "N\u00e1utico RR": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Genus RO": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Guapor\u00e9 RO": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Roraima RR": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Bare RR": {
+        "home_matches": 3,
+        "away_matches": 6
+      },
+      "Sao Raimundo RR": {
+        "home_matches": 9,
+        "away_matches": 3
+      },
+      "Nautico RR": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Guapore RO": {
+        "home_matches": 0,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 26,
+  "trained_at": "2026-02-12T19:11:17.610447"
+}

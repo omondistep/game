@@ -1,0 +1,100 @@
+{
+  "league_key": "BrB_241",
+  "league_info": {
+    "league_code": "BrB",
+    "match_id_prefix": "241",
+    "country": "Brazil",
+    "league": "Baiano",
+    "league_url_path": "football-tips-and-predictions-for-brazil/baiano",
+    "country_code": "br",
+    "match_count": 135,
+    "teams": {
+      "Galicia BA": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Alagoinhas Atl\u00e9tico BA": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Porto BA": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Barcelona BA": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Juazeirense": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Jacuipense BA": {
+        "home_matches": 11,
+        "away_matches": 8
+      },
+      "Bahia de Feira BA": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Jequi\u00e9": {
+        "home_matches": 0,
+        "away_matches": 10
+      },
+      "Capital DF": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Sobradinho DF": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "SE Gama DF": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Parano\u00e1 DF": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Bahia": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Ceil\u00e2ndia DF": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Samambaia DF": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Bras\u00edlia FC": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Alagoinhas Atletico BA": {
+        "home_matches": 3,
+        "away_matches": 6
+      },
+      "Jequie": {
+        "home_matches": 0,
+        "away_matches": 6
+      },
+      "Paranoa DF": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Ceilandia DF": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Brasilia FC": {
+        "home_matches": 0,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 27,
+  "trained_at": "2026-02-12T19:11:14.988033"
+}

@@ -1,0 +1,75 @@
+{
+  "league_key": "Gn1",
+  "league_info": {
+    "league_code": "Gn1",
+    "country": "Guinea",
+    "league": "Ligue 1",
+    "league_url_path": "",
+    "country_code": "gn",
+    "match_count": 24,
+    "teams": {
+      "ASFAG": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "RCC Kamsar": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Ashanti GB": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Hafia FC": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "AS Kaloum Star": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "CI Kamsar": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "ASM Sangaredi": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Wakriya AC": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Karfamoriah": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Loubha Telimele": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Renaissance GUI": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Milo": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "ASM Sangar\u00e9di": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Loubha T\u00e9lim\u00e9l\u00e9": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Renaissance (GUI)": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 15,
+  "trained_at": "2026-02-12T19:21:52.676156"
+}

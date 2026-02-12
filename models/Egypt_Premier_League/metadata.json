@@ -1,0 +1,87 @@
+{
+  "league_key": "Eg1",
+  "league_info": {
+    "league_code": "Eg1",
+    "country": "Egypt",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "eg",
+    "match_count": 43,
+    "teams": {
+      "Ahly Cairo": {
+        "home_matches": 3,
+        "away_matches": 2
+      },
+      "Wadi Degla SC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Zamalek SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Petrojet Suez": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Pyramids": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "El Gouna": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Masry": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Ceramica Cleopatra": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "ENPPI Cairo": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Semouha Club": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Pharco": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "FC Masr": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "NBE": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Haras Al Hodoud": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Ghazl Al Mahalla": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Arab Contractors": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Future FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Ismaily": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 28,
+  "trained_at": "2026-02-12T19:21:50.063450"
+}

@@ -1,0 +1,51 @@
+{
+  "league_key": "Sr1",
+  "league_info": {
+    "league_code": "Sr1",
+    "country": "Suriname",
+    "league": "Hoofdklasse",
+    "league_url_path": "",
+    "country_code": "sr",
+    "match_count": 18,
+    "teams": {
+      "SV Transvaal": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "SV Robinhood": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "SV Notch": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Flora": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "SV Voorwaarts": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Inter Wanica": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "SV Broki": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "SV Leo Victor Paramaribo": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Inter Moengotapoe": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 12,
+  "trained_at": "2026-02-12T19:22:16.970889"
+}

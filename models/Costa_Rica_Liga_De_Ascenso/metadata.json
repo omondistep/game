@@ -1,0 +1,96 @@
+{
+  "league_key": "Cr2_241",
+  "league_info": {
+    "league_code": "Cr2",
+    "match_id_prefix": "241",
+    "country": "Costa Rica",
+    "league": "Liga De Ascenso",
+    "league_url_path": "football-tips-and-predictions-for-costa-rica/liga-de-ascenso",
+    "country_code": "cr",
+    "match_count": 157,
+    "teams": {
+      "Santa Cruz FC": {
+        "home_matches": 24,
+        "away_matches": 11
+      },
+      "AD Cofutpa": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Aserr\u00ed": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Consultants Moravia": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "AD Sarch\u00ed": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "ADR Jicaral": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Santa Ana": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Escorpiones Bel\u00e9n": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "CS Uruguay de Coronado": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Pitbulls": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "AD Carmelita": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Grecia": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Inter San Carlos": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Quepos Cambute": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Turrialba": {
+        "home_matches": 0,
+        "away_matches": 0
+      },
+      "Lim\u00f3n FC": {
+        "home_matches": 0,
+        "away_matches": 0
+      },
+      "Cariari Pococ\u00ed": {
+        "home_matches": 0,
+        "away_matches": 0
+      },
+      "Aserri": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "AD Sarchi": {
+        "home_matches": 6,
+        "away_matches": 0
+      },
+      "Escorpiones Belen": {
+        "home_matches": 3,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 29,
+  "trained_at": "2026-02-12T19:11:23.025666"
+}

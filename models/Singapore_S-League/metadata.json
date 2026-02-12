@@ -1,0 +1,39 @@
+{
+  "league_key": "Sg1",
+  "league_info": {
+    "league_code": "Sg1",
+    "country": "Singapore",
+    "league": "S-League",
+    "league_url_path": "",
+    "country_code": "sg",
+    "match_count": 15,
+    "teams": {
+      "Young Lions": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Tanjong Pagar Utd": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Hougang United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Albirex Niigata S": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Geylang": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Albirex Niigata (S)": {
+        "home_matches": 2,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 10,
+  "trained_at": "2026-02-12T19:22:16.014495"
+}

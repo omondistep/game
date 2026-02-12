@@ -1,0 +1,76 @@
+{
+  "league_key": "BrG_242",
+  "league_info": {
+    "league_code": "BrG",
+    "match_id_prefix": "242",
+    "country": "Brazil",
+    "league": "Gaucho",
+    "league_url_path": "football-tips-and-predictions-for-brazil/gaucho",
+    "country_code": "br",
+    "match_count": 80,
+    "teams": {
+      "Guarany RS": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Monsoon": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Inter Santa Maria RS": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Avenida RS": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Caxias RS": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Ypiranga RS": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Gr\u00eamio": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Novo Hamburgo RS": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Internacional": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "S\u00e3o Luiz RS": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Juventude": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "EC S\u00e3o Jos\u00e9": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Gremio": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Sao Luiz RS": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "EC Sao Jose": {
+        "home_matches": 0,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 16,
+  "trained_at": "2026-02-12T19:11:16.262043"
+}

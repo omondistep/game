@@ -1,0 +1,75 @@
+{
+  "league_key": "Ro1",
+  "league_info": {
+    "league_code": "Ro1",
+    "country": "Romania",
+    "league": "Divizia A",
+    "league_url_path": "",
+    "country_code": "ro",
+    "match_count": 36,
+    "teams": {
+      "Otelul Galati": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Miercurea Ciuc": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Cluj": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CS Metaloglobus": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "FC Botosani": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Petrolul Ploiesti": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Unirea Slobozia": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Univ Cluj-Napoca": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Arges Pitesti": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "FC Hermannstadt": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Rapid Bucuresti": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "UTA Arad": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "CS Univ Craiova": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "FCSB": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Farul Constanta": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 24,
+  "trained_at": "2026-02-12T19:22:13.337451"
+}

@@ -1,0 +1,43 @@
+{
+  "league_key": "Pe1",
+  "league_info": {
+    "league_code": "Pe1",
+    "country": "Peru",
+    "league": "Primera Divisi\u00f3n",
+    "league_url_path": "",
+    "country_code": "pe",
+    "match_count": 12,
+    "teams": {
+      "FBC Melgar": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Cienciano": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Universitario": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "ADT": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Cusco FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Alianza Lima": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "CD Comerciantes": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T19:22:10.879339"
+}

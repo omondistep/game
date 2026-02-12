@@ -1,0 +1,131 @@
+{
+  "league_key": "Co1",
+  "league_info": {
+    "league_code": "Co1",
+    "country": "Colombia",
+    "league": "Primera A",
+    "league_url_path": "",
+    "country_code": "co",
+    "match_count": 102,
+    "teams": {
+      "Llaneros FC COL": {
+        "home_matches": 3,
+        "away_matches": 2
+      },
+      "Atletico Bucaramanga": {
+        "home_matches": 1,
+        "away_matches": 3
+      },
+      "Deportivo Cali": {
+        "home_matches": 6,
+        "away_matches": 2
+      },
+      "Ind Medellin": {
+        "home_matches": 4,
+        "away_matches": 3
+      },
+      "Boyaca Chico": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "America de Cali": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Rionegro Aguilas": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Deportivo Pasto": {
+        "home_matches": 4,
+        "away_matches": 5
+      },
+      "Millonarios": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Junior Barranquilla": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Once Caldas": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Ind Santa Fe": {
+        "home_matches": 2,
+        "away_matches": 6
+      },
+      "Cucuta Deportivo": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Fortaleza COL": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Deportes Tolima": {
+        "home_matches": 2,
+        "away_matches": 5
+      },
+      "Alianza Petrolera": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Deportivo Pereira": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Jaguares de Cordoba": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "La Equidad": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Atletico Nacional": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Llaneros FC (COL)": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Atl\u00e9tico Bucaramanga": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Boyac\u00e1 Chic\u00f3": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Am\u00e9rica de Cali": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Rionegro \u00c1guilas": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "C\u00facuta Deportivo": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Fortaleza (COL)": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Jaguares de C\u00f3rdoba": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Atl\u00e9tico Nacional": {
+        "home_matches": 1,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 65,
+  "trained_at": "2026-02-12T19:21:45.759923"
+}

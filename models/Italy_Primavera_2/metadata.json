@@ -1,0 +1,76 @@
+{
+  "league_key": "ItP_238",
+  "league_info": {
+    "league_code": "ItP",
+    "match_id_prefix": "238",
+    "country": "Italy",
+    "league": "Primavera 2",
+    "league_url_path": "football-tips-and-predictions-for-italy/primavera-2",
+    "country_code": "it",
+    "match_count": 100,
+    "teams": {
+      "Salernitana U19": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Pisa U19": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Spezia U19": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Avellino U19": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Sampdoria U19": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Cittadella U19": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Benevento U19": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Ascoli U19": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Udinese U19": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Renate U19": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Palermo U19": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Como U19": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "S\u00fcdtirol U19": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Crotone U19": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Sudtirol U19": {
+        "home_matches": 3,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 20,
+  "trained_at": "2026-02-12T19:11:35.231958"
+}

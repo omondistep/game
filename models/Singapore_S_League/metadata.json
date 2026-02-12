@@ -1,0 +1,40 @@
+{
+  "league_key": "Sg1_235",
+  "league_info": {
+    "league_code": "Sg1",
+    "match_id_prefix": "235",
+    "country": "Singapore",
+    "league": "S League",
+    "league_url_path": "football-tips-and-predictions-for-singapore/s-league",
+    "country_code": "sg",
+    "match_count": 50,
+    "teams": {
+      "Young Lions": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Tanjong Pagar Utd": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Hougang United": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Albirex Niigata (S)": {
+        "home_matches": 10,
+        "away_matches": 0
+      },
+      "Geylang": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Albirex Niigata S": {
+        "home_matches": 6,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 10,
+  "trained_at": "2026-02-12T19:11:52.521434"
+}

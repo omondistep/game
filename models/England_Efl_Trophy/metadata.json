@@ -1,0 +1,40 @@
+{
+  "league_key": "EFL_242",
+  "league_info": {
+    "league_code": "EFL",
+    "match_id_prefix": "242",
+    "country": "England",
+    "league": "Efl Trophy",
+    "league_url_path": "football-tips-and-predictions-for-england/efl-trophy",
+    "country_code": "gb-en",
+    "match_count": 30,
+    "teams": {
+      "Huddersfield": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Doncaster Rovers": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "AFC Wimbledon": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Northampton Town": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Port Vale": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Stockport County": {
+        "home_matches": 0,
+        "away_matches": 8
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:11:24.696350"
+}

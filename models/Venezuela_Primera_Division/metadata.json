@@ -1,0 +1,75 @@
+{
+  "league_key": "Ve1",
+  "league_info": {
+    "league_code": "Ve1",
+    "country": "Venezuela",
+    "league": "Primera Division",
+    "league_url_path": "",
+    "country_code": "ve",
+    "match_count": 33,
+    "teams": {
+      "Puerto Cabello": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Metropolitanos": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Carabobo": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Portuguesa": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Deportivo La Guaira": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Monagas SC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Estudiantes FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Caracas": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "UCV FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Trujillanos FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Deportivo Tachira": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Academia Anzoategui": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Rayo Zuliano": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Zamora": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Academia Anzo\u00e1tegui": {
+        "home_matches": 1,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 22,
+  "trained_at": "2026-02-12T19:22:23.265731"
+}

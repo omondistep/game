@@ -1,0 +1,63 @@
+{
+  "league_key": "QaC",
+  "league_info": {
+    "league_code": "QaC",
+    "country": "Qatar",
+    "league": "Qatar Stars Cup",
+    "league_url_path": "",
+    "country_code": "qa",
+    "match_count": 18,
+    "teams": {
+      "Muaither SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Kharaitiyat": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Arabi Doha": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Qatar SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Al Waab SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Mesaimeer SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Markhiya SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Khor SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Shahaniya SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Shamal SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sailiya SC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Bidda SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 12,
+  "trained_at": "2026-02-12T19:22:13.014568"
+}

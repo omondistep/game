@@ -1,0 +1,87 @@
+{
+  "league_key": "BrR",
+  "league_info": {
+    "league_code": "BrR",
+    "country": "Brazil",
+    "league": "Campeonato Roraimense",
+    "league_url_path": "",
+    "country_code": "br",
+    "match_count": 52,
+    "teams": {
+      "Monte Roraima": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Bare RR": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "GAS RR": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "River": {
+        "home_matches": 1,
+        "away_matches": 4
+      },
+      "Rondoniense RO": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Barcelona RO": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Sao Raimundo RR": {
+        "home_matches": 3,
+        "away_matches": 1
+      },
+      "Progresso RR": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Rio Negro RR": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Nautico RR": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Genus RO": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Guapore RO": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Roraima RR": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Porto Velho": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Bar\u00e9 RR": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "S\u00e3o Raimundo RR": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "N\u00e1utico RR": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Guapor\u00e9 RO": {
+        "home_matches": 1,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 34,
+  "trained_at": "2026-02-12T19:21:40.299743"
+}

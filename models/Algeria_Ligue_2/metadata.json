@@ -1,0 +1,39 @@
+{
+  "league_key": "Dz2",
+  "league_info": {
+    "league_code": "Dz2",
+    "country": "Algeria",
+    "league": "Ligue 2",
+    "league_url_path": "",
+    "country_code": "dz",
+    "match_count": 9,
+    "teams": {
+      "WA Tlemcen": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "NA Hussein Dey": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "WA Mostaganem": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "CR Temouchent": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "RC Arbaa": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "CR T\u00e9mouchent": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:21:49.171772"
+}

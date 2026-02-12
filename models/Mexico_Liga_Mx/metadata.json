@@ -1,0 +1,108 @@
+{
+  "league_key": "Mx1_241",
+  "league_info": {
+    "league_code": "Mx1",
+    "match_id_prefix": "241",
+    "country": "Mexico",
+    "league": "Liga Mx",
+    "league_url_path": "football-tips-and-predictions-for-mexico/liga-mx",
+    "country_code": "mx",
+    "match_count": 185,
+    "teams": {
+      "Puebla FC": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Deportivo Toluca": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "UNAM Pumas": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Santos Laguna": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "FC Ju\u00e1rez": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Cruz Azul": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Club Am\u00e9rica": {
+        "home_matches": 10,
+        "away_matches": 0
+      },
+      "Club Necaxa": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Club Atlas": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "Mazatlan FC": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Atl\u00e9tico San Luis": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Guadalajara Chivas": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "CF Monterrey": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Club Tijuana": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Club Le\u00f3n": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Tigres UANL": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Quer\u00e9taro FC": {
+        "home_matches": 10,
+        "away_matches": 0
+      },
+      "Pachuca CF": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "FC Juarez": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Club America": {
+        "home_matches": 6,
+        "away_matches": 0
+      },
+      "Atletico San Luis": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Club Leon": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Queretaro FC": {
+        "home_matches": 6,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 36,
+  "trained_at": "2026-02-12T19:11:42.413660"
+}

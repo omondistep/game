@@ -1,0 +1,56 @@
+{
+  "league_key": "KW2_241",
+  "league_info": {
+    "league_code": "KW2",
+    "match_id_prefix": "241",
+    "country": "Kuwait",
+    "league": "1St Division",
+    "league_url_path": "predictions-kuwait/1st-division",
+    "country_code": "kw",
+    "match_count": 40,
+    "teams": {
+      "Burgan SC": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Khaitan SC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Sulaibikhat": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Yarmouk (KUW)": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Sahel (KUW)": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Al Jazira": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Sporty": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Al Shamiya": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Yarmouk KUW": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Sahel KUW": {
+        "home_matches": 3,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T19:11:37.302904"
+}

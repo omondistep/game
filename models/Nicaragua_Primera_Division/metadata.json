@@ -1,0 +1,67 @@
+{
+  "league_key": "Ni1",
+  "league_info": {
+    "league_code": "Ni1",
+    "country": "Nicaragua",
+    "league": "Primera Division",
+    "league_url_path": "",
+    "country_code": "ni",
+    "match_count": 60,
+    "teams": {
+      "Diriangen FC": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Jalapa ART": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Matagalpa FC": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Rancho Santana": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Real Esteli": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "UNAN Managua": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "CD Walter Ferretti": {
+        "home_matches": 2,
+        "away_matches": 6
+      },
+      "Real Madriz": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Managua FC": {
+        "home_matches": 6,
+        "away_matches": 2
+      },
+      "HandH Export": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Diriang\u00e9n FC": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Real Estel\u00ed": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "H&H Export": {
+        "home_matches": 2,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 40,
+  "trained_at": "2026-02-12T19:22:08.906096"
+}

@@ -1,0 +1,115 @@
+{
+  "league_key": "BrS",
+  "league_info": {
+    "league_code": "BrS",
+    "country": "Brazil",
+    "league": "Campeonato Sul-Matogrossense",
+    "league_url_path": "",
+    "country_code": "br",
+    "match_count": 65,
+    "teams": {
+      "Corumbaense MS": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Operario MS": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Bataguassu": {
+        "home_matches": 4,
+        "away_matches": 6
+      },
+      "Naviraiense MS": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Ivinhema MS": {
+        "home_matches": 6,
+        "away_matches": 4
+      },
+      "Dourados Atletico": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Costa Rica - MS": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "CR Aquidauana": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Aguia Negra MS": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Sergipe SE": {
+        "home_matches": 3,
+        "away_matches": 2
+      },
+      "Confianca": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Falcon": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Atletica Gloriense SE": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Itabaiana SE": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Dorense SE": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Desportiva Aracaju": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Lagarto SE": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "America SE": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Portuguesa": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Guarany SE": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Dourados Atl\u00e9tico": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "\u00c1guia Negra MS": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Confian\u00e7a": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Atl\u00e9tica Gloriense SE": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Am\u00e9rica SE": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 43,
+  "trained_at": "2026-02-12T19:21:40.753070"
+}

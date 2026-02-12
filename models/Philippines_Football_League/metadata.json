@@ -1,0 +1,55 @@
+{
+  "league_key": "Ph1",
+  "league_info": {
+    "league_code": "Ph1",
+    "country": "Philippines",
+    "league": "Football League",
+    "league_url_path": "",
+    "country_code": "ph",
+    "match_count": 14,
+    "teams": {
+      "Kaya FC": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Garelli United": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Tuloy": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Philippine Army": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Manila Digger": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Mendiola FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Dynamic Herb Cebu": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Maharlika FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Davao Aguilas": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Stallion FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T19:22:11.197706"
+}

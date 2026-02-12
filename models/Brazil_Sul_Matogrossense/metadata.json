@@ -1,0 +1,64 @@
+{
+  "league_key": "BrS_241",
+  "league_info": {
+    "league_code": "BrS",
+    "match_id_prefix": "241",
+    "country": "Brazil",
+    "league": "Sul Matogrossense",
+    "league_url_path": "football-tips-and-predictions-for-brazil/sul-matogrossense",
+    "country_code": "br",
+    "match_count": 151,
+    "teams": {
+      "Corumbaense MS": {
+        "home_matches": 16,
+        "away_matches": 16
+      },
+      "Operario MS": {
+        "home_matches": 16,
+        "away_matches": 16
+      },
+      "Bataguassu": {
+        "home_matches": 16,
+        "away_matches": 24
+      },
+      "Naviraiense MS": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Ivinhema MS": {
+        "home_matches": 24,
+        "away_matches": 16
+      },
+      "Dourados Atl\u00e9tico": {
+        "home_matches": 0,
+        "away_matches": 10
+      },
+      "Costa Rica - MS": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "CR Aquidauana": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "\u00c1guia Negra MS": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Portuguesa": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Dourados Atletico": {
+        "home_matches": 0,
+        "away_matches": 6
+      },
+      "Aguia Negra MS": {
+        "home_matches": 3,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 30,
+  "trained_at": "2026-02-12T19:11:18.217040"
+}

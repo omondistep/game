@@ -1,0 +1,39 @@
+{
+  "league_key": "Ao1",
+  "league_info": {
+    "league_code": "Ao1",
+    "country": "Angola",
+    "league": "Girabola",
+    "league_url_path": "",
+    "country_code": "ao",
+    "match_count": 10,
+    "teams": {
+      "1\u00ba de Maio": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Petro Atletico": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Academica Lobito": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Bravos do Maquis": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "CD Lunda Sul": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Acad\u00e9mica Lobito": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 5,
+  "trained_at": "2026-02-12T19:21:31.002807"
+}

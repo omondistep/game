@@ -1,0 +1,91 @@
+{
+  "league_key": "Cl1",
+  "league_info": {
+    "league_code": "Cl1",
+    "country": "Chile",
+    "league": "Primera Division",
+    "league_url_path": "",
+    "country_code": "cl",
+    "match_count": 36,
+    "teams": {
+      "Univ de Chile": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Audax Italiano": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Cobresal": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Huachipato": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "La Serena": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Universidad Catolica": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Palestino": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Nublense": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Everton de Vina": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Union La Calera": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "O Higgins": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Deportes Concepcion": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Univ de Concepcion": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Colo Colo": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Limache": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Universidad Cat\u00f3lica": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "\u00d1ublense": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Uni\u00f3n La Calera": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Deportes Concepci\u00f3n": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 24,
+  "trained_at": "2026-02-12T19:21:43.833745"
+}

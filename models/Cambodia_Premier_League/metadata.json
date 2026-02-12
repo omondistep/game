@@ -1,0 +1,43 @@
+{
+  "league_key": "Kh1",
+  "league_info": {
+    "league_code": "Kh1",
+    "country": "Cambodia",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "kh",
+    "match_count": 12,
+    "teams": {
+      "Kirivong Sok Sen Chey": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Boeung Ket FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Angkor Tiger FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Visakha FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "National Defense": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "PPC FC": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Nagaworld FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T19:22:02.482812"
+}

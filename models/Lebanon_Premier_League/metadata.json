@@ -1,0 +1,35 @@
+{
+  "league_key": "Lb",
+  "league_info": {
+    "league_code": "Lb",
+    "country": "Lebanon",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "lb",
+    "match_count": 9,
+    "teams": {
+      "Al Ansar Club": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Hikma Beirut": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Safa SC Beirut": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Jwaya": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Al Ahed Beirut": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:22:03.898561"
+}

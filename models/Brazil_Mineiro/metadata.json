@@ -1,0 +1,152 @@
+{
+  "league_key": "BrM_241",
+  "league_info": {
+    "league_code": "BrM",
+    "match_id_prefix": "241",
+    "country": "Brazil",
+    "league": "Mineiro",
+    "league_url_path": "football-tips-and-predictions-for-brazil/mineiro",
+    "country_code": "br",
+    "match_count": 416,
+    "teams": {
+      "North Esporte": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Pouso Alegre": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Chapada": {
+        "home_matches": 16,
+        "away_matches": 24
+      },
+      "Cuiab\u00e1": {
+        "home_matches": 10,
+        "away_matches": 10
+      },
+      "Imperatriz": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Maranh\u00e3o MA": {
+        "home_matches": 0,
+        "away_matches": 10
+      },
+      "URT MG": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Itabirito": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Uberl\u00e2ndia MG": {
+        "home_matches": 5,
+        "away_matches": 10
+      },
+      "Am\u00e9rica Mineiro": {
+        "home_matches": 5,
+        "away_matches": 10
+      },
+      "Uni\u00e3o Rondon\u00f3polis MT": {
+        "home_matches": 15,
+        "away_matches": 10
+      },
+      "Sport Sinop": {
+        "home_matches": 16,
+        "away_matches": 16
+      },
+      "Mixto MT": {
+        "home_matches": 24,
+        "away_matches": 16
+      },
+      "Operario MT": {
+        "home_matches": 0,
+        "away_matches": 24
+      },
+      "CEOV MS": {
+        "home_matches": 24,
+        "away_matches": 16
+      },
+      "Nova Mutum": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Atl\u00e9tico Mineiro": {
+        "home_matches": 10,
+        "away_matches": 0
+      },
+      "Cruzeiro": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Primavera MG": {
+        "home_matches": 24,
+        "away_matches": 16
+      },
+      "Luverdense": {
+        "home_matches": 16,
+        "away_matches": 24
+      },
+      "Athletic Club MG": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Betim": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Tombense FC": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "Democrata GV": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "IAPE MA": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "ITZ Sport": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Luminense": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Moto Clube MA": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Cuiaba": {
+        "home_matches": 6,
+        "away_matches": 6
+      },
+      "Maranhao MA": {
+        "home_matches": 0,
+        "away_matches": 6
+      },
+      "Uberlandia MG": {
+        "home_matches": 3,
+        "away_matches": 6
+      },
+      "America Mineiro": {
+        "home_matches": 3,
+        "away_matches": 6
+      },
+      "Uniao Rondonopolis MT": {
+        "home_matches": 9,
+        "away_matches": 6
+      },
+      "Atletico Mineiro": {
+        "home_matches": 6,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 82,
+  "trained_at": "2026-02-12T19:11:16.604331"
+}

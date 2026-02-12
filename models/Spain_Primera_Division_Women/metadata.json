@@ -1,0 +1,35 @@
+{
+  "league_key": "EsW",
+  "league_info": {
+    "league_code": "EsW",
+    "country": "Spain",
+    "league": "Primera Division Women",
+    "league_url_path": "",
+    "country_code": "es",
+    "match_count": 9,
+    "teams": {
+      "Atletico Madrid W": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Granada W": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Levante W": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Madrid CFF W": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Eibar W": {
+        "home_matches": 2,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:21:51.369647"
+}

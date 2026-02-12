@@ -1,0 +1,59 @@
+{
+  "league_key": "Bi1",
+  "league_info": {
+    "league_code": "Bi1",
+    "country": "Burundi",
+    "league": "Primus League",
+    "league_url_path": "",
+    "country_code": "bi",
+    "match_count": 18,
+    "teams": {
+      "Garage FC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Rukinzo FC": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Royal Vision": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Flambeau du Centre": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Kayanza United": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Inter Star": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Ngozi City": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Green Farmers": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Dynamik": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Le Messager Ngozi": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Garage F.C.": {
+        "home_matches": 1,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 12,
+  "trained_at": "2026-02-12T19:21:37.217227"
+}

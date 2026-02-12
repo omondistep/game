@@ -1,0 +1,55 @@
+{
+  "league_key": "BaC",
+  "league_info": {
+    "league_code": "BaC",
+    "country": "Bosnia and Herzegovina",
+    "league": "BiH Cup",
+    "league_url_path": "",
+    "country_code": "ba",
+    "match_count": 13,
+    "teams": {
+      "GOSK Gabela": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Rudar Prijedor": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Sloga Doboj": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Tekstilac Derventa": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Zrinjski Mostar": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Stupcanica": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Radnik Bijeljina": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Krusevo": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Celik Zenica": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "FK Sarajevo": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 8,
+  "trained_at": "2026-02-12T19:21:34.456592"
+}

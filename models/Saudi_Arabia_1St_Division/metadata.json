@@ -1,0 +1,112 @@
+{
+  "league_key": "Sa2_241",
+  "league_info": {
+    "league_code": "Sa2",
+    "match_id_prefix": "241",
+    "country": "Saudi Arabia",
+    "league": "1St Division",
+    "league_url_path": "football-tips-and-predictions-for-saudi-arabia/1st-division",
+    "country_code": "sa",
+    "match_count": 240,
+    "teams": {
+      "Al Baten": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Al Raed Club": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Al Arabi (KSA)": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Al Faisaly (KSA)": {
+        "home_matches": 5,
+        "away_matches": 10
+      },
+      "Al Jubail Club": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Al Zulfi": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Abha Club": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Al Jabalain": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Al Jndal": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Al Anwar (KSA)": {
+        "home_matches": 10,
+        "away_matches": 5
+      },
+      "Al Bukiryah": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Al Ula": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Al Ta'i": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Al Oruba (KSA)": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Al Adalah": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "Al Dir'iya": {
+        "home_matches": 5,
+        "away_matches": 10
+      },
+      "Al Wahda Mecca": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Jeddah Club": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Al Arabi KSA": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Al Faisaly KSA": {
+        "home_matches": 3,
+        "away_matches": 6
+      },
+      "Al Anwar KSA": {
+        "home_matches": 6,
+        "away_matches": 3
+      },
+      "Al Tai": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Al Oruba KSA": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Al Diriya": {
+        "home_matches": 3,
+        "away_matches": 6
+      }
+    }
+  },
+  "example_count": 48,
+  "trained_at": "2026-02-12T19:11:51.251489"
+}

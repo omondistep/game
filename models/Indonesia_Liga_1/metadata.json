@@ -1,0 +1,79 @@
+{
+  "league_key": "Id1",
+  "league_info": {
+    "league_code": "Id1",
+    "country": "Indonesia",
+    "league": "Liga 1",
+    "league_url_path": "",
+    "country_code": "id",
+    "match_count": 36,
+    "teams": {
+      "PSIM Yogyakarta": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Persebaya Surabaya": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Dewa United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Arema FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Persik Kediri": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Bali United Pusam": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Persita Tangerang": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Persija Jakarta": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Malut United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Bhayangkara Utd": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Persis Solo FC": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Persib Bandung": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Persijap Jepara": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "PSM Makassar": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Semen Padang": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Borneo FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 24,
+  "trained_at": "2026-02-12T19:21:55.781795"
+}

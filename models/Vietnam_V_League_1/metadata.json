@@ -1,0 +1,56 @@
+{
+  "league_key": "Vn1_242",
+  "league_info": {
+    "league_code": "Vn1",
+    "match_id_prefix": "242",
+    "country": "Vietnam",
+    "league": "V League 1",
+    "league_url_path": "football-tips-and-predictions-for-vietnam/v-league-1",
+    "country_code": "vn",
+    "match_count": 60,
+    "teams": {
+      "Hong Linh Ha Tinh": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Binh Duong FC": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Song Lam Nghe An": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Ha Noi FC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Hai Phong FC": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "The Cong": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Phu Dong FC": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Hoang Anh Gia Lai": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Pho Hien FC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Nam Dinh FC": {
+        "home_matches": 8,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 12,
+  "trained_at": "2026-02-12T19:11:59.641615"
+}

@@ -1,0 +1,236 @@
+{
+  "league_key": "BrC_241",
+  "league_info": {
+    "league_code": "BrC",
+    "match_id_prefix": "241",
+    "country": "Brazil",
+    "league": "Capixaba",
+    "league_url_path": "football-tips-and-predictions-for-brazil/capixaba",
+    "country_code": "br",
+    "match_count": 461,
+    "teams": {
+      "Vit\u00f3ria ES": {
+        "home_matches": 10,
+        "away_matches": 10
+      },
+      "Desp. Ferrovi\u00e1ria ES": {
+        "home_matches": 5,
+        "away_matches": 10
+      },
+      "Botafogo": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Bangu RJ": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Fluminense": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Flamengo": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Crici\u00fama": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Brusque FC SC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Carlos Renaux": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Marcilio Dias SC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Barra": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Conc\u00f3rdia AC SC": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Chapecoense SC": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Joinville": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Santa Catarina": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Avai FC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Figueirense": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Cambori\u00fa SC": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Ferrovi\u00e1rio": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "Cear\u00e1 SC": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Serra ES": {
+        "home_matches": 16,
+        "away_matches": 24
+      },
+      "SC Capixaba": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Boavista RJ": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Vasco da Gama": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Vilavelhense ES": {
+        "home_matches": 16,
+        "away_matches": 16
+      },
+      "Real Noroeste ES": {
+        "home_matches": 24,
+        "away_matches": 16
+      },
+      "Nova Iguacu RJ": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Volta Redonda": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Fortaleza": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Floresta CE": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Iguatu CE": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Horizonte CE": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Rio Branco ES": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Forte FC": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "Maranguape CE": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "Maracan\u00e3 CE": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Porto Vit\u00f3ria": {
+        "home_matches": 10,
+        "away_matches": 5
+      },
+      "Rio Branco-VN": {
+        "home_matches": 8,
+        "away_matches": 24
+      },
+      "Quixad\u00e1 CE": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Pague Menos": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Sampaio Corr\u00eaa RJ": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Madureira RJ": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Portuguesa RJ": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Marica RJ": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Vitoria ES": {
+        "home_matches": 6,
+        "away_matches": 6
+      },
+      "Desp Ferroviaria ES": {
+        "home_matches": 3,
+        "away_matches": 6
+      },
+      "Criciuma": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Concordia AC SC": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Camboriu SC": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Ferroviario": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Ceara SC": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Maracana CE": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Porto Vitoria": {
+        "home_matches": 6,
+        "away_matches": 3
+      },
+      "Quixada CE": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Sampaio Correa RJ": {
+        "home_matches": 3,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 92,
+  "trained_at": "2026-02-12T19:11:15.327728"
+}

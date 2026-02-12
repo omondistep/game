@@ -1,0 +1,52 @@
+{
+  "league_key": "AlC_242",
+  "league_info": {
+    "league_code": "AlC",
+    "match_id_prefix": "242",
+    "country": "Albania",
+    "league": "Albanian Cup",
+    "league_url_path": "football-tips-and-predictions-for-albania/albanian-cup",
+    "country_code": "al",
+    "match_count": 26,
+    "teams": {
+      "Bylis Ballsh": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Vllaznia Shkod\u00ebr": {
+        "home_matches": 0,
+        "away_matches": 5
+      },
+      "Teuta Durres": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Egnatia Rrogozhine": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Vllaznia Shkoder": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "KF Tirana": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Dinamo Tirana": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "AF Elbasani": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Partizani Tirana": {
+        "home_matches": 0,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:11:07.777288"
+}

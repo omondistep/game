@@ -1,0 +1,87 @@
+{
+  "league_key": "Sv1",
+  "league_info": {
+    "league_code": "Sv1",
+    "country": "El Salvador",
+    "league": "Primera Division",
+    "league_url_path": "",
+    "country_code": "sv",
+    "match_count": 78,
+    "teams": {
+      "Inter FA": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "Cacahuatique": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Alianza FC": {
+        "home_matches": 6,
+        "away_matches": 4
+      },
+      "Luis Angel Firpo": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CD Aguila": {
+        "home_matches": 3,
+        "away_matches": 2
+      },
+      "Hercules": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Fuerte San Francisco": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "CD FAS": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Municipal Limeno": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Isidro Metapan": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Zacatecoluca": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Platense SLV": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "Inter F.A": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "Lu\u00eds \u00c1ngel Firpo": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CD \u00c1guila": {
+        "home_matches": 3,
+        "away_matches": 2
+      },
+      "Municipal Lime\u00f1o": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Isidro Metap\u00e1n": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Platense (SLV)": {
+        "home_matches": 2,
+        "away_matches": 3
+      }
+    }
+  },
+  "example_count": 52,
+  "trained_at": "2026-02-12T19:22:17.393760"
+}

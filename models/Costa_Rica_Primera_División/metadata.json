@@ -1,0 +1,67 @@
+{
+  "league_key": "Cr1",
+  "league_info": {
+    "league_code": "Cr1",
+    "country": "Costa Rica",
+    "league": "Primera Divisi\u00f3n",
+    "league_url_path": "",
+    "country_code": "cr",
+    "match_count": 42,
+    "teams": {
+      "Puntarenas": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Guadalupe FC": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "LD Alajuelense": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "San Carlos": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Municipal Liberia": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "CS Herediano": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Saprissa": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "CS Cartagines": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Perez Zeledon": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sporting CRC": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "CS Cartagin\u00e9s": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "P\u00e9rez Zeled\u00f3n": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Sporting (CRC)": {
+        "home_matches": 1,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 28,
+  "trained_at": "2026-02-12T19:21:46.459157"
+}

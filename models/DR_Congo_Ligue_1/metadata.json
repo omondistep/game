@@ -1,0 +1,131 @@
+{
+  "league_key": "CD1",
+  "league_info": {
+    "league_code": "CD1",
+    "country": "DR Congo",
+    "league": "Ligue 1",
+    "league_url_path": "",
+    "country_code": "cd",
+    "match_count": 74,
+    "teams": {
+      "CS Don Bosco": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "New Soger": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "US Panda": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "US Tshinkunku": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "Lubumbashi Sport": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Malole": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Etoile de Kivu": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "New Jack": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "SimbaDRC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Saint-Luc": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "FC Renaissance DRC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Bukavu Dawa": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Groupe Bazano": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Blessing": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "CS Manika": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "SM Sanga Balende": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "TP Mazembe": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Tanganyika": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "FC Tshikas": {
+        "home_matches": 1,
+        "away_matches": 4
+      },
+      "FC Renaissance du Congo": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Anges Verts": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "FC Mk de Kinshasa": {
+        "home_matches": 4,
+        "away_matches": 1
+      },
+      "DC Motema Pembe": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Dauphins Noirs": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Celeste": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "AC Rangers": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "AS Vita Club": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Simba(DRC)": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "FC Renaissance (DRC)": {
+        "home_matches": 1,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 46,
+  "trained_at": "2026-02-12T19:21:42.124818"
+}

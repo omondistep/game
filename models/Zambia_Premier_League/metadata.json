@@ -1,0 +1,63 @@
+{
+  "league_key": "Zm1",
+  "league_info": {
+    "league_code": "Zm1",
+    "country": "Zambia",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "zm",
+    "match_count": 24,
+    "teams": {
+      "Kabwe Warriors": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Nchanga Rangers": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Mufulira Wanderers": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Green Buffaloes": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Nkana FC": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Prison Leopards": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Mutondo Stars": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Mines United": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Kansanshi Dynamos": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Zanaco FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Red Arrows FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Nkwazi FC": {
+        "home_matches": 1,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 14,
+  "trained_at": "2026-02-12T19:22:25.073319"
+}

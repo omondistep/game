@@ -1,0 +1,95 @@
+{
+  "league_key": "Et1",
+  "league_info": {
+    "league_code": "Et1",
+    "country": "Ethiopia",
+    "league": "Premier League",
+    "league_url_path": "",
+    "country_code": "et",
+    "match_count": 66,
+    "teams": {
+      "Hadiya Hosaena": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Welwalo Adigrat Uni": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Kedus Giorgis": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Shire Endaselassie": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Ethiopian Medhin": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Defence Force": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Mebrat Hayl": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Welayta Dicha": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Negele Arsi Ketema": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Sidama Bunna": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Sheger Ketema": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Dire Dawa Kenema": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Ethiopian Coffee": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Ethiopia Nigd Bank": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Awassa Kenema": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Adama Kenema": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Fasil Kenema": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Bahardar": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Mekelle 70": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Arba Minch Kenema": {
+        "home_matches": 2,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 44,
+  "trained_at": "2026-02-12T19:21:51.795546"
+}

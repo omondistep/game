@@ -1,0 +1,11 @@
+{
+  "league_key": "Global",
+  "league_info": {
+    "league": "All Leagues",
+    "country": "Global"
+  },
+  "example_count": 4056,
+  "result_accuracy": 0.7746305418719212,
+  "ou_accuracy": 0.8140394088669951,
+  "trained_at": "2026-02-12T19:22:27.299104"
+}

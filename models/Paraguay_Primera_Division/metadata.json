@@ -1,0 +1,83 @@
+{
+  "league_key": "Py1",
+  "league_info": {
+    "league_code": "Py1",
+    "country": "Paraguay",
+    "league": "Primera Division",
+    "league_url_path": "",
+    "country_code": "py",
+    "match_count": 66,
+    "teams": {
+      "Nacional Asuncion": {
+        "home_matches": 3,
+        "away_matches": 1
+      },
+      "CS San Lorenzo": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Cerro Porteno": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Libertad": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Olimpia Asuncion": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Club Guarani": {
+        "home_matches": 1,
+        "away_matches": 3
+      },
+      "Sportivo Ameliano": {
+        "home_matches": 4,
+        "away_matches": 4
+      },
+      "Club Rubio Nu": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Sportivo Luqueno": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "2 de Mayo": {
+        "home_matches": 4,
+        "away_matches": 2
+      },
+      "Sportivo Trinidense": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Deportivo Recoleta": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Nacional Asunci\u00f3n": {
+        "home_matches": 3,
+        "away_matches": 1
+      },
+      "Cerro Porte\u00f1o": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Olimpia Asunci\u00f3n": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Club Guaran\u00ed": {
+        "home_matches": 1,
+        "away_matches": 3
+      },
+      "Club Rubio \u00d1u": {
+        "home_matches": 2,
+        "away_matches": 2
+      }
+    }
+  },
+  "example_count": 44,
+  "trained_at": "2026-02-12T19:22:11.911679"
+}

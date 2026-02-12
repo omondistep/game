@@ -1,0 +1,51 @@
+{
+  "league_key": "AlC",
+  "league_info": {
+    "league_code": "AlC",
+    "country": "Albania",
+    "league": "Kupa e Shqip\u00ebris\u00eb",
+    "league_url_path": "",
+    "country_code": "al",
+    "match_count": 10,
+    "teams": {
+      "Bylis Ballsh": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Vllaznia Shkoder": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Teuta Durres": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Egnatia Rrogozhine": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "KF Tirana": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Dinamo Tirana": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "AF Elbasani": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Partizani Tirana": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Vllaznia Shkod\u00ebr": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 6,
+  "trained_at": "2026-02-12T19:21:30.681493"
+}

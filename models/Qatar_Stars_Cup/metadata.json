@@ -1,0 +1,64 @@
+{
+  "league_key": "QaC_241",
+  "league_info": {
+    "league_code": "QaC",
+    "match_id_prefix": "241",
+    "country": "Qatar",
+    "league": "Stars Cup",
+    "league_url_path": "predictions-qatar/stars-cup",
+    "country_code": "qa",
+    "match_count": 60,
+    "teams": {
+      "Muaither SC": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Kharaitiyat": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Arabi Doha": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Qatar SC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Al Waab SC": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Mesaimeer SC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Markhiya SC": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Khor SC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Shahaniya SC": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Shamal SC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Sailiya SC": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Al Bidda SC": {
+        "home_matches": 0,
+        "away_matches": 8
+      }
+    }
+  },
+  "example_count": 12,
+  "trained_at": "2026-02-12T19:11:49.666831"
+}

@@ -1,0 +1,64 @@
+{
+  "league_key": "Au1_240",
+  "league_info": {
+    "league_code": "Au1",
+    "match_id_prefix": "240",
+    "country": "Australia",
+    "league": "A League",
+    "league_url_path": "tips-and-predictions-for-australia/a-league",
+    "country_code": "au",
+    "match_count": 131,
+    "teams": {
+      "WS Wanderers": {
+        "home_matches": 16,
+        "away_matches": 8
+      },
+      "Perth Glory": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Melbourne Victory": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Sydney FC": {
+        "home_matches": 8,
+        "away_matches": 16
+      },
+      "Wellington Phoenix": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "Melbourne City": {
+        "home_matches": 0,
+        "away_matches": 16
+      },
+      "Adelaide United": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Macarthur FC": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Newcastle Jets": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Brisbane Roar": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "Auckland": {
+        "home_matches": 8,
+        "away_matches": 8
+      },
+      "CC Mariners": {
+        "home_matches": 8,
+        "away_matches": 8
+      }
+    }
+  },
+  "example_count": 26,
+  "trained_at": "2026-02-12T19:11:09.300394"
+}

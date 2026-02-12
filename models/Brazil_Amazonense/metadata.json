@@ -1,0 +1,72 @@
+{
+  "league_key": "BrA_241",
+  "league_info": {
+    "league_code": "BrA",
+    "match_id_prefix": "241",
+    "country": "Brazil",
+    "league": "Amazonense",
+    "league_url_path": "football-tips-and-predictions-for-brazil/amazonense",
+    "country_code": "br",
+    "match_count": 100,
+    "teams": {
+      "Princesa Solim\u00f5es": {
+        "home_matches": 5,
+        "away_matches": 0
+      },
+      "JC FC AM": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Vasco da Gama AC": {
+        "home_matches": 11,
+        "away_matches": 8
+      },
+      "ADESG AC": {
+        "home_matches": 11,
+        "away_matches": 16
+      },
+      "Independencia": {
+        "home_matches": 8,
+        "away_matches": 11
+      },
+      "Humait\u00e1": {
+        "home_matches": 5,
+        "away_matches": 5
+      },
+      "Sao Francisco": {
+        "home_matches": 16,
+        "away_matches": 0
+      },
+      "Rio Branco AC": {
+        "home_matches": 8,
+        "away_matches": 11
+      },
+      "Galvez AC": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Manauara": {
+        "home_matches": 8,
+        "away_matches": 0
+      },
+      "Parintins": {
+        "home_matches": 0,
+        "away_matches": 8
+      },
+      "Princesa Solimoes": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Humaita": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Manaus FC AM": {
+        "home_matches": 3,
+        "away_matches": 0
+      }
+    }
+  },
+  "example_count": 21,
+  "trained_at": "2026-02-12T19:11:14.452323"
+}
