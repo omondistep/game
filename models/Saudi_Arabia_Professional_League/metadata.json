@@ -6,17 +6,25 @@
     "league": "Professional League",
     "league_url_path": "",
     "country_code": "sa",
-    "match_count": 30,
+    "match_count": 32,
     "teams": {
+      "Shabab Riyadh": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Al Ahli": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Al Hazm": {
         "home_matches": 1,
         "away_matches": 1
       },
       "Damak": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
-      "Al Najma (KSA)": {
+      "Al Najma KSA": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -32,15 +40,11 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Al Ahli": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
       "Ettifaq FC": {
         "home_matches": 2,
         "away_matches": 1
       },
-      "Al Fateh (KSA)": {
+      "Al Fateh KSA": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -50,7 +54,7 @@
       },
       "Taawoun": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Al Akhdood": {
         "home_matches": 1,
@@ -78,8 +82,8 @@
       }
     }
   },
-  "example_count": 15,
-  "result_accuracy": 0.6666666666666666,
-  "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T09:55:16.303357"
+  "example_count": 17,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.0,
+  "trained_at": "2026-02-13T19:32:53.364672"
 }

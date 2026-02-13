@@ -8,7 +8,7 @@
     "country_code": "ly",
     "match_count": 58,
     "teams": {
-      "Al Taawun (LIB)": {
+      "Al Taawun LIB": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -145,5 +145,5 @@
   "example_count": 29,
   "result_accuracy": 0.3333333333333333,
   "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T13:17:03.324612"
+  "trained_at": "2026-02-13T19:32:45.613827"
 }

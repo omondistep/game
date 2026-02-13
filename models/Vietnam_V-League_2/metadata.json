@@ -8,7 +8,7 @@
     "country_code": "vn",
     "match_count": 20,
     "teams": {
-      "B\u00e0 Ria V\u0169ng T\u00e0u": {
+      "Ba Ria Vung Tau": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -16,11 +16,11 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Ph\u00fa Th\u1ecd": {
+      "Phu Tho": {
         "home_matches": 1,
         "away_matches": 1
       },
-      "Qu\u1ea3ng Ninh": {
+      "Quang Ninh": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -40,7 +40,7 @@
         "home_matches": 0,
         "away_matches": 1
       },
-      "B\u00ecnh Ph\u01b0\u1edbc": {
+      "Binh Phuoc": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -48,7 +48,7 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "H\u1ed3 Ch\u00ed Minh II": {
+      "Ho Chi Minh II": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -61,5 +61,5 @@
   "example_count": 10,
   "result_accuracy": 0.0,
   "ou_accuracy": 0.5,
-  "trained_at": "2026-02-13T09:55:26.569093"
+  "trained_at": "2026-02-13T19:33:02.710396"
 }

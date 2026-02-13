@@ -67,7 +67,7 @@
     }
   },
   "example_count": 13,
-  "result_accuracy": 0.6666666666666666,
+  "result_accuracy": 0.3333333333333333,
   "ou_accuracy": 0.6666666666666666,
-  "trained_at": "2026-02-13T18:33:34.114338"
+  "trained_at": "2026-02-13T19:32:16.976341"
 }

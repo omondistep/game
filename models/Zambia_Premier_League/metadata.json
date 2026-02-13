@@ -6,19 +6,19 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "zm",
-    "match_count": 15,
+    "match_count": 22,
     "teams": {
       "Kabwe Warriors": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Nchanga Rangers": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Mufulira Wanderers": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Green Buffaloes": {
         "home_matches": 0,
@@ -26,10 +26,10 @@
       },
       "Nkana FC": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Prison Leopards": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Mutondo Stars": {
@@ -37,13 +37,45 @@
         "away_matches": 0
       },
       "Mines United": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Kansanshi Dynamos": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Zanaco FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Red Arrows FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Nkwazi FC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Man Utd Zambia": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Konkola Blades": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Napsa Stars": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Green Eagles": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 5,
-  "result_accuracy": 1.0,
+  "example_count": 12,
+  "result_accuracy": 0.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T09:55:27.396422"
+  "trained_at": "2026-02-13T19:33:03.692281"
 }

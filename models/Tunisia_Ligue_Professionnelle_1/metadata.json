@@ -1,0 +1,81 @@
+{
+  "league_key": "Tn1",
+  "league_info": {
+    "league_code": "Tn1",
+    "country": "Tunisia",
+    "league": "Ligue Professionnelle 1",
+    "league_url_path": "",
+    "country_code": "tn",
+    "match_count": 19,
+    "teams": {
+      "Stade Tunisien": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Olympique Beja": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "AS Gabes": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "CA Bizertin": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "JS Kairouanaise": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Etoile Sahel Sousse": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Esperance ST": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "JS Omranienne": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Esperance Zarzis": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Club Africain Tunis": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "CS Sfaxien": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "ES Metlaoui": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "US Monastir": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Slimane": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "AS Marsa": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "US Ben Guerdane": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 11,
+  "result_accuracy": 0.6666666666666666,
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-13T19:32:58.338282"
+}

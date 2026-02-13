@@ -445,6 +445,14 @@ class ForebetScraper:
             return
         
         try:
+            # Check if league already exists in database
+            if short_code in self.leagues_db:
+                return  # Already exists, skip
+            
+            # Also check short_code_lookup if available
+            if hasattr(self, 'short_code_lookup') and short_code in self.short_code_lookup:
+                return  # Already exists, skip
+            
             # Create new entry
             new_entry = {
                 'league_code': page_info.get('league_code', ''),

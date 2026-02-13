@@ -24,7 +24,7 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Cordob\u00e9s": {
+      "Cordobes": {
         "home_matches": 2,
         "away_matches": 1
       },
@@ -48,7 +48,7 @@
         "home_matches": 2,
         "away_matches": 1
       },
-      "Tigres de \u00c1lica": {
+      "Tigres de Alica": {
         "home_matches": 2,
         "away_matches": 1
       },
@@ -80,7 +80,7 @@
         "home_matches": 2,
         "away_matches": 1
       },
-      "Atl\u00e9tico Cocula": {
+      "Atletico Cocula": {
         "home_matches": 2,
         "away_matches": 1
       },
@@ -112,7 +112,7 @@
         "home_matches": 1,
         "away_matches": 2
       },
-      "Gorilas de Juanacatl\u00e1n": {
+      "Gorilas de Juanacatlan": {
         "home_matches": 0,
         "away_matches": 2
       },
@@ -136,7 +136,7 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Ca\u00f1oneros Marina": {
+      "Canoneros Marina": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -164,7 +164,7 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Acatl\u00e1n": {
+      "Acatlan": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -201,5 +201,5 @@
   "example_count": 51,
   "result_accuracy": 0.18181818181818182,
   "ou_accuracy": 0.7272727272727273,
-  "trained_at": "2026-02-13T09:55:10.895176"
+  "trained_at": "2026-02-13T19:32:47.684646"
 }

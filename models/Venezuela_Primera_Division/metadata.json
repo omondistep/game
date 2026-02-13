@@ -52,7 +52,7 @@
         "home_matches": 0,
         "away_matches": 1
       },
-      "Academia Anzo\u00e1tegui": {
+      "Academia Anzoategui": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -69,5 +69,5 @@
   "example_count": 11,
   "result_accuracy": 0.0,
   "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T09:55:25.690435"
+  "trained_at": "2026-02-13T19:33:01.975113"
 }

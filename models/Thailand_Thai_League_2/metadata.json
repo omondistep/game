@@ -6,7 +6,7 @@
     "league": "Thai League 2",
     "league_url_path": "",
     "country_code": "th",
-    "match_count": 35,
+    "match_count": 38,
     "teams": {
       "Chanthaburi": {
         "home_matches": 2,
@@ -14,7 +14,7 @@
       },
       "Rasi Salai United": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Chainat FC": {
         "home_matches": 2,
@@ -26,14 +26,14 @@
       },
       "Nong Bua Pitchaya": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Chiangmai United": {
         "home_matches": 1,
         "away_matches": 1
       },
       "Police Tero FC": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Nakhon Si United": {
@@ -53,7 +53,7 @@
         "away_matches": 1
       },
       "Phrae United": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Trat FC": {
@@ -66,14 +66,14 @@
       },
       "Nakhon Pathom": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Pattaya Dolphins": {
         "home_matches": 1,
         "away_matches": 1
       },
       "Pattani FC": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Sisaket United": {
@@ -82,8 +82,8 @@
       }
     }
   },
-  "example_count": 16,
+  "example_count": 19,
   "result_accuracy": 0.25,
   "ou_accuracy": 0.75,
-  "trained_at": "2026-02-13T09:55:20.170653"
+  "trained_at": "2026-02-13T19:32:57.259726"
 }

@@ -16,7 +16,7 @@
         "home_matches": 0,
         "away_matches": 1
       },
-      "Al Nahda (OMA)": {
+      "Al Nahda OMA": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -28,7 +28,7 @@
         "home_matches": 1,
         "away_matches": 0
       },
-      "Al Shabab (Oman)": {
+      "Al Shabab Oman": {
         "home_matches": 0,
         "away_matches": 1
       },
@@ -69,5 +69,5 @@
   "example_count": 7,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T09:55:13.496414"
+  "trained_at": "2026-02-13T19:32:49.679117"
 }

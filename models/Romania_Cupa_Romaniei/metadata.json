@@ -9,28 +9,28 @@
     "match_count": 11,
     "teams": {
       "Sanatatea Cluj": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Petrolul Ploiesti": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Dumbravita": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Arges Pitesti": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Cluj": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Rapid Bucuresti": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "CSM Slatina": {
         "home_matches": 1,
@@ -39,11 +39,35 @@
       "CS Metaloglobus": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Concordia Chiajna": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "FC Botosani": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Dinamo Bucuresti": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "FC Hermannstadt": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "CS Dinamo Bucuresti": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Farul Constanta": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
   "example_count": 7,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T08:11:04.642569"
+  "trained_at": "2026-02-13T19:32:52.665960"
 }

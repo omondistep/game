@@ -6,8 +6,16 @@
     "league": "1st Division",
     "league_url_path": "",
     "country_code": "sa",
-    "match_count": 52,
+    "match_count": 53,
     "teams": {
+      "Al Jabalain": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Jndal": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
       "Al Baten": {
         "home_matches": 3,
         "away_matches": 1
@@ -16,11 +24,11 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Al Arabi (KSA)": {
+      "Al Arabi KSA": {
         "home_matches": 1,
         "away_matches": 1
       },
-      "Al Faisaly (KSA)": {
+      "Al Faisaly KSA": {
         "home_matches": 2,
         "away_matches": 2
       },
@@ -36,15 +44,7 @@
         "home_matches": 2,
         "away_matches": 1
       },
-      "Al Jabalain": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Al Jndal": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Al Anwar (KSA)": {
+      "Al Anwar KSA": {
         "home_matches": 2,
         "away_matches": 1
       },
@@ -56,11 +56,11 @@
         "home_matches": 1,
         "away_matches": 2
       },
-      "Al Ta'i": {
+      "Al Tai": {
         "home_matches": 1,
         "away_matches": 1
       },
-      "Al Oruba (KSA)": {
+      "Al Oruba KSA": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -68,7 +68,7 @@
         "home_matches": 2,
         "away_matches": 0
       },
-      "Al Dir'iya": {
+      "Al Diriya": {
         "home_matches": 1,
         "away_matches": 2
       },
@@ -82,8 +82,8 @@
       }
     }
   },
-  "example_count": 26,
-  "result_accuracy": 0.5,
-  "ou_accuracy": 0.5,
-  "trained_at": "2026-02-13T09:55:16.786294"
+  "example_count": 27,
+  "result_accuracy": 0.6666666666666666,
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-13T19:32:53.730400"
 }

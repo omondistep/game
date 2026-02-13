@@ -378,5 +378,41 @@
     "test_ou_acc": 0.8571428571428571,
     "model_type": "league_specific",
     "league": "Spain La Liga"
+  },
+  {
+    "timestamp": "2026-02-13T19:24:42.382030",
+    "training_examples": 1848,
+    "test_examples": 463,
+    "result_accuracy": 0.43628509719222464,
+    "ou_accuracy": 0.5,
+    "train_result_acc": 0.4199134199134199,
+    "train_ou_acc": 0.5,
+    "test_result_acc": 0.43628509719222464,
+    "test_ou_acc": 0.5,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-13T19:26:34.712208",
+    "training_examples": 1848,
+    "test_examples": 463,
+    "result_accuracy": 0.43628509719222464,
+    "ou_accuracy": 0.5,
+    "train_result_acc": 0.4193722943722944,
+    "train_ou_acc": 0.5,
+    "test_result_acc": 0.43628509719222464,
+    "test_ou_acc": 0.5,
+    "model_type": "global"
+  },
+  {
+    "timestamp": "2026-02-13T19:33:16.769337",
+    "training_examples": 1848,
+    "test_examples": 463,
+    "result_accuracy": 0.43628509719222464,
+    "ou_accuracy": 0.5,
+    "train_result_acc": 0.4193722943722944,
+    "train_ou_acc": 0.5,
+    "test_result_acc": 0.43628509719222464,
+    "test_ou_acc": 0.5,
+    "model_type": "global"
   }
 ]

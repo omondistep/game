@@ -1,121 +1,129 @@
 {
-  "league_key": "Jp3",
+  "league_key": "UYL",
   "league_info": {
-    "league_code": "Jp3",
+    "league_code": "UYL",
     "country": "",
     "league": "",
     "league_url_path": "",
     "country_code": "",
-    "match_count": 13,
+    "match_count": 14,
     "teams": {
-      "Omiya Ardija": {
+      "AZ Alkmaar U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Matsumoto Yamaga": {
+      "Borussia Dortmund U19": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Giravanz K": {
+      "Real Madrid U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Gainare Tottori": {
+      "Marseille U19": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Ventforet Kofu": {
+      "Club Brugge U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Fukushima United": {
+      "Monaco U19": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Shonan Bellmare": {
+      "Zilina U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Blaublitz Akita": {
+      "Liverpool U19": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Tochigi Uva": {
+      "Chelsea U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Vegalta Sendai": {
+      "PSV U19": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Nara Club": {
+      "Athletic Bilbao U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Tokushima Vortis": {
+      "Eintracht Frankfurt U19": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Jubilo Iwata": {
+      "Dynamo Kyiv U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Nagano Parceiro": {
+      "Atl Madrid U19": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Yokohama FC": {
+      "Legia Warszawa U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Montedio Yamagata": {
+      "Ajax U19": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Roasso Kumamoto": {
+      "PSG U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Renofa Yamaguchi": {
+      "Dinamo Minsk U19": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Ehime FC": {
+      "Benfica U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Albirex Niigata": {
+      "Slavia Prague U19": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Fujieda MYFC": {
+      "Villarreal U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "FC Gifu": {
+      "Bayer Leverkusen U19": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Kagoshima United": {
+      "Maccabi Haifa U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Tegevajaro Miyazaki": {
+      "Barcelona U19": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Ryukyu": {
+      "HJK U19": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Sagan Tosu": {
+      "Manchester City U19": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Puskas Akademia U19": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Sporting CP U19": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 13,
-  "result_accuracy": 1.0,
-  "ou_accuracy": 0.6666666666666666,
-  "trained_at": "2026-02-13T18:34:00.652896"
+  "example_count": 14,
+  "result_accuracy": 0.6666666666666666,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T19:33:00.924438"
 }

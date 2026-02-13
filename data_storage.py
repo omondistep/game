@@ -151,6 +151,11 @@ class MatchDataStorage:
     def save_match_with_result(self, match_data: Dict) -> bool:
         """Save match data that already contains actual_result."""
         try:
+            # Ensure match_data is a dict
+            if not isinstance(match_data, dict):
+                print(f"Error: match_data is {type(match_data).__name__}, expected dict")
+                return False
+            
             url = match_data.get('url')
             if not url:
                 return False

@@ -279,55 +279,103 @@ class FootballPredictionSystem:
 
     def _analyse(self, md: Dict, feats: Dict, pred: Dict) -> Dict:
         analysis: Dict = {'key_factors': [], 'value_bets': [], 'confidence': 'medium'}
+        
+        teams = md.get('teams', {})
+        home = teams.get('home', 'Home')
+        away = teams.get('away', 'Away')
 
         # Form
         hf = md.get('form', {}).get('home', [])
         af = md.get('form', {}).get('away', [])
         hw = hf.count('W')
         aw = af.count('W')
+        hd = hf.count('D')
+        ad = af.count('D')
+        
         if hw >= 4:
-            analysis['key_factors'].append(f"🔥 Home team in excellent form ({hw} wins in last {len(hf)})")
-        elif hw <= 1:
-            analysis['key_factors'].append(f"⚠️  Home team in poor form ({hw} win in last {len(hf)})")
+            analysis['key_factors'].append(f"🔥 {home} in excellent form ({hw} wins in last {len(hf)})")
+        elif hw >= 3:
+            analysis['key_factors'].append(f"✅ {home} in good form ({hw} wins in last {len(hf)})")
+        elif hw <= 1 and len(hf) >= 4:
+            analysis['key_factors'].append(f"⚠️ {home} in poor form ({hw} win in last {len(hf)})")
+            
         if aw >= 4:
-            analysis['key_factors'].append(f"🔥 Away team in excellent form ({aw} wins in last {len(af)})")
-        elif aw <= 1:
-            analysis['key_factors'].append(f"⚠️  Away team in poor form ({aw} win in last {len(af)})")
+            analysis['key_factors'].append(f"🔥 {away} in excellent form ({aw} wins in last {len(af)})")
+        elif aw >= 3:
+            analysis['key_factors'].append(f"✅ {away} in good form ({aw} wins in last {len(af)})")
+        elif aw <= 1 and len(af) >= 4:
+            analysis['key_factors'].append(f"⚠️ {away} in poor form ({aw} win in last {len(af)})")
 
         # Home/away record
         hwr = feats.get('home_home_win_rate')
         if hwr and hwr >= 70:
-            analysis['key_factors'].append(f"🏟️  Home team dominant at home ({hwr:.0f}% win rate)")
+            analysis['key_factors'].append(f"🏟️ {home} dominant at home ({hwr:.0f}% win rate)")
         awr = feats.get('away_away_win_rate')
         if awr and awr <= 20:
-            analysis['key_factors'].append(f"📉 Away team struggles away ({awr:.0f}% win rate)")
+            analysis['key_factors'].append(f"📉 {away} struggles away ({awr:.0f}% win rate)")
+        
+        # Away team strong away
+        if awr and awr >= 60:
+            analysis['key_factors'].append(f"💪 {away} strong away ({awr:.0f}% win rate)")
 
         # Goals
         etg = feats.get('expected_total_goals', 2.5)
+        hgs = feats.get('home_avg_goals_scored', 0)
+        ags = feats.get('away_avg_goals_scored', 0)
+        hgc = feats.get('home_avg_goals_conceded', 0)
+        agc = feats.get('away_avg_goals_conceded', 0)
+        
         if etg > 3.0:
             analysis['key_factors'].append(f"⚽ High-scoring match expected (avg {etg:.1f} goals)")
         elif etg < 2.0:
-            analysis['key_factors'].append(f"🛡️  Low-scoring match expected (avg {etg:.1f} goals)")
+            analysis['key_factors'].append(f"🛡️ Low-scoring match expected (avg {etg:.1f} goals)")
+        
+        # Goal difference comparison
+        if hgs and ags and hgs > ags + 0.5:
+            analysis['key_factors'].append(f"⚽ {home} scores more ({hgs:.1f} vs {ags:.1f} goals/game)")
+        elif ags and hgs and ags > hgs + 0.5:
+            analysis['key_factors'].append(f"⚽ {away} scores more ({ags:.1f} vs {hgs:.1f} goals/game)")
+        
+        # Defense comparison
+        if hgc and agc and hgc < agc - 0.3:
+            analysis['key_factors'].append(f"🧱 {home} has stronger defense ({hgc:.1f} vs {agc:.1f} conceded/game)")
+        elif agc and hgc and agc < hgc - 0.3:
+            analysis['key_factors'].append(f"🧱 {away} has stronger defense ({agc:.1f} vs {hgc:.1f} conceded/game)")
 
         # Standings
         hp = feats.get('home_position')
         ap = feats.get('away_position')
-        if hp and ap and hp < ap - 5:
-            analysis['key_factors'].append(f"📊 Home team significantly higher in table (#{hp} vs #{ap})")
-        elif hp and ap and ap < hp - 5:
-            analysis['key_factors'].append(f"📊 Away team significantly higher in table (#{ap} vs #{hp})")
+        if hp and ap:
+            pos_diff = abs(hp - ap)
+            if hp < ap - 5:
+                analysis['key_factors'].append(f"📊 {home} significantly higher in table (#{hp} vs #{ap})")
+            elif ap < hp - 5:
+                analysis['key_factors'].append(f"📊 {away} significantly higher in table (#{ap} vs #{hp})")
+            elif pos_diff <= 2:
+                analysis['key_factors'].append(f"⚖️ Teams close in table (#{hp} vs #{ap})")
 
         # H2H
         h2h = md.get('head_to_head', {}).get('summary', {})
         if h2h.get('home_win_pct', 0) >= 60:
-            analysis['key_factors'].append(f"📜 Home team dominates H2H ({h2h['home_win_pct']}% wins)")
+            analysis['key_factors'].append(f"📜 {home} dominates H2H ({h2h['home_win_pct']}% wins)")
         elif h2h.get('away_win_pct', 0) >= 60:
-            analysis['key_factors'].append(f"📜 Away team dominates H2H ({h2h['away_win_pct']}% wins)")
+            analysis['key_factors'].append(f"📜 {away} dominates H2H ({h2h['away_win_pct']}% wins)")
+        elif h2h.get('draw_pct', 0) >= 50:
+            analysis['key_factors'].append(f"📜 H2H often ends in draw ({h2h['draw_pct']}% draws)")
 
         # Trends
         for t in md.get('trends', []):
             if t.get('percentage', 0) >= 90:
                 analysis['key_factors'].append(f"📈 {t['description']} ({t['record']} = {t['percentage']}%)")
+        
+        # Draw indicators
+        if hw <= 2 and aw <= 2 and hd >= 2 and ad >= 2:
+            analysis['key_factors'].append(f"🤝 Both teams draw often - draw possible")
+        
+        # Prediction confidence indicator
+        result_conf = pred['result']['confidence']
+        if result_conf >= 0.55:
+            analysis['key_factors'].append(f"🎯 Strong prediction confidence ({result_conf*100:.0f}%)")
 
         # Value bets
         market = md.get('odds', {})
@@ -605,8 +653,9 @@ class FootballPredictionSystem:
         
         # ── Key Factors (Weighted Analysis) ──
         if pred.get('factor_analysis'):
+            print()
             print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
-            print(f"  {C.BOLD}🔑 KEY FACTORS (WEIGHTED ANALYSIS){C.RESET}")
+            print(f"  {C.BOLD}📊 WEIGHTED FACTOR ANALYSIS{C.RESET}")
             print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
             
             fa = pred['factor_analysis']
@@ -820,6 +869,12 @@ class FootballPredictionSystem:
         print(f"  {C.BOLD}📝 PREDICTION SUMMARY{C.RESET}")
         print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
         
+        # Match header
+        print(f"  {C.CYAN}{home}{C.RESET} vs {C.MAGENTA}{away}{C.RESET}")
+        league = md.get('match_info', {}).get('league', 'Unknown League')
+        print(f"  {C.DIM}League: {league}{C.RESET}")
+        print()
+        
         # Sort recommendations by confidence
         recommendations = []
         
@@ -849,7 +904,16 @@ class FootballPredictionSystem:
         for i, rec in enumerate(recommendations):
             emoji = "🎯" if i == 0 else "  "
             conf_label = "HIGH" if rec['confidence'] >= 60 else ("MEDIUM" if rec['confidence'] >= 40 else "LOW")
-            print(f"  {emoji} {rec['type']}: {rec['label']} ({rec['confidence']:.0f}% {conf_label})")
+            conf_col = C.GREEN if conf_label == "HIGH" else (C.YELLOW if conf_label == "MEDIUM" else C.RED)
+            print(f"  {emoji} {rec['type']}: {C.BOLD}{rec['label']}{C.RESET} ({conf_col}{rec['confidence']:.0f}% {conf_label}{C.RESET})")
+        
+        # Value bets in summary
+        if analysis.get('value_bets'):
+            print()
+            print(f"  {C.GREEN}💰 Value Bets:{C.RESET}")
+            for vb in analysis['value_bets'][:2]:
+                lbl = {'1': f'{home} Win', 'X': 'Draw', '2': f'{away} Win'}.get(vb['outcome'], vb['outcome'])
+                print(f"    • {lbl}: {C.BOLD}{vb['market']:.2f}{C.RESET} (fair: {vb['fair']:.2f}, +{vb['value_pct']:.0f}% value)")
         
         # Generate detailed narrative for the top recommendation
         narrative_lines = []
@@ -921,6 +985,15 @@ class FootballPredictionSystem:
         # Print narrative
         for line in narrative_lines:
             print(f"  {line}")
+        
+        # ── KEY FACTORS (Narrative) ──
+        if analysis.get('key_factors'):
+            print()
+            print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
+            print(f"  {C.BOLD}🔑 KEY FACTORS{C.RESET}")
+            print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
+            for factor in analysis['key_factors'][:5]:  # Show top 5 factors
+                print(f"  {factor}")
         
         # Confidence
         print()

@@ -6,27 +6,27 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "sl",
-    "match_count": 13,
+    "match_count": 10,
     "teams": {
       "East End Lions FC": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "SLIFA Mount Aureol": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Ports Authority": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Bai Bureh Warriors": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Abacha City": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Bhantal": {
         "home_matches": 0,
@@ -42,8 +42,8 @@
       }
     }
   },
-  "example_count": 8,
+  "example_count": 5,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T08:11:07.036156"
+  "trained_at": "2026-02-13T19:32:55.362110"
 }

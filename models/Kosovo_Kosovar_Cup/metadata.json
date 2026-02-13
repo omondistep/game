@@ -6,23 +6,23 @@
     "league": "Kosovar Cup",
     "league_url_path": "",
     "country_code": "xk",
-    "match_count": 10,
+    "match_count": 11,
     "teams": {
       "Drita": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "KF Llapi": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "KF Drenica": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "KF Ferizaj": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "FK Dukagjin": {
         "home_matches": 1,
@@ -39,11 +39,35 @@
       "Ballkani": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "FC Vushtrria": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "KF Vellaznimi": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Gjilani": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "KF Liria": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "KF Trepca 89": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "KF Malisheva": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 6,
+  "example_count": 7,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T08:11:13.254507"
+  "trained_at": "2026-02-13T19:33:03.044720"
 }

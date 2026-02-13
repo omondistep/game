@@ -8,7 +8,7 @@
     "country_code": "sv",
     "match_count": 52,
     "teams": {
-      "Inter F.A": {
+      "Inter FA": {
         "home_matches": 2,
         "away_matches": 3
       },
@@ -20,11 +20,11 @@
         "home_matches": 3,
         "away_matches": 2
       },
-      "Lu\u00eds \u00c1ngel Firpo": {
+      "Luis Angel Firpo": {
         "home_matches": 2,
         "away_matches": 2
       },
-      "CD \u00c1guila": {
+      "CD Aguila": {
         "home_matches": 3,
         "away_matches": 2
       },
@@ -40,11 +40,11 @@
         "home_matches": 2,
         "away_matches": 2
       },
-      "Municipal Lime\u00f1o": {
+      "Municipal Limeno": {
         "home_matches": 2,
         "away_matches": 2
       },
-      "Isidro Metap\u00e1n": {
+      "Isidro Metapan": {
         "home_matches": 2,
         "away_matches": 2
       },
@@ -52,7 +52,7 @@
         "home_matches": 2,
         "away_matches": 2
       },
-      "Platense (SLV)": {
+      "Platense SLV": {
         "home_matches": 2,
         "away_matches": 3
       }
@@ -61,5 +61,5 @@
   "example_count": 26,
   "result_accuracy": 0.16666666666666666,
   "ou_accuracy": 0.5,
-  "trained_at": "2026-02-13T09:55:19.014933"
+  "trained_at": "2026-02-13T19:32:56.225113"
 }

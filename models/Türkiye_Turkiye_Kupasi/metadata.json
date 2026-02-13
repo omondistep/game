@@ -48,7 +48,7 @@
         "home_matches": 0,
         "away_matches": 1
       },
-      "Fatih Karag\u00fcmr\u00fck": {
+      "Fatih Karagumruk": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -60,11 +60,11 @@
         "home_matches": 1,
         "away_matches": 0
       },
-      "Ey\u00fcpspor": {
+      "Eyupspor": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Ke\u00e7i\u00f6reng\u00fcc\u00fc": {
+      "Keciorengucu": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -76,7 +76,7 @@
         "home_matches": 1,
         "away_matches": 0
       },
-      "Alia\u011fa FK": {
+      "Aliaga FK": {
         "home_matches": 0,
         "away_matches": 1
       },
@@ -88,7 +88,7 @@
         "home_matches": 0,
         "away_matches": 1
       },
-      "Fenerbah\u00e7e": {
+      "Fenerbahce": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -101,5 +101,5 @@
   "example_count": 11,
   "result_accuracy": 0.3333333333333333,
   "ou_accuracy": 0.6666666666666666,
-  "trained_at": "2026-02-13T09:55:22.902640"
+  "trained_at": "2026-02-13T19:32:59.852686"
 }

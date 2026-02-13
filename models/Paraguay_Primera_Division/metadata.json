@@ -8,7 +8,7 @@
     "country_code": "py",
     "match_count": 44,
     "teams": {
-      "Nacional Asunci\u00f3n": {
+      "Nacional Asuncion": {
         "home_matches": 3,
         "away_matches": 1
       },
@@ -16,7 +16,7 @@
         "home_matches": 2,
         "away_matches": 2
       },
-      "Cerro Porte\u00f1o": {
+      "Cerro Porteno": {
         "home_matches": 2,
         "away_matches": 2
       },
@@ -24,11 +24,11 @@
         "home_matches": 2,
         "away_matches": 2
       },
-      "Olimpia Asunci\u00f3n": {
+      "Olimpia Asuncion": {
         "home_matches": 2,
         "away_matches": 2
       },
-      "Club Guaran\u00ed": {
+      "Club Guarani": {
         "home_matches": 1,
         "away_matches": 3
       },
@@ -36,7 +36,7 @@
         "home_matches": 2,
         "away_matches": 2
       },
-      "Club Rubio \u00d1u": {
+      "Club Rubio Nu": {
         "home_matches": 2,
         "away_matches": 2
       },
@@ -61,5 +61,5 @@
   "example_count": 22,
   "result_accuracy": 0.4,
   "ou_accuracy": 0.4,
-  "trained_at": "2026-02-13T09:55:14.517768"
+  "trained_at": "2026-02-13T19:32:51.118862"
 }

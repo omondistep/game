@@ -8,11 +8,11 @@
     "country_code": "uy",
     "match_count": 10,
     "teams": {
-      "Albion FC (URU)": {
+      "Albion FC URU": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Liverpool (URU)": {
+      "Liverpool URU": {
         "home_matches": 0,
         "away_matches": 1
       },
@@ -24,7 +24,7 @@
         "home_matches": 0,
         "away_matches": 1
       },
-      "Pe\u00f1arol": {
+      "Penarol": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -36,7 +36,7 @@
         "home_matches": 1,
         "away_matches": 0
       },
-      "Nacional (URU)": {
+      "Nacional URU": {
         "home_matches": 0,
         "away_matches": 1
       },
@@ -53,5 +53,5 @@
   "example_count": 5,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T09:55:25.256303"
+  "trained_at": "2026-02-13T19:33:01.616600"
 }

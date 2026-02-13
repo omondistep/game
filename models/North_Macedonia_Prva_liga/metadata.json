@@ -9,20 +9,20 @@
     "match_count": 10,
     "teams": {
       "Shkendija 79": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "FC Struga": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "FK Shkupi": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Tikves Kavadarci": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Vardar Skopje": {
         "home_matches": 1,
@@ -39,11 +39,27 @@
       "Bashkimi Kumanovo": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Academy Pandev": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Makedonija GP": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Pelister Bitola": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Rabotnicki Skopje": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
   "example_count": 6,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T08:10:57.299889"
+  "trained_at": "2026-02-13T19:32:46.276147"
 }

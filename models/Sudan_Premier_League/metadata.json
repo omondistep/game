@@ -6,7 +6,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "sd",
-    "match_count": 78,
+    "match_count": 81,
     "teams": {
       "Alfalah Atbra": {
         "home_matches": 2,
@@ -58,7 +58,7 @@
       },
       "Al Hilal Al Sudani": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Kober Khartoum": {
         "home_matches": 2,
@@ -69,20 +69,20 @@
         "away_matches": 0
       },
       "Hilal Al Fasher": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 3
       },
-      "Al Shorta (SUD)": {
-        "home_matches": 2,
+      "Al Shorta SUD": {
+        "home_matches": 3,
         "away_matches": 0
       },
       "Merghani Kassala": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Haidoub FC": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Hay Al Wadi": {
         "home_matches": 2,
@@ -102,12 +102,12 @@
       },
       "Hilal Al Sahel": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       }
     }
   },
-  "example_count": 38,
-  "result_accuracy": 0.5,
-  "ou_accuracy": 0.875,
-  "trained_at": "2026-02-13T09:55:17.243914"
+  "example_count": 41,
+  "result_accuracy": 0.5555555555555556,
+  "ou_accuracy": 0.4444444444444444,
+  "trained_at": "2026-02-13T19:32:54.132067"
 }

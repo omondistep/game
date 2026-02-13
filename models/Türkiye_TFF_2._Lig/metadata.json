@@ -68,11 +68,11 @@
         "home_matches": 1,
         "away_matches": 0
       },
-      "Ineg\u00f6lspor": {
+      "Inegolspor": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Karacabey Bld.": {
+      "Karacabey Bld": {
         "home_matches": 2,
         "away_matches": 0
       },
@@ -96,7 +96,7 @@
         "home_matches": 0,
         "away_matches": 2
       },
-      "Mu\u011flaspor": {
+      "Muglaspor": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -112,15 +112,15 @@
         "home_matches": 0,
         "away_matches": 1
       },
-      "I\u00e7el Idman Yurdu": {
+      "Icel Idman Yurdu": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Kahramanmara\u015f \u0130stiklalsp": {
+      "Kahramanmaras Istiklalsp": {
         "home_matches": 0,
         "away_matches": 2
       },
-      "Arnavutk\u00f6y Bld.": {
+      "Arnavutkoy Bld": {
         "home_matches": 2,
         "away_matches": 0
       },
@@ -132,11 +132,11 @@
         "home_matches": 2,
         "away_matches": 0
       },
-      "68 Aksaray Bld.": {
+      "68 Aksaray Bld": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Alia\u011fa FK": {
+      "Aliaga FK": {
         "home_matches": 2,
         "away_matches": 0
       },
@@ -165,5 +165,5 @@
   "example_count": 25,
   "result_accuracy": 0.6,
   "ou_accuracy": 0.4,
-  "trained_at": "2026-02-13T09:55:22.149440"
+  "trained_at": "2026-02-13T19:32:59.079730"
 }

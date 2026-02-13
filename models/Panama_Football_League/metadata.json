@@ -6,60 +6,60 @@
     "league": "Football League",
     "league_url_path": "",
     "country_code": "pa",
-    "match_count": 34,
+    "match_count": 40,
     "teams": {
-      "CD Universitario": {
-        "home_matches": 1,
+      "Herrera FC": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Union Cocle": {
+        "home_matches": 2,
         "away_matches": 2
       },
       "CAI de La Chorrera": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
-      },
-      "CD \u00c1rabe Unido": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Alianza FC (PAN)": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Uni\u00f3n Cocl\u00e9": {
-        "home_matches": 2,
-        "away_matches": 1
       },
       "Veraguas CD": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
+      },
+      "CD Plaza Amador": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CD Arabe Unido": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CD Universitario": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Alianza FC PAN": {
+        "home_matches": 2,
+        "away_matches": 2
       },
       "Tauro FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Sporting SM FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "UMECIT": {
         "home_matches": 2,
-        "away_matches": 1
-      },
-      "CD Plaza Amador": {
-        "home_matches": 1,
         "away_matches": 2
-      },
-      "Herrera FC": {
-        "home_matches": 1,
-        "away_matches": 1
       },
       "San Francisco FC": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       }
     }
   },
-  "example_count": 17,
-  "result_accuracy": 0.5,
-  "ou_accuracy": 0.25,
-  "trained_at": "2026-02-13T09:55:13.833607"
+  "example_count": 23,
+  "result_accuracy": 0.8,
+  "ou_accuracy": 0.4,
+  "trained_at": "2026-02-13T19:32:50.038057"
 }

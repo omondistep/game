@@ -6,15 +6,19 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "rw",
-    "match_count": 14,
+    "match_count": 15,
     "teams": {
+      "Musanze": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Merreikh Al Sudan": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
       "Gicumbi": {
         "home_matches": 1,
         "away_matches": 0
-      },
-      "Musanze": {
-        "home_matches": 0,
-        "away_matches": 1
       },
       "Amagaju": {
         "home_matches": 1,
@@ -58,8 +62,8 @@
       }
     }
   },
-  "example_count": 7,
+  "example_count": 8,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T09:55:15.938699"
+  "trained_at": "2026-02-13T19:32:52.991677"
 }

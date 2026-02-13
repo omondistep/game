@@ -6,7 +6,7 @@
     "league": "Liga de Expansion MX",
     "league_url_path": "",
     "country_code": "mx",
-    "match_count": 34,
+    "match_count": 35,
     "teams": {
       "Atlante FC": {
         "home_matches": 2,
@@ -26,14 +26,14 @@
       },
       "Cancun": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Alebrijes de Oaxaca": {
         "home_matches": 1,
         "away_matches": 2
       },
-      "Venados Yucat\u00e1n": {
-        "home_matches": 2,
+      "Venados Yucatan": {
+        "home_matches": 3,
         "away_matches": 1
       },
       "Dorados Sinaloa": {
@@ -52,7 +52,7 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Tepatitl\u00e1n de Morelos": {
+      "Tepatitlan de Morelos": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -70,8 +70,8 @@
       }
     }
   },
-  "example_count": 16,
-  "result_accuracy": 0.0,
+  "example_count": 17,
+  "result_accuracy": 0.75,
   "ou_accuracy": 0.5,
-  "trained_at": "2026-02-13T09:55:10.338858"
+  "trained_at": "2026-02-13T19:32:47.297704"
 }

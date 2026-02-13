@@ -6,23 +6,23 @@
     "league": "Football League",
     "league_url_path": "",
     "country_code": "ph",
-    "match_count": 14,
+    "match_count": 12,
     "teams": {
       "Kaya FC": {
-        "home_matches": 3,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Garelli United": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Tuloy": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Philippine Army": {
         "home_matches": 0,
-        "away_matches": 3
+        "away_matches": 2
       },
       "Manila Digger": {
         "home_matches": 1,
@@ -50,8 +50,8 @@
       }
     }
   },
-  "example_count": 8,
+  "example_count": 6,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T08:11:02.589430"
+  "trained_at": "2026-02-13T19:32:50.382507"
 }

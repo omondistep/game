@@ -6,8 +6,16 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "ke",
-    "match_count": 10,
+    "match_count": 11,
     "teams": {
+      "Bidco United": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Homeboyz FC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
       "Bandari FC": {
         "home_matches": 1,
         "away_matches": 0
@@ -24,15 +32,7 @@
         "home_matches": 0,
         "away_matches": 1
       },
-      "Homeboyz FC": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
       "Mara Sugar": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Bidco United": {
         "home_matches": 0,
         "away_matches": 1
       },
@@ -46,8 +46,8 @@
       }
     }
   },
-  "example_count": 5,
+  "example_count": 6,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T17:11:34.305128"
+  "trained_at": "2026-02-13T19:32:44.244610"
 }

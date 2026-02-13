@@ -6,8 +6,16 @@
     "league": "Qatar Stars Cup",
     "league_url_path": "",
     "country_code": "qa",
-    "match_count": 12,
+    "match_count": 15,
     "teams": {
+      "Shamal SC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Qatar SC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
       "Muaither SC": {
         "home_matches": 1,
         "away_matches": 0
@@ -20,13 +28,9 @@
         "home_matches": 1,
         "away_matches": 0
       },
-      "Qatar SC": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
       "Al Waab SC": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Mesaimeer SC": {
         "home_matches": 0,
@@ -44,22 +48,26 @@
         "home_matches": 1,
         "away_matches": 0
       },
-      "Shamal SC": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
       "Sailiya SC": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Al Bidda SC": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Al-Duhail": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Al Wakra": {
+        "home_matches": 1,
+        "away_matches": 0
       }
     }
   },
-  "example_count": 6,
+  "example_count": 9,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T09:55:15.232938"
+  "trained_at": "2026-02-13T19:32:51.925697"
 }

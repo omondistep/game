@@ -78,5 +78,107 @@
       "model_trained": true
     },
     "saved_at": "2026-02-13T16:30:07.921816"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/celtic-rangers-2434437",
+    "prediction": {
+      "prediction_method": "ml",
+      "result": {
+        "prediction": "1",
+        "probabilities": {
+          "1": 0.4229,
+          "X": 0.3324,
+          "2": 0.2447
+        },
+        "computed_odds": {
+          "1": 2.36,
+          "X": 3.01,
+          "2": 4.09
+        },
+        "confidence": 0.4229
+      },
+      "over_under": {
+        "prediction": "Over",
+        "probabilities": {
+          "Under": 0.4431,
+          "Over": 0.5569
+        },
+        "computed_odds": {
+          "Under": 2.26,
+          "Over": 1.8
+        },
+        "confidence": 0.5569
+      },
+      "model_trained": true
+    },
+    "saved_at": "2026-02-13T19:53:54.386705"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/liverpool-arsenal-2434437",
+    "prediction": {
+      "prediction_method": "ml",
+      "result": {
+        "prediction": "1",
+        "probabilities": {
+          "1": 0.4229,
+          "X": 0.3324,
+          "2": 0.2447
+        },
+        "computed_odds": {
+          "1": 2.36,
+          "X": 3.01,
+          "2": 4.09
+        },
+        "confidence": 0.4229
+      },
+      "over_under": {
+        "prediction": "Over",
+        "probabilities": {
+          "Under": 0.4431,
+          "Over": 0.5569
+        },
+        "computed_odds": {
+          "Under": 2.26,
+          "Over": 1.8
+        },
+        "confidence": 0.5569
+      },
+      "model_trained": true
+    },
+    "saved_at": "2026-02-13T19:55:13.586286"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/uni\u00f3n-santa-fe-san-lorenzo-2417183",
+    "prediction": {
+      "prediction_method": "league_ml",
+      "result": {
+        "prediction": "1",
+        "probabilities": {
+          "1": 0.5122,
+          "X": 0.3856,
+          "2": 0.1022
+        },
+        "computed_odds": {
+          "1": 1.95,
+          "X": 2.59,
+          "2": 9.78
+        },
+        "confidence": 0.5122
+      },
+      "over_under": {
+        "prediction": "Over",
+        "probabilities": {
+          "Under": 0.4334,
+          "Over": 0.5666
+        },
+        "computed_odds": {
+          "Under": 2.31,
+          "Over": 1.76
+        },
+        "confidence": 0.5666
+      },
+      "model_trained": true
+    },
+    "saved_at": "2026-02-13T20:12:00.076606"
   }
 ]

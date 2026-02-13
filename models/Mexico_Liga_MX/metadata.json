@@ -24,7 +24,7 @@
         "home_matches": 0,
         "away_matches": 2
       },
-      "FC Ju\u00e1rez": {
+      "FC Juarez": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -32,7 +32,7 @@
         "home_matches": 0,
         "away_matches": 2
       },
-      "Club Am\u00e9rica": {
+      "Club America": {
         "home_matches": 2,
         "away_matches": 0
       },
@@ -48,7 +48,7 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Atl\u00e9tico San Luis": {
+      "Atletico San Luis": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -64,7 +64,7 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Club Le\u00f3n": {
+      "Club Leon": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -72,7 +72,7 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Quer\u00e9taro FC": {
+      "Queretaro FC": {
         "home_matches": 2,
         "away_matches": 0
       },
@@ -85,5 +85,5 @@
   "example_count": 18,
   "result_accuracy": 0.75,
   "ou_accuracy": 0.25,
-  "trained_at": "2026-02-13T09:55:09.839250"
+  "trained_at": "2026-02-13T19:32:46.942301"
 }

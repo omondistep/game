@@ -8,7 +8,7 @@
     "country_code": "tr",
     "match_count": 83,
     "teams": {
-      "Anadolu \u00dcniv.": {
+      "Anadolu Univ": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -32,7 +32,7 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "\u00c7ayelispor": {
+      "Cayelispor": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -48,7 +48,7 @@
         "home_matches": 1,
         "away_matches": 3
       },
-      "Sebat Gen\u00e7lik": {
+      "Sebat Genclik": {
         "home_matches": 2,
         "away_matches": 1
       },
@@ -56,7 +56,7 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Karadeniz Ere\u011fli BSK": {
+      "Karadeniz Eregli BSK": {
         "home_matches": 2,
         "away_matches": 1
       },
@@ -72,15 +72,15 @@
         "home_matches": 0,
         "away_matches": 2
       },
-      "Malatya Ye\u015filyurt Bld.": {
+      "Malatya Yesilyurt Bld": {
         "home_matches": 2,
         "away_matches": 1
       },
-      "12 Bing\u00f6lspor": {
+      "12 Bingolspor": {
         "home_matches": 1,
         "away_matches": 1
       },
-      "Karak\u00f6pr\u00fc Bld.": {
+      "Karakopru Bld": {
         "home_matches": 2,
         "away_matches": 1
       },
@@ -92,19 +92,19 @@
         "home_matches": 2,
         "away_matches": 1
       },
-      "Ni\u011fde Belediyesispor": {
+      "Nigde Belediyesispor": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Kapadokya G\u00f6remespor": {
+      "Kapadokya Goremespor": {
         "home_matches": 2,
         "away_matches": 1
       },
-      "K\u0131r\u0131kkale B\u00fcy\u00fck": {
+      "K\u0131r\u0131kkale Buyuk": {
         "home_matches": 1,
         "away_matches": 1
       },
-      "T\u00fcrk Metal 1963": {
+      "Turk Metal 1963": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -124,15 +124,15 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "D\u00fczcespor": {
+      "Duzcespor": {
         "home_matches": 2,
         "away_matches": 0
       },
-      "Karab\u00fck \u0130dman Yurdu": {
+      "Karabuk Idman Yurdu": {
         "home_matches": 0,
         "away_matches": 2
       },
-      "Talasg\u00fcc\u00fc Belediyespor": {
+      "Talasgucu Belediyespor": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -148,11 +148,11 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Kestel \u00c7ilek": {
+      "Kestel Cilek": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "\u00c7ankaya FK": {
+      "Cankaya FK": {
         "home_matches": 1,
         "away_matches": 0
       },
@@ -168,7 +168,7 @@
         "home_matches": 1,
         "away_matches": 0
       },
-      "\u0130neg\u00f6l Kafkaspor": {
+      "Inegol Kafkaspor": {
         "home_matches": 0,
         "away_matches": 1
       },
@@ -176,11 +176,11 @@
         "home_matches": 1,
         "away_matches": 0
       },
-      "Nil\u00fcfer Belediye": {
+      "Nilufer Belediye": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Beykoz \u0130shakl\u0131spor": {
+      "Beykoz Ishakl\u0131spor": {
         "home_matches": 0,
         "away_matches": 1
       },
@@ -192,7 +192,7 @@
         "home_matches": 0,
         "away_matches": 1
       },
-      "\u0130nk\u0131lapspor": {
+      "Ink\u0131lapspor": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -201,5 +201,5 @@
   "example_count": 41,
   "result_accuracy": 0.4444444444444444,
   "ou_accuracy": 0.6666666666666666,
-  "trained_at": "2026-02-13T09:55:22.551174"
+  "trained_at": "2026-02-13T19:32:59.486130"
 }

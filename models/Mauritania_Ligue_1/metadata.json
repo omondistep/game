@@ -6,10 +6,10 @@
     "league": "Ligue 1",
     "league_url_path": "",
     "country_code": "mr",
-    "match_count": 11,
+    "match_count": 12,
     "teams": {
       "Pompiers": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Nouadhibou": {
@@ -20,7 +20,7 @@
         "home_matches": 2,
         "away_matches": 1
       },
-      "Tevragh-Ze\u00efne": {
+      "Tevragh-Zeine": {
         "home_matches": 0,
         "away_matches": 1
       },
@@ -28,18 +28,22 @@
         "home_matches": 1,
         "away_matches": 0
       },
-      "Nouakchott King's": {
+      "Nouakchott Kings": {
         "home_matches": 1,
         "away_matches": 0
       },
       "Ksar": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Gendrim": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 5,
+  "example_count": 6,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T13:17:03.909534"
+  "trained_at": "2026-02-13T19:32:46.607870"
 }
