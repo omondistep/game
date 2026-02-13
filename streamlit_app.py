@@ -430,6 +430,9 @@ def main():
                         # Scrape match data
                         match_data = scraper.scrape_match(result_url, prompt_user=False)
                         if match_data:
+                            # Ensure URL is in match_data
+                            match_data['url'] = result_url
+                            
                             # Add result
                             result_str = '1' if home_score > away_score else ('2' if away_score > home_score else 'X')
                             match_data['actual_result'] = {
@@ -444,7 +447,7 @@ def main():
                             if success:
                                 st.success("✅ Result recorded successfully! The model will use this for future training.")
                             else:
-                                st.error("Failed to record result.")
+                                st.error("Failed to record result. The match may not have a valid URL.")
                         else:
                             st.error("Failed to scrape match data. Check if the URL is valid.")
                     except Exception as e:

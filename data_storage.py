@@ -171,7 +171,9 @@ class MatchDataStorage:
             
             return False
         except Exception as e:
+            import traceback
             print(f"Error saving match with result: {e}")
+            traceback.print_exc()
             return False
 
     def _update_training_data(self, url: str, result_data: Dict, prediction_correct: Dict = None):
@@ -179,20 +181,24 @@ class MatchDataStorage:
         from prediction_model import FootballPredictor
         
         matches = self._load_json(self.matches_file)
-        match_data = next((m for m in matches if m.get('url') == url), None)
+        match_data = next((m for m in matches if isinstance(m, dict) and m.get('url') == url), None)
         if not match_data:
             return
         
         match_info = match_data.get('match_info', {})
-        league = match_info.get('league', 'Unknown')
+        if isinstance(match_info, str):
+            match_info = {}
+        league = match_info.get('league', 'Unknown') if isinstance(match_info, dict) else 'Unknown'
         
         features = FootballPredictor.extract_features(match_data)
         features['league'] = league  # Add league to features
         
         # Add prediction history features
         teams = match_data.get('teams', {})
-        home_team = teams.get('home', '')
-        away_team = teams.get('away', '')
+        if isinstance(teams, str):
+            teams = {}
+        home_team = teams.get('home', '') if isinstance(teams, dict) else ''
+        away_team = teams.get('away', '') if isinstance(teams, dict) else ''
         
         # Get team prediction history
         home_history = self._get_team_prediction_history(home_team)
@@ -202,7 +208,7 @@ class MatchDataStorage:
         # Calculate accuracy percentages
         features['home_team_prediction_correct_pct'] = self._calc_accuracy(home_history, is_home=True)
         features['away_team_prediction_correct_pct'] = self._calc_accuracy(away_history, is_home=False)
-        features['league_prediction_correct_pct'] = league_history.get('accuracy', 0.5)
+        features['league_prediction_correct_pct'] = league_history.get('accuracy', 0.5) if isinstance(league_history, dict) else 0.5
         
         # Add overall model accuracy as feature
         features['overall_model_accuracy'] = self._get_overall_model_accuracy()
@@ -218,7 +224,7 @@ class MatchDataStorage:
         training_data = self.get_training_data()
         
         # Group by league
-        league_entry = next((t for t in training_data if t.get('league') == league), None)
+        league_entry = next((t for t in training_data if isinstance(t, dict) and t.get('league') == league), None)
         if not league_entry:
             league_entry = {
                 'league': league,
@@ -247,13 +253,16 @@ class MatchDataStorage:
         """Get overall prediction accuracy for a league."""
         training = self.get_training_data()
         for entry in training:
+            if not isinstance(entry, dict):
+                continue
             if entry.get('league') == league:
                 examples = entry.get('examples', [])
                 if len(examples) < 3:
                     return {'accuracy': 0.5, 'count': len(examples)}
                 # Calculate accuracy from examples with labels
-                correct = sum(1 for ex in examples if ex.get('labels', {}).get('result') == 
-                           ex.get('features', {}).get('_last_prediction_result'))
+                correct = sum(1 for ex in examples if isinstance(ex, dict) and 
+                             ex.get('labels', {}).get('result') == 
+                             ex.get('features', {}).get('_last_prediction_result'))
                 return {
                     'accuracy': correct / len(examples) if examples else 0.5,
                     'count': len(examples)
@@ -265,7 +274,8 @@ class MatchDataStorage:
         if not history:
             return 0.5  # Default neutral
         
-        filtered = [h for h in history if h.get('is_home') == is_home]
+        # Filter to only dict items and correct is_home
+        filtered = [h for h in history if isinstance(h, dict) and h.get('is_home') == is_home]
         if len(filtered) < 2:
             return 0.5
         
@@ -417,7 +427,20 @@ class MatchDataStorage:
     def get_training_data(self) -> List[Dict]:
         if os.path.exists(self.training_data_file):
             with open(self.training_data_file, 'rb') as f:
-                return pickle.load(f)
+                data = pickle.load(f)
+            # Handle both dict and list formats
+            if isinstance(data, dict):
+                # Convert dict format to list format
+                result = []
+                for league_code, entry in data.items():
+                    if isinstance(entry, dict):
+                        entry_copy = entry.copy()
+                        entry_copy['league_code'] = league_code
+                        if 'league' not in entry_copy and 'league_info' in entry_copy:
+                            entry_copy['league'] = entry_copy.get('league_info', {}).get('name', league_code)
+                        result.append(entry_copy)
+                return result
+            return data
         return []
 
     def get_match_by_url(self, url: str) -> Optional[Dict]:

@@ -986,12 +986,53 @@ class ForebetScraper:
     def _extract_standings(self, soup: BeautifulSoup) -> Dict:
         standings = {'home': None, 'away': None, 'home_points': None, 'away_points': None}
         try:
-            tc = soup.find('div', class_='teamtablesp_container')
-            if tc:
-                positions = re.findall(r'(\d+)(?:st|nd|rd|th)\s+place', tc.get_text())
-                if len(positions) >= 2:
-                    standings['home'] = int(positions[0])
-                    standings['away'] = int(positions[1])
+            # Method 1: Use league table to find team positions (most reliable)
+            league_table = self._extract_league_table(soup)
+            if league_table:
+                teams = self._extract_teams(soup)
+                home_team = teams.get('home', '')
+                away_team = teams.get('away', '')
+                
+                # Helper function for team name matching
+                def team_matches(table_name, match_team):
+                    if not table_name or not match_team:
+                        return False
+                    table_lower = table_name.lower().strip()
+                    match_lower = match_team.lower().strip()
+                    # Exact match
+                    if table_lower == match_lower:
+                        return True
+                    # Check if table name contains the match team (for abbreviations)
+                    # But only if the match team is significant (more than 3 chars to avoid "US" matching everything)
+                    if len(match_lower) > 3 and match_lower in table_lower:
+                        return True
+                    if len(table_lower) > 3 and table_lower in match_lower:
+                        return True
+                    return False
+                
+                for entry in league_table:
+                    team_name = entry.get('team', '')
+                    if team_matches(team_name, home_team) and standings['home'] is None:
+                        standings['home'] = entry.get('position')
+                        standings['home_points'] = entry.get('points')
+                    elif team_matches(team_name, away_team) and standings['away'] is None:
+                        standings['away'] = entry.get('position')
+                        standings['away_points'] = entry.get('points')
+            
+            # Method 2: Fallback - Look for "Xth place" pattern (less reliable)
+            # Only use if Method 1 didn't find both positions
+            if standings['home'] is None or standings['away'] is None:
+                tc = soup.find('div', class_='teamtablesp_container')
+                if tc:
+                    positions = re.findall(r'(\d+)(?:st|nd|rd|th)\s+place', tc.get_text())
+                    if len(positions) >= 2:
+                        # Validate - positions should be reasonable (1-30 for most leagues)
+                        pos1, pos2 = int(positions[0]), int(positions[1])
+                        if 1 <= pos1 <= 30 and 1 <= pos2 <= 30:
+                            if standings['home'] is None:
+                                standings['home'] = pos1
+                            if standings['away'] is None:
+                                standings['away'] = pos2
         except Exception as e:
             print(f"Error extracting standings: {e}")
         return standings
