@@ -423,11 +423,30 @@ def main():
             else:
                 with st.spinner("Recording result..."):
                     try:
-                        success = system.record_result(result_url, home_score, away_score)
-                        if success:
-                            st.success("✅ Result recorded successfully! The model will use this for future training.")
+                        # Use storage directly to save result
+                        scraper = get_scraper()
+                        storage = get_storage()
+                        
+                        # Scrape match data
+                        match_data = scraper.scrape_match(result_url, prompt_user=False)
+                        if match_data:
+                            # Add result
+                            result_str = '1' if home_score > away_score else ('2' if away_score > home_score else 'X')
+                            match_data['actual_result'] = {
+                                'result': result_str,
+                                'home_score': home_score,
+                                'away_score': away_score,
+                                'total_goals': home_score + away_score,
+                                'over_under_2_5': 'Over' if (home_score + away_score) > 2.5 else 'Under'
+                            }
+                            
+                            success = storage.save_match_with_result(match_data)
+                            if success:
+                                st.success("✅ Result recorded successfully! The model will use this for future training.")
+                            else:
+                                st.error("Failed to record result.")
                         else:
-                            st.error("Failed to record result. Check if the URL is valid.")
+                            st.error("Failed to scrape match data. Check if the URL is valid.")
                     except Exception as e:
                         st.error(f"Error: {str(e)}")
     
@@ -438,7 +457,7 @@ def main():
         if st.button("📊 Load Statistics", type="primary"):
             with st.spinner("Loading statistics..."):
                 try:
-                    stats = system.get_model_stats()
+                    stats = system.get_statistics()
                     
                     # Display metrics
                     col1, col2, col3, col4 = st.columns(4)
@@ -516,7 +535,7 @@ def main():
                 progress_bar.progress(10, text="Loading training data...")
                 
                 progress_bar.progress(30, text="Training global model...")
-                result = system.train_models(force=force_train)
+                result = system.train_model()
                 
                 progress_bar.progress(70, text="Training league models...")
                 
