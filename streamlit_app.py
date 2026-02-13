@@ -228,61 +228,77 @@ def display_prediction(result):
 
 def display_match_data(match_data):
     """Display detailed match data."""
-    teams = match_data.get('teams', {})
+    if not match_data:
+        st.warning("No match data available")
+        return
+    
+    teams = match_data.get('teams', {}) or {}
     home = teams.get('home', 'Home')
     away = teams.get('away', 'Away')
     
     # Standings
-    standings = match_data.get('standings', {})
-    if standings:
+    standings = match_data.get('standings', {}) or {}
+    if standings and (standings.get('home') or standings.get('away')):
         st.subheader("📊 Standings")
         col1, col2 = st.columns(2)
         
-        home_stand = standings.get('home', {})
-        away_stand = standings.get('away', {})
+        home_stand = standings.get('home', {}) or {}
+        away_stand = standings.get('away', {}) or {}
         
         with col1:
             st.markdown(f"**{home}**")
-            st.write(f"Position: #{home_stand.get('position', 'N/A')}")
-            st.write(f"Points: {home_stand.get('points', 'N/A')}")
-            st.write(f"Form: {home_stand.get('form', 'N/A')}")
+            if home_stand:
+                st.write(f"Position: #{home_stand.get('position', 'N/A')}")
+                st.write(f"Points: {home_stand.get('points', 'N/A')}")
+                st.write(f"Form: {home_stand.get('form', 'N/A')}")
+            else:
+                st.write("No data")
         
         with col2:
             st.markdown(f"**{away}**")
-            st.write(f"Position: #{away_stand.get('position', 'N/A')}")
-            st.write(f"Points: {away_stand.get('points', 'N/A')}")
-            st.write(f"Form: {away_stand.get('form', 'N/A')}")
+            if away_stand:
+                st.write(f"Position: #{away_stand.get('position', 'N/A')}")
+                st.write(f"Points: {away_stand.get('points', 'N/A')}")
+                st.write(f"Form: {away_stand.get('form', 'N/A')}")
+            else:
+                st.write("No data")
     
     # Form
-    form = match_data.get('form', {})
-    if form:
+    form = match_data.get('form', {}) or {}
+    if form and (form.get('home') or form.get('away')):
         st.subheader("📋 Recent Form")
         col1, col2 = st.columns(2)
         
-        home_form = form.get('home', [])
-        away_form = form.get('away', [])
+        home_form = form.get('home', []) or []
+        away_form = form.get('away', []) or []
         
         with col1:
             st.markdown(f"**{home}** (Last 6)")
-            form_str = " ".join([
-                "🟢" if r == 'W' else "🟡" if r == 'D' else "🔴"
-                for r in home_form
-            ])
-            st.write(form_str if form_str else "No data")
+            if home_form:
+                form_str = " ".join([
+                    "🟢" if r == 'W' else "🟡" if r == 'D' else "🔴"
+                    for r in home_form
+                ])
+                st.write(form_str if form_str else "No data")
+            else:
+                st.write("No data")
         
         with col2:
             st.markdown(f"**{away}** (Last 6)")
-            form_str = " ".join([
-                "🟢" if r == 'W' else "🟡" if r == 'D' else "🔴"
-                for r in away_form
-            ])
-            st.write(form_str if form_str else "No data")
+            if away_form:
+                form_str = " ".join([
+                    "🟢" if r == 'W' else "🟡" if r == 'D' else "🔴"
+                    for r in away_form
+                ])
+                st.write(form_str if form_str else "No data")
+            else:
+                st.write("No data")
     
     # H2H
-    h2h = match_data.get('head_to_head', {})
+    h2h = match_data.get('head_to_head', {}) or {}
     if h2h and h2h.get('matches'):
         st.subheader("🤝 Head to Head")
-        summary = h2h.get('summary', {})
+        summary = h2h.get('summary', {}) or {}
         col1, col2, col3 = st.columns(3)
         with col1:
             st.metric(f"{home} Wins", f"{summary.get('home_win_pct', 0)}%")
