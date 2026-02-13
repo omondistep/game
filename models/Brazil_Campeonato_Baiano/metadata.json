@@ -6,47 +6,47 @@
     "league": "Campeonato Baiano",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 41,
+    "match_count": 31,
     "teams": {
       "Galicia BA": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 3,
+        "away_matches": 1
       },
       "Alagoinhas Atletico BA": {
         "home_matches": 1,
         "away_matches": 2
       },
       "Porto BA": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Barcelona BA": {
         "home_matches": 0,
         "away_matches": 2
       },
       "Juazeirense": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Jacuipense BA": {
-        "home_matches": 3,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Bahia de Feira BA": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Jequie": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Capital DF": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Sobradinho DF": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "SE Gama DF": {
         "home_matches": 2,
@@ -57,43 +57,25 @@
         "away_matches": 1
       },
       "Bahia": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Ceilandia DF": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Samambaia DF": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Brasilia FC": {
         "home_matches": 0,
         "away_matches": 1
-      },
-      "Alagoinhas Atl\u00e9tico BA": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Jequi\u00e9": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Parano\u00e1 DF": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Ceil\u00e2ndia DF": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Bras\u00edlia FC": {
-        "home_matches": 0,
-        "away_matches": 1
       }
     }
   },
-  "example_count": 27,
-  "trained_at": "2026-02-12T19:21:38.184465"
+  "example_count": 17,
+  "result_accuracy": 0.25,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-13T18:33:40.429328"
 }

@@ -1,0 +1,235 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/al-nasr-yarmouk-2423736",
+  "timestamp": "2026-02-12T21:53:33.909766",
+  "features": {
+    "home_position": 8,
+    "away_position": 2,
+    "position_diff": 6,
+    "home_form_points": 9,
+    "away_form_points": 13,
+    "home_recent_form": 4,
+    "away_recent_form": 7,
+    "home_wins_l6": 2,
+    "home_draws_l6": 3,
+    "home_losses_l6": 1,
+    "away_wins_l6": 4,
+    "away_draws_l6": 1,
+    "away_losses_l6": 1,
+    "home_scored_avg": 0.875,
+    "home_conceded_avg": 1.25,
+    "away_scored_avg": 2.1538461538461537,
+    "away_conceded_avg": 0.8461538461538461,
+    "expected_total_goals": 2.5625,
+    "home_home_win_rate": 0.0,
+    "home_home_goals_avg": 0.16666666666666666,
+    "away_away_win_rate": 66.66666666666666,
+    "away_away_goals_avg": 2.3333333333333335,
+    "h2h_home_win_pct": null,
+    "h2h_draw_pct": null,
+    "h2h_away_win_pct": null,
+    "home_shots_avg": 7.5,
+    "away_shots_avg": 9.307692307692308,
+    "home_shots_on_target_pct": 42.5,
+    "away_shots_on_target_pct": 40.49586776859504,
+    "home_dangerous_attacks_avg": 48.1875,
+    "away_dangerous_attacks_avg": 34.69230769230769,
+    "home_possession": 45.64,
+    "away_possession": 54.0,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 9.625,
+    "away_fouls_avg": 1.6153846153846154,
+    "home_yellow_avg": 1.25,
+    "away_yellow_avg": 1.3846153846153846,
+    "odds_home": null,
+    "odds_draw": null,
+    "odds_away": null,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "X": 0.36,
+        "2": 0.64
+      },
+      "computed_odds": {
+        "X": 2.78,
+        "2": 1.56
+      },
+      "confidence": 0.64
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Under": 0.5799,
+        "Over": 0.4201
+      },
+      "computed_odds": {
+        "Under": 1.72,
+        "Over": 2.38
+      },
+      "confidence": 0.5799
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "X": 0.36,
+        "2": 0.64
+      },
+      "computed_odds": {
+        "X": 2.78,
+        "2": 1.56
+      },
+      "confidence": 0.64
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Under": 0.5799,
+        "Over": 0.4201
+      },
+      "computed_odds": {
+        "Under": 1.72,
+        "Over": 2.38
+      },
+      "confidence": 0.5799
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.328,
+        "X": 0.2443,
+        "2": 0.4277
+      },
+      "computed_odds": {
+        "1": 3.05,
+        "X": 4.09,
+        "2": 2.34
+      },
+      "confidence": 0.4277
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.631578947368421,
+        "away": 0.9473684210526316,
+        "weight": 0.010453545262509557
+      },
+      "odds_analysis": {
+        "home": 0.39252336448598135,
+        "away": 0.2803738317757009,
+        "weight": 0.3734990228885853
+      },
+      "recent_form": {
+        "home": 0.5,
+        "away": 0.7222222222222222,
+        "weight": 0.37940625696840075
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.010453545262509557
+      },
+      "goals_stats": {
+        "home": 0.40625,
+        "away": 0.8269230769230769,
+        "weight": 0.20528053909297575
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.010453545262509557
+      },
+      "shots_possession": {
+        "home": 0.27384000000000003,
+        "away": 0.3675897435897436,
+        "weight": 0.010453545262509557
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.5625
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 8.6
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 8.4
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 4.2
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.56,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.03,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.010453545262509557,
+      "odds_analysis": 0.3734990228885853,
+      "recent_form": 0.37940625696840075,
+      "top5_performance": 0.010453545262509557,
+      "goals_stats": 0.20528053909297575,
+      "h2h": 0.010453545262509557,
+      "shots_possession": 0.010453545262509557
+    }
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": false,
+    "ml_result": "2",
+    "weighted_result": "2",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Away team in excellent form (4 wins in last 6)",
+      "\ud83d\udcca Away team significantly higher in table (#2 vs #8)"
+    ],
+    "value_bets": [],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Al Nasr (KUW)": [],
+    "Yarmouk (KUW)": []
+  }
+}

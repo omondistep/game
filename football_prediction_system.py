@@ -516,33 +516,18 @@ class FootballPredictionSystem:
             print(f"  {C.BOLD}⚽ GOALS STATISTICS{C.RESET}")
             print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
             print(f"  {'':18} {'Scored':>8} {'Conceded':>10} {'Avg Scr':>9} {'Avg Cnd':>9}")
+            # Format averages to 2 decimal places
+            h_scr_avg = hg.get('scored_avg', 0)
+            h_cnd_avg = hg.get('conceded_avg', 0)
+            a_scr_avg = ag.get('scored_avg', 0)
+            a_cnd_avg = ag.get('conceded_avg', 0)
             print(f"  {C.CYAN}{home:<18}{C.RESET} {hg.get('scored','?'):>8} {hg.get('conceded','?'):>10} "
-                  f"{hg.get('scored_avg','?'):>9} {hg.get('conceded_avg','?'):>9}")
+                  f"{h_scr_avg:>9.2f} {h_cnd_avg:>9.2f}")
             print(f"  {C.MAGENTA}{away:<18}{C.RESET} {ag.get('scored','?'):>8} {ag.get('conceded','?'):>10} "
-                  f"{ag.get('scored_avg','?'):>9} {ag.get('conceded_avg','?'):>9}")
+                  f"{a_scr_avg:>9.2f} {a_cnd_avg:>9.2f}")
 
-        # ── Home / Away Performance ──
-        hm = md.get('home_matches', [])
-        am = md.get('away_matches', [])
-        if hm or am:
-            print()
-            print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
-            print(f"  {C.BOLD}🏟️  HOME / AWAY PERFORMANCE{C.RESET}")
-            print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
-            if hm:
-                hwr = feats.get('home_home_win_rate', 0)
-                print(f"  {C.CYAN}{home} at HOME{C.RESET} (win rate: {C.BOLD}{hwr:.0f}%{C.RESET})")
-                for m in hm[:6]:
-                    sc = f"{m['home_score']}-{m['away_score']}"
-                    ht = f"({m['ht_home']}-{m['ht_away']})"
-                    print(f"    {C.DIM}{m['date']}{C.RESET}  {m['home_team']} {C.BOLD}{sc}{C.RESET} {ht} {m['away_team']} {C.DIM}{m.get('competition','')}{C.RESET}")
-            if am:
-                awr = feats.get('away_away_win_rate', 0)
-                print(f"  {C.MAGENTA}{away} AWAY{C.RESET} (win rate: {C.BOLD}{awr:.0f}%{C.RESET})")
-                for m in am[:6]:
-                    sc = f"{m['home_score']}-{m['away_score']}"
-                    ht = f"({m['ht_home']}-{m['ht_away']})"
-                    print(f"    {C.DIM}{m['date']}{C.RESET}  {m['home_team']} {C.BOLD}{sc}{C.RESET} {ht} {m['away_team']} {C.DIM}{m.get('competition','')}{C.RESET}")
+        # ── Home / Away Performance (skip if already shown above) ──
+        # This section is now combined with "HOME / AWAY PERFORMANCE WITH OPPONENT STRENGTH" above
 
         # ── Head to Head ──
         h2h = md.get('head_to_head', {})
@@ -571,26 +556,35 @@ class FootballPredictionSystem:
             print(f"  {C.BOLD}🎯 SHOTS & POSSESSION{C.RESET}")
             print(f"  {C.BOLD}{'─' * (w - 4)}{C.RESET}")
             def _s(arr):
-                return arr[0] if isinstance(arr, list) and arr else '?'
+                return arr[0] if isinstance(arr, list) and arr else 0
             hgames = gs.get('home', {}).get('games') or 1
             agames = gs.get('away', {}).get('games') or 1
-            print(f"  {'':18} {C.CYAN}{home:>15}{C.RESET}  {C.MAGENTA}{away:>15}{C.RESET}")
-            print(f"  {'Shots/game':18} {_s(hs_stats.get('shots_total',[])):>10}/{hgames:<4}  "
-                  f"{_s(as_stats.get('shots_total',[])):>10}/{agames:<4}")
-            print(f"  {'On target':18} {_s(hs_stats.get('shots_on_target',[])):>15}  "
-                  f"{_s(as_stats.get('shots_on_target',[])):>15}")
-            bp_h = hs_stats.get('ball_poss', [])
-            bp_a = as_stats.get('ball_poss', [])
+            # Truncate team names if too long
+            home_short = home[:15] if len(home) > 15 else home
+            away_short = away[:15] if len(away) > 15 else away
+            print(f"  {'':20} {C.CYAN}{home_short:>15}{C.RESET}  {C.MAGENTA}{away_short:>15}{C.RESET}")
+            # Shots per game
+            h_shots = _s(hs_stats.get('shots_total',[]))
+            a_shots = _s(as_stats.get('shots_total',[]))
+            print(f"  {'Shots/game':20} {h_shots:>10}/{hgames:<4}  {a_shots:>10}/{agames:<4}")
+            # On target
+            h_target = _s(hs_stats.get('shots_on_target',[]))
+            a_target = _s(as_stats.get('shots_on_target',[]))
+            print(f"  {'On target':20} {h_target:>15}  {a_target:>15}")
+            # Possession
+            bp_h = _s(hs_stats.get('ball_poss', []))
+            bp_a = _s(as_stats.get('ball_poss', []))
             if bp_h or bp_a:
-                print(f"  {'Possession':18} {C.BOLD}{_s(bp_h)}%{C.RESET:>13}  {C.BOLD}{_s(bp_a)}%{C.RESET:>13}")
-            pa_h = hs_stats.get('passes_accurate', [0])
-            pt_h = hs_stats.get('passes_total', [1])
-            pa_a = as_stats.get('passes_accurate', [0])
-            pt_a = as_stats.get('passes_total', [1])
-            if isinstance(pt_h, list) and pt_h[0]:
-                acc_h = _s(pa_h) / _s(pt_h) * 100 if _s(pt_h) else 0
-                acc_a = _s(pa_a) / _s(pt_a) * 100 if _s(pt_a) else 0
-                print(f"  {'Pass accuracy':18} {acc_h:>14.0f}%  {acc_a:>14.0f}%")
+                print(f"  {'Possession':20} {C.BOLD}{bp_h:.1f}%{C.RESET:>13}  {C.BOLD}{bp_a:.1f}%{C.RESET:>13}")
+            # Pass accuracy
+            pa_h = _s(hs_stats.get('passes_accurate', [0]))
+            pt_h = _s(hs_stats.get('passes_total', [1]))
+            pa_a = _s(as_stats.get('passes_accurate', [0]))
+            pt_a = _s(as_stats.get('passes_total', [1]))
+            if pt_h and pt_a:
+                acc_h = pa_h / pt_h * 100 if pt_h else 0
+                acc_a = pa_a / pt_a * 100 if pt_a else 0
+                print(f"  {'Pass accuracy':20} {acc_h:>14.0f}%  {acc_a:>14.0f}%")
 
         # ── Trends ──
         trends = md.get('trends', [])
@@ -1130,6 +1124,12 @@ def main():
             with open(fname, 'w') as f:
                 out = {k: v for k, v in result.items() if k != 'match_data'}
                 json.dump(out, f, indent=2, default=str)
+            # Also save to predictions.json for accuracy tracking
+            try:
+                system.storage.save_prediction(url, result.get('prediction', {}))
+                print("✓ Prediction saved for accuracy tracking")
+            except Exception as e:
+                print(f"Warning: Could not save prediction for tracking: {e}")
             return True
         
         elif args.command == 'result':
@@ -1208,6 +1208,12 @@ def main():
             with open(fname, 'w') as f:
                 out = {k: v for k, v in result.items() if k != 'match_data'}
                 json.dump(out, f, indent=2, default=str)
+            # Also save to predictions.json for accuracy tracking
+            try:
+                system.storage.save_prediction(url, result.get('prediction', {}))
+                print("✓ Prediction saved for accuracy tracking")
+            except Exception as e:
+                print(f"Warning: Could not save prediction for tracking: {e}")
             return True
         
         elif args.command == 'result':

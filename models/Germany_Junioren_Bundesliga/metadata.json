@@ -6,15 +6,15 @@
     "league": "Junioren Bundesliga",
     "league_url_path": "",
     "country_code": "de",
-    "match_count": 21,
+    "match_count": 14,
     "teams": {
       "Wacker Burghausen U19": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Carl Zeiss Jena U19": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Viktoria Koln U19": {
         "home_matches": 1,
@@ -22,54 +22,52 @@
       },
       "Duisburg U19": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Ulm U19": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Hamburger SV U19": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Hertha U19": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Bielefeld U19": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Kaiserslautern U19": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Bayern U19": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Nurnberg U19": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Union Berlin U19": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Stuttgart U19": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Energie Cottbus U19": {
         "home_matches": 0,
-        "away_matches": 2
-      },
-      "Viktoria K\u00f6ln U19": {
-        "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       }
     }
   },
-  "example_count": 14,
-  "trained_at": "2026-02-12T19:21:47.880011"
+  "example_count": 7,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:48.861341"
 }

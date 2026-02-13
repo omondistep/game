@@ -6,58 +6,60 @@
     "league": "Premier Division",
     "league_url_path": "",
     "country_code": "ag",
-    "match_count": 37,
+    "match_count": 25,
     "teams": {
       "Pigotts Bullets": {
-        "home_matches": 6,
+        "home_matches": 3,
         "away_matches": 0
       },
       "John Hughes": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Grenades": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Jennings United": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "All Saints United": {
-        "home_matches": 6,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Attacking Saints": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Old Road": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Ottos Rangers": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Garden Stars": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Green City": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Aston Villa": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Potters Tigers": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       }
     }
   },
-  "example_count": 24,
-  "trained_at": "2026-02-12T19:21:29.941619"
+  "example_count": 12,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T18:33:34.732616"
 }

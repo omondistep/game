@@ -6,86 +6,76 @@
     "league": "Liga Revelacao U23",
     "league_url_path": "",
     "country_code": "pt",
-    "match_count": 61,
+    "match_count": 41,
     "teams": {
       "Sporting Braga U23": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Sporting CP U23": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Torreense U23": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Leixoes U23": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Benfica U23": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Santa Clara U23": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Portimonense U23": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "Gil Vicente U23": {
-        "home_matches": 0,
-        "away_matches": 6
-      },
-      "Famalicao U23": {
         "home_matches": 1,
         "away_matches": 1
-      },
-      "Academico Viseu U23": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Maritimo U23": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Rio Ave U23": {
-        "home_matches": 1,
-        "away_matches": 6
-      },
-      "Estrela U23": {
-        "home_matches": 4,
-        "away_matches": 1
-      },
-      "Farense U23": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Estoril U23": {
-        "home_matches": 4,
-        "away_matches": 0
-      },
-      "Vizela U23": {
-        "home_matches": 2,
-        "away_matches": 2
       },
       "Leix\u00f5es U23": {
         "home_matches": 2,
         "away_matches": 1
       },
+      "Benfica U23": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Santa Clara U23": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Portimonense U23": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Gil Vicente U23": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
       "Famalic\u00e3o U23": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Academico Viseu U23": {
         "home_matches": 1,
         "away_matches": 1
       },
       "Mar\u00edtimo U23": {
         "home_matches": 2,
         "away_matches": 1
+      },
+      "Rio Ave U23": {
+        "home_matches": 0,
+        "away_matches": 3
+      },
+      "Estrela U23": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Farense U23": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Estoril U23": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Vizela U23": {
+        "home_matches": 1,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 39,
-  "trained_at": "2026-02-12T19:22:11.536164"
+  "example_count": 19,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.75,
+  "trained_at": "2026-02-13T09:55:14.172289"
 }

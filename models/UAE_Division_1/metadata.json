@@ -6,74 +6,68 @@
     "league": "Division 1",
     "league_url_path": "",
     "country_code": "ae",
-    "match_count": 27,
+    "match_count": 18,
     "teams": {
       "Dubai City Club": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Hatta Club": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Al Dahra": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Al Fujairah Club": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Al Thaid": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Dubba Al Husun": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Al Hamriyah": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Emirates Club": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Al Oruba UAE": {
         "home_matches": 1,
         "away_matches": 1
       },
       "Gulf United": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Arabi UAE": {
         "home_matches": 1,
         "away_matches": 0
       },
       "Masfoot": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Ittifaq": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Dubai United": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Al Oruba (UAE)": {
         "home_matches": 1,
         "away_matches": 1
       },
-      "Al Arabi (UAE)": {
+      "Ittifaq": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Dubai United": {
         "home_matches": 1,
         "away_matches": 0
       }
     }
   },
-  "example_count": 18,
-  "trained_at": "2026-02-12T19:21:29.563501"
+  "example_count": 9,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:34.423391"
 }

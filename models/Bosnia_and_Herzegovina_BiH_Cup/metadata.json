@@ -6,31 +6,31 @@
     "league": "BiH Cup",
     "league_url_path": "",
     "country_code": "ba",
-    "match_count": 13,
+    "match_count": 11,
     "teams": {
       "GOSK Gabela": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Rudar Prijedor": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Sloga Doboj": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Tekstilac Derventa": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Zrinjski Mostar": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Stupcanica": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Radnik Bijeljina": {
         "home_matches": 1,
@@ -47,9 +47,19 @@
       "FK Sarajevo": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "SASK Napredak": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "FK Laktasi": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 8,
-  "trained_at": "2026-02-12T19:21:34.456592"
+  "example_count": 6,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:37.488361"
 }

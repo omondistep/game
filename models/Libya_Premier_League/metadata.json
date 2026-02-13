@@ -6,146 +6,144 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "ly",
-    "match_count": 87,
+    "match_count": 58,
     "teams": {
-      "Al Taawun LIB": {
+      "Al Taawun (LIB)": {
         "home_matches": 1,
         "away_matches": 0
       },
       "Al Anwar": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Darnes SC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Military Union SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Qadisiyah Bani Walid": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Al Malaab El Libby": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Al Suqoor Tobruk": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Sadaka": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Al Khums": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Watan": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Ahli Benghazi": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Borouq": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Abu Salim": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Ahli Tripoli": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Wefaq Ajdabiyah": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Tahaddy Benghazi": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Olympic Zawiya": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Al Ittihad Al Misrati": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Nasr Benghazi": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Khaleej Sirte": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Abilashehar Club": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Al Majd Tripoli": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Al Andalus": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Morooj": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Afriqi Derna SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Akhdar SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Shomooa": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Ittihad Gharyan SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al ittihad FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Tersana Tripoli": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Swehly SC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Al Dahra FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Shabab Al-Ghar": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Al Taawun (LIB)": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       }
     }
   },
-  "example_count": 58,
-  "trained_at": "2026-02-12T19:22:04.372457"
+  "example_count": 29,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T13:17:03.324612"
 }

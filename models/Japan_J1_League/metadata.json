@@ -6,74 +6,76 @@
     "league": "J1 League",
     "league_url_path": "",
     "country_code": "jp",
-    "match_count": 24,
+    "match_count": 17,
     "teams": {
-      "Kyoto Sanga": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
       "Vissel Kobe": {
-        "home_matches": 0,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "V-Varen Nagasaki": {
-        "home_matches": 2,
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Kyoto Sanga": {
+        "home_matches": 1,
         "away_matches": 0
       },
       "Sanfrecce": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Yokohama Marinos": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Machida Zelvia": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "JEF United Chiba": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Urawa Red Diamonds": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "FC Tokyo": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Kashima Antlers": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Cerezo Osaka": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Gamba Osaka": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Avispa Fukuoka": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Fagiano Okayama": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Nagoya Grampus": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Shimizu S-Pulse": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 16,
-  "trained_at": "2026-02-12T19:22:00.910366"
+  "example_count": 9,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:34:00.173596"
 }

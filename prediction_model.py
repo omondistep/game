@@ -856,20 +856,29 @@ class FootballPredictor:
             else:
                 training_data = storage.get_training_data()
         
-        # For new structure: [{'league': 'Serie A', 'examples': [...]}, ...]
-        if training_data and isinstance(training_data[0], dict) and 'examples' in training_data[0]:
-            # League-specific training with combined data
-            if not league:
-                league = training_data[0].get('league')
-            examples = training_data[0].get('examples', [])
-            # If league not specified and we want global model, combine all examples
-            if not league and len(training_data) > 1:
-                examples = []
+        # Handle different training data structures
+        examples = []
+        
+        if isinstance(training_data, dict):
+            # New structure: {'Br1': {'league_info': {...}, 'examples': [...]}, ...}
+            if league:
+                # Get specific league
+                league_data = training_data.get(league, {})
+                examples = league_data.get('examples', [])
+            else:
+                # Global model: combine all examples from all leagues
+                for league_key, league_data in training_data.items():
+                    if isinstance(league_data, dict) and 'examples' in league_data:
+                        examples.extend(league_data.get('examples', []))
+        elif isinstance(training_data, list) and len(training_data) > 0:
+            # Old structure: [{'features': ..., 'labels': ...}, ...] or [{'league': ..., 'examples': [...]}, ...]
+            if isinstance(training_data[0], dict) and 'examples' in training_data[0]:
+                # List of league dicts with examples
                 for entry in training_data:
                     examples.extend(entry.get('examples', []))
-        else:
-            # Old structure: [{'features': ..., 'labels': ...}, ...]
-            examples = training_data
+            else:
+                # Direct list of examples
+                examples = training_data
         
         # Split examples into train/test (time-based: oldest for train, newest for test)
         if test_examples is None:
@@ -903,18 +912,33 @@ class FootballPredictor:
         y_result_train = np.array(y_result_train)
         y_ou_train = np.array(y_ou_train)
 
+        # Check if we have at least 2 classes for each target
+        unique_results = np.unique(y_result_train)
+        unique_ou = np.unique(y_ou_train)
+        
+        if len(unique_results) < 2:
+            return {
+                'error': 'Insufficient class variety for result prediction',
+                'available_classes': list(unique_results),
+                'required': 2,
+                'league': league or 'global'
+            }
+        
         scaler = StandardScaler()
         X_train_scaled = scaler.fit_transform(X_train)
 
         result_model = RandomForestClassifier(n_estimators=200, max_depth=12, random_state=42)
         result_model.fit(X_train_scaled, y_result_train)
 
-        ou_model = GradientBoostingClassifier(n_estimators=200, max_depth=6, random_state=42)
-        ou_model.fit(X_train_scaled, y_ou_train)
+        # O/U model may have only one class in some datasets
+        ou_model = None
+        if len(unique_ou) >= 2:
+            ou_model = GradientBoostingClassifier(n_estimators=200, max_depth=6, random_state=42)
+            ou_model.fit(X_train_scaled, y_ou_train)
 
         # Calculate training accuracy
         train_result_acc = float(result_model.score(X_train_scaled, y_result_train))
-        train_ou_acc = float(ou_model.score(X_train_scaled, y_ou_train))
+        train_ou_acc = float(ou_model.score(X_train_scaled, y_ou_train)) if ou_model else 0.5
         
         # Calculate test accuracy if test data available
         test_result_acc = None
@@ -938,7 +962,7 @@ class FootballPredictor:
                 y_ou_test = np.array(y_ou_test)
                 
                 test_result_acc = float(result_model.score(X_test_scaled, y_result_test))
-                test_ou_acc = float(ou_model.score(X_test_scaled, y_ou_test))
+                test_ou_acc = float(ou_model.score(X_test_scaled, y_ou_test)) if ou_model else 0.5
                 test_examples_count = len(test_examples)
 
         if league:

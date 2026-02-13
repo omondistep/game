@@ -1,0 +1,248 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/damak-taawoun-2362142",
+  "timestamp": "2026-02-12T21:52:01.840066",
+  "features": {
+    "home_position": null,
+    "away_position": null,
+    "position_diff": 0,
+    "away_points": 39,
+    "home_points": 12,
+    "home_form_points": 2,
+    "away_form_points": 8,
+    "home_recent_form": 1,
+    "away_recent_form": 4,
+    "home_wins_l6": 0,
+    "home_draws_l6": 2,
+    "home_losses_l6": 4,
+    "away_wins_l6": 2,
+    "away_draws_l6": 2,
+    "away_losses_l6": 2,
+    "home_scored_avg": 0.7142857142857143,
+    "home_conceded_avg": 1.7619047619047619,
+    "away_scored_avg": 1.9090909090909092,
+    "away_conceded_avg": 1.0454545454545454,
+    "expected_total_goals": 2.7153679653679657,
+    "home_home_win_rate": 4.761904761904762,
+    "home_home_goals_avg": 0.7142857142857143,
+    "away_away_win_rate": 58.333333333333336,
+    "away_away_goals_avg": 1.8333333333333333,
+    "h2h_home_win_pct": 0.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 67.0,
+    "home_shots_avg": 9.857142857142858,
+    "away_shots_avg": 10.909090909090908,
+    "home_shots_on_target_pct": 27.053140096618357,
+    "away_shots_on_target_pct": 38.75,
+    "home_dangerous_attacks_avg": 32.333333333333336,
+    "away_dangerous_attacks_avg": 36.5,
+    "home_possession": 47.1,
+    "away_possession": 51.29,
+    "home_pass_accuracy": 81.27977340028325,
+    "away_pass_accuracy": 84.97605524000446,
+    "home_fouls_avg": 10.714285714285714,
+    "away_fouls_avg": 10.954545454545455,
+    "home_yellow_avg": 2.142857142857143,
+    "away_yellow_avg": 2.0454545454545454,
+    "odds_home": 3.78,
+    "odds_draw": 3.37,
+    "odds_away": 1.97,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.54,
+        "X": 0.2,
+        "2": 0.26
+      },
+      "computed_odds": {
+        "1": 1.85,
+        "X": 5.0,
+        "2": 3.85
+      },
+      "confidence": 0.54
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Under": 0.8723,
+        "Over": 0.1277
+      },
+      "computed_odds": {
+        "Under": 1.15,
+        "Over": 7.83
+      },
+      "confidence": 0.8723
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.54,
+        "X": 0.2,
+        "2": 0.26
+      },
+      "computed_odds": {
+        "1": 1.85,
+        "X": 5.0,
+        "2": 3.85
+      },
+      "confidence": 0.54
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Under": 0.8723,
+        "Over": 0.1277
+      },
+      "computed_odds": {
+        "Under": 1.15,
+        "Over": 7.83
+      },
+      "confidence": 0.8723
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.1985,
+        "X": 0.2843,
+        "2": 0.5172
+      },
+      "computed_odds": {
+        "1": 5.04,
+        "X": 3.52,
+        "2": 1.93
+      },
+      "confidence": 0.5172
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5263157894736843,
+        "away": 0.5263157894736843,
+        "weight": 0.005462813368676485
+      },
+      "odds_analysis": {
+        "home": 0.24749758612590922,
+        "away": 0.47489384545986635,
+        "weight": 0.4126777704696067
+      },
+      "recent_form": {
+        "home": 0.1111111111111111,
+        "away": 0.4444444444444444,
+        "weight": 0.41006823211168025
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.005462813368676485
+      },
+      "goals_stats": {
+        "home": 0.23809523809523814,
+        "away": 0.7159090909090909,
+        "weight": 0.15540274394400708
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.67,
+        "weight": 0.005462813368676485
+      },
+      "shots_possession": {
+        "home": 0.3445047619047619,
+        "away": 0.40470969696969694,
+        "weight": 0.005462813368676485
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.7153679653679657
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 13.7
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 9.4
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 7.4
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.72,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.62,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.005462813368676485,
+      "odds_analysis": 0.4126777704696067,
+      "recent_form": 0.41006823211168025,
+      "top5_performance": 0.005462813368676485,
+      "goals_stats": 0.15540274394400708,
+      "h2h": 0.005462813368676485,
+      "shots_possession": 0.005462813368676485
+    }
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": false,
+    "ml_result": "1",
+    "weighted_result": "2",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 6)",
+      "\ud83d\udcdc Away team dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 3.78,
+        "fair": 1.85,
+        "value_pct": 104.3
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Damak": [],
+    "Taawoun": []
+  }
+}

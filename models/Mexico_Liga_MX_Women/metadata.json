@@ -6,87 +6,31 @@
     "league": "Liga MX Women",
     "league_url_path": "",
     "country_code": "mx",
-    "match_count": 93,
+    "match_count": 61,
     "teams": {
-      "Atletico San Luis W": {
-        "home_matches": 2,
+      "Atl\u00e9tico San Luis W": {
+        "home_matches": 1,
         "away_matches": 2
       },
       "Tijuana W": {
-        "home_matches": 2,
-        "away_matches": 5
-      },
-      "Juarez W": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Cruz Azul W": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Tigres UANL W": {
-        "home_matches": 6,
-        "away_matches": 2
-      },
-      "Atlas W": {
-        "home_matches": 4,
-        "away_matches": 3
-      },
-      "America W": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Mazatlan W": {
-        "home_matches": 1,
-        "away_matches": 3
-      },
-      "Queretaro W": {
-        "home_matches": 3,
-        "away_matches": 1
-      },
-      "Toluca W": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Necaxa W": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Pachuca W": {
-        "home_matches": 4,
-        "away_matches": 3
-      },
-      "Leon W": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Monterrey W": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Puebla W": {
-        "home_matches": 3,
-        "away_matches": 2
-      },
-      "Santos Laguna W": {
-        "home_matches": 3,
-        "away_matches": 2
-      },
-      "Guadalajara W": {
-        "home_matches": 0,
-        "away_matches": 4
-      },
-      "Pumas UNAM W": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Atl\u00e9tico San Luis W": {
         "home_matches": 1,
         "away_matches": 2
       },
       "Ju\u00e1rez W": {
         "home_matches": 2,
         "away_matches": 2
+      },
+      "Cruz Azul W": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Tigres UANL W": {
+        "home_matches": 3,
+        "away_matches": 1
+      },
+      "Atlas W": {
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Am\u00e9rica W": {
         "home_matches": 1,
@@ -100,12 +44,46 @@
         "home_matches": 3,
         "away_matches": 1
       },
+      "Toluca W": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Necaxa W": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Pachuca W": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Le\u00f3n W": {
         "home_matches": 2,
+        "away_matches": 1
+      },
+      "Monterrey W": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Puebla W": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Santos Laguna W": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Guadalajara W": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Pumas UNAM W": {
+        "home_matches": 1,
         "away_matches": 1
       }
     }
   },
-  "example_count": 61,
-  "trained_at": "2026-02-12T19:22:07.849869"
+  "example_count": 29,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-13T09:55:11.474185"
 }

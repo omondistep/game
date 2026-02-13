@@ -6,51 +6,51 @@
     "league": "Copa Chile",
     "league_url_path": "",
     "country_code": "cl",
-    "match_count": 48,
+    "match_count": 32,
     "teams": {
       "Antofagasta": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Cobreloa": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Puerto Montt": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Deportes Temuco": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Deportes Santa Cruz": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "CD Magallanes": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Deportes Copiapo": {
         "home_matches": 1,
         "away_matches": 1
       },
       "San Luis Quillota": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Deportes Iquique": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "San Marcos Arica": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Deportes Recoleta": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Union Espanola": {
         "home_matches": 1,
@@ -61,35 +61,21 @@
         "away_matches": 1
       },
       "Santiago Wanderers": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Curico Unido": {
         "home_matches": 1,
         "away_matches": 1
       },
       "Rangers Talca": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Deportes Copiap\u00f3": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Uni\u00f3n Espa\u00f1ola": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Uni\u00f3n San Felipe": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Curic\u00f3 Unido": {
         "home_matches": 1,
         "away_matches": 1
       }
     }
   },
-  "example_count": 32,
-  "trained_at": "2026-02-12T19:21:44.390747"
+  "example_count": 16,
+  "result_accuracy": 0.25,
+  "ou_accuracy": 0.75,
+  "trained_at": "2026-02-13T18:33:45.279392"
 }

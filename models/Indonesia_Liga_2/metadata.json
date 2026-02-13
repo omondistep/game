@@ -6,70 +6,72 @@
     "league": "Liga 2",
     "league_url_path": "",
     "country_code": "id",
-    "match_count": 27,
+    "match_count": 18,
     "teams": {
       "Garudayaksa FC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "PSMS Medan": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Deltras Sidoarjo": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Aceh United": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Persekat": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Sulut United": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Adhyaksa": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Sriwijaya FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "PSIS Semarang": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Tornado Pekanbaru": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Persiku Kudus": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Persipura Jayapura": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "PSG Pati": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Sumsel United": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Persela Lamongan": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 18,
-  "trained_at": "2026-02-12T19:21:56.144638"
+  "example_count": 9,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:55.676394"
 }

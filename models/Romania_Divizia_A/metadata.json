@@ -6,70 +6,72 @@
     "league": "Divizia A",
     "league_url_path": "",
     "country_code": "ro",
-    "match_count": 36,
+    "match_count": 24,
     "teams": {
       "Otelul Galati": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Miercurea Ciuc": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Cluj": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "CS Metaloglobus": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "FC Botosani": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Petrolul Ploiesti": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Unirea Slobozia": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Univ Cluj-Napoca": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Arges Pitesti": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "FC Hermannstadt": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Rapid Bucuresti": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "UTA Arad": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "CS Univ Craiova": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "FCSB": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Farul Constanta": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 24,
-  "trained_at": "2026-02-12T19:22:13.337451"
+  "example_count": 12,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T09:55:15.592954"
 }

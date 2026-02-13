@@ -6,74 +6,72 @@
     "league": "Ligi Kuu Bara",
     "league_url_path": "",
     "country_code": "tz",
-    "match_count": 51,
+    "match_count": 35,
     "teams": {
       "Coastal Union": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "KMC": {
-        "home_matches": 3,
+        "home_matches": 1,
         "away_matches": 2
       },
+      "KMC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
       "Young Africans": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Dodoma Jiji": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Simba": {
-        "home_matches": 2,
-        "away_matches": 1
+        "home_matches": 1,
+        "away_matches": 0
       },
       "Mashujaa": {
         "home_matches": 0,
-        "away_matches": 6
+        "away_matches": 3
       },
       "Azam": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Kitayosce": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Mbeya City": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Pamba Jiji": {
-        "home_matches": 4,
-        "away_matches": 4
+        "home_matches": 2,
+        "away_matches": 2
       },
       "Mtibwa Sugar": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Tanzania Prisons": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "JKT Tanzania": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Singida Big Stars": {
         "home_matches": 2,
         "away_matches": 1
       },
-      "Namungo": {
-        "home_matches": 0,
-        "away_matches": 4
-      },
-      "Singida Black Stars": {
+      "JKT Tanzania": {
         "home_matches": 1,
         "away_matches": 0
+      },
+      "Singida Big Stars": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Namungo": {
+        "home_matches": 0,
+        "away_matches": 2
       }
     }
   },
-  "example_count": 30,
-  "trained_at": "2026-02-12T19:22:21.718049"
+  "example_count": 14,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T09:55:23.765366"
 }

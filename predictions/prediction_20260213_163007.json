@@ -1,0 +1,241 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/norwich-u23s-southampton-u23s-2348981",
+  "timestamp": "2026-02-13T16:30:07.918270",
+  "features": {
+    "home_position": 23,
+    "away_position": 25,
+    "position_diff": -2,
+    "away_points": 25,
+    "home_points": 12,
+    "home_form_points": 1,
+    "away_form_points": 11,
+    "home_recent_form": 1,
+    "away_recent_form": 4,
+    "home_wins_l6": 0,
+    "home_draws_l6": 1,
+    "home_losses_l6": 5,
+    "away_wins_l6": 3,
+    "away_draws_l6": 2,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.5263157894736843,
+    "home_conceded_avg": 2.0526315789473686,
+    "away_scored_avg": 2.0,
+    "away_conceded_avg": 1.5384615384615385,
+    "expected_total_goals": 3.5587044534412957,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": 33.33333333333333,
+    "away_away_goals_avg": 2.0,
+    "h2h_home_win_pct": 50.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 33.0,
+    "home_shots_avg": 9.68421052631579,
+    "away_shots_avg": 10.23076923076923,
+    "home_shots_on_target_pct": 41.30434782608695,
+    "away_shots_on_target_pct": 51.127819548872175,
+    "home_dangerous_attacks_avg": 42.31578947368421,
+    "away_dangerous_attacks_avg": 36.38461538461539,
+    "home_possession": 50.79,
+    "away_possession": 50.08,
+    "home_pass_accuracy": 39.05191873589165,
+    "away_pass_accuracy": 14.221218961625281,
+    "home_fouls_avg": 11.421052631578947,
+    "away_fouls_avg": 10.692307692307692,
+    "home_yellow_avg": 1.894736842105263,
+    "away_yellow_avg": 1.9230769230769231,
+    "odds_home": 2.87,
+    "odds_draw": 4.33,
+    "odds_away": 1.85,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 51
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.29,
+        "X": 0.13,
+        "2": 0.58
+      },
+      "computed_odds": {
+        "1": 3.45,
+        "X": 7.69,
+        "2": 1.72
+      },
+      "confidence": 0.58
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.0031,
+        "Over": 0.9969
+      },
+      "computed_odds": {
+        "Under": 99.0,
+        "Over": 1.0
+      },
+      "confidence": 0.9969
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.29,
+        "X": 0.13,
+        "2": 0.58
+      },
+      "computed_odds": {
+        "1": 3.45,
+        "X": 7.69,
+        "2": 1.72
+      },
+      "confidence": 0.58
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.0031,
+        "Over": 0.9969
+      },
+      "computed_odds": {
+        "Under": 99.0,
+        "Over": 1.0
+      },
+      "confidence": 0.9969
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2363,
+        "X": 0.196,
+        "2": 0.5678
+      },
+      "computed_odds": {
+        "1": 4.23,
+        "X": 5.1,
+        "2": 1.76
+      },
+      "confidence": 0.5678
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.65,
+        "Under": 0.35
+      },
+      "computed_odds": {
+        "Over": 1.54,
+        "Under": 2.86
+      },
+      "confidence": 0.65
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0,
+        "away": 0,
+        "weight": 0.010453545262509557
+      },
+      "odds_analysis": {
+        "home": 0.31112241767033955,
+        "away": 0.48266018308858083,
+        "weight": 0.3734990228885853
+      },
+      "recent_form": {
+        "home": 0.05555555555555555,
+        "away": 0.6111111111111112,
+        "weight": 0.37940625696840075
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.0,
+        "weight": 0.010453545262509557
+      },
+      "goals_stats": {
+        "home": 0.3684210526315789,
+        "away": 0.6153846153846154,
+        "weight": 0.20528053909297575
+      },
+      "h2h": {
+        "home": 0.5,
+        "away": 0.33,
+        "weight": 0.010453545262509557
+      },
+      "shots_possession": {
+        "home": 0.360880350877193,
+        "away": 0.37483897435897434,
+        "weight": 0.010453545262509557
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 3.5587044534412957
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 21.1
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 6.4
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 5.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 3.56,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.53,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.010453545262509557,
+      "odds_analysis": 0.3734990228885853,
+      "recent_form": 0.37940625696840075,
+      "top5_performance": 0.010453545262509557,
+      "goals_stats": 0.20528053909297575,
+      "h2h": 0.010453545262509557,
+      "shots_possession": 0.010453545262509557
+    }
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "2",
+    "weighted_result": "2",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Home team in poor form (0 win in last 6)",
+      "\u26bd High-scoring match expected (avg 3.6 goals)"
+    ],
+    "value_bets": [],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Norwich U23s": [],
+    "Southampton U23s": []
+  }
+}

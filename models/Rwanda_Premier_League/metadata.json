@@ -6,58 +6,60 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "rw",
-    "match_count": 21,
+    "match_count": 14,
     "teams": {
       "Gicumbi": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Musanze": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Amagaju": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Marines FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Kiyovu Sport": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Gorilla": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Gasogi United": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "APR FC": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "AS Kigali": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Rayon Sports": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Rutsiro": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Al Hilal Al Sudani": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       }
     }
   },
-  "example_count": 14,
-  "trained_at": "2026-02-12T19:22:14.023420"
+  "example_count": 7,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T09:55:15.938699"
 }

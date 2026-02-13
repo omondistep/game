@@ -6,46 +6,44 @@
     "league": "TFF 1. Lig",
     "league_url_path": "",
     "country_code": "tr",
-    "match_count": 15,
+    "match_count": 10,
     "teams": {
       "76 Igd\u0131r Belediye Spor": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Manisa BBSK": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Erzurum BB": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Sariyer SK": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Erokspor": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
-      "Umraniyespor": {
+      "\u00dcmraniyespor": {
         "home_matches": 0,
         "away_matches": 1
       },
       "Hatayspor": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Sivasspor": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "\u00dcmraniyespor": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 10,
-  "trained_at": "2026-02-12T19:22:19.847886"
+  "example_count": 5,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T09:55:21.761146"
 }

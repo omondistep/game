@@ -243,11 +243,32 @@ class TrainingDataBuilder:
         
         print(f"\nTotal matches loaded: {len(all_matches)}")
         
+        # Deduplicate matches by URL, keeping the one with results
+        matches_by_url = {}
+        for match in all_matches:
+            url = match.get('url', '')
+            if not url:
+                continue
+            existing = matches_by_url.get(url)
+            if not existing:
+                matches_by_url[url] = match
+            elif match.get('has_result') and not existing.get('has_result'):
+                # Replace with version that has results
+                matches_by_url[url] = match
+            elif match.get('has_result') and existing.get('has_result'):
+                # Both have results - keep the one with more data
+                if len(str(match)) > len(str(existing)):
+                    matches_by_url[url] = match
+        
+        deduped_matches = list(matches_by_url.values())
+        print(f"After deduplication: {len(deduped_matches)} unique matches")
+        
         # Process matches
         processed = 0
         skipped_no_result = 0
+        skipped_matches = []  # Track skipped matches for debugging
         
-        for match in all_matches:
+        for match in deduped_matches:
             result = self.process_match(match)
             if result:
                 league_key, features, labels = result
@@ -270,10 +291,27 @@ class TrainingDataBuilder:
                 processed += 1
             else:
                 skipped_no_result += 1
+                # Save skipped match info for debugging
+                skipped_matches.append({
+                    'url': match.get('url', ''),
+                    'home_team': match.get('home_team', ''),
+                    'away_team': match.get('away_team', ''),
+                    'date': match.get('date', ''),
+                    'league_code': match.get('league_code', ''),
+                    'has_result': match.get('has_result', False),
+                    'actual_result': match.get('actual_result', {})
+                })
         
         print(f"Processed: {processed} matches")
         print(f"Skipped (no result): {skipped_no_result} matches")
         print(f"Leagues found: {len(self.training_data)}")
+        
+        # Save skipped matches to file for debugging
+        if skipped_matches:
+            skipped_file = os.path.join(DATA_DIR, 'skipped_matches.json')
+            with open(skipped_file, 'w', encoding='utf-8') as f:
+                json.dump(skipped_matches, f, indent=2, ensure_ascii=False)
+            print(f"Skipped matches saved to: {skipped_file}")
         
         # Save league database
         self.league_db.save()
@@ -578,12 +616,14 @@ def main():
     parser.add_argument('--date', '-d', help='Specific date (YYYY-MM-DD)')
     parser.add_argument('--file', '-f', help='Specific JSON file path')
     parser.add_argument('--dir', default=DATA_DIR, help='Directory containing JSON files')
-    parser.add_argument('--pattern', default='data/historical_matches_*.json', 
-                       help='Glob pattern for JSON files')
+    parser.add_argument('--pattern', default=None, 
+                       help='Glob pattern for JSON files (default: use combined file)')
     parser.add_argument('--leagues', '-l', action='store_true',
                        help='Print league database and exit')
     parser.add_argument('--json', action='store_true',
                        help='Output league data as JSON')
+    parser.add_argument('--use-individual', action='store_true',
+                       help='Use individual date files instead of combined file')
     
     args = parser.parse_args()
     
@@ -598,12 +638,24 @@ def main():
     print(f"Started: {datetime.now().isoformat()}")
     
     # Determine which files to process
+    combined_file = os.path.join(DATA_DIR, "historical_matches_combined.json")
+    
     if args.file:
         patterns = [args.file]
     elif args.date:
         patterns = [f"{args.dir}/historical_matches_{args.date}.json"]
-    else:
+    elif args.pattern:
         patterns = [args.pattern]
+    elif args.use_individual:
+        patterns = [f"{args.dir}/historical_matches_*.json"]
+    elif os.path.exists(combined_file):
+        # Default: use combined file (faster, already deduplicated)
+        patterns = [combined_file]
+        print(f"Using combined file: {combined_file}")
+    else:
+        # Fallback: use individual files
+        patterns = [f"{args.dir}/historical_matches_*.json"]
+        print("Using individual date files (combined file not found)")
     
     # Build training data
     print("\n" + "-" * 60)

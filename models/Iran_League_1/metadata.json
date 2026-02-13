@@ -6,86 +6,84 @@
     "league": "League 1",
     "league_url_path": "",
     "country_code": "ir",
-    "match_count": 69,
+    "match_count": 46,
     "teams": {
       "Saipa Karaj": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Sanat Naft AC": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Damash Gilan": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Naft Bandar Abbas": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Shenavarsazi Qeshm": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Shahrdari Noshahr": {
         "home_matches": 0,
-        "away_matches": 6
+        "away_matches": 3
       },
       "Nassaji Mazandaran": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Pars Jonoubi Jam": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Mes Soongoun": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Ario Eslamshahr": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Besat Kermanshah": {
         "home_matches": 2,
         "away_matches": 1
       },
       "Navad Urmia": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Mes Shahr-e Babak": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Sorkhpooshan Pakdasht": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Niroye Zamini": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Mes Kerman": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Naft Gachsaran": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Fard Alborz": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Be'sat Kermanshah": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 1
       }
     }
   },
-  "example_count": 46,
-  "trained_at": "2026-02-12T19:21:58.527227"
+  "example_count": 23,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.6,
+  "trained_at": "2026-02-13T18:33:57.924832"
 }

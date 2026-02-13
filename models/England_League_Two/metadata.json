@@ -6,94 +6,96 @@
     "league": "League Two",
     "league_url_path": "",
     "country_code": "gb-en",
-    "match_count": 38,
+    "match_count": 26,
     "teams": {
       "Newport County": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Accrington Stanley": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Bromley FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Crewe Alexandra": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Milton Keynes Dons": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Bristol Rovers": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Harrogate Town": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Fleetwood Town": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Barnet": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Tranmere Rovers": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Colchester Utd": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Grimsby Town": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Salford City": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Chesterfield": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Walsall FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Crawley Town": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Cambridge Utd": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Shrewsbury": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Notts County": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Swindon Town": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Barrow AFC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 24,
-  "trained_at": "2026-02-12T19:22:03.217989"
+  "example_count": 12,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T13:17:02.643870"
 }

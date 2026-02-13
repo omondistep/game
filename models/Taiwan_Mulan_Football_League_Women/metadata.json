@@ -6,42 +6,44 @@
     "league": "Mulan Football League Women",
     "league_url_path": "",
     "country_code": "tw",
-    "match_count": 24,
+    "match_count": 16,
     "teams": {
       "Valkyrie W": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Taichung Blue Whale W": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "New Taipei City W": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Sakura W": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Taipei Bear W": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Kaohsiung Yangxin W": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Hualien W": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "AC Taipei W": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       }
     }
   },
-  "example_count": 16,
-  "trained_at": "2026-02-12T19:22:21.346455"
+  "example_count": 8,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T09:55:23.276318"
 }

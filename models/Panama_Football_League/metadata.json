@@ -6,54 +6,14 @@
     "league": "Football League",
     "league_url_path": "",
     "country_code": "pa",
-    "match_count": 51,
+    "match_count": 34,
     "teams": {
       "CD Universitario": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "CAI de La Chorrera": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "CD Arabe Unido": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Alianza FC PAN": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Union Cocle": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Veraguas CD": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "Tauro FC": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Sporting SM FC": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "UMECIT": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "CD Plaza Amador": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Herrera FC": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "San Francisco FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 2
       },
       "CD \u00c1rabe Unido": {
@@ -67,9 +27,39 @@
       "Uni\u00f3n Cocl\u00e9": {
         "home_matches": 2,
         "away_matches": 1
+      },
+      "Veraguas CD": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Tauro FC": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Sporting SM FC": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "UMECIT": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "CD Plaza Amador": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Herrera FC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "San Francisco FC": {
+        "home_matches": 1,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 34,
-  "trained_at": "2026-02-12T19:22:10.546461"
+  "example_count": 17,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.25,
+  "trained_at": "2026-02-13T09:55:13.833607"
 }

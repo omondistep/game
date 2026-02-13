@@ -1,136 +1,171 @@
 #!/bin/bash
-# Football Predictor Aliases
+# Football Predictor - Condensed Aliases (5 Core Commands)
 # Add to ~/.bashrc or source this file: source ~/game/fb_aliases
-
+#
+# All commands use the fb script which handles venv activation automatically
 # ============================================================
-# PREDICTION ALIASES
-# ============================================================
-
-# Predict match from URL
-alias pf='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py predict --url'
-
-# Add match result
-alias pfr='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py result --url'
-
-# ============================================================
-# TRAINING ALIASES
+# CORE COMMANDS (5 Total)
 # ============================================================
 
-# Train model
-alias pft='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py train'
-
-# Auto-train (trains if 20+ hours since last training)
-alias pfa='source ~/game/football_env/bin/activate && python ~/game/auto_train.py'
-
-# Force train (trains regardless of time)
-alias pfaf='source ~/game/football_env/bin/activate && python ~/game/auto_train.py --force'
-
-# Check training status
-alias pfas='source ~/game/football_env/bin/activate && python ~/game/auto_train.py --status'
-
-# Daily training script
-alias pfd='source ~/game/football_env/bin/activate && python ~/game/daily_train.py'
-
-# ============================================================
-# HISTORICAL DATA FUNCTIONS (require arguments)
-# ============================================================
-
-# Scrape historical matches for a date range
-# Usage: pfh --start 2026-01-25 --end 2026-02-11
-pfh() {
-    source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py "$@"
+# 1. PREDICT: Predict match from URL (or add result)
+#    Usage: fb predict <url>        - Predict match
+#    Usage: fb result <url> <1X2>   - Add result (e.g., fb result <url> 1)
+#    Shortcut: fb <url>             - Predict (URL only)
+fb() {
+    ~/game/fb "$@"
 }
 
-# Scrape historical matches for specific date
-# Usage: pfhd 2026-01-25
-pfhd() {
-    source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py --date "$1"
+# 2. TRAIN: Train or retrain models
+#    Usage: fbt              - Auto-train (if 20+ hours since last)
+#    Usage: fbt force        - Force training now
+#    Usage: fbt status       - Check training status
+fbt() {
+    case "$1" in
+        force)
+            source ~/game/football_env/bin/activate && python ~/game/auto_train.py --force
+            ;;
+        status)
+            source ~/game/football_env/bin/activate && python ~/game/auto_train.py --status
+            ;;
+        *)
+            source ~/game/football_env/bin/activate && python ~/game/auto_train.py
+            ;;
+    esac
 }
 
-# Scrape last N days
-# Usage: pfhn 7
-pfhn() {
-    source ~/game/football_env/bin/activate && python ~/game/scrape_historical.py --days "$1"
+# 3. DATA: Scrape data and rebuild training database
+#    Usage: fbd scrape              - Scrape all leagues
+#    Usage: fbd hist [date]         - Scrape historical (yesterday if no date)
+#    Usage: fbd hist <start> <end>  - Scrape date range
+#    Usage: fbd rebuild             - Rebuild from all historical data
+#    Usage: fbd rebuild --start X --end Y  - Rebuild specific range
+fbd() {
+    source ~/game/football_env/bin/activate
+    cd ~/game
+    case "$1" in
+        scrape)
+            python ~/game/scrape_all_leagues.py
+            ;;
+        hist)
+            if [ -n "$2" ] && [ -n "$3" ]; then
+                python ~/game/scrape_historical.py --start "$2" --end "$3"
+            elif [ -n "$2" ]; then
+                # Single date: use as both start and end
+                python ~/game/scrape_historical.py --start "$2" --end "$2"
+            else
+                # Default: scrape yesterday
+                yesterday=$(date -d "yesterday" +%Y-%m-%d)
+                python ~/game/scrape_historical.py --start "$yesterday" --end "$yesterday"
+            fi
+            ;;
+        rebuild)
+            if [ -n "$2" ]; then
+                python ~/game/rebuild_data.py "${@:2}"
+            else
+                python ~/game/rebuild_data.py --file ~/game/data/historical_matches_combined.json
+            fi
+            ;;
+        leagues)
+            python ~/game/build_league_db.py
+            ;;
+        *)
+            echo "Usage: fbd <scrape|hist|rebuild|leagues> [options]"
+            echo "  fbd scrape              - Scrape all leagues"
+            echo "  fbd hist [date]         - Scrape historical (yesterday default)"
+            echo "  fbd hist <start> <end>  - Scrape date range"
+            echo "  fbd rebuild             - Rebuild from all data"
+            echo "  fbd leagues             - Build league database"
+            ;;
+    esac
 }
 
-# Rebuild training database
-# Usage: pfrb (rebuild all) or pfrb --start 2026-01-25 --end 2026-02-11
-pfrb() {
-    source ~/game/football_env/bin/activate && python ~/game/rebuild_data.py "$@"
+# 4. STATS: View model and system statistics
+#    Usage: fbs              - Show model statistics
+#    Usage: fbs sys          - Show system statistics
+#    Usage: fbs weights      - Calculate data-driven weights
+fbs() {
+    source ~/game/football_env/bin/activate
+    case "$1" in
+        sys)
+            python ~/game/football_prediction_system.py stats
+            ;;
+        weights)
+            python ~/game/calculate_weights.py
+            ;;
+        *)
+            python ~/game/model_stats.py
+            ;;
+    esac
 }
 
-# ============================================================
-# LEAGUE DATABASE ALIASES
-# ============================================================
-
-# Build league database
-alias pfld='source ~/game/football_env/bin/activate && python ~/game/build_league_db.py'
-
-# Scrape all leagues
-alias pfsl='source ~/game/football_env/bin/activate && python ~/game/scrape_all_leagues.py'
-
-# Update league database
-alias pflu='source ~/game/football_env/bin/activate && python ~/game/update_league_db.py'
-
-# ============================================================
-# MODEL STATISTICS ALIASES
-# ============================================================
-
-# Show model statistics
-alias pfms='source ~/game/football_env/bin/activate && python ~/game/model_stats.py'
-
-# Show system statistics
-alias pfss='source ~/game/football_env/bin/activate && python ~/game/football_prediction_system.py stats'
-
-# Calculate weights
-alias pfcw='source ~/game/football_env/bin/activate && python ~/game/calculate_weights.py'
-
-# ============================================================
-# EXTRACTION ALIASES
-# ============================================================
-
-# Extract results from results.txt
-alias pfe='source ~/game/football_env/bin/activate && python ~/game/extract_results.py'
-
-# ============================================================
-# HELPER FUNCTIONS
-# ============================================================
-
-# Show help
-pfhelp() {
-    echo "Football Predictor Commands:"
+# 5. DAILY UPDATE: Complete daily workflow to improve model
+#    Uses incremental update to add yesterday's matches to combined file
+#    Usage: fbu              - Full daily update (incremental scrape, rebuild, train, weights)
+#    Usage: fbu quick        - Quick update (rebuild + train + weights, no scraping)
+#    Usage: fbu process      - Process results queue + rebuild + train + weights
+fbu() {
+    source ~/game/football_env/bin/activate
+    cd ~/game
+    echo "============================================================"
+    echo "DAILY MODEL UPDATE - $(date '+%Y-%m-%d %H:%M')"
+    echo "============================================================"
+    
+    if [ "$1" = "process" ]; then
+        # Process results queue for matches that now have results
+        echo ""
+        echo "[1/4] Processing results queue..."
+        python ~/game/scrape_historical.py --process-queue
+    elif [ "$1" != "quick" ]; then
+        # Full update: incremental scrape yesterday's results
+        echo ""
+        echo "[1/4] Incremental update (scraping yesterday)..."
+        python ~/game/scrape_historical.py --incremental
+    fi
+    
     echo ""
-    echo "PREDICTION:"
-    echo "  pf <url>              - Predict match from URL"
-    echo "  pfr <url>             - Add match result from URL"
+    echo "[2/4] Rebuilding training database..."
+    python ~/game/rebuild_data.py
+    
     echo ""
-    echo "TRAINING:"
-    echo "  pft                   - Train model"
-    echo "  pfa                   - Auto-train (if 20+ hours since last)"
-    echo "  pfaf                  - Force auto-train now"
-    echo "  pfas                  - Check training status"
-    echo "  pfd                   - Run daily training script"
+    echo "[3/4] Training models..."
+    python ~/game/auto_train.py --force --no-scrape
+    
     echo ""
-    echo "HISTORICAL DATA:"
-    echo "  pfh --start DATE --end DATE  - Scrape date range"
-    echo "  pfhd DATE             - Scrape specific date (e.g., pfhd 2026-01-25)"
-    echo "  pfhn DAYS             - Scrape last N days (e.g., pfhn 7)"
-    echo "  pfrb                  - Rebuild training database"
-    echo "  pfrb --start DATE --end DATE - Rebuild specific range"
+    echo "[4/4] Calculating optimal weights..."
+    python ~/game/calculate_weights.py
+    
     echo ""
-    echo "LEAGUE DATABASE:"
-    echo "  pfld                  - Build league database"
-    echo "  pfsl                  - Scrape all leagues"
-    echo "  pflu                  - Update league database"
-    echo ""
-    echo "STATISTICS:"
-    echo "  pfms                  - Show model statistics"
-    echo "  pfss                  - Show system statistics"
-    echo "  pfcw                  - Calculate data-driven weights"
-    echo ""
-    echo "EXTRACTION:"
-    echo "  pfe                   - Extract results from results.txt"
-    echo ""
-    echo "HELP:"
-    echo "  pfhelp                - Show this help message"
+    echo "============================================================"
+    echo "DAILY UPDATE COMPLETE"
+    echo "============================================================"
+    python ~/game/model_stats.py | tail -20
+}
+
+# 6. HELP: Show available commands
+fbh() {
+    echo "╔════════════════════════════════════════════════════════════╗"
+    echo "║           FOOTBALL PREDICTOR - Quick Reference              ║"
+    echo "╠════════════════════════════════════════════════════════════╣"
+    echo "║ DAILY UPDATE (fbu) - RUN THIS DAILY:                       ║"
+    echo "║   fbu                       Incremental update + Rebuild + Train"
+    echo "║   fbu quick                 Rebuild + Train (no scraping)  ║"
+    echo "║   fbu process               Process queue + Rebuild + Train"
+    echo "╠════════════════════════════════════════════════════════════╣"
+    echo "║ PREDICT (fb):                                              ║"
+    echo "║   fb <url>                  Predict match from URL         ║"
+    echo "║   fb result <url> <1X2>     Add actual result              ║"
+    echo "╠════════════════════════════════════════════════════════════╣"
+    echo "║ TRAIN (fbt):                                               ║"
+    echo "║   fbt                       Auto-train (if due)            ║"
+    echo "║   fbt force                 Force training now             ║"
+    echo "║   fbt status                Check training status          ║"
+    echo "╠════════════════════════════════════════════════════════════╣"
+    echo "║ DATA (fbd):                                                ║"
+    echo "║   fbd hist [date]           Scrape historical data         ║"
+    echo "║   fbd rebuild               Rebuild training database      ║"
+    echo "╠════════════════════════════════════════════════════════════╣"
+    echo "║ STATS (fbs):                                               ║"
+    echo "║   fbs                       Show model statistics          ║"
+    echo "║   fbs weights               Calculate optimal weights      ║"
+    echo "╚════════════════════════════════════════════════════════════╝"
 }

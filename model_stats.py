@@ -69,7 +69,7 @@ def load_predictions() -> List[Dict]:
 
 
 def load_results() -> Dict:
-    """Load saved results."""
+    """Load saved results as a dict keyed by URL."""
     if not os.path.exists(RESULTS_FILE):
         return {}
     
@@ -78,7 +78,11 @@ def load_results() -> Dict:
             content = f.read().strip()
             if not content:
                 return {}
-            return json.loads(content)
+            data = json.loads(content)
+            # Handle list format - convert to dict keyed by URL
+            if isinstance(data, list):
+                return {item.get('url'): item.get('result', {}) for item in data if item.get('url')}
+            return data
     except:
         return {}
 
@@ -113,12 +117,12 @@ def show_model_stats(league_code: Optional[str] = None):
     # Group by country
     by_country = defaultdict(list)
     for name, meta in models.items():
-        country = meta.get('league_info', {}).get('country', 'Unknown')
+        country = meta.get('league_info', {}).get('country') or 'Unknown'
         by_country[country].append((name, meta))
     
     # Show stats
     total_examples = 0
-    for country in sorted(by_country.keys()):
+    for country in sorted(by_country.keys(), key=lambda x: x or 'Unknown'):
         if league_code and league_code.lower() not in country.lower():
             # Also check league name
             found = False

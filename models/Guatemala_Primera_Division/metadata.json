@@ -6,106 +6,92 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "gt",
-    "match_count": 93,
+    "match_count": 72,
     "teams": {
       "Ipala": {
-        "home_matches": 6,
-        "away_matches": 0
+        "home_matches": 3,
+        "away_matches": 1
       },
       "Chiquimulilla": {
-        "home_matches": 4,
-        "away_matches": 4
+        "home_matches": 2,
+        "away_matches": 3
       },
       "Peten": {
-        "home_matches": 6,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Puerto de Iztapa": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 3
       },
       "Aguacatan": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Quiche": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 3
       },
       "Deportivo Carcha": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Santa Rosa": {
         "home_matches": 2,
-        "away_matches": 6
+        "away_matches": 3
       },
       "San Pedro": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 3,
+        "away_matches": 1
       },
       "Suchitepequez": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 3
       },
       "Chichicasteco": {
-        "home_matches": 6,
-        "away_matches": 0
+        "home_matches": 3,
+        "away_matches": 1
       },
       "Coatepecano IB": {
         "home_matches": 0,
         "away_matches": 2
       },
       "Chimaltenango": {
-        "home_matches": 4,
-        "away_matches": 4
+        "home_matches": 3,
+        "away_matches": 2
       },
       "AFF Guatemala": {
-        "home_matches": 4,
-        "away_matches": 4
+        "home_matches": 2,
+        "away_matches": 3
       },
       "Cotzumalguapa": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 3,
+        "away_matches": 1
       },
       "CSD Sacachispas": {
         "home_matches": 2,
-        "away_matches": 6
+        "away_matches": 3
       },
       "Gomerano": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Huehuetecos": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 2
       },
       "CD Nueva Concepcion": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
-      "Aguacat\u00e1n": {
-        "home_matches": 2,
+      "Juventud Copalera": {
+        "home_matches": 0,
         "away_matches": 1
-      },
-      "Quich\u00e9": {
-        "home_matches": 1,
-        "away_matches": 3
-      },
-      "Deportivo Carch\u00e1": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Suchitep\u00e9quez": {
-        "home_matches": 1,
-        "away_matches": 3
-      },
-      "CD Nueva Concepci\u00f3n": {
-        "home_matches": 0,
-        "away_matches": 2
       }
     }
   },
-  "example_count": 62,
-  "trained_at": "2026-02-12T19:21:54.088595"
+  "example_count": 41,
+  "result_accuracy": 0.6666666666666666,
+  "ou_accuracy": 0.4444444444444444,
+  "trained_at": "2026-02-13T18:33:53.134310"
 }

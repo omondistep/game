@@ -6,34 +6,34 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "cl",
-    "match_count": 36,
+    "match_count": 24,
     "teams": {
       "Univ de Chile": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Audax Italiano": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Cobresal": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Huachipato": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "La Serena": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Universidad Catolica": {
         "home_matches": 1,
         "away_matches": 1
       },
       "Palestino": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Nublense": {
@@ -41,15 +41,15 @@
         "away_matches": 1
       },
       "Everton de Vina": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Union La Calera": {
         "home_matches": 1,
         "away_matches": 1
       },
       "O Higgins": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Deportes Concepcion": {
@@ -58,34 +58,20 @@
       },
       "Univ de Concepcion": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Colo Colo": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Limache": {
         "home_matches": 0,
-        "away_matches": 2
-      },
-      "Universidad Cat\u00f3lica": {
-        "home_matches": 1,
         "away_matches": 1
-      },
-      "\u00d1ublense": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Uni\u00f3n La Calera": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Deportes Concepci\u00f3n": {
-        "home_matches": 0,
-        "away_matches": 2
       }
     }
   },
-  "example_count": 24,
-  "trained_at": "2026-02-12T19:21:43.833745"
+  "example_count": 12,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-13T18:33:44.786622"
 }

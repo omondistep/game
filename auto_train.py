@@ -215,7 +215,7 @@ class AutoTrainer:
             'errors': errors[:5]  # Limit errors to first 5
         }
     
-    def run(self, force: bool = False) -> Dict:
+    def run(self, force: bool = False, skip_scrape: bool = False) -> Dict:
         """
         Main entry point for auto-training.
         
@@ -237,7 +237,7 @@ class AutoTrainer:
             }
         
         # Get pending URLs
-        urls = self.get_pending_urls()
+        urls = [] if skip_scrape else self.get_pending_urls()
         
         if not urls and self.get_saved_match_count() == 0:
             return {
@@ -249,7 +249,11 @@ class AutoTrainer:
         print(f"Pending URLs: {len(urls)}")
         print(f"Saved matches: {self.get_saved_match_count()}")
         
-        result = self.train_model(urls)
+        if skip_scrape:
+            print("Skipping scrape (--no-scrape flag)")
+            result = self.train_model([])  # Train without scraping
+        else:
+            result = self.train_model(urls)
         result['auto_train'] = True
         result['timestamp'] = datetime.now().isoformat()
         
@@ -274,6 +278,11 @@ def main():
         '--status', '-s',
         action='store_true',
         help='Check training status without training'
+    )
+    parser.add_argument(
+        '--no-scrape', '-n',
+        action='store_true',
+        help='Skip scraping pending URLs, only train on existing data'
     )
     
     args = parser.parse_args()
@@ -301,6 +310,10 @@ def main():
         print(f"Pending URLs: {pending}")
         print(f"Should train now: {should}")
         
+    elif args.no_scrape:
+        # Train without scraping
+        result = trainer.run(force=True, skip_scrape=True)
+        print(json.dumps(result, indent=2))
     elif args.force:
         result = trainer.run(force=True)
         print(json.dumps(result, indent=2))

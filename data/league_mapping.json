@@ -1210,5 +1210,65 @@
     "league_name": "Eredivisie",
     "country": "Netherlands",
     "source": "historical_scraper"
+  },
+  "23553": {
+    "short_code": "Cr2",
+    "league_name": "Liga de Ascenso",
+    "country": "Costa Rica",
+    "source": "historical_scraper"
+  },
+  "23163": {
+    "short_code": "Fr1",
+    "league_name": "Ligue 1",
+    "country": "France",
+    "source": "historical_scraper"
+  },
+  "24259": {
+    "short_code": "BrC",
+    "league_name": "Campeonato Catarinense",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24220": {
+    "short_code": "BrA",
+    "league_name": "Campeonato Amapaense",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "24252": {
+    "short_code": "BrW",
+    "league_name": "Campeonato Brasileiro Women",
+    "country": "Brazil",
+    "source": "historical_scraper"
+  },
+  "23578": {
+    "short_code": "Sg1",
+    "league_name": "S-League",
+    "country": "Singapore",
+    "source": "historical_scraper"
+  },
+  "23565": {
+    "short_code": "Il1",
+    "league_name": "Premier League",
+    "country": "Israel",
+    "source": "historical_scraper"
+  },
+  "24253": {
+    "short_code": "Th1",
+    "league_name": "Premier League",
+    "country": "Thailand",
+    "source": "historical_scraper"
+  },
+  "23606": {
+    "short_code": "Il2",
+    "league_name": "Liga Leumit",
+    "country": "Israel",
+    "source": "historical_scraper"
+  },
+  "24258": {
+    "short_code": "Sd1",
+    "league_name": "Premier League",
+    "country": "Sudan",
+    "source": "historical_scraper"
   }
 }

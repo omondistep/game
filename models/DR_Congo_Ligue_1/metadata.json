@@ -6,39 +6,39 @@
     "league": "Ligue 1",
     "league_url_path": "",
     "country_code": "cd",
-    "match_count": 74,
+    "match_count": 52,
     "teams": {
       "CS Don Bosco": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "New Soger": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "US Panda": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "US Tshinkunku": {
-        "home_matches": 2,
-        "away_matches": 3
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Lubumbashi Sport": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Malole": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Etoile de Kivu": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "New Jack": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "SimbaDRC": {
         "home_matches": 1,
@@ -46,7 +46,7 @@
       },
       "Saint-Luc": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "FC Renaissance DRC": {
         "home_matches": 1,
@@ -54,78 +54,72 @@
       },
       "Bukavu Dawa": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Groupe Bazano": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Blessing": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "CS Manika": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "SM Sanga Balende": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "TP Mazembe": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Tanganyika": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "FC Tshikas": {
         "home_matches": 1,
-        "away_matches": 4
+        "away_matches": 2
       },
       "FC Renaissance du Congo": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Anges Verts": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "FC Mk de Kinshasa": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 1
       },
       "DC Motema Pembe": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Dauphins Noirs": {
-        "home_matches": 3,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Celeste": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "AC Rangers": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "AS Vita Club": {
         "home_matches": 0,
-        "away_matches": 2
-      },
-      "Simba(DRC)": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "FC Renaissance (DRC)": {
-        "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       }
     }
   },
-  "example_count": 46,
-  "trained_at": "2026-02-12T19:21:42.124818"
+  "example_count": 24,
+  "result_accuracy": 0.6,
+  "ou_accuracy": 0.4,
+  "trained_at": "2026-02-13T18:33:43.278331"
 }

@@ -1,6 +1,6 @@
 [
   {
-    "url": "/en/football/matches/everton-de-vina-uni\u00f3n-la-calera-2419657",
+    "url": "/en/football/matches/everton-de-vina-unión-la-calera-2419657",
     "home_team": "Everton de Vina",
     "away_team": "Union La Calera",
     "league_code": "Cl1",
@@ -120,7 +120,7 @@
     "odds": 3.1
   },
   {
-    "url": "/en/football/matches/floresta-ce-ferrovi\u00e1rio-2423541",
+    "url": "/en/football/matches/floresta-ce-ferroviário-2423541",
     "home_team": "Floresta CE",
     "away_team": "Ferroviario",
     "league_code": "BrC",
@@ -143,7 +143,7 @@
     "predicted_avg_goals": 2.0
   },
   {
-    "url": "/en/football/matches/abecat-ouvidorense-an\u00e1polis-go-2413065",
+    "url": "/en/football/matches/abecat-ouvidorense-anápolis-go-2413065",
     "home_team": "ABECAT Ouvidorense",
     "away_team": "Anapolis GO",
     "league_code": "BrG",
@@ -353,7 +353,7 @@
     "odds": 2.0
   },
   {
-    "url": "/en/football/matches/cerro-porte\u00f1o-sportivo-luqueno-2416848",
+    "url": "/en/football/matches/cerro-porteño-sportivo-luqueno-2416848",
     "home_team": "Cerro Porteno",
     "away_team": "Sportivo Luqueno",
     "league_code": "Py1",
@@ -401,7 +401,7 @@
     "odds": 2.23
   },
   {
-    "url": "/en/football/matches/o-higgins-deportes-concepci\u00f3n-2420624",
+    "url": "/en/football/matches/o-higgins-deportes-concepción-2420624",
     "home_team": "O Higgins",
     "away_team": "Deportes Concepcion",
     "league_code": "Cl1",
@@ -468,7 +468,7 @@
     "odds": 3.5
   },
   {
-    "url": "/en/football/matches/uni\u00f3n-santa-fe-gimnasia-mendoza-2417159",
+    "url": "/en/football/matches/unión-santa-fe-gimnasia-mendoza-2417159",
     "home_team": "Union Santa Fe",
     "away_team": "Gimnasia Mendoza",
     "league_code": "Ar1",
@@ -492,7 +492,7 @@
     "odds": 3.6
   },
   {
-    "url": "/en/football/matches/argentinos-juniors-belgrano-c\u00f3rdoba-2417160",
+    "url": "/en/football/matches/argentinos-juniors-belgrano-córdoba-2417160",
     "home_team": "Argentinos Juniors",
     "away_team": "Belgrano Cordoba",
     "league_code": "Ar1",
@@ -786,12 +786,12 @@
     "odds": 3.6
   },
   {
-    "url": "/en/football/matches/76-igd\u0131r-belediye-spor-antalyaspor-2410608",
-    "home_team": "76 Igd\u0131r Belediye Spor",
+    "url": "/en/football/matches/76-igdır-belediye-spor-antalyaspor-2410608",
+    "home_team": "76 Igdır Belediye Spor",
     "away_team": "Antalyaspor",
     "league_code": "TrC",
     "match_id": "2410608",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "Turkiye Kupasi",
     "league_url_path": "football-tips-and-predictions-for-turkey/turkish-cup",
     "country_code": "tr",
@@ -944,7 +944,7 @@
     "predicted_avg_goals": 2.94
   },
   {
-    "url": "/en/football/matches/farense-u23-mar\u00edtimo-u23-2422145",
+    "url": "/en/football/matches/farense-u23-marítimo-u23-2422145",
     "home_team": "Farense U23",
     "away_team": "Maritimo U23",
     "league_code": "PtU",
@@ -1113,7 +1113,7 @@
     "away_team": "Bodrumspor SK",
     "league_code": "TrC",
     "match_id": "2410604",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "Turkiye Kupasi",
     "league_url_path": "football-tips-and-predictions-for-turkey/turkish-cup",
     "country_code": "tr",
@@ -1600,7 +1600,7 @@
     "away_team": "Halide Edip Adivar",
     "league_code": "TrC",
     "match_id": "2410605",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "Turkiye Kupasi",
     "league_url_path": "football-tips-and-predictions-for-turkey/turkish-cup",
     "country_code": "tr",
@@ -2288,7 +2288,7 @@
     "away_team": "Fethiyespor",
     "league_code": "TrC",
     "match_id": "2420761",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "Turkiye Kupasi",
     "league_url_path": "football-tips-and-predictions-for-turkey/turkish-cup",
     "country_code": "tr",
@@ -2441,7 +2441,7 @@
     "odds": 2.05
   },
   {
-    "url": "/en/football/matches/neuch\u00e2tel-xamax-yverdon-sport-2420720",
+    "url": "/en/football/matches/neuchâtel-xamax-yverdon-sport-2420720",
     "home_team": "Neuchatel Xamax",
     "away_team": "Yverdon-Sport",
     "league_code": "ChC",
@@ -2773,28 +2773,5 @@
     "has_result": true,
     "predicted_avg_goals": 2.25,
     "odds": 2.5
-  },
-  {
-    "url": "/en/football/matches/fc-sion-fc-basel-2423205",
-    "home_team": "FC Sion",
-    "away_team": "FC Basel",
-    "league_code": "Ch1",
-    "match_id": "2423205",
-    "country": "Switzerland",
-    "league_name": "Super League",
-    "league_url_path": "football-tips-and-predictions-for-switzerland/super-league",
-    "country_code": "ch",
-    "short_code": "Ch1",
-    "url_5digit_code": "24232",
-    "league": "Super League"
-  },
-  {
-    "url": "/en/football/matches/cruz-azul-vancouver-fc-2420639",
-    "home_team": "Cruz Azul",
-    "away_team": "Vancouver FC",
-    "league_code": "CNL",
-    "short_code": "CNL",
-    "match_id": "2420639",
-    "url_5digit_code": "24206"
   }
 ]

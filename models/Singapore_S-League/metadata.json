@@ -6,34 +6,32 @@
     "league": "S-League",
     "league_url_path": "",
     "country_code": "sg",
-    "match_count": 15,
+    "match_count": 10,
     "teams": {
       "Young Lions": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Tanjong Pagar Utd": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Hougang United": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
-      "Albirex Niigata S": {
+      "Albirex Niigata (S)": {
         "home_matches": 2,
         "away_matches": 0
       },
       "Geylang": {
         "home_matches": 0,
-        "away_matches": 4
-      },
-      "Albirex Niigata (S)": {
-        "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 2
       }
     }
   },
-  "example_count": 10,
-  "trained_at": "2026-02-12T19:22:16.014495"
+  "example_count": 5,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T09:55:17.615137"
 }

@@ -6,58 +6,60 @@
     "league": "A-League",
     "league_url_path": "",
     "country_code": "au",
-    "match_count": 39,
+    "match_count": 28,
     "teams": {
       "WS Wanderers": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "Perth Glory": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Melbourne Victory": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Sydney FC": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 3,
+        "away_matches": 1
       },
       "Wellington Phoenix": {
-        "home_matches": 4,
-        "away_matches": 0
-      },
-      "Melbourne City": {
-        "home_matches": 0,
-        "away_matches": 4
-      },
-      "Adelaide United": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
-      "Macarthur FC": {
+      "Perth Glory": {
         "home_matches": 2,
         "away_matches": 2
       },
       "Newcastle Jets": {
-        "home_matches": 2,
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Melbourne Victory": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Sydney FC": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Melbourne City": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Adelaide United": {
+        "home_matches": 1,
         "away_matches": 0
       },
+      "Macarthur FC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
       "Brisbane Roar": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Auckland": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "CC Mariners": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 26,
-  "trained_at": "2026-02-12T19:21:32.442992"
+  "example_count": 15,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T18:33:35.975655"
 }

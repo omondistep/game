@@ -6,7 +6,7 @@
     "league": "Tipsport liga",
     "league_url_path": "",
     "country_code": "747",
-    "match_count": 15,
+    "match_count": 10,
     "teams": {
       "OFK Malzenice": {
         "home_matches": 1,
@@ -17,39 +17,33 @@
         "away_matches": 1
       },
       "Dukla Praha B": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Teplice B": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "STK Samorin": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "FC Vlasim": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "FK Zlin B": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Zlate Moravce": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "OFK Mal\u017eenice": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Han\u00e1ck\u00e1 Slavia Krom\u011b\u0159\u00ed\u017e": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 10,
-  "trained_at": "2026-02-12T19:21:47.519179"
+  "example_count": 5,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:48.486378"
 }

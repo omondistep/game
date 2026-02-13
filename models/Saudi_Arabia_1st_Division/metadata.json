@@ -6,79 +6,15 @@
     "league": "1st Division",
     "league_url_path": "",
     "country_code": "sa",
-    "match_count": 78,
+    "match_count": 52,
     "teams": {
       "Al Baten": {
-        "home_matches": 6,
-        "away_matches": 2
+        "home_matches": 3,
+        "away_matches": 1
       },
       "Al Raed Club": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Al Arabi KSA": {
         "home_matches": 1,
         "away_matches": 1
-      },
-      "Al Faisaly KSA": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Al Jubail Club": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Al Zulfi": {
-        "home_matches": 2,
-        "away_matches": 6
-      },
-      "Abha Club": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "Al Jabalain": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Al Jndal": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "Al Anwar KSA": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Al Bukiryah": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Al Ula": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Al Tai": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Al Oruba KSA": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Al Adalah": {
-        "home_matches": 4,
-        "away_matches": 0
-      },
-      "Al Diriya": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Al Wahda Mecca": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "Jeddah Club": {
-        "home_matches": 2,
-        "away_matches": 4
       },
       "Al Arabi (KSA)": {
         "home_matches": 1,
@@ -88,9 +24,37 @@
         "home_matches": 2,
         "away_matches": 2
       },
+      "Al Jubail Club": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Al Zulfi": {
+        "home_matches": 1,
+        "away_matches": 3
+      },
+      "Abha Club": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Al Jabalain": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Al Jndal": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Al Anwar (KSA)": {
         "home_matches": 2,
         "away_matches": 1
+      },
+      "Al Bukiryah": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Al Ula": {
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Al Ta'i": {
         "home_matches": 1,
@@ -100,12 +64,26 @@
         "home_matches": 1,
         "away_matches": 1
       },
+      "Al Adalah": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
       "Al Dir'iya": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Al Wahda Mecca": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Jeddah Club": {
         "home_matches": 1,
         "away_matches": 2
       }
     }
   },
-  "example_count": 52,
-  "trained_at": "2026-02-12T19:22:14.783402"
+  "example_count": 26,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-13T09:55:16.786294"
 }

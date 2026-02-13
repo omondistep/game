@@ -6,70 +6,68 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "ve",
-    "match_count": 33,
+    "match_count": 22,
     "teams": {
       "Puerto Cabello": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Metropolitanos": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Carabobo": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Portuguesa": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Deportivo La Guaira": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Monagas SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Estudiantes FC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Caracas": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "UCV FC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Trujillanos FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Deportivo Tachira": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
-      "Academia Anzoategui": {
+      "Academia Anzo\u00e1tegui": {
         "home_matches": 1,
         "away_matches": 0
       },
       "Rayo Zuliano": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Zamora": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Academia Anzo\u00e1tegui": {
         "home_matches": 1,
         "away_matches": 0
       }
     }
   },
-  "example_count": 22,
-  "trained_at": "2026-02-12T19:22:23.265731"
+  "example_count": 11,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T09:55:25.690435"
 }

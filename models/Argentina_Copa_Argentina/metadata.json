@@ -6,7 +6,7 @@
     "league": "Copa Argentina",
     "league_url_path": "",
     "country_code": "ar",
-    "match_count": 12,
+    "match_count": 10,
     "teams": {
       "Talleres Cordoba": {
         "home_matches": 1,
@@ -14,10 +14,10 @@
       },
       "Argentino Merlo": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "CA Platense": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Argentino Monte Maiz": {
@@ -25,7 +25,7 @@
         "away_matches": 1
       },
       "Deportivo Riestra": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Deportivo Maipu": {
@@ -33,27 +33,33 @@
         "away_matches": 1
       },
       "Barracas Central": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Temperley": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
-      "Talleres C\u00f3rdoba": {
+      "Rosario Central": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Argentino Monte Ma\u00edz": {
+      "Sportivo Belgrano": {
         "home_matches": 0,
         "away_matches": 1
       },
-      "Deportivo Maip\u00fa": {
+      "Central Cordoba SdE": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Gimnasia Jujuy": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 8,
-  "trained_at": "2026-02-12T19:21:31.702744"
+  "example_count": 6,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:35.369912"
 }

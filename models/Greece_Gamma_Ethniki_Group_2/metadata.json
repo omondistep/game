@@ -6,27 +6,27 @@
     "league": "Gamma Ethniki Group 2",
     "league_url_path": "",
     "country_code": "gr",
-    "match_count": 31,
+    "match_count": 28,
     "teams": {
       "Ermis Exochi": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Pierikos FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "AE Mykonos": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Aias Salamina": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "PO Atsalenios": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Asteras Stavros": {
         "home_matches": 1,
@@ -118,6 +118,8 @@
       }
     }
   },
-  "example_count": 17,
-  "trained_at": "2026-02-12T19:21:53.186295"
+  "example_count": 14,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T18:33:52.143065"
 }

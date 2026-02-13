@@ -6,50 +6,52 @@
     "league": "NPL NSW",
     "league_url_path": "",
     "country_code": "au",
-    "match_count": 15,
+    "match_count": 10,
     "teams": {
       "Sydney U21": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "SD Raiders": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Manly United": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "St George City FA": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "NWS Spirit": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Sutherland Sharks": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "St George Saints": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Wollongong FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Marconi Stallions": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "APIA Tigers": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 10,
-  "trained_at": "2026-02-12T19:21:32.761034"
+  "example_count": 5,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:36.267413"
 }

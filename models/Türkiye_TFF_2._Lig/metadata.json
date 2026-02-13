@@ -6,159 +6,67 @@
     "league": "TFF 2. Lig",
     "league_url_path": "",
     "country_code": "tr",
-    "match_count": 75,
+    "match_count": 50,
     "teams": {
       "Hekimoglu Trabzon": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Belediye Derincespor": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Halide Edip Adivar": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Elaz\u0131gspor": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Yeni Malatyaspor": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Fethiyespor": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Mus Menderesspor": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "K\u0131rklarelispor": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Ankaraspor": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Tuzlaspor": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Kastamonuspor": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Kepez Belediyespor": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Somaspor": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Ankara Demirspor": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Sanl\u0131urfaspor": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Inegolspor": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Karacabey Bld": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Erzinspor": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Karaman Belediyespor": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Erbaaspor SK": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Alt\u0131nordu SK": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Adana 1954 FK": {
-        "home_matches": 0,
-        "away_matches": 4
-      },
-      "Muglaspor": {
         "home_matches": 1,
         "away_matches": 0
-      },
-      "Buca FK": {
-        "home_matches": 0,
-        "away_matches": 4
-      },
-      "Batman Petrolspor": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "24 Erzincanspor": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Icel Idman Yurdu": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Kahramanmaras Istiklalsp": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Arnavutkoy Bld": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Bursaspor": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Adanaspor": {
-        "home_matches": 4,
-        "away_matches": 0
-      },
-      "68 Aksaray Bld": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Aliaga FK": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Mardin BB": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Isparta Davrazspor": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Menemen Bld": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Antalya Kestelspor": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Gebzespor": {
-        "home_matches": 0,
-        "away_matches": 2
       },
       "Ineg\u00f6lspor": {
         "home_matches": 0,
@@ -168,9 +76,41 @@
         "home_matches": 2,
         "away_matches": 0
       },
+      "Erzinspor": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Karaman Belediyespor": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Erbaaspor SK": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Alt\u0131nordu SK": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Adana 1954 FK": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
       "Mu\u011flaspor": {
         "home_matches": 1,
         "away_matches": 0
+      },
+      "Buca FK": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Batman Petrolspor": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "24 Erzincanspor": {
+        "home_matches": 0,
+        "away_matches": 1
       },
       "I\u00e7el Idman Yurdu": {
         "home_matches": 1,
@@ -184,6 +124,14 @@
         "home_matches": 2,
         "away_matches": 0
       },
+      "Bursaspor": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Adanaspor": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
       "68 Aksaray Bld.": {
         "home_matches": 0,
         "away_matches": 1
@@ -191,9 +139,31 @@
       "Alia\u011fa FK": {
         "home_matches": 2,
         "away_matches": 0
+      },
+      "Mardin BB": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Isparta Davrazspor": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Menemen Bld": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Antalya Kestelspor": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Gebzespor": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 50,
-  "trained_at": "2026-02-12T19:22:20.238381"
+  "example_count": 25,
+  "result_accuracy": 0.6,
+  "ou_accuracy": 0.4,
+  "trained_at": "2026-02-13T09:55:22.149440"
 }

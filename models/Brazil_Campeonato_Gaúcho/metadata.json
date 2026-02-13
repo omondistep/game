@@ -6,42 +6,58 @@
     "league": "Campeonato Ga\u00facho",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 66,
+    "match_count": 48,
     "teams": {
-      "Avenida RS": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "Novo Hamburgo RS": {
-        "home_matches": 0,
-        "away_matches": 4
-      },
-      "Anapolina GO": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "Goias": {
+      "ABECAT Ouvidorense": {
         "home_matches": 2,
         "away_matches": 1
       },
-      "Guarany RS": {
-        "home_matches": 4,
+      "Atletico GO": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Anapolis GO": {
+        "home_matches": 1,
         "away_matches": 2
       },
-      "Inter Santa Maria RS": {
+      "Vila Nova FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Avenida RS": {
         "home_matches": 2,
-        "away_matches": 4
+        "away_matches": 1
+      },
+      "Novo Hamburgo RS": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Anapolina GO": {
+        "home_matches": 3,
+        "away_matches": 1
+      },
+      "Goias": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Guarany RS": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Inter Santa Maria RS": {
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Juventude": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Monsoon": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Internacional": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Gremio": {
@@ -53,20 +69,16 @@
         "away_matches": 1
       },
       "Caxias RS": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Jataiense GO": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Atletico GO": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Inhumas": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "CRAC GO": {
         "home_matches": 2,
@@ -74,58 +86,24 @@
       },
       "Aparecidense GO": {
         "home_matches": 0,
-        "away_matches": 4
-      },
-      "ABECAT Ouvidorense": {
-        "home_matches": 2,
         "away_matches": 2
       },
       "Goiatuba EC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
-      },
-      "Anapolis GO": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Vila Nova FC": {
-        "home_matches": 0,
-        "away_matches": 2
       },
       "Ypiranga RS": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Sao Luiz RS": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Goi\u00e1s": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Gr\u00eamio": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "EC S\u00e3o Jos\u00e9": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Atl\u00e9tico GO": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "An\u00e1polis GO": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "S\u00e3o Luiz RS": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 44,
-  "trained_at": "2026-02-12T19:21:38.998438"
+  "example_count": 26,
+  "result_accuracy": 0.6666666666666666,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T18:33:41.107071"
 }

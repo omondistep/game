@@ -6,58 +6,60 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "bh",
-    "match_count": 20,
+    "match_count": 15,
     "teams": {
       "Al Khaldiya": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Al Ahli Manama": {
-        "home_matches": 0,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Budaiya": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Malkiya": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Muharraq SC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Shabab Manama": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Al Hidd Club": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Bahrain Club": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Sitra Club": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Riffa Club": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Al Ali CSC": {
-        "home_matches": 2,
-        "away_matches": 0
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Najma Manama": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 13,
-  "trained_at": "2026-02-12T19:21:36.638917"
+  "example_count": 8,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:38.886220"
 }

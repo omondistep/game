@@ -6,74 +6,76 @@
     "league": "National First Division",
     "league_url_path": "",
     "country_code": "za",
-    "match_count": 30,
+    "match_count": 20,
     "teams": {
       "Venda FA": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Casric Stars": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Cape Town City": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Pretoria University": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Lerumo Lions": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Gomora": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Upington City": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Black Leopards": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Baroka FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Highbury": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Kruger United": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Hungry Lions FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Milford FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Leicesterfield City": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Midlands Wanderers": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "The Bees": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 20,
-  "trained_at": "2026-02-12T19:22:24.758693"
+  "example_count": 10,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T09:55:26.948402"
 }

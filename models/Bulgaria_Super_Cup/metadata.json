@@ -6,23 +6,23 @@
     "league": "Super Cup",
     "league_url_path": "",
     "country_code": "bg",
-    "match_count": 10,
+    "match_count": 9,
     "teams": {
       "Ludogorets": {
-        "home_matches": 3,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Levski Sofia": {
         "home_matches": 0,
-        "away_matches": 3
+        "away_matches": 2
       },
       "CSKA-Sofia": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "CSKA 1948": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Botev Vratsa": {
         "home_matches": 1,
@@ -31,9 +31,19 @@
       "Arda Kardzhali": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Lokomotiv Plovdiv": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Botev Plovdiv": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 6,
-  "trained_at": "2026-02-12T19:21:36.329108"
+  "example_count": 5,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:38.587621"
 }

@@ -6,23 +6,39 @@
     "league": "Liga de Ascenso",
     "league_url_path": "",
     "country_code": "cr",
-    "match_count": 51,
+    "match_count": 42,
     "teams": {
-      "Santa Cruz FC": {
-        "home_matches": 6,
-        "away_matches": 3
+      "Pitbulls": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Cariari Pococi": {
+        "home_matches": 0,
+        "away_matches": 1
       },
       "AD Cofutpa": {
-        "home_matches": 0,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Grecia": {
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Aserri": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
-      "Consultants Moravia": {
+      "Santa Ana": {
         "home_matches": 2,
-        "away_matches": 4
+        "away_matches": 2
+      },
+      "Santa Cruz FC": {
+        "home_matches": 3,
+        "away_matches": 2
+      },
+      "Consultants Moravia": {
+        "home_matches": 1,
+        "away_matches": 2
       },
       "AD Sarchi": {
         "home_matches": 2,
@@ -30,31 +46,19 @@
       },
       "ADR Jicaral": {
         "home_matches": 0,
-        "away_matches": 4
-      },
-      "Santa Ana": {
-        "home_matches": 4,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Escorpiones Belen": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "CS Uruguay de Coronado": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Pitbulls": {
         "home_matches": 2,
         "away_matches": 2
       },
       "AD Carmelita": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Grecia": {
-        "home_matches": 2,
-        "away_matches": 0
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Inter San Carlos": {
         "home_matches": 2,
@@ -62,22 +66,12 @@
       },
       "Quepos Cambute": {
         "home_matches": 0,
-        "away_matches": 2
-      },
-      "Aserr\u00ed": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "AD Sarch\u00ed": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Escorpiones Bel\u00e9n": {
-        "home_matches": 1,
         "away_matches": 1
       }
     }
   },
-  "example_count": 29,
-  "trained_at": "2026-02-12T19:21:46.887409"
+  "example_count": 20,
+  "result_accuracy": 0.25,
+  "ou_accuracy": 0.25,
+  "trained_at": "2026-02-13T18:33:48.139720"
 }

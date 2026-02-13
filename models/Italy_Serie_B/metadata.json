@@ -6,58 +6,60 @@
     "league": "Serie B",
     "league_url_path": "",
     "country_code": "it",
-    "match_count": 18,
+    "match_count": 12,
     "teams": {
       "Sampdoria": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Palermo": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Pescara": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Catanzaro": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Venezia": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Modena FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Padova Calcio": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Carrarese Calcio": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Virtus Entella": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Cesena": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Reggiana": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Mantova FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 12,
-  "trained_at": "2026-02-12T19:21:58.847661"
+  "example_count": 6,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:58.276390"
 }

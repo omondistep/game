@@ -6,262 +6,232 @@
     "league": "Thai League 3",
     "league_url_path": "",
     "country_code": "th",
-    "match_count": 153,
+    "match_count": 97,
     "teams": {
       "Saimit Kabin United": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Rayong United": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Udon Banchan": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Yasothon United": {
-        "home_matches": 2,
-        "away_matches": 3
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Saraburi United": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "KBU FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Futera United": {
-        "home_matches": 3,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Chamchuri United": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Ang Thong": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Pathum Thani University": {
-        "home_matches": 2,
-        "away_matches": 3
-      },
-      "Thonburi United": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 1
       },
+      "Ang Thong": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Pathum Thani University": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Thonburi United": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
       "Nonthaburi United": {
-        "home_matches": 2,
-        "away_matches": 3
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Assumption United": {
-        "home_matches": 3,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Hua Hin City": {
-        "home_matches": 1,
-        "away_matches": 2
+        "home_matches": 0,
+        "away_matches": 1
       },
       "STK Muangnont FC": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Samut Sakhon City": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Satun": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Samui United": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Nakhon Mae Sot": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "Uttaradit FC": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Suranaree Black Cat": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "Khonkaen FC": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Marines Eureka": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Banbueng City": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Muang Loei Utd": {
         "home_matches": 2,
         "away_matches": 1
       },
-      "Khonkaen Mordindang FC": {
+      "Uttaradit FC": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 1
+      },
+      "Suranaree Black Cat": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Khonkaen FC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Marines Eureka": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Banbueng City": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Muang Loei Utd": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Khonkaen Mordindang FC": {
+        "home_matches": 0,
+        "away_matches": 1
       },
       "Royal Thai Air Force": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Lopburi City": {
         "home_matches": 0,
-        "away_matches": 3
+        "away_matches": 1
       },
       "North Bangkok University": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Singbury Warriors": {
-        "home_matches": 1,
-        "away_matches": 2
+        "home_matches": 0,
+        "away_matches": 1
       },
       "Samut Songkhram City": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Royal Thai Army": {
         "home_matches": 0,
-        "away_matches": 3
+        "away_matches": 1
       },
       "Chumphon United": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Paet Riew City": {
-        "home_matches": 2,
-        "away_matches": 1
+        "home_matches": 1,
+        "away_matches": 0
       },
       "Ubon Kruanapat": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Ubon Eastern": {
         "home_matches": 0,
-        "away_matches": 3
+        "away_matches": 1
       },
       "Ranong United": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Phuket FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Pattaya City": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Bankhai United": {
         "home_matches": 0,
-        "away_matches": 3
+        "away_matches": 1
       },
       "Thap Luang United": {
-        "home_matches": 2,
-        "away_matches": 1
+        "home_matches": 1,
+        "away_matches": 0
       },
       "Raj Pracha": {
-        "home_matches": 1,
-        "away_matches": 2
+        "home_matches": 0,
+        "away_matches": 1
       },
       "Phichit United": {
-        "home_matches": 2,
-        "away_matches": 1
+        "home_matches": 1,
+        "away_matches": 0
       },
       "Maejo United": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Chiangmai FC": {
-        "home_matches": 2,
+        "home_matches": 0,
         "away_matches": 1
       },
+      "Chiangmai FC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
       "Khelang United": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "See Kwae City FC": {
         "home_matches": 0,
-        "away_matches": 3
+        "away_matches": 1
       },
       "ACDC FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Udon United": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Prime Bangkok FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Chiangrai TSC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Siam Navy": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Surin KCM": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Phitsanulok FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Chattrakarn City": {
         "home_matches": 0,
-        "away_matches": 2
-      },
-      "Royal Thai Fleet": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Customs United": {
-        "home_matches": 0,
         "away_matches": 1
-      },
-      "Chiangrai City": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Surin City": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Kamphaengphet FC": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Chachoengsao": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Roi Et United": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Suphanburi FC": {
-        "home_matches": 1,
-        "away_matches": 0
       }
     }
   },
-  "example_count": 97,
-  "trained_at": "2026-02-12T19:22:18.953316"
+  "example_count": 41,
+  "result_accuracy": 0.5555555555555556,
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-13T09:55:20.625511"
 }

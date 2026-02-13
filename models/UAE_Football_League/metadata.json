@@ -6,66 +6,68 @@
     "league": "Football League",
     "league_url_path": "",
     "country_code": "ae",
-    "match_count": 36,
+    "match_count": 25,
     "teams": {
-      "Ittihad Kalba": {
+      "Bataeh SC": {
         "home_matches": 2,
+        "away_matches": 1
+      },
+      "Al Dhafra": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Ittihad Kalba": {
+        "home_matches": 1,
         "away_matches": 0
       },
       "Al Ain": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Wahda Abu Dhabi": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Dubba Al Fujairah": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Ajman Club": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Al Ahli Dubai": {
         "home_matches": 0,
-        "away_matches": 4
-      },
-      "Al Dhafra": {
-        "home_matches": 4,
-        "away_matches": 0
+        "away_matches": 2
       },
       "Sharjah SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Wasl Dubai": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Khor Fakkan Club": {
         "home_matches": 0,
-        "away_matches": 4
-      },
-      "Bataeh SC": {
-        "home_matches": 2,
         "away_matches": 2
       },
       "Jazira Abu Dhabi": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Nasr Dubai": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Baniyas": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 24,
-  "trained_at": "2026-02-12T19:21:29.146675"
+  "example_count": 13,
+  "result_accuracy": 0.6666666666666666,
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-13T18:33:34.114338"
 }

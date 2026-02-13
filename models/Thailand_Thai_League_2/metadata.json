@@ -6,82 +6,84 @@
     "league": "Thai League 2",
     "league_url_path": "",
     "country_code": "th",
-    "match_count": 54,
+    "match_count": 35,
     "teams": {
       "Chanthaburi": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Rasi Salai United": {
-        "home_matches": 2,
-        "away_matches": 3
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Chainat FC": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Kasetsart FC": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Nong Bua Pitchaya": {
-        "home_matches": 2,
-        "away_matches": 1
+        "home_matches": 1,
+        "away_matches": 0
       },
       "Chiangmai United": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Police Tero FC": {
         "home_matches": 1,
-        "away_matches": 2
-      },
-      "Nakhon Si United": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Mahasarakham Sambaitao FC": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Bangkok FC": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Khon Kaen United": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Phrae United": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Trat FC": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Songkhla FC": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Nakhon Pathom": {
-        "home_matches": 2,
         "away_matches": 1
       },
+      "Police Tero FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Nakhon Si United": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Mahasarakham Sambaitao FC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Bangkok FC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Khon Kaen United": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Phrae United": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Trat FC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Songkhla FC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Nakhon Pathom": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
       "Pattaya Dolphins": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Pattani FC": {
-        "home_matches": 1,
-        "away_matches": 2
+        "home_matches": 0,
+        "away_matches": 1
       },
       "Sisaket United": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       }
     }
   },
-  "example_count": 35,
-  "trained_at": "2026-02-12T19:22:18.518964"
+  "example_count": 16,
+  "result_accuracy": 0.25,
+  "ou_accuracy": 0.75,
+  "trained_at": "2026-02-13T09:55:20.170653"
 }

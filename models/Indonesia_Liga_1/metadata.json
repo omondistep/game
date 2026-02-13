@@ -6,74 +6,80 @@
     "league": "Liga 1",
     "league_url_path": "",
     "country_code": "id",
-    "match_count": 36,
+    "match_count": 27,
     "teams": {
-      "PSIM Yogyakarta": {
-        "home_matches": 4,
-        "away_matches": 0
+      "Persis Solo FC": {
+        "home_matches": 2,
+        "away_matches": 1
       },
-      "Persebaya Surabaya": {
+      "Madura United FC": {
         "home_matches": 0,
-        "away_matches": 2
-      },
-      "Dewa United": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Arema FC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Persik Kediri": {
-        "home_matches": 4,
+        "home_matches": 3,
         "away_matches": 0
       },
-      "Bali United Pusam": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Persita Tangerang": {
+      "PSIM Yogyakarta": {
         "home_matches": 2,
-        "away_matches": 0
-      },
-      "Persija Jakarta": {
-        "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Malut United": {
         "home_matches": 2,
-        "away_matches": 2
-      },
-      "Bhayangkara Utd": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Persis Solo FC": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Persib Bandung": {
-        "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Persijap Jepara": {
         "home_matches": 0,
         "away_matches": 2
       },
+      "Persebaya Surabaya": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Dewa United": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Arema FC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Bali United Pusam": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Persita Tangerang": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Persija Jakarta": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Bhayangkara Utd": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Persib Bandung": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
       "PSM Makassar": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Semen Padang": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Borneo FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 24,
-  "trained_at": "2026-02-12T19:21:55.781795"
+  "example_count": 15,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:55.326119"
 }

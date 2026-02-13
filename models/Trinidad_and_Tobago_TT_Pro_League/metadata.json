@@ -6,66 +6,60 @@
     "league": "TT Pro League",
     "league_url_path": "",
     "country_code": "tt",
-    "match_count": 34,
+    "match_count": 24,
     "teams": {
       "Caledonia AIA": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Point Fortin Civic": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Club Sando": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
-      "Police FC TandT": {
+      "Police FC (T&T)": {
         "home_matches": 1,
         "away_matches": 1
       },
       "La Horquetta Rangers": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Defence Force": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Central FC TandT": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "San Juan Jabloteh": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Prison Service": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "AC Port of Spain": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Cunupia FC": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Phoenix": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Police FC (T&T)": {
         "home_matches": 1,
         "away_matches": 1
       },
       "Central FC (T&T)": {
         "home_matches": 1,
         "away_matches": 1
+      },
+      "San Juan Jabloteh": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Prison Service": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "AC Port of Spain": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Cunupia FC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Phoenix": {
+        "home_matches": 1,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 20,
-  "trained_at": "2026-02-12T19:22:18.160579"
+  "example_count": 10,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.0,
+  "trained_at": "2026-02-13T09:55:19.747127"
 }

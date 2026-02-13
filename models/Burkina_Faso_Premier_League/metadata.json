@@ -6,7 +6,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "bf",
-    "match_count": 27,
+    "match_count": 18,
     "teams": {
       "Vitesse FC BFA": {
         "home_matches": 2,
@@ -14,7 +14,7 @@
       },
       "Forces Armees": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Real du Faso": {
         "home_matches": 1,
@@ -22,54 +22,48 @@
       },
       "AJEB": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Salitas": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "ASFA-Yennenga": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "AS Douanes": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Rahimo": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Etoile Filante": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Rail Club Kadiogo": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "RC Bobo-Dioulasso": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Sporting Cascades": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "AS DE LA SONABEL": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Vitesse FC (BFA)": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "R\u00e9al du Faso": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 0
       }
     }
   },
-  "example_count": 18,
-  "trained_at": "2026-02-12T19:21:35.530752"
+  "example_count": 9,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:38.297829"
 }

@@ -6,54 +6,52 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "bb",
-    "match_count": 32,
+    "match_count": 22,
     "teams": {
       "Ellerton": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "UWI Blackbirds": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Brittons Hill": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Pride of Gall Hill": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Bagatelle": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Paradise": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Weymouth Wales": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "St Andrew Lions": {
         "home_matches": 1,
         "away_matches": 1
       },
       "Wotton": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Kick Start": {
         "home_matches": 0,
-        "away_matches": 2
-      },
-      "St. Andrew Lions": {
-        "home_matches": 1,
         "away_matches": 1
       }
     }
   },
-  "example_count": 20,
-  "trained_at": "2026-02-12T19:21:34.845799"
+  "example_count": 10,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-13T18:33:37.782764"
 }

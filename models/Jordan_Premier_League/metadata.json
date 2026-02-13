@@ -6,54 +6,52 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "jo",
-    "match_count": 33,
+    "match_count": 24,
     "teams": {
-      "Hussein Irbid": {
-        "home_matches": 4,
+      "Sama Al Sarhan": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Ramtha Club": {
+        "home_matches": 1,
         "away_matches": 2
       },
-      "Al Salt": {
+      "Hussein Irbid": {
         "home_matches": 2,
+        "away_matches": 1
+      },
+      "Al Salt": {
+        "home_matches": 1,
         "away_matches": 2
       },
       "Shabab Al Urdun": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Wihdat Amman": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Faisaly Amman": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Ramtha Club": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Ahli Amman": {
         "home_matches": 2,
-        "away_matches": 2
-      },
-      "Sama Al Sarhan": {
-        "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Jazeera Amman": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Buqaa Amman": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Buqa'a Amman": {
         "home_matches": 0,
         "away_matches": 2
       }
     }
   },
-  "example_count": 22,
-  "trained_at": "2026-02-12T19:22:00.209980"
+  "example_count": 13,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T18:33:59.454650"
 }

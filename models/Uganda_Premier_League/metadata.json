@@ -6,78 +6,76 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "ug",
-    "match_count": 30,
+    "match_count": 20,
     "teams": {
       "Buhimba United Saints": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "NEC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "KCC Kampala": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "UPDF FC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Lugazi Municipal": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Bul FC": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Calvary": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "URA Kampala": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Gaddafi FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Maroons FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Vipers SC": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
-      "Police FC UGA": {
+      "Police FC (UGA)": {
         "home_matches": 0,
         "away_matches": 1
       },
       "Kitara FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Express FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Villa SC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Mbarara City": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Police FC (UGA)": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 20,
-  "trained_at": "2026-02-12T19:22:22.433126"
+  "example_count": 10,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-13T09:55:24.866329"
 }

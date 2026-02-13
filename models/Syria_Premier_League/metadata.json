@@ -6,74 +6,76 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "sy",
-    "match_count": 45,
+    "match_count": 30,
     "teams": {
       "Ittihad Aleppo": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Karamah": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Majd Damascus": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Taliya Hama": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Jaish Damascus": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Omyyah Idlib": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Foutoua Club": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Al Shouleh": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Hutteen Latakia": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Wahda Damascus": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Jableh SC": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Hurriya Aleppo": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Khan Sheikhoun": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Shorta Damascus": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Wathba Homs": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Tishreen SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 30,
-  "trained_at": "2026-02-12T19:22:17.751705"
+  "example_count": 15,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T09:55:19.416658"
 }

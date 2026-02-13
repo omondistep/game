@@ -6,58 +6,60 @@
     "league": "National League",
     "league_url_path": "",
     "country_code": "mm",
-    "match_count": 45,
+    "match_count": 30,
     "teams": {
       "Yarmanya Utd": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Sagaing United": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Ayeyawady United": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Dagon FC": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Yadanarbon FC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Thitsar Arman": {
         "home_matches": 0,
-        "away_matches": 6
+        "away_matches": 3
       },
       "Dagon Port": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Hantharwady United": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "ISPE FC": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Yangon United": {
-        "home_matches": 4,
+        "home_matches": 1,
         "away_matches": 2
       },
+      "ISPE FC": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Yangon United": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Rakhine United": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Shan United": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 30,
-  "trained_at": "2026-02-12T19:22:04.796465"
+  "example_count": 15,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T13:17:03.622307"
 }

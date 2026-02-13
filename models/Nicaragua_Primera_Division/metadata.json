@@ -6,55 +6,43 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "ni",
-    "match_count": 60,
+    "match_count": 40,
     "teams": {
-      "Diriangen FC": {
+      "Diriang\u00e9n FC": {
         "home_matches": 4,
         "away_matches": 0
       },
       "Jalapa ART": {
-        "home_matches": 4,
-        "away_matches": 4
+        "home_matches": 2,
+        "away_matches": 2
       },
       "Matagalpa FC": {
-        "home_matches": 4,
-        "away_matches": 4
+        "home_matches": 2,
+        "away_matches": 2
       },
       "Rancho Santana": {
-        "home_matches": 4,
-        "away_matches": 4
+        "home_matches": 2,
+        "away_matches": 2
       },
-      "Real Esteli": {
+      "Real Estel\u00ed": {
         "home_matches": 2,
         "away_matches": 2
       },
       "UNAN Managua": {
         "home_matches": 0,
-        "away_matches": 8
-      },
-      "CD Walter Ferretti": {
-        "home_matches": 2,
-        "away_matches": 6
-      },
-      "Real Madriz": {
-        "home_matches": 4,
         "away_matches": 4
       },
+      "CD Walter Ferretti": {
+        "home_matches": 1,
+        "away_matches": 3
+      },
+      "Real Madriz": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
       "Managua FC": {
-        "home_matches": 6,
-        "away_matches": 2
-      },
-      "HandH Export": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Diriang\u00e9n FC": {
-        "home_matches": 4,
-        "away_matches": 0
-      },
-      "Real Estel\u00ed": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 3,
+        "away_matches": 1
       },
       "H&H Export": {
         "home_matches": 2,
@@ -62,6 +50,8 @@
       }
     }
   },
-  "example_count": 40,
-  "trained_at": "2026-02-12T19:22:08.906096"
+  "example_count": 20,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-13T09:55:12.540280"
 }

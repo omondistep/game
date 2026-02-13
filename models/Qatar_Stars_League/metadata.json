@@ -6,50 +6,52 @@
     "league": "Stars League",
     "league_url_path": "",
     "country_code": "qa",
-    "match_count": 24,
+    "match_count": 16,
     "teams": {
       "Umm Salal SC": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Arabi Doha": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Wakra": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Shahaniya SC": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Shamal SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Sailiya SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al-Duhail": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Gharrafa SC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Al Sadd SC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Ahli Doha": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 16,
-  "trained_at": "2026-02-12T19:22:12.300522"
+  "example_count": 8,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T09:55:14.852024"
 }

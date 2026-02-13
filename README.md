@@ -278,24 +278,22 @@ alias pf='source ~/game/football_env/bin/activate && python ~/game/football_pred
 
 | Alias | Command | Description |
 |-------|---------|-------------|
-| `pf <url>` | predict --url | Predict match from URL |
-| `pfr <url>` | result --url | Add match result from URL |
-| `pft` | train | Train model |
-| `pfa` | auto_train.py | Auto-train (if 20+ hours since last) |
-| `pfaf` | auto_train.py --force | Force auto-train now |
-| `pfas` | auto_train.py --status | Check training status |
-| `pfd` | daily_train.py | Run daily training script |
-| `pfh` | scrape_historical.py | Scrape historical matches |
-| `pfhd <date>` | scrape_historical.py --date | Scrape specific date |
-| `pfhn <days>` | scrape_historical.py --days | Scrape last N days |
-| `pfrb` | rebuild_data.py | Rebuild training database |
-| `pfld` | build_league_db.py | Build league database |
-| `pfsl` | scrape_all_leagues.py | Scrape all leagues |
-| `pfms` | model_stats.py | Show model statistics |
-| `pfss` | stats | Show system statistics |
-| `pfcw` | calculate_weights.py | Calculate data-driven weights |
-| `pfe` | extract_results.py | Extract results from results.txt |
-| `pfhelp` | - | Show help message |
+| `fb <url>` | predict --url | Predict match from URL |
+| `fb result <url> <1X2>` | result --url | Add match result |
+| `fbt` | auto_train.py | Auto-train (if 20+ hours since last) |
+| `fbt force` | auto_train.py --force | Force auto-train now |
+| `fbt status` | auto_train.py --status | Check training status |
+| `fbu` | incremental + rebuild + train + weights | **Full daily update (recommended)** |
+| `fbu quick` | rebuild + train + weights | Quick update (no scraping) |
+| `fbu process` | process-queue + rebuild + train + weights | Process results queue |
+| `fbd hist [date]` | scrape_historical.py | Scrape historical matches |
+| `fbd rebuild` | rebuild_data.py | Rebuild training database |
+| `fbd leagues` | build_league_db.py | Build league database |
+| `fbd scrape` | scrape_all_leagues.py | Scrape all leagues |
+| `fbs` | model_stats.py | Show model statistics |
+| `fbs weights` | calculate_weights.py | Calculate optimal weights |
+| `fbs sys` | stats | Show system statistics |
+| `fbh` | - | Show help message |
 
 ### Quick Start
 
@@ -394,17 +392,60 @@ python auto_train.py
 
 The system can scrape historical match data from Forebet's date pages to build a comprehensive training dataset.
 
-### Scrape Historical Matches
+### Incremental Update (Recommended Daily Workflow)
+
+The recommended approach is to use incremental updates, which efficiently add new data to the existing combined file:
+
+```bash
+# Incremental update: scrape yesterday and add to combined file
+python scrape_historical.py --incremental
+
+# Incremental update for today
+python scrape_historical.py --incremental --days-back 0
+```
+
+This will:
+1. Scrape matches for the specified date
+2. Add matches with results to `historical_matches_combined.json`
+3. Skip past matches without results (postponed/cancelled)
+4. Add upcoming matches to `results.txt` for later processing
+
+### Process Results Queue
+
+After matches are played, process the queue to get results:
+
+```bash
+# Process all URLs in results.txt
+python scrape_historical.py --process-queue
+
+# Process with limit
+python scrape_historical.py --process-queue --max-urls 20
+```
+
+This will:
+1. Check each URL in `results.txt` for results
+2. Remove past matches without results (postponed/cancelled)
+3. Keep upcoming matches in the queue
+
+### Combine Individual Files
+
+If you have individual date files, combine them into one:
+
+```bash
+# Combine all individual date files
+python scrape_historical.py --combine
+```
+
+### Scrape Historical Matches (Full Range)
+
+For initial setup or bulk scraping:
 
 ```bash
 # Scrape matches for a specific date range
 python scrape_historical.py --start 2026-01-25 --end 2026-02-11
 
 # Scrape a single date
-python scrape_historical.py --date 2026-01-25
-
-# Scrape last N days
-python scrape_historical.py --days 7
+python scrape_historical.py --start 2026-02-10 --end 2026-02-10
 ```
 
 This will:
@@ -412,22 +453,22 @@ This will:
 2. Scrape detailed match data for each match
 3. Extract actual results for completed matches
 4. Save data to `data/historical_matches_YYYY-MM-DD.json`
-5. Update the training dataset automatically
+5. Matches without results go to `results.txt`
 
 ### Rebuild Training Database
 
-To rebuild the entire training database from historical data:
+To rebuild the training database from the combined file:
 
 ```bash
-# Rebuild from all historical data files
+# Rebuild from combined file (default, faster)
 python rebuild_data.py
 
-# Rebuild with specific date range
-python rebuild_data.py --start 2026-01-25 --end 2026-02-11
+# Rebuild from individual date files
+python rebuild_data.py --use-individual
 ```
 
 This will:
-1. Load all historical match data files
+1. Load match data from combined file (or individual files)
 2. Extract features and results
 3. Build a comprehensive training dataset
 4. Train models for each league with sufficient data
@@ -462,18 +503,44 @@ python calculate_weights.py
 
 ## Daily Training Script
 
-The `daily_train.py` script provides automated daily training with historical data updates:
+The recommended daily workflow uses the `fbu` alias:
 
 ```bash
-# Run daily training
-python daily_train.py
+# Full daily update (run this daily)
+fbu
 
 # This will:
-# 1. Scrape yesterday's matches
-# 2. Update historical data
-# 3. Rebuild training database
-# 4. Retrain all models
-# 5. Log training results
+# 1. Incremental update (scrape yesterday's matches)
+# 2. Rebuild training database
+# 3. Train all models
+# 4. Calculate optimal weights
+```
+
+### Quick Update (No Scraping)
+
+If you just want to rebuild and retrain:
+
+```bash
+fbu quick
+
+# This will:
+# 1. Rebuild training database
+# 2. Train all models
+# 3. Calculate optimal weights
+```
+
+### Process Results Queue
+
+After matches are played, process the queue:
+
+```bash
+fbu process
+
+# This will:
+# 1. Process results.txt queue
+# 2. Rebuild training database
+# 3. Train all models
+# 4. Calculate optimal weights
 ```
 
 ### Systemd Service (Linux)
@@ -537,36 +604,34 @@ game/
 ├── prediction_model.py            # ML models (Random Forest, Gradient Boosting)
 ├── auto_train.py                  # Auto-training script (20-hour threshold)
 ├── scrape_historical.py          # Historical match data scraper
-├── train.sh                      # Quick training script
-├── fbtrain                       # Training command (executable)
-├── fbextract                     # Extract results command (executable)
-├── fbstats                       # Model statistics command (executable)
-├── extract_results.py            # Extract results script
-├── model_stats.py                # Statistics script
-├── test_scraper.py               # Testing script
+├── rebuild_data.py               # Rebuild training database
+├── calculate_weights.py          # Calculate optimal weights
+├── model_stats.py                # Model statistics
+├── fb_aliases                    # Shell aliases (source this file)
 ├── README.md                     # This file
-├── results.txt                   # URL queue (persists, cleared after training)
+├── results.txt                   # URL queue for upcoming matches
 ├── training_history.json         # Training history for tracking improvement
-├── last_training.json            # Last training timestamp
 ├── data/                         # Data directory
 │   ├── matches.json             # Scraped match data
 │   ├── results.json             # Actual results
 │   ├── training_data.pkl        # Training dataset
+│   ├── historical_matches_combined.json  # Combined historical data (main file)
+│   ├── historical_matches_*.json # Individual date files (backup)
 │   ├── league_mapping.json      # League code to name mappings
 │   ├── leagues_db.json          # League database
-│   └── historical_matches_*.json # Historical match data by date
+│   ├── factor_weights.json      # Data-driven weights
+│   └── skipped_matches.json     # Matches without results
 ├── models/                      # Models directory
-│   ├── result_model.pkl         # Trained global result model
-│   ├── ou_model.pkl             # Trained global O/U model
-│   ├── scaler.pkl               # Feature scaler
-│   └── leagues/                 # League-specific models
-│       └── {league_name}/
-│           ├── result_model.pkl  # League result model
-│           ├── ou_model.pkl     # League O/U model
-│           └── scaler.pkl      # League scaler
+│   ├── Global_Model/            # Global model for all leagues
+│   │   ├── result_model.pkl     # Trained global result model
+│   │   ├── ou_model.pkl         # Trained global O/U model
+│   │   └── scaler.pkl           # Feature scaler
+│   └── {league_name}/           # League-specific models
+│       ├── result_model.pkl      # League result model
+│       ├── ou_model.pkl         # League O/U model
+│       └── scaler.pkl           # League scaler
 ├── api/                          # FastAPI web API
 │   └── main.py                   # API endpoints
-├── old_game/                     # Legacy code
 └── prediction_*.json             # Saved predictions
 ```
 

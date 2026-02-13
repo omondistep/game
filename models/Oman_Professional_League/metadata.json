@@ -6,74 +6,68 @@
     "league": "Professional League",
     "league_url_path": "",
     "country_code": "om",
-    "match_count": 22,
+    "match_count": 15,
     "teams": {
       "Dhofar Salalah": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Ibri Club": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
-      "Al Nahda OMA": {
+      "Al Nahda (OMA)": {
         "home_matches": 1,
         "away_matches": 0
       },
       "Bahla Club": {
         "home_matches": 0,
-        "away_matches": 2
-      },
-      "Al Seeb SC": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Al Shabab Oman": {
-        "home_matches": 0,
         "away_matches": 1
       },
-      "Samail": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Nasr Salalah": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Sur Club": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Oman Club": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Rustaq Club": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Al Khaburah": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Saham Club": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Sohar Club": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Al Nahda (OMA)": {
+      "Al Seeb SC": {
         "home_matches": 1,
         "away_matches": 0
       },
       "Al Shabab (Oman)": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Samail": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Nasr Salalah": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sur Club": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Oman Club": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Rustaq Club": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Al Khaburah": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Saham Club": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Sohar Club": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 14,
-  "trained_at": "2026-02-12T19:22:09.862781"
+  "example_count": 7,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T09:55:13.496414"
 }

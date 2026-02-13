@@ -6,7 +6,7 @@
     "league": "Reserve League",
     "league_url_path": "",
     "country_code": "ar",
-    "match_count": 10,
+    "match_count": 9,
     "teams": {
       "River Plate Res": {
         "home_matches": 1,
@@ -40,24 +40,18 @@
         "home_matches": 0,
         "away_matches": 1
       },
-      "River Plate Res.": {
+      "Atletico Tucuman Res": {
         "home_matches": 1,
         "away_matches": 0
       },
-      "Talleres C\u00f3rdoba Res.": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Central C\u00f3rdoba SdE Res.": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Quilmes Res.": {
+      "Argentinos Juniors Res": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 6,
-  "trained_at": "2026-02-12T19:21:32.150901"
+  "example_count": 5,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:35.668093"
 }

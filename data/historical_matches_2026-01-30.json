@@ -1,6 +1,6 @@
 [
   {
-    "url": "/en/football/matches/rionegro-\u00c1guilas-deportivo-cali-2415177",
+    "url": "/en/football/matches/rionegro-Águilas-deportivo-cali-2415177",
     "home_team": "Rionegro Aguilas",
     "away_team": "Deportivo Cali",
     "league_code": "Co1",
@@ -24,7 +24,7 @@
     "odds": 3.1
   },
   {
-    "url": "/en/football/matches/sportivo-trinidense-club-guaran\u00ed-2416841",
+    "url": "/en/football/matches/sportivo-trinidense-club-guaraní-2416841",
     "home_team": "Sportivo Trinidense",
     "away_team": "Club Guarani",
     "league_code": "Py1",
@@ -72,18 +72,18 @@
     "odds": 1.75
   },
   {
-    "url": "/en/football/matches/p\u00e9rez-zeled\u00f3n-saprissa-2414131",
+    "url": "/en/football/matches/pérez-zeledón-saprissa-2414131",
     "home_team": "Perez Zeledon",
     "away_team": "Saprissa",
     "league_code": "Cr1",
     "match_id": "2414131",
     "country": "Costa Rica",
-    "league_name": "Primera Divisi\u00f3n",
+    "league_name": "Primera División",
     "league_url_path": "football-tips-and-predictions-for-costa-rica/primera-division",
     "country_code": "cr",
     "short_code": "Cr1",
     "url_5digit_code": "24141",
-    "league": "Primera Divisi\u00f3n",
+    "league": "Primera División",
     "prob_home": 33.0,
     "prob_draw": 38.0,
     "prob_away": 29.0,
@@ -96,7 +96,7 @@
     "odds": 3.3
   },
   {
-    "url": "/en/football/matches/quixad\u00e1-ce-pague-menos-2419515",
+    "url": "/en/football/matches/quixadá-ce-pague-menos-2419515",
     "home_team": "Quixada CE",
     "away_team": "Pague Menos",
     "league_code": "BrC",
@@ -120,7 +120,7 @@
     "odds": 6.0
   },
   {
-    "url": "/en/football/matches/lan\u00fas-uni\u00f3n-santa-fe-2417145",
+    "url": "/en/football/matches/lanús-unión-santa-fe-2417145",
     "home_team": "Lanus",
     "away_team": "Union Santa Fe",
     "league_code": "Ar1",
@@ -144,7 +144,7 @@
     "odds": 2.9
   },
   {
-    "url": "/en/football/matches/belgrano-c\u00f3rdoba-ca-tigre-2417146",
+    "url": "/en/football/matches/belgrano-córdoba-ca-tigre-2417146",
     "home_team": "Belgrano Cordoba",
     "away_team": "CA Tigre",
     "league_code": "Ar1",
@@ -168,7 +168,7 @@
     "odds": 4.33
   },
   {
-    "url": "/en/football/matches/bahia-de-feira-ba-jequi\u00e9-2412896",
+    "url": "/en/football/matches/bahia-de-feira-ba-jequié-2412896",
     "home_team": "Bahia de Feira BA",
     "away_team": "Jequie",
     "league_code": "BrB",
@@ -192,7 +192,7 @@
     "odds": 3.5
   },
   {
-    "url": "/en/football/matches/serra-branca-atl\u00e9tico-pb-2414641",
+    "url": "/en/football/matches/serra-branca-atlético-pb-2414641",
     "home_team": "Serra Branca",
     "away_team": "Atletico PB",
     "league_code": "BrP",
@@ -216,7 +216,7 @@
     "odds": 1.6
   },
   {
-    "url": "/en/football/matches/goi\u00e1s-abecat-ouvidorense-2413058",
+    "url": "/en/football/matches/goiás-abecat-ouvidorense-2413058",
     "home_team": "Goias",
     "away_team": "ABECAT Ouvidorense",
     "league_code": "BrG",
@@ -240,7 +240,7 @@
     "odds": 4.5
   },
   {
-    "url": "/en/football/matches/goiatuba-ec-an\u00e1polis-go-2413062",
+    "url": "/en/football/matches/goiatuba-ec-anápolis-go-2413062",
     "home_team": "Goiatuba EC",
     "away_team": "Anapolis GO",
     "league_code": "BrG",
@@ -360,7 +360,7 @@
     "odds": 1.4
   },
   {
-    "url": "/en/football/matches/jaguares-de-c\u00f3rdoba-la-equidad-2415178",
+    "url": "/en/football/matches/jaguares-de-córdoba-la-equidad-2415178",
     "home_team": "Jaguares de Cordoba",
     "away_team": "La Equidad",
     "league_code": "Co1",
@@ -384,7 +384,7 @@
     "odds": 1.76
   },
   {
-    "url": "/en/football/matches/atl\u00e9tico-choloma-lobos-upnfm-2416829",
+    "url": "/en/football/matches/atlético-choloma-lobos-upnfm-2416829",
     "home_team": "Atletico Choloma",
     "away_team": "Lobos UPNFM",
     "league_code": "Hn1",
@@ -408,7 +408,7 @@
     "odds": 3.75
   },
   {
-    "url": "/en/football/matches/club-rubio-\u00d1u-deportivo-recoleta-2416842",
+    "url": "/en/football/matches/club-rubio-Ñu-deportivo-recoleta-2416842",
     "home_team": "Club Rubio Nu",
     "away_team": "Deportivo Recoleta",
     "league_code": "Py1",
@@ -432,18 +432,18 @@
     "odds": 3.1
   },
   {
-    "url": "/en/football/matches/cs-cartagin\u00e9s-sporting-(crc)-2414133",
+    "url": "/en/football/matches/cs-cartaginés-sporting-(crc)-2414133",
     "home_team": "CS Cartagines",
     "away_team": "Sporting CRC",
     "league_code": "Cr1",
     "match_id": "2414133",
     "country": "Costa Rica",
-    "league_name": "Primera Divisi\u00f3n",
+    "league_name": "Primera División",
     "league_url_path": "football-tips-and-predictions-for-costa-rica/primera-division",
     "country_code": "cr",
     "short_code": "Cr1",
     "url_5digit_code": "24141",
-    "league": "Primera Divisi\u00f3n",
+    "league": "Primera División",
     "prob_home": 61.0,
     "prob_draw": 25.0,
     "prob_away": 14.0,
@@ -479,7 +479,7 @@
     "predicted_avg_goals": 1.75
   },
   {
-    "url": "/en/football/matches/real-noroeste-es-vit\u00f3ria-es-2414090",
+    "url": "/en/football/matches/real-noroeste-es-vitória-es-2414090",
     "home_team": "Real Noroeste ES",
     "away_team": "Vitoria ES",
     "league_code": "BrC",
@@ -503,7 +503,7 @@
     "odds": 4.33
   },
   {
-    "url": "/en/football/matches/estudiantes-r\u00edo-cuarto-argentinos-juniors-2417147",
+    "url": "/en/football/matches/estudiantes-río-cuarto-argentinos-juniors-2417147",
     "home_team": "Estudiantes Rio Cuarto",
     "away_team": "Argentinos Juniors",
     "league_code": "Ar1",
@@ -527,7 +527,7 @@
     "odds": 2.15
   },
   {
-    "url": "/en/football/matches/sarmiento-jun\u00edn-ca-banfield-2417148",
+    "url": "/en/football/matches/sarmiento-junín-ca-banfield-2417148",
     "home_team": "Sarmiento Junin",
     "away_team": "CA Banfield",
     "league_code": "Ar1",
@@ -575,7 +575,7 @@
     "odds": 2.9
   },
   {
-    "url": "/en/football/matches/malacateco-deportivo-mictl\u00e1n-2416076",
+    "url": "/en/football/matches/malacateco-deportivo-mictlán-2416076",
     "home_team": "Malacateco",
     "away_team": "Deportivo Mictlan",
     "league_code": "Gt1",
@@ -599,7 +599,7 @@
     "odds": 1.6
   },
   {
-    "url": "/en/football/matches/am\u00e9rica-de-cali-once-caldas-2415179",
+    "url": "/en/football/matches/américa-de-cali-once-caldas-2415179",
     "home_team": "America de Cali",
     "away_team": "Once Caldas",
     "league_code": "Co1",
@@ -647,7 +647,7 @@
     "odds": 4.0
   },
   {
-    "url": "/en/football/matches/santa-ana-escorpiones-bel\u00e9n-2413579",
+    "url": "/en/football/matches/santa-ana-escorpiones-belén-2413579",
     "home_team": "Santa Ana",
     "away_team": "Escorpiones Belen",
     "league_code": "Cr2",
@@ -959,7 +959,7 @@
     "odds": 1.83
   },
   {
-    "url": "/en/football/matches/b\u00e0-ria-v\u0169ng-t\u00e0u-bac-ninh-2420191",
+    "url": "/en/football/matches/bà-ria-vũng-tàu-bac-ninh-2420191",
     "home_team": "Ba Ria Vung Tau",
     "away_team": "Bac Ninh",
     "league_code": "Vn2",
@@ -1054,7 +1054,7 @@
     "odds": 1.22
   },
   {
-    "url": "/en/football/matches/stk-samorin-ofk-mal\u017eenice-2413465",
+    "url": "/en/football/matches/stk-samorin-ofk-malženice-2413465",
     "home_team": "STK Samorin",
     "away_team": "OFK Malzenice",
     "league_code": "CzT",
@@ -1268,7 +1268,7 @@
     "odds": 1.65
   },
   {
-    "url": "/en/football/matches/ph\u00fa-th\u1ecd-qu\u1ea3ng-ninh-2420192",
+    "url": "/en/football/matches/phú-thọ-quảng-ninh-2420192",
     "home_team": "Phu Tho",
     "away_team": "Quang Ninh",
     "league_code": "Vn2",
@@ -2669,7 +2669,7 @@
     "odds": 2.7
   },
   {
-    "url": "/en/football/matches/guelson-fc-desportivo-hu\u00edla-2420220",
+    "url": "/en/football/matches/guelson-fc-desportivo-huíla-2420220",
     "home_team": "Guelson FC",
     "away_team": "Desportivo Huila",
     "league_code": "Ao1",
@@ -2852,28 +2852,5 @@
     "has_result": true,
     "predicted_avg_goals": 1.13,
     "odds": 2.7
-  },
-  {
-    "url": "/en/football/matches/fc-sion-fc-basel-2423205",
-    "home_team": "FC Sion",
-    "away_team": "FC Basel",
-    "league_code": "Ch1",
-    "match_id": "2423205",
-    "country": "Switzerland",
-    "league_name": "Super League",
-    "league_url_path": "football-tips-and-predictions-for-switzerland/super-league",
-    "country_code": "ch",
-    "short_code": "Ch1",
-    "url_5digit_code": "24232",
-    "league": "Super League"
-  },
-  {
-    "url": "/en/football/matches/cruz-azul-vancouver-fc-2420639",
-    "home_team": "Cruz Azul",
-    "away_team": "Vancouver FC",
-    "league_code": "CNL",
-    "short_code": "CNL",
-    "match_id": "2420639",
-    "url_5digit_code": "24206"
   }
 ]

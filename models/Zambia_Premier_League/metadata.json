@@ -6,58 +6,44 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "zm",
-    "match_count": 24,
+    "match_count": 15,
     "teams": {
       "Kabwe Warriors": {
-        "home_matches": 2,
-        "away_matches": 1
+        "home_matches": 1,
+        "away_matches": 0
       },
       "Nchanga Rangers": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Mufulira Wanderers": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Green Buffaloes": {
         "home_matches": 0,
-        "away_matches": 2
-      },
-      "Nkana FC": {
-        "home_matches": 2,
         "away_matches": 1
       },
-      "Prison Leopards": {
+      "Nkana FC": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 0
+      },
+      "Prison Leopards": {
+        "home_matches": 0,
+        "away_matches": 1
       },
       "Mutondo Stars": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Mines United": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Kansanshi Dynamos": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Zanaco FC": {
         "home_matches": 0,
         "away_matches": 1
-      },
-      "Red Arrows FC": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Nkwazi FC": {
-        "home_matches": 1,
-        "away_matches": 0
       }
     }
   },
-  "example_count": 14,
-  "trained_at": "2026-02-12T19:22:25.073319"
+  "example_count": 5,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T09:55:27.396422"
 }

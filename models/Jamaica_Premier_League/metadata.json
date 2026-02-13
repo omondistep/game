@@ -6,58 +6,60 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "jm",
-    "match_count": 27,
+    "match_count": 18,
     "teams": {
       "Cavalier FC": {
-        "home_matches": 6,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Tivoli Gardens": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Waterhouse FC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Treasure Beach": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Arnett Gardens": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Dunbeholden FC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Mount Pleasant": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Harbour View": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Portmore United": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Racing United": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Montego Bay Utd": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Spanish Town Police": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 18,
-  "trained_at": "2026-02-12T19:22:00.576073"
+  "example_count": 9,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:59.817014"
 }

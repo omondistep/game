@@ -6,46 +6,48 @@
     "league": "Lao League",
     "league_url_path": "",
     "country_code": "la",
-    "match_count": 25,
+    "match_count": 17,
     "teams": {
       "Namtha United": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Salavan United": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Viengchanh": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Savannakhet": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Luangprabang United": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Master 7 FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Lao Army": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Ezra": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Young Elephant": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 16,
-  "trained_at": "2026-02-12T19:22:03.534373"
+  "example_count": 8,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T13:17:02.999563"
 }

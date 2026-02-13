@@ -1,0 +1,239 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/caspian-qazvin-aluminium-arak-2425188",
+  "timestamp": "2026-02-13T11:51:55.481318",
+  "features": {
+    "home_position": 13,
+    "away_position": 14,
+    "position_diff": -1,
+    "home_points": 21,
+    "away_points": 20,
+    "home_form_points": 9,
+    "away_form_points": 5,
+    "home_recent_form": 6,
+    "away_recent_form": 4,
+    "home_wins_l6": 2,
+    "home_draws_l6": 3,
+    "home_losses_l6": 1,
+    "away_wins_l6": 1,
+    "away_draws_l6": 2,
+    "away_losses_l6": 3,
+    "home_scored_avg": 0.8571428571428571,
+    "home_conceded_avg": 0.8571428571428571,
+    "away_scored_avg": 0.6666666666666666,
+    "away_conceded_avg": 1.0,
+    "expected_total_goals": 1.6904761904761905,
+    "home_home_win_rate": null,
+    "home_home_goals_avg": null,
+    "away_away_win_rate": null,
+    "away_away_goals_avg": null,
+    "h2h_home_win_pct": 20.0,
+    "h2h_draw_pct": 0.0,
+    "h2h_away_win_pct": 80.0,
+    "home_shots_avg": 4.428571428571429,
+    "away_shots_avg": 3.238095238095238,
+    "home_shots_on_target_pct": 40.86021505376344,
+    "away_shots_on_target_pct": 30.88235294117647,
+    "home_dangerous_attacks_avg": 23.952380952380953,
+    "away_dangerous_attacks_avg": 33.333333333333336,
+    "home_possession": 49.83,
+    "away_possession": 49.69,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": null,
+    "away_fouls_avg": null,
+    "home_yellow_avg": 1.6666666666666667,
+    "away_yellow_avg": 1.4285714285714286,
+    "odds_home": 2.6,
+    "odds_draw": 3.0,
+    "odds_away": 2.75,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 40
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4242,
+        "X": 0.2574,
+        "2": 0.3184
+      },
+      "computed_odds": {
+        "1": 2.36,
+        "X": 3.89,
+        "2": 3.14
+      },
+      "confidence": 0.4242
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Under": 0.996,
+        "Over": 0.004
+      },
+      "computed_odds": {
+        "Under": 1.0,
+        "Over": 99.0
+      },
+      "confidence": 0.996
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4242,
+        "X": 0.2574,
+        "2": 0.3184
+      },
+      "computed_odds": {
+        "1": 2.36,
+        "X": 3.89,
+        "2": 3.14
+      },
+      "confidence": 0.4242
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Under": 0.996,
+        "Over": 0.004
+      },
+      "computed_odds": {
+        "Under": 1.0,
+        "Over": 99.0
+      },
+      "confidence": 0.996
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3753,
+        "X": 0.3398,
+        "2": 0.2849
+      },
+      "computed_odds": {
+        "1": 2.66,
+        "X": 2.94,
+        "2": 3.51
+      },
+      "confidence": 0.3753
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.32,
+        "Under": 0.68
+      },
+      "computed_odds": {
+        "Over": 3.12,
+        "Under": 1.47
+      },
+      "confidence": 0.68
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.368421052631579,
+        "away": 0.3157894736842105,
+        "weight": 0.01828142268600563
+      },
+      "odds_analysis": {
+        "home": 0.3556034482758621,
+        "away": 0.3362068965517242,
+        "weight": 0.4354395243709452
+      },
+      "recent_form": {
+        "home": 0.5,
+        "away": 0.2777777777777778,
+        "weight": 0.4546347056515961
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.01828142268600563
+      },
+      "goals_stats": {
+        "home": 0.5,
+        "away": 0.41666666666666663,
+        "weight": 0.036800079233436096
+      },
+      "h2h": {
+        "home": 0.2,
+        "away": 0.8,
+        "weight": 0.01828142268600563
+      },
+      "shots_possession": {
+        "home": 0.29897999999999997,
+        "away": 0.29813999999999996,
+        "weight": 0.01828142268600563
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 1.6904761904761905
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 10.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 1.69,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 1.52,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.01828142268600563,
+      "odds_analysis": 0.4354395243709452,
+      "recent_form": 0.4546347056515961,
+      "top5_performance": 0.01828142268600563,
+      "goals_stats": 0.036800079233436096,
+      "h2h": 0.01828142268600563,
+      "shots_possession": 0.01828142268600563
+    }
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Under"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u26a0\ufe0f  Away team in poor form (1 win in last 6)",
+      "\ud83d\udee1\ufe0f  Low-scoring match expected (avg 1.7 goals)",
+      "\ud83d\udcdc Away team dominates H2H (80% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 2.6,
+        "fair": 2.36,
+        "value_pct": 10.2
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Caspian Qazvin": [],
+    "Aluminium Arak": []
+  }
+}

@@ -6,18 +6,54 @@
     "league": "Ligue 2",
     "league_url_path": "",
     "country_code": "dz",
-    "match_count": 9,
+    "match_count": 11,
     "teams": {
-      "WA Tlemcen": {
-        "home_matches": 2,
-        "away_matches": 2
+      "US Bechar Djedid": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "RC Kouba": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "JS Bordj Menaiel": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "US Chaouia": {
+        "home_matches": 0,
+        "away_matches": 1
       },
       "NA Hussein Dey": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Tixeraine": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
+      },
+      "CA Batna": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "MO Constantine": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "CRB Adrar": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "USM El Harrach": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "WA Tlemcen": {
+        "home_matches": 1,
+        "away_matches": 1
       },
       "WA Mostaganem": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "CR Temouchent": {
@@ -25,15 +61,13 @@
         "away_matches": 1
       },
       "RC Arbaa": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
-      },
-      "CR T\u00e9mouchent": {
-        "home_matches": 0,
-        "away_matches": 1
       }
     }
   },
-  "example_count": 6,
-  "trained_at": "2026-02-12T19:21:49.171772"
+  "example_count": 8,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:49.566402"
 }

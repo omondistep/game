@@ -1,6 +1,6 @@
 [
   {
-    "url": "/en/football/matches/nacional-asunci\u00f3n-cs-san-lorenzo-2416833",
+    "url": "/en/football/matches/nacional-asunción-cs-san-lorenzo-2416833",
     "home_team": "Nacional Asuncion",
     "away_team": "CS San Lorenzo",
     "league_code": "Py1",
@@ -24,7 +24,7 @@
     "odds": 1.9
   },
   {
-    "url": "/en/football/matches/diriang\u00e9n-fc-jalapa-art-2418414",
+    "url": "/en/football/matches/diriangén-fc-jalapa-art-2418414",
     "home_team": "Diriangen FC",
     "away_team": "Jalapa ART",
     "league_code": "Ni1",
@@ -78,12 +78,12 @@
     "league_code": "BrG",
     "match_id": "2412991",
     "country": "Brazil",
-    "league_name": "Campeonato Ga\u00facho",
+    "league_name": "Campeonato Gaúcho",
     "league_url_path": "football-tips-and-predictions-for-brazil/gaucho",
     "country_code": "br",
     "short_code": "BrG",
     "url_5digit_code": "24129",
-    "league": "Campeonato Ga\u00facho",
+    "league": "Campeonato Gaúcho",
     "prob_home": 40.0,
     "prob_draw": 38.0,
     "prob_away": 22.0,
@@ -144,7 +144,7 @@
     "odds": 4.1
   },
   {
-    "url": "/en/football/matches/aragua\u00edna-to-gurupi-to-2415345",
+    "url": "/en/football/matches/araguaína-to-gurupi-to-2415345",
     "home_team": "Araguaina TO",
     "away_team": "Gurupi TO",
     "league_code": "BrT",
@@ -240,7 +240,7 @@
     "odds": 3.4
   },
   {
-    "url": "/en/football/matches/gr\u00eamio-prudente-juventus-sp-2413806",
+    "url": "/en/football/matches/grêmio-prudente-juventus-sp-2413806",
     "home_team": "Gremio Prudente",
     "away_team": "Juventus SP",
     "league_code": "BrP",
@@ -288,7 +288,7 @@
     "odds": 4.1
   },
   {
-    "url": "/en/football/matches/llaneros-fc-(col)-atl\u00e9tico-bucaramanga-2415164",
+    "url": "/en/football/matches/llaneros-fc-(col)-atlético-bucaramanga-2415164",
     "home_team": "Llaneros FC COL",
     "away_team": "Atletico Bucaramanga",
     "league_code": "Co1",
@@ -360,7 +360,7 @@
     "odds": 3.2
   },
   {
-    "url": "/en/football/matches/cordob\u00e9s-correcaminos-uat-ii-2354297",
+    "url": "/en/football/matches/cordobés-correcaminos-uat-ii-2354297",
     "home_team": "Cordobes",
     "away_team": "Correcaminos UAT II",
     "league_code": "Mx3",
@@ -407,7 +407,7 @@
     "predicted_avg_goals": 1.91
   },
   {
-    "url": "/en/football/matches/palmeiras-s\u00e3o-paulo-2413739",
+    "url": "/en/football/matches/palmeiras-são-paulo-2413739",
     "home_team": "Palmeiras",
     "away_team": "Sao Paulo",
     "league_code": "BrP",
@@ -431,7 +431,7 @@
     "odds": 1.67
   },
   {
-    "url": "/en/football/matches/monte-roraima-bar\u00e9-rr-2417677",
+    "url": "/en/football/matches/monte-roraima-baré-rr-2417677",
     "home_team": "Monte Roraima",
     "away_team": "Bare RR",
     "league_code": "BrR",
@@ -533,12 +533,12 @@
     "league_code": "Do1",
     "match_id": "2419030",
     "country": "Dominican Republic",
-    "league_name": "Liga Dominicana de F\u00fatbol",
+    "league_name": "Liga Dominicana de Fútbol",
     "league_url_path": "predictions-dominican-republic/ldf",
     "country_code": "do",
     "short_code": "Do1",
     "url_5digit_code": "24190",
-    "league": "Liga Dominicana de F\u00fatbol",
+    "league": "Liga Dominicana de Fútbol",
     "prob_home": 65.0,
     "prob_draw": 21.0,
     "prob_away": 14.0,
@@ -551,7 +551,7 @@
     "odds": 1.5
   },
   {
-    "url": "/en/football/matches/vit\u00f3ria-es-desp-ferrovi\u00e1ria-es-2414082",
+    "url": "/en/football/matches/vitória-es-desp-ferroviária-es-2414082",
     "home_team": "Vitoria ES",
     "away_team": "Desp Ferroviaria ES",
     "league_code": "BrC",
@@ -575,7 +575,7 @@
     "odds": 1.75
   },
   {
-    "url": "/en/football/matches/anapolina-go-goi\u00e1s-2413052",
+    "url": "/en/football/matches/anapolina-go-goiás-2413052",
     "home_team": "Anapolina GO",
     "away_team": "Goias",
     "league_code": "BrG",
@@ -599,7 +599,7 @@
     "odds": 4.5
   },
   {
-    "url": "/en/football/matches/chapada-cuiab\u00e1-2413966",
+    "url": "/en/football/matches/chapada-cuiabá-2413966",
     "home_team": "Chapada",
     "away_team": "Cuiaba",
     "league_code": "BrM",
@@ -647,7 +647,7 @@
     "odds": 3.4
   },
   {
-    "url": "/en/football/matches/ivinhema-ms-dourados-atl\u00e9tico-2414674",
+    "url": "/en/football/matches/ivinhema-ms-dourados-atlético-2414674",
     "home_team": "Ivinhema MS",
     "away_team": "Dourados Atletico",
     "league_code": "BrS",
@@ -671,7 +671,7 @@
     "odds": 1.85
   },
   {
-    "url": "/en/football/matches/s\u00e3o-jos\u00e9-ec-monte-azul-sp-2413807",
+    "url": "/en/football/matches/são-josé-ec-monte-azul-sp-2413807",
     "home_team": "Sao Jose EC",
     "away_team": "Monte Azul SP",
     "league_code": "BrP",
@@ -766,7 +766,7 @@
     "odds": 2.4
   },
   {
-    "url": "/en/football/matches/imperatriz-maranh\u00e3o-ma-2413933",
+    "url": "/en/football/matches/imperatriz-maranhão-ma-2413933",
     "home_team": "Imperatriz",
     "away_team": "Maranhao MA",
     "league_code": "BrM",
@@ -814,7 +814,7 @@
     "odds": 1.75
   },
   {
-    "url": "/en/football/matches/atl\u00e9tico-san-luis-w-tijuana-w-2412325",
+    "url": "/en/football/matches/atlético-san-luis-w-tijuana-w-2412325",
     "home_team": "Atletico San Luis W",
     "away_team": "Tijuana W",
     "league_code": "MxW",
@@ -940,12 +940,12 @@
     "league_code": "BrG",
     "match_id": "2412988",
     "country": "Brazil",
-    "league_name": "Campeonato Ga\u00facho",
+    "league_name": "Campeonato Gaúcho",
     "league_url_path": "football-tips-and-predictions-for-brazil/gaucho",
     "country_code": "br",
     "short_code": "BrG",
     "url_5digit_code": "24129",
-    "league": "Campeonato Ga\u00facho",
+    "league": "Campeonato Gaúcho",
     "prob_home": 30.0,
     "prob_draw": 41.0,
     "prob_away": 29.0,
@@ -958,7 +958,7 @@
     "odds": 3.5
   },
   {
-    "url": "/en/football/matches/princesa-solim\u00f5es-jc-fc-am-2413898",
+    "url": "/en/football/matches/princesa-solimões-jc-fc-am-2413898",
     "home_team": "Princesa Solimoes",
     "away_team": "JC FC AM",
     "league_code": "BrA",
@@ -987,13 +987,13 @@
     "away_team": "Centro Barber",
     "league_code": "Cw1",
     "match_id": "2402136",
-    "country": "Cura\u00e7ao",
-    "league_name": "Prom\u00e9 Divishon",
+    "country": "Curaçao",
+    "league_name": "Promé Divishon",
     "league_url_path": "predictions-curacao/prome-divishon",
     "country_code": "cw",
     "short_code": "Cw1",
     "url_5digit_code": "24021",
-    "league": "Prom\u00e9 Divishon",
+    "league": "Promé Divishon",
     "prob_home": 38.0,
     "prob_draw": 22.0,
     "prob_away": 39.0,
@@ -1006,7 +1006,7 @@
     "odds": 2.0
   },
   {
-    "url": "/en/football/matches/juticalpa-atl\u00e9tico-choloma-2416821",
+    "url": "/en/football/matches/juticalpa-atlético-choloma-2416821",
     "home_team": "Juticalpa",
     "away_team": "Atletico Choloma",
     "league_code": "Hn1",
@@ -1030,7 +1030,7 @@
     "odds": 4.5
   },
   {
-    "url": "/en/football/matches/cerro-porte\u00f1o-libertad-2416834",
+    "url": "/en/football/matches/cerro-porteño-libertad-2416834",
     "home_team": "Cerro Porteno",
     "away_team": "Libertad",
     "league_code": "Py1",
@@ -1102,7 +1102,7 @@
     "odds": 3.0
   },
   {
-    "url": "/en/football/matches/uberl\u00e2ndia-mg-am\u00e9rica-mineiro-2413102",
+    "url": "/en/football/matches/uberlândia-mg-américa-mineiro-2413102",
     "home_team": "Uberlandia MG",
     "away_team": "America Mineiro",
     "league_code": "BrM",
@@ -1132,12 +1132,12 @@
     "league_code": "Cr1",
     "match_id": "2414129",
     "country": "Costa Rica",
-    "league_name": "Primera Divisi\u00f3n",
+    "league_name": "Primera División",
     "league_url_path": "football-tips-and-predictions-for-costa-rica/primera-division",
     "country_code": "cr",
     "short_code": "Cr1",
     "url_5digit_code": "24141",
-    "league": "Primera Divisi\u00f3n",
+    "league": "Primera División",
     "prob_home": 42.0,
     "prob_draw": 25.0,
     "prob_away": 33.0,
@@ -1174,7 +1174,7 @@
     "odds": 3.7
   },
   {
-    "url": "/en/football/matches/comunicaciones-cob\u00e1n-imperial-2416065",
+    "url": "/en/football/matches/comunicaciones-cobán-imperial-2416065",
     "home_team": "Comunicaciones",
     "away_team": "Coban Imperial",
     "league_code": "Gt1",
@@ -1198,7 +1198,7 @@
     "odds": 4.0
   },
   {
-    "url": "/en/football/matches/alianza-fc-lu\u00eds-\u00c1ngel-firpo-2415385",
+    "url": "/en/football/matches/alianza-fc-luís-Ángel-firpo-2415385",
     "home_team": "Alianza FC",
     "away_team": "Luis Angel Firpo",
     "league_code": "Sv1",
@@ -1288,7 +1288,7 @@
     "odds": 2.87
   },
   {
-    "url": "/en/football/matches/tigres-de-\u00c1lica-la-piedad-2354289",
+    "url": "/en/football/matches/tigres-de-Álica-la-piedad-2354289",
     "home_team": "Tigres de Alica",
     "away_team": "La Piedad",
     "league_code": "Mx3",
@@ -1312,7 +1312,7 @@
     "odds": 2.05
   },
   {
-    "url": "/en/football/matches/uni\u00e3o-rondon\u00f3polis-mt-sport-sinop-2413965",
+    "url": "/en/football/matches/união-rondonópolis-mt-sport-sinop-2413965",
     "home_team": "Uniao Rondonopolis MT",
     "away_team": "Sport Sinop",
     "league_code": "BrM",
@@ -1383,7 +1383,7 @@
     "predicted_avg_goals": 3.25
   },
   {
-    "url": "/en/football/matches/ju\u00e1rez-w-cruz-azul-w-2412326",
+    "url": "/en/football/matches/juárez-w-cruz-azul-w-2412326",
     "home_team": "Juarez W",
     "away_team": "Cruz Azul W",
     "league_code": "MxW",
@@ -1407,7 +1407,7 @@
     "odds": 3.45
   },
   {
-    "url": "/en/football/matches/rosario-central-belgrano-c\u00f3rdoba-2417130",
+    "url": "/en/football/matches/rosario-central-belgrano-córdoba-2417130",
     "home_team": "Rosario Central",
     "away_team": "Belgrano Cordoba",
     "league_code": "Ar1",
@@ -1455,7 +1455,7 @@
     "odds": 1.45
   },
   {
-    "url": "/en/football/matches/real-estel\u00ed-unan-managua-2418416",
+    "url": "/en/football/matches/real-estelí-unan-managua-2418416",
     "home_team": "Real Esteli",
     "away_team": "UNAN Managua",
     "league_code": "Ni1",
@@ -1550,18 +1550,18 @@
     "predicted_avg_goals": 1.25
   },
   {
-    "url": "/en/football/matches/atl\u00e9tiko-sali\u00f1a-victory-boys-2402137",
+    "url": "/en/football/matches/atlétiko-saliña-victory-boys-2402137",
     "home_team": "Atletiko Salina",
     "away_team": "Victory Boys",
     "league_code": "Cw1",
     "match_id": "2402137",
-    "country": "Cura\u00e7ao",
-    "league_name": "Prom\u00e9 Divishon",
+    "country": "Curaçao",
+    "league_name": "Promé Divishon",
     "league_url_path": "predictions-curacao/prome-divishon",
     "country_code": "cw",
     "short_code": "Cw1",
     "url_5digit_code": "24021",
-    "league": "Prom\u00e9 Divishon",
+    "league": "Promé Divishon",
     "prob_home": 19.0,
     "prob_draw": 16.0,
     "prob_away": 65.0,
@@ -1574,7 +1574,7 @@
     "odds": 1.36
   },
   {
-    "url": "/en/football/matches/real-espa\u00f1a-olancho-2416822",
+    "url": "/en/football/matches/real-españa-olancho-2416822",
     "home_team": "Real Espana",
     "away_team": "Olancho",
     "league_code": "Hn1",
@@ -1598,7 +1598,7 @@
     "odds": 1.6
   },
   {
-    "url": "/en/football/matches/boyac\u00e1-chic\u00f3-am\u00e9rica-de-cali-2415166",
+    "url": "/en/football/matches/boyacá-chicó-américa-de-cali-2415166",
     "home_team": "Boyaca Chico",
     "away_team": "America de Cali",
     "league_code": "Co1",
@@ -1622,7 +1622,7 @@
     "odds": 2.15
   },
   {
-    "url": "/en/football/matches/cd-\u00c1rabe-unido-alianza-fc-(pan)-2418773",
+    "url": "/en/football/matches/cd-Árabe-unido-alianza-fc-(pan)-2418773",
     "home_team": "CD Arabe Unido",
     "away_team": "Alianza FC PAN",
     "league_code": "Pa1",
@@ -1698,12 +1698,12 @@
     "league_code": "Cr1",
     "match_id": "2414127",
     "country": "Costa Rica",
-    "league_name": "Primera Divisi\u00f3n",
+    "league_name": "Primera División",
     "league_url_path": "football-tips-and-predictions-for-costa-rica/primera-division",
     "country_code": "cr",
     "short_code": "Cr1",
     "url_5digit_code": "24141",
-    "league": "Primera Divisi\u00f3n",
+    "league": "Primera División",
     "prob_home": 42.0,
     "prob_draw": 24.0,
     "prob_away": 34.0,
@@ -1716,7 +1716,7 @@
     "odds": 1.3
   },
   {
-    "url": "/en/football/matches/venados-yucat\u00e1n-dorados-sinaloa-2413357",
+    "url": "/en/football/matches/venados-yucatán-dorados-sinaloa-2413357",
     "home_team": "Venados Yucatan",
     "away_team": "Dorados Sinaloa",
     "league_code": "Mx2",
@@ -2433,7 +2433,7 @@
     "odds": 1.57
   },
   {
-    "url": "/en/football/matches/ofk-mal\u017eenice-han\u00e1ck\u00e1-slavia-krom\u011b\u0159\u00ed\u017e-2413464",
+    "url": "/en/football/matches/ofk-malženice-hanácká-slavia-kroměříž-2413464",
     "home_team": "OFK Malzenice",
     "away_team": "Hanacka Slavia Kromeriz",
     "league_code": "CzT",
@@ -2480,18 +2480,18 @@
     "predicted_avg_goals": 3.26
   },
   {
-    "url": "/en/football/matches/esperan\u00e7a-dandorra-fc-ordino-2419048",
+    "url": "/en/football/matches/esperança-dandorra-fc-ordino-2419048",
     "home_team": "Esperanca dAndorra",
     "away_team": "FC Ordino",
     "league_code": "Ad1",
     "match_id": "2419048",
     "country": "Andorra",
-    "league_name": "Primera Divisi\u00f3",
+    "league_name": "Primera Divisió",
     "league_url_path": "predictions-andorra/primera-divisio",
     "country_code": "ad",
     "short_code": "Ad1",
     "url_5digit_code": "24190",
-    "league": "Primera Divisi\u00f3",
+    "league": "Primera Divisió",
     "prob_home": 37.0,
     "prob_draw": 28.0,
     "prob_away": 35.0,
@@ -2504,12 +2504,12 @@
     "odds": 5.5
   },
   {
-    "url": "/en/football/matches/anadolu-\u00dcniv-efeler-09-spor-2381575",
+    "url": "/en/football/matches/anadolu-Üniv-efeler-09-spor-2381575",
     "home_team": "Anadolu Univ",
     "away_team": "Efeler 09 Spor",
     "league_code": "Tr4",
     "match_id": "2381575",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2533,7 +2533,7 @@
     "away_team": "Tire 2021 FK",
     "league_code": "Tr4",
     "match_id": "2381576",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2557,7 +2557,7 @@
     "away_team": "Tokat Belediye",
     "league_code": "Tr4",
     "match_id": "2381334",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2575,12 +2575,12 @@
     "predicted_avg_goals": 1.63
   },
   {
-    "url": "/en/football/matches/\u00c7ayelispor-yeni-orduspor-2381335",
+    "url": "/en/football/matches/Çayelispor-yeni-orduspor-2381335",
     "home_team": "Cayelispor",
     "away_team": "Yeni Orduspor",
     "league_code": "Tr4",
     "match_id": "2381335",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2604,7 +2604,7 @@
     "away_team": "Zonguldak",
     "league_code": "Tr4",
     "match_id": "2381338",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2622,12 +2622,12 @@
     "predicted_avg_goals": 0.63
   },
   {
-    "url": "/en/football/matches/sebat-gen\u00e7lik-fatsa-belediyespor-2381339",
+    "url": "/en/football/matches/sebat-gençlik-fatsa-belediyespor-2381339",
     "home_team": "Sebat Genclik",
     "away_team": "Fatsa Belediyespor",
     "league_code": "Tr4",
     "match_id": "2381339",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2646,12 +2646,12 @@
     "odds": 1.57
   },
   {
-    "url": "/en/football/matches/karadeniz-ere\u011fli-bsk-artvin-hopaspor-2381340",
+    "url": "/en/football/matches/karadeniz-ereğli-bsk-artvin-hopaspor-2381340",
     "home_team": "Karadeniz Eregli BSK",
     "away_team": "Artvin Hopaspor",
     "league_code": "Tr4",
     "match_id": "2381340",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2675,7 +2675,7 @@
     "away_team": "Giresunspor",
     "league_code": "Tr4",
     "match_id": "2381341",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2694,12 +2694,12 @@
     "odds": 2.2
   },
   {
-    "url": "/en/football/matches/malatya-ye\u015filyurt-bld-12-bing\u00f6lspor-2381096",
+    "url": "/en/football/matches/malatya-yeşilyurt-bld-12-bingölspor-2381096",
     "home_team": "Malatya Yesilyurt Bld",
     "away_team": "12 Bingolspor",
     "league_code": "Tr4",
     "match_id": "2381096",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2717,12 +2717,12 @@
     "predicted_avg_goals": 3.5
   },
   {
-    "url": "/en/football/matches/karak\u00f6pr\u00fc-bld-maz\u0131dag\u0131-fosfatspor-2381097",
+    "url": "/en/football/matches/karaköprü-bld-mazıdagı-fosfatspor-2381097",
     "home_team": "Karakopru Bld",
-    "away_team": "Maz\u0131dag\u0131 Fosfatspor",
+    "away_team": "Mazıdagı Fosfatspor",
     "league_code": "Tr4",
     "match_id": "2381097",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2740,12 +2740,12 @@
     "predicted_avg_goals": 2.38
   },
   {
-    "url": "/en/football/matches/kilis-belediyespor-ni\u011fde-belediyesispor-2381098",
+    "url": "/en/football/matches/kilis-belediyespor-niğde-belediyesispor-2381098",
     "home_team": "Kilis Belediyespor",
     "away_team": "Nigde Belediyesispor",
     "league_code": "Tr4",
     "match_id": "2381098",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2764,12 +2764,12 @@
     "odds": 3.05
   },
   {
-    "url": "/en/football/matches/kapadokya-g\u00f6remespor-k\u0131r\u0131kkale-b\u00fcy\u00fck-2381099",
+    "url": "/en/football/matches/kapadokya-göremespor-kırıkkale-büyük-2381099",
     "home_team": "Kapadokya Goremespor",
-    "away_team": "K\u0131r\u0131kkale Buyuk",
+    "away_team": "Kırıkkale Buyuk",
     "league_code": "Tr4",
     "match_id": "2381099",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2788,12 +2788,12 @@
     "odds": 2.55
   },
   {
-    "url": "/en/football/matches/t\u00fcrk-metal-1963-kahramanmaras-2381101",
+    "url": "/en/football/matches/türk-metal-1963-kahramanmaras-2381101",
     "home_team": "Turk Metal 1963",
     "away_team": "Kahramanmaras",
     "league_code": "Tr4",
     "match_id": "2381101",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2812,12 +2812,12 @@
     "odds": 3.25
   },
   {
-    "url": "/en/football/matches/1926-polatl\u0131-belediye-etimesgut-bs-2380857",
-    "home_team": "1926 Polatl\u0131 Belediye",
+    "url": "/en/football/matches/1926-polatlı-belediye-etimesgut-bs-2380857",
+    "home_team": "1926 Polatlı Belediye",
     "away_team": "Etimesgut BS",
     "league_code": "Tr4",
     "match_id": "2380857",
-    "country": "T\u00fcrkiye",
+    "country": "Türkiye",
     "league_name": "TFF 3. Lig",
     "league_url_path": "football-tips-and-predictions-for-turkey/tff-3-lig",
     "country_code": "tr",
@@ -2858,28 +2858,5 @@
     "has_result": true,
     "predicted_avg_goals": 1.92,
     "odds": 2.7
-  },
-  {
-    "url": "/en/football/matches/fc-sion-fc-basel-2423205",
-    "home_team": "FC Sion",
-    "away_team": "FC Basel",
-    "league_code": "Ch1",
-    "match_id": "2423205",
-    "country": "Switzerland",
-    "league_name": "Super League",
-    "league_url_path": "football-tips-and-predictions-for-switzerland/super-league",
-    "country_code": "ch",
-    "short_code": "Ch1",
-    "url_5digit_code": "24232",
-    "league": "Super League"
-  },
-  {
-    "url": "/en/football/matches/cruz-azul-vancouver-fc-2420639",
-    "home_team": "Cruz Azul",
-    "away_team": "Vancouver FC",
-    "league_code": "CNL",
-    "short_code": "CNL",
-    "match_id": "2420639",
-    "url_5digit_code": "24206"
   }
 ]

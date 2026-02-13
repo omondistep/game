@@ -6,50 +6,52 @@
     "league": "League Cup",
     "league_url_path": "",
     "country_code": "th",
-    "match_count": 15,
+    "match_count": 10,
     "teams": {
       "Lamphun Warrior": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Chonburi FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Thap Luang United": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Sukhothai FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Mahasarakham Sambaitao FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Nakhonratchasima": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Pattani FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Uthai Thani FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Port FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Ayutthaya United": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 10,
-  "trained_at": "2026-02-12T19:22:19.268366"
+  "example_count": 5,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T09:55:21.106856"
 }

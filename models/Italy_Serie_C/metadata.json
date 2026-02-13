@@ -6,87 +6,87 @@
     "league": "Serie C",
     "league_url_path": "",
     "country_code": "it",
-    "match_count": 40,
+    "match_count": 32,
     "teams": {
       "SS Cavese": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Monopoli": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Team Altamura": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Latina Calcio": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Sorrento Calcio": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "SSC Giugliano": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Trapani 1905": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Benevento Calcio": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Casertana": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "FC Crotone": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Cosenza Calcio": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Siracusa": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Catania": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Audace Cerignola": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "US Foggia": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Picerno": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Salernitana": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Virtus Casarano": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Atalanta II": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Potenza SC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Alcione": {
         "home_matches": 1,
@@ -119,9 +119,27 @@
       "Pergolettese": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Juventus U23": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Sambenedettese": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Guidonia Montecelio 1937": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Bra": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 24,
-  "trained_at": "2026-02-12T19:21:59.225912"
+  "example_count": 16,
+  "result_accuracy": 0.25,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-13T18:33:58.663158"
 }

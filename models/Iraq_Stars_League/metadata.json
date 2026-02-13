@@ -6,102 +6,92 @@
     "league": "Stars League",
     "league_url_path": "",
     "country_code": "iq",
-    "match_count": 60,
+    "match_count": 42,
     "teams": {
-      "Gharraf": {
-        "home_matches": 4,
-        "away_matches": 0
-      },
-      "Baghdad SC": {
+      "Quwa Al Jawiya": {
         "home_matches": 2,
+        "away_matches": 1
+      },
+      "Newroz SC IRQ": {
+        "home_matches": 1,
         "away_matches": 2
       },
+      "Minaa Basra": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Gharraf": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Baghdad SC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
       "Najaf FC": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Zakho FC": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Karkh SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Arbil FC": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Newroz SC IRQ": {
         "home_matches": 1,
         "away_matches": 1
       },
       "Al-Karma": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Shorta Baghdad": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Naft Maysan": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Talaba Baghdad": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Diyala FC": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Minaa Basra": {
         "home_matches": 1,
         "away_matches": 1
       },
       "Naft SC Baghdad": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Al Qasim SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Mosul FC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Kahraba Baghdad": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
-      "Quwa Al Jawiya": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
       "Duhok SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Zawraa Baghdad": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Newroz SC (IRQ)": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Mina'a Basra": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Zawra'a Baghdad": {
         "home_matches": 1,
         "away_matches": 1
       }
     }
   },
-  "example_count": 40,
-  "trained_at": "2026-02-12T19:21:57.695194"
+  "example_count": 22,
+  "result_accuracy": 0.4,
+  "ou_accuracy": 0.6,
+  "trained_at": "2026-02-13T18:33:57.169547"
 }

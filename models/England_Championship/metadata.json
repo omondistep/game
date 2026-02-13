@@ -6,46 +6,48 @@
     "league": "Championship",
     "league_url_path": "",
     "country_code": "gb-en",
-    "match_count": 15,
+    "match_count": 10,
     "teams": {
       "Blackburn Rovers": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Sheffield Wednesday": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Sheffield United": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Oxford United": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Hull City": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Watford": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Leicester City": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Southampton": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Norwich City": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       }
     }
   },
-  "example_count": 10,
-  "trained_at": "2026-02-12T19:21:42.424183"
+  "example_count": 5,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:43.578641"
 }

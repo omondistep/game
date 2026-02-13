@@ -6,34 +6,34 @@
     "league": "First Division",
     "league_url_path": "",
     "country_code": "hk",
-    "match_count": 24,
+    "match_count": 16,
     "teams": {
       "3 Sing": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Tung Sing FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Resources Capital": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Lucky Mile": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Hoi King": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Citizen AA": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Supreme": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Central and Western": {
@@ -41,35 +41,33 @@
         "away_matches": 1
       },
       "Shatin SA": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Kwun Tong FA": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Yuen Long": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Sham Shui Po SA": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "South China AA": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "WSE": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Central & Western": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 16,
-  "trained_at": "2026-02-12T19:21:54.732293"
+  "example_count": 8,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:54.101976"
 }

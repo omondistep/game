@@ -6,30 +6,34 @@
     "league": "Campeonato Roraimense",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 52,
+    "match_count": 39,
     "teams": {
+      "Rondoniense RO": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
+      "Ji-Parana FC RO": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
       "Monte Roraima": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Bare RR": {
         "home_matches": 1,
         "away_matches": 2
       },
       "GAS RR": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "River": {
         "home_matches": 1,
-        "away_matches": 4
-      },
-      "Rondoniense RO": {
-        "home_matches": 4,
-        "away_matches": 0
+        "away_matches": 2
       },
       "Barcelona RO": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Sao Raimundo RR": {
@@ -37,12 +41,12 @@
         "away_matches": 1
       },
       "Progresso RR": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Rio Negro RR": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Nautico RR": {
         "home_matches": 1,
@@ -50,38 +54,24 @@
       },
       "Genus RO": {
         "home_matches": 2,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Guapore RO": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Roraima RR": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Porto Velho": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 2
       },
-      "Bar\u00e9 RR": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "S\u00e3o Raimundo RR": {
-        "home_matches": 3,
-        "away_matches": 0
-      },
-      "N\u00e1utico RR": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Guapor\u00e9 RO": {
+      "Porto Velho": {
         "home_matches": 1,
         "away_matches": 2
       }
     }
   },
-  "example_count": 34,
-  "trained_at": "2026-02-12T19:21:40.299743"
+  "example_count": 21,
+  "result_accuracy": 0.4,
+  "ou_accuracy": 0.4,
+  "trained_at": "2026-02-13T18:33:42.115856"
 }

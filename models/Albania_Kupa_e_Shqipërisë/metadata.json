@@ -47,5 +47,7 @@
     }
   },
   "example_count": 6,
-  "trained_at": "2026-02-12T19:21:30.681493"
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T08:10:30.413205"
 }

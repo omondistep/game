@@ -6,110 +6,108 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "sd",
-    "match_count": 118,
+    "match_count": 78,
     "teams": {
       "Alfalah Atbra": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Al Amal Atbara": {
-        "home_matches": 0,
-        "away_matches": 8
-      },
-      "Al Hilal Karima": {
-        "home_matches": 8,
-        "away_matches": 0
-      },
-      "Ahli Marawi": {
-        "home_matches": 2,
-        "away_matches": 6
-      },
-      "Al Fajr": {
-        "home_matches": 2,
-        "away_matches": 4
-      },
-      "Merreikh Abyad": {
         "home_matches": 2,
         "away_matches": 2
       },
+      "Al Amal Atbara": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Al Hilal Karima": {
+        "home_matches": 4,
+        "away_matches": 0
+      },
+      "Ahli Marawi": {
+        "home_matches": 1,
+        "away_matches": 3
+      },
+      "Al Fajr": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Merreikh Abyad": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
       "Ahli Khartoum": {
-        "home_matches": 6,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Ahli Wad Madani": {
         "home_matches": 0,
-        "away_matches": 6
+        "away_matches": 3
       },
       "Al Hilal Al Manaqil": {
-        "home_matches": 8,
+        "home_matches": 4,
         "away_matches": 0
       },
       "Umm Mughad": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Saham Ad Damer": {
-        "home_matches": 8,
+        "home_matches": 4,
         "away_matches": 0
       },
       "Merreikh Al Sudan": {
-        "home_matches": 2,
-        "away_matches": 6
-      },
-      "Al Hilal Al Sudani": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 3
       },
+      "Al Hilal Al Sudani": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
       "Kober Khartoum": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Al Zamala SC": {
-        "home_matches": 6,
-        "away_matches": 0
-      },
-      "Hilal Al Fasher": {
-        "home_matches": 2,
-        "away_matches": 6
-      },
-      "Al Shorta SUD": {
         "home_matches": 3,
         "away_matches": 0
       },
-      "Merghani Kassala": {
+      "Hilal Al Fasher": {
         "home_matches": 1,
-        "away_matches": 4
-      },
-      "Haidoub FC": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Hay Al Wadi": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Merikh Kosti": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Rabeta Kosti": {
-        "home_matches": 0,
-        "away_matches": 8
-      },
-      "Al Taqadom": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "Hilal Al Sahel": {
-        "home_matches": 0,
-        "away_matches": 5
+        "away_matches": 3
       },
       "Al Shorta (SUD)": {
         "home_matches": 2,
         "away_matches": 0
+      },
+      "Merghani Kassala": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Haidoub FC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Hay Al Wadi": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Merikh Kosti": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Rabeta Kosti": {
+        "home_matches": 0,
+        "away_matches": 4
+      },
+      "Al Taqadom": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Hilal Al Sahel": {
+        "home_matches": 0,
+        "away_matches": 2
       }
     }
   },
-  "example_count": 78,
-  "trained_at": "2026-02-12T19:22:15.621482"
+  "example_count": 38,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.875,
+  "trained_at": "2026-02-13T09:55:17.243914"
 }

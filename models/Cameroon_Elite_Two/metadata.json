@@ -6,47 +6,47 @@
     "league": "Elite Two",
     "league_url_path": "",
     "country_code": "cm",
-    "match_count": 40,
+    "match_count": 27,
     "teams": {
       "Kumba City": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Bafmeng United": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Atlantic": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Eding Sport": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Union Douala": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Les Astres FC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "AS Fap": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Foncha ST": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "APEJES": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Sable Batie": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Tonnerre Yaounde": {
         "home_matches": 2,
@@ -54,26 +54,24 @@
       },
       "Union Abong-Mbang": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Yafoot FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Avion Academy": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Racing Bafoussam": {
         "home_matches": 0,
-        "away_matches": 2
-      },
-      "Tonnerre Yaound\u00e9": {
-        "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       }
     }
   },
-  "example_count": 26,
-  "trained_at": "2026-02-12T19:21:45.312260"
+  "example_count": 13,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T18:33:46.167109"
 }

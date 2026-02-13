@@ -6,110 +6,92 @@
     "league": "Brasileiro Serie A",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 59,
+    "match_count": 49,
     "teams": {
-      "Vitoria": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Remo PA": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Atletico Mineiro": {
+      "Atletico PR": {
         "home_matches": 1,
         "away_matches": 1
       },
-      "Palmeiras": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Internacional": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Atletico PR": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Coritiba": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "RB Bragantino": {
-        "home_matches": 2,
+      "Santos": {
+        "home_matches": 1,
         "away_matches": 2
       },
       "Fluminense": {
         "home_matches": 2,
-        "away_matches": 2
-      },
-      "Gremio": {
-        "home_matches": 1,
         "away_matches": 1
+      },
+      "Botafogo": {
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Corinthians": {
         "home_matches": 2,
         "away_matches": 0
       },
-      "Bahia": {
+      "RB Bragantino": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Internacional": {
         "home_matches": 2,
+        "away_matches": 1
+      },
+      "Palmeiras": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Vitoria": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Remo PA": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Atletico Mineiro": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Coritiba": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Gremio": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Bahia": {
+        "home_matches": 1,
         "away_matches": 2
       },
       "Chapecoense SC": {
         "home_matches": 2,
-        "away_matches": 2
-      },
-      "Santos": {
-        "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Sao Paulo": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Flamengo": {
-        "home_matches": 2,
-        "away_matches": 3
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Mirassol SP": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Vasco da Gama": {
         "home_matches": 2,
-        "away_matches": 2
-      },
-      "Botafogo": {
-        "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Cruzeiro": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 2
-      },
-      "Vit\u00f3ria": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Atl\u00e9tico Mineiro": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Atl\u00e9tico PR": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Gr\u00eamio": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "S\u00e3o Paulo": {
-        "home_matches": 1,
-        "away_matches": 1
       }
     }
   },
-  "example_count": 39,
-  "trained_at": "2026-02-12T19:21:37.547717"
+  "example_count": 29,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-13T18:33:39.809714"
 }

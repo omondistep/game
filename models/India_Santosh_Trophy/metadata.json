@@ -6,58 +6,60 @@
     "league": "Santosh Trophy",
     "league_url_path": "",
     "country_code": "in",
-    "match_count": 72,
+    "match_count": 48,
     "teams": {
       "Nagaland": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Tamilnadu": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Rajasthan United": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "West Bengal": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Assam": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Uttarakhand": {
         "home_matches": 2,
-        "away_matches": 4
-      },
-      "Railway": {
-        "home_matches": 6,
-        "away_matches": 4
-      },
-      "Punjab": {
-        "home_matches": 4,
-        "away_matches": 6
-      },
-      "Meghalaya": {
-        "home_matches": 4,
         "away_matches": 2
       },
+      "Rajasthan United": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "West Bengal": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Assam": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Uttarakhand": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Railway": {
+        "home_matches": 3,
+        "away_matches": 2
+      },
+      "Punjab": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "Meghalaya": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Services": {
-        "home_matches": 4,
-        "away_matches": 6
+        "home_matches": 2,
+        "away_matches": 3
       },
       "Kerala": {
-        "home_matches": 6,
-        "away_matches": 4
+        "home_matches": 3,
+        "away_matches": 2
       },
       "Orissa": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       }
     }
   },
-  "example_count": 48,
-  "trained_at": "2026-02-12T19:21:57.304810"
+  "example_count": 24,
+  "result_accuracy": 0.2,
+  "ou_accuracy": 0.2,
+  "trained_at": "2026-02-13T18:33:56.797526"
 }

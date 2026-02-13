@@ -6,59 +6,19 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "sv",
-    "match_count": 78,
+    "match_count": 52,
     "teams": {
-      "Inter FA": {
+      "Inter F.A": {
         "home_matches": 2,
         "away_matches": 3
       },
       "Cacahuatique": {
-        "home_matches": 4,
-        "away_matches": 4
+        "home_matches": 2,
+        "away_matches": 2
       },
       "Alianza FC": {
-        "home_matches": 6,
-        "away_matches": 4
-      },
-      "Luis Angel Firpo": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "CD Aguila": {
         "home_matches": 3,
         "away_matches": 2
-      },
-      "Hercules": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Fuerte San Francisco": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "CD FAS": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Municipal Limeno": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Isidro Metapan": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Zacatecoluca": {
-        "home_matches": 4,
-        "away_matches": 4
-      },
-      "Platense SLV": {
-        "home_matches": 2,
-        "away_matches": 3
-      },
-      "Inter F.A": {
-        "home_matches": 2,
-        "away_matches": 3
       },
       "Lu\u00eds \u00c1ngel Firpo": {
         "home_matches": 2,
@@ -66,6 +26,18 @@
       },
       "CD \u00c1guila": {
         "home_matches": 3,
+        "away_matches": 2
+      },
+      "Hercules": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Fuerte San Francisco": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "CD FAS": {
+        "home_matches": 2,
         "away_matches": 2
       },
       "Municipal Lime\u00f1o": {
@@ -76,12 +48,18 @@
         "home_matches": 2,
         "away_matches": 2
       },
+      "Zacatecoluca": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
       "Platense (SLV)": {
         "home_matches": 2,
         "away_matches": 3
       }
     }
   },
-  "example_count": 52,
-  "trained_at": "2026-02-12T19:22:17.393760"
+  "example_count": 26,
+  "result_accuracy": 0.16666666666666666,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-13T09:55:19.014933"
 }

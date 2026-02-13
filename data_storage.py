@@ -160,7 +160,7 @@ class MatchDataStorage:
             
             # If actual_result is present, update training data
             actual_result = match_data.get('actual_result')
-            if actual_result and actual_result.get('home_score') is not None:
+            if actual_result and isinstance(actual_result, dict) and actual_result.get('home_score') is not None:
                 self._update_training_data(url, actual_result)
                 return True
             

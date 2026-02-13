@@ -6,42 +6,42 @@
     "league": "Tercera Division Group 12 - Canarias",
     "league_url_path": "",
     "country_code": "es",
-    "match_count": 98,
+    "match_count": 68,
     "teams": {
       "Real Murcia Imperial": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "EG El Palmar": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Tenerife III": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "CD Marino": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Arucas CF": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "UD Las Palmas C": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Montaneros CF": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Silva SD": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "UD Somozas": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Celtiga FC": {
@@ -49,12 +49,12 @@
         "away_matches": 1
       },
       "CD Estradense": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Juventud Cambados": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Atletico Arteixo": {
         "home_matches": 1,
@@ -70,23 +70,23 @@
       },
       "Castro FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "SCD Durango": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Zarautz": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "SD Zamudio": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Eibar III": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Marbelli": {
         "home_matches": 1,
@@ -94,10 +94,10 @@
       },
       "CD El Palo": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Coria CF": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Atletico Onubense": {
@@ -113,20 +113,20 @@
         "away_matches": 1
       },
       "CD Utrera": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Dos Hermanas CF": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Atletico Santa Cruz": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "CD Cieza": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Aguilas II": {
         "home_matches": 1,
@@ -134,26 +134,26 @@
       },
       "SFC Minerva": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "UCAM Murcia B": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Yeclano II": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Huracan de Balazote": {
         "home_matches": 1,
         "away_matches": 0
       },
       "Guadalajara II": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "UD Tamaraceite": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Villa de S Brigida": {
@@ -166,7 +166,7 @@
       },
       "CD Beti Onak": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Real Union de Tenerife": {
         "home_matches": 1,
@@ -178,30 +178,30 @@
       },
       "Arosa SC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "SD Noja": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "UD Aretxabaleta": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Portugalete": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Mojados": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "CD Becerril Campos": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Villaralbo CF": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Atletico Mansilles": {
@@ -209,83 +209,25 @@
         "away_matches": 1
       },
       "Unionistas Salamanca II": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "UD Santa Marta": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Cazalegas": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Conil CF": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "C\u00e9ltiga FC": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Atl\u00e9tico Arteixo": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Polvor\u00edn FC": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Monta\u00f1as del Pas": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Marbell\u00ed": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Atl\u00e9tico Onubense": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Atl\u00e9tico Central C\u00f3rdoba": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "C\u00e1diz CF B": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "\u00c1guilas II": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Hurac\u00e1n de Balazote": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Villa de S. Br\u00edgida": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "CA Artajon\u00e9s": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Real Uni\u00f3n de Tenerife": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Uni\u00f3n Sur Yaiza": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Atl\u00e9tico Mansill\u00e9s": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 61,
-  "trained_at": "2026-02-12T19:21:50.890945"
+  "example_count": 31,
+  "result_accuracy": 0.5714285714285714,
+  "ou_accuracy": 0.42857142857142855,
+  "trained_at": "2026-02-13T18:33:50.706786"
 }

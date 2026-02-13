@@ -6,15 +6,15 @@
     "league": "Primera B",
     "league_url_path": "",
     "country_code": "co",
-    "match_count": 55,
+    "match_count": 37,
     "teams": {
       "Barranquilla FC": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Orsomarso SC": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Cortulua": {
         "home_matches": 2,
@@ -25,28 +25,28 @@
         "away_matches": 3
       },
       "Independiente Yumbo": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Atletico FC": {
         "home_matches": 0,
         "away_matches": 1
       },
       "Boca Juniors Cali": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Deportes Quindio": {
         "home_matches": 1,
         "away_matches": 2
       },
       "Valledupar FC": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Envigado FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Union Magdalena": {
         "home_matches": 2,
@@ -61,43 +61,17 @@
         "away_matches": 1
       },
       "Real Cartagena": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Leones": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Cortulu\u00e1": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Patriotas Boyac\u00e1": {
         "home_matches": 1,
-        "away_matches": 3
-      },
-      "Atl\u00e9tico FC": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Deportes Quind\u00edo": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Uni\u00f3n Magdalena": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Bogot\u00e1 FC": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Real San Andr\u00e9s": {
-        "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 36,
-  "trained_at": "2026-02-12T19:21:46.114855"
+  "example_count": 18,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-13T18:33:47.392068"
 }

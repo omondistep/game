@@ -6,90 +6,92 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "et",
-    "match_count": 66,
+    "match_count": 44,
     "teams": {
       "Hadiya Hosaena": {
-        "home_matches": 4,
-        "away_matches": 4
+        "home_matches": 2,
+        "away_matches": 2
       },
       "Welwalo Adigrat Uni": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Kedus Giorgis": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Shire Endaselassie": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Ethiopian Medhin": {
-        "home_matches": 4,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Defence Force": {
         "home_matches": 0,
-        "away_matches": 4
-      },
-      "Mebrat Hayl": {
-        "home_matches": 4,
         "away_matches": 2
       },
-      "Welayta Dicha": {
+      "Mebrat Hayl": {
         "home_matches": 2,
-        "away_matches": 4
+        "away_matches": 1
+      },
+      "Welayta Dicha": {
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Negele Arsi Ketema": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Sidama Bunna": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Sheger Ketema": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Dire Dawa Kenema": {
-        "home_matches": 2,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Ethiopian Coffee": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Ethiopia Nigd Bank": {
         "home_matches": 0,
-        "away_matches": 4
+        "away_matches": 2
       },
       "Awassa Kenema": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Adama Kenema": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Fasil Kenema": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Bahardar": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Mekelle 70": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Arba Minch Kenema": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       }
     }
   },
-  "example_count": 44,
-  "trained_at": "2026-02-12T19:21:51.795546"
+  "example_count": 22,
+  "result_accuracy": 0.6,
+  "ou_accuracy": 0.8,
+  "trained_at": "2026-02-13T18:33:51.066829"
 }

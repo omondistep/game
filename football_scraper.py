@@ -26,9 +26,60 @@ class ForebetScraper:
             )
         }
         
+        # Rate limiting
+        self.last_request_time = 0
+        self.min_request_interval = 2.0  # Minimum seconds between requests
+        self.request_count = 0
+        self.max_requests_before_pause = 50
+        self.pause_duration = 30  # Seconds to pause after max requests
+        
         # Load leagues database
         self.leagues_db = {}
         self._load_leagues_db()
+    
+    def _rate_limit(self):
+        """Apply rate limiting between requests."""
+        current_time = time.time()
+        elapsed = current_time - self.last_request_time
+        
+        # Wait if needed to maintain minimum interval
+        if elapsed < self.min_request_interval:
+            time.sleep(self.min_request_interval - elapsed)
+        
+        # Check if we need a longer pause
+        self.request_count += 1
+        if self.request_count >= self.max_requests_before_pause:
+            print(f"  Rate limit pause: sleeping {self.pause_duration}s after {self.request_count} requests...")
+            time.sleep(self.pause_duration)
+            self.request_count = 0
+        
+        self.last_request_time = time.time()
+    
+    def _make_request(self, url: str, max_retries: int = 3) -> Optional[requests.Response]:
+        """Make a rate-limited request with retries."""
+        for attempt in range(max_retries):
+            try:
+                self._rate_limit()
+                response = requests.get(url, headers=self.headers, timeout=15)
+                
+                if response.status_code == 429:
+                    # Rate limited - wait longer and retry
+                    wait_time = 60 * (attempt + 1)  # Exponential backoff
+                    print(f"  Rate limited (429), waiting {wait_time}s before retry {attempt + 1}/{max_retries}")
+                    time.sleep(wait_time)
+                    continue
+                
+                response.raise_for_status()
+                return response
+                
+            except requests.exceptions.RequestException as e:
+                if attempt == max_retries - 1:
+                    raise
+                wait_time = 5 * (attempt + 1)
+                print(f"  Request failed, retrying in {wait_time}s: {e}")
+                time.sleep(wait_time)
+        
+        return None
     
     def _load_leagues_db(self):
         """Load leagues from data/leagues_db.json and data/comprehensive_leagues_db.json."""
@@ -659,8 +710,9 @@ class ForebetScraper:
                          If False, use placeholder "League {code}".
         """
         try:
-            response = requests.get(url, headers=self.headers, timeout=15)
-            response.raise_for_status()
+            response = self._make_request(url)
+            if response is None:
+                return None
             soup = BeautifulSoup(response.content, 'html.parser')
             
             # Check if match has been played and extract result
@@ -752,8 +804,9 @@ class ForebetScraper:
     def is_match_played(self, url: str) -> bool:
         """Check if a match has been played (has FT indicator and/or date in past)."""
         try:
-            response = requests.get(url, headers=self.headers, timeout=15)
-            response.raise_for_status()
+            response = self._make_request(url)
+            if response is None:
+                return False
             soup = BeautifulSoup(response.content, 'html.parser')
             
             # Check 1: Look for "FT" (Full Time) indicator
@@ -805,8 +858,9 @@ class ForebetScraper:
     def extract_actual_result(self, url: str) -> Optional[Dict]:
         """Extract actual match result after the game is played."""
         try:
-            response = requests.get(url, headers=self.headers, timeout=15)
-            response.raise_for_status()
+            response = self._make_request(url)
+            if response is None:
+                return None
             soup = BeautifulSoup(response.content, 'html.parser')
 
             result: Dict = {
@@ -1375,8 +1429,9 @@ class ForebetScraper:
         try:
             url = "https://www.forebet.com/en/injured-players"
             
-            response = requests.get(url, headers=self.headers, timeout=15)
-            response.raise_for_status()
+            response = self._make_request(url)
+            if response is None:
+                return injuries
             soup = BeautifulSoup(response.content, 'html.parser')
             
             # Get all team names from h4 tags

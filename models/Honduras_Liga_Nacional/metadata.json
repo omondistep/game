@@ -6,74 +6,56 @@
     "league": "Liga Nacional",
     "league_url_path": "",
     "country_code": "hn",
-    "match_count": 60,
+    "match_count": 45,
     "teams": {
-      "Juticalpa": {
-        "home_matches": 4,
-        "away_matches": 4
+      "Lobos UPNFM": {
+        "home_matches": 3,
+        "away_matches": 2
       },
-      "Atletico Choloma": {
+      "CD Victoria": {
         "home_matches": 1,
         "away_matches": 3
       },
-      "Real Espana": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Olancho": {
-        "home_matches": 4,
+      "CD Marathon": {
+        "home_matches": 3,
         "away_matches": 2
       },
       "Platense HON": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
-      "CD Victoria": {
+      "Juticalpa": {
+        "home_matches": 3,
+        "away_matches": 2
+      },
+      "Atletico Choloma": {
         "home_matches": 2,
-        "away_matches": 4
+        "away_matches": 3
       },
-      "Lobos UPNFM": {
-        "home_matches": 4,
-        "away_matches": 4
+      "Real Espana": {
+        "home_matches": 2,
+        "away_matches": 3
       },
-      "CD Marathon": {
+      "Olancho": {
         "home_matches": 2,
         "away_matches": 2
       },
       "CD Olimpia": {
-        "home_matches": 4,
-        "away_matches": 4
+        "home_matches": 2,
+        "away_matches": 2
       },
       "Genesis": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "CD Motagua": {
-        "home_matches": 4,
-        "away_matches": 2
-      },
-      "Atl\u00e9tico Choloma": {
-        "home_matches": 1,
-        "away_matches": 3
-      },
-      "Real Espa\u00f1a": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Platense (HON)": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "CD Marath\u00f3n": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "G\u00e9nesis": {
         "home_matches": 2,
         "away_matches": 2
       }
     }
   },
-  "example_count": 40,
-  "trained_at": "2026-02-12T19:21:55.082900"
+  "example_count": 25,
+  "result_accuracy": 0.4,
+  "ou_accuracy": 0.4,
+  "trained_at": "2026-02-13T18:33:54.601693"
 }

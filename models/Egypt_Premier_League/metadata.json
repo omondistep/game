@@ -6,75 +6,75 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "eg",
-    "match_count": 43,
+    "match_count": 30,
     "teams": {
       "Ahly Cairo": {
-        "home_matches": 3,
-        "away_matches": 2
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Wadi Degla SC": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Zamalek SC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Petrojet Suez": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Pyramids": {
-        "home_matches": 2,
-        "away_matches": 3
+        "home_matches": 1,
+        "away_matches": 2
       },
       "El Gouna": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Al Masry": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Ceramica Cleopatra": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "ENPPI Cairo": {
-        "home_matches": 3,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Semouha Club": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Pharco": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "FC Masr": {
-        "home_matches": 2,
-        "away_matches": 2
+        "home_matches": 1,
+        "away_matches": 1
       },
       "NBE": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Haras Al Hodoud": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Ghazl Al Mahalla": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Arab Contractors": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Future FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Ismaily": {
         "home_matches": 0,
@@ -82,6 +82,8 @@
       }
     }
   },
-  "example_count": 28,
-  "trained_at": "2026-02-12T19:21:50.063450"
+  "example_count": 15,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-13T18:33:49.933619"
 }

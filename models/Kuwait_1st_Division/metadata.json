@@ -51,5 +51,7 @@
     }
   },
   "example_count": 8,
-  "trained_at": "2026-02-12T19:22:01.842615"
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-13T08:10:54.662523"
 }
