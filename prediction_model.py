@@ -138,6 +138,27 @@ class WeightedPredictor:
         odds_over = 1 / prob_over if prob_over > 0 else 2.0
         odds_under = 1 / prob_under if prob_under > 0 else 2.0
         
+        # O/U 3.5 calculation (higher threshold)
+        prob_over_35 = min(0.95, max(0.05, total_expected / 7))
+        prob_under_35 = 1 - prob_over_35
+        odds_over_35 = 1 / prob_over_35 if prob_over_35 > 0 else 2.0
+        odds_under_35 = 1 / prob_under_35 if prob_under_35 > 0 else 2.0
+        
+        # O/U 4.5 calculation (even higher threshold)
+        prob_over_45 = min(0.95, max(0.05, total_expected / 9))
+        prob_under_45 = 1 - prob_over_45
+        odds_over_45 = 1 / prob_over_45 if prob_over_45 > 0 else 2.0
+        odds_under_45 = 1 / prob_under_45 if prob_under_45 > 0 else 2.0
+        
+        # BTTS calculation using Poisson
+        import math
+        p_home_scores = 1 - math.exp(-home_expected)
+        p_away_scores = 1 - math.exp(-away_expected)
+        prob_btts_yes = p_home_scores * p_away_scores
+        prob_btts_no = 1 - prob_btts_yes
+        odds_btts_yes = 1 / prob_btts_yes if prob_btts_yes > 0 else 2.0
+        odds_btts_no = 1 / prob_btts_no if prob_btts_no > 0 else 2.0
+        
         return {
             'odds_home': odds_home,
             'odds_draw': odds_draw,
@@ -149,6 +170,21 @@ class WeightedPredictor:
             'odds_under': odds_under,
             'prob_over': prob_over,
             'prob_under': prob_under,
+            # O/U 3.5
+            'odds_over_3.5': odds_over_35,
+            'odds_under_3.5': odds_under_35,
+            'prob_over_3.5': prob_over_35,
+            'prob_under_3.5': prob_under_35,
+            # O/U 4.5
+            'odds_over_4.5': odds_over_45,
+            'odds_under_4.5': odds_under_45,
+            'prob_over_4.5': prob_over_45,
+            'prob_under_4.5': prob_under_45,
+            # BTTS
+            'odds_btts_yes': odds_btts_yes,
+            'odds_btts_no': odds_btts_no,
+            'prob_btts_yes': prob_btts_yes,
+            'prob_btts_no': prob_btts_no,
             'expected_goals': total_expected,
         }
     
@@ -219,38 +255,21 @@ class WeightedPredictor:
         pos_score_home = max(0, 1 - (home_pos - 1) / (max_pos - 1))
         pos_score_away = max(0, 1 - (away_pos - 1) / (max_pos - 1))
         
-        # 2. ODDS ANALYSIS - Use ML's own odds + Market odds
-        # ML's own odds from raw statistics (independent of market)
+        # 2. ODDS ANALYSIS - Use ONLY ML's own odds (computed from raw match statistics)
+        # We no longer use market odds to avoid bookmaker dependency
         ml_odds_home = ml_own_odds.get('odds_home', 2.5)
         ml_odds_draw = ml_own_odds.get('odds_draw', 3.0)
         ml_odds_away = ml_own_odds.get('odds_away', 3.5)
         
-        # Market odds
-        odds_home = features.get('odds_home') or 2.5
-        odds_draw = features.get('odds_draw') or 3.0
-        odds_away = features.get('odds_away') or 3.5
-        
-        # ML's own implied probabilities
+        # Convert ML's odds to normalized probabilities
         ml_imp_home = 1 / ml_odds_home
         ml_imp_draw = 1 / ml_odds_draw
         ml_imp_away = 1 / ml_odds_away
         ml_total = ml_imp_home + ml_imp_draw + ml_imp_away
         
-        ml_odds_score_home = ml_imp_home / ml_total
-        ml_odds_score_away = ml_imp_away / ml_total
-        
-        # Market implied probabilities
-        imp_home = 1 / odds_home
-        imp_draw = 1 / odds_draw
-        imp_away = 1 / odds_away
-        total = imp_home + imp_draw + imp_away
-        
-        market_odds_score_home = imp_home / total
-        market_odds_score_away = imp_away / total
-        
-        # Combine ML's odds with market odds (50/50 blend)
-        odds_score_home = (ml_odds_score_home + market_odds_score_home) / 2
-        odds_score_away = (ml_odds_score_away + market_odds_score_away) / 2
+        # Use ML's own odds as the sole odds factor (no market odds)
+        odds_score_home = ml_imp_home / ml_total
+        odds_score_away = ml_imp_away / ml_total
         
         # 3. RECENT FORM (20% weight)
         # Form points: W=3, D=1, L=0, normalized
@@ -526,35 +545,29 @@ class FootballPredictor:
         'home_recent_form', 'away_recent_form',
         'home_wins_l6', 'home_draws_l6', 'home_losses_l6',
         'away_wins_l6', 'away_draws_l6', 'away_losses_l6',
-        # Goals
+        # Goals - offensive and defensive strength
         'home_scored_avg', 'home_conceded_avg',
         'away_scored_avg', 'away_conceded_avg',
         'expected_total_goals',
-        # Home / Away specific
+        # Goal difference - key signal
+        'home_gd', 'away_gd',
+        # Home / Away specific performance
         'home_home_win_rate', 'away_away_win_rate',
         'home_home_goals_avg', 'away_away_goals_avg',
-        # Head-to-head
+        # Head-to-head historical matchups
         'h2h_home_win_pct', 'h2h_draw_pct', 'h2h_away_win_pct',
-        # Shots & attacks
+        # Shots & attacks - attacking metrics
         'home_shots_avg', 'away_shots_avg',
         'home_shots_on_target_pct', 'away_shots_on_target_pct',
         'home_dangerous_attacks_avg', 'away_dangerous_attacks_avg',
-        # Possession & passes
+        # Possession & passes - territorial control
         'home_possession', 'away_possession',
         'home_pass_accuracy', 'away_pass_accuracy',
         # Discipline
         'home_fouls_avg', 'away_fouls_avg',
         'home_yellow_avg', 'away_yellow_avg',
-        # Odds (market expectations) - used for comparison but not for ML's own odds
-        'odds_home', 'odds_draw', 'odds_away',
-        'odds_over', 'odds_under',
-        # Forebet
-        'forebet_probability',
-        # Prediction History (meta-features from model learning)
-        'home_team_prediction_correct_pct',
-        'away_team_prediction_correct_pct',
-        'league_prediction_correct_pct',
-        'overall_model_accuracy',
+        # NOTE: Removed betting odds features to avoid circular dependency
+        # The model should learn from team performance, not replicate bookmaker predictions
     ]
     
     # Features for ML model's OWN odds calculation (without external odds)
@@ -641,6 +654,16 @@ class FootballPredictor:
                         if os.path.exists(fpath):
                             with open(fpath, 'rb') as f:
                                 models[fname.replace('.pkl', '')] = pickle.load(f)
+                    
+                    # Also load metadata for accuracy info
+                    metadata_path = os.path.join(league_path, 'metadata.json')
+                    if os.path.exists(metadata_path):
+                        try:
+                            with open(metadata_path, 'r') as f:
+                                models['metadata'] = json.load(f)
+                        except:
+                            pass
+                    
                     if models:
                         # Store with multiple keys for flexible lookup
                         self.league_models[entry] = models
@@ -831,6 +854,9 @@ class FootballPredictor:
         as_ = f['away_scored_avg'] or 1.1
         hc = f['home_conceded_avg'] or 1.0
         f['expected_total_goals'] = (hs + ac) / 2 + (as_ + hc) / 2
+        # Goal difference - important predictive signal
+        f['home_gd'] = hs - hc
+        f['away_gd'] = as_ - ac
 
         # --- Home / Away specific ---
         hm = match_data.get('home_matches', [])
@@ -946,24 +972,23 @@ class FootballPredictor:
             'home_scored_avg': 1.3, 'home_conceded_avg': 1.0,
             'away_scored_avg': 1.1, 'away_conceded_avg': 1.2,
             'expected_total_goals': 2.5,
+            # Goal difference (new)
+            'home_gd': 0.3, 'away_gd': -0.1,
+            # Home/Away performance
             'home_home_win_rate': 50, 'away_away_win_rate': 33,
             'home_home_goals_avg': 1.5, 'away_away_goals_avg': 1.0,
+            # Head-to-head
             'h2h_home_win_pct': 33, 'h2h_draw_pct': 33, 'h2h_away_win_pct': 33,
+            # Shots
             'home_shots_avg': 14, 'away_shots_avg': 12,
             'home_shots_on_target_pct': 35, 'away_shots_on_target_pct': 35,
             'home_dangerous_attacks_avg': 55, 'away_dangerous_attacks_avg': 50,
+            # Possession
             'home_possession': 50, 'away_possession': 50,
             'home_pass_accuracy': 80, 'away_pass_accuracy': 80,
             'home_fouls_avg': 12, 'away_fouls_avg': 12,
             'home_yellow_avg': 1.5, 'away_yellow_avg': 1.5,
-            'odds_home': 2.5, 'odds_draw': 3.0, 'odds_away': 3.5,
-            'odds_over': 1.9, 'odds_under': 1.9,
-            'forebet_probability': 33,
-            # Prediction history defaults (0.5 = neutral/unknown)
-            'home_team_prediction_correct_pct': 0.5,
-            'away_team_prediction_correct_pct': 0.5,
-            'league_prediction_correct_pct': 0.5,
-            'overall_model_accuracy': 0.5,
+            # NOTE: Removed odds-related defaults
         }
         vec = []
         for name in self.FEATURE_NAMES:
@@ -1297,6 +1322,7 @@ class FootballPredictor:
         scaler = models.get('scaler')
         result_model = models.get('result_model')
         ou_model = models.get('ou_model')
+        metadata = models.get('metadata', {})  # Get metadata for accuracy info
         
         if not (scaler and result_model and ou_model):
             return self._statistical_prediction(features)
@@ -1340,8 +1366,35 @@ class FootballPredictor:
                 'prob_over': round(ml_own_odds['prob_over'], 4),
                 'prob_under': round(ml_own_odds['prob_under'], 4),
             },
+            'over_under_3.5': {
+                'odds_over': round(ml_own_odds.get('odds_over_3.5', 2.0), 2),
+                'odds_under': round(ml_own_odds.get('odds_under_3.5', 2.0), 2),
+                'prob_over': round(ml_own_odds.get('prob_over_3.5', 0.5), 4),
+                'prob_under': round(ml_own_odds.get('prob_under_3.5', 0.5), 4),
+            },
+            'over_under_4.5': {
+                'odds_over': round(ml_own_odds.get('odds_over_4.5', 2.0), 2),
+                'odds_under': round(ml_own_odds.get('odds_under_4.5', 2.0), 2),
+                'prob_over': round(ml_own_odds.get('prob_over_4.5', 0.5), 4),
+                'prob_under': round(ml_own_odds.get('prob_under_4.5', 0.5), 4),
+            },
+            'btts': {
+                'odds_yes': round(ml_own_odds.get('odds_btts_yes', 2.0), 2),
+                'odds_no': round(ml_own_odds.get('odds_btts_no', 2.0), 2),
+                'prob_yes': round(ml_own_odds.get('prob_btts_yes', 0.5), 4),
+                'prob_no': round(ml_own_odds.get('prob_btts_no', 0.5), 4),
+            },
             'expected_goals': round(ml_own_odds['expected_goals'], 2),
         }
+        
+        # Add model accuracy information from training metadata
+        if metadata:
+            prediction['model_accuracy'] = {
+                'result_accuracy': metadata.get('result_accuracy', 0),
+                'ou_accuracy': metadata.get('ou_accuracy', 0),
+                'example_count': metadata.get('example_count', 0),
+                'trained_at': metadata.get('trained_at', 'Unknown'),
+            }
         
         return prediction
 
@@ -1423,6 +1476,18 @@ class FootballPredictor:
                 'prob_over': round(ml_own_odds['prob_over'], 4),
                 'prob_under': round(ml_own_odds['prob_under'], 4),
             },
+            'over_under_3.5': {
+                'odds_over': round(ml_own_odds.get('odds_over_3.5', 2.0), 2),
+                'odds_under': round(ml_own_odds.get('odds_under_3.5', 2.0), 2),
+                'prob_over': round(ml_own_odds.get('prob_over_3.5', 0.5), 4),
+                'prob_under': round(ml_own_odds.get('prob_under_3.5', 0.5), 4),
+            },
+            'btts': {
+                'odds_yes': round(ml_own_odds.get('odds_btts_yes', 2.0), 2),
+                'odds_no': round(ml_own_odds.get('odds_btts_no', 2.0), 2),
+                'prob_yes': round(ml_own_odds.get('prob_btts_yes', 0.5), 4),
+                'prob_no': round(ml_own_odds.get('prob_btts_no', 0.5), 4),
+            },
             'expected_goals': round(ml_own_odds['expected_goals'], 2),
         }
         
@@ -1481,11 +1546,34 @@ class FootballPredictor:
         odds_draw = 1 / prob_draw if prob_draw > 0 else 3.5
         odds_away = 1 / prob_away if prob_away > 0 else 3.0
         
-        # O/U calculation based on expected total goals
+        # O/U 2.5 calculation based on expected total goals
         prob_over = min(0.95, max(0.05, total_expected / 5))  # Normalize around 2.5 goals
         prob_under = 1 - prob_over
         odds_over = 1 / prob_over if prob_over > 0 else 2.0
         odds_under = 1 / prob_under if prob_under > 0 else 2.0
+        
+        # O/U 3.5 calculation (higher threshold)
+        prob_over_35 = min(0.95, max(0.05, total_expected / 7))  # Normalize around 3.5 goals
+        prob_under_35 = 1 - prob_over_35
+        odds_over_35 = 1 / prob_over_35 if prob_over_35 > 0 else 2.0
+        odds_under_35 = 1 / prob_under_35 if prob_under_35 > 0 else 2.0
+        
+        # O/U 4.5 calculation
+        prob_over_45 = min(0.95, max(0.05, total_expected / 9))
+        prob_under_45 = 1 - prob_over_45
+        odds_over_45 = 1 / prob_over_45 if prob_over_45 > 0 else 2.0
+        odds_under_45 = 1 / prob_under_45 if prob_under_45 > 0 else 2.0
+        
+        # BTTS (Both Teams To Score) calculation
+        # Probability both teams score = P(home scores) * P(away scores)
+        # Using Poisson-like: P(X>0) = 1 - P(0) = 1 - e^(-lambda)
+        import math
+        p_home_scores = 1 - math.exp(-home_expected)
+        p_away_scores = 1 - math.exp(-away_expected)
+        prob_btts_yes = p_home_scores * p_away_scores
+        prob_btts_no = 1 - prob_btts_yes
+        odds_btts_yes = 1 / prob_btts_yes if prob_btts_yes > 0 else 2.0
+        odds_btts_no = 1 / prob_btts_no if prob_btts_no > 0 else 2.0
         
         return {
             'odds_home': odds_home,
@@ -1498,6 +1586,21 @@ class FootballPredictor:
             'odds_under': odds_under,
             'prob_over': prob_over,
             'prob_under': prob_under,
+            # O/U 3.5
+            'odds_over_3.5': odds_over_35,
+            'odds_under_3.5': odds_under_35,
+            'prob_over_3.5': prob_over_35,
+            'prob_under_3.5': prob_under_35,
+            # O/U 4.5
+            'odds_over_4.5': odds_over_45,
+            'odds_under_4.5': odds_under_45,
+            'prob_over_4.5': prob_over_45,
+            'prob_under_4.5': prob_under_45,
+            # BTTS
+            'odds_btts_yes': odds_btts_yes,
+            'odds_btts_no': odds_btts_no,
+            'prob_btts_yes': prob_btts_yes,
+            'prob_btts_no': prob_btts_no,
             'expected_goals': total_expected,
         }
 

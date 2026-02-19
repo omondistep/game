@@ -996,7 +996,8 @@ class FootballPredictionSystem:
             'label': result_label,
             'confidence': result_conf,
             'confidence_label': result_conf_label,
-            'prediction': rp['prediction']
+            'prediction': rp['prediction'],
+            'agreement': result_agreement
         })
         
         # Add O/U recommendation (reduce confidence if models disagree)
@@ -1009,49 +1010,118 @@ class FootballPredictionSystem:
             'label': f"{ou_prediction} 2.5 Goals",
             'confidence': ou_conf,
             'confidence_label': ou_conf_label,
-            'prediction': ou_prediction
+            'prediction': ou_prediction,
+            'agreement': ou_agreement
         })
         
-        # Sort by confidence (highest first)
-        recommendations.sort(key=lambda x: x['confidence'], reverse=True)
+        # Add O/U 3.5 recommendation from ML's own odds
+        # Use 'pred' (main prediction) not 'ml_pred' (ML model predictions)
+        ml_odds = pred.get('ml_own_odds', {})
         
-        # Print recommendations in order
+        # Handle both nested format (over_under_3.5, btts) and flat format (prob_over_3.5)
+        prob_over_35 = ml_odds.get('over_under_3.5', {}).get('prob_over') or ml_odds.get('prob_over_3.5')
+        prob_under_35 = ml_odds.get('over_under_3.5', {}).get('prob_under') or ml_odds.get('prob_under_3.5')
+        prob_over_45 = ml_odds.get('over_under_4.5', {}).get('prob_over') or ml_odds.get('prob_over_4.5')
+        prob_under_45 = ml_odds.get('over_under_4.5', {}).get('prob_under') or ml_odds.get('prob_under_4.5')
+        prob_btts_yes = ml_odds.get('btts', {}).get('prob_yes') or ml_odds.get('prob_btts_yes')
+        prob_btts_no = ml_odds.get('btts', {}).get('prob_no') or ml_odds.get('prob_btts_no')
+        
+        if prob_over_35 and prob_under_35:
+            prob_over_35 = float(prob_over_35)
+            prob_under_35 = float(prob_under_35)
+            ou35_prediction = 'Over' if prob_over_35 > prob_under_35 else 'Under'
+            ou35_conf = max(prob_over_35, prob_under_35) * 100
+            # Weight by agreement - if O/U 2.5 agrees, boost confidence
+            if ou_agreement:
+                ou35_conf = ou35_conf * 1.1
+            ou35_conf = min(ou35_conf, 95)  # Cap at 95%
+            ou35_conf_label = 'HIGH' if ou35_conf > 55 else ('MEDIUM' if ou35_conf > 40 else 'LOW')
+            recommendations.append({
+                'type': 'Over/Under 3.5',
+                'label': f"{ou35_prediction} 3.5 Goals",
+                'confidence': ou35_conf,
+                'confidence_label': ou35_conf_label,
+                'prediction': ou35_prediction,
+                'agreement': ou_agreement
+            })
+        
+        # Add O/U 4.5 recommendation
+        if prob_over_45 and prob_under_45:
+            prob_over_45 = float(prob_over_45)
+            prob_under_45 = float(prob_under_45)
+            ou45_prediction = 'Over' if prob_over_45 > prob_under_45 else 'Under'
+            ou45_conf = max(prob_over_45, prob_under_45) * 100
+            if ou_agreement:
+                ou45_conf = ou45_conf * 1.1
+            ou45_conf = min(ou45_conf, 95)
+            ou45_conf_label = 'HIGH' if ou45_conf > 55 else ('MEDIUM' if ou45_conf > 40 else 'LOW')
+            recommendations.append({
+                'type': 'Over/Under 4.5',
+                'label': f"{ou45_prediction} 4.5 Goals",
+                'confidence': ou45_conf,
+                'confidence_label': ou45_conf_label,
+                'prediction': ou45_prediction,
+                'agreement': ou_agreement
+            })
+        
+        # Add BTTS recommendation from ML's own odds
+        if prob_btts_yes and prob_btts_no:
+            prob_btts_yes = float(prob_btts_yes)
+            prob_btts_no = float(prob_btts_no)
+            btts_prediction = 'Yes' if prob_btts_yes > prob_btts_no else 'No'
+            btts_conf = max(prob_btts_yes, prob_btts_no) * 100
+            # BTTS tends to be harder to predict, apply a discount
+            btts_conf = btts_conf * 0.85
+            btts_conf_label = 'HIGH' if btts_conf > 55 else ('MEDIUM' if btts_conf > 40 else 'LOW')
+            recommendations.append({
+                'type': 'BTTS',
+                'label': f"Both Teams Score: {btts_prediction}",
+                'confidence': btts_conf,
+                'confidence_label': btts_conf_label,
+                'prediction': btts_prediction,
+                'agreement': True  # BTTS is from single model
+            })
+        
+        # Sort by confidence (highest first), but prioritize agreements
+        # Create a sort key that considers both confidence and agreement
+        def sort_key(x):
+            conf = x.get('confidence', 0)
+            agreement = x.get('agreement', True)
+            # If agreement is True, boost effective confidence
+            agreement_boost = 15 if agreement else 0
+            return conf + agreement_boost
+        
+        recommendations.sort(key=sort_key, reverse=True)
+        
+        # Print recommendations in order with agreement indicator
         for i, rec in enumerate(recommendations):
             emoji = "🎯" if i == 0 else "  "
             conf_label = rec.get('confidence_label', "HIGH" if rec['confidence'] >= 60 else ("MEDIUM" if rec['confidence'] >= 40 else "LOW"))
             conf_col = C.GREEN if conf_label == "HIGH" else (C.YELLOW if conf_label == "MEDIUM" else C.RED)
-            print(f"  {emoji} {rec['type']}: {C.BOLD}{rec['label']}{C.RESET} ({conf_col}{rec['confidence']:.0f}% {conf_label}{C.RESET})")
+            agree_indicator = f" {C.GREEN}✓ AGREE{C.RESET}" if rec.get('agreement') else f" {C.YELLOW}⚠ DISAGREE{C.RESET}"
+            print(f"  {emoji} {rec['type']}: {C.BOLD}{rec['label']}{C.RESET} ({conf_col}{rec['confidence']:.0f}% {conf_label}{C.RESET}{agree_indicator})")
         
-        # If models disagree, explain why
-        if not result_agreement or not ou_agreement:
-            print()
-            print(f"  {C.BOLD}{C.YELLOW}⚠️ WHY MODELS DIVERGE:{C.RESET}")
-            
-            if not result_agreement:
-                # Get ML and Weighted predictions
-                ml_r = ml_pred.get('result', {}).get('prediction', '?')
-                w_r = w_pred.get('result', {}).get('prediction', '?')
-                ml_r_prob = ml_pred.get('result', {}).get('probabilities', {}).get(ml_r, 0) * 100
-                w_r_prob = w_pred.get('result', {}).get('probabilities', {}).get(w_r, 0) * 100
-                
-                if ml_r == '1':
-                    print(f"    • ML: Home win ({ml_r_prob:.0f}%) based on form & stats")
-                elif ml_r == 'X':
-                    print(f"    • ML: Draw ({ml_r_prob:.0f}%) based on recent matches")
-                else:
-                    print(f"    • ML: Away win ({ml_r_prob:.0f}%) based on league performance")
-                
-                if w_r == '1':
-                    print(f"    • Weighted: Home win ({w_r_prob:.0f}%) based on odds value")
-                elif w_r == 'X':
-                    print(f"    • Weighted: Draw ({w_r_prob:.0f}%) based on head-to-head")
-                else:
-                    print(f"    • Weighted: Away win ({w_r_prob:.0f}%) based on market odds")
-            
-            if not ou_agreement:
-                ml_o = ml_pred.get('over_under', {}).get('prediction', '?')
-                w_o = w_pred.get('over_under', {}).get('prediction', '?')
-                print(f"    • O/U: ML={ml_o}, Weighted={w_o} (different goal expectations)")
+        # Model Agreement Status - show both agreements and disagreements
+        print()
+        print(f"  {C.BOLD}{C.CYAN}📊 MODEL AGREEMENT STATUS:{C.RESET}")
+        
+        # Show result agreement
+        if result_agreement:
+            ml_r = ml_pred.get('result', {}).get('prediction', '?')
+            print(f"    {C.GREEN}✓{C.RESET} Result: Both models agree - {rmap.get(ml_r, ml_r)}")
+        else:
+            ml_r = ml_pred.get('result', {}).get('prediction', '?')
+            w_r = w_pred.get('result', {}).get('prediction', '?')
+            print(f"    {C.YELLOW}⚠{C.RESET} Result: ML={rmap.get(ml_r, ml_r)}, Weighted={rmap.get(w_r, w_r)}")
+        
+        # Show O/U agreement
+        if ou_agreement:
+            ml_o = ml_pred.get('over_under', {}).get('prediction', '?')
+            print(f"    {C.GREEN}✓{C.RESET} O/U 2.5: Both models agree - {ml_o}")
+        else:
+            ml_o = ml_pred.get('over_under', {}).get('prediction', '?')
+            w_o = w_pred.get('over_under', {}).get('prediction', '?')
+            print(f"    {C.YELLOW}⚠{C.RESET} O/U 2.5: ML={ml_o}, Weighted={w_o}")
         
         # Value bets in summary
         if analysis.get('value_bets'):
@@ -1207,14 +1277,23 @@ class FootballPredictionSystem:
                         metadata = json.load(f)
                     example_count = metadata.get('example_count', 0)
                     trained_at = metadata.get('trained_at', 'Unknown')
+                    result_acc = metadata.get('result_accuracy', 0)
+                    ou_acc = metadata.get('ou_accuracy', 0)
                     league_info = metadata.get('league_info', {})
                     print(f"  {C.CYAN}📊 League Model:{C.RESET} {league_info.get('country', country)} {league_info.get('league', league)}")
-                    print(f"  {C.DIM}  Trained on {example_count} matches on {trained_at[:10]}{C.RESET}")
+                    print(f"  {C.DIM}  Trained on {example_count} matches | Accuracy: Result {result_acc:.1%} | O/U {ou_acc:.1%}{C.RESET}")
                 except:
                     pass
         
-        # Show accuracy if available
-        if pred.get('result_accuracy'):
+        # Show accuracy if available (from model_accuracy field added to predictions)
+        model_acc = pred.get('model_accuracy')
+        if model_acc:
+            result_acc = model_acc.get('result_accuracy', 0)
+            ou_acc = model_acc.get('ou_accuracy', 0)
+            example_count = model_acc.get('example_count', 0)
+            if example_count > 0:
+                print(f"  {C.DIM}  Model Accuracy: Result {result_acc:.1%} | O/U {ou_acc:.1%} ({example_count} examples){C.RESET}")
+        elif pred.get('result_accuracy'):
             print(f"  {C.DIM}  Model accuracy: {pred['result_accuracy']:.1%}{C.RESET}")
         
 
