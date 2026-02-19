@@ -6,30 +6,30 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "uy",
-    "match_count": 10,
+    "match_count": 16,
     "teams": {
       "Albion FC URU": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Liverpool URU": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Montevideo Wanderers": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Defensor Sporting": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Penarol": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "CA Torque": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Boston River": {
@@ -37,21 +37,37 @@
         "away_matches": 0
       },
       "Nacional URU": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "CA Cerro": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Danubio FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Cerro Largo": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Racing Club URU": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Central Espanol": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Juventud LP": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 5,
-  "result_accuracy": 1.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:33:01.616600"
+  "example_count": 11,
+  "result_accuracy": 0.6666666666666666,
+  "ou_accuracy": 0.0,
+  "trained_at": "2026-02-19T06:03:02.346763"
 }

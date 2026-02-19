@@ -6,25 +6,21 @@
     "league": "Campeonato Matogrossense",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 88,
+    "match_count": 95,
     "teams": {
-      "Sport Sinop": {
-        "home_matches": 3,
-        "away_matches": 2
-      },
-      "Cuiaba": {
-        "home_matches": 2,
-        "away_matches": 3
-      },
       "North Esporte": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Pouso Alegre": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Chapada": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "Cuiaba": {
         "home_matches": 2,
         "away_matches": 3
       },
@@ -37,23 +33,27 @@
         "away_matches": 2
       },
       "URT MG": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Itabirito": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Uberlandia MG": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "America Mineiro": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Uniao Rondonopolis MT": {
         "home_matches": 3,
+        "away_matches": 2
+      },
+      "Sport Sinop": {
+        "home_matches": 4,
         "away_matches": 2
       },
       "Mixto MT": {
@@ -74,11 +74,11 @@
       },
       "Atletico Mineiro": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Cruzeiro": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Primavera MG": {
         "home_matches": 3,
@@ -86,22 +86,22 @@
       },
       "Luverdense": {
         "home_matches": 2,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Athletic Club MG": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Betim": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Tombense FC": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Democrata GV": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "IAPE MA": {
@@ -130,8 +130,8 @@
       }
     }
   },
-  "example_count": 46,
-  "result_accuracy": 0.3,
-  "ou_accuracy": 0.3,
-  "trained_at": "2026-02-13T19:32:26.185366"
+  "example_count": 53,
+  "result_accuracy": 0.36363636363636365,
+  "ou_accuracy": 0.36363636363636365,
+  "trained_at": "2026-02-19T06:02:17.566788"
 }

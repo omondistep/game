@@ -6,14 +6,14 @@
     "league": "Primavera 1",
     "league_url_path": "",
     "country_code": "it",
-    "match_count": 54,
+    "match_count": 60,
     "teams": {
       "Cagliari U19": {
         "home_matches": 2,
         "away_matches": 0
       },
       "Sassuolo U19": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Parma U19": {
@@ -26,7 +26,7 @@
       },
       "Cesena U19": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Verona U19": {
         "home_matches": 1,
@@ -50,7 +50,7 @@
       },
       "Frosinone U19": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Napoli U19": {
         "home_matches": 1,
@@ -61,7 +61,7 @@
         "away_matches": 1
       },
       "Pisa U19": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Spezia U19": {
@@ -70,7 +70,7 @@
       },
       "Avellino U19": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Sampdoria U19": {
         "home_matches": 1,
@@ -102,7 +102,7 @@
       },
       "Atalanta U19": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Inter U19": {
         "home_matches": 1,
@@ -117,7 +117,7 @@
         "away_matches": 0
       },
       "Lecce U19": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Juventus U19": {
@@ -143,11 +143,31 @@
       "Fiorentina U19": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Cremonese U19": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Venezia U19": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Entella U19": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Ternana U19": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Bari U19": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 27,
-  "result_accuracy": 0.6666666666666666,
-  "ou_accuracy": 0.5,
-  "trained_at": "2026-02-13T19:32:42.452905"
+  "example_count": 33,
+  "result_accuracy": 0.7142857142857143,
+  "ou_accuracy": 0.14285714285714285,
+  "trained_at": "2026-02-19T06:02:38.174614"
 }

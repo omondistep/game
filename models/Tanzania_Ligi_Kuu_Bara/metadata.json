@@ -6,7 +6,7 @@
     "league": "Ligi Kuu Bara",
     "league_url_path": "",
     "country_code": "tz",
-    "match_count": 38,
+    "match_count": 39,
     "teams": {
       "Coastal Union": {
         "home_matches": 1,
@@ -30,7 +30,7 @@
       },
       "Mashujaa": {
         "home_matches": 0,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Azam": {
         "home_matches": 1,
@@ -49,7 +49,7 @@
         "away_matches": 2
       },
       "Mtibwa Sugar": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Tanzania Prisons": {
@@ -74,8 +74,8 @@
       }
     }
   },
-  "example_count": 17,
-  "result_accuracy": 0.5,
-  "ou_accuracy": 0.5,
-  "trained_at": "2026-02-13T19:33:00.573589"
+  "example_count": 18,
+  "result_accuracy": 0.75,
+  "ou_accuracy": 0.75,
+  "trained_at": "2026-02-19T06:03:01.124977"
 }

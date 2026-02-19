@@ -6,7 +6,7 @@
     "league": "TFF 3. Lig",
     "league_url_path": "",
     "country_code": "tr",
-    "match_count": 83,
+    "match_count": 88,
     "teams": {
       "Anadolu Univ": {
         "home_matches": 1,
@@ -29,7 +29,7 @@
         "away_matches": 1
       },
       "Tokat Belediye": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Cayelispor": {
@@ -66,7 +66,7 @@
       },
       "Bulancakspor": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Giresunspor": {
         "home_matches": 0,
@@ -93,7 +93,7 @@
         "away_matches": 1
       },
       "Nigde Belediyesispor": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Kapadokya Goremespor": {
@@ -114,7 +114,7 @@
       },
       "1926 Polatl\u0131 Belediye": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Etimesgut BS": {
         "home_matches": 1,
@@ -125,7 +125,7 @@
         "away_matches": 1
       },
       "Duzcespor": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Karabuk Idman Yurdu": {
@@ -138,7 +138,7 @@
       },
       "Agr\u0131spor": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Osmaniyespor": {
         "home_matches": 0,
@@ -161,7 +161,7 @@
         "away_matches": 1
       },
       "Diyarbekirspor": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Kartal Bulvarspor": {
@@ -181,7 +181,7 @@
         "away_matches": 0
       },
       "Beykoz Ishakl\u0131spor": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Silivrispor": {
@@ -195,11 +195,19 @@
       "Ink\u0131lapspor": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Orduspor 1967": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Silifke Bld": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 41,
-  "result_accuracy": 0.4444444444444444,
-  "ou_accuracy": 0.6666666666666666,
-  "trained_at": "2026-02-13T19:32:59.486130"
+  "example_count": 46,
+  "result_accuracy": 0.4,
+  "ou_accuracy": 0.7,
+  "trained_at": "2026-02-19T06:02:59.946765"
 }

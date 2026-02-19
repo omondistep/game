@@ -6,10 +6,10 @@
     "league": "Thai League 2",
     "league_url_path": "",
     "country_code": "th",
-    "match_count": 38,
+    "match_count": 40,
     "teams": {
       "Chanthaburi": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Rasi Salai United": {
@@ -30,7 +30,7 @@
       },
       "Chiangmai United": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Police Tero FC": {
         "home_matches": 1,
@@ -45,7 +45,7 @@
         "away_matches": 1
       },
       "Bangkok FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Khon Kaen United": {
@@ -54,7 +54,7 @@
       },
       "Phrae United": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Trat FC": {
         "home_matches": 1,
@@ -82,8 +82,8 @@
       }
     }
   },
-  "example_count": 19,
-  "result_accuracy": 0.25,
-  "ou_accuracy": 0.75,
-  "trained_at": "2026-02-13T19:32:57.259726"
+  "example_count": 21,
+  "result_accuracy": 0.2,
+  "ou_accuracy": 0.8,
+  "trained_at": "2026-02-19T06:02:56.825646"
 }

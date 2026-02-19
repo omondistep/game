@@ -180,5 +180,411 @@
       "model_trained": true
     },
     "saved_at": "2026-02-13T20:12:00.076606"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/us-saint-malo-us-avranches-2352130",
+    "prediction": {
+      "prediction_method": "ml",
+      "result": {
+        "prediction": "1",
+        "probabilities": {
+          "1": 0.4591,
+          "X": 0.1946,
+          "2": 0.3462
+        },
+        "computed_odds": {
+          "1": 2.18,
+          "X": 5.14,
+          "2": 2.89
+        },
+        "confidence": 0.4591
+      },
+      "over_under": {
+        "prediction": "Under",
+        "probabilities": {
+          "Under": 0.9489,
+          "Over": 0.0511
+        },
+        "computed_odds": {
+          "Under": 1.05,
+          "Over": 19.57
+        },
+        "confidence": 0.9489
+      },
+      "model_trained": true
+    },
+    "saved_at": "2026-02-13T22:51:34.462915"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/lu%C3%ADs-%C3%81ngel-firpo-platense-(slv)-2415407",
+    "prediction": {
+      "prediction_method": "league_ml",
+      "result": {
+        "prediction": "1",
+        "probabilities": {
+          "1": 0.5236,
+          "X": 0.1276,
+          "2": 0.3487
+        },
+        "computed_odds": {
+          "1": 1.91,
+          "X": 7.84,
+          "2": 2.87
+        },
+        "confidence": 0.5236
+      },
+      "over_under": {
+        "prediction": "Over",
+        "probabilities": {
+          "Under": 0.0162,
+          "Over": 0.9838
+        },
+        "computed_odds": {
+          "Under": 61.73,
+          "Over": 1.02
+        },
+        "confidence": 0.9838
+      },
+      "model_trained": true
+    },
+    "saved_at": "2026-02-15T01:24:41.938540"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/catanduva-uniao-barbarense-sp-2416753",
+    "prediction": {
+      "prediction_method": "league_ml",
+      "result": {
+        "prediction": "1",
+        "probabilities": {
+          "1": 0.39,
+          "X": 0.29,
+          "2": 0.32
+        },
+        "computed_odds": {
+          "1": 2.56,
+          "X": 3.45,
+          "2": 3.12
+        },
+        "confidence": 0.39
+      },
+      "over_under": {
+        "prediction": "Under",
+        "probabilities": {
+          "Under": 0.9978,
+          "Over": 0.0022
+        },
+        "computed_odds": {
+          "Under": 1.0,
+          "Over": 99.0
+        },
+        "confidence": 0.9978
+      },
+      "model_trained": true
+    },
+    "saved_at": "2026-02-14T23:55:43.434696"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/lu\u00eds-\u00e1ngel-firpo-platense-(slv)-2415407",
+    "prediction": {
+      "prediction_method": "league_ml",
+      "result": {
+        "prediction": "1",
+        "probabilities": {
+          "1": 0.5236,
+          "X": 0.1276,
+          "2": 0.3487
+        },
+        "computed_odds": {
+          "1": 1.91,
+          "X": 7.84,
+          "2": 2.87
+        },
+        "confidence": 0.5236
+      },
+      "over_under": {
+        "prediction": "Over",
+        "probabilities": {
+          "Under": 0.0162,
+          "Over": 0.9838
+        },
+        "computed_odds": {
+          "Under": 61.73,
+          "Over": 1.02
+        },
+        "confidence": 0.9838
+      },
+      "model_trained": true
+    },
+    "saved_at": "2026-02-14T23:56:11.356658"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/orat\u00f3rio-recre-ap-trem-ap-2422083",
+    "prediction": {
+      "prediction_method": "league_ml",
+      "result": {
+        "prediction": "1",
+        "probabilities": {
+          "1": 0.45,
+          "X": 0.24,
+          "2": 0.31
+        },
+        "computed_odds": {
+          "1": 2.22,
+          "X": 4.17,
+          "2": 3.23
+        },
+        "confidence": 0.45
+      },
+      "over_under": {
+        "prediction": "Under",
+        "probabilities": {
+          "Under": 0.9978,
+          "Over": 0.0022
+        },
+        "computed_odds": {
+          "Under": 1.0,
+          "Over": 99.0
+        },
+        "confidence": 0.9978
+      },
+      "model_trained": true
+    },
+    "saved_at": "2026-02-15T00:08:11.311587"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/getafe-villarreal-2316659",
+    "prediction": {
+      "prediction_method": "league_ml",
+      "result": {
+        "prediction": "1",
+        "probabilities": {
+          "1": 0.37,
+          "X": 0.31,
+          "2": 0.32
+        },
+        "computed_odds": {
+          "1": 2.7,
+          "X": 3.23,
+          "2": 3.12
+        },
+        "confidence": 0.37
+      },
+      "over_under": {
+        "prediction": "Over",
+        "probabilities": {
+          "Under": 0.4181,
+          "Over": 0.5819
+        },
+        "computed_odds": {
+          "Under": 2.39,
+          "Over": 1.72
+        },
+        "confidence": 0.5819
+      },
+      "model_trained": true
+    },
+    "saved_at": "2026-02-15T13:18:52.782929"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/g%C3%A9nesis-platense-(hon)-2426018",
+    "prediction": {
+      "prediction_method": "league_ml",
+      "result": {
+        "prediction": "X",
+        "probabilities": {
+          "X": 0.68,
+          "2": 0.32
+        },
+        "computed_odds": {
+          "X": 1.47,
+          "2": 3.12
+        },
+        "confidence": 0.68
+      },
+      "over_under": {
+        "prediction": "Over",
+        "probabilities": {
+          "Under": 0.0049,
+          "Over": 0.9951
+        },
+        "computed_odds": {
+          "Under": 99.0,
+          "Over": 1.0
+        },
+        "confidence": 0.9951
+      },
+      "model_trained": true,
+      "ml_own_odds": {
+        "result": {
+          "odds_home": 2.31,
+          "odds_draw": 10.0,
+          "odds_away": 2.14,
+          "prob_home": 0.4324,
+          "prob_draw": 0.1,
+          "prob_away": 0.4676
+        },
+        "over_under": {
+          "odds_over": 1.74,
+          "odds_under": 2.35,
+          "prob_over": 0.575,
+          "prob_under": 0.425
+        },
+        "expected_goals": 2.88
+      }
+    },
+    "saved_at": "2026-02-17T12:21:19.199465"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/diriang%C3%A9n-fc-hh-export-2425829",
+    "prediction": {
+      "prediction_method": "league_ml",
+      "result": {
+        "prediction": "X",
+        "probabilities": {
+          "1": 0.4241,
+          "X": 0.4259,
+          "2": 0.15
+        },
+        "computed_odds": {
+          "1": 2.36,
+          "X": 2.35,
+          "2": 6.67
+        },
+        "confidence": 0.4259
+      },
+      "over_under": {
+        "prediction": "Over",
+        "probabilities": {
+          "Under": 0.0752,
+          "Over": 0.9248
+        },
+        "computed_odds": {
+          "Under": 13.3,
+          "Over": 1.08
+        },
+        "confidence": 0.9248
+      },
+      "model_trained": true,
+      "ml_own_odds": {
+        "result": {
+          "odds_home": 1.67,
+          "odds_draw": 10.0,
+          "odds_away": 3.31,
+          "prob_home": 0.5978,
+          "prob_draw": 0.1,
+          "prob_away": 0.3022
+        },
+        "over_under": {
+          "odds_over": 1.68,
+          "odds_under": 2.47,
+          "prob_over": 0.5956,
+          "prob_under": 0.4044
+        },
+        "expected_goals": 2.98
+      }
+    },
+    "saved_at": "2026-02-17T11:56:53.799790"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/santos-laguna-mazatlan-fc-2413237",
+    "prediction": {
+      "prediction_method": "league_ml",
+      "result": {
+        "prediction": "1",
+        "probabilities": {
+          "1": 0.5135,
+          "X": 0.1771,
+          "2": 0.3094
+        },
+        "computed_odds": {
+          "1": 1.95,
+          "X": 5.65,
+          "2": 3.23
+        },
+        "confidence": 0.5135
+      },
+      "over_under": {
+        "prediction": "Over",
+        "probabilities": {
+          "Under": 0.3175,
+          "Over": 0.6825
+        },
+        "computed_odds": {
+          "Under": 3.15,
+          "Over": 1.47
+        },
+        "confidence": 0.6825
+      },
+      "model_trained": true,
+      "ml_own_odds": {
+        "result": {
+          "odds_home": 1.88,
+          "odds_draw": 10.0,
+          "odds_away": 2.71,
+          "prob_home": 0.5314,
+          "prob_draw": 0.1,
+          "prob_away": 0.3686
+        },
+        "over_under": {
+          "odds_over": 1.61,
+          "odds_under": 2.65,
+          "prob_over": 0.6227,
+          "prob_under": 0.3773
+        },
+        "expected_goals": 3.11
+      }
+    },
+    "saved_at": "2026-02-17T11:58:03.931306"
+  },
+  {
+    "url": "https://www.forebet.com/en/football/matches/huehuetecos-gomerano-2426030",
+    "prediction": {
+      "prediction_method": "league_ml",
+      "result": {
+        "prediction": "X",
+        "probabilities": {
+          "1": 0.2676,
+          "X": 0.58,
+          "2": 0.1524
+        },
+        "computed_odds": {
+          "1": 3.74,
+          "X": 1.72,
+          "2": 6.56
+        },
+        "confidence": 0.58
+      },
+      "over_under": {
+        "prediction": "Under",
+        "probabilities": {
+          "Under": 0.9974,
+          "Over": 0.0026
+        },
+        "computed_odds": {
+          "Under": 1.0,
+          "Over": 99.0
+        },
+        "confidence": 0.9974
+      },
+      "model_trained": true,
+      "ml_own_odds": {
+        "result": {
+          "odds_home": 2.24,
+          "odds_draw": 10.0,
+          "odds_away": 2.2,
+          "prob_home": 0.4463,
+          "prob_draw": 0.1,
+          "prob_away": 0.4537
+        },
+        "over_under": {
+          "odds_over": 1.85,
+          "odds_under": 2.17,
+          "prob_over": 0.5396,
+          "prob_under": 0.4604
+        },
+        "expected_goals": 2.7
+      }
+    },
+    "saved_at": "2026-02-17T11:58:57.436107"
   }
 ]

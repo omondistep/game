@@ -6,52 +6,52 @@
     "league": "Primera Divisi\u00f3n",
     "league_url_path": "",
     "country_code": "cr",
-    "match_count": 28,
+    "match_count": 33,
     "teams": {
       "Puntarenas": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Guadalupe FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "LD Alajuelense": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "San Carlos": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Municipal Liberia": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "CS Herediano": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Saprissa": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "CS Cartagines": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Perez Zeledon": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Sporting CRC": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       }
     }
   },
-  "example_count": 14,
-  "result_accuracy": 0.3333333333333333,
-  "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T19:32:31.978214"
+  "example_count": 19,
+  "result_accuracy": 0.25,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-19T06:02:26.130488"
 }

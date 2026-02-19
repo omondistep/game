@@ -1,0 +1,250 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/catanduva-uniao-barbarense-sp-2416753",
+  "timestamp": "2026-02-14T23:43:15.036331",
+  "features": {
+    "home_position": 6,
+    "away_position": 7,
+    "position_diff": -1,
+    "home_points": 11,
+    "away_points": 9,
+    "home_form_points": 11,
+    "away_form_points": 9,
+    "home_recent_form": 4,
+    "away_recent_form": 4,
+    "home_wins_l6": 3,
+    "home_draws_l6": 2,
+    "home_losses_l6": 1,
+    "away_wins_l6": 2,
+    "away_draws_l6": 3,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.3333333333333333,
+    "home_conceded_avg": 0.8333333333333334,
+    "away_scored_avg": 1.0,
+    "away_conceded_avg": 0.6666666666666666,
+    "expected_total_goals": 1.9166666666666667,
+    "home_home_win_rate": 33.33333333333333,
+    "home_home_goals_avg": 1.3333333333333333,
+    "away_away_win_rate": 33.33333333333333,
+    "away_away_goals_avg": 0.6666666666666666,
+    "h2h_home_win_pct": null,
+    "h2h_draw_pct": null,
+    "h2h_away_win_pct": null,
+    "home_shots_avg": 13.166666666666666,
+    "away_shots_avg": 9.5,
+    "home_shots_on_target_pct": 40.50632911392405,
+    "away_shots_on_target_pct": 47.368421052631575,
+    "home_dangerous_attacks_avg": 69.0,
+    "away_dangerous_attacks_avg": 46.666666666666664,
+    "home_possession": 51.67,
+    "away_possession": 46.83,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 7.833333333333333,
+    "away_fouls_avg": 6.333333333333333,
+    "home_yellow_avg": 2.1666666666666665,
+    "away_yellow_avg": 2.5,
+    "odds_home": 7.0,
+    "odds_draw": 4.0,
+    "odds_away": 1.38,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 41
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.39,
+        "X": 0.29,
+        "2": 0.32
+      },
+      "computed_odds": {
+        "1": 2.56,
+        "X": 3.45,
+        "2": 3.12
+      },
+      "confidence": 0.39
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Under": 0.9978,
+        "Over": 0.0022
+      },
+      "computed_odds": {
+        "Under": 1.0,
+        "Over": 99.0
+      },
+      "confidence": 0.9978
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.39,
+        "X": 0.29,
+        "2": 0.32
+      },
+      "computed_odds": {
+        "1": 2.56,
+        "X": 3.45,
+        "2": 3.12
+      },
+      "confidence": 0.39
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Under": 0.9978,
+        "Over": 0.0022
+      },
+      "computed_odds": {
+        "Under": 1.0,
+        "Over": 99.0
+      },
+      "confidence": 0.9978
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3131,
+        "X": 0.2756,
+        "2": 0.4113
+      },
+      "computed_odds": {
+        "1": 3.19,
+        "X": 3.63,
+        "2": 2.43
+      },
+      "confidence": 0.4113
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.32,
+        "Under": 0.68
+      },
+      "computed_odds": {
+        "Over": 3.12,
+        "Under": 1.47
+      },
+      "confidence": 0.68
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.736842105263158,
+        "away": 0.6842105263157895,
+        "weight": 0.0168590032552445
+      },
+      "odds_analysis": {
+        "home": 0.12783696155627605,
+        "away": 0.648448355720241,
+        "weight": 0.3565737033660647
+      },
+      "recent_form": {
+        "home": 0.6111111111111112,
+        "away": 0.5,
+        "weight": 0.3488918745978436
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.0168590032552445
+      },
+      "goals_stats": {
+        "home": 0.625,
+        "away": 0.5833333333333334,
+        "weight": 0.22709840901511358
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.0168590032552445
+      },
+      "shots_possession": {
+        "home": 0.48224222222222224,
+        "away": 0.33098,
+        "weight": 0.0168590032552445
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 1.9166666666666667
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 18.6
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 3.9
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 1.92,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.33,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.0168590032552445,
+      "odds_analysis": 0.3565737033660647,
+      "recent_form": 0.3488918745978436,
+      "top5_performance": 0.0168590032552445,
+      "goals_stats": 0.22709840901511358,
+      "h2h": 0.0168590032552445,
+      "shots_possession": 0.0168590032552445
+    }
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "2",
+    "ml_ou": "Under",
+    "weighted_ou": "Under"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u2705 Catanduva in good form (3 wins in last 6)",
+      "\ud83d\udee1\ufe0f Low-scoring match expected (avg 1.9 goals)",
+      "\u2696\ufe0f Teams close in table (#6 vs #7)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 7.0,
+        "fair": 2.56,
+        "value_pct": 173.4
+      },
+      {
+        "outcome": "X",
+        "market": 4.0,
+        "fair": 3.45,
+        "value_pct": 15.9
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Catanduva": [],
+    "Uniao Barbarense SP": []
+  }
+}

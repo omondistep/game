@@ -1,0 +1,174 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/g%C3%A9nesis-platense-(hon)-2426018",
+  "timestamp": "2026-02-17T10:38:44.345726",
+  "match_info": {
+    "home_team": "G\u00e9nesis",
+    "away_team": "Platense (HON)",
+    "date": "",
+    "time": "",
+    "league": "Liga Nacional"
+  },
+  "teams": {
+    "home": "G\u00e9nesis",
+    "away": "Platense (HON)"
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "X",
+      "probabilities": {
+        "X": 0.68,
+        "2": 0.32
+      },
+      "computed_odds": {
+        "X": 1.47,
+        "2": 3.12
+      },
+      "confidence": 0.68
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.0049,
+        "Over": 0.9951
+      },
+      "computed_odds": {
+        "Under": 99.0,
+        "Over": 1.0
+      },
+      "confidence": 0.9951
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "X",
+      "probabilities": {
+        "X": 0.68,
+        "2": 0.32
+      },
+      "computed_odds": {
+        "X": 1.47,
+        "2": 3.12
+      },
+      "confidence": 0.68
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.0049,
+        "Over": 0.9951
+      },
+      "computed_odds": {
+        "Under": 99.0,
+        "Over": 1.0
+      },
+      "confidence": 0.9951
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2904,
+        "X": 0.352,
+        "2": 0.3576
+      },
+      "computed_odds": {
+        "1": 3.44,
+        "X": 2.84,
+        "2": 2.8
+      },
+      "confidence": 0.3576
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.5789473684210527,
+        "away": 0.8421052631578947,
+        "weight": 0.010801824816385417
+      },
+      "odds_analysis": {
+        "home": 0.3521156528722999,
+        "away": 0.37654816756139825,
+        "weight": 0.40145132920282256
+      },
+      "recent_form": {
+        "home": 0.16666666666666666,
+        "away": 0.2222222222222222,
+        "weight": 0.3820094186055312
+      },
+      "top5_performance": {
+        "home": 0.3333333333333333,
+        "away": 0.25,
+        "weight": 0.010801824816385417
+      },
+      "goals_stats": {
+        "home": 0.37,
+        "away": 0.5625,
+        "weight": 0.17333195292610443
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.010801824816385417
+      },
+      "shots_possession": {
+        "home": 0.27828,
+        "away": 0.25626,
+        "weight": 0.010801824816385417
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.875
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 3.3
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 2.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.88,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.74,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.010801824816385417,
+      "odds_analysis": 0.40145132920282256,
+      "recent_form": 0.3820094186055312,
+      "top5_performance": 0.010801824816385417,
+      "goals_stats": 0.17333195292610443,
+      "h2h": 0.010801824816385417,
+      "shots_possession": 0.010801824816385417
+    }
+  }
+}

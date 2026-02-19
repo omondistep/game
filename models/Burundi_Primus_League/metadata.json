@@ -8,14 +8,6 @@
     "country_code": "bi",
     "match_count": 13,
     "teams": {
-      "Royal Vision": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Dynamik": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
       "Garage FC": {
         "home_matches": 1,
         "away_matches": 0
@@ -23,6 +15,10 @@
       "Rukinzo FC": {
         "home_matches": 1,
         "away_matches": 2
+      },
+      "Royal Vision": {
+        "home_matches": 2,
+        "away_matches": 0
       },
       "Flambeau du Centre": {
         "home_matches": 0,
@@ -44,6 +40,10 @@
         "home_matches": 1,
         "away_matches": 0
       },
+      "Dynamik": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
       "Le Messager Ngozi": {
         "home_matches": 0,
         "away_matches": 1
@@ -53,5 +53,5 @@
   "example_count": 7,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:23.961447"
+  "trained_at": "2026-02-19T06:02:14.912664"
 }

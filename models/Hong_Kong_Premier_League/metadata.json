@@ -6,7 +6,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "hk",
-    "match_count": 14,
+    "match_count": 15,
     "teams": {
       "Kitchee SC": {
         "home_matches": 2,
@@ -26,10 +26,10 @@
       },
       "Eastern AA": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "North District": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Southern District": {
@@ -50,8 +50,8 @@
       }
     }
   },
-  "example_count": 7,
+  "example_count": 8,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:37.133690"
+  "trained_at": "2026-02-19T06:02:32.616839"
 }

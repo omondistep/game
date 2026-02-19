@@ -6,15 +6,15 @@
     "league": "Ligue 1",
     "league_url_path": "",
     "country_code": "gn",
-    "match_count": 20,
+    "match_count": 24,
     "teams": {
       "ASFAG": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "RCC Kamsar": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Ashanti GB": {
         "home_matches": 1,
@@ -25,20 +25,20 @@
         "away_matches": 2
       },
       "AS Kaloum Star": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "CI Kamsar": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "ASM Sangaredi": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Wakriya AC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Karfamoriah": {
         "home_matches": 2,
@@ -57,17 +57,17 @@
         "away_matches": 0
       },
       "Guinee Foot Elite": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Horoya AC": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       }
     }
   },
-  "example_count": 11,
-  "result_accuracy": 0.0,
-  "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T19:32:35.784836"
+  "example_count": 15,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-19T06:02:31.019823"
 }

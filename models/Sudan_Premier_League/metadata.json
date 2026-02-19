@@ -6,10 +6,10 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "sd",
-    "match_count": 81,
+    "match_count": 87,
     "teams": {
       "Alfalah Atbra": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Al Amal Atbara": {
@@ -18,11 +18,11 @@
       },
       "Al Hilal Karima": {
         "home_matches": 4,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Ahli Marawi": {
         "home_matches": 1,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Al Fajr": {
         "home_matches": 1,
@@ -30,10 +30,10 @@
       },
       "Merreikh Abyad": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Ahli Khartoum": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 0
       },
       "Ahli Wad Madani": {
@@ -42,14 +42,14 @@
       },
       "Al Hilal Al Manaqil": {
         "home_matches": 4,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Umm Mughad": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Al Saham Ad Damer": {
-        "home_matches": 4,
+        "home_matches": 5,
         "away_matches": 0
       },
       "Merreikh Al Sudan": {
@@ -62,7 +62,7 @@
       },
       "Kober Khartoum": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Al Zamala SC": {
         "home_matches": 3,
@@ -73,7 +73,7 @@
         "away_matches": 3
       },
       "Al Shorta SUD": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 0
       },
       "Merghani Kassala": {
@@ -85,11 +85,11 @@
         "away_matches": 2
       },
       "Hay Al Wadi": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Merikh Kosti": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Rabeta Kosti": {
@@ -106,8 +106,8 @@
       }
     }
   },
-  "example_count": 41,
-  "result_accuracy": 0.5555555555555556,
-  "ou_accuracy": 0.4444444444444444,
-  "trained_at": "2026-02-13T19:32:54.132067"
+  "example_count": 47,
+  "result_accuracy": 0.6,
+  "ou_accuracy": 0.8,
+  "trained_at": "2026-02-19T06:02:53.718704"
 }

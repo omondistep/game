@@ -6,35 +6,15 @@
     "league": "Campeonato Acreano",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 36,
+    "match_count": 37,
     "teams": {
-      "Santos Macapa AP": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Sao Jose FC": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Santa Cruz": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Sao Francisco": {
+      "Princesa Solimoes": {
         "home_matches": 2,
-        "away_matches": 1
-      },
-      "Amazonas": {
-        "home_matches": 3,
-        "away_matches": 0
+        "away_matches": 2
       },
       "JC FC AM": {
         "home_matches": 0,
         "away_matches": 3
-      },
-      "Princesa Solimoes": {
-        "home_matches": 2,
-        "away_matches": 2
       },
       "Vasco da Gama AC": {
         "home_matches": 2,
@@ -52,6 +32,10 @@
         "home_matches": 1,
         "away_matches": 1
       },
+      "Sao Francisco": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Rio Branco AC": {
         "home_matches": 1,
         "away_matches": 2
@@ -63,6 +47,10 @@
       "Manaus FC AM": {
         "home_matches": 1,
         "away_matches": 1
+      },
+      "Amazonas": {
+        "home_matches": 3,
+        "away_matches": 0
       },
       "Nacional AM": {
         "home_matches": 2,
@@ -79,11 +67,31 @@
       "Sao Raimundo AM": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Santos Macapa AP": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Sao Jose FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Santa Cruz": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Cristal AP": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Independente EC AP": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 20,
-  "result_accuracy": 0.75,
-  "ou_accuracy": 0.75,
-  "trained_at": "2026-02-13T19:32:24.692964"
+  "example_count": 21,
+  "result_accuracy": 0.6,
+  "ou_accuracy": 0.2,
+  "trained_at": "2026-02-19T06:02:15.770653"
 }

@@ -6,27 +6,27 @@
     "league": "League One",
     "league_url_path": "",
     "country_code": "gb-en",
-    "match_count": 25,
+    "match_count": 34,
     "teams": {
       "Huddersfield": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Luton Town": {
         "home_matches": 0,
         "away_matches": 1
       },
       "Cardiff City": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Barnsley": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Plymouth Argyle": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Mansfield": {
         "home_matches": 1,
@@ -37,20 +37,20 @@
         "away_matches": 0
       },
       "Burton Albion": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Stevenage": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Peterborough": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Wycombe": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Wigan Athletic": {
         "home_matches": 1,
@@ -58,11 +58,11 @@
       },
       "Rotherham": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Northampton Town": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Blackpool": {
         "home_matches": 1,
@@ -70,32 +70,44 @@
       },
       "Stockport County": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Lincoln City": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Bradford City": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Port Vale": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "AFC Wimbledon": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Reading": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Doncaster Rovers": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Leyton Orient": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Exeter City": {
+        "home_matches": 1,
+        "away_matches": 0
       }
     }
   },
-  "example_count": 12,
-  "result_accuracy": 0.3333333333333333,
-  "ou_accuracy": 0.0,
-  "trained_at": "2026-02-13T19:32:44.588841"
+  "example_count": 21,
+  "result_accuracy": 0.6,
+  "ou_accuracy": 0.6,
+  "trained_at": "2026-02-19T06:02:40.416756"
 }

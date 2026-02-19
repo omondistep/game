@@ -8,10 +8,6 @@
     "country_code": "sg",
     "match_count": 11,
     "teams": {
-      "Balestier Khalsa": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
       "Young Lions": {
         "home_matches": 1,
         "away_matches": 2
@@ -31,11 +27,15 @@
       "Geylang": {
         "home_matches": 0,
         "away_matches": 2
+      },
+      "Balestier Khalsa": {
+        "home_matches": 1,
+        "away_matches": 0
       }
     }
   },
   "example_count": 6,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:54.570529"
+  "trained_at": "2026-02-19T06:02:54.081347"
 }

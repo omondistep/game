@@ -6,7 +6,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "jm",
-    "match_count": 18,
+    "match_count": 20,
     "teams": {
       "Cavalier FC": {
         "home_matches": 3,
@@ -14,10 +14,10 @@
       },
       "Tivoli Gardens": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Waterhouse FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Treasure Beach": {
@@ -25,7 +25,7 @@
         "away_matches": 1
       },
       "Arnett Gardens": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Dunbeholden FC": {
@@ -42,7 +42,7 @@
       },
       "Portmore United": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Racing United": {
         "home_matches": 1,
@@ -58,8 +58,8 @@
       }
     }
   },
-  "example_count": 9,
-  "result_accuracy": 1.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:43.146424"
+  "example_count": 11,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-19T06:02:38.881917"
 }

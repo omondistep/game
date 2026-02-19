@@ -8,53 +8,25 @@
     "country_code": "il",
     "match_count": 31,
     "teams": {
-      "Hapoel Ramat Gan": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Kiryat Yam SC": {
+      "Hapoel Acre": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 0
       },
       "Maccabi Petah Tikva": {
         "home_matches": 1,
         "away_matches": 1
       },
-      "Ironi Modiin": {
+      "Maccabi Kabilio Jaffa": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 0
       },
-      "Hapoel Kfar Shalem": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Hapoel Rishon Lezion": {
+      "Ironi Modiin": {
         "home_matches": 1,
         "away_matches": 2
       },
       "Hapoel Hadera": {
         "home_matches": 2,
         "away_matches": 1
-      },
-      "Hapoel Raanana": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Kafr Qasim": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "FC Nazareth Ilit": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Hapoel Acre": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Maccabi Kabilio Jaffa": {
-        "home_matches": 1,
-        "away_matches": 0
       },
       "Bnei Yehuda": {
         "home_matches": 0,
@@ -64,18 +36,46 @@
         "home_matches": 1,
         "away_matches": 1
       },
+      "FC Nazareth Ilit": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Kafr Qasim": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
       "Hapoel Afula": {
         "home_matches": 1,
         "away_matches": 1
       },
+      "Hapoel Ramat Gan": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Hapoel Raanana": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Hapoel Rishon Lezion": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
       "Maccabi Herzliya": {
         "home_matches": 1,
         "away_matches": 1
+      },
+      "Hapoel Kfar Shalem": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Kiryat Yam SC": {
+        "home_matches": 1,
+        "away_matches": 2
       }
     }
   },
   "example_count": 18,
-  "result_accuracy": 0.5,
-  "ou_accuracy": 0.25,
-  "trained_at": "2026-02-13T19:32:39.275439"
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-19T06:02:35.172395"
 }

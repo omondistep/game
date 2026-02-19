@@ -14,24 +14,36 @@
       },
       "Al Hikma Beirut": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Safa SC Beirut": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Jwaya": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Al Ahed Beirut": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
+      },
+      "Reyady Abaseya": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Tadamon Sour": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Shabab Al Sahel": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
   "example_count": 6,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T08:10:56.372201"
+  "trained_at": "2026-02-19T06:02:41.673267"
 }

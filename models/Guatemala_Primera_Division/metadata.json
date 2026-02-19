@@ -6,18 +6,18 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "gt",
-    "match_count": 72,
+    "match_count": 78,
     "teams": {
       "Ipala": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 1
       },
       "Chiquimulilla": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 3
       },
       "Peten": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 2
       },
       "Puerto de Iztapa": {
@@ -30,15 +30,15 @@
       },
       "Quiche": {
         "home_matches": 2,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Deportivo Carcha": {
         "home_matches": 3,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Santa Rosa": {
         "home_matches": 2,
-        "away_matches": 3
+        "away_matches": 4
       },
       "San Pedro": {
         "home_matches": 3,
@@ -49,7 +49,7 @@
         "away_matches": 3
       },
       "Chichicasteco": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 1
       },
       "Coatepecano IB": {
@@ -57,16 +57,16 @@
         "away_matches": 2
       },
       "Chimaltenango": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 2
       },
       "AFF Guatemala": {
         "home_matches": 2,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Cotzumalguapa": {
         "home_matches": 3,
-        "away_matches": 1
+        "away_matches": 2
       },
       "CSD Sacachispas": {
         "home_matches": 2,
@@ -74,10 +74,10 @@
       },
       "Gomerano": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Huehuetecos": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "CD Nueva Concepcion": {
@@ -90,8 +90,8 @@
       }
     }
   },
-  "example_count": 41,
-  "result_accuracy": 0.6666666666666666,
-  "ou_accuracy": 0.4444444444444444,
-  "trained_at": "2026-02-13T19:32:36.815541"
+  "example_count": 47,
+  "result_accuracy": 0.4,
+  "ou_accuracy": 0.4,
+  "trained_at": "2026-02-19T06:02:32.225966"
 }

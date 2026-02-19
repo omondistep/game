@@ -8,14 +8,6 @@
     "country_code": "qa",
     "match_count": 15,
     "teams": {
-      "Shamal SC": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Qatar SC": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
       "Muaither SC": {
         "home_matches": 1,
         "away_matches": 0
@@ -27,6 +19,10 @@
       "Arabi Doha": {
         "home_matches": 1,
         "away_matches": 0
+      },
+      "Qatar SC": {
+        "home_matches": 0,
+        "away_matches": 2
       },
       "Al Waab SC": {
         "home_matches": 1,
@@ -47,6 +43,10 @@
       "Shahaniya SC": {
         "home_matches": 1,
         "away_matches": 0
+      },
+      "Shamal SC": {
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Sailiya SC": {
         "home_matches": 1,
@@ -69,5 +69,5 @@
   "example_count": 9,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:51.925697"
+  "trained_at": "2026-02-19T06:02:51.214139"
 }

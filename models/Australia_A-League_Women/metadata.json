@@ -6,26 +6,10 @@
     "league": "A-League Women",
     "league_url_path": "",
     "country_code": "au",
-    "match_count": 26,
+    "match_count": 28,
     "teams": {
-      "WS Wanderers W": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Newcastle Jets W": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Brisbane Roar W": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Sydney W": {
-        "home_matches": 2,
-        "away_matches": 3
-      },
       "Wellington Phoenix W": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Adelaide United W": {
@@ -36,26 +20,42 @@
         "home_matches": 2,
         "away_matches": 1
       },
+      "Sydney W": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
       "Perth Glory W": {
-        "home_matches": 1,
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Brisbane Roar W": {
+        "home_matches": 2,
         "away_matches": 1
       },
       "Central Coast Mariners W": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Melbourne City W": {
         "home_matches": 1,
         "away_matches": 1
       },
+      "WS Wanderers W": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
       "Canberra United W": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
+      },
+      "Newcastle Jets W": {
+        "home_matches": 1,
+        "away_matches": 2
       }
     }
   },
-  "example_count": 14,
-  "result_accuracy": 0.0,
-  "ou_accuracy": 0.6666666666666666,
-  "trained_at": "2026-02-13T19:32:20.019406"
+  "example_count": 16,
+  "result_accuracy": 0.25,
+  "ou_accuracy": 0.75,
+  "trained_at": "2026-02-19T06:02:11.193233"
 }

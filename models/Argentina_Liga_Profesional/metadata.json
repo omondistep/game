@@ -6,24 +6,8 @@
     "league": "Liga Profesional",
     "league_url_path": "",
     "country_code": "ar",
-    "match_count": 80,
+    "match_count": 91,
     "teams": {
-      "CA Tigre": {
-        "home_matches": 3,
-        "away_matches": 2
-      },
-      "CA Aldosivi": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Argentinos Juniors": {
-        "home_matches": 3,
-        "away_matches": 2
-      },
-      "River Plate": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
       "Gimnasia La Plata": {
         "home_matches": 1,
         "away_matches": 1
@@ -33,60 +17,72 @@
         "away_matches": 2
       },
       "Rosario Central": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Belgrano Cordoba": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Boca Juniors": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Deportivo Riestra": {
-        "home_matches": 0,
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "CA Tigre": {
+        "home_matches": 3,
         "away_matches": 2
       },
       "Estudiantes Rio Cuarto": {
         "home_matches": 2,
+        "away_matches": 3
+      },
+      "Argentinos Juniors": {
+        "home_matches": 3,
         "away_matches": 2
       },
       "Sarmiento Junin": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "CA Huracan": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Independiente Rivadavia": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Gimnasia Mendoza": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "San Lorenzo": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Atletico Tucuman": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Central Cordoba SdE": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Newells Old Boys": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Independiente": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
+      },
+      "River Plate": {
+        "home_matches": 2,
+        "away_matches": 2
       },
       "Estudiantes La Plata": {
         "home_matches": 2,
@@ -94,10 +90,10 @@
       },
       "Lanus": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Union Santa Fe": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "CA Banfield": {
@@ -106,28 +102,36 @@
       },
       "Velez Sarsfield": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Talleres Cordoba": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "CA Platense": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Defensa y Justicia": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Instituto Cordoba": {
-        "home_matches": 1,
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "CA Aldosivi": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Barracas Central": {
+        "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 41,
-  "result_accuracy": 0.4444444444444444,
-  "ou_accuracy": 0.7777777777777778,
-  "trained_at": "2026-02-13T19:32:18.074331"
+  "example_count": 52,
+  "result_accuracy": 0.5454545454545454,
+  "ou_accuracy": 0.8181818181818182,
+  "trained_at": "2026-02-19T06:02:08.002320"
 }

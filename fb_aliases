@@ -141,6 +141,19 @@ fbu() {
     python ~/game/model_stats.py | tail -20
 }
 
+# 6. EXPORT: Export predictions to Excel
+#    Usage: fbe              - Export all predictions to predictions.xlsx
+#    Usage: fbe myfile.xlsx  - Export to custom filename
+fbe() {
+    source ~/game/football_env/bin/activate
+    cd ~/game
+    if [ -n "$1" ]; then
+        python ~/game/football_prediction_system.py export -o "$1"
+    else
+        python ~/game/football_prediction_system.py export
+    fi
+}
+
 # 6. HELP: Show available commands
 fbh() {
     echo "╔════════════════════════════════════════════════════════════╗"
@@ -166,6 +179,10 @@ fbh() {
     echo "╠════════════════════════════════════════════════════════════╣"
     echo "║ STATS (fbs):                                               ║"
     echo "║   fbs                       Show model statistics          ║"
-    echo "║   fbs weights               Calculate optimal weights      ║"
+    echo "    fbs weights               Calculate optimal weights      "
+    echo "============================================================"
+    echo " EXPORT (fbe):                                              "
+    echo "   fbe                       Export predictions to Excel    "
+    echo "   fbe myfile.xlsx           Export to custom filename      "
     echo "╚════════════════════════════════════════════════════════════╝"
 }

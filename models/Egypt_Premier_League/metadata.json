@@ -6,7 +6,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "eg",
-    "match_count": 30,
+    "match_count": 32,
     "teams": {
       "Ahly Cairo": {
         "home_matches": 2,
@@ -46,7 +46,7 @@
       },
       "Semouha Club": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Pharco": {
         "home_matches": 1,
@@ -73,17 +73,25 @@
         "away_matches": 1
       },
       "Future FC": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Ismaily": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Kahraba Ismailia": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Ittihad Alexandria": {
+        "home_matches": 1,
+        "away_matches": 0
       }
     }
   },
-  "example_count": 15,
-  "result_accuracy": 0.3333333333333333,
-  "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T19:32:34.041078"
+  "example_count": 17,
+  "result_accuracy": 0.25,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-19T06:02:28.553808"
 }

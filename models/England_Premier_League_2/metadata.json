@@ -6,44 +6,52 @@
     "league": "Premier League 2",
     "league_url_path": "",
     "country_code": "gb-en",
-    "match_count": 12,
+    "match_count": 9,
     "teams": {
       "Man United U23s": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Brighton U23s": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Blackburn U23s": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Birmingham U21": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Crystal Palace U21": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Derby U23s": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Stoke City U23s": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Man City U23s": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
+      },
+      "Everton FC U23s": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Burnley FC U23s": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 8,
+  "example_count": 5,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T08:11:01.720399"
+  "trained_at": "2026-02-19T06:02:48.299481"
 }

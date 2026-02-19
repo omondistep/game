@@ -1,0 +1,81 @@
+{
+  "league_key": "Ar2",
+  "league_info": {
+    "league_code": "Ar2",
+    "country": "Argentina",
+    "league": "Nacional B",
+    "league_url_path": "football-tips-and-predictions-for-argentina/nacional-b",
+    "country_code": "ar",
+    "match_count": 8,
+    "teams": {
+      "Atletico Rafaela": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Club Almagro": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Godoy Cruz": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Ciudad Bolivar": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Gimnasia y Tiro": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Colegiales": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Agropecuario": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Deportivo Maipu": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Tristan Suarez": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Temperley": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Colon Santa Fe": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Deportivo Madryn": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "San Martin Tucuman": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Patronato Parana": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Racing de Cordoba": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Estudiantes BsAs": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 8,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-19T06:02:08.503384"
+}

@@ -8,14 +8,6 @@
     "country_code": "ke",
     "match_count": 11,
     "teams": {
-      "Bidco United": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Homeboyz FC": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
       "Bandari FC": {
         "home_matches": 1,
         "away_matches": 0
@@ -32,8 +24,16 @@
         "home_matches": 0,
         "away_matches": 1
       },
+      "Homeboyz FC": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
       "Mara Sugar": {
         "home_matches": 0,
+        "away_matches": 1
+      },
+      "Bidco United": {
+        "home_matches": 1,
         "away_matches": 1
       },
       "Nairobi United": {
@@ -49,5 +49,5 @@
   "example_count": 6,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:44.244610"
+  "trained_at": "2026-02-19T06:02:40.007329"
 }

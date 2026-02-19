@@ -6,30 +6,14 @@
     "league": "Campeonato Ga\u00facho",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 48,
+    "match_count": 52,
     "teams": {
-      "ABECAT Ouvidorense": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Atletico GO": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Anapolis GO": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Vila Nova FC": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
       "Avenida RS": {
         "home_matches": 2,
         "away_matches": 1
       },
       "Novo Hamburgo RS": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Anapolina GO": {
@@ -58,7 +42,7 @@
       },
       "Internacional": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Gremio": {
         "home_matches": 1,
@@ -66,13 +50,17 @@
       },
       "EC Sao Jose": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Caxias RS": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Jataiense GO": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Atletico GO": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -88,22 +76,34 @@
         "home_matches": 0,
         "away_matches": 2
       },
+      "ABECAT Ouvidorense": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Goiatuba EC": {
         "home_matches": 1,
         "away_matches": 0
       },
+      "Anapolis GO": {
+        "home_matches": 1,
+        "away_matches": 3
+      },
+      "Vila Nova FC": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
       "Ypiranga RS": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Sao Luiz RS": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       }
     }
   },
-  "example_count": 26,
+  "example_count": 30,
   "result_accuracy": 0.6666666666666666,
-  "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T19:32:25.811523"
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-19T06:02:17.155224"
 }

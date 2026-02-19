@@ -1,0 +1,183 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/lu%C3%ADs-%C3%81ngel-firpo-platense-(slv)-2415407",
+  "timestamp": "2026-02-15T01:16:33.788600",
+  "match_info": {
+    "home_team": "Lu\u00eds \u00c1ngel Firpo",
+    "away_team": "Platense (SLV)",
+    "date": "",
+    "time": "",
+    "league": "Primera Division"
+  },
+  "teams": {
+    "home": "Lu\u00eds \u00c1ngel Firpo",
+    "away": "Platense (SLV)"
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5236,
+        "X": 0.1276,
+        "2": 0.3487
+      },
+      "computed_odds": {
+        "1": 1.91,
+        "X": 7.84,
+        "2": 2.87
+      },
+      "confidence": 0.5236
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.0162,
+        "Over": 0.9838
+      },
+      "computed_odds": {
+        "Under": 61.73,
+        "Over": 1.02
+      },
+      "confidence": 0.9838
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5236,
+        "X": 0.1276,
+        "2": 0.3487
+      },
+      "computed_odds": {
+        "1": 1.91,
+        "X": 7.84,
+        "2": 2.87
+      },
+      "confidence": 0.5236
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.0162,
+        "Over": 0.9838
+      },
+      "computed_odds": {
+        "Under": 61.73,
+        "Over": 1.02
+      },
+      "confidence": 0.9838
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.6376,
+        "X": 0.1874,
+        "2": 0.175
+      },
+      "computed_odds": {
+        "1": 1.57,
+        "X": 5.34,
+        "2": 5.71
+      },
+      "confidence": 0.6376
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.9473684210526316,
+        "away": 0.5263157894736843,
+        "weight": 0.009325240826404508
+      },
+      "odds_analysis": {
+        "home": 0.6708407871198568,
+        "away": 0.12343470483005364,
+        "weight": 0.45155459783510427
+      },
+      "recent_form": {
+        "home": 0.7777777777777778,
+        "away": 0.2222222222222222,
+        "weight": 0.43012802156067953
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.009325240826404508
+      },
+      "goals_stats": {
+        "home": 0.7727272727272727,
+        "away": 0.425,
+        "weight": 0.08101641729859822
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.009325240826404508
+      },
+      "shots_possession": {
+        "home": 0.37681656565656557,
+        "away": 0.28134,
+        "weight": 0.009325240826404508
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.925757575757576
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 24.7
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 23.9
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 2.8
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.93,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.32,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.009325240826404508,
+      "odds_analysis": 0.45155459783510427,
+      "recent_form": 0.43012802156067953,
+      "top5_performance": 0.009325240826404508,
+      "goals_stats": 0.08101641729859822,
+      "h2h": 0.009325240826404508,
+      "shots_possession": 0.009325240826404508
+    }
+  }
+}

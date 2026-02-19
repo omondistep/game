@@ -6,32 +6,44 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "mt",
-    "match_count": 9,
+    "match_count": 8,
     "teams": {
       "Marsaxlokk": {
-        "home_matches": 4,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Tarxien Rainbows": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Sliema Wanderers": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Gzira United": {
-        "home_matches": 2,
-        "away_matches": 0
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Hamrun Spartans": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
+      },
+      "Zabbar St Patrick": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Valletta FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Naxxar Lions": {
+        "home_matches": 1,
+        "away_matches": 0
       }
     }
   },
-  "example_count": 6,
+  "example_count": 5,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T08:10:58.133321"
+  "trained_at": "2026-02-19T06:02:43.671730"
 }

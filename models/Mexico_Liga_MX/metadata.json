@@ -6,84 +6,84 @@
     "league": "Liga MX",
     "league_url_path": "",
     "country_code": "mx",
-    "match_count": 36,
+    "match_count": 45,
     "teams": {
       "Puebla FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Deportivo Toluca": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "UNAM Pumas": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Santos Laguna": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "FC Juarez": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Cruz Azul": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Club America": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Club Necaxa": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Club Atlas": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Mazatlan FC": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Atletico San Luis": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Guadalajara Chivas": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "CF Monterrey": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Club Tijuana": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Club Leon": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Tigres UANL": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Queretaro FC": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Pachuca CF": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       }
     }
   },
-  "example_count": 18,
-  "result_accuracy": 0.75,
-  "ou_accuracy": 0.25,
-  "trained_at": "2026-02-13T19:32:46.942301"
+  "example_count": 27,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-19T06:02:44.104034"
 }

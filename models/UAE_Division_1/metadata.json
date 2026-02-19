@@ -6,7 +6,7 @@
     "league": "Division 1",
     "league_url_path": "",
     "country_code": "ae",
-    "match_count": 18,
+    "match_count": 23,
     "teams": {
       "Dubai City Club": {
         "home_matches": 1,
@@ -17,7 +17,7 @@
         "away_matches": 1
       },
       "Al Dahra": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Al Fujairah Club": {
@@ -26,15 +26,15 @@
       },
       "Al Thaid": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Dubba Al Husun": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Al Hamriyah": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Emirates Club": {
         "home_matches": 0,
@@ -42,32 +42,32 @@
       },
       "Al Oruba UAE": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Gulf United": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Al Arabi UAE": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Masfoot": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Ittifaq": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Dubai United": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       }
     }
   },
-  "example_count": 9,
-  "result_accuracy": 1.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:17.347140"
+  "example_count": 14,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-19T06:02:07.015497"
 }

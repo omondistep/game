@@ -6,7 +6,7 @@
     "league": "Gamma Ethniki Group 2",
     "league_url_path": "",
     "country_code": "gr",
-    "match_count": 28,
+    "match_count": 30,
     "teams": {
       "Ermis Exochi": {
         "home_matches": 1,
@@ -33,7 +33,7 @@
         "away_matches": 0
       },
       "Lefkimmi": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Poseidon Nea Michaniona": {
@@ -41,7 +41,7 @@
         "away_matches": 0
       },
       "Doxa Drama": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Aetos Orfani": {
@@ -70,7 +70,7 @@
       },
       "Anagennisi Artas": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Aris Filiates": {
         "home_matches": 0,
@@ -115,11 +115,15 @@
       "Kilkisiakos": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "SKODA Xanthi": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 14,
-  "result_accuracy": 0.3333333333333333,
-  "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T19:32:36.108912"
+  "example_count": 16,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-19T06:02:31.379686"
 }

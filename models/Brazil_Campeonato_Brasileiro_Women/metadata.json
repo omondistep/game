@@ -1,0 +1,65 @@
+{
+  "league_key": "BrW",
+  "league_info": {
+    "league_code": "BrW",
+    "country": "Brazil",
+    "league": "Campeonato Brasileiro Women",
+    "league_url_path": "football-tips-and-predictions-for-brazil/brasileiro-women",
+    "country_code": "br",
+    "match_count": 6,
+    "teams": {
+      "Mixto W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Flamengo W": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Atletico Mineiro W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Corinthians W": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Palmeiras W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "America Mineiro W": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Bahia W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Cruzeiro W": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Santos W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Gremio W": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Internacional RS W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Sao Paulo W": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 6,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-19T06:02:19.644235"
+}

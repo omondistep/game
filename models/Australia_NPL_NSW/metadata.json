@@ -6,52 +6,76 @@
     "league": "NPL NSW",
     "league_url_path": "",
     "country_code": "au",
-    "match_count": 10,
+    "match_count": 18,
     "teams": {
       "Sydney U21": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "SD Raiders": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Manly United": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "St George City FA": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "NWS Spirit": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Sutherland Sharks": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "St George Saints": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Wollongong FC": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Marconi Stallions": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "APIA Tigers": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "WS Wanderers Youth": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Sydney Olympic": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Sydney United": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Blacktown City": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "University of NSW": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Rockdale City Suns": {
+        "home_matches": 1,
+        "away_matches": 0
       }
     }
   },
-  "example_count": 5,
-  "result_accuracy": 1.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:19.652425"
+  "example_count": 13,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-19T06:02:10.307159"
 }

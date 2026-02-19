@@ -8,14 +8,6 @@
     "country_code": "ae",
     "match_count": 25,
     "teams": {
-      "Bataeh SC": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Al Dhafra": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
       "Ittihad Kalba": {
         "home_matches": 1,
         "away_matches": 0
@@ -40,6 +32,10 @@
         "home_matches": 0,
         "away_matches": 2
       },
+      "Al Dhafra": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Sharjah SC": {
         "home_matches": 1,
         "away_matches": 1
@@ -51,6 +47,10 @@
       "Khor Fakkan Club": {
         "home_matches": 0,
         "away_matches": 2
+      },
+      "Bataeh SC": {
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Jazira Abu Dhabi": {
         "home_matches": 1,
@@ -68,6 +68,6 @@
   },
   "example_count": 13,
   "result_accuracy": 0.3333333333333333,
-  "ou_accuracy": 0.6666666666666666,
-  "trained_at": "2026-02-13T19:32:16.976341"
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-19T06:02:06.565627"
 }

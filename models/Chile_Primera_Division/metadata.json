@@ -6,23 +6,23 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "cl",
-    "match_count": 24,
+    "match_count": 30,
     "teams": {
       "Univ de Chile": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Audax Italiano": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Cobresal": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Huachipato": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "La Serena": {
         "home_matches": 1,
@@ -30,27 +30,27 @@
       },
       "Universidad Catolica": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Palestino": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Nublense": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Everton de Vina": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Union La Calera": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "O Higgins": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Deportes Concepcion": {
         "home_matches": 0,
@@ -61,17 +61,17 @@
         "away_matches": 1
       },
       "Colo Colo": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Limache": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       }
     }
   },
-  "example_count": 12,
-  "result_accuracy": 0.3333333333333333,
-  "ou_accuracy": 0.6666666666666666,
-  "trained_at": "2026-02-13T19:32:29.858303"
+  "example_count": 18,
+  "result_accuracy": 0.75,
+  "ou_accuracy": 0.75,
+  "trained_at": "2026-02-19T06:02:23.059769"
 }

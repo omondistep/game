@@ -1,0 +1,249 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/us-saint-malo-us-avranches-2352130",
+  "timestamp": "2026-02-13T22:51:34.457351",
+  "features": {
+    "home_position": 5,
+    "away_position": 6,
+    "position_diff": -1,
+    "home_points": 26,
+    "away_points": 26,
+    "home_form_points": 11,
+    "away_form_points": 9,
+    "home_recent_form": 7,
+    "away_recent_form": 7,
+    "home_wins_l6": 3,
+    "home_draws_l6": 2,
+    "home_losses_l6": 1,
+    "away_wins_l6": 2,
+    "away_draws_l6": 3,
+    "away_losses_l6": 1,
+    "home_scored_avg": 1.588235294117647,
+    "home_conceded_avg": 1.0,
+    "away_scored_avg": 1.6,
+    "away_conceded_avg": 1.5,
+    "expected_total_goals": 2.844117647058823,
+    "home_home_win_rate": 70.0,
+    "home_home_goals_avg": 2.1,
+    "away_away_win_rate": 0.0,
+    "away_away_goals_avg": 1.375,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 33.0,
+    "h2h_away_win_pct": 50.0,
+    "home_shots_avg": 5.823529411764706,
+    "away_shots_avg": 6.5,
+    "home_shots_on_target_pct": 39.39393939393939,
+    "away_shots_on_target_pct": 40.0,
+    "home_dangerous_attacks_avg": 38.94117647058823,
+    "away_dangerous_attacks_avg": 43.45,
+    "home_possession": 48.86,
+    "away_possession": 49.23,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": 84.42330558858502,
+    "home_fouls_avg": 2.411764705882353,
+    "away_fouls_avg": 4.05,
+    "home_yellow_avg": 1.0,
+    "away_yellow_avg": 0.8,
+    "odds_home": 1.72,
+    "odds_draw": 3.6,
+    "odds_away": 3.8,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 40
+  },
+  "prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4591,
+        "X": 0.1946,
+        "2": 0.3462
+      },
+      "computed_odds": {
+        "1": 2.18,
+        "X": 5.14,
+        "2": 2.89
+      },
+      "confidence": 0.4591
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Under": 0.9489,
+        "Over": 0.0511
+      },
+      "computed_odds": {
+        "Under": 1.05,
+        "Over": 19.57
+      },
+      "confidence": 0.9489
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4591,
+        "X": 0.1946,
+        "2": 0.3462
+      },
+      "computed_odds": {
+        "1": 2.18,
+        "X": 5.14,
+        "2": 2.89
+      },
+      "confidence": 0.4591
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Under": 0.9489,
+        "Over": 0.0511
+      },
+      "computed_odds": {
+        "Under": 1.05,
+        "Over": 19.57
+      },
+      "confidence": 0.9489
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.4493,
+        "X": 0.2408,
+        "2": 0.3099
+      },
+      "computed_odds": {
+        "1": 2.23,
+        "X": 4.15,
+        "2": 3.23
+      },
+      "confidence": 0.4493
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.7894736842105263,
+        "away": 0.736842105263158,
+        "weight": 0.011681309680681795
+      },
+      "odds_analysis": {
+        "home": 0.5180248409572857,
+        "away": 0.23447440169645561,
+        "weight": 0.37102413627073216
+      },
+      "recent_form": {
+        "home": 0.6111111111111112,
+        "away": 0.5,
+        "weight": 0.3733554865536535
+      },
+      "top5_performance": {
+        "home": 1.0,
+        "away": 0.0,
+        "weight": 0.011681309680681795
+      },
+      "goals_stats": {
+        "home": 0.6470588235294117,
+        "away": 0.525,
+        "weight": 0.20889513845288704
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.5,
+        "weight": 0.011681309680681795
+      },
+      "shots_possession": {
+        "home": 0.29316,
+        "away": 0.29538,
+        "weight": 0.011681309680681795
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.844117647058823
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 10.5
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 4.1
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 2.5
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.84,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.19,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.011681309680681795,
+      "odds_analysis": 0.37102413627073216,
+      "recent_form": 0.3733554865536535,
+      "top5_performance": 0.011681309680681795,
+      "goals_stats": 0.20889513845288704,
+      "h2h": 0.011681309680681795,
+      "shots_possession": 0.011681309680681795
+    }
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": false,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Under",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u2705 US Saint-Malo in good form (3 wins in last 6)",
+      "\ud83c\udfdf\ufe0f US Saint-Malo dominant at home (70% win rate)",
+      "\u2696\ufe0f Teams close in table (#5 vs #6)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 3.8,
+        "fair": 2.89,
+        "value_pct": 31.5
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "US Saint-Malo": [],
+    "US Avranches": []
+  }
+}

@@ -6,42 +6,42 @@
     "league": "Liga de Expansion MX",
     "league_url_path": "",
     "country_code": "mx",
-    "match_count": 35,
+    "match_count": 41,
     "teams": {
       "Atlante FC": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Tampico Madero": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Tlaxcala": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "CD Irapuato": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Cancun": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Alebrijes de Oaxaca": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Venados Yucatan": {
         "home_matches": 3,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Dorados Sinaloa": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "CD Tapatio": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Leones Negros": {
@@ -50,7 +50,7 @@
       },
       "Zacatecas": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Tepatitlan de Morelos": {
         "home_matches": 1,
@@ -61,17 +61,17 @@
         "away_matches": 1
       },
       "Correcaminos": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Monarcas Morelia": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       }
     }
   },
-  "example_count": 17,
-  "result_accuracy": 0.75,
-  "ou_accuracy": 0.5,
-  "trained_at": "2026-02-13T19:32:47.297704"
+  "example_count": 23,
+  "result_accuracy": 0.4,
+  "ou_accuracy": 0.4,
+  "trained_at": "2026-02-19T06:02:44.650959"
 }

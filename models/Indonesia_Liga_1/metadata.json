@@ -6,31 +6,11 @@
     "league": "Liga 1",
     "league_url_path": "",
     "country_code": "id",
-    "match_count": 27,
+    "match_count": 29,
     "teams": {
-      "Persis Solo FC": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Madura United FC": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "Persik Kediri": {
-        "home_matches": 3,
-        "away_matches": 0
-      },
       "PSIM Yogyakarta": {
         "home_matches": 2,
         "away_matches": 1
-      },
-      "Malut United": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Persijap Jepara": {
-        "home_matches": 0,
-        "away_matches": 2
       },
       "Persebaya Surabaya": {
         "home_matches": 0,
@@ -38,34 +18,50 @@
       },
       "Dewa United": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Arema FC": {
         "home_matches": 1,
         "away_matches": 1
+      },
+      "Persik Kediri": {
+        "home_matches": 3,
+        "away_matches": 0
       },
       "Bali United Pusam": {
         "home_matches": 0,
         "away_matches": 1
       },
       "Persita Tangerang": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Persija Jakarta": {
         "home_matches": 0,
         "away_matches": 1
       },
+      "Malut United": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Bhayangkara Utd": {
         "home_matches": 1,
+        "away_matches": 1
+      },
+      "Persis Solo FC": {
+        "home_matches": 2,
         "away_matches": 1
       },
       "Persib Bandung": {
         "home_matches": 1,
         "away_matches": 1
       },
+      "Persijap Jepara": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
       "PSM Makassar": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Semen Padang": {
@@ -75,11 +71,19 @@
       "Borneo FC": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Madura United FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "PSBS Biak Numfor": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 15,
-  "result_accuracy": 0.3333333333333333,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:38.566442"
+  "example_count": 17,
+  "result_accuracy": 0.25,
+  "ou_accuracy": 0.25,
+  "trained_at": "2026-02-19T06:02:34.309436"
 }

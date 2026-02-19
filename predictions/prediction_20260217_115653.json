@@ -1,0 +1,217 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/diriang%C3%A9n-fc-hh-export-2425829",
+  "timestamp": "2026-02-17T11:56:53.798644",
+  "match_info": {
+    "home_team": "Diriang\u00e9n FC",
+    "away_team": "H&H Export",
+    "date": "",
+    "time": "",
+    "league": "Primera Division"
+  },
+  "teams": {
+    "home": "Diriang\u00e9n FC",
+    "away": "H&H Export"
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "X",
+      "probabilities": {
+        "1": 0.4241,
+        "X": 0.4259,
+        "2": 0.15
+      },
+      "computed_odds": {
+        "1": 2.36,
+        "X": 2.35,
+        "2": 6.67
+      },
+      "confidence": 0.4259
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.0752,
+        "Over": 0.9248
+      },
+      "computed_odds": {
+        "Under": 13.3,
+        "Over": 1.08
+      },
+      "confidence": 0.9248
+    },
+    "model_trained": true,
+    "ml_own_odds": {
+      "result": {
+        "odds_home": 1.67,
+        "odds_draw": 10.0,
+        "odds_away": 3.31,
+        "prob_home": 0.5978,
+        "prob_draw": 0.1,
+        "prob_away": 0.3022
+      },
+      "over_under": {
+        "odds_over": 1.68,
+        "odds_under": 2.47,
+        "prob_over": 0.5956,
+        "prob_under": 0.4044
+      },
+      "expected_goals": 2.98
+    }
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "X",
+      "probabilities": {
+        "1": 0.4241,
+        "X": 0.4259,
+        "2": 0.15
+      },
+      "computed_odds": {
+        "1": 2.36,
+        "X": 2.35,
+        "2": 6.67
+      },
+      "confidence": 0.4259
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.0752,
+        "Over": 0.9248
+      },
+      "computed_odds": {
+        "Under": 13.3,
+        "Over": 1.08
+      },
+      "confidence": 0.9248
+    },
+    "model_trained": true,
+    "ml_own_odds": {
+      "result": {
+        "odds_home": 1.67,
+        "odds_draw": 10.0,
+        "odds_away": 3.31,
+        "prob_home": 0.5978,
+        "prob_draw": 0.1,
+        "prob_away": 0.3022
+      },
+      "over_under": {
+        "odds_over": 1.68,
+        "odds_under": 2.47,
+        "prob_over": 0.5956,
+        "prob_under": 0.4044
+      },
+      "expected_goals": 2.98
+    }
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.6012,
+        "X": 0.1635,
+        "2": 0.2353
+      },
+      "computed_odds": {
+        "1": 1.66,
+        "X": 6.11,
+        "2": 4.25
+      },
+      "confidence": 0.6012
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 1.0,
+        "away": 0.8421052631578947,
+        "weight": 0.01659503970785521
+      },
+      "odds_analysis": {
+        "home": 0.7748804767073932,
+        "away": 0.0803057948587662,
+        "weight": 0.3197950798554069
+      },
+      "recent_form": {
+        "home": 0.7777777777777778,
+        "away": 0.3888888888888889,
+        "weight": 0.29600869946266883
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.01659503970785521
+      },
+      "goals_stats": {
+        "home": 0.9375,
+        "away": 0.4722222222222222,
+        "weight": 0.3178160618505033
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.01659503970785521
+      },
+      "shots_possession": {
+        "home": 0.4220685714285714,
+        "away": 0.28524,
+        "weight": 0.01659503970785521
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.9781746031746033
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 22.2
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 14.8
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 11.5
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.98,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.8,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.01659503970785521,
+      "odds_analysis": 0.3197950798554069,
+      "recent_form": 0.29600869946266883,
+      "top5_performance": 0.01659503970785521,
+      "goals_stats": 0.3178160618505033,
+      "h2h": 0.01659503970785521,
+      "shots_possession": 0.01659503970785521
+    }
+  }
+}

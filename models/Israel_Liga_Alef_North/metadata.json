@@ -8,11 +8,27 @@
     "country_code": "il",
     "match_count": 70,
     "teams": {
-      "Ramat HaSharon": {
+      "Hapoel Ironi Arraba": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Maccabi Neve Shaanan": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Hapoel Azor": {
         "home_matches": 2,
         "away_matches": 1
       },
-      "FC Dimona": {
+      "Beitar Yavne": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "FC Karmiel Safed": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Hapoel Bnei Musmus": {
         "home_matches": 1,
         "away_matches": 2
       },
@@ -20,15 +36,15 @@
         "home_matches": 2,
         "away_matches": 1
       },
-      "Maccabi Ironi Ashdod": {
+      "Ironi Kiryat Malakhi": {
         "home_matches": 1,
         "away_matches": 2
       },
-      "Maccabi Umm Al Fahm": {
+      "Maccabi Yavne": {
         "home_matches": 2,
         "away_matches": 1
       },
-      "Ironi Baka El Garbiya": {
+      "FC Dimona": {
         "home_matches": 1,
         "away_matches": 2
       },
@@ -36,31 +52,55 @@
         "home_matches": 2,
         "away_matches": 1
       },
-      "Hapoel Migdal HaEmek": {
+      "FC Tira": {
         "home_matches": 1,
+        "away_matches": 2
+      },
+      "Ramat HaSharon": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Maccabi Ironi Ashdod": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Maccabi Nujeidat Ahmed": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Ironi Baka El Garbiya": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Hapoel Holon": {
+        "home_matches": 2,
         "away_matches": 1
       },
       "Hapoel Marmorek": {
         "home_matches": 1,
         "away_matches": 2
       },
-      "Ironi Kiryat Malakhi": {
+      "Ironi Nesher": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Tzeirei Kafr Kanna": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Tzeirey Tamra": {
         "home_matches": 2,
         "away_matches": 1
       },
-      "FC Tira": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Tzeirei Tira": {
+      "Hapoel Umm Al Fahm": {
         "home_matches": 1,
         "away_matches": 1
       },
-      "Nordia Jerusalem": {
+      "Maccabi Umm Al Fahm": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Shimshon Tel Aviv": {
         "home_matches": 1,
         "away_matches": 1
       },
@@ -72,58 +112,6 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Hapoel Holon": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Beitar Yavne": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Ironi Nesher": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Hapoel Ironi Arraba": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Maccabi Neve Shaanan": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Maccabi Nujeidat Ahmed": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Hapoel Azor": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "FC Karmiel Safed": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Hapoel Bnei Musmus": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Maccabi Yavne": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Tzeirei Kafr Kanna": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Hapoel Umm Al Fahm": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Shimshon Tel Aviv": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
       "Hapoel Beit Shean": {
         "home_matches": 0,
         "away_matches": 1
@@ -132,14 +120,26 @@
         "home_matches": 1,
         "away_matches": 1
       },
+      "Hapoel Migdal HaEmek": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Nordia Jerusalem": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
       "M Kiryat Ata-Bialik": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Tzeirei Tira": {
         "home_matches": 1,
         "away_matches": 1
       }
     }
   },
   "example_count": 42,
-  "result_accuracy": 0.2222222222222222,
-  "ou_accuracy": 0.4444444444444444,
-  "trained_at": "2026-02-13T19:32:39.681316"
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-19T06:02:35.559190"
 }

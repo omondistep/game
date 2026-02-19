@@ -6,31 +6,27 @@
     "league": "A-League",
     "league_url_path": "",
     "country_code": "au",
-    "match_count": 28,
+    "match_count": 31,
     "teams": {
       "WS Wanderers": {
         "home_matches": 3,
-        "away_matches": 1
-      },
-      "Wellington Phoenix": {
-        "home_matches": 2,
         "away_matches": 1
       },
       "Perth Glory": {
         "home_matches": 2,
         "away_matches": 2
       },
-      "Newcastle Jets": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
       "Melbourne Victory": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Sydney FC": {
-        "home_matches": 1,
+        "home_matches": 3,
         "away_matches": 2
+      },
+      "Wellington Phoenix": {
+        "home_matches": 2,
+        "away_matches": 1
       },
       "Melbourne City": {
         "home_matches": 0,
@@ -38,19 +34,23 @@
       },
       "Adelaide United": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Macarthur FC": {
         "home_matches": 1,
         "away_matches": 1
       },
-      "Brisbane Roar": {
+      "Newcastle Jets": {
         "home_matches": 1,
         "away_matches": 1
       },
+      "Brisbane Roar": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
       "Auckland": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "CC Mariners": {
         "home_matches": 1,
@@ -58,8 +58,8 @@
       }
     }
   },
-  "example_count": 15,
-  "result_accuracy": 0.3333333333333333,
-  "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T19:32:19.155538"
+  "example_count": 18,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.25,
+  "trained_at": "2026-02-19T06:02:09.901718"
 }

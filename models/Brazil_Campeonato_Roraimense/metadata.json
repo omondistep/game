@@ -6,18 +6,10 @@
     "league": "Campeonato Roraimense",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 39,
+    "match_count": 45,
     "teams": {
-      "Rondoniense RO": {
-        "home_matches": 3,
-        "away_matches": 0
-      },
-      "Ji-Parana FC RO": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
       "Monte Roraima": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Bare RR": {
@@ -26,11 +18,15 @@
       },
       "GAS RR": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "River": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
+      },
+      "Rondoniense RO": {
+        "home_matches": 3,
+        "away_matches": 1
       },
       "Barcelona RO": {
         "home_matches": 1,
@@ -38,40 +34,48 @@
       },
       "Sao Raimundo RR": {
         "home_matches": 3,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Progresso RR": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Rio Negro RR": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Nautico RR": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Genus RO": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Guapore RO": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Roraima RR": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Porto Velho": {
         "home_matches": 1,
         "away_matches": 2
+      },
+      "Ji-Parana FC RO": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Uniao Cacoalense RO": {
+        "home_matches": 1,
+        "away_matches": 0
       }
     }
   },
-  "example_count": 21,
-  "result_accuracy": 0.4,
-  "ou_accuracy": 0.4,
-  "trained_at": "2026-02-13T19:32:26.920396"
+  "example_count": 27,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-19T06:02:18.492220"
 }

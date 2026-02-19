@@ -6,7 +6,7 @@
     "league": "Tercera Division Group 12 - Canarias",
     "league_url_path": "",
     "country_code": "es",
-    "match_count": 68,
+    "match_count": 81,
     "teams": {
       "Real Murcia Imperial": {
         "home_matches": 1,
@@ -33,7 +33,7 @@
         "away_matches": 1
       },
       "Montaneros CF": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Silva SD": {
@@ -46,7 +46,7 @@
       },
       "Celtiga FC": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "CD Estradense": {
         "home_matches": 1,
@@ -54,7 +54,7 @@
       },
       "Juventud Cambados": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Atletico Arteixo": {
         "home_matches": 1,
@@ -62,7 +62,7 @@
       },
       "Polvorin FC": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Montanas del Pas": {
         "home_matches": 1,
@@ -73,12 +73,12 @@
         "away_matches": 1
       },
       "SCD Durango": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Zarautz": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "SD Zamudio": {
         "home_matches": 1,
@@ -86,10 +86,10 @@
       },
       "Eibar III": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Marbelli": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "CD El Palo": {
@@ -102,7 +102,7 @@
       },
       "Atletico Onubense": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Atletico Central Cordoba": {
         "home_matches": 1,
@@ -118,7 +118,7 @@
       },
       "Dos Hermanas CF": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Atletico Santa Cruz": {
         "home_matches": 1,
@@ -150,7 +150,7 @@
       },
       "Guadalajara II": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "UD Tamaraceite": {
         "home_matches": 1,
@@ -162,7 +162,7 @@
       },
       "CA Artajones": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "CD Beti Onak": {
         "home_matches": 0,
@@ -194,7 +194,7 @@
       },
       "Mojados": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "CD Becerril Campos": {
         "home_matches": 0,
@@ -205,12 +205,12 @@
         "away_matches": 0
       },
       "Atletico Mansilles": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Unionistas Salamanca II": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "UD Santa Marta": {
         "home_matches": 0,
@@ -221,13 +221,53 @@
         "away_matches": 1
       },
       "Conil CF": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "AD San Juan": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "CD Barco": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "SD Compostela": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Anorga": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Palencia Cristo Atl": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "CF Palencia": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Atletico Bembibre": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Atletico Porcuna": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "San Roque de Lepe": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "CD Toledo": {
+        "home_matches": 1,
+        "away_matches": 0
       }
     }
   },
-  "example_count": 31,
-  "result_accuracy": 0.5714285714285714,
-  "ou_accuracy": 0.42857142857142855,
-  "trained_at": "2026-02-13T19:32:34.794625"
+  "example_count": 44,
+  "result_accuracy": 0.5555555555555556,
+  "ou_accuracy": 0.5555555555555556,
+  "trained_at": "2026-02-19T06:02:29.393545"
 }

@@ -6,68 +6,140 @@
     "league": "Ligue 2",
     "league_url_path": "",
     "country_code": "dz",
-    "match_count": 11,
+    "match_count": 27,
     "teams": {
-      "US Bechar Djedid": {
+      "WA Tlemcen": {
         "home_matches": 1,
-        "away_matches": 0
-      },
-      "RC Kouba": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "JS Bordj Menaiel": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "US Chaouia": {
-        "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "NA Hussein Dey": {
         "home_matches": 1,
-        "away_matches": 1
-      },
-      "Tixeraine": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "CA Batna": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "MO Constantine": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "CRB Adrar": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "USM El Harrach": {
-        "home_matches": 0,
-        "away_matches": 1
-      },
-      "WA Tlemcen": {
-        "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "WA Mostaganem": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "CR Temouchent": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "RC Arbaa": {
         "home_matches": 1,
+        "away_matches": 1
+      },
+      "US Bechar Djedid": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "RC Kouba": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "JS Bordj Menaiel": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "US Chaouia": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Tixeraine": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "CA Batna": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "MO Constantine": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "CRB Adrar": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "USM El Harrach": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "IB Khemis Khechna": {
+        "home_matches": 1,
         "away_matches": 0
+      },
+      "MO Bejaia": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "HB Chelghoum Laid": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "NC Magra": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "JSM Tiaret": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "ASM Oran": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "MC Saida": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "JS El Biar": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "GC Mascara": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "ESM Kolea": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "US Biskra": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "NRB Telaghema": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "AS Khroub": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "JS Jijel": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "CR Beni Thour": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "MSP Batna": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "USM Annaba": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Beni Oulbane": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 8,
-  "result_accuracy": 1.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:33.694753"
+  "example_count": 24,
+  "result_accuracy": 0.2,
+  "ou_accuracy": 0.6,
+  "trained_at": "2026-02-19T06:02:28.168458"
 }

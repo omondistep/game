@@ -6,35 +6,19 @@
     "league": "Liga de Ascenso",
     "league_url_path": "",
     "country_code": "cr",
-    "match_count": 42,
+    "match_count": 45,
     "teams": {
-      "Pitbulls": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Cariari Pococi": {
-        "home_matches": 0,
-        "away_matches": 1
+      "Santa Cruz FC": {
+        "home_matches": 4,
+        "away_matches": 2
       },
       "AD Cofutpa": {
         "home_matches": 1,
         "away_matches": 2
       },
-      "Grecia": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
       "Aserri": {
         "home_matches": 2,
-        "away_matches": 0
-      },
-      "Santa Ana": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Santa Cruz FC": {
-        "home_matches": 3,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Consultants Moravia": {
         "home_matches": 1,
@@ -48,6 +32,10 @@
         "home_matches": 0,
         "away_matches": 3
       },
+      "Santa Ana": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
       "Escorpiones Belen": {
         "home_matches": 1,
         "away_matches": 2
@@ -56,22 +44,38 @@
         "home_matches": 2,
         "away_matches": 2
       },
+      "Pitbulls": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "AD Carmelita": {
-        "home_matches": 1,
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Grecia": {
+        "home_matches": 2,
         "away_matches": 1
       },
       "Inter San Carlos": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Quepos Cambute": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Cariari Pococi": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Deportivo Upala": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 20,
-  "result_accuracy": 0.25,
-  "ou_accuracy": 0.25,
-  "trained_at": "2026-02-13T19:32:32.375253"
+  "example_count": 23,
+  "result_accuracy": 0.4,
+  "ou_accuracy": 0.4,
+  "trained_at": "2026-02-19T06:02:26.542314"
 }

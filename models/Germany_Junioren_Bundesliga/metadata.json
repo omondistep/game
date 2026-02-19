@@ -6,7 +6,7 @@
     "league": "Junioren Bundesliga",
     "league_url_path": "",
     "country_code": "de",
-    "match_count": 14,
+    "match_count": 18,
     "teams": {
       "Wacker Burghausen U19": {
         "home_matches": 1,
@@ -33,7 +33,7 @@
         "away_matches": 1
       },
       "Hertha U19": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Bielefeld U19": {
@@ -53,7 +53,7 @@
         "away_matches": 0
       },
       "Union Berlin U19": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Stuttgart U19": {
@@ -63,11 +63,35 @@
       "Energie Cottbus U19": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Hoffenheim U19": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Blumenthaler SV U19": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Mainz U19": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Bayer Leverkusen U19": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Babelsberg U19": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Hallescher FC U19": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 7,
-  "result_accuracy": 1.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:33.024470"
+  "example_count": 11,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-19T06:02:27.306522"
 }

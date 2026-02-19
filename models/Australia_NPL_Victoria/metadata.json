@@ -1,0 +1,73 @@
+{
+  "league_key": "AuV",
+  "league_info": {
+    "league_code": "AuV",
+    "country": "Australia",
+    "league": "NPL Victoria",
+    "league_url_path": "tips-and-predictions-for-australia/npl-victoria",
+    "country_code": "au",
+    "match_count": 7,
+    "teams": {
+      "Heidelberg United": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Green Gully SC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Hume City FC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Altona Magic SC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Avondale FC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "South Melbourne": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "George Cross": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Bentleigh Greens": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "St Albans Saints": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Dandenong City": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Thunder SC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Melbourne City II": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Oakleigh Cannons": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Preston Lions": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 7,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-19T06:02:10.827681"
+}

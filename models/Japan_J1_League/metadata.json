@@ -6,8 +6,12 @@
     "league": "J1 League",
     "league_url_path": "",
     "country_code": "jp",
-    "match_count": 17,
+    "match_count": 24,
     "teams": {
+      "Kyoto Sanga": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
       "Vissel Kobe": {
         "home_matches": 1,
         "away_matches": 1
@@ -16,36 +20,32 @@
         "home_matches": 1,
         "away_matches": 1
       },
-      "Kyoto Sanga": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
       "Sanfrecce": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Yokohama Marinos": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Machida Zelvia": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "JEF United Chiba": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Urawa Red Diamonds": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "FC Tokyo": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Kashima Antlers": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Cerezo Osaka": {
@@ -62,20 +62,36 @@
       },
       "Fagiano Okayama": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Nagoya Grampus": {
         "home_matches": 1,
         "away_matches": 0
       },
       "Shimizu S-Pulse": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Mito HollyHock": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Kawasaki Frontale": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Kashiwa Reysol": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Tokyo Verdy": {
         "home_matches": 0,
         "away_matches": 1
       }
     }
   },
-  "example_count": 9,
-  "result_accuracy": 1.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:43.470215"
+  "example_count": 16,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.75,
+  "trained_at": "2026-02-19T06:02:39.284188"
 }

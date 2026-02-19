@@ -8,14 +8,6 @@
     "country_code": "dz",
     "match_count": 11,
     "teams": {
-      "MC El Bayadh": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "ASO Chlef": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
       "CS Constantine": {
         "home_matches": 1,
         "away_matches": 0
@@ -36,6 +28,14 @@
         "home_matches": 1,
         "away_matches": 0
       },
+      "ASO Chlef": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "MC El Bayadh": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
       "MB Rouisset": {
         "home_matches": 0,
         "away_matches": 1
@@ -53,5 +53,5 @@
   "example_count": 6,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:33.352642"
+  "trained_at": "2026-02-19T06:02:27.671897"
 }

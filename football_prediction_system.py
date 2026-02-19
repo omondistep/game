@@ -213,6 +213,11 @@ class FootballPredictionSystem:
             primary_prediction = ml_prediction
         else:
             primary_prediction = weighted_prediction
+        
+        # Apply key factor adjustment to prediction
+        primary_prediction = self._adjust_prediction_by_key_factors(
+            primary_prediction, match_data, features, ml_prediction, weighted_prediction
+        )
 
         # Scrape injury data for both teams
         teams = match_data.get('teams', {})
@@ -236,7 +241,7 @@ class FootballPredictionSystem:
             'ml_prediction': ml_prediction,
             'weighted_prediction': weighted_prediction,
             'convergence': convergence,
-            'analysis': self._analyse(match_data, features, primary_prediction),
+            'analysis': self._analyse(match_data, features, primary_prediction, convergence),
             'injuries': injuries_data,
         }
 
@@ -277,12 +282,31 @@ class FootballPredictionSystem:
     # Analysis
     # ------------------------------------------------------------------
 
-    def _analyse(self, md: Dict, feats: Dict, pred: Dict) -> Dict:
+    def _adjust_prediction_by_key_factors(self, prediction: Dict, match_data: Dict, 
+                                            features: Dict, ml_prediction: Dict, 
+                                            weighted_prediction: Dict) -> Dict:
+        """Adjust prediction based on key factors from both ML and weighted predictions.
+        
+        This method can override predictions when strong factors indicate a different outcome.
+        Currently returns the prediction unchanged - adjustments can be added as needed.
+        """
+        # For now, return the prediction as-is
+        # Future implementations could adjust confidence or prediction based on:
+        # - Strong disagreement between ML and weighted predictions
+        # - Key factor analysis from weighted prediction
+        # - Form trends, H2H data, etc.
+        return prediction
+
+    def _analyse(self, md: Dict, feats: Dict, pred: Dict, convergence: Dict = None) -> Dict:
         analysis: Dict = {'key_factors': [], 'value_bets': [], 'confidence': 'medium'}
         
         teams = md.get('teams', {})
         home = teams.get('home', 'Home')
         away = teams.get('away', 'Away')
+
+        # Get the prediction result to ensure key factors are consistent
+        result_prediction = pred.get('result', {}).get('prediction', '')
+        result_confidence = pred.get('result', {}).get('confidence', 0) * 100
 
         # Form
         hf = md.get('form', {}).get('home', [])
@@ -292,75 +316,84 @@ class FootballPredictionSystem:
         hd = hf.count('D')
         ad = af.count('D')
         
-        if hw >= 4:
-            analysis['key_factors'].append(f"🔥 {home} in excellent form ({hw} wins in last {len(hf)})")
-        elif hw >= 3:
-            analysis['key_factors'].append(f"✅ {home} in good form ({hw} wins in last {len(hf)})")
-        elif hw <= 1 and len(hf) >= 4:
-            analysis['key_factors'].append(f"⚠️ {home} in poor form ({hw} win in last {len(hf)})")
-            
-        if aw >= 4:
-            analysis['key_factors'].append(f"🔥 {away} in excellent form ({aw} wins in last {len(af)})")
-        elif aw >= 3:
-            analysis['key_factors'].append(f"✅ {away} in good form ({aw} wins in last {len(af)})")
-        elif aw <= 1 and len(af) >= 4:
-            analysis['key_factors'].append(f"⚠️ {away} in poor form ({aw} win in last {len(af)})")
-
-        # Home/away record
-        hwr = feats.get('home_home_win_rate')
-        if hwr and hwr >= 70:
-            analysis['key_factors'].append(f"🏟️ {home} dominant at home ({hwr:.0f}% win rate)")
-        awr = feats.get('away_away_win_rate')
-        if awr and awr <= 20:
-            analysis['key_factors'].append(f"📉 {away} struggles away ({awr:.0f}% win rate)")
+        # Show form factors that support the prediction
+        if result_prediction == '1':  # Home win predicted
+            if hw >= 3:
+                analysis['key_factors'].append(f"✅ {home} in good form ({hw} wins in last {len(hf)})")
+            if aw <= 2:
+                analysis['key_factors'].append(f"⚠️ {away} in poor form ({aw} wins in last {len(af)})")
+        elif result_prediction == '2':  # Away win predicted
+            if aw >= 3:
+                analysis['key_factors'].append(f"✅ {away} in good form ({aw} wins in last {len(af)})")
+            if hw <= 2:
+                analysis['key_factors'].append(f"⚠️ {home} in poor form ({hw} wins in last {len(hf)})")
+        else:  # Draw predicted
+            if hw <= 2 and aw <= 2:
+                analysis['key_factors'].append(f"🤝 Both teams in similar form")
         
-        # Away team strong away
-        if awr and awr >= 60:
-            analysis['key_factors'].append(f"💪 {away} strong away ({awr:.0f}% win rate)")
+        # Home/away record - show factors that support the prediction
+        hwr = feats.get('home_home_win_rate')
+        awr = feats.get('away_away_win_rate')
+        
+        if result_prediction == '1':  # Home win predicted
+            if hwr and hwr >= 60:
+                analysis['key_factors'].append(f"🏟️ {home} strong at home ({hwr:.0f}% win rate)")
+            if awr and awr <= 30:
+                analysis['key_factors'].append(f"📉 {away} struggles away ({awr:.0f}% win rate)")
+        elif result_prediction == '2':  # Away win predicted
+            if awr and awr >= 50:
+                analysis['key_factors'].append(f"💪 {away} strong away ({awr:.0f}% win rate)")
+            if hwr and hwr <= 40:
+                analysis['key_factors'].append(f"📉 {home} weak at home ({hwr:.0f}% win rate)")
 
-        # Goals
+        # Goals - make key factors consistent with actual Over/Under prediction
         etg = feats.get('expected_total_goals', 2.5)
         hgs = feats.get('home_avg_goals_scored', 0)
         ags = feats.get('away_avg_goals_scored', 0)
         hgc = feats.get('home_avg_goals_conceded', 0)
         agc = feats.get('away_avg_goals_conceded', 0)
         
-        if etg > 3.0:
-            analysis['key_factors'].append(f"⚽ High-scoring match expected (avg {etg:.1f} goals)")
-        elif etg < 2.0:
-            analysis['key_factors'].append(f"🛡️ Low-scoring match expected (avg {etg:.1f} goals)")
+        # Get the actual Over/Under prediction to ensure consistency
+        ou_prediction = pred.get('over_under', {}).get('prediction', '')
+        ou_confidence = pred.get('over_under', {}).get('confidence', 0) * 100
         
-        # Goal difference comparison
-        if hgs and ags and hgs > ags + 0.5:
-            analysis['key_factors'].append(f"⚽ {home} scores more ({hgs:.1f} vs {ags:.1f} goals/game)")
-        elif ags and hgs and ags > hgs + 0.5:
-            analysis['key_factors'].append(f"⚽ {away} scores more ({ags:.1f} vs {hgs:.1f} goals/game)")
+        # Only show scoring expectation if it's consistent with the prediction
+        if ou_prediction == 'Over':
+            analysis['key_factors'].append(f"⚽ High-scoring match expected ({ou_confidence:.0f}% confidence)")
+        elif ou_prediction == 'Under':
+            analysis['key_factors'].append(f"🛡️ Low-scoring match expected ({ou_confidence:.0f}% confidence)")
         
-        # Defense comparison
-        if hgc and agc and hgc < agc - 0.3:
-            analysis['key_factors'].append(f"🧱 {home} has stronger defense ({hgc:.1f} vs {agc:.1f} conceded/game)")
-        elif agc and hgc and agc < hgc - 0.3:
-            analysis['key_factors'].append(f"🧱 {away} has stronger defense ({agc:.1f} vs {hgc:.1f} conceded/game)")
+        # Goal difference comparison - show factors that support the prediction
+        if result_prediction == '1':  # Home win predicted
+            if hgs and ags and hgs > ags:
+                analysis['key_factors'].append(f"⚽ {home} scores more ({hgs:.1f} vs {ags:.1f} goals/game)")
+            if hgc and agc and hgc < agc:
+                analysis['key_factors'].append(f"🧱 {home} has stronger defense ({hgc:.1f} vs {agc:.1f} conceded/game)")
+        elif result_prediction == '2':  # Away win predicted
+            if ags and hgs and ags > hgs:
+                analysis['key_factors'].append(f"⚽ {away} scores more ({ags:.1f} vs {hgs:.1f} goals/game)")
+            if agc and hgc and agc < hgc:
+                analysis['key_factors'].append(f"🧱 {away} has stronger defense ({agc:.1f} vs {hgc:.1f} conceded/game)")
 
-        # Standings
+        # Standings - show factors that support the prediction
         hp = feats.get('home_position')
         ap = feats.get('away_position')
         if hp and ap:
             pos_diff = abs(hp - ap)
-            if hp < ap - 5:
-                analysis['key_factors'].append(f"📊 {home} significantly higher in table (#{hp} vs #{ap})")
-            elif ap < hp - 5:
-                analysis['key_factors'].append(f"📊 {away} significantly higher in table (#{ap} vs #{hp})")
-            elif pos_diff <= 2:
+            if result_prediction == '1' and hp < ap:
+                analysis['key_factors'].append(f"📊 {home} higher in table (#{hp} vs #{ap})")
+            elif result_prediction == '2' and ap < hp:
+                analysis['key_factors'].append(f"📊 {away} higher in table (#{ap} vs #{hp})")
+            elif pos_diff <= 3:
                 analysis['key_factors'].append(f"⚖️ Teams close in table (#{hp} vs #{ap})")
 
-        # H2H
+        # H2H - show factors that support the prediction
         h2h = md.get('head_to_head', {}).get('summary', {})
-        if h2h.get('home_win_pct', 0) >= 60:
-            analysis['key_factors'].append(f"📜 {home} dominates H2H ({h2h['home_win_pct']}% wins)")
-        elif h2h.get('away_win_pct', 0) >= 60:
-            analysis['key_factors'].append(f"📜 {away} dominates H2H ({h2h['away_win_pct']}% wins)")
-        elif h2h.get('draw_pct', 0) >= 50:
+        if result_prediction == '1' and h2h.get('home_win_pct', 0) >= 50:
+            analysis['key_factors'].append(f"📜 {home} has H2H advantage ({h2h['home_win_pct']}% wins)")
+        elif result_prediction == '2' and h2h.get('away_win_pct', 0) >= 50:
+            analysis['key_factors'].append(f"📜 {away} has H2H advantage ({h2h['away_win_pct']}% wins)")
+        elif h2h.get('draw_pct', 0) >= 40 and result_prediction == 'X':
             analysis['key_factors'].append(f"📜 H2H often ends in draw ({h2h['draw_pct']}% draws)")
 
         # Trends
@@ -389,10 +422,21 @@ class FootballPredictionSystem:
                     'outcome': outcome, 'market': mo, 'fair': co, 'value_pct': round(val, 1),
                 })
 
-        # Confidence
+        # Confidence - consider model agreement
         rc = pred['result']['confidence']
         oc = pred['over_under']['confidence']
         avg = (rc + oc) / 2
+        
+        # Check if ML and Weighted models agree (use passed convergence parameter)
+        result_agreement = convergence.get('result_match', True) if convergence else True
+        ou_agreement = convergence.get('ou_match', True) if convergence else True
+        
+        # If models disagree, significantly reduce confidence
+        if not result_agreement or not ou_agreement:
+            # When models disagree, set confidence to at most MEDIUM
+            if avg > 0.40:
+                avg = 0.40
+        
         analysis['confidence'] = 'HIGH' if avg > 0.55 else ('MEDIUM' if avg > 0.40 else 'LOW')
 
         return analysis
@@ -412,6 +456,7 @@ class FootballPredictionSystem:
         pred = result['prediction']
         feats = result['features']
         analysis = result['analysis']
+        convergence = result.get('convergence', {})
         teams = md.get('teams', {})
         info = md.get('match_info', {})
         home = teams.get('home', '???')
@@ -622,6 +667,15 @@ class FootballPredictionSystem:
             # Possession
             bp_h = _s(hs_stats.get('ball_poss', []))
             bp_a = _s(as_stats.get('ball_poss', []))
+            # Convert to float if string
+            try:
+                bp_h = float(bp_h) if bp_h else 0
+            except (ValueError, TypeError):
+                bp_h = 0
+            try:
+                bp_a = float(bp_a) if bp_a else 0
+            except (ValueError, TypeError):
+                bp_a = 0
             if bp_h or bp_a:
                 print(f"  {'Possession':20} {C.BOLD}{bp_h:.1f}%{C.RESET:>13}  {C.BOLD}{bp_a:.1f}%{C.RESET:>13}")
             # Pass accuracy
@@ -778,6 +832,22 @@ class FootballPredictionSystem:
             print(f"      W: {w_bar} {w_pct:5.1f}%")
             print(f"      Fair:{odds_c:.2f}  Mkt:{odds_m:.2f}{C.GREEN}{marker}{match}{C.RESET}")
         
+        # Display ML's own odds (computed from raw statistics, not market)
+        ml_own_odds = pred.get('ml_own_odds', {})
+        if ml_own_odds:
+            print()
+            print(f"  {C.BOLD}🤖 ML's Own Odds (from raw stats):{C.RESET}")
+            r_odds = ml_own_odds.get('result', {})
+            ou_odds = ml_own_odds.get('over_under', {})
+            expected = ml_own_odds.get('expected_goals', 0)
+            
+            if r_odds:
+                print(f"    1: {r_odds.get('odds_home', 0):.2f}  X: {r_odds.get('odds_draw', 0):.2f}  2: {r_odds.get('odds_away', 0):.2f}")
+            if ou_odds:
+                print(f"    Over: {ou_odds.get('odds_over', 0):.2f}  Under: {ou_odds.get('odds_under', 0):.2f}")
+            if expected:
+                print(f"    Expected Goals: {expected:.2f}")
+        
         # O/U with thresholds
         over_prob = op['probabilities'].get('Over', 0) * 100
         under_prob = op['probabilities'].get('Under', 0) * 100
@@ -875,25 +945,70 @@ class FootballPredictionSystem:
         print(f"  {C.DIM}League: {league}{C.RESET}")
         print()
         
+        # Get both model predictions
+        ml_pred = result.get('ml_prediction', {})
+        w_pred = result.get('weighted_prediction', {})
+        
+        # Show both model predictions clearly
+        print(f"  {C.BOLD}┌─────────────────────────────────────────────────────────────┐{C.RESET}")
+        print(f"  {C.BOLD}│              ML MODEL              │      WEIGHTED MODEL           │{C.RESET}")
+        print(f"  {C.BOLD}├─────────────────────────────────────────────────────────────┤{C.RESET}")
+        
+        # Result
+        ml_r = rmap.get(ml_pred.get('result', {}).get('prediction', '?'), '?')
+        w_r = rmap.get(w_pred.get('result', {}).get('prediction', '?'), '?')
+        ml_rc = ml_pred.get('result', {}).get('confidence', 0) * 100
+        w_rc = w_pred.get('result', {}).get('confidence', 0) * 100
+        r_agree = "✓" if ml_r == w_r else "⚠"
+        print(f"  {C.BOLD}│{C.RESET} {ml_r:>12} ({ml_rc:>5.0f}%)             │ {w_r:>12} ({w_rc:>5.0f}%)             {r_agree} {C.BOLD}│{C.RESET}")
+        
+        # O/U
+        ml_o = ml_pred.get('over_under', {}).get('prediction', '?')
+        w_o = w_pred.get('over_under', {}).get('prediction', '?')
+        ml_oc = ml_pred.get('over_under', {}).get('confidence', 0) * 100
+        w_oc = w_pred.get('over_under', {}).get('confidence', 0) * 100
+        o_agree = "✓" if ml_o == w_o else "⚠"
+        print(f"  {C.BOLD}│{C.RESET} {ml_o:>12} ({ml_oc:>5.0f}%)             │ {w_o:>12} ({w_oc:>5.0f}%)             {o_agree} {C.BOLD}│{C.RESET}")
+        print(f"  {C.BOLD}└─────────────────────────────────────────────────────────────┘{C.RESET}")
+        print()
+        
+        # Final recommendation based on what the system chose
+        result_agreement = convergence.get('result_match', True) if convergence else True
+        ou_agreement = convergence.get('ou_match', True) if convergence else True
+        
+        print(f"  {C.BOLD}🎯 FINAL RECOMMENDATION:{C.RESET}")
+        
         # Sort recommendations by confidence
         recommendations = []
         
-        # Add result recommendation
+        # Check model agreement
+        result_agreement = convergence.get('result_match', True) if convergence else True
+        ou_agreement = convergence.get('ou_match', True) if convergence else True
+        
+        # Add result recommendation (reduce confidence if models disagree)
         result_conf = rp.get('confidence', 0) * 100
+        if not result_agreement:
+            result_conf = result_conf * 0.6  # Reduce confidence when models disagree
         result_label = rmap.get(rp['prediction'], '?')
+        result_conf_label = 'HIGH' if result_conf > 55 else ('MEDIUM' if result_conf > 40 else 'LOW')
         recommendations.append({
             'type': 'Match Result',
             'label': result_label,
             'confidence': result_conf,
+            'confidence_label': result_conf_label,
             'prediction': rp['prediction']
         })
         
-        # Add O/U recommendation
+        # Add O/U recommendation (reduce confidence if models disagree)
         ou_conf = op.get('confidence', 0) * 100
+        if not ou_agreement:
+            ou_conf = ou_conf * 0.6  # Reduce confidence when models disagree
+        ou_conf_label = 'HIGH' if ou_conf > 55 else ('MEDIUM' if ou_conf > 40 else 'LOW')
         recommendations.append({
             'type': 'Over/Under 2.5',
             'label': f"{ou_prediction} 2.5 Goals",
             'confidence': ou_conf,
+            'confidence_label': ou_conf_label,
             'prediction': ou_prediction
         })
         
@@ -903,9 +1018,40 @@ class FootballPredictionSystem:
         # Print recommendations in order
         for i, rec in enumerate(recommendations):
             emoji = "🎯" if i == 0 else "  "
-            conf_label = "HIGH" if rec['confidence'] >= 60 else ("MEDIUM" if rec['confidence'] >= 40 else "LOW")
+            conf_label = rec.get('confidence_label', "HIGH" if rec['confidence'] >= 60 else ("MEDIUM" if rec['confidence'] >= 40 else "LOW"))
             conf_col = C.GREEN if conf_label == "HIGH" else (C.YELLOW if conf_label == "MEDIUM" else C.RED)
             print(f"  {emoji} {rec['type']}: {C.BOLD}{rec['label']}{C.RESET} ({conf_col}{rec['confidence']:.0f}% {conf_label}{C.RESET})")
+        
+        # If models disagree, explain why
+        if not result_agreement or not ou_agreement:
+            print()
+            print(f"  {C.BOLD}{C.YELLOW}⚠️ WHY MODELS DIVERGE:{C.RESET}")
+            
+            if not result_agreement:
+                # Get ML and Weighted predictions
+                ml_r = ml_pred.get('result', {}).get('prediction', '?')
+                w_r = w_pred.get('result', {}).get('prediction', '?')
+                ml_r_prob = ml_pred.get('result', {}).get('probabilities', {}).get(ml_r, 0) * 100
+                w_r_prob = w_pred.get('result', {}).get('probabilities', {}).get(w_r, 0) * 100
+                
+                if ml_r == '1':
+                    print(f"    • ML: Home win ({ml_r_prob:.0f}%) based on form & stats")
+                elif ml_r == 'X':
+                    print(f"    • ML: Draw ({ml_r_prob:.0f}%) based on recent matches")
+                else:
+                    print(f"    • ML: Away win ({ml_r_prob:.0f}%) based on league performance")
+                
+                if w_r == '1':
+                    print(f"    • Weighted: Home win ({w_r_prob:.0f}%) based on odds value")
+                elif w_r == 'X':
+                    print(f"    • Weighted: Draw ({w_r_prob:.0f}%) based on head-to-head")
+                else:
+                    print(f"    • Weighted: Away win ({w_r_prob:.0f}%) based on market odds")
+            
+            if not ou_agreement:
+                ml_o = ml_pred.get('over_under', {}).get('prediction', '?')
+                w_o = w_pred.get('over_under', {}).get('prediction', '?')
+                print(f"    • O/U: ML={ml_o}, Weighted={w_o} (different goal expectations)")
         
         # Value bets in summary
         if analysis.get('value_bets'):
@@ -918,73 +1064,45 @@ class FootballPredictionSystem:
         # Generate detailed narrative for the top recommendation
         narrative_lines = []
         
-        top_rec = recommendations[0]
-        if top_rec['type'] == 'Match Result':
-            if top_rec['prediction'] == '1':
-                narrative_lines.append(f"{home} is favored to win based on the following key factors:")
-            elif top_rec['prediction'] == '2':
-                narrative_lines.append(f"{away} is favored to win based on the following key factors:")
-            else:
-                narrative_lines.append(f"A draw is predicted due to the following factors:")
-        else:
-            # O/U is top recommendation
-            narrative_lines.append(f"{top_rec['label']} is recommended ({top_rec['confidence']:.0f}%) due to:")
+        # Get top recommendation
+        top_rec = recommendations[0] if recommendations else {}
         
-        # Add key factors
-        if pred.get('key_factors', {}).get('match_result'):
-            for f in pred['key_factors']['match_result'][:3]:
-                direction_name = home if f['direction'] == 'home' else away
-                factor_descriptions = {
-                    'league_position': 'superior league position',
-                    'odds_analysis': 'favorable market odds',
-                    'recent_form': 'strong recent form',
-                    'top5_performance': 'good performance against top teams',
-                    'goals_stats': 'better goals statistics',
-                    'h2h': 'favorable head-to-head record',
-                    'shots_possession': 'strong shots and possession metrics',
-                }
-                desc = factor_descriptions.get(f['factor'], f['factor'])
-                narrative_lines.append(f"  • {direction_name}'s {desc} ({f['impact']}% impact)")
+        # Get model predictions for summary
+        ml_result = pred.get('ml_prediction', {}).get('result', {}).get('prediction', 'N/A')
+        weighted_result = pred.get('weighted_prediction', {}).get('result', {}).get('prediction', 'N/A')
+        ml_ou = pred.get('ml_prediction', {}).get('over_under', {}).get('prediction', 'N/A')
+        weighted_ou = pred.get('weighted_prediction', {}).get('over_under', {}).get('prediction', 'N/A')
         
-        # O/U narrative
-        if recommendations[0]['type'] != 'Over/Under 2.5':
-            narrative_lines.append("")
-            if ou_prediction == 'Over':
-                narrative_lines.append(f"Over 2.5 goals is recommended ({over_prob:.0f}%) due to:")
-            else:
-                narrative_lines.append(f"Under 2.5 goals is recommended ({under_prob:.0f}%) due to:")
+        # Model agreement status
+        result_match = pred.get('convergence', {}).get('result_match', True)
+        ou_match = pred.get('convergence', {}).get('ou_match', True)
         
-        # Add O/U factors
-        if pred.get('key_factors', {}).get('over_under'):
-            for f in pred['key_factors']['over_under']:
-                narrative_lines.append(f"  • {f['factor']}: {f['value']}")
+        # Show prediction summary with model breakdown
+        narrative_lines.append("")
+        narrative_lines.append(f"  {C.BOLD}┌────────────────────────────────────────────────────────┐{C.RESET}")
+        narrative_lines.append(f"  {C.BOLD}│           PREDICTION SUMMARY                     │{C.RESET}")
+        narrative_lines.append(f"  {C.BOLD}├────────────────────────────────────────────────────────┤{C.RESET}")
         
-        # Add injury impact to narrative
-        if injuries_data:
-            for team, players in injuries_data.items():
-                if not players:
-                    continue
-                team_lower = team.lower()
-                is_home = any(part in team_lower for part in home.lower().split())
-                is_away = any(part in team_lower for part in away.lower().split())
-                
-                if not is_home and not is_away:
-                    continue
-                
-                team_label = home if is_home else away
-                key_out = [p for p in players if 'will not play' in p.get('status', '').lower()]
-                
-                if key_out:
-                    narrative_lines.append("")
-                    player_names = [p.get('name', 'Unknown') for p in key_out[:2]]
-                    if len(player_names) == 1:
-                        narrative_lines.append(f"⚠️ {team_label} will be missing key player {player_names[0]}")
-                    else:
-                        narrative_lines.append(f"⚠️ {team_label} will be missing {player_names[0]} and {player_names[1]}")
+        # Result prediction
+        res_agree_emoji = C.GREEN + "✓" + C.RESET if result_match else C.YELLOW + "⚠" + C.RESET
+        narrative_lines.append(f"  {C.BOLD}│{C.RESET} Match Result: {home} vs {away}")
+        narrative_lines.append(f"  {C.BOLD}│{C.RESET}   ML Model:      {ml_result}")
+        narrative_lines.append(f"  {C.BOLD}│{C.RESET}   Weighted:      {weighted_result}")
+        narrative_lines.append(f"  {C.BOLD}│{C.RESET}   Agreement:     {res_agree_emoji} {"AGREE" if result_match else "DISAGREE"}")
         
-        # Print narrative
-        for line in narrative_lines:
-            print(f"  {line}")
+        # O/U prediction
+        ou_agree_emoji = C.GREEN + "✓" + C.RESET if ou_match else C.YELLOW + "⚠" + C.RESET
+        narrative_lines.append(f"  {C.BOLD}│{C.RESET}")
+        narrative_lines.append(f"  {C.BOLD}│{C.RESET}   Over/Under:   {ml_ou} vs {weighted_ou}")
+        narrative_lines.append(f"  {C.BOLD}│{C.RESET}   Agreement:     {ou_agree_emoji} {"AGREE" if ou_match else "DISAGREE"}")
+        
+        # Final recommendation
+        narrative_lines.append(f"  {C.BOLD}├────────────────────────────────────────────────────────┤{C.RESET}")
+        final_result = top_rec.get('prediction', top_rec.get('label', 'N/A'))
+        final_conf = top_rec.get('confidence', 0)
+        final_type = top_rec.get('type', '')
+        narrative_lines.append(f"  {C.BOLD}│{C.RESET} {final_type}: {C.BOLD}{final_result}{C.RESET} ({final_conf:.0f}%)")
+        narrative_lines.append(f"  {C.BOLD}└────────────────────────────────────────────────────────┘{C.RESET}")
         
         # ── KEY FACTORS (Narrative) ──
         if analysis.get('key_factors'):
@@ -1037,11 +1155,6 @@ class FootballPredictionSystem:
             else:
                 print(f"    {C.YELLOW}⚠{C.RESET} ML predicts: {ml_r}, Weighted predicts: {w_r}")
             
-            if o_match:
-                print(f"    {C.GREEN}✓{C.RESET} Both models predict: {ml_o} O/U")
-            else:
-                print(f"    {C.YELLOW}⚠{C.RESET} ML predicts: {ml_o}, Weighted predicts: {w_o}")
-        
         # Show prediction method
         pred_method = pred.get('prediction_method', 'unknown')
         league = md.get('match_info', {}).get('league', 'Unknown League')
@@ -1139,12 +1252,14 @@ class FootballPredictionSystem:
 
 def main():
     parser = argparse.ArgumentParser(description='Football Match Prediction System')
-    parser.add_argument('command', choices=['predict', 'result', 'train', 'stats', 'batch', 'update-league'])
+    parser.add_argument('command', choices=['predict', 'result', 'train', 'stats', 'batch', 'update-league', 'export'])
     parser.add_argument('--url', help='Forebet match URL or path to file with URLs')
     parser.add_argument('--no-save', action='store_true')
     parser.add_argument('--json', action='store_true', help='Output raw JSON')
     parser.add_argument('--code', help='League code (for update-league command)')
     parser.add_argument('--name', help='League name (for update-league command)')
+    parser.add_argument('--output', '-o', help='Output file for export (default: predictions.xlsx)')
+    parser.add_argument('--today', action='store_true', help='Export only today\'s predictions')
     args = parser.parse_args()
     
     # Handle update-league command
@@ -1195,7 +1310,23 @@ def main():
             os.makedirs(PREDICTIONS_DIR, exist_ok=True)
             fname = os.path.join(PREDICTIONS_DIR, f"prediction_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json")
             with open(fname, 'w') as f:
-                out = {k: v for k, v in result.items() if k != 'match_data'}
+                # Include match_info and teams from match_data for export
+                match_data = result.get('match_data', {})
+                out = {
+                    'url': url,
+                    'timestamp': datetime.now().isoformat(),
+                    'match_info': {
+                        'home_team': match_data.get('teams', {}).get('home', ''),
+                        'away_team': match_data.get('teams', {}).get('away', ''),
+                        'date': match_data.get('match_info', {}).get('date', ''),
+                        'time': match_data.get('match_info', {}).get('time', ''),
+                        'league': match_data.get('match_info', {}).get('league', ''),
+                    },
+                    'teams': match_data.get('teams', {}),
+                    'prediction': result.get('prediction', {}),
+                    'ml_prediction': result.get('ml_prediction', {}),
+                    'weighted_prediction': result.get('weighted_prediction', {}),
+                }
                 json.dump(out, f, indent=2, default=str)
             # Also save to predictions.json for accuracy tracking
             try:
@@ -1279,7 +1410,23 @@ def main():
             os.makedirs(PREDICTIONS_DIR, exist_ok=True)
             fname = os.path.join(PREDICTIONS_DIR, f"prediction_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json")
             with open(fname, 'w') as f:
-                out = {k: v for k, v in result.items() if k != 'match_data'}
+                # Include match_info and teams from match_data for export
+                match_data = result.get('match_data', {})
+                out = {
+                    'url': url,
+                    'timestamp': datetime.now().isoformat(),
+                    'match_info': {
+                        'home_team': match_data.get('teams', {}).get('home', ''),
+                        'away_team': match_data.get('teams', {}).get('away', ''),
+                        'date': match_data.get('match_info', {}).get('date', ''),
+                        'time': match_data.get('match_info', {}).get('time', ''),
+                        'league': match_data.get('match_info', {}).get('league', ''),
+                    },
+                    'teams': match_data.get('teams', {}),
+                    'prediction': result.get('prediction', {}),
+                    'ml_prediction': result.get('ml_prediction', {}),
+                    'weighted_prediction': result.get('weighted_prediction', {}),
+                }
                 json.dump(out, f, indent=2, default=str)
             # Also save to predictions.json for accuracy tracking
             try:
@@ -1324,6 +1471,121 @@ def main():
             print(f"\n{'='*60}")
             print(f"Completed: {success}/{len(urls)} URLs processed successfully")
             print(f"{'='*60}")
+        else:
+            # Single URL processing
+            process_url(args.url, is_single=True)
+
+    elif args.command == 'export':
+        # Export predictions to Excel
+        import glob
+        
+        # Find all prediction files
+        pattern = os.path.join(PREDICTIONS_DIR, "prediction_*.json")
+        files = glob.glob(pattern)
+        
+        if not files:
+            print("No predictions found to export")
+            return
+        
+        # Load all predictions
+        all_predictions = []
+        for f in files:
+            try:
+                with open(f, 'r') as fp:
+                    data = json.load(fp)
+                    # Extract key fields - handle both old and new formats
+                    # Try 'prediction' first, then 'our_prediction'
+                    pred = data.get('prediction', {}) or data.get('our_prediction', {})
+                    match_info = data.get('match_info', {})
+                    teams = data.get('teams', {})
+                    
+                    # Get home/away from either match_info or teams
+                    home_team = match_info.get('home_team', '') or teams.get('home', '')
+                    away_team = match_info.get('away_team', '') or teams.get('away', '')
+                    date = match_info.get('date', '')
+                    time = match_info.get('time', '')
+                    league = match_info.get('league', '')
+                    
+                    # Get result prediction
+                    result_pred = pred.get('result', {})
+                    ou_pred = pred.get('over_under', {})
+                    
+                    # Get probabilities
+                    result_probs = result_pred.get('probabilities', {})
+                    ou_probs = ou_pred.get('probabilities', {})
+                    
+                    # Get ML and weighted predictions
+                    ml_pred = data.get('ml_prediction', {})
+                    w_pred = data.get('weighted_prediction', {})
+                    
+                    all_predictions.append({
+                        'Date': date,
+                        'Time': time,
+                        'Home Team': home_team,
+                        'Away Team': away_team,
+                        'League': league,
+                        'Result Prediction': result_pred.get('prediction', ''),
+                        'Result Confidence': f"{result_pred.get('confidence', 0)*100:.0f}%",
+                        'Home Win Prob': f"{result_probs.get('1', 0)*100:.1f}%",
+                        'Draw Prob': f"{result_probs.get('X', 0)*100:.1f}%",
+                        'Away Win Prob': f"{result_probs.get('2', 0)*100:.1f}%",
+                        'O/U Prediction': ou_pred.get('prediction', ''),
+                        'O/U Confidence': f"{ou_pred.get('confidence', 0)*100:.0f}%",
+                        'Over 2.5 Prob': f"{ou_probs.get('Over', 0)*100:.1f}%",
+                        'Under 2.5 Prob': f"{ou_probs.get('Under', 0)*100:.1f}%",
+                        'ML Result': ml_pred.get('result', {}).get('prediction', ''),
+                        'ML O/U': ml_pred.get('over_under', {}).get('prediction', ''),
+                        'Weighted Result': w_pred.get('result', {}).get('prediction', ''),
+                        'Weighted O/U': w_pred.get('over_under', {}).get('prediction', ''),
+                        'URL': data.get('url', ''),
+                    })
+            except Exception as e:
+                print(f"Warning: Could not load {f}: {e}")
+        
+        if not all_predictions:
+            print("No valid predictions found")
+            return
+        
+        # Sort by date/time
+        all_predictions.sort(key=lambda x: (x.get('Date', ''), x.get('Time', '')))
+        
+        # Print summary table
+        print(f"\n{'='*100}")
+        print(f"PREDICTIONS SUMMARY ({len(all_predictions)} matches)")
+        print(f"{'='*100}\n")
+        
+        # Header
+        print(f"{'Date':<12} {'Home':<20} {'Away':<20} {'Result':<15} {'O/U':<15}")
+        print(f"{'-'*12} {'-'*20} {'-'*20} {'-'*15} {'-'*15}")
+        
+        for p in all_predictions:
+            date = p['Date'][:10] if p['Date'] else ''
+            home = p['Home Team'][:18] if len(p['Home Team']) > 18 else p['Home Team']
+            away = p['Away Team'][:18] if len(p['Away Team']) > 18 else p['Away Team']
+            result = f"{p['Result Prediction']} ({p['Result Confidence']})"
+            ou = f"{p['O/U Prediction']} ({p['O/U Confidence']})"
+            print(f"{date:<12} {home:<20} {away:<20} {result:<15} {ou:<15}")
+        
+        # Export to Excel
+        output_file = args.output or 'predictions.xlsx'
+        try:
+            import pandas as pd
+            df = pd.DataFrame(all_predictions)
+            df.to_excel(output_file, index=False)
+            print(f"\n{'='*100}")
+            print(f"Exported {len(all_predictions)} predictions to {output_file}")
+            print(f"{'='*100}")
+        except ImportError:
+            # Fallback to CSV if pandas not available
+            output_file = output_file.replace('.xlsx', '.csv')
+            import csv
+            with open(output_file, 'w', newline='') as f:
+                writer = csv.DictWriter(f, fieldnames=all_predictions[0].keys())
+                writer.writeheader()
+                writer.writerows(all_predictions)
+            print(f"\n{'='*100}")
+            print(f"Exported {len(all_predictions)} predictions to {output_file} (CSV - pandas not available)")
+            print(f"{'='*100}")
         else:
             # Single URL
             process_url(args.url, is_single=True)

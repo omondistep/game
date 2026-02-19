@@ -6,7 +6,7 @@
     "league": "Prva liga",
     "league_url_path": "",
     "country_code": "mk",
-    "match_count": 10,
+    "match_count": 13,
     "teams": {
       "Shkendija 79": {
         "home_matches": 1,
@@ -18,7 +18,7 @@
       },
       "FK Shkupi": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Tikves Kavadarci": {
         "home_matches": 0,
@@ -29,7 +29,7 @@
         "away_matches": 0
       },
       "Aresimi": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Sileks Kratovo": {
@@ -37,20 +37,20 @@
         "away_matches": 0
       },
       "Bashkimi Kumanovo": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Academy Pandev": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Makedonija GP": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Pelister Bitola": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Rabotnicki Skopje": {
         "home_matches": 0,
@@ -58,8 +58,8 @@
       }
     }
   },
-  "example_count": 6,
+  "example_count": 9,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:46.276147"
+  "trained_at": "2026-02-19T06:02:42.918592"
 }

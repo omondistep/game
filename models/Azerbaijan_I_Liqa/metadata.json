@@ -8,22 +8,6 @@
     "country_code": "az",
     "match_count": 15,
     "teams": {
-      "Difai Agsu": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Simal": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Energetik Mingachevir": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Zaqatala FK": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
       "C\u0259bray\u0131l": {
         "home_matches": 1,
         "away_matches": 1
@@ -40,6 +24,10 @@
         "home_matches": 1,
         "away_matches": 1
       },
+      "Zaqatala FK": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
       "Sebail FK": {
         "home_matches": 1,
         "away_matches": 1
@@ -47,11 +35,23 @@
       "Shahdagh Qusar": {
         "home_matches": 2,
         "away_matches": 0
+      },
+      "Difai Agsu": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Simal": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Energetik Mingachevir": {
+        "home_matches": 1,
+        "away_matches": 1
       }
     }
   },
   "example_count": 10,
   "result_accuracy": 0.5,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:20.760216"
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-19T06:02:11.867490"
 }

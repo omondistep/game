@@ -6,7 +6,7 @@
     "league": "TFF 2. Lig",
     "league_url_path": "",
     "country_code": "tr",
-    "match_count": 50,
+    "match_count": 52,
     "teams": {
       "Hekimoglu Trabzon": {
         "home_matches": 1,
@@ -58,7 +58,7 @@
       },
       "Somaspor": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Ankara Demirspor": {
         "home_matches": 0,
@@ -66,7 +66,7 @@
       },
       "Sanl\u0131urfaspor": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Inegolspor": {
         "home_matches": 0,
@@ -109,7 +109,7 @@
         "away_matches": 0
       },
       "24 Erzincanspor": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Icel Idman Yurdu": {
@@ -141,7 +141,7 @@
         "away_matches": 0
       },
       "Mardin BB": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Isparta Davrazspor": {
@@ -162,8 +162,8 @@
       }
     }
   },
-  "example_count": 25,
-  "result_accuracy": 0.6,
-  "ou_accuracy": 0.4,
-  "trained_at": "2026-02-13T19:32:59.079730"
+  "example_count": 27,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-19T06:02:59.518888"
 }

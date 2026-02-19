@@ -6,7 +6,7 @@
     "league": "Ligue 1",
     "league_url_path": "",
     "country_code": "cd",
-    "match_count": 52,
+    "match_count": 53,
     "teams": {
       "CS Don Bosco": {
         "home_matches": 2,
@@ -30,7 +30,7 @@
       },
       "Malole": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Etoile de Kivu": {
         "home_matches": 1,
@@ -41,7 +41,7 @@
         "away_matches": 2
       },
       "SimbaDRC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Saint-Luc": {
@@ -118,8 +118,8 @@
       }
     }
   },
-  "example_count": 24,
-  "result_accuracy": 0.6,
-  "ou_accuracy": 0.4,
-  "trained_at": "2026-02-13T19:32:28.343437"
+  "example_count": 25,
+  "result_accuracy": 0.4,
+  "ou_accuracy": 0.6,
+  "trained_at": "2026-02-19T06:02:21.241665"
 }

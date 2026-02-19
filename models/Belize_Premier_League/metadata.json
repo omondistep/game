@@ -6,40 +6,40 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "bz",
-    "match_count": 18,
+    "match_count": 21,
     "teams": {
       "Progresso": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Port Layola": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Benque": {
         "home_matches": 2,
         "away_matches": 1
       },
       "Napoles": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Verdes FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Wagiya SC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Belmopan Bandits": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       }
     }
   },
-  "example_count": 9,
-  "result_accuracy": 1.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:27.971952"
+  "example_count": 12,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-19T06:02:20.676190"
 }

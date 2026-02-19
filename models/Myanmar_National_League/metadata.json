@@ -6,7 +6,7 @@
     "league": "National League",
     "league_url_path": "",
     "country_code": "mm",
-    "match_count": 30,
+    "match_count": 32,
     "teams": {
       "Yarmanya Utd": {
         "home_matches": 2,
@@ -17,7 +17,7 @@
         "away_matches": 2
       },
       "Ayeyawady United": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Dagon FC": {
@@ -25,7 +25,7 @@
         "away_matches": 2
       },
       "Yadanarbon FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Thitsar Arman": {
@@ -34,7 +34,7 @@
       },
       "Dagon Port": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Hantharwady United": {
         "home_matches": 1,
@@ -54,12 +54,12 @@
       },
       "Shan United": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       }
     }
   },
-  "example_count": 15,
-  "result_accuracy": 0.3333333333333333,
-  "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T19:32:45.946363"
+  "example_count": 17,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.75,
+  "trained_at": "2026-02-19T06:02:42.492681"
 }

@@ -6,32 +6,48 @@
     "league": "Primera Division Women",
     "league_url_path": "",
     "country_code": "es",
-    "match_count": 9,
+    "match_count": 10,
     "teams": {
       "Atletico Madrid W": {
         "home_matches": 2,
         "away_matches": 0
       },
       "Granada W": {
-        "home_matches": 0,
-        "away_matches": 4
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Levante W": {
-        "home_matches": 2,
-        "away_matches": 0
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Madrid CFF W": {
         "home_matches": 0,
         "away_matches": 2
       },
       "Eibar W": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
+      },
+      "Deportivo de La Coruna W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Sevilla W": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Espanyol W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Logrono W": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 6,
+  "example_count": 7,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T08:10:46.296632"
+  "trained_at": "2026-02-19T06:02:29.812858"
 }

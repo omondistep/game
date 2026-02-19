@@ -8,14 +8,6 @@
     "country_code": "sa",
     "match_count": 32,
     "teams": {
-      "Shabab Riyadh": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Al Ahli": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
       "Al Hazm": {
         "home_matches": 1,
         "away_matches": 1
@@ -38,6 +30,10 @@
       },
       "Al Khaleej Club": {
         "home_matches": 1,
+        "away_matches": 1
+      },
+      "Al Ahli": {
+        "home_matches": 2,
         "away_matches": 1
       },
       "Ettifaq FC": {
@@ -79,11 +75,15 @@
       "Neom SC": {
         "home_matches": 1,
         "away_matches": 0
+      },
+      "Shabab Riyadh": {
+        "home_matches": 1,
+        "away_matches": 0
       }
     }
   },
   "example_count": 17,
   "result_accuracy": 0.5,
-  "ou_accuracy": 0.0,
-  "trained_at": "2026-02-13T19:32:53.364672"
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-19T06:02:52.843607"
 }

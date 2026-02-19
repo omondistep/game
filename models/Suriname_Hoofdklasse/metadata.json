@@ -6,19 +6,19 @@
     "league": "Hoofdklasse",
     "league_url_path": "",
     "country_code": "sr",
-    "match_count": 12,
+    "match_count": 14,
     "teams": {
       "SV Transvaal": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "SV Robinhood": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "SV Notch": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Flora": {
         "home_matches": 0,
@@ -42,12 +42,12 @@
       },
       "Inter Moengotapoe": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       }
     }
   },
-  "example_count": 6,
+  "example_count": 8,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:55.786724"
+  "trained_at": "2026-02-19T06:02:55.090905"
 }

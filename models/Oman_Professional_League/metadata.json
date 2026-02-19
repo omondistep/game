@@ -6,7 +6,7 @@
     "league": "Professional League",
     "league_url_path": "",
     "country_code": "om",
-    "match_count": 15,
+    "match_count": 17,
     "teams": {
       "Dhofar Salalah": {
         "home_matches": 1,
@@ -21,7 +21,7 @@
         "away_matches": 0
       },
       "Bahla Club": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Al Seeb SC": {
@@ -50,7 +50,7 @@
       },
       "Rustaq Club": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Al Khaburah": {
         "home_matches": 0,
@@ -58,16 +58,16 @@
       },
       "Saham Club": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Sohar Club": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       }
     }
   },
-  "example_count": 7,
+  "example_count": 9,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:49.679117"
+  "trained_at": "2026-02-19T06:02:47.898510"
 }

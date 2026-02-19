@@ -1,571 +1,466 @@
 {
   "global": {
     "weights": {
-      "league_position": 0.011681309680681795,
-      "odds_analysis": 0.37102413627073216,
-      "recent_form": 0.3733554865536535,
-      "top5_performance": 0.011681309680681795,
-      "goals_stats": 0.20889513845288704,
-      "h2h": 0.011681309680681795,
-      "shots_possession": 0.011681309680681795
+      "league_position": 0.011580723134937005,
+      "odds_analysis": 0.37274330108977854,
+      "recent_form": 0.3751777961574576,
+      "top5_performance": 0.011580723134937005,
+      "goals_stats": 0.20575601021301576,
+      "h2h": 0.011580723134937005,
+      "shots_possession": 0.011580723134937005
     },
     "correlations": {
-      "league_position": 5.3489219134688144e-17,
-      "odds_analysis": 0.31762203589578736,
-      "recent_form": 0.3196178311847154,
+      "league_position": 6.298795811148851e-17,
+      "odds_analysis": 0.32186530732720614,
+      "recent_form": 0.32396750339848135,
       "top5_performance": 0.0,
-      "goals_stats": 0.1788285253650553,
+      "goals_stats": 0.17767112451923323,
       "h2h": 0.0,
       "shots_possession": 0.0
     },
-    "league_count": 37
+    "league_count": 45
   },
   "leagues": {
-    "Pa1": {
-      "weights": {
-        "league_position": 0.018216626489121663,
-        "odds_analysis": 0.18170417058710198,
-        "recent_form": 0.1794122775104566,
-        "top5_performance": 0.018216626489121663,
-        "goals_stats": 0.5660170459459546,
-        "h2h": 0.018216626489121663,
-        "shots_possession": 0.018216626489121663
-      },
-      "correlations": {
-        "league_position": 2.012130773099731e-17,
-        "odds_analysis": 0.09974633376580971,
-        "recent_form": 0.09848820121420143,
-        "top5_performance": 0.0,
-        "goals_stats": 0.3107145257020889,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 23
-    },
-    "Ni1": {
-      "weights": {
-        "league_position": 0.015803685531958985,
-        "odds_analysis": 0.26041954163106257,
-        "recent_form": 0.24119027675789736,
-        "top5_performance": 0.015803685531958985,
-        "goals_stats": 0.43517543948320414,
-        "h2h": 0.015803685531958985,
-        "shots_possession": 0.015803685531958985
-      },
-      "correlations": {
-        "league_position": 9.085144729692148e-17,
-        "odds_analysis": 0.1647840569242089,
-        "recent_form": 0.15261647434717085,
-        "top5_performance": 0.0,
-        "goals_stats": 0.27536326169181935,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 25
-    },
-    "Co1": {
-      "weights": {
-        "league_position": 0.028366729920232318,
-        "odds_analysis": 0.31959455802385683,
-        "recent_form": 0.3565831873735601,
-        "top5_performance": 0.028366729920232318,
-        "goals_stats": 0.2103553349216537,
-        "h2h": 0.028366729920232318,
-        "shots_possession": 0.028366729920232318
-      },
-      "correlations": {
-        "league_position": 5.31874697152111e-17,
-        "odds_analysis": 0.11266528039099385,
-        "recent_form": 0.125704721120932,
-        "top5_performance": 0.0,
-        "goals_stats": 0.07415565188979349,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 39
-    },
-    "Ar1": {
-      "weights": {
-        "league_position": 0.017557671281732842,
-        "odds_analysis": 0.3488452848320406,
-        "recent_form": 0.38218300247846493,
-        "top5_performance": 0.017557671281732842,
-        "goals_stats": 0.19874102756256307,
-        "h2h": 0.017557671281732842,
-        "shots_possession": 0.017557671281732842
-      },
-      "correlations": {
-        "league_position": 9.667362232952084e-17,
-        "odds_analysis": 0.1986853946827119,
-        "recent_form": 0.21767294554380429,
-        "top5_performance": 0.0,
-        "goals_stats": 0.1131932728284616,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 41
-    },
-    "Br1": {
-      "weights": {
-        "league_position": 0.019441097940611416,
-        "odds_analysis": 0.3616799238731241,
-        "recent_form": 0.3506764514137183,
-        "top5_performance": 0.019441097940611416,
-        "goals_stats": 0.209879232950712,
-        "h2h": 0.019441097940611416,
-        "shots_possession": 0.019441097940611416
-      },
-      "correlations": {
-        "league_position": 3.808033558317022e-17,
-        "odds_analysis": 0.18603883637538499,
-        "recent_form": 0.18037893357924703,
-        "top5_performance": 0.0,
-        "goals_stats": 0.10795647117865988,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 29
-    },
-    "BrG": {
-      "weights": {
-        "league_position": 0.014606037829394628,
-        "odds_analysis": 0.4247633440548961,
-        "recent_form": 0.392889635998078,
-        "top5_performance": 0.014606037829394628,
-        "goals_stats": 0.12392286862944739,
-        "h2h": 0.014606037829394628,
-        "shots_possession": 0.014606037829394628
-      },
-      "correlations": {
-        "league_position": 5.748516918907517e-17,
-        "odds_analysis": 0.29081353137403254,
-        "recent_form": 0.2689912490897348,
-        "top5_performance": 0.0,
-        "goals_stats": 0.08484359008029735,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 26
-    },
-    "BrP": {
-      "weights": {
-        "league_position": 0.0168590032552445,
-        "odds_analysis": 0.3565737033660647,
-        "recent_form": 0.3488918745978436,
-        "top5_performance": 0.0168590032552445,
-        "goals_stats": 0.22709840901511358,
-        "h2h": 0.0168590032552445,
-        "shots_possession": 0.0168590032552445
-      },
-      "correlations": {
-        "league_position": 1.389236019425055e-16,
-        "odds_analysis": 0.2115034311148506,
-        "recent_form": 0.20694691691770703,
-        "top5_performance": 0.0,
-        "goals_stats": 0.13470452883652406,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 109
-    },
-    "BrC": {
-      "weights": {
-        "league_position": 0.033723206690593824,
-        "odds_analysis": 0.3969688381817223,
-        "recent_form": 0.3986431639831919,
-        "top5_performance": 0.033723206690593824,
-        "goals_stats": 0.0694951710727104,
-        "h2h": 0.033723206690593824,
-        "shots_possession": 0.033723206690593824
-      },
-      "correlations": {
-        "league_position": 7.519283590324202e-17,
-        "odds_analysis": 0.11771384667652202,
-        "recent_form": 0.11821033736224812,
-        "top5_performance": 0.0,
-        "goals_stats": 0.02060752161273388,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 67
-    },
-    "BrA": {
-      "weights": {
-        "league_position": 0.00710680688970015,
-        "odds_analysis": 0.36249267080142883,
-        "recent_form": 0.35927089115059013,
-        "top5_performance": 0.00710680688970015,
-        "goals_stats": 0.24980921048918053,
-        "h2h": 0.00710680688970015,
-        "shots_possession": 0.00710680688970015
-      },
-      "correlations": {
-        "league_position": 3.254121315524323e-17,
-        "odds_analysis": 0.5100640504623632,
-        "recent_form": 0.5055306788640608,
-        "top5_performance": 0.0,
-        "goals_stats": 0.35150696278412663,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 20
-    },
-    "BrM": {
-      "weights": {
-        "league_position": 0.03322364363385588,
-        "odds_analysis": 0.3880105999506698,
-        "recent_form": 0.22719012131114902,
-        "top5_performance": 0.03322364363385588,
-        "goals_stats": 0.2519047042027576,
-        "h2h": 0.03322364363385588,
-        "shots_possession": 0.03322364363385588
-      },
-      "correlations": {
-        "league_position": 8.804612490751582e-17,
-        "odds_analysis": 0.11678749153066265,
-        "recent_form": 0.06838206062372867,
-        "top5_performance": 0.0,
-        "goals_stats": 0.0758209144604655,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 46
-    },
-    "Hn1": {
-      "weights": {
-        "league_position": 0.008926057937178128,
-        "odds_analysis": 0.4009218296631876,
-        "recent_form": 0.38388843224200947,
-        "top5_performance": 0.008926057937178128,
-        "goals_stats": 0.17948550634609028,
-        "h2h": 0.008926057937178128,
-        "shots_possession": 0.008926057937178128
-      },
-      "correlations": {
-        "league_position": 0.0,
-        "odds_analysis": 0.44915889240792284,
-        "recent_form": 0.4300761152838444,
-        "top5_performance": 0.0,
-        "goals_stats": 0.20108037345188082,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 25
-    },
-    "BrR": {
-      "weights": {
-        "league_position": 0.006441749861406443,
-        "odds_analysis": 0.47032256928930194,
-        "recent_form": 0.48075174293739426,
-        "top5_performance": 0.006441749861406443,
-        "goals_stats": 0.023158688327677937,
-        "h2h": 0.006441749861406443,
-        "shots_possession": 0.006441749861406443
-      },
-      "correlations": {
-        "league_position": 3.7238012298709096e-17,
-        "odds_analysis": 0.7301161631672164,
-        "recent_form": 0.7463061330860659,
-        "top5_performance": 0.0,
-        "goals_stats": 0.03595092766086022,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 21
-    },
-    "Cr2": {
-      "weights": {
-        "league_position": 0.012005125658325153,
-        "odds_analysis": 0.3667077806524395,
-        "recent_form": 0.38285495895170873,
-        "top5_performance": 0.012005125658325153,
-        "goals_stats": 0.2024167577625511,
-        "h2h": 0.012005125658325153,
-        "shots_possession": 0.012005125658325153
-      },
-      "correlations": {
-        "league_position": 1.3365514593496241e-17,
-        "odds_analysis": 0.3054593438579628,
-        "recent_form": 0.3189095806641654,
-        "top5_performance": 0.0,
-        "goals_stats": 0.1686086122906859,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 20
-    },
-    "Il3": {
-      "weights": {
-        "league_position": 0.04902877583437392,
-        "odds_analysis": 0.09999535818546226,
-        "recent_form": 0.27116285969110215,
-        "top5_performance": 0.04902877583437392,
-        "goals_stats": 0.43272667878593973,
-        "h2h": 0.04902877583437392,
-        "shots_possession": 0.04902877583437392
-      },
-      "correlations": {
-        "league_position": 7.551938938736693e-17,
-        "odds_analysis": 0.020395238609110005,
-        "recent_form": 0.05530687949605927,
-        "top5_performance": 0.0,
-        "goals_stats": 0.08825973551690361,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 42
-    },
-    "PtU": {
-      "weights": {
-        "league_position": 0.013619312951561643,
-        "odds_analysis": 0.32834507046005607,
-        "recent_form": 0.3438986686770252,
-        "top5_performance": 0.013619312951561643,
-        "goals_stats": 0.27327900905667224,
-        "h2h": 0.013619312951561643,
-        "shots_possession": 0.013619312951561643
-      },
-      "correlations": {
-        "league_position": 4.874512348859843e-17,
-        "odds_analysis": 0.2410878372703865,
-        "recent_form": 0.25250808899107674,
-        "top5_performance": 0.0,
-        "goals_stats": 0.2006555029821361,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 21
-    },
-    "Sy1": {
-      "weights": {
-        "league_position": 0.007065082896362222,
-        "odds_analysis": 0.3722414139279625,
-        "recent_form": 0.3659537250324676,
-        "top5_performance": 0.007065082896362222,
-        "goals_stats": 0.23354452945412094,
-        "h2h": 0.007065082896362222,
-        "shots_possession": 0.007065082896362222
-      },
-      "correlations": {
-        "league_position": 5.012280794708171e-17,
-        "odds_analysis": 0.5268748001805158,
-        "recent_form": 0.5179751326355923,
-        "top5_performance": 0.0,
-        "goals_stats": 0.33056162663621674,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 21
-    },
-    "Iq1": {
-      "weights": {
-        "league_position": 0.006357027094233226,
-        "odds_analysis": 0.3869041388517922,
-        "recent_form": 0.3867629666725507,
-        "top5_performance": 0.006357027094233226,
-        "goals_stats": 0.20090478609872417,
-        "h2h": 0.006357027094233226,
-        "shots_possession": 0.006357027094233226
-      },
-      "correlations": {
-        "league_position": 0.0,
-        "odds_analysis": 0.6086243351121975,
-        "recent_form": 0.6084022624717182,
-        "top5_performance": 0.0,
-        "goals_stats": 0.31603575558294356,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 22
-    },
-    "Eg2": {
-      "weights": {
-        "league_position": 0.010465746735333958,
-        "odds_analysis": 0.2899201773966409,
-        "recent_form": 0.30837784867904566,
-        "top5_performance": 0.010465746735333958,
-        "goals_stats": 0.3598389869829775,
-        "h2h": 0.010465746735333958,
-        "shots_possession": 0.010465746735333958
-      },
-      "correlations": {
-        "league_position": 8.308148362110448e-17,
-        "odds_analysis": 0.27701814760892896,
-        "recent_form": 0.2946544154732074,
-        "top5_performance": 0.0,
-        "goals_stats": 0.34382542983589137,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 27
-    },
-    "Sa2": {
-      "weights": {
-        "league_position": 0.00641233933695723,
-        "odds_analysis": 0.447540211312466,
-        "recent_form": 0.4625806694550442,
-        "top5_performance": 0.00641233933695723,
-        "goals_stats": 0.06422976188466079,
-        "h2h": 0.00641233933695723,
-        "shots_possession": 0.00641233933695723
-      },
-      "correlations": {
-        "league_position": 5.63993860503722e-17,
-        "odds_analysis": 0.6979359447387448,
-        "recent_form": 0.7213914378937829,
-        "top5_performance": 0.0,
-        "goals_stats": 0.10016588098274125,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 27
-    },
     "Py1": {
       "weights": {
-        "league_position": 0.01048221277494431,
-        "odds_analysis": 0.39010269137825226,
-        "recent_form": 0.4235210548097676,
-        "top5_performance": 0.01048221277494431,
-        "goals_stats": 0.14444740271220288,
-        "h2h": 0.01048221277494431,
-        "shots_possession": 0.01048221277494431
+        "league_position": 0.014557022877697846,
+        "odds_analysis": 0.44799859293860717,
+        "recent_form": 0.47540490196264,
+        "top5_performance": 0.014557022877697846,
+        "goals_stats": 0.018368413587961447,
+        "h2h": 0.014557022877697846,
+        "shots_possession": 0.014557022877697846
       },
       "correlations": {
-        "league_position": 7.435992784001055e-17,
-        "odds_analysis": 0.37215681436148373,
-        "recent_form": 0.4040378342844865,
+        "league_position": 1.9040167791585107e-17,
+        "odds_analysis": 0.30775426864579947,
+        "recent_form": 0.32658113266482963,
         "top5_performance": 0.0,
-        "goals_stats": 0.13780239517506868,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 22
-    },
-    "BrS": {
-      "weights": {
-        "league_position": 0.00806955569656842,
-        "odds_analysis": 0.23772889569003325,
-        "recent_form": 0.24188930652714313,
-        "top5_performance": 0.00806955569656842,
-        "goals_stats": 0.4881035749965498,
-        "h2h": 0.00806955569656842,
-        "shots_possession": 0.00806955569656842
-      },
-      "correlations": {
-        "league_position": 0.0,
-        "odds_analysis": 0.29459973340431556,
-        "recent_form": 0.29975542102027575,
-        "top5_performance": 0.0,
-        "goals_stats": 0.6048704455985302,
+        "goals_stats": 0.012618248760261866,
         "h2h": 0.0,
         "shots_possession": 0.0
       },
       "example_count": 28
     },
+    "Ni1": {
+      "weights": {
+        "league_position": 0.01659503970785521,
+        "odds_analysis": 0.3197950798554069,
+        "recent_form": 0.29600869946266883,
+        "top5_performance": 0.01659503970785521,
+        "goals_stats": 0.3178160618505033,
+        "h2h": 0.01659503970785521,
+        "shots_possession": 0.01659503970785521
+      },
+      "correlations": {
+        "league_position": 7.35061690273369e-17,
+        "odds_analysis": 0.19270522124995756,
+        "recent_form": 0.17837179342364218,
+        "top5_performance": 0.0,
+        "goals_stats": 0.19151268538397417,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 30
+    },
+    "BrG": {
+      "weights": {
+        "league_position": 0.0159573901596138,
+        "odds_analysis": 0.4076270291084119,
+        "recent_form": 0.3948570888214905,
+        "top5_performance": 0.0159573901596138,
+        "goals_stats": 0.13368632143164225,
+        "h2h": 0.0159573901596138,
+        "shots_possession": 0.0159573901596138
+      },
+      "correlations": {
+        "league_position": 1.454380055087246e-16,
+        "odds_analysis": 0.2554471784114586,
+        "recent_form": 0.24744465408937955,
+        "top5_performance": 0.0,
+        "goals_stats": 0.0837770588388482,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 30
+    },
+    "BrM": {
+      "weights": {
+        "league_position": 0.029226576867663473,
+        "odds_analysis": 0.11225556785364306,
+        "recent_form": 0.2331894988100053,
+        "top5_performance": 0.029226576867663473,
+        "goals_stats": 0.5376486258656977,
+        "h2h": 0.029226576867663473,
+        "shots_possession": 0.029226576867663473
+      },
+      "correlations": {
+        "league_position": 5.792467954566033e-17,
+        "odds_analysis": 0.03840872927470461,
+        "recent_form": 0.07978679811387973,
+        "top5_performance": 0.0,
+        "goals_stats": 0.1839588085529635,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 53
+    },
+    "BrS": {
+      "weights": {
+        "league_position": 0.008767938734060761,
+        "odds_analysis": 0.24323304202619608,
+        "recent_form": 0.2458730306674475,
+        "top5_performance": 0.008767938734060761,
+        "goals_stats": 0.4758221723701133,
+        "h2h": 0.008767938734060761,
+        "shots_possession": 0.008767938734060761
+      },
+      "correlations": {
+        "league_position": 4.070959112159983e-17,
+        "odds_analysis": 0.2774118859673484,
+        "recent_form": 0.2804228429565845,
+        "top5_performance": 0.0,
+        "goals_stats": 0.542684189297183,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 30
+    },
     "Gt2": {
       "weights": {
-        "league_position": 0.05163096395356248,
-        "odds_analysis": 0.31861383246132335,
-        "recent_form": 0.26448853527173877,
-        "top5_performance": 0.05163096395356248,
-        "goals_stats": 0.21037377645268793,
-        "h2h": 0.05163096395356248,
-        "shots_possession": 0.05163096395356248
+        "league_position": 0.06342580285678394,
+        "odds_analysis": 0.09528000061656759,
+        "recent_form": 0.09511289727276108,
+        "top5_performance": 0.06342580285678394,
+        "goals_stats": 0.5559038906835354,
+        "h2h": 0.06342580285678394,
+        "shots_possession": 0.06342580285678394
       },
       "correlations": {
-        "league_position": 2.122060448313555e-17,
-        "odds_analysis": 0.06170983612622234,
-        "recent_form": 0.05122672811408731,
+        "league_position": 1.2354892310876438e-17,
+        "odds_analysis": 0.015022277421022282,
+        "recent_form": 0.014995931149271677,
         "top5_performance": 0.0,
-        "goals_stats": 0.04074566119700974,
+        "goals_stats": 0.08764633093234495,
         "h2h": 0.0,
         "shots_possession": 0.0
       },
-      "example_count": 41
+      "example_count": 47
     },
-    "Mx3": {
+    "BrP": {
       "weights": {
-        "league_position": 0.012541089889541985,
-        "odds_analysis": 0.41484540140562265,
-        "recent_form": 0.435542650337527,
-        "top5_performance": 0.012541089889541985,
-        "goals_stats": 0.09944758869868228,
-        "h2h": 0.012541089889541985,
-        "shots_possession": 0.012541089889541985
-      },
-      "correlations": {
-        "league_position": 1.499738713040546e-16,
-        "odds_analysis": 0.33078895459601343,
-        "recent_form": 0.3472925034216731,
-        "top5_performance": 0.0,
-        "goals_stats": 0.07929740522919912,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 51
-    },
-    "MxW": {
-      "weights": {
-        "league_position": 0.007852581020957896,
-        "odds_analysis": 0.49191892907953433,
-        "recent_form": 0.46032394109492736,
-        "top5_performance": 0.007852581020957896,
-        "goals_stats": 0.016346805741706553,
-        "h2h": 0.007852581020957896,
-        "shots_possession": 0.007852581020957896
+        "league_position": 0.015610037646590913,
+        "odds_analysis": 0.33543013371825897,
+        "recent_form": 0.3264228546950579,
+        "top5_performance": 0.015610037646590913,
+        "goals_stats": 0.27570686100031955,
+        "h2h": 0.015610037646590913,
+        "shots_possession": 0.015610037646590913
       },
       "correlations": {
         "league_position": 0.0,
-        "odds_analysis": 0.626442347766477,
-        "recent_form": 0.5862071844484769,
+        "odds_analysis": 0.21488105366069618,
+        "recent_form": 0.20911086961173703,
         "top5_performance": 0.0,
-        "goals_stats": 0.02081711184905736,
+        "goals_stats": 0.17662152215278695,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 125
+    },
+    "Co1": {
+      "weights": {
+        "league_position": 0.021178443931432034,
+        "odds_analysis": 0.21575322978214326,
+        "recent_form": 0.2539094982683308,
+        "top5_performance": 0.021178443931432034,
+        "goals_stats": 0.44562349622379765,
+        "h2h": 0.021178443931432034,
+        "shots_possession": 0.021178443931432034
+      },
+      "correlations": {
+        "league_position": 1.607163321041947e-16,
+        "odds_analysis": 0.10187397642653653,
+        "recent_form": 0.11989053543801229,
+        "top5_performance": 0.0,
+        "goals_stats": 0.2104137101226897,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 46
+    },
+    "Mx3": {
+      "weights": {
+        "league_position": 0.014086343252509813,
+        "odds_analysis": 0.39643586576767414,
+        "recent_form": 0.4034734670341319,
+        "top5_performance": 0.014086343252509813,
+        "goals_stats": 0.14374529418815468,
+        "h2h": 0.014086343252509813,
+        "shots_possession": 0.014086343252509813
+      },
+      "correlations": {
+        "league_position": 1.7341648194577222e-16,
+        "odds_analysis": 0.28143277404307165,
+        "recent_form": 0.2864288196031597,
+        "top5_performance": 0.0,
+        "goals_stats": 0.10204585506074693,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 71
+    },
+    "BrR": {
+      "weights": {
+        "league_position": 0.005822000427006469,
+        "odds_analysis": 0.44209533336053775,
+        "recent_form": 0.46305935750287985,
+        "top5_performance": 0.005822000427006469,
+        "goals_stats": 0.07155730742855651,
+        "h2h": 0.005822000427006469,
+        "shots_possession": 0.005822000427006469
+      },
+      "correlations": {
+        "league_position": 1.306652324990227e-16,
+        "odds_analysis": 0.7593529730945974,
+        "recent_form": 0.7953612565105457,
+        "top5_performance": 0.0,
+        "goals_stats": 0.12290845444913433,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 27
+    },
+    "Co2": {
+      "weights": {
+        "league_position": 0.009867789824010107,
+        "odds_analysis": 0.37905410845833504,
+        "recent_form": 0.36558750468129136,
+        "top5_performance": 0.009867789824010107,
+        "goals_stats": 0.2158872275643331,
+        "h2h": 0.009867789824010107,
+        "shots_possession": 0.009867789824010107
+      },
+      "correlations": {
+        "league_position": 0.0,
+        "odds_analysis": 0.3841327340961684,
+        "recent_form": 0.370485702676552,
+        "top5_performance": 0.0,
+        "goals_stats": 0.2187797180672015,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 22
+    },
+    "BrC": {
+      "weights": {
+        "league_position": 0.03918849249394531,
+        "odds_analysis": 0.41605353584104315,
+        "recent_form": 0.38531093719508386,
+        "top5_performance": 0.03918849249394531,
+        "goals_stats": 0.04188155698809185,
+        "h2h": 0.03918849249394531,
+        "shots_possession": 0.03918849249394531
+      },
+      "correlations": {
+        "league_position": 7.887878748374643e-17,
+        "odds_analysis": 0.10616727242195505,
+        "recent_form": 0.09832246985632712,
+        "top5_performance": 0.0,
+        "goals_stats": 0.010687207984477236,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 72
+    },
+    "Ar1": {
+      "weights": {
+        "league_position": 0.019248781031580477,
+        "odds_analysis": 0.3234461779894368,
+        "recent_form": 0.36233962559975674,
+        "top5_performance": 0.019248781031580477,
+        "goals_stats": 0.23721907228448455,
+        "h2h": 0.019248781031580477,
+        "shots_possession": 0.019248781031580477
+      },
+      "correlations": {
+        "league_position": 1.610044697707489e-16,
+        "odds_analysis": 0.1680346290285995,
+        "recent_form": 0.1882402968818051,
+        "top5_performance": 0.0,
+        "goals_stats": 0.12323849073626612,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 52
+    },
+    "MxW": {
+      "weights": {
+        "league_position": 0.007760355174049055,
+        "odds_analysis": 0.4850666393270524,
+        "recent_form": 0.4607291920325863,
+        "top5_performance": 0.007760355174049055,
+        "goals_stats": 0.023162747944164966,
+        "h2h": 0.007760355174049055,
+        "shots_possession": 0.007760355174049055
+      },
+      "correlations": {
+        "league_position": 5.2155632658453e-17,
+        "odds_analysis": 0.6250572666430722,
+        "recent_form": 0.5936960122305788,
+        "top5_performance": 0.0,
+        "goals_stats": 0.029847535872613337,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 42
+    },
+    "Mx2": {
+      "weights": {
+        "league_position": 0.025054687685756704,
+        "odds_analysis": 0.025054687685756704,
+        "recent_form": 0.025054687685756704,
+        "top5_performance": 0.025054687685756704,
+        "goals_stats": 0.8496718738854598,
+        "h2h": 0.025054687685756704,
+        "shots_possession": 0.025054687685756704
+      },
+      "correlations": {
+        "league_position": 2.581216101833912e-17,
+        "odds_analysis": 0.008642666146229737,
+        "recent_form": 0.007349540298464911,
+        "top5_performance": 0.0,
+        "goals_stats": 0.3391269069254806,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 23
+    },
+    "Sv1": {
+      "weights": {
+        "league_position": 0.009202577023828078,
+        "odds_analysis": 0.4810046190258464,
+        "recent_form": 0.4703557096861424,
+        "top5_performance": 0.009202577023828078,
+        "goals_stats": 0.011829363192699076,
+        "h2h": 0.009202577023828078,
+        "shots_possession": 0.009202577023828078
+      },
+      "correlations": {
+        "league_position": 0.0,
+        "odds_analysis": 0.5226846977541065,
+        "recent_form": 0.5111130376504953,
+        "top5_performance": 0.0,
+        "goals_stats": 0.012854402807028407,
         "h2h": 0.0,
         "shots_possession": 0.0
       },
       "example_count": 32
     },
-    "Sv1": {
+    "BrA": {
       "weights": {
-        "league_position": 0.009325240826404508,
-        "odds_analysis": 0.45155459783510427,
-        "recent_form": 0.43012802156067953,
-        "top5_performance": 0.009325240826404508,
-        "goals_stats": 0.08101641729859822,
-        "h2h": 0.009325240826404508,
-        "shots_possession": 0.009325240826404508
+        "league_position": 0.008414257286042441,
+        "odds_analysis": 0.3623042777126589,
+        "recent_form": 0.3374967372421942,
+        "top5_performance": 0.008414257286042441,
+        "goals_stats": 0.2665419559009772,
+        "h2h": 0.008414257286042441,
+        "shots_possession": 0.008414257286042441
       },
       "correlations": {
-        "league_position": 1.0000386055054487e-17,
-        "odds_analysis": 0.4842283499601674,
-        "recent_form": 0.4612513816723831,
+        "league_position": 4.874512348859842e-17,
+        "odds_analysis": 0.4305837882015431,
+        "recent_form": 0.40110104287164283,
         "top5_performance": 0.0,
-        "goals_stats": 0.08687863274179415,
+        "goals_stats": 0.3167741927063683,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 21
+    },
+    "Hn1": {
+      "weights": {
+        "league_position": 0.010801824816385417,
+        "odds_analysis": 0.40145132920282256,
+        "recent_form": 0.3820094186055312,
+        "top5_performance": 0.010801824816385417,
+        "goals_stats": 0.17333195292610443,
+        "h2h": 0.010801824816385417,
+        "shots_possession": 0.010801824816385417
+      },
+      "correlations": {
+        "league_position": 5.687844857089175e-17,
+        "odds_analysis": 0.3716513978210943,
+        "recent_form": 0.35365266989523525,
+        "top5_performance": 0.0,
+        "goals_stats": 0.1604654360466716,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 30
+    },
+    "Pa1": {
+      "weights": {
+        "league_position": 0.018216626489121663,
+        "odds_analysis": 0.181704170587102,
+        "recent_form": 0.1794122775104566,
+        "top5_performance": 0.018216626489121663,
+        "goals_stats": 0.5660170459459548,
+        "h2h": 0.018216626489121663,
+        "shots_possession": 0.018216626489121663
+      },
+      "correlations": {
+        "league_position": 1.3414205153998207e-17,
+        "odds_analysis": 0.09974633376580973,
+        "recent_form": 0.09848820121420143,
+        "top5_performance": 0.0,
+        "goals_stats": 0.310714525702089,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 23
+    },
+    "Gt1": {
+      "weights": {
+        "league_position": 0.015245473100510424,
+        "odds_analysis": 0.22317632630490478,
+        "recent_form": 0.24913513144835894,
+        "top5_performance": 0.015245473100510424,
+        "goals_stats": 0.4667066498446946,
+        "h2h": 0.015245473100510424,
+        "shots_possession": 0.015245473100510424
+      },
+      "correlations": {
+        "league_position": 1.1047131989294512e-17,
+        "odds_analysis": 0.14638858685036987,
+        "recent_form": 0.16341580861798105,
+        "top5_performance": 0.0,
+        "goals_stats": 0.306128020277094,
         "h2h": 0.0,
         "shots_possession": 0.0
       },
       "example_count": 26
     },
-    "Gt1": {
+    "Cr2": {
       "weights": {
-        "league_position": 0.018285422863088912,
-        "odds_analysis": 0.20611347497605653,
-        "recent_form": 0.2324944041817796,
-        "top5_performance": 0.018285422863088912,
-        "goals_stats": 0.48825042938980817,
-        "h2h": 0.018285422863088912,
-        "shots_possession": 0.018285422863088912
+        "league_position": 0.01105329800180397,
+        "odds_analysis": 0.40282036560718415,
+        "recent_form": 0.4177252210151605,
+        "top5_performance": 0.01105329800180397,
+        "goals_stats": 0.13524122137043945,
+        "h2h": 0.01105329800180397,
+        "shots_possession": 0.01105329800180397
       },
       "correlations": {
-        "league_position": 1.2652165588504564e-16,
-        "odds_analysis": 0.1127201030675198,
-        "recent_form": 0.12714740365731136,
+        "league_position": 3.591552828589199e-17,
+        "odds_analysis": 0.36443454753634735,
+        "recent_form": 0.37791907985018147,
         "top5_performance": 0.0,
-        "goals_stats": 0.2670162090565562,
+        "goals_stats": 0.12235372768233267,
         "h2h": 0.0,
         "shots_possession": 0.0
       },
-      "example_count": 21
+      "example_count": 23
     },
     "InT": {
       "weights": {
@@ -590,66 +485,66 @@
     },
     "Th3": {
       "weights": {
-        "league_position": 0.011164431894121234,
-        "odds_analysis": 0.4387484904194338,
-        "recent_form": 0.43801035084178475,
-        "top5_performance": 0.011164431894121234,
-        "goals_stats": 0.07858343116229642,
-        "h2h": 0.011164431894121234,
-        "shots_possession": 0.011164431894121234
-      },
-      "correlations": {
-        "league_position": 7.018548275246443e-17,
-        "odds_analysis": 0.39298774409691384,
-        "recent_form": 0.39232659126383707,
-        "top5_performance": 0.0,
-        "goals_stats": 0.07038730846992355,
-        "h2h": 0.0,
-        "shots_possession": 0.0
-      },
-      "example_count": 56
-    },
-    "Es5": {
-      "weights": {
-        "league_position": 0.011375637562940567,
-        "odds_analysis": 0.436855820882181,
-        "recent_form": 0.43797943343780743,
-        "top5_performance": 0.011375637562940567,
-        "goals_stats": 0.07966219542824923,
-        "h2h": 0.011375637562940567,
-        "shots_possession": 0.011375637562940567
+        "league_position": 0.011715176877258517,
+        "odds_analysis": 0.44890865222789933,
+        "recent_form": 0.4535807975923176,
+        "top5_performance": 0.011715176877258517,
+        "goals_stats": 0.050649842670749,
+        "h2h": 0.011715176877258517,
+        "shots_possession": 0.011715176877258517
       },
       "correlations": {
         "league_position": 0.0,
-        "odds_analysis": 0.38402754875503886,
-        "recent_form": 0.38501528465063994,
+        "odds_analysis": 0.3831855523234311,
+        "recent_form": 0.38717366570265616,
         "top5_performance": 0.0,
-        "goals_stats": 0.07002877420055285,
+        "goals_stats": 0.04323438152186195,
         "h2h": 0.0,
         "shots_possession": 0.0
       },
-      "example_count": 31
+      "example_count": 67
+    },
+    "Es5": {
+      "weights": {
+        "league_position": 0.011756987325693866,
+        "odds_analysis": 0.452057470169803,
+        "recent_form": 0.46378741482782554,
+        "top5_performance": 0.011756987325693866,
+        "goals_stats": 0.03712716569959594,
+        "h2h": 0.011756987325693866,
+        "shots_possession": 0.011756987325693866
+      },
+      "correlations": {
+        "league_position": 9.933315782788164e-17,
+        "odds_analysis": 0.3845011121019677,
+        "recent_form": 0.3944781107437777,
+        "top5_performance": 0.0,
+        "goals_stats": 0.03157880898489852,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 44
     },
     "Tr4": {
       "weights": {
-        "league_position": 0.010891842391036223,
-        "odds_analysis": 0.39549723649557633,
-        "recent_form": 0.41591872768591265,
-        "top5_performance": 0.010891842391036223,
-        "goals_stats": 0.145016666254366,
-        "h2h": 0.010891842391036223,
-        "shots_possession": 0.010891842391036223
+        "league_position": 0.010620442386432808,
+        "odds_analysis": 0.39640843101251844,
+        "recent_form": 0.4073219192658394,
+        "top5_performance": 0.010620442386432808,
+        "goals_stats": 0.153787880175911,
+        "h2h": 0.010620442386432808,
+        "shots_possession": 0.010620442386432808
       },
       "correlations": {
-        "league_position": 6.60496473796154e-17,
-        "odds_analysis": 0.36311325696473806,
-        "recent_form": 0.3818626020775014,
+        "league_position": 8.904072272690043e-17,
+        "odds_analysis": 0.3732503944646547,
+        "recent_form": 0.38352632069844556,
         "top5_performance": 0.0,
-        "goals_stats": 0.13314245749067385,
+        "goals_stats": 0.14480364807813362,
         "h2h": 0.0,
         "shots_possession": 0.0
       },
-      "example_count": 41
+      "example_count": 46
     },
     "Et1": {
       "weights": {
@@ -674,62 +569,83 @@
     },
     "Sd1": {
       "weights": {
-        "league_position": 0.01475009678357179,
-        "odds_analysis": 0.3903958206666276,
-        "recent_form": 0.29853162684313034,
-        "top5_performance": 0.01475009678357179,
-        "goals_stats": 0.2520721653559548,
-        "h2h": 0.01475009678357179,
-        "shots_possession": 0.01475009678357179
+        "league_position": 0.015986774857648007,
+        "odds_analysis": 0.47558066648053626,
+        "recent_form": 0.4089788407599255,
+        "top5_performance": 0.015986774857648007,
+        "goals_stats": 0.051493393328946174,
+        "h2h": 0.015986774857648007,
+        "shots_possession": 0.015986774857648007
       },
       "correlations": {
-        "league_position": 5.9410260008499e-17,
-        "odds_analysis": 0.2646733959748919,
-        "recent_form": 0.20239299526198756,
+        "league_position": 4.965068306494545e-17,
+        "odds_analysis": 0.2974838081572284,
+        "recent_form": 0.2558232316409158,
         "top5_performance": 0.0,
-        "goals_stats": 0.1708952619461488,
+        "goals_stats": 0.03220999469090036,
         "h2h": 0.0,
         "shots_possession": 0.0
       },
-      "example_count": 41
+      "example_count": 47
     },
     "Ir2": {
       "weights": {
-        "league_position": 0.009458426834720788,
-        "odds_analysis": 0.44318626712109427,
-        "recent_form": 0.4877599308122442,
-        "top5_performance": 0.009458426834720788,
-        "goals_stats": 0.0312200947277784,
-        "h2h": 0.009458426834720788,
-        "shots_possession": 0.009458426834720788
+        "league_position": 0.010219551972274431,
+        "odds_analysis": 0.44185730163695397,
+        "recent_form": 0.4926950500402687,
+        "top5_performance": 0.010219551972274431,
+        "goals_stats": 0.024569440433679493,
+        "h2h": 0.010219551972274431,
+        "shots_possession": 0.010219551972274431
       },
       "correlations": {
-        "league_position": 0.0,
-        "odds_analysis": 0.468562346429756,
-        "recent_form": 0.5156882210281885,
+        "league_position": 1.3476925932224237e-16,
+        "odds_analysis": 0.4323646504618887,
+        "recent_form": 0.48211022496577804,
         "top5_performance": 0.0,
-        "goals_stats": 0.03300770336687815,
+        "goals_stats": 0.024041602313228803,
         "h2h": 0.0,
         "shots_possession": 0.0
       },
-      "example_count": 23
+      "example_count": 24
     },
     "ItP": {
       "weights": {
-        "league_position": 0.014128627341694346,
-        "odds_analysis": 0.291679633311074,
-        "recent_form": 0.34518094745453803,
-        "top5_performance": 0.014128627341694346,
-        "goals_stats": 0.30662490986761054,
-        "h2h": 0.014128627341694346,
-        "shots_possession": 0.014128627341694346
+        "league_position": 0.01852955093089539,
+        "odds_analysis": 0.2668280153752013,
+        "recent_form": 0.33371452270966795,
+        "top5_performance": 0.01852955093089539,
+        "goals_stats": 0.32533925819154913,
+        "h2h": 0.01852955093089539,
+        "shots_possession": 0.01852955093089539
       },
       "correlations": {
-        "league_position": 6.69489673871845e-17,
-        "odds_analysis": 0.206445839540485,
-        "recent_form": 0.24431315166469875,
+        "league_position": 0.0,
+        "odds_analysis": 0.14400133946597893,
+        "recent_form": 0.18009854850461943,
         "top5_performance": 0.0,
-        "goals_stats": 0.2170238498419049,
+        "goals_stats": 0.17557859842630735,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 33
+    },
+    "Sa2": {
+      "weights": {
+        "league_position": 0.00641233933695723,
+        "odds_analysis": 0.447540211312466,
+        "recent_form": 0.46258066945504417,
+        "top5_performance": 0.00641233933695723,
+        "goals_stats": 0.0642297618846608,
+        "h2h": 0.00641233933695723,
+        "shots_possession": 0.00641233933695723
+      },
+      "correlations": {
+        "league_position": 5.63993860503722e-17,
+        "odds_analysis": 0.6979359447387448,
+        "recent_form": 0.7213914378937828,
+        "top5_performance": 0.0,
+        "goals_stats": 0.10016588098274128,
         "h2h": 0.0,
         "shots_possession": 0.0
       },
@@ -758,45 +674,297 @@
     },
     "CD1": {
       "weights": {
-        "league_position": 0.009175745529129985,
-        "odds_analysis": 0.2250190587111389,
-        "recent_form": 0.264077614733037,
-        "top5_performance": 0.009175745529129985,
-        "goals_stats": 0.47420034443930403,
-        "h2h": 0.009175745529129985,
-        "shots_possession": 0.009175745529129985
+        "league_position": 0.008751172067563671,
+        "odds_analysis": 0.24702235650230836,
+        "recent_form": 0.27884302652553683,
+        "top5_performance": 0.008751172067563671,
+        "goals_stats": 0.4391299287019002,
+        "h2h": 0.008751172067563671,
+        "shots_possession": 0.008751172067563671
+      },
+      "correlations": {
+        "league_position": 1.019804966632889e-16,
+        "odds_analysis": 0.2822734538815661,
+        "recent_form": 0.3186350632494955,
+        "top5_performance": 0.0,
+        "goals_stats": 0.5017955598536804,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 25
+    },
+    "Iq1": {
+      "weights": {
+        "league_position": 0.006357027094233226,
+        "odds_analysis": 0.3869041388517922,
+        "recent_form": 0.3867629666725507,
+        "top5_performance": 0.006357027094233226,
+        "goals_stats": 0.20090478609872417,
+        "h2h": 0.006357027094233226,
+        "shots_possession": 0.006357027094233226
       },
       "correlations": {
         "league_position": 0.0,
-        "odds_analysis": 0.24523245331594815,
-        "recent_form": 0.2877996277192705,
+        "odds_analysis": 0.6086243351121975,
+        "recent_form": 0.6084022624717182,
         "top5_performance": 0.0,
-        "goals_stats": 0.5167976192603352,
+        "goals_stats": 0.31603575558294356,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 22
+    },
+    "PtU": {
+      "weights": {
+        "league_position": 0.018044178208069594,
+        "odds_analysis": 0.3232985538477049,
+        "recent_form": 0.2003777468061148,
+        "top5_performance": 0.018044178208069594,
+        "goals_stats": 0.4041469865139018,
+        "h2h": 0.018044178208069594,
+        "shots_possession": 0.018044178208069594
+      },
+      "correlations": {
+        "league_position": 8.586344871070251e-17,
+        "odds_analysis": 0.17917056134101,
+        "recent_form": 0.11104841932701776,
+        "top5_performance": 0.0,
+        "goals_stats": 0.22397638831407793,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 23
+    },
+    "Tr3": {
+      "weights": {
+        "league_position": 0.008382604598931172,
+        "odds_analysis": 0.38815936253961175,
+        "recent_form": 0.3643969991303225,
+        "top5_performance": 0.008382604598931172,
+        "goals_stats": 0.2139132199343411,
+        "h2h": 0.008382604598931172,
+        "shots_possession": 0.008382604598931172
+      },
+      "correlations": {
+        "league_position": 1.0051486980801997e-17,
+        "odds_analysis": 0.46305340775479764,
+        "recent_form": 0.4347061761409874,
+        "top5_performance": 0.0,
+        "goals_stats": 0.2551870572084674,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 27
+    },
+    "Dz2": {
+      "weights": {
+        "league_position": 0.007036132070286064,
+        "odds_analysis": 0.4173349351146201,
+        "recent_form": 0.4475476546693353,
+        "top5_performance": 0.007036132070286064,
+        "goals_stats": 0.1069728819349003,
+        "h2h": 0.007036132070286064,
+        "shots_possession": 0.007036132070286064
+      },
+      "correlations": {
+        "league_position": 1.1961444685128065e-16,
+        "odds_analysis": 0.5931311847841036,
+        "recent_form": 0.6360705714427268,
+        "top5_performance": 0.0,
+        "goals_stats": 0.15203364699001615,
         "h2h": 0.0,
         "shots_possession": 0.0
       },
       "example_count": 24
     },
-    "Tr3": {
+    "Il3": {
       "weights": {
-        "league_position": 0.007482716869831931,
-        "odds_analysis": 0.3885529623347892,
-        "recent_form": 0.378179752432332,
-        "top5_performance": 0.007482716869831931,
-        "goals_stats": 0.20333641775355107,
-        "h2h": 0.007482716869831931,
-        "shots_possession": 0.007482716869831931
+        "league_position": 0.049028775834373914,
+        "odds_analysis": 0.0999953581854621,
+        "recent_form": 0.2711628596911021,
+        "top5_performance": 0.049028775834373914,
+        "goals_stats": 0.43272667878594007,
+        "h2h": 0.049028775834373914,
+        "shots_possession": 0.049028775834373914
       },
       "correlations": {
-        "league_position": 4.3546529746182126e-17,
-        "odds_analysis": 0.5192672248516019,
-        "recent_form": 0.5054043324250839,
+        "league_position": 7.551938938736693e-17,
+        "odds_analysis": 0.020395238609109974,
+        "recent_form": 0.055306879496059266,
         "top5_performance": 0.0,
-        "goals_stats": 0.27174142933744094,
+        "goals_stats": 0.08825973551690369,
         "h2h": 0.0,
         "shots_possession": 0.0
       },
-      "example_count": 25
+      "example_count": 42
+    },
+    "L2": {
+      "weights": {
+        "league_position": 0.01385251966174564,
+        "odds_analysis": 0.39707754262875505,
+        "recent_form": 0.3976070757092168,
+        "top5_performance": 0.01385251966174564,
+        "goals_stats": 0.14990530301504554,
+        "h2h": 0.01385251966174564,
+        "shots_possession": 0.01385251966174564
+      },
+      "correlations": {
+        "league_position": 6.57960084182456e-17,
+        "odds_analysis": 0.28664643857196803,
+        "recent_form": 0.28702870338255265,
+        "top5_performance": 0.0,
+        "goals_stats": 0.10821518877104778,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 23
+    },
+    "L1": {
+      "weights": {
+        "league_position": 0.00835882468375326,
+        "odds_analysis": 0.44249095834203955,
+        "recent_form": 0.45887960229539465,
+        "top5_performance": 0.00835882468375326,
+        "goals_stats": 0.06519414062755255,
+        "h2h": 0.00835882468375326,
+        "shots_possession": 0.00835882468375326
+      },
+      "correlations": {
+        "league_position": 3.735492942249802e-17,
+        "odds_analysis": 0.5293698277965956,
+        "recent_form": 0.548976225314669,
+        "top5_performance": 0.0,
+        "goals_stats": 0.07799438688344308,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 21
+    },
+    "Br1": {
+      "weights": {
+        "league_position": 0.01944109794061141,
+        "odds_analysis": 0.36167992387312414,
+        "recent_form": 0.3506764514137182,
+        "top5_performance": 0.01944109794061141,
+        "goals_stats": 0.20987923295071195,
+        "h2h": 0.01944109794061141,
+        "shots_possession": 0.01944109794061141
+      },
+      "correlations": {
+        "league_position": 3.808033558317022e-17,
+        "odds_analysis": 0.18603883637538504,
+        "recent_form": 0.18037893357924706,
+        "top5_performance": 0.0,
+        "goals_stats": 0.10795647117865988,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 29
+    },
+    "Eg2": {
+      "weights": {
+        "league_position": 0.01046574673533396,
+        "odds_analysis": 0.28992017739664094,
+        "recent_form": 0.3083778486790456,
+        "top5_performance": 0.01046574673533396,
+        "goals_stats": 0.35983898698297756,
+        "h2h": 0.01046574673533396,
+        "shots_possession": 0.01046574673533396
+      },
+      "correlations": {
+        "league_position": 8.308148362110448e-17,
+        "odds_analysis": 0.27701814760892896,
+        "recent_form": 0.29465441547320737,
+        "top5_performance": 0.0,
+        "goals_stats": 0.34382542983589137,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 27
+    },
+    "Sy1": {
+      "weights": {
+        "league_position": 0.007065082896362223,
+        "odds_analysis": 0.3722414139279625,
+        "recent_form": 0.36595372503246765,
+        "top5_performance": 0.007065082896362223,
+        "goals_stats": 0.23354452945412102,
+        "h2h": 0.007065082896362223,
+        "shots_possession": 0.007065082896362223
+      },
+      "correlations": {
+        "league_position": 7.518421192062256e-17,
+        "odds_analysis": 0.5268748001805157,
+        "recent_form": 0.5179751326355923,
+        "top5_performance": 0.0,
+        "goals_stats": 0.3305616266362168,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 21
+    },
+    "Th2": {
+      "weights": {
+        "league_position": 0.019353606881625688,
+        "odds_analysis": 0.2404071198265333,
+        "recent_form": 0.20657259108449647,
+        "top5_performance": 0.019353606881625688,
+        "goals_stats": 0.4756058615624674,
+        "h2h": 0.019353606881625688,
+        "shots_possession": 0.019353606881625688
+      },
+      "correlations": {
+        "league_position": 2.692686352071904e-17,
+        "odds_analysis": 0.1242182510458946,
+        "recent_form": 0.10673596521205381,
+        "top5_performance": 0.0,
+        "goals_stats": 0.24574533546716174,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 21
+    },
+    "Mx1": {
+      "weights": {
+        "league_position": 0.008557167131286285,
+        "odds_analysis": 0.43859776222483077,
+        "recent_form": 0.4315633597692368,
+        "top5_performance": 0.008557167131286285,
+        "goals_stats": 0.09561020948078722,
+        "h2h": 0.008557167131286285,
+        "shots_possession": 0.008557167131286285
+      },
+      "correlations": {
+        "league_position": 3.902431934610344e-17,
+        "odds_analysis": 0.512550188042082,
+        "recent_form": 0.5043297076568443,
+        "top5_performance": 0.0,
+        "goals_stats": 0.11173114655108463,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 27
+    },
+    "Jp3": {
+      "weights": {
+        "league_position": 0.005361371980397204,
+        "odds_analysis": 0.40234452257096537,
+        "recent_form": 0.3869962868691402,
+        "top5_performance": 0.005361371980397204,
+        "goals_stats": 0.18921370263830548,
+        "h2h": 0.005361371980397204,
+        "shots_possession": 0.005361371980397204
+      },
+      "correlations": {
+        "league_position": 1.1385551532191812e-16,
+        "odds_analysis": 0.7504506757637011,
+        "recent_form": 0.7218232353287846,
+        "top5_performance": 0.0,
+        "goals_stats": 0.35292030347852743,
+        "h2h": 0.0,
+        "shots_possession": 0.0
+      },
+      "example_count": 24
     }
   }
 }

@@ -134,6 +134,24 @@ def run_training(dry_run: bool = False) -> bool:
         print("ERROR: Training failed!")
         return False
     
+    # Recalculate factor weights
+    print("\n" + "-" * 60)
+    print("Recalculating factor weights...")
+    print("-" * 60)
+    
+    weights_script = os.path.join(SCRIPT_DIR, 'calculate_weights.py')
+    result = subprocess.run(
+        [sys.executable, weights_script],
+        capture_output=False,
+        text=True,
+        cwd=SCRIPT_DIR
+    )
+    
+    if result.returncode != 0:
+        print("WARNING: Weight recalculation failed (using existing weights)")
+    else:
+        print("Factor weights updated successfully")
+    
     # Mark training as done
     mark_training_done()
     

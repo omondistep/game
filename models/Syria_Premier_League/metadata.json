@@ -8,56 +8,52 @@
     "country_code": "sy",
     "match_count": 36,
     "teams": {
-      "Hutteen Latakia": {
-        "home_matches": 2,
-        "away_matches": 0
-      },
-      "Jableh SC": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Jaish Damascus": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Hurriya Aleppo": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
       "Ittihad Aleppo": {
         "home_matches": 2,
         "away_matches": 1
       },
-      "Tishreen SC": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Taliya Hama": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
       "Karamah": {
         "home_matches": 0,
-        "away_matches": 3
-      },
-      "Foutoua Club": {
-        "home_matches": 3,
-        "away_matches": 0
-      },
-      "Wahda Damascus": {
-        "home_matches": 1,
         "away_matches": 3
       },
       "Majd Damascus": {
         "home_matches": 2,
         "away_matches": 0
       },
+      "Taliya Hama": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Jaish Damascus": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Omyyah Idlib": {
         "home_matches": 1,
         "away_matches": 1
       },
+      "Foutoua Club": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
       "Al Shouleh": {
         "home_matches": 0,
+        "away_matches": 2
+      },
+      "Hutteen Latakia": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Wahda Damascus": {
+        "home_matches": 1,
+        "away_matches": 3
+      },
+      "Jableh SC": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
+      "Hurriya Aleppo": {
+        "home_matches": 1,
         "away_matches": 2
       },
       "Khan Sheikhoun": {
@@ -71,11 +67,15 @@
       "Wathba Homs": {
         "home_matches": 2,
         "away_matches": 1
+      },
+      "Tishreen SC": {
+        "home_matches": 1,
+        "away_matches": 2
       }
     }
   },
   "example_count": 21,
   "result_accuracy": 0.8,
   "ou_accuracy": 0.4,
-  "trained_at": "2026-02-13T19:32:56.578409"
+  "trained_at": "2026-02-19T06:02:55.944520"
 }

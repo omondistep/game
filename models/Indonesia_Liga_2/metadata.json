@@ -6,10 +6,10 @@
     "league": "Liga 2",
     "league_url_path": "",
     "country_code": "id",
-    "match_count": 18,
+    "match_count": 21,
     "teams": {
       "Garudayaksa FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "PSMS Medan": {
@@ -26,18 +26,18 @@
       },
       "Persekat": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Sulut United": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Adhyaksa": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Sriwijaya FC": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "PSIS Semarang": {
@@ -58,7 +58,7 @@
       },
       "PSG Pati": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Sumsel United": {
         "home_matches": 1,
@@ -70,8 +70,8 @@
       }
     }
   },
-  "example_count": 9,
-  "result_accuracy": 1.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:38.921103"
+  "example_count": 12,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-19T06:02:34.723679"
 }

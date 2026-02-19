@@ -8,14 +8,6 @@
     "country_code": "sa",
     "match_count": 53,
     "teams": {
-      "Al Jabalain": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Al Jndal": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
       "Al Baten": {
         "home_matches": 3,
         "away_matches": 1
@@ -43,6 +35,14 @@
       "Abha Club": {
         "home_matches": 2,
         "away_matches": 1
+      },
+      "Al Jabalain": {
+        "home_matches": 2,
+        "away_matches": 2
+      },
+      "Al Jndal": {
+        "home_matches": 2,
+        "away_matches": 2
       },
       "Al Anwar KSA": {
         "home_matches": 2,
@@ -83,7 +83,7 @@
     }
   },
   "example_count": 27,
-  "result_accuracy": 0.6666666666666666,
+  "result_accuracy": 0.5,
   "ou_accuracy": 0.6666666666666666,
-  "trained_at": "2026-02-13T19:32:53.730400"
+  "trained_at": "2026-02-19T06:02:53.240777"
 }

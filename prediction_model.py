@@ -12,7 +12,7 @@ from typing import Dict, List, Optional, Tuple
 import pickle
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
 
 
@@ -35,6 +35,19 @@ class WeightedPredictor:
     - Goals Stats: 21% (Attacking and defensive strength)
     - Other factors: 1% each (when data available)
     """
+    
+    # Features for ML model's OWN odds calculation (without external odds)
+    FEATURE_NAMES_OWN_ODDS = [
+        'home_scored_avg', 'home_conceded_avg', 'away_scored_avg', 'away_conceded_avg',
+        'home_form_points', 'away_form_points', 'home_home_win_rate', 'away_away_win_rate',
+        'home_position', 'away_position', 'position_diff', 'home_points', 'away_points',
+        'home_recent_form', 'away_recent_form', 'home_wins_l6', 'home_draws_l6', 'home_losses_l6',
+        'away_wins_l6', 'away_draws_l6', 'away_losses_l6', 'expected_total_goals',
+        'home_home_goals_avg', 'away_away_goals_avg', 'h2h_home_win_pct', 'h2h_draw_pct', 'h2h_away_win_pct',
+        'home_shots_avg', 'away_shots_avg', 'home_shots_on_target_pct', 'away_shots_on_target_pct',
+        'home_dangerous_attacks_avg', 'away_dangerous_attacks_avg', 'home_possession', 'away_possession',
+        'home_pass_accuracy', 'away_pass_accuracy', 'home_fouls_avg', 'away_fouls_avg', 'home_yellow_avg', 'away_yellow_avg',
+    ]
     
     # Default weight configuration (fallback)
     DEFAULT_WEIGHTS = {
@@ -66,6 +79,78 @@ class WeightedPredictor:
         if league_code and league_code in self.weights.get('leagues', {}):
             return self.weights['leagues'][league_code].get('weights', self.DEFAULT_WEIGHTS)
         return self.weights.get('global', {}).get('weights', self.DEFAULT_WEIGHTS)
+    
+    def _compute_ml_own_odds(self, features: Dict) -> Dict:
+        """Compute ML model's OWN odds from raw match statistics (no external odds)."""
+        # Use raw features only - no Forebet or market odds
+        raw_features = {k: v for k, v in features.items() 
+                       if k in self.FEATURE_NAMES_OWN_ODDS}
+        
+        # Calculate expected goals from raw stats
+        home_scored = raw_features.get('home_scored_avg', 1.3) or 1.3
+        home_conceded = raw_features.get('home_conceded_avg', 1.0) or 1.0
+        away_scored = raw_features.get('away_scored_avg', 1.1) or 1.1
+        away_conceded = raw_features.get('away_conceded_avg', 1.2) or 1.2
+        
+        # Expected goals (Poisson-like calculation)
+        home_expected = (home_scored + away_conceded) / 2
+        away_expected = (away_scored + home_conceded) / 2
+        total_expected = home_expected + away_expected
+        
+        # Calculate form factors
+        home_form = raw_features.get('home_form_points', 6) or 6
+        away_form = raw_features.get('away_form_points', 6) or 6
+        
+        # Calculate home advantage factor
+        home_home_rate = raw_features.get('home_home_win_rate', 50) or 50
+        away_away_rate = raw_features.get('away_away_win_rate', 33) or 33
+        home_advantage = (home_home_rate / 100) / (away_away_rate / 100 + 0.5)
+        
+        # Weight factors
+        goals_weight = 0.5
+        form_weight = 0.3
+        home_adv_weight = 0.2
+        
+        # Calculate strength scores
+        home_strength = (home_scored * goals_weight + (home_form/18) * form_weight + 
+                       home_advantage * home_adv_weight)
+        away_strength = (away_scored * goals_weight + (away_form/18) * form_weight)
+        
+        # Convert to probabilities (softmax-like)
+        total_strength = home_strength + away_strength + 0.001
+        prob_home = home_strength / total_strength
+        prob_away = away_strength / total_strength
+        prob_draw = 1 - prob_home - prob_away
+        
+        # Ensure valid probabilities
+        prob_draw = max(0.1, min(0.4, prob_draw))  # Draw typically 10-40%
+        prob_home = max(0.2, min(0.7, prob_home * (1 - prob_draw)))
+        prob_away = 1 - prob_home - prob_draw
+        
+        # Convert to odds
+        odds_home = 1 / prob_home if prob_home > 0 else 3.0
+        odds_draw = 1 / prob_draw if prob_draw > 0 else 3.5
+        odds_away = 1 / prob_away if prob_away > 0 else 3.0
+        
+        # O/U calculation based on expected total goals
+        prob_over = min(0.95, max(0.05, total_expected / 5))  # Normalize around 2.5 goals
+        prob_under = 1 - prob_over
+        odds_over = 1 / prob_over if prob_over > 0 else 2.0
+        odds_under = 1 / prob_under if prob_under > 0 else 2.0
+        
+        return {
+            'odds_home': odds_home,
+            'odds_draw': odds_draw,
+            'odds_away': odds_away,
+            'prob_home': prob_home,
+            'prob_draw': prob_draw,
+            'prob_away': prob_away,
+            'odds_over': odds_over,
+            'odds_under': odds_under,
+            'prob_over': prob_over,
+            'prob_under': prob_under,
+            'expected_goals': total_expected,
+        }
     
     def predict(self, match_data: Dict, features: Dict, league_code: str = None) -> Dict:
         """
@@ -121,6 +206,9 @@ class WeightedPredictor:
         if weights is None:
             weights = self.DEFAULT_WEIGHTS
         
+        # Calculate ML's own odds from raw statistics
+        ml_own_odds = self._compute_ml_own_odds(features)
+        
         # 1. LEAGUE POSITION (weight from data)
         # Lower position = better team. Score from 0 to 1 where 1 is best.
         home_pos = features.get('home_position', 10) or 10
@@ -131,20 +219,38 @@ class WeightedPredictor:
         pos_score_home = max(0, 1 - (home_pos - 1) / (max_pos - 1))
         pos_score_away = max(0, 1 - (away_pos - 1) / (max_pos - 1))
         
-        # 2. ODDS ANALYSIS (15% weight)
-        # Use market odds to derive probabilities
+        # 2. ODDS ANALYSIS - Use ML's own odds + Market odds
+        # ML's own odds from raw statistics (independent of market)
+        ml_odds_home = ml_own_odds.get('odds_home', 2.5)
+        ml_odds_draw = ml_own_odds.get('odds_draw', 3.0)
+        ml_odds_away = ml_own_odds.get('odds_away', 3.5)
+        
+        # Market odds
         odds_home = features.get('odds_home') or 2.5
         odds_draw = features.get('odds_draw') or 3.0
         odds_away = features.get('odds_away') or 3.5
         
-        # Implied probabilities
+        # ML's own implied probabilities
+        ml_imp_home = 1 / ml_odds_home
+        ml_imp_draw = 1 / ml_odds_draw
+        ml_imp_away = 1 / ml_odds_away
+        ml_total = ml_imp_home + ml_imp_draw + ml_imp_away
+        
+        ml_odds_score_home = ml_imp_home / ml_total
+        ml_odds_score_away = ml_imp_away / ml_total
+        
+        # Market implied probabilities
         imp_home = 1 / odds_home
         imp_draw = 1 / odds_draw
         imp_away = 1 / odds_away
         total = imp_home + imp_draw + imp_away
         
-        odds_score_home = imp_home / total
-        odds_score_away = imp_away / total
+        market_odds_score_home = imp_home / total
+        market_odds_score_away = imp_away / total
+        
+        # Combine ML's odds with market odds (50/50 blend)
+        odds_score_home = (ml_odds_score_home + market_odds_score_home) / 2
+        odds_score_away = (ml_odds_score_away + market_odds_score_away) / 2
         
         # 3. RECENT FORM (20% weight)
         # Form points: W=3, D=1, L=0, normalized
@@ -227,6 +333,13 @@ class WeightedPredictor:
             # Additional data for analysis
             'h2h_draws': h2h_draws / 100,
             'expected_goals': features.get('expected_total_goals', 2.5),
+            # ML's own odds (computed from raw stats)
+            'ml_own_odds': {
+                'odds_home': ml_odds_home,
+                'odds_draw': ml_odds_draw,
+                'odds_away': ml_odds_away,
+                'expected_goals': ml_own_odds.get('expected_goals', 2.5),
+            },
         }
     
     def _calculate_top5_performance(self, match_data: Dict, features: Dict) -> Dict:
@@ -432,7 +545,7 @@ class FootballPredictor:
         # Discipline
         'home_fouls_avg', 'away_fouls_avg',
         'home_yellow_avg', 'away_yellow_avg',
-        # Odds (market expectations)
+        # Odds (market expectations) - used for comparison but not for ML's own odds
         'odds_home', 'odds_draw', 'odds_away',
         'odds_over', 'odds_under',
         # Forebet
@@ -442,6 +555,38 @@ class FootballPredictor:
         'away_team_prediction_correct_pct',
         'league_prediction_correct_pct',
         'overall_model_accuracy',
+    ]
+    
+    # Features for ML model's OWN odds calculation (without external odds)
+    # This allows the ML to compute probabilities from raw match statistics
+    FEATURE_NAMES_OWN_ODDS = [
+        # Standings
+        'home_position', 'away_position', 'position_diff',
+        'home_points', 'away_points',
+        # Form (last 6)
+        'home_form_points', 'away_form_points',
+        'home_recent_form', 'away_recent_form',
+        'home_wins_l6', 'home_draws_l6', 'home_losses_l6',
+        'away_wins_l6', 'away_draws_l6', 'away_losses_l6',
+        # Goals
+        'home_scored_avg', 'home_conceded_avg',
+        'away_scored_avg', 'away_conceded_avg',
+        'expected_total_goals',
+        # Home / Away specific
+        'home_home_win_rate', 'away_away_win_rate',
+        'home_home_goals_avg', 'away_away_goals_avg',
+        # Head-to-head
+        'h2h_home_win_pct', 'h2h_draw_pct', 'h2h_away_win_pct',
+        # Shots & attacks
+        'home_shots_avg', 'away_shots_avg',
+        'home_shots_on_target_pct', 'away_shots_on_target_pct',
+        'home_dangerous_attacks_avg', 'away_dangerous_attacks_avg',
+        # Possession & passes
+        'home_possession', 'away_possession',
+        'home_pass_accuracy', 'away_pass_accuracy',
+        # Discipline
+        'home_fouls_avg', 'away_fouls_avg',
+        'home_yellow_avg', 'away_yellow_avg',
     ]
 
     def __init__(self, model_dir: str = "models"):
@@ -880,6 +1025,21 @@ class FootballPredictor:
                 # Direct list of examples
                 examples = training_data
         
+        # =========================================================================
+        # ROLLING WINDOW: Keep only the most recent examples (last ~14 months)
+        # Since we don't have reliable dates in training data, we use a count-based approach
+        # Assuming ~30 matches per month average, 14 months ≈ 420 matches max per league
+        # For global model: use most recent examples sorted by position
+        # =========================================================================
+        MAX_EXAMPLES_PER_LEAGUE = 420  # ~14 months of matches
+        
+        if not league and len(examples) > MAX_EXAMPLES_PER_LEAGUE:
+            # For global model, keep only the most recent examples
+            # (examples are already in the order they were processed)
+            original_count = len(examples)
+            examples = examples[-MAX_EXAMPLES_PER_LEAGUE:]
+            print(f"[Rolling Window] Using {len(examples)} of {original_count} examples (last {MAX_EXAMPLES_PER_LEAGUE})")
+        
         # Split examples into train/test (time-based: oldest for train, newest for test)
         if test_examples is None:
             # Sort by timestamp if available, otherwise use order
@@ -1158,8 +1318,32 @@ class FootballPredictor:
 
         op = ou_model.predict(X_scaled)[0]
         oproba = dict(zip(ou_model.classes_, ou_model.predict_proba(X_scaled)[0]))
-
-        return self._build_prediction(rp, rproba, op, oproba, model_trained=True, prediction_method='league_ml' if is_league_specific else 'ml')
+        
+        # Compute ML model's own odds from raw statistics
+        ml_own_odds = self._compute_ml_own_odds(features)
+        
+        prediction = self._build_prediction(rp, rproba, op, oproba, model_trained=True, prediction_method='league_ml' if is_league_specific else 'ml')
+        
+        # Add ML's own odds to the prediction
+        prediction['ml_own_odds'] = {
+            'result': {
+                'odds_home': round(ml_own_odds['odds_home'], 2),
+                'odds_draw': round(ml_own_odds['odds_draw'], 2),
+                'odds_away': round(ml_own_odds['odds_away'], 2),
+                'prob_home': round(ml_own_odds['prob_home'], 4),
+                'prob_draw': round(ml_own_odds['prob_draw'], 4),
+                'prob_away': round(ml_own_odds['prob_away'], 4),
+            },
+            'over_under': {
+                'odds_over': round(ml_own_odds['odds_over'], 2),
+                'odds_under': round(ml_own_odds['odds_under'], 2),
+                'prob_over': round(ml_own_odds['prob_over'], 4),
+                'prob_under': round(ml_own_odds['prob_under'], 4),
+            },
+            'expected_goals': round(ml_own_odds['expected_goals'], 2),
+        }
+        
+        return prediction
 
     def _features_to_array_8(self, features: Dict) -> np.ndarray:
         """Convert feature dict to 8-feature array for league-specific models.
@@ -1217,8 +1401,105 @@ class FootballPredictor:
 
         op = self.ou_model.predict(X_scaled)[0]
         oproba = dict(zip(self.ou_model.classes_, self.ou_model.predict_proba(X_scaled)[0]))
+        
+        # Compute ML model's own odds from raw statistics
+        ml_own_odds = self._compute_ml_own_odds(features)
+        
+        prediction = self._build_prediction(rp, rproba, op, oproba, model_trained=model_trained, prediction_method='ml')
+        
+        # Add ML's own odds to the prediction
+        prediction['ml_own_odds'] = {
+            'result': {
+                'odds_home': round(ml_own_odds['odds_home'], 2),
+                'odds_draw': round(ml_own_odds['odds_draw'], 2),
+                'odds_away': round(ml_own_odds['odds_away'], 2),
+                'prob_home': round(ml_own_odds['prob_home'], 4),
+                'prob_draw': round(ml_own_odds['prob_draw'], 4),
+                'prob_away': round(ml_own_odds['prob_away'], 4),
+            },
+            'over_under': {
+                'odds_over': round(ml_own_odds['odds_over'], 2),
+                'odds_under': round(ml_own_odds['odds_under'], 2),
+                'prob_over': round(ml_own_odds['prob_over'], 4),
+                'prob_under': round(ml_own_odds['prob_under'], 4),
+            },
+            'expected_goals': round(ml_own_odds['expected_goals'], 2),
+        }
+        
+        return prediction
 
-        return self._build_prediction(rp, rproba, op, oproba, model_trained=model_trained, prediction_method='ml')
+    def _compute_ml_own_odds(self, features: Dict) -> Dict:
+        """Compute ML model's OWN odds from raw match statistics (no external odds)."""
+        # Use raw features only - no Forebet or market odds
+        raw_features = {k: v for k, v in features.items() 
+                       if k in self.FEATURE_NAMES_OWN_ODDS}
+        
+        # Calculate expected goals from raw stats
+        home_scored = raw_features.get('home_scored_avg', 1.3) or 1.3
+        home_conceded = raw_features.get('home_conceded_avg', 1.0) or 1.0
+        away_scored = raw_features.get('away_scored_avg', 1.1) or 1.1
+        away_conceded = raw_features.get('away_conceded_avg', 1.2) or 1.2
+        
+        # Expected goals (Poisson-like calculation)
+        home_expected = (home_scored + away_conceded) / 2
+        away_expected = (away_scored + home_conceded) / 2
+        total_expected = home_expected + away_expected
+        
+        # Calculate form factors
+        home_form = raw_features.get('home_form_points', 6) or 6
+        away_form = raw_features.get('away_form_points', 6) or 6
+        total_form = home_form + away_form
+        
+        # Calculate home advantage factor
+        home_home_rate = raw_features.get('home_home_win_rate', 50) or 50
+        away_away_rate = raw_features.get('away_away_win_rate', 33) or 33
+        home_advantage = (home_home_rate / 100) / (away_away_rate / 100 + 0.5)
+        
+        # Weight factors
+        goals_weight = 0.5
+        form_weight = 0.3
+        home_adv_weight = 0.2
+        
+        # Calculate strength scores
+        home_strength = (home_scored * goals_weight + (home_form/18) * form_weight + 
+                       home_advantage * home_adv_weight)
+        away_strength = (away_scored * goals_weight + (away_form/18) * form_weight)
+        
+        # Convert to probabilities (softmax-like)
+        total_strength = home_strength + away_strength + 0.001
+        prob_home = home_strength / total_strength
+        prob_away = away_strength / total_strength
+        prob_draw = 1 - prob_home - prob_away
+        
+        # Ensure valid probabilities
+        prob_draw = max(0.1, min(0.4, prob_draw))  # Draw typically 10-40%
+        prob_home = max(0.2, min(0.7, prob_home * (1 - prob_draw)))
+        prob_away = 1 - prob_home - prob_draw
+        
+        # Convert to odds
+        odds_home = 1 / prob_home if prob_home > 0 else 3.0
+        odds_draw = 1 / prob_draw if prob_draw > 0 else 3.5
+        odds_away = 1 / prob_away if prob_away > 0 else 3.0
+        
+        # O/U calculation based on expected total goals
+        prob_over = min(0.95, max(0.05, total_expected / 5))  # Normalize around 2.5 goals
+        prob_under = 1 - prob_over
+        odds_over = 1 / prob_over if prob_over > 0 else 2.0
+        odds_under = 1 / prob_under if prob_under > 0 else 2.0
+        
+        return {
+            'odds_home': odds_home,
+            'odds_draw': odds_draw,
+            'odds_away': odds_away,
+            'prob_home': prob_home,
+            'prob_draw': prob_draw,
+            'prob_away': prob_away,
+            'odds_over': odds_over,
+            'odds_under': odds_under,
+            'prob_over': prob_over,
+            'prob_under': prob_under,
+            'expected_goals': total_expected,
+        }
 
     def _statistical_prediction(self, features: Dict) -> Dict:
         """

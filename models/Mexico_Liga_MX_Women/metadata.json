@@ -6,84 +6,84 @@
     "league": "Liga MX Women",
     "league_url_path": "",
     "country_code": "mx",
-    "match_count": 64,
+    "match_count": 74,
     "teams": {
       "Atletico San Luis W": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Tijuana W": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 3
       },
       "Juarez W": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Cruz Azul W": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Tigres UANL W": {
-        "home_matches": 3,
-        "away_matches": 1
+        "home_matches": 4,
+        "away_matches": 2
       },
       "Atlas W": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
       "America W": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Mazatlan W": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 3
       },
       "Queretaro W": {
         "home_matches": 3,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Toluca W": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Necaxa W": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Pachuca W": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Leon W": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Monterrey W": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Puebla W": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 3
       },
       "Santos Laguna W": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Guadalajara W": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Pumas UNAM W": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       }
     }
   },
-  "example_count": 32,
-  "result_accuracy": 0.42857142857142855,
-  "ou_accuracy": 0.7142857142857143,
-  "trained_at": "2026-02-13T19:32:48.190192"
+  "example_count": 42,
+  "result_accuracy": 0.1111111111111111,
+  "ou_accuracy": 0.2222222222222222,
+  "trained_at": "2026-02-19T06:02:45.682233"
 }

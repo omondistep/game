@@ -6,51 +6,11 @@
     "league": "Campeonato Capixaba",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 127,
+    "match_count": 132,
     "teams": {
-      "Concordia AC SC": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Criciuma": {
-        "home_matches": 2,
-        "away_matches": 2
-      },
-      "Rio Branco-VN": {
-        "home_matches": 2,
-        "away_matches": 3
-      },
-      "Rio Branco ES": {
-        "home_matches": 1,
-        "away_matches": 3
-      },
-      "Serra ES": {
-        "home_matches": 3,
-        "away_matches": 3
-      },
       "Vitoria ES": {
         "home_matches": 2,
         "away_matches": 3
-      },
-      "Porto Vitoria": {
-        "home_matches": 3,
-        "away_matches": 1
-      },
-      "Vilavelhense ES": {
-        "home_matches": 2,
-        "away_matches": 3
-      },
-      "SC Capixaba": {
-        "home_matches": 3,
-        "away_matches": 1
-      },
-      "Real Noroeste ES": {
-        "home_matches": 3,
-        "away_matches": 3
-      },
-      "Forte FC": {
-        "home_matches": 3,
-        "away_matches": 0
       },
       "Desp Ferroviaria ES": {
         "home_matches": 1,
@@ -62,15 +22,19 @@
       },
       "Bangu RJ": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Fluminense": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Flamengo": {
         "home_matches": 1,
         "away_matches": 1
+      },
+      "Criciuma": {
+        "home_matches": 2,
+        "away_matches": 2
       },
       "Brusque FC SC": {
         "home_matches": 1,
@@ -78,35 +42,39 @@
       },
       "Carlos Renaux": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Marcilio Dias SC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Barra": {
         "home_matches": 2,
         "away_matches": 1
       },
+      "Concordia AC SC": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
       "Chapecoense SC": {
         "home_matches": 2,
         "away_matches": 1
       },
       "Joinville": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Santa Catarina": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Avai FC": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Figueirense": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Camboriu SC": {
         "home_matches": 0,
@@ -120,13 +88,29 @@
         "home_matches": 2,
         "away_matches": 1
       },
+      "Serra ES": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "SC Capixaba": {
+        "home_matches": 3,
+        "away_matches": 1
+      },
       "Boavista RJ": {
         "home_matches": 1,
         "away_matches": 2
       },
       "Vasco da Gama": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
+      },
+      "Vilavelhense ES": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "Real Noroeste ES": {
+        "home_matches": 3,
+        "away_matches": 3
       },
       "Nova Iguacu RJ": {
         "home_matches": 2,
@@ -134,7 +118,7 @@
       },
       "Volta Redonda": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Fortaleza": {
         "home_matches": 1,
@@ -152,6 +136,14 @@
         "home_matches": 0,
         "away_matches": 3
       },
+      "Rio Branco ES": {
+        "home_matches": 1,
+        "away_matches": 3
+      },
+      "Forte FC": {
+        "home_matches": 3,
+        "away_matches": 0
+      },
       "Maranguape CE": {
         "home_matches": 2,
         "away_matches": 1
@@ -159,6 +151,14 @@
       "Maracana CE": {
         "home_matches": 1,
         "away_matches": 2
+      },
+      "Porto Vitoria": {
+        "home_matches": 3,
+        "away_matches": 1
+      },
+      "Rio Branco-VN": {
+        "home_matches": 2,
+        "away_matches": 3
       },
       "Quixada CE": {
         "home_matches": 2,
@@ -186,8 +186,8 @@
       }
     }
   },
-  "example_count": 67,
-  "result_accuracy": 0.5714285714285714,
-  "ou_accuracy": 0.42857142857142855,
-  "trained_at": "2026-02-13T19:32:25.432208"
+  "example_count": 72,
+  "result_accuracy": 0.13333333333333333,
+  "ou_accuracy": 0.6,
+  "trained_at": "2026-02-19T06:02:16.751427"
 }

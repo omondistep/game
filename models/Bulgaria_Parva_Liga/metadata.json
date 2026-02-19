@@ -6,36 +6,48 @@
     "league": "Parva Liga",
     "league_url_path": "",
     "country_code": "bg",
-    "match_count": 9,
+    "match_count": 8,
     "teams": {
       "Montana": {
-        "home_matches": 2,
-        "away_matches": 0
+        "home_matches": 1,
+        "away_matches": 1
       },
       "CSKA 1948": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "CSKA-Sofia": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Arda Kardzhali": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Cherno More Varna": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Spartak Varna": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
+      },
+      "Septemvri Sofia": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Botev Vratsa": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Dobrudzha": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 6,
+  "example_count": 5,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T08:10:34.639928"
+  "trained_at": "2026-02-19T06:02:13.546139"
 }

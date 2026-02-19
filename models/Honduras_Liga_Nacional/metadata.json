@@ -6,56 +6,56 @@
     "league": "Liga Nacional",
     "league_url_path": "",
     "country_code": "hn",
-    "match_count": 45,
+    "match_count": 50,
     "teams": {
-      "Lobos UPNFM": {
+      "Juticalpa": {
         "home_matches": 3,
-        "away_matches": 2
-      },
-      "CD Victoria": {
-        "home_matches": 1,
         "away_matches": 3
       },
-      "CD Marathon": {
+      "Atletico Choloma": {
+        "home_matches": 2,
+        "away_matches": 4
+      },
+      "Real Espana": {
+        "home_matches": 3,
+        "away_matches": 3
+      },
+      "Olancho": {
         "home_matches": 3,
         "away_matches": 2
       },
       "Platense HON": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
-      "Juticalpa": {
+      "CD Victoria": {
+        "home_matches": 2,
+        "away_matches": 3
+      },
+      "Lobos UPNFM": {
         "home_matches": 3,
         "away_matches": 2
       },
-      "Atletico Choloma": {
-        "home_matches": 2,
+      "CD Marathon": {
+        "home_matches": 3,
         "away_matches": 3
-      },
-      "Real Espana": {
-        "home_matches": 2,
-        "away_matches": 3
-      },
-      "Olancho": {
-        "home_matches": 2,
-        "away_matches": 2
       },
       "CD Olimpia": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Genesis": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 2
       },
       "CD Motagua": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       }
     }
   },
-  "example_count": 25,
-  "result_accuracy": 0.4,
-  "ou_accuracy": 0.4,
-  "trained_at": "2026-02-13T19:32:37.861404"
+  "example_count": 30,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-19T06:02:33.503567"
 }

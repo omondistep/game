@@ -1,0 +1,241 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/orat\u00f3rio-recre-ap-trem-ap-2422083",
+  "timestamp": "2026-02-15T00:08:11.308113",
+  "features": {
+    "home_position": 1,
+    "away_position": 3,
+    "position_diff": -2,
+    "home_points": 3,
+    "away_points": 3,
+    "home_form_points": 10,
+    "away_form_points": 10,
+    "home_recent_form": 4,
+    "away_recent_form": 6,
+    "home_wins_l6": 3,
+    "home_draws_l6": 1,
+    "home_losses_l6": 2,
+    "away_wins_l6": 3,
+    "away_draws_l6": 1,
+    "away_losses_l6": 2,
+    "home_scored_avg": 1.0,
+    "home_conceded_avg": 0.6666666666666666,
+    "away_scored_avg": 1.6666666666666667,
+    "away_conceded_avg": 1.5,
+    "expected_total_goals": 2.416666666666667,
+    "home_home_win_rate": 50.0,
+    "home_home_goals_avg": 1.5,
+    "away_away_win_rate": 33.33333333333333,
+    "away_away_goals_avg": 2.0,
+    "h2h_home_win_pct": 17.0,
+    "h2h_draw_pct": 17.0,
+    "h2h_away_win_pct": 67.0,
+    "home_shots_avg": 7.5,
+    "away_shots_avg": 10.166666666666666,
+    "home_shots_on_target_pct": 35.55555555555556,
+    "away_shots_on_target_pct": 37.704918032786885,
+    "home_dangerous_attacks_avg": 41.5,
+    "away_dangerous_attacks_avg": 49.833333333333336,
+    "home_possession": null,
+    "away_possession": 50.17,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 2.3333333333333335,
+    "away_fouls_avg": 12.0,
+    "home_yellow_avg": 1.6666666666666667,
+    "away_yellow_avg": 2.0,
+    "odds_home": 4.33,
+    "odds_draw": 3.2,
+    "odds_away": 1.75,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": null
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.45,
+        "X": 0.24,
+        "2": 0.31
+      },
+      "computed_odds": {
+        "1": 2.22,
+        "X": 4.17,
+        "2": 3.23
+      },
+      "confidence": 0.45
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Under": 0.9978,
+        "Over": 0.0022
+      },
+      "computed_odds": {
+        "Under": 1.0,
+        "Over": 99.0
+      },
+      "confidence": 0.9978
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.45,
+        "X": 0.24,
+        "2": 0.31
+      },
+      "computed_odds": {
+        "1": 2.22,
+        "X": 4.17,
+        "2": 3.23
+      },
+      "confidence": 0.45
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Under": 0.9978,
+        "Over": 0.0022
+      },
+      "computed_odds": {
+        "Under": 1.0,
+        "Over": 99.0
+      },
+      "confidence": 0.9978
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3406,
+        "X": 0.2375,
+        "2": 0.4219
+      },
+      "computed_odds": {
+        "1": 2.94,
+        "X": 4.21,
+        "2": 2.37
+      },
+      "confidence": 0.4219
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 1.0,
+        "away": 0.8947368421052632,
+        "weight": 0.00710680688970015
+      },
+      "odds_analysis": {
+        "home": 0.207150387482198,
+        "away": 0.5125492444559527,
+        "weight": 0.36249267080142883
+      },
+      "recent_form": {
+        "home": 0.5555555555555556,
+        "away": 0.5555555555555556,
+        "weight": 0.35927089115059013
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.00710680688970015
+      },
+      "goals_stats": {
+        "home": 0.5833333333333334,
+        "away": 0.5416666666666667,
+        "weight": 0.24980921048918053
+      },
+      "h2h": {
+        "home": 0.17,
+        "away": 0.67,
+        "weight": 0.00710680688970015
+      },
+      "shots_possession": {
+        "home": 0.3,
+        "away": 0.3732422222222222,
+        "weight": 0.00710680688970015
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 2.416666666666667
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 11.1
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.42,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.67,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.00710680688970015,
+      "odds_analysis": 0.36249267080142883,
+      "recent_form": 0.35927089115059013,
+      "top5_performance": 0.00710680688970015,
+      "goals_stats": 0.24980921048918053,
+      "h2h": 0.00710680688970015,
+      "shots_possession": 0.00710680688970015
+    }
+  },
+  "convergence": {
+    "result_match": false,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "2",
+    "ml_ou": "Under",
+    "weighted_ou": "Under"
+  },
+  "analysis": {
+    "key_factors": [
+      "\u2705 Orat\u00f3rio Recre. AP in good form (3 wins in last 6)",
+      "\u2705 Trem AP in good form (3 wins in last 6)",
+      "\ud83d\udee1\ufe0f Low-scoring match expected (100% confidence)",
+      "\u2696\ufe0f Teams close in table (#1 vs #3)",
+      "\ud83d\udcdc Trem AP dominates H2H (67% wins)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "1",
+        "market": 4.33,
+        "fair": 2.22,
+        "value_pct": 95.0
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Orat\u00f3rio Recre. AP": [],
+    "Trem AP": []
+  }
+}

@@ -12,7 +12,7 @@
         "home_matches": 2,
         "away_matches": 1
       },
-      "Mansoura SC": {
+      "Tersana Giza": {
         "home_matches": 1,
         "away_matches": 2
       },
@@ -20,25 +20,13 @@
         "home_matches": 2,
         "away_matches": 1
       },
-      "Baladiyyat Al Mahalla": {
+      "Tanta FC": {
         "home_matches": 1,
         "away_matches": 2
       },
       "Maleyeit Kafr El Zayiat": {
         "home_matches": 2,
         "away_matches": 1
-      },
-      "Raya Ghazl": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Tersana Giza": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Tanta FC": {
-        "home_matches": 1,
-        "away_matches": 2
       },
       "La Viena": {
         "home_matches": 1,
@@ -64,13 +52,25 @@
         "home_matches": 2,
         "away_matches": 1
       },
+      "Mansoura SC": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
       "Abu Qair Lel Asmeda": {
         "home_matches": 2,
         "away_matches": 1
       },
+      "Baladiyyat Al Mahalla": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
       "Al Qanah": {
         "home_matches": 2,
         "away_matches": 1
+      },
+      "Raya Ghazl": {
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Aswan FC": {
         "home_matches": 2,
@@ -84,6 +84,6 @@
   },
   "example_count": 27,
   "result_accuracy": 0.16666666666666666,
-  "ou_accuracy": 0.6666666666666666,
-  "trained_at": "2026-02-13T19:32:34.425987"
+  "ou_accuracy": 0.8333333333333334,
+  "trained_at": "2026-02-19T06:02:28.951851"
 }

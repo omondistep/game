@@ -1,0 +1,61 @@
+{
+  "league_key": "NL",
+  "league_info": {
+    "league_code": "NL",
+    "country": "England",
+    "league": "National League",
+    "league_url_path": "",
+    "country_code": "gb-en",
+    "match_count": 12,
+    "teams": {
+      "Rochdale": {
+        "home_matches": 2,
+        "away_matches": 0
+      },
+      "Southend Utd": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Altrincham": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Wealdstone": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sutton United": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Woking": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Yeovil Town": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Aldershot Town": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Halifax": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Gateshead": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Scunthorpe Utd": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 6,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-19T06:02:46.023299"
+}

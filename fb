@@ -6,6 +6,10 @@
 #   fb https://www.forebet.com/... (shortcut for predict)
 #   fb result <url> <actual_result>
 #   fb train [status|force]
+#
+# NOTE: If the URL contains special characters like parentheses (), 
+#       you must quote it:
+#   fb "https://www.forebet.com/en/football/matches/team1-team2-(slv)-123456"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VENV_DIR="${SCRIPT_DIR}/football_env"

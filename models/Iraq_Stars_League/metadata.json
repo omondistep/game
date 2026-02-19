@@ -8,18 +8,6 @@
     "country_code": "iq",
     "match_count": 42,
     "teams": {
-      "Quwa Al Jawiya": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Newroz SC IRQ": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Minaa Basra": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
       "Gharraf": {
         "home_matches": 2,
         "away_matches": 1
@@ -44,6 +32,10 @@
         "home_matches": 1,
         "away_matches": 1
       },
+      "Newroz SC IRQ": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
       "Al-Karma": {
         "home_matches": 1,
         "away_matches": 1
@@ -64,6 +56,10 @@
         "home_matches": 1,
         "away_matches": 1
       },
+      "Minaa Basra": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Naft SC Baghdad": {
         "home_matches": 0,
         "away_matches": 2
@@ -80,6 +76,10 @@
         "home_matches": 2,
         "away_matches": 0
       },
+      "Quwa Al Jawiya": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Duhok SC": {
         "home_matches": 1,
         "away_matches": 1
@@ -91,7 +91,7 @@
     }
   },
   "example_count": 22,
-  "result_accuracy": 0.4,
-  "ou_accuracy": 0.6,
-  "trained_at": "2026-02-13T19:32:40.490651"
+  "result_accuracy": 0.2,
+  "ou_accuracy": 0.0,
+  "trained_at": "2026-02-19T06:02:36.416408"
 }

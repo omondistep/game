@@ -138,33 +138,237 @@ class TrainingDataBuilder:
         self.league_db = LeagueDatabase()
     
     def extract_features(self, match: Dict) -> Dict:
-        """Extract features from a match for training."""
+        """Extract comprehensive features from a match for training."""
         features = {}
         
+        # ===== 1. ODDS-DERIVED FEATURES (for comparison) =====
         # Probabilities from Forebet
         features['prob_home'] = match.get('prob_home', 0.33)
         features['prob_draw'] = match.get('prob_draw', 0.33)
         features['prob_away'] = match.get('prob_away', 0.34)
         
-        # Derived features
+        # Derived features from odds
         features['prob_home_away_ratio'] = features['prob_home'] / max(features['prob_away'], 0.01)
         features['prob_draw_diff'] = abs(features['prob_home'] - features['prob_away'])
         
         # Predicted average goals
         features['predicted_avg_goals'] = match.get('predicted_avg_goals', 2.5)
         
-        # Odds (if available)
+        # Odds (if available) - handle both dict and float formats
         odds = match.get('odds')
-        if odds:
-            features['odds'] = float(odds)
-        else:
-            # Calculate implied odds from probabilities
+        if odds is None:
             total = features['prob_home'] + features['prob_draw'] + features['prob_away']
             features['odds'] = 1.0 / max(features['prob_home'] / total, 0.01)
+            features['odds_draw'] = 1.0 / max(features['prob_draw'] / total, 0.01)
+            features['odds_away'] = 1.0 / max(features['prob_away'] / total, 0.01)
+        elif isinstance(odds, dict):
+            features['odds'] = float(odds.get('1', 2.5))
+            features['odds_draw'] = float(odds.get('X', 3.0))
+            features['odds_away'] = float(odds.get('2', 2.5))
+        else:
+            # odds is already a float
+            features['odds'] = float(odds)
+            features['odds_draw'] = 3.0
+            features['odds_away'] = 2.5
         
-        # League encoding
+        # ===== 2. RAW STATISTICS FEATURES =====
+        
+        # Goals stats (attack/defense strength)
+        goals_stats = match.get('goals_stats', {})
+        home_goals = goals_stats.get('home', {})
+        away_goals = goals_stats.get('away', {})
+        
+        features['home_scored_avg'] = home_goals.get('scored_avg', 1.3)
+        features['home_conceded_avg'] = home_goals.get('conceded_avg', 1.0)
+        features['away_scored_avg'] = away_goals.get('scored_avg', 1.1)
+        features['away_conceded_avg'] = away_goals.get('conceded_avg', 1.2)
+        
+        # Expected total goals (defensive/offensive strength)
+        features['expected_total_goals'] = (
+            (features['home_scored_avg'] + features['away_conceded_avg']) / 2 +
+            (features['away_scored_avg'] + features['home_conceded_avg']) / 2
+        )
+        
+        # ===== 3. FORM FEATURES =====
+        form = match.get('form', {})
+        home_form_list = form.get('home', [])
+        away_form_list = form.get('away', [])
+        
+        # Calculate form points (3 for W, 1 for D, 0 for L)
+        def form_to_points(results):
+            points = 0
+            for r in results[:6]:  # Last 6 matches
+                if r == 'W':
+                    points += 3
+                elif r == 'D':
+                    points += 1
+            return points
+        
+        features['home_form_points'] = form_to_points(home_form_list)
+        features['away_form_points'] = form_to_points(away_form_list)
+        
+        # Wins, draws, losses in last 6
+        features['home_wins_l6'] = sum(1 for r in home_form_list[:6] if r == 'W')
+        features['home_draws_l6'] = sum(1 for r in home_form_list[:6] if r == 'D')
+        features['home_losses_l6'] = sum(1 for r in home_form_list[:6] if r == 'L')
+        features['away_wins_l6'] = sum(1 for r in away_form_list[:6] if r == 'W')
+        features['away_draws_l6'] = sum(1 for r in away_form_list[:6] if r == 'D')
+        features['away_losses_l6'] = sum(1 for r in away_form_list[:6] if r == 'L')
+        
+        # Recent form (percentage)
+        features['home_recent_form'] = features['home_form_points'] / 18.0  # Max 18 points
+        features['away_recent_form'] = features['away_form_points'] / 18.0
+        
+        # ===== 4. STANDINGS FEATURES =====
+        standings = match.get('standings', {})
+        features['home_points'] = standings.get('home_points') or 0
+        features['away_points'] = standings.get('away_points') or 0
+        
+        # League table position (if available)
+        league_table = match.get('league_table', [])
+        teams = match.get('teams', {})
+        home_team = teams.get('home', '')
+        away_team = teams.get('away', '')
+        
+        features['home_position'] = 10  # Default middle position
+        features['away_position'] = 10
+        features['position_diff'] = 0
+        
+        for i, entry in enumerate(league_table):
+            if entry.get('team', '').lower() == home_team.lower():
+                features['home_position'] = i + 1
+            if entry.get('team', '').lower() == away_team.lower():
+                features['away_position'] = i + 1
+        
+        features['position_diff'] = features['home_position'] - features['away_position']
+        
+        # ===== TIME-WEIGHTED FORM (more recent = more important) =====
+        last6 = match.get('last_6_matches', {})
+        home_last6 = last6.get('home', [])
+        away_last6 = last6.get('away', [])
+        
+        def time_weighted_form(matches, team_key):
+            """Calculate time-weighted form - recent matches count more."""
+            weights = [1.0, 0.85, 0.7, 0.55, 0.4, 0.25]  # Decay weights
+            points = 0
+            total_weight = 0
+            
+            for i, m in enumerate(matches[:6]):
+                w = weights[i] if i < len(weights) else 0.1
+                is_home = m.get('home_team', '').lower() == team_key.lower()
+                
+                if is_home:
+                    score_diff = m.get('home_score', 0) - m.get('away_score', 0)
+                else:
+                    score_diff = m.get('away_score', 0) - m.get('home_score', 0)
+                
+                if score_diff > 0:
+                    pts = 3
+                elif score_diff == 0:
+                    pts = 1
+                else:
+                    pts = 0
+                
+                points += pts * w
+                total_weight += w
+            
+            return points / max(total_weight, 1) * 3  # Normalize to 0-3 scale
+        
+        features['home_time_weighted_form'] = time_weighted_form(home_last6, home_team)
+        features['away_time_weighted_form'] = time_weighted_form(away_last6, away_team)
+        
+        # ===== 5. HEAD-TO-HEAD FEATURES =====
+        h2h = match.get('head_to_head', {})
+        h2h_summary = h2h.get('summary', {})
+        
+        features['h2h_home_win_pct'] = h2h_summary.get('home_wins', 33)
+        features['h2h_draw_pct'] = h2h_summary.get('draws', 33)
+        features['h2h_away_win_pct'] = h2h_summary.get('away_wins', 33)
+        
+        # ===== 6. HOME/AWAY PERFORMANCE =====
+        # Home team's home record
+        home_matches = match.get('home_matches', [])
+        away_matches = match.get('away_matches', [])
+        
+        home_home_wins = 0
+        home_home_draws = 0
+        home_home_losses = 0
+        home_home_goals = 0
+        
+        for m in home_matches:
+            if m.get('home_team') == home_team:
+                home_home_goals += m.get('home_score', 0)
+                if m.get('home_score', 0) > m.get('away_score', 0):
+                    home_home_wins += 1
+                elif m.get('home_score', 0) == m.get('away_score', 0):
+                    home_home_draws += 1
+                else:
+                    home_home_losses += 1
+        
+        total_home_matches = len(home_matches)
+        if total_home_matches > 0:
+            features['home_home_win_rate'] = (home_home_wins / total_home_matches) * 100
+            features['home_home_goals_avg'] = home_home_goals / total_home_matches
+        else:
+            features['home_home_win_rate'] = 50
+            features['home_home_goals_avg'] = 1.3
+        
+        # Away team's away record
+        away_away_wins = 0
+        away_away_draws = 0
+        away_away_losses = 0
+        away_away_goals = 0
+        
+        for m in away_matches:
+            if m.get('away_team') == away_team:
+                away_away_goals += m.get('away_score', 0)
+                if m.get('away_score', 0) > m.get('home_score', 0):
+                    away_away_wins += 1
+                elif m.get('away_score', 0) == m.get('home_score', 0):
+                    away_away_draws += 1
+                else:
+                    away_away_losses += 1
+        
+        total_away_matches = len(away_matches)
+        if total_away_matches > 0:
+            features['away_away_win_rate'] = (away_away_wins / total_away_matches) * 100
+            features['away_away_goals_avg'] = away_away_goals / total_away_matches
+        else:
+            features['away_away_win_rate'] = 33
+            features['away_away_goals_avg'] = 1.1
+        
+        # ===== 7. SHOTS STATS =====
+        shots = match.get('shots_stats', {})
+        features['home_shots_avg'] = shots.get('home', {}).get('total', 10)
+        features['away_shots_avg'] = shots.get('away', {}).get('total', 9)
+        features['home_shots_on_target_pct'] = shots.get('home', {}).get('on_target', 40)
+        features['away_shots_on_target_pct'] = shots.get('away', {}).get('on_target', 38)
+        
+        # ===== 8. POSSESSION & PASSING =====
+        passes = match.get('passes_stats', {})
+        features['home_possession'] = passes.get('home', {}).get('possession', 50)
+        features['away_possession'] = passes.get('away', {}).get('possession', 50)
+        features['home_pass_accuracy'] = passes.get('home', {}).get('accuracy', 80)
+        features['away_pass_accuracy'] = passes.get('away', {}).get('accuracy', 78)
+        
+        # ===== 9. ATTACKS =====
+        attacks = match.get('attacks_stats', {})
+        features['home_dangerous_attacks_avg'] = attacks.get('home', {}).get('dangerous', 30)
+        features['away_dangerous_attacks_avg'] = attacks.get('away', {}).get('dangerous', 28)
+        
+        # ===== 10. DISCIPLINE =====
+        discipline = match.get('discipline', {})
+        features['home_fouls_avg'] = discipline.get('home', {}).get('fouls', 12)
+        features['away_fouls_avg'] = discipline.get('away', {}).get('fouls', 13)
+        features['home_yellow_avg'] = discipline.get('home', {}).get('yellow', 2)
+        features['away_yellow_avg'] = discipline.get('away', {}).get('yellow', 2)
+        
+        # ===== 11. LEAGUE ENCODING =====
         league_code = match.get('league_code', 'Unknown')
         features['league_code_encoded'] = hash(league_code) % 100
+        
+        # ===== 12. HOME ADVANTAGE =====
+        features['home_advantage'] = features['home_home_win_rate'] / 100 - features['away_away_win_rate'] / 100 + 0.1
         
         return features
     
@@ -238,6 +442,23 @@ class TrainingDataBuilder:
             for filepath in sorted(files):
                 print(f"Loading: {filepath}")
                 matches = self.load_json_file(filepath)
+                
+                # Extract date from filename (e.g., historical_matches_2026-02-16.json)
+                filename_date = None
+                filename_match = os.path.basename(filepath).replace('historical_matches_', '').replace('.json', '')
+                try:
+                    file_date = datetime.strptime(filename_match, '%Y-%m-%d')
+                    filename_date = file_date.strftime('%Y-%m-%d')
+                except:
+                    pass
+                
+                # Add filename date to each match
+                for match in matches:
+                    if not match.get('date') and filename_date:
+                        match['date'] = filename_date
+                    if not match.get('match_date') and filename_date:
+                        match['match_date'] = filename_date
+                
                 all_matches.extend(matches)
                 print(f"  Loaded {len(matches)} matches")
         
@@ -286,7 +507,9 @@ class TrainingDataBuilder:
                     'url': match.get('url', ''),
                     'home_team': match.get('home_team', ''),
                     'away_team': match.get('away_team', ''),
-                    'date': match.get('date', '')
+                    'date': match.get('date', ''),
+                    # Use match_date for rolling window filtering
+                    'timestamp': match.get('match_date', match.get('date', '')),
                 })
                 processed += 1
             else:
@@ -354,7 +577,9 @@ class ModelTrainer:
             feat = ex['features']
             label = ex['labels']
             
+            # Use ALL available features (35+ features)
             feature_vec = [
+                # Odds-derived
                 feat.get('prob_home', 0.33),
                 feat.get('prob_draw', 0.33),
                 feat.get('prob_away', 0.34),
@@ -362,6 +587,63 @@ class ModelTrainer:
                 feat.get('prob_draw_diff', 0.0),
                 feat.get('predicted_avg_goals', 2.5),
                 feat.get('odds', 2.0),
+                feat.get('odds_draw', 3.0),
+                feat.get('odds_away', 2.5),
+                # Goals
+                feat.get('home_scored_avg', 1.3),
+                feat.get('home_conceded_avg', 1.0),
+                feat.get('away_scored_avg', 1.1),
+                feat.get('away_conceded_avg', 1.2),
+                feat.get('expected_total_goals', 2.5),
+                # Form
+                feat.get('home_form_points', 6),
+                feat.get('away_form_points', 6),
+                feat.get('home_wins_l6', 2),
+                feat.get('home_draws_l6', 2),
+                feat.get('home_losses_l6', 2),
+                feat.get('away_wins_l6', 2),
+                feat.get('away_draws_l6', 2),
+                feat.get('away_losses_l6', 2),
+                feat.get('home_recent_form', 0.33),
+                feat.get('away_recent_form', 0.33),
+                feat.get('home_time_weighted_form', 1.5),
+                feat.get('away_time_weighted_form', 1.5),
+                # Standings
+                feat.get('home_points', 0),
+                feat.get('away_points', 0),
+                feat.get('home_position', 10),
+                feat.get('away_position', 10),
+                feat.get('position_diff', 0),
+                # Head-to-head
+                feat.get('h2h_home_win_pct', 33),
+                feat.get('h2h_draw_pct', 33),
+                feat.get('h2h_away_win_pct', 33),
+                # Home/Away
+                feat.get('home_home_win_rate', 50),
+                feat.get('away_away_win_rate', 33),
+                feat.get('home_home_goals_avg', 1.3),
+                feat.get('away_away_goals_avg', 1.1),
+                # Shots
+                feat.get('home_shots_avg', 10),
+                feat.get('away_shots_avg', 9),
+                feat.get('home_shots_on_target_pct', 40),
+                feat.get('away_shots_on_target_pct', 38),
+                # Attacks
+                feat.get('home_dangerous_attacks_avg', 30),
+                feat.get('away_dangerous_attacks_avg', 28),
+                # Possession
+                feat.get('home_possession', 50),
+                feat.get('away_possession', 50),
+                feat.get('home_pass_accuracy', 80),
+                feat.get('away_pass_accuracy', 78),
+                # Discipline
+                feat.get('home_fouls_avg', 12),
+                feat.get('away_fouls_avg', 13),
+                feat.get('home_yellow_avg', 2),
+                feat.get('away_yellow_avg', 2),
+                # Home advantage
+                feat.get('home_advantage', 0.1),
+                # League
                 feat.get('league_code_encoded', 0),
             ]
             
@@ -511,9 +793,41 @@ class ModelTrainer:
             print(f"  Skipping global model: only {len(all_examples)} examples")
             return
         
+        # =========================================================================
+        # ROLLING WINDOW: Keep only matches from the last ~3 weeks (Jan 25 - Feb 16)
+        # This ensures we use recent data for better predictions
+        # =========================================================================
+        from datetime import datetime, timedelta
+        
+        # Sort examples by timestamp
+        def get_example_date(ex):
+            ts = ex.get('timestamp', '')
+            if not ts:
+                return datetime.min
+            try:
+                # Handle ISO format
+                if 'T' in ts:
+                    return datetime.fromisoformat(ts.replace('Z', '+00:00')).replace(tzinfo=None)
+                # Handle date-only format YYYY-MM-DD
+                return datetime.strptime(ts, '%Y-%m-%d')
+            except:
+                return datetime.min
+        
+        # Sort by date (oldest first)
+        all_examples_sorted = sorted(all_examples, key=get_example_date)
+        
+        # Filter to keep only recent examples (from Jan 25, 2026 onwards)
+        cutoff_date = datetime(2026, 1, 25)
+        original_count = len(all_examples_sorted)
+        all_examples = [ex for ex in all_examples_sorted if get_example_date(ex) >= cutoff_date]
+        
+        if len(all_examples) < original_count:
+            dates = [get_example_date(ex).strftime('%Y-%m-%d') for ex in all_examples[:5]]
+            print(f"[Rolling Window] Using {len(all_examples)} of {original_count} examples (from {dates[0]} onwards)")
+        
         print(f"  Total examples: {len(all_examples)}")
         
-        # Extract features and labels
+        # Extract features and labels - use ALL available features
         X = []
         y_result = []
         y_over_2_5 = []
@@ -522,7 +836,9 @@ class ModelTrainer:
             feat = ex['features']
             label = ex['labels']
             
+            # Use ALL available features (50+ features)
             feature_vec = [
+                # Odds-derived
                 feat.get('prob_home', 0.33),
                 feat.get('prob_draw', 0.33),
                 feat.get('prob_away', 0.34),
@@ -530,6 +846,63 @@ class ModelTrainer:
                 feat.get('prob_draw_diff', 0.0),
                 feat.get('predicted_avg_goals', 2.5),
                 feat.get('odds', 2.0),
+                feat.get('odds_draw', 3.0),
+                feat.get('odds_away', 2.5),
+                # Goals
+                feat.get('home_scored_avg', 1.3),
+                feat.get('home_conceded_avg', 1.0),
+                feat.get('away_scored_avg', 1.1),
+                feat.get('away_conceded_avg', 1.2),
+                feat.get('expected_total_goals', 2.5),
+                # Form
+                feat.get('home_form_points', 6),
+                feat.get('away_form_points', 6),
+                feat.get('home_wins_l6', 2),
+                feat.get('home_draws_l6', 2),
+                feat.get('home_losses_l6', 2),
+                feat.get('away_wins_l6', 2),
+                feat.get('away_draws_l6', 2),
+                feat.get('away_losses_l6', 2),
+                feat.get('home_recent_form', 0.33),
+                feat.get('away_recent_form', 0.33),
+                feat.get('home_time_weighted_form', 1.5),
+                feat.get('away_time_weighted_form', 1.5),
+                # Standings
+                feat.get('home_points', 0),
+                feat.get('away_points', 0),
+                feat.get('home_position', 10),
+                feat.get('away_position', 10),
+                feat.get('position_diff', 0),
+                # Head-to-head
+                feat.get('h2h_home_win_pct', 33),
+                feat.get('h2h_draw_pct', 33),
+                feat.get('h2h_away_win_pct', 33),
+                # Home/Away
+                feat.get('home_home_win_rate', 50),
+                feat.get('away_away_win_rate', 33),
+                feat.get('home_home_goals_avg', 1.3),
+                feat.get('away_away_goals_avg', 1.1),
+                # Shots
+                feat.get('home_shots_avg', 10),
+                feat.get('away_shots_avg', 9),
+                feat.get('home_shots_on_target_pct', 40),
+                feat.get('away_shots_on_target_pct', 38),
+                # Attacks
+                feat.get('home_dangerous_attacks_avg', 30),
+                feat.get('away_dangerous_attacks_avg', 28),
+                # Possession
+                feat.get('home_possession', 50),
+                feat.get('away_possession', 50),
+                feat.get('home_pass_accuracy', 80),
+                feat.get('away_pass_accuracy', 78),
+                # Discipline
+                feat.get('home_fouls_avg', 12),
+                feat.get('away_fouls_avg', 13),
+                feat.get('home_yellow_avg', 2),
+                feat.get('away_yellow_avg', 2),
+                # Home advantage
+                feat.get('home_advantage', 0.1),
+                # League
                 feat.get('league_code_encoded', 0),
             ]
             
@@ -649,13 +1022,13 @@ def main():
     elif args.use_individual:
         patterns = [f"{args.dir}/historical_matches_*.json"]
     elif os.path.exists(combined_file):
-        # Default: use combined file (faster, already deduplicated)
-        patterns = [combined_file]
-        print(f"Using combined file: {combined_file}")
-    else:
-        # Fallback: use individual files
+        # Default: use individual files (they contain proper dates for rolling window)
         patterns = [f"{args.dir}/historical_matches_*.json"]
-        print("Using individual date files (combined file not found)")
+        print(f"Using individual date files (recommended for date-based training)")
+    else:
+        # Fallback: use combined file
+        patterns = [combined_file]
+        print("Using combined file (dates may be missing)")
     
     # Build training data
     print("\n" + "-" * 60)

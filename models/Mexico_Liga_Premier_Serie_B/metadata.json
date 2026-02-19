@@ -6,14 +6,14 @@
     "league": "Liga Premier Serie B",
     "league_url_path": "",
     "country_code": "mx",
-    "match_count": 104,
+    "match_count": 124,
     "teams": {
       "CD Zap": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Ciervos": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Mexicali FC": {
@@ -21,12 +21,12 @@
         "away_matches": 0
       },
       "Celaya FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Cordobes": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Correcaminos UAT II": {
         "home_matches": 0,
@@ -38,7 +38,7 @@
       },
       "Racing Porto Palmeiras": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Artesanos Metepec": {
         "home_matches": 2,
@@ -46,14 +46,14 @@
       },
       "CDM": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Tigres de Alica": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "La Piedad": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Lobos ULMX": {
@@ -61,11 +61,11 @@
         "away_matches": 1
       },
       "Sporting Canamy": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Chiapas FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Montaneses": {
@@ -74,86 +74,86 @@
       },
       "Los Cabos United": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Colima FC": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Atletico Cocula": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Ensenada": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Real Apodaca": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Zacatepec": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Toros Neza": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Chapulineros": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Deportivo Ayense": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Aguacateros CDU": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Gorilas de Juanacatlan": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Poza Rica": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "FC Santiago": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Cimarrones Sonora": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Alacranes Durango": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Inter Playa del Carmen": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Canoneros Marina": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Leones Negros II": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "UA Zacatecas": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Mineros de Fresnillo": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Gavilanes FC Matamoros": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Chilpancingo": {
@@ -162,44 +162,44 @@
       },
       "Cafetaleros Tapachula": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Acatlan": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Tritones Vallarta": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Dragones de Oaxaca": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Caja Oblatos CFD": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Hidalgo": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "UAG Tecos": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Zitacuaro": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Racing II": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       }
     }
   },
-  "example_count": 51,
-  "result_accuracy": 0.18181818181818182,
-  "ou_accuracy": 0.7272727272727273,
-  "trained_at": "2026-02-13T19:32:47.684646"
+  "example_count": 71,
+  "result_accuracy": 0.6666666666666666,
+  "ou_accuracy": 0.4666666666666667,
+  "trained_at": "2026-02-19T06:02:45.139892"
 }

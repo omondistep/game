@@ -6,35 +6,31 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "ug",
-    "match_count": 25,
+    "match_count": 28,
     "teams": {
-      "UPDF FC": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
       "Buhimba United Saints": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Bul FC": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
-      "Vipers SC": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "NEC": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "KCC Kampala": {
         "home_matches": 1,
         "away_matches": 0
       },
+      "UPDF FC": {
+        "home_matches": 2,
+        "away_matches": 1
+      },
       "Lugazi Municipal": {
         "home_matches": 1,
         "away_matches": 1
+      },
+      "Bul FC": {
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Calvary": {
         "home_matches": 1,
@@ -45,16 +41,20 @@
         "away_matches": 1
       },
       "Gaddafi FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Maroons FC": {
         "home_matches": 1,
         "away_matches": 1
       },
+      "Vipers SC": {
+        "home_matches": 3,
+        "away_matches": 1
+      },
       "Police FC UGA": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Kitara FC": {
         "home_matches": 1,
@@ -70,12 +70,12 @@
       },
       "Mbarara City": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       }
     }
   },
-  "example_count": 15,
-  "result_accuracy": 0.6666666666666666,
-  "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T19:33:01.277207"
+  "example_count": 18,
+  "result_accuracy": 0.25,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-19T06:03:01.874885"
 }

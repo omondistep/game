@@ -1270,5 +1270,179 @@
     "league_name": "Premier League",
     "country": "Sudan",
     "source": "historical_scraper"
+  },
+  "24216": {
+    "short_code": "Ar3",
+    "league_name": "Primera B Metropolitana",
+    "country": "Argentina",
+    "source": "historical_scraper"
+  },
+  "23579": {
+    "short_code": "Cy1",
+    "league_name": "First Division",
+    "country": "Cyprus",
+    "source": "historical_scraper"
+  },
+  "24241": {
+    "short_code": "Gr2",
+    "league_name": "Super League 2",
+    "country": "Greece",
+    "source": "historical_scraper"
+  },
+  "23566": {
+    "short_code": "ChW",
+    "league_name": "Super League Women",
+    "country": "Switzerland",
+    "source": "historical_scraper"
+  },
+  "23507": {
+    "short_code": "SzW",
+    "league_name": "Nationalliga B Women",
+    "country": "Switzerland",
+    "source": "historical_scraper"
+  },
+  "24254": {
+    "short_code": "Mx3",
+    "league_name": "Liga Premier Serie B",
+    "country": "Mexico",
+    "source": "historical_scraper"
+  },
+  "24222": {
+    "short_code": "De6",
+    "league_name": "Junioren Bundesliga",
+    "country": "Germany",
+    "source": "historical_scraper"
+  },
+  "24260": {
+    "short_code": "Sr1",
+    "league_name": "Hoofdklasse",
+    "country": "Suriname",
+    "source": "historical_scraper"
+  },
+  "23797": {
+    "short_code": "Es4",
+    "league_name": "Segunda B Grupo 2",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "23800": {
+    "short_code": "Es4",
+    "league_name": "Segunda B Grupo 3",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "23756": {
+    "short_code": "Es5",
+    "league_name": "Tercera Division Group 4 - Pais Vasco",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "23658": {
+    "short_code": "EsW",
+    "league_name": "Primera Division Women",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "24262": {
+    "short_code": "AuN",
+    "league_name": "NPL NSW",
+    "country": "Australia",
+    "source": "historical_scraper"
+  },
+  "23530": {
+    "short_code": "Es2",
+    "league_name": "Segunda Division",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "24265": {
+    "short_code": "Ag1",
+    "league_name": "Premier Division",
+    "country": "Antigua and Barbuda",
+    "source": "historical_scraper"
+  },
+  "24270": {
+    "short_code": "JpW",
+    "league_name": "WE League",
+    "country": "Japan",
+    "source": "historical_scraper"
+  },
+  "24261": {
+    "short_code": "CD1",
+    "league_name": "Ligue 1",
+    "country": "DR Congo",
+    "source": "historical_scraper"
+  },
+  "23842": {
+    "short_code": "Bg2",
+    "league_name": "Vtora Liga",
+    "country": "Bulgaria",
+    "source": "historical_scraper"
+  },
+  "23694": {
+    "short_code": "Rs2",
+    "league_name": "Prva Liga",
+    "country": "Serbia",
+    "source": "historical_scraper"
+  },
+  "23170": {
+    "short_code": "Nl1",
+    "league_name": "Eredivisie",
+    "country": "Netherlands",
+    "source": "historical_scraper"
+  },
+  "24110": {
+    "short_code": "Gm1",
+    "league_name": "GFA League",
+    "country": "Gambia",
+    "source": "historical_scraper"
+  },
+  "24004": {
+    "short_code": "Au1",
+    "league_name": "A-League",
+    "country": "Australia",
+    "source": "historical_scraper"
+  },
+  "24276": {
+    "short_code": "CD1",
+    "league_name": "Ligue 1",
+    "country": "DR Congo",
+    "source": "historical_scraper"
+  },
+  "23503": {
+    "short_code": "Nl4",
+    "league_name": "Derde Divisie",
+    "country": "Netherlands",
+    "source": "historical_scraper"
+  },
+  "24094": {
+    "short_code": "Wl2",
+    "league_name": "Cymru Championship",
+    "country": "Wales",
+    "source": "historical_scraper"
+  },
+  "23395": {
+    "short_code": "NL",
+    "league_name": "National League",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23406": {
+    "short_code": "NLn",
+    "league_name": "National League North",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23412": {
+    "short_code": "NLs",
+    "league_name": "National League South",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "23568": {
+    "short_code": "DeW",
+    "league_name": "2. Bundesliga Women",
+    "country": "Germany",
+    "source": "historical_scraper"
   }
 }

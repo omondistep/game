@@ -236,7 +236,8 @@ class MatchDataStorage:
             'features': features,
             'labels': labels,
             'url': url,
-            'timestamp': datetime.now().isoformat(),
+            # Use actual match date if available, otherwise use current time
+            'timestamp': match_data.get('match_date', datetime.now().isoformat()),
         })
         
         with open(self.training_data_file, 'wb') as f:

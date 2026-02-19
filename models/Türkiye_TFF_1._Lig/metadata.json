@@ -6,22 +6,10 @@
     "league": "TFF 1. Lig",
     "league_url_path": "",
     "country_code": "tr",
-    "match_count": 12,
+    "match_count": 16,
     "teams": {
       "76 Igd\u0131r Belediye Spor": {
         "home_matches": 2,
-        "away_matches": 0
-      },
-      "Umraniyespor": {
-        "home_matches": 0,
-        "away_matches": 2
-      },
-      "Boluspor": {
-        "home_matches": 1,
-        "away_matches": 0
-      },
-      "Hatayspor": {
-        "home_matches": 1,
         "away_matches": 1
       },
       "Manisa BBSK": {
@@ -38,16 +26,40 @@
       },
       "Erokspor": {
         "home_matches": 1,
+        "away_matches": 2
+      },
+      "Umraniyespor": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
+      "Hatayspor": {
+        "home_matches": 2,
         "away_matches": 1
       },
       "Sivasspor": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Boluspor": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Bandirmaspor": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Serik Belediyespor": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Istanbulspor AS": {
+        "home_matches": 1,
+        "away_matches": 0
       }
     }
   },
-  "example_count": 7,
-  "result_accuracy": 1.0,
+  "example_count": 11,
+  "result_accuracy": 0.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:58.697100"
+  "trained_at": "2026-02-19T06:02:59.072976"
 }

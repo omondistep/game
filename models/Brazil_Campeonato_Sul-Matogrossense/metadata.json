@@ -6,11 +6,11 @@
     "league": "Campeonato Sul-Matogrossense",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 50,
+    "match_count": 52,
     "teams": {
       "Corumbaense MS": {
         "home_matches": 3,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Operario MS": {
         "home_matches": 3,
@@ -25,7 +25,7 @@
         "away_matches": 1
       },
       "Ivinhema MS": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 3
       },
       "Dourados Atletico": {
@@ -38,10 +38,10 @@
       },
       "CR Aquidauana": {
         "home_matches": 0,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Aguia Negra MS": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Sergipe SE": {
@@ -90,8 +90,8 @@
       }
     }
   },
-  "example_count": 28,
+  "example_count": 30,
   "result_accuracy": 0.16666666666666666,
-  "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T19:32:27.295590"
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-19T06:02:19.184600"
 }

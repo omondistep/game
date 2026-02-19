@@ -6,10 +6,10 @@
     "league": "League 1",
     "league_url_path": "",
     "country_code": "ir",
-    "match_count": 46,
+    "match_count": 47,
     "teams": {
       "Saipa Karaj": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Sanat Naft AC": {
@@ -18,7 +18,7 @@
       },
       "Damash Gilan": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Naft Bandar Abbas": {
         "home_matches": 1,
@@ -82,8 +82,8 @@
       }
     }
   },
-  "example_count": 23,
-  "result_accuracy": 0.0,
-  "ou_accuracy": 0.6,
-  "trained_at": "2026-02-13T19:32:41.265132"
+  "example_count": 24,
+  "result_accuracy": 0.4,
+  "ou_accuracy": 0.4,
+  "trained_at": "2026-02-19T06:02:37.179538"
 }

@@ -6,34 +6,34 @@
     "league": "Thai League 3",
     "league_url_path": "",
     "country_code": "th",
-    "match_count": 112,
+    "match_count": 123,
     "teams": {
       "Saimit Kabin United": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Rayong United": {
         "home_matches": 1,
         "away_matches": 1
       },
       "Udon Banchan": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Yasothon United": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Saraburi United": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "KBU FC": {
         "home_matches": 0,
         "away_matches": 1
       },
       "Futera United": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Chamchuri United": {
@@ -41,7 +41,7 @@
         "away_matches": 1
       },
       "Ang Thong": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Pathum Thani University": {
@@ -49,7 +49,7 @@
         "away_matches": 2
       },
       "Thonburi United": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Nonthaburi United": {
@@ -57,7 +57,7 @@
         "away_matches": 2
       },
       "Assumption United": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Hua Hin City": {
@@ -66,18 +66,18 @@
       },
       "STK Muangnont FC": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Samut Sakhon City": {
         "home_matches": 0,
         "away_matches": 1
       },
       "Satun": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Samui United": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Nakhon Mae Sot": {
@@ -90,7 +90,7 @@
       },
       "Suranaree Black Cat": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Khonkaen FC": {
         "home_matches": 1,
@@ -138,7 +138,7 @@
       },
       "Chumphon United": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Paet Riew City": {
         "home_matches": 1,
@@ -158,7 +158,7 @@
       },
       "Phuket FC": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Pattaya City": {
         "home_matches": 1,
@@ -206,19 +206,19 @@
       },
       "Prime Bangkok FC": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Chiangrai TSC": {
         "home_matches": 0,
         "away_matches": 1
       },
       "Siam Navy": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Surin KCM": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Phitsanulok FC": {
         "home_matches": 1,
@@ -237,16 +237,16 @@
         "away_matches": 1
       },
       "Chiangrai City": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Surin City": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Kamphaengphet FC": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Chachoengsao": {
         "home_matches": 1,
@@ -254,16 +254,16 @@
       },
       "Roi Et United": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Suphanburi FC": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       }
     }
   },
-  "example_count": 56,
-  "result_accuracy": 0.25,
-  "ou_accuracy": 0.4166666666666667,
-  "trained_at": "2026-02-13T19:32:57.642892"
+  "example_count": 67,
+  "result_accuracy": 0.2857142857142857,
+  "ou_accuracy": 0.5714285714285714,
+  "trained_at": "2026-02-19T06:02:57.385115"
 }

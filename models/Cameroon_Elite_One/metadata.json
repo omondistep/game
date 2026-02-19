@@ -6,7 +6,7 @@
     "league": "Elite One",
     "league_url_path": "",
     "country_code": "cm",
-    "match_count": 18,
+    "match_count": 19,
     "teams": {
       "Coton Sport": {
         "home_matches": 1,
@@ -37,7 +37,7 @@
         "away_matches": 0
       },
       "Canon Yaounde": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Panthere du Nde": {
@@ -62,12 +62,12 @@
       },
       "Unisport Bafang": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       }
     }
   },
-  "example_count": 9,
-  "result_accuracy": 1.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:30.569225"
+  "example_count": 10,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-19T06:02:23.939473"
 }

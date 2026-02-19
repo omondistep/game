@@ -8,21 +8,9 @@
     "country_code": "ir",
     "match_count": 32,
     "teams": {
-      "Caspian Qazvin": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
       "Aluminium Arak": {
         "home_matches": 1,
         "away_matches": 1
-      },
-      "Esteghlal Khuzestan": {
-        "home_matches": 1,
-        "away_matches": 1
-      },
-      "Fajr Sepasi": {
-        "home_matches": 2,
-        "away_matches": 2
       },
       "Teraktor Sazi": {
         "home_matches": 0,
@@ -31,6 +19,10 @@
       "Esteghlal Tehran": {
         "home_matches": 2,
         "away_matches": 0
+      },
+      "Esteghlal Khuzestan": {
+        "home_matches": 1,
+        "away_matches": 1
       },
       "Mes Rafsanjan": {
         "home_matches": 1,
@@ -44,6 +36,10 @@
         "home_matches": 1,
         "away_matches": 0
       },
+      "Caspian Qazvin": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
       "Foolad Khuzestan": {
         "home_matches": 1,
         "away_matches": 1
@@ -51,6 +47,10 @@
       "Persepolis FC": {
         "home_matches": 1,
         "away_matches": 1
+      },
+      "Fajr Sepasi": {
+        "home_matches": 2,
+        "away_matches": 2
       },
       "Kheybar Khorramabad": {
         "home_matches": 1,
@@ -77,5 +77,5 @@
   "example_count": 17,
   "result_accuracy": 0.5,
   "ou_accuracy": 0.75,
-  "trained_at": "2026-02-13T19:32:40.886885"
+  "trained_at": "2026-02-19T06:02:36.797143"
 }

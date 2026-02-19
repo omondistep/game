@@ -6,68 +6,68 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "ve",
-    "match_count": 22,
+    "match_count": 29,
     "teams": {
       "Puerto Cabello": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Metropolitanos": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Carabobo": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Portuguesa": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Deportivo La Guaira": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Monagas SC": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Estudiantes FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Caracas": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "UCV FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Trujillanos FC": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Deportivo Tachira": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Academia Anzoategui": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Rayo Zuliano": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Zamora": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       }
     }
   },
-  "example_count": 11,
+  "example_count": 18,
   "result_accuracy": 0.0,
-  "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T19:33:01.975113"
+  "ou_accuracy": 0.25,
+  "trained_at": "2026-02-19T06:03:02.712481"
 }

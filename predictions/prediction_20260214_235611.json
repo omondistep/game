@@ -1,0 +1,251 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/lu\u00eds-\u00e1ngel-firpo-platense-(slv)-2415407",
+  "timestamp": "2026-02-14T23:56:11.352925",
+  "features": {
+    "home_position": 2,
+    "away_position": 10,
+    "position_diff": -8,
+    "home_points": 50,
+    "away_points": 26,
+    "home_form_points": 14,
+    "away_form_points": 4,
+    "home_recent_form": 7,
+    "away_recent_form": 1,
+    "home_wins_l6": 4,
+    "home_draws_l6": 2,
+    "home_losses_l6": 0,
+    "away_wins_l6": 1,
+    "away_draws_l6": 1,
+    "away_losses_l6": 4,
+    "home_scored_avg": 2.121212121212121,
+    "home_conceded_avg": 1.0303030303030303,
+    "away_scored_avg": 1.2,
+    "away_conceded_avg": 1.5,
+    "expected_total_goals": 2.925757575757576,
+    "home_home_win_rate": 61.111111111111114,
+    "home_home_goals_avg": 1.5555555555555556,
+    "away_away_win_rate": 20.0,
+    "away_away_goals_avg": 1.0666666666666667,
+    "h2h_home_win_pct": null,
+    "h2h_draw_pct": null,
+    "h2h_away_win_pct": null,
+    "home_shots_avg": 9.969696969696969,
+    "away_shots_avg": 7.6,
+    "home_shots_on_target_pct": 48.02431610942249,
+    "away_shots_on_target_pct": 44.29824561403509,
+    "home_dangerous_attacks_avg": 82.57575757575758,
+    "away_dangerous_attacks_avg": 54.96666666666667,
+    "home_possession": 51.86,
+    "away_possession": 46.89,
+    "home_pass_accuracy": null,
+    "away_pass_accuracy": null,
+    "home_fouls_avg": 12.909090909090908,
+    "away_fouls_avg": 11.9,
+    "home_yellow_avg": 2.484848484848485,
+    "away_yellow_avg": 2.5,
+    "odds_home": 1.38,
+    "odds_draw": 4.5,
+    "odds_away": 7.5,
+    "odds_over": null,
+    "odds_under": null,
+    "forebet_probability": 65
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5236,
+        "X": 0.1276,
+        "2": 0.3487
+      },
+      "computed_odds": {
+        "1": 1.91,
+        "X": 7.84,
+        "2": 2.87
+      },
+      "confidence": 0.5236
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.0162,
+        "Over": 0.9838
+      },
+      "computed_odds": {
+        "Under": 61.73,
+        "Over": 1.02
+      },
+      "confidence": 0.9838
+    },
+    "model_trained": true
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.5236,
+        "X": 0.1276,
+        "2": 0.3487
+      },
+      "computed_odds": {
+        "1": 1.91,
+        "X": 7.84,
+        "2": 2.87
+      },
+      "confidence": 0.5236
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.0162,
+        "Over": 0.9838
+      },
+      "computed_odds": {
+        "Under": 61.73,
+        "Over": 1.02
+      },
+      "confidence": 0.9838
+    },
+    "model_trained": true
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.6376,
+        "X": 0.1874,
+        "2": 0.175
+      },
+      "computed_odds": {
+        "1": 1.57,
+        "X": 5.34,
+        "2": 5.71
+      },
+      "confidence": 0.6376
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Over": 0.52,
+        "Under": 0.48
+      },
+      "computed_odds": {
+        "Over": 1.92,
+        "Under": 2.08
+      },
+      "confidence": 0.52
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.9473684210526316,
+        "away": 0.5263157894736843,
+        "weight": 0.009325240826404508
+      },
+      "odds_analysis": {
+        "home": 0.6708407871198568,
+        "away": 0.12343470483005364,
+        "weight": 0.45155459783510427
+      },
+      "recent_form": {
+        "home": 0.7777777777777778,
+        "away": 0.2222222222222222,
+        "weight": 0.43012802156067953
+      },
+      "top5_performance": {
+        "home": 0.0,
+        "away": 0.0,
+        "weight": 0.009325240826404508
+      },
+      "goals_stats": {
+        "home": 0.7727272727272727,
+        "away": 0.425,
+        "weight": 0.08101641729859822
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.009325240826404508
+      },
+      "shots_possession": {
+        "home": 0.37681656565656557,
+        "away": 0.28134,
+        "weight": 0.009325240826404508
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.925757575757576
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "odds_analysis",
+          "direction": "home",
+          "impact": 24.7
+        },
+        {
+          "factor": "recent_form",
+          "direction": "home",
+          "impact": 23.9
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 2.8
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.93,
+          "direction": "Over"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 3.32,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.009325240826404508,
+      "odds_analysis": 0.45155459783510427,
+      "recent_form": 0.43012802156067953,
+      "top5_performance": 0.009325240826404508,
+      "goals_stats": 0.08101641729859822,
+      "h2h": 0.009325240826404508,
+      "shots_possession": 0.009325240826404508
+    }
+  },
+  "convergence": {
+    "result_match": true,
+    "ou_match": true,
+    "ml_result": "1",
+    "weighted_result": "1",
+    "ml_ou": "Over",
+    "weighted_ou": "Over"
+  },
+  "analysis": {
+    "key_factors": [
+      "\ud83d\udd25 Lu\u00eds \u00c1ngel Firpo in excellent form (4 wins in last 6)",
+      "\u26a0\ufe0f Platense (SLV) in poor form (1 win in last 6)",
+      "\ud83d\udcc9 Platense (SLV) struggles away (20% win rate)",
+      "\u26bd High-scoring match expected (98% confidence)",
+      "\ud83d\udcca Lu\u00eds \u00c1ngel Firpo significantly higher in table (#2 vs #10)"
+    ],
+    "value_bets": [
+      {
+        "outcome": "2",
+        "market": 7.5,
+        "fair": 2.87,
+        "value_pct": 161.3
+      }
+    ],
+    "confidence": "HIGH"
+  },
+  "injuries": {
+    "Lu\u00eds \u00c1ngel Firpo": [],
+    "Platense (SLV)": []
+  }
+}

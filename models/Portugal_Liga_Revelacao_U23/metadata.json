@@ -6,23 +6,15 @@
     "league": "Liga Revelacao U23",
     "league_url_path": "",
     "country_code": "pt",
-    "match_count": 43,
+    "match_count": 45,
     "teams": {
-      "Vizela U23": {
-        "home_matches": 2,
-        "away_matches": 1
-      },
-      "Farense U23": {
-        "home_matches": 1,
-        "away_matches": 2
-      },
       "Sporting Braga U23": {
         "home_matches": 1,
         "away_matches": 0
       },
       "Sporting CP U23": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Torreense U23": {
         "home_matches": 1,
@@ -30,14 +22,14 @@
       },
       "Leixoes U23": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Benfica U23": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Santa Clara U23": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Portimonense U23": {
@@ -68,14 +60,22 @@
         "home_matches": 2,
         "away_matches": 1
       },
+      "Farense U23": {
+        "home_matches": 1,
+        "away_matches": 2
+      },
       "Estoril U23": {
         "home_matches": 2,
         "away_matches": 0
+      },
+      "Vizela U23": {
+        "home_matches": 2,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 21,
+  "example_count": 23,
   "result_accuracy": 0.4,
-  "ou_accuracy": 0.6,
-  "trained_at": "2026-02-13T19:32:50.745494"
+  "ou_accuracy": 0.8,
+  "trained_at": "2026-02-19T06:02:49.917044"
 }

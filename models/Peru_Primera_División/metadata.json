@@ -18,28 +18,44 @@
       },
       "Universitario": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 1
       },
       "ADT": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
       },
       "Cusco FC": {
-        "home_matches": 2,
+        "home_matches": 1,
         "away_matches": 0
       },
       "Alianza Lima": {
-        "home_matches": 2,
-        "away_matches": 0
+        "home_matches": 1,
+        "away_matches": 1
       },
       "CD Comerciantes": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 1
+      },
+      "Sport Boys": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Atletico Grau": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Alianza Atletico": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "UCV Moquegua": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
   "example_count": 8,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T08:11:02.306623"
+  "trained_at": "2026-02-19T06:02:49.103122"
 }

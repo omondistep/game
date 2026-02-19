@@ -1,0 +1,73 @@
+{
+  "league_key": "Tn2",
+  "league_info": {
+    "league_code": "Tn2",
+    "country": "Tunisia",
+    "league": "Ligue Professionnelle 2",
+    "league_url_path": "",
+    "country_code": "tn",
+    "match_count": 9,
+    "teams": {
+      "AMS Megrine": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "AS Agareb": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "SC Ben Arous": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "ES Hammam-Sousse": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sfax Railways": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "SA Menzel Bourguiba": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Union Tataouine": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Baath Bouhajla": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "EM Mahdia": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Bouselem": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "CS Hammam-Lif": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Chebba": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "CS Msaken": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "OC Kerkennah": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 8,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-19T06:02:58.682643"
+}

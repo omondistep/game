@@ -6,27 +6,27 @@
     "league": "GFA League",
     "league_url_path": "",
     "country_code": "gm",
-    "match_count": 20,
+    "match_count": 25,
     "teams": {
       "Medina United": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Steve Biko FC": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "BST Galaxy": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Falcons": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Hart Academy": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Gambia Ports A": {
         "home_matches": 0,
@@ -34,7 +34,7 @@
       },
       "Bombada": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Hawks": {
         "home_matches": 0,
@@ -49,7 +49,7 @@
         "away_matches": 1
       },
       "Greater Tomorrow": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "TMT": {
@@ -58,24 +58,24 @@
       },
       "Brikama United": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Real de Banjul": {
         "home_matches": 0,
         "away_matches": 2
       },
       "Samger": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Fortune": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       }
     }
   },
-  "example_count": 12,
-  "result_accuracy": 0.3333333333333333,
-  "ou_accuracy": 0.6666666666666666,
-  "trained_at": "2026-02-13T19:32:35.458177"
+  "example_count": 17,
+  "result_accuracy": 0.25,
+  "ou_accuracy": 0.25,
+  "trained_at": "2026-02-19T06:02:30.648333"
 }

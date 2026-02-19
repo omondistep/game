@@ -6,7 +6,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "az",
-    "match_count": 12,
+    "match_count": 14,
     "teams": {
       "Karvan Yevlakh": {
         "home_matches": 1,
@@ -17,7 +17,7 @@
         "away_matches": 1
       },
       "Gabala FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Mil-Mugan": {
@@ -29,7 +29,7 @@
         "away_matches": 1
       },
       "Keshla FK": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Qarabag": {
@@ -39,11 +39,19 @@
       "Neftchi Baku": {
         "home_matches": 1,
         "away_matches": 0
+      },
+      "Turan Tovuz": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sabah": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 6,
+  "example_count": 8,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:20.390084"
+  "trained_at": "2026-02-19T06:02:11.550730"
 }

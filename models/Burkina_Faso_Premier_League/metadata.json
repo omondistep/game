@@ -6,7 +6,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "bf",
-    "match_count": 18,
+    "match_count": 20,
     "teams": {
       "Vitesse FC BFA": {
         "home_matches": 2,
@@ -17,7 +17,7 @@
         "away_matches": 1
       },
       "Real du Faso": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "AJEB": {
@@ -26,7 +26,7 @@
       },
       "Salitas": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "ASFA-Yennenga": {
         "home_matches": 0,
@@ -34,7 +34,7 @@
       },
       "AS Douanes": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Rahimo": {
         "home_matches": 0,
@@ -45,7 +45,7 @@
         "away_matches": 1
       },
       "Rail Club Kadiogo": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "RC Bobo-Dioulasso": {
@@ -62,8 +62,8 @@
       }
     }
   },
-  "example_count": 9,
-  "result_accuracy": 1.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-13T19:32:22.441675"
+  "example_count": 11,
+  "result_accuracy": 0.6666666666666666,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-19T06:02:13.173472"
 }

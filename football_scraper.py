@@ -721,7 +721,7 @@ class ForebetScraper:
             response = self._make_request(url)
             if response is None:
                 return None
-            soup = BeautifulSoup(response.content, 'html.parser')
+            soup = BeautifulSoup(response.content, 'lxml')
             
             # Check if match has been played and extract result
             result = self._extract_result_from_soup(soup)
@@ -815,7 +815,7 @@ class ForebetScraper:
             response = self._make_request(url)
             if response is None:
                 return False
-            soup = BeautifulSoup(response.content, 'html.parser')
+            soup = BeautifulSoup(response.content, 'lxml')
             
             # Check 1: Look for "FT" (Full Time) indicator
             page_text = soup.get_text()
@@ -869,7 +869,7 @@ class ForebetScraper:
             response = self._make_request(url)
             if response is None:
                 return None
-            soup = BeautifulSoup(response.content, 'html.parser')
+            soup = BeautifulSoup(response.content, 'lxml')
 
             result: Dict = {
                 'home_score': None, 'away_score': None,
@@ -1114,11 +1114,12 @@ class ForebetScraper:
         """Parse match rows from a text block containing date/score/team patterns."""
         matches = []
         # Pattern: DD/MM YYYY  Team1 N - N (N - N) Team2 Competition
+        # Made more flexible to handle various competition codes
         pattern = re.compile(
             r'(\d{2}/\d{2})\s*(\d{4})\s+'
             r'(.+?)\s*(\d+)\s*-\s*(\d+)\s*'
             r'\((\d+)\s*-\s*(\d+)\)\s*'
-            r'(.+?)(?:\s+(It1|It[A-Z]|ItC|UCL|UEL|UECL|EPL|LaL|BuL|Li1|ErD|LiP|[A-Z][a-z]+\d?))?$',
+            r'(.+?)(?:\s+(It1|It[A-Z]|ItC|UCL|UEL|UECL|EPL|LaL|BuL|Li1|ErD|LiP|Mx1|Mx2|Ar1|Ar2|[A-Z][a-z]+\d?|[A-Z]{2,3}\d?))?$',
             re.MULTILINE
         )
         for m in pattern.finditer(text):
@@ -1132,12 +1133,49 @@ class ForebetScraper:
                 'away_team': m.group(8).strip(),
                 'competition': m.group(9) if m.group(9) else '',
             })
+        
+        # If no matches found, try a simpler pattern without competition code
+        if not matches:
+            simple_pattern = re.compile(
+                r'(\d{2}/\d{2})\s*(\d{4})\s+'
+                r'(.+?)\s*(\d+)\s*-\s*(\d+)\s*'
+                r'\((\d+)\s*-\s*(\d+)\)\s*'
+                r'(.+?)$',
+                re.MULTILINE
+            )
+            for m in simple_pattern.finditer(text):
+                matches.append({
+                    'date': f"{m.group(1)}/{m.group(2)}",
+                    'home_team': m.group(3).strip(),
+                    'home_score': int(m.group(4)),
+                    'away_score': int(m.group(5)),
+                    'ht_home': int(m.group(6)),
+                    'ht_away': int(m.group(7)),
+                    'away_team': m.group(8).strip(),
+                    'competition': '',
+                })
         return matches
 
     def _extract_last_6_matches(self, soup: BeautifulSoup) -> Dict:
         """Extract last 6 matches for both teams."""
         data: Dict = {'home': [], 'away': []}
         try:
+            # New approach: Find the "Last 6 matches" header, then get the next tr's tds
+            for elem in soup.find_all(string=lambda x: x and 'Last 6 matches' in x):
+                parent = elem.parent
+                tr = parent.find_parent('tr')
+                if tr:
+                    next_tr = tr.find_next_sibling('tr')
+                    if next_tr:
+                        stat_tds = next_tr.find_all('td', class_='floatLeft statWidth')
+                        if len(stat_tds) >= 2:
+                            # Home team matches are in the first td
+                            data['home'] = self._parse_match_rows_from_html(stat_tds[0])
+                            # Away team matches are in the second td
+                            data['away'] = self._parse_match_rows_from_html(stat_tds[1])
+                            return data
+            
+            # Fallback to old text-based approach
             main_table = soup.find('table', class_='main')
             if not main_table:
                 return data
@@ -1152,8 +1190,44 @@ class ForebetScraper:
                 end = hm_match.start() if hm_match else start + 3000
                 l6_text = full_text[start:end]
 
-                # Split into home and away sections using "View all" as separator
+                # Try splitting by "View all" first (old format)
                 parts = re.split(r'View\s+all', l6_text)
+                
+                # If that doesn't give us two parts, try splitting by Win/Draw/Lost pattern
+                # The pattern is: Win N XX% Draw N XX% Lost N XX% {json} All
+                if len(parts) < 2:
+                    # Split by the Win/Draw/Lost statistics pattern followed by JSON and "All"
+                    parts = re.split(
+                        r'Win\s+\d+\s+\d+%\s*Draw\s+\d+\s+\d+%\s*Lost\s+\d+\s+\d+%\s*\{[^}]+\}\s*All',
+                        l6_text
+                    )
+                
+                # If still no split, try alternative patterns
+                if len(parts) < 2:
+                    # Try splitting by "Win N Draw N Lost N" pattern without JSON
+                    parts = re.split(
+                        r'Win\s+\d+\s+\d+%\s*Draw\s+\d+\s+\d+%\s*Lost\s+\d+\s+\d+%',
+                        l6_text
+                    )
+                
+                # If still no split, try splitting by "All" followed by league names
+                # Pattern: Win N XX% Draw N XX% Lost N XX% AllLeagueName
+                if len(parts) < 2:
+                    parts = re.split(
+                        r'Win\s+\d+\s+\d+%\s*Draw\s+\d+\s+\d+%\s*Lost\s+\d+\s+\d+%\s*All[A-Za-z\s]+',
+                        l6_text
+                    )
+                
+                # If still no split, try splitting by consecutive newlines followed by date pattern
+                if len(parts) < 2:
+                    # Look for a gap in dates that might indicate home/away split
+                    # Pattern: find where one team's matches end (6 matches found) and another begins
+                    date_matches = list(re.finditer(r'\d{2}/\d{2}\s*\d{4}', l6_text))
+                    if len(date_matches) >= 12:  # 6 matches per team
+                        # Split at the 6th match
+                        split_pos = date_matches[6].start()
+                        parts = [l6_text[:split_pos], l6_text[split_pos:]]
+                
                 if len(parts) >= 1:
                     data['home'] = self._parse_match_rows(parts[0])
                 if len(parts) >= 2:
@@ -1161,6 +1235,76 @@ class ForebetScraper:
         except Exception as e:
             print(f"Error extracting last 6 matches: {e}")
         return data
+    
+    def _parse_match_rows_from_html(self, td_element) -> List[Dict]:
+        """Parse match rows from a td element containing st_row divs."""
+        matches = []
+        try:
+            # Find all st_row divs (limit to first 6 for Last 6 matches)
+            rows = td_element.find_all('div', class_='st_row')[:6]
+            for row in rows:
+                try:
+                    # Date
+                    date_div = row.find('div', class_='st_date')
+                    if not date_div:
+                        continue
+                    date_divs = date_div.find_all('div')
+                    if len(date_divs) >= 2:
+                        date = f"{date_divs[0].get_text(strip=True)}/{date_divs[1].get_text(strip=True)}"
+                    else:
+                        date = date_div.get_text(strip=True)
+                    
+                    # Home team
+                    home_team_elem = row.find('div', class_='st_hteam')
+                    home_team = home_team_elem.get_text(strip=True) if home_team_elem else ''
+                    
+                    # Away team
+                    away_team_elem = row.find('div', class_='st_ateam')
+                    away_team = away_team_elem.get_text(strip=True) if away_team_elem else ''
+                    
+                    # Score
+                    score_elem = row.find('span', class_='st_res')
+                    ht_elem = row.find('span', class_='st_htscr')
+                    
+                    home_score = 0
+                    away_score = 0
+                    ht_home = 0
+                    ht_away = 0
+                    
+                    if score_elem:
+                        score_text = score_elem.get_text(strip=True)
+                        score_parts = score_text.split('-')
+                        if len(score_parts) == 2:
+                            home_score = int(score_parts[0].strip())
+                            away_score = int(score_parts[1].strip())
+                    
+                    if ht_elem:
+                        ht_text = ht_elem.get_text(strip=True).strip('()')
+                        ht_parts = ht_text.split('-')
+                        if len(ht_parts) == 2:
+                            ht_home = int(ht_parts[0].strip())
+                            ht_away = int(ht_parts[1].strip())
+                    
+                    # Competition
+                    comp_elem = row.find('div', class_='st_ltag')
+                    competition = comp_elem.get_text(strip=True) if comp_elem else ''
+                    
+                    if home_team and away_team:
+                        matches.append({
+                            'date': date,
+                            'home_team': home_team,
+                            'home_score': home_score,
+                            'away_score': away_score,
+                            'ht_home': ht_home,
+                            'ht_away': ht_away,
+                            'away_team': away_team,
+                            'competition': competition,
+                        })
+                except Exception as e:
+                    continue
+        except Exception as e:
+            pass
+        return matches
 
     def _extract_home_away_matches(self, soup: BeautifulSoup, which: str) -> List[Dict]:
         """Extract home matches (for home team) or away matches (for away team)."""
@@ -1481,7 +1625,7 @@ class ForebetScraper:
             response = self._make_request(url)
             if response is None:
                 return injuries
-            soup = BeautifulSoup(response.content, 'html.parser')
+            soup = BeautifulSoup(response.content, 'lxml')
             
             # Get all team names from h4 tags
             team_headers = soup.find_all('h4')

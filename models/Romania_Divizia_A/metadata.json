@@ -6,7 +6,7 @@
     "league": "Divizia A",
     "league_url_path": "",
     "country_code": "ro",
-    "match_count": 24,
+    "match_count": 25,
     "teams": {
       "Otelul Galati": {
         "home_matches": 1,
@@ -18,7 +18,7 @@
       },
       "Cluj": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "CS Metaloglobus": {
         "home_matches": 1,
@@ -45,7 +45,7 @@
         "away_matches": 1
       },
       "FC Hermannstadt": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Rapid Bucuresti": {
@@ -70,8 +70,8 @@
       }
     }
   },
-  "example_count": 12,
+  "example_count": 13,
   "result_accuracy": 1.0,
-  "ou_accuracy": 0.3333333333333333,
-  "trained_at": "2026-02-13T19:32:52.262745"
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-19T06:02:51.679087"
 }
