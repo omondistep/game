@@ -6,7 +6,7 @@
     "league": "Liga de Ascenso",
     "league_url_path": "",
     "country_code": "cr",
-    "match_count": 45,
+    "match_count": 47,
     "teams": {
       "Santa Cruz FC": {
         "home_matches": 4,
@@ -17,11 +17,11 @@
         "away_matches": 2
       },
       "Aserri": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Consultants Moravia": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "AD Sarchi": {
@@ -46,11 +46,11 @@
       },
       "Pitbulls": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "AD Carmelita": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Grecia": {
         "home_matches": 2,
@@ -74,8 +74,8 @@
       }
     }
   },
-  "example_count": 23,
-  "result_accuracy": 0.4,
-  "ou_accuracy": 0.4,
-  "trained_at": "2026-02-19T06:02:26.542314"
+  "example_count": 25,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.6,
+  "trained_at": "2026-02-20T09:06:18.368724"
 }

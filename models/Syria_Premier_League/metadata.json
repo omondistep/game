@@ -6,7 +6,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "sy",
-    "match_count": 36,
+    "match_count": 37,
     "teams": {
       "Ittihad Aleppo": {
         "home_matches": 2,
@@ -61,7 +61,7 @@
         "away_matches": 1
       },
       "Shorta Damascus": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Wathba Homs": {
@@ -70,12 +70,12 @@
       },
       "Tishreen SC": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       }
     }
   },
-  "example_count": 21,
-  "result_accuracy": 0.8,
-  "ou_accuracy": 0.4,
-  "trained_at": "2026-02-19T06:02:55.944520"
+  "example_count": 22,
+  "result_accuracy": 0.36363636363636365,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-20T09:06:35.962934"
 }

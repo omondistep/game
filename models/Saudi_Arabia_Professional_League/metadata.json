@@ -6,7 +6,7 @@
     "league": "Professional League",
     "league_url_path": "",
     "country_code": "sa",
-    "match_count": 32,
+    "match_count": 35,
     "teams": {
       "Al Hazm": {
         "home_matches": 1,
@@ -18,11 +18,11 @@
       },
       "Al Najma KSA": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Al Riyadh SC": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Al Feiha": {
         "home_matches": 2,
@@ -33,16 +33,16 @@
         "away_matches": 1
       },
       "Al Ahli": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Ettifaq FC": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Al Fateh KSA": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Ittihad Jeddah": {
         "home_matches": 0,
@@ -61,7 +61,7 @@
         "away_matches": 1
       },
       "Al Kholood Club": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Qadisiya Khubar": {
@@ -82,8 +82,8 @@
       }
     }
   },
-  "example_count": 17,
-  "result_accuracy": 0.5,
+  "example_count": 20,
+  "result_accuracy": 0.6,
   "ou_accuracy": 0.5,
-  "trained_at": "2026-02-19T06:02:52.843607"
+  "trained_at": "2026-02-20T09:06:34.171286"
 }

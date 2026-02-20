@@ -6,7 +6,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "ug",
-    "match_count": 28,
+    "match_count": 33,
     "teams": {
       "Buhimba United Saints": {
         "home_matches": 2,
@@ -17,28 +17,28 @@
         "away_matches": 2
       },
       "KCC Kampala": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "UPDF FC": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Lugazi Municipal": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Bul FC": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Calvary": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "URA Kampala": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Gaddafi FC": {
         "home_matches": 2,
@@ -46,7 +46,7 @@
       },
       "Maroons FC": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Vipers SC": {
         "home_matches": 3,
@@ -57,15 +57,15 @@
         "away_matches": 2
       },
       "Kitara FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Express FC": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Villa SC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Mbarara City": {
@@ -74,8 +74,8 @@
       }
     }
   },
-  "example_count": 18,
-  "result_accuracy": 0.25,
-  "ou_accuracy": 0.5,
-  "trained_at": "2026-02-19T06:03:01.874885"
+  "example_count": 23,
+  "result_accuracy": 0.34782608695652173,
+  "ou_accuracy": 0.6956521739130435,
+  "trained_at": "2026-02-20T09:06:39.623561"
 }

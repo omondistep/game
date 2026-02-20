@@ -6,7 +6,7 @@
     "league": "Tercera Division Group 12 - Canarias",
     "league_url_path": "",
     "country_code": "es",
-    "match_count": 81,
+    "match_count": 82,
     "teams": {
       "Real Murcia Imperial": {
         "home_matches": 1,
@@ -263,11 +263,19 @@
       "CD Toledo": {
         "home_matches": 1,
         "away_matches": 0
+      },
+      "Atletico Albericia": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Colindres": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 44,
-  "result_accuracy": 0.5555555555555556,
-  "ou_accuracy": 0.5555555555555556,
-  "trained_at": "2026-02-19T06:02:29.393545"
+  "example_count": 45,
+  "result_accuracy": 0.2222222222222222,
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-20T09:06:19.634514"
 }

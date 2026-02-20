@@ -1444,5 +1444,95 @@
     "league_name": "2. Bundesliga Women",
     "country": "Germany",
     "source": "historical_scraper"
+  },
+  "24175": {
+    "short_code": "Tr3",
+    "league_name": "TFF 2. Lig",
+    "country": "T\u00fcrkiye",
+    "source": "historical_scraper"
+  },
+  "24282": {
+    "short_code": "Ke1",
+    "league_name": "Premier League",
+    "country": "Kenya",
+    "source": "historical_scraper"
+  },
+  "24100": {
+    "short_code": "De6",
+    "league_name": "DFB Junioren Pokal",
+    "country": "Germany",
+    "source": "historical_scraper"
+  },
+  "24046": {
+    "short_code": "SiC",
+    "league_name": "Slovensky Pohar",
+    "country": "Slovakia",
+    "source": "historical_scraper"
+  },
+  "24281": {
+    "short_code": "Ma1",
+    "league_name": "Botola Pro",
+    "country": "Morocco",
+    "source": "historical_scraper"
+  },
+  "23115": {
+    "short_code": "Ch1",
+    "league_name": "Super League",
+    "country": "Switzerland",
+    "source": "historical_scraper"
+  },
+  "23708": {
+    "short_code": "BeW",
+    "league_name": "Super League Women",
+    "country": "Belgium",
+    "source": "historical_scraper"
+  },
+  "23165": {
+    "short_code": "Es1",
+    "league_name": "La Liga",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "23802": {
+    "short_code": "Es4",
+    "league_name": "Segunda B Grupo 4",
+    "country": "Spain",
+    "source": "historical_scraper"
+  },
+  "23444": {
+    "short_code": "It1",
+    "league_name": "Serie A",
+    "country": "Italy",
+    "source": "historical_scraper"
+  },
+  "23160": {
+    "short_code": "EPL",
+    "league_name": "Premier League",
+    "country": "England",
+    "source": "historical_scraper"
+  },
+  "24283": {
+    "short_code": "Mt1",
+    "league_name": "Premier League",
+    "country": "Malta",
+    "source": "historical_scraper"
+  },
+  "23315": {
+    "short_code": "Ro2",
+    "league_name": "Liga 2",
+    "country": "Romania",
+    "source": "historical_scraper"
+  },
+  "24284": {
+    "short_code": "Tr2",
+    "league_name": "TFF 1. Lig ",
+    "country": "T\u00fcrkiye",
+    "source": "historical_scraper"
+  },
+  "23671": {
+    "short_code": "Jm",
+    "league_name": "Premier League",
+    "country": "Jamaica",
+    "source": "historical_scraper"
   }
 }

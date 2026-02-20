@@ -1,0 +1,49 @@
+{
+  "league_key": "Za1",
+  "league_info": {
+    "league_code": "Za1",
+    "country": "South Africa",
+    "league": "Premier Soccer League",
+    "league_url_path": "",
+    "country_code": "za",
+    "match_count": 9,
+    "teams": {
+      "Sekhukhune Utd": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Sundowns FC": {
+        "home_matches": 0,
+        "away_matches": 2
+      },
+      "Marumo Gallants": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Kaizer Chiefs": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "AmaZulu FC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Orlando Pirates": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Stellenbosch FC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Magesi FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "example_count": 5,
+  "result_accuracy": 1.0,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-19T09:53:12.559721"
+}

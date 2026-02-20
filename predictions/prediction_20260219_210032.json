@@ -1,0 +1,254 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/club-xelaju-mc-comunicaciones-2416101",
+  "timestamp": "2026-02-19T21:00:32.882490",
+  "match_info": {
+    "home_team": "Malacateco",
+    "away_team": "Deportivo Achuapa",
+    "date": "",
+    "time": "",
+    "league": "Liga Nacional"
+  },
+  "teams": {
+    "home": "Malacateco",
+    "away": "Deportivo Achuapa"
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3076,
+        "X": 0.3,
+        "2": 0.3924
+      },
+      "computed_odds": {
+        "1": 3.25,
+        "X": 3.33,
+        "2": 2.55
+      },
+      "confidence": 0.3924
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.3924,
+        "Over": 0.6076
+      },
+      "computed_odds": {
+        "Under": 2.55,
+        "Over": 1.65
+      },
+      "confidence": 0.6076
+    },
+    "model_trained": true,
+    "ml_own_odds": {
+      "result": {
+        "odds_home": 2.03,
+        "odds_draw": 10.0,
+        "odds_away": 2.46,
+        "prob_home": 0.4936,
+        "prob_draw": 0.1,
+        "prob_away": 0.4064
+      },
+      "over_under": {
+        "odds_over": 2.17,
+        "odds_under": 1.85,
+        "prob_over": 0.46,
+        "prob_under": 0.54
+      },
+      "over_under_3.5": {
+        "odds_over": 3.04,
+        "odds_under": 1.49,
+        "prob_over": 0.3286,
+        "prob_under": 0.6714
+      },
+      "btts": {
+        "odds_yes": 2.16,
+        "odds_no": 1.87,
+        "prob_yes": 0.4638,
+        "prob_no": 0.5362
+      },
+      "expected_goals": 2.3
+    },
+    "model_accuracy": {
+      "result_accuracy": 0,
+      "ou_accuracy": 0,
+      "example_count": 30,
+      "trained_at": "2026-02-12T10:09:40.480945"
+    }
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3076,
+        "X": 0.3,
+        "2": 0.3924
+      },
+      "computed_odds": {
+        "1": 3.25,
+        "X": 3.33,
+        "2": 2.55
+      },
+      "confidence": 0.3924
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.3924,
+        "Over": 0.6076
+      },
+      "computed_odds": {
+        "Under": 2.55,
+        "Over": 1.65
+      },
+      "confidence": 0.6076
+    },
+    "model_trained": true,
+    "ml_own_odds": {
+      "result": {
+        "odds_home": 2.03,
+        "odds_draw": 10.0,
+        "odds_away": 2.46,
+        "prob_home": 0.4936,
+        "prob_draw": 0.1,
+        "prob_away": 0.4064
+      },
+      "over_under": {
+        "odds_over": 2.17,
+        "odds_under": 1.85,
+        "prob_over": 0.46,
+        "prob_under": 0.54
+      },
+      "over_under_3.5": {
+        "odds_over": 3.04,
+        "odds_under": 1.49,
+        "prob_over": 0.3286,
+        "prob_under": 0.6714
+      },
+      "btts": {
+        "odds_yes": 2.16,
+        "odds_no": 1.87,
+        "prob_yes": 0.4638,
+        "prob_no": 0.5362
+      },
+      "expected_goals": 2.3
+    },
+    "model_accuracy": {
+      "result_accuracy": 0,
+      "ou_accuracy": 0,
+      "example_count": 30,
+      "trained_at": "2026-02-12T10:09:40.480945"
+    }
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "1",
+      "probabilities": {
+        "1": 0.3783,
+        "X": 0.2443,
+        "2": 0.3774
+      },
+      "computed_odds": {
+        "1": 2.64,
+        "X": 4.09,
+        "2": 2.65
+      },
+      "confidence": 0.3783
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.736842105263158,
+        "away": 0.9473684210526316,
+        "weight": 0.016080787440436953
+      },
+      "odds_analysis": {
+        "home": 0.4935872751884602,
+        "away": 0.4064127248115398,
+        "weight": 0.21301705894944464
+      },
+      "recent_form": {
+        "home": 0.3888888888888889,
+        "away": 0.7222222222222222,
+        "weight": 0.24479087642184938
+      },
+      "top5_performance": {
+        "home": 0.6666666666666666,
+        "away": 0.0,
+        "weight": 0.016080787440436953
+      },
+      "goals_stats": {
+        "home": 0.575,
+        "away": 0.47500000000000003,
+        "weight": 0.477868914866958
+      },
+      "h2h": {
+        "home": 0.67,
+        "away": 0.17,
+        "weight": 0.016080787440436953
+      },
+      "shots_possession": {
+        "home": 0.5,
+        "away": 0.43333333333333335,
+        "weight": 0.016080787440436953
+      },
+      "h2h_draws": 0.17,
+      "expected_goals": 2.3,
+      "ml_own_odds": {
+        "odds_home": 2.025984157752411,
+        "odds_draw": 10.0,
+        "odds_away": 2.4605528787606645,
+        "expected_goals": 2.3
+      }
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 8.2
+        },
+        {
+          "factor": "goals_stats",
+          "direction": "home",
+          "impact": 4.8
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.3,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.8,
+          "direction": "Over"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.016080787440436953,
+      "odds_analysis": 0.21301705894944464,
+      "recent_form": 0.24479087642184938,
+      "top5_performance": 0.016080787440436953,
+      "goals_stats": 0.477868914866958,
+      "h2h": 0.016080787440436953,
+      "shots_possession": 0.016080787440436953
+    }
+  }
+}

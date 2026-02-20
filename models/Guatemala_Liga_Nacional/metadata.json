@@ -6,14 +6,14 @@
     "league": "Liga Nacional",
     "league_url_path": "",
     "country_code": "gt",
-    "match_count": 47,
+    "match_count": 51,
     "teams": {
       "Comunicaciones": {
         "home_matches": 2,
         "away_matches": 3
       },
       "Coban Imperial": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "CD Marquense": {
@@ -21,7 +21,7 @@
         "away_matches": 3
       },
       "Deportivo Achuapa": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 3
       },
       "Deportivo Mixco": {
@@ -29,28 +29,28 @@
         "away_matches": 2
       },
       "Malacateco": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Antigua GFC": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 2
       },
       "Club Xelaju MC": {
         "home_matches": 2,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Deportivo Guastatoya": {
         "home_matches": 3,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Aurora": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "CSD Municipal": {
         "home_matches": 3,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Deportivo Mictlan": {
         "home_matches": 2,
@@ -58,8 +58,8 @@
       }
     }
   },
-  "example_count": 26,
+  "example_count": 30,
   "result_accuracy": 0.3333333333333333,
-  "ou_accuracy": 0.5,
-  "trained_at": "2026-02-19T06:02:31.764539"
+  "ou_accuracy": 0.6666666666666666,
+  "trained_at": "2026-02-20T09:06:21.324775"
 }

@@ -6,60 +6,60 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "sv",
-    "match_count": 58,
+    "match_count": 64,
     "teams": {
       "Inter FA": {
         "home_matches": 3,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Cacahuatique": {
         "home_matches": 3,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Alianza FC": {
         "home_matches": 3,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Luis Angel Firpo": {
         "home_matches": 3,
-        "away_matches": 2
+        "away_matches": 3
       },
       "CD Aguila": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 3
       },
       "Hercules": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 3
       },
       "Fuerte San Francisco": {
         "home_matches": 2,
-        "away_matches": 3
+        "away_matches": 4
       },
       "CD FAS": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 2
       },
       "Municipal Limeno": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 2
       },
       "Isidro Metapan": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 3
       },
       "Zacatecoluca": {
         "home_matches": 3,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Platense SLV": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 4
       }
     }
   },
-  "example_count": 32,
-  "result_accuracy": 0.2857142857142857,
-  "ou_accuracy": 0.42857142857142855,
-  "trained_at": "2026-02-19T06:02:55.572046"
+  "example_count": 38,
+  "result_accuracy": 0.5,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-20T09:06:35.559354"
 }

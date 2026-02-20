@@ -6,7 +6,7 @@
     "league": "Lao League",
     "league_url_path": "",
     "country_code": "la",
-    "match_count": 18,
+    "match_count": 19,
     "teams": {
       "Namtha United": {
         "home_matches": 2,
@@ -25,7 +25,7 @@
         "away_matches": 1
       },
       "Luangprabang United": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Master 7 FC": {
@@ -34,7 +34,7 @@
       },
       "Lao Army": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Ezra": {
         "home_matches": 1,
@@ -46,8 +46,8 @@
       }
     }
   },
-  "example_count": 9,
+  "example_count": 10,
   "result_accuracy": 1.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-19T06:02:41.279418"
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-19T09:52:48.745676"
 }

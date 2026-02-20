@@ -6,14 +6,14 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "mt",
-    "match_count": 8,
+    "match_count": 11,
     "teams": {
       "Marsaxlokk": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Tarxien Rainbows": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Sliema Wanderers": {
@@ -25,7 +25,7 @@
         "away_matches": 1
       },
       "Hamrun Spartans": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Zabbar St Patrick": {
@@ -39,11 +39,23 @@
       "Naxxar Lions": {
         "home_matches": 1,
         "away_matches": 0
+      },
+      "Hibernians Paola": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Floriana FC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Mosta FC": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 5,
+  "example_count": 8,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-19T06:02:43.671730"
+  "trained_at": "2026-02-19T09:52:51.471699"
 }

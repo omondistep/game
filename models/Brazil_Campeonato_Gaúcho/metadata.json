@@ -6,7 +6,7 @@
     "league": "Campeonato Ga\u00facho",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 52,
+    "match_count": 53,
     "teams": {
       "Avenida RS": {
         "home_matches": 2,
@@ -73,7 +73,7 @@
         "away_matches": 0
       },
       "Aparecidense GO": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "ABECAT Ouvidorense": {
@@ -99,11 +99,15 @@
       "Sao Luiz RS": {
         "home_matches": 1,
         "away_matches": 1
+      },
+      "Centro Oeste": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 30,
-  "result_accuracy": 0.6666666666666666,
-  "ou_accuracy": 0.5,
-  "trained_at": "2026-02-19T06:02:17.155224"
+  "example_count": 31,
+  "result_accuracy": 0.42857142857142855,
+  "ou_accuracy": 0.2857142857142857,
+  "trained_at": "2026-02-20T09:06:14.659277"
 }

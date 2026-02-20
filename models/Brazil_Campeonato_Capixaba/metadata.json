@@ -6,7 +6,7 @@
     "league": "Campeonato Capixaba",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 132,
+    "match_count": 144,
     "teams": {
       "Vitoria ES": {
         "home_matches": 2,
@@ -14,7 +14,7 @@
       },
       "Desp Ferroviaria ES": {
         "home_matches": 1,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Botafogo": {
         "home_matches": 2,
@@ -65,7 +65,7 @@
         "away_matches": 2
       },
       "Santa Catarina": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 1
       },
       "Avai FC": {
@@ -166,15 +166,15 @@
       },
       "Pague Menos": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Sampaio Correa RJ": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Madureira RJ": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Portuguesa RJ": {
         "home_matches": 1,
@@ -183,11 +183,87 @@
       "Marica RJ": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Porto BA": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Serra Branca": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Maguary PE": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Laguna": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Bare RR": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Araguaina TO": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Primavera SP": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "IAPE MA": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "America SE": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "SE Gama DF": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Monte Roraima": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Betim": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Piaui PI": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Ivinhema MS": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Independente EC AP": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Ji-Parana FC RO": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Portuguesa": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Galvez AC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Guapore RO": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 72,
-  "result_accuracy": 0.13333333333333333,
-  "ou_accuracy": 0.6,
-  "trained_at": "2026-02-19T06:02:16.751427"
+  "example_count": 84,
+  "result_accuracy": 0.35294117647058826,
+  "ou_accuracy": 0.7058823529411765,
+  "trained_at": "2026-02-20T09:06:14.327174"
 }

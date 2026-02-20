@@ -6,7 +6,7 @@
     "league": "Primera A",
     "league_url_path": "",
     "country_code": "co",
-    "match_count": 83,
+    "match_count": 85,
     "teams": {
       "Llaneros FC COL": {
         "home_matches": 3,
@@ -30,7 +30,7 @@
       },
       "America de Cali": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Rionegro Aguilas": {
         "home_matches": 2,
@@ -45,7 +45,7 @@
         "away_matches": 2
       },
       "Junior Barranquilla": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 3
       },
       "Once Caldas": {
@@ -58,7 +58,7 @@
       },
       "Cucuta Deportivo": {
         "home_matches": 3,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Fortaleza COL": {
         "home_matches": 3,
@@ -69,7 +69,7 @@
         "away_matches": 3
       },
       "Alianza Petrolera": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Deportivo Pereira": {
@@ -90,8 +90,8 @@
       }
     }
   },
-  "example_count": 46,
-  "result_accuracy": 0.3,
-  "ou_accuracy": 0.6,
-  "trained_at": "2026-02-19T06:02:25.003373"
+  "example_count": 48,
+  "result_accuracy": 0.2,
+  "ou_accuracy": 0.3,
+  "trained_at": "2026-02-20T09:06:17.468281"
 }

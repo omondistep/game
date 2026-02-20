@@ -1,0 +1,259 @@
+{
+  "url": "https://www.forebet.com/en/football/matches/cd-marquense-deportivo-mixco-2416100",
+  "timestamp": "2026-02-19T20:55:00.018474",
+  "match_info": {
+    "home_team": "CD Marquense",
+    "away_team": "Deportivo Mixco",
+    "date": "",
+    "time": "",
+    "league": "Liga Nacional"
+  },
+  "teams": {
+    "home": "CD Marquense",
+    "away": "Deportivo Mixco"
+  },
+  "prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3076,
+        "X": 0.31,
+        "2": 0.3824
+      },
+      "computed_odds": {
+        "1": 3.25,
+        "X": 3.23,
+        "2": 2.62
+      },
+      "confidence": 0.3824
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.3924,
+        "Over": 0.6076
+      },
+      "computed_odds": {
+        "Under": 2.55,
+        "Over": 1.65
+      },
+      "confidence": 0.6076
+    },
+    "model_trained": true,
+    "ml_own_odds": {
+      "result": {
+        "odds_home": 2.63,
+        "odds_draw": 10.0,
+        "odds_away": 1.92,
+        "prob_home": 0.3801,
+        "prob_draw": 0.1,
+        "prob_away": 0.5199
+      },
+      "over_under": {
+        "odds_over": 2.06,
+        "odds_under": 1.95,
+        "prob_over": 0.4864,
+        "prob_under": 0.5136
+      },
+      "over_under_3.5": {
+        "odds_over": 2.88,
+        "odds_under": 1.53,
+        "prob_over": 0.3474,
+        "prob_under": 0.6526
+      },
+      "btts": {
+        "odds_yes": 2.13,
+        "odds_no": 1.89,
+        "prob_yes": 0.4702,
+        "prob_no": 0.5298
+      },
+      "expected_goals": 2.43
+    },
+    "model_accuracy": {
+      "result_accuracy": 0,
+      "ou_accuracy": 0,
+      "example_count": 30,
+      "trained_at": "2026-02-12T10:09:40.480945"
+    }
+  },
+  "ml_prediction": {
+    "prediction_method": "league_ml",
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.3076,
+        "X": 0.31,
+        "2": 0.3824
+      },
+      "computed_odds": {
+        "1": 3.25,
+        "X": 3.23,
+        "2": 2.62
+      },
+      "confidence": 0.3824
+    },
+    "over_under": {
+      "prediction": "Over",
+      "probabilities": {
+        "Under": 0.3924,
+        "Over": 0.6076
+      },
+      "computed_odds": {
+        "Under": 2.55,
+        "Over": 1.65
+      },
+      "confidence": 0.6076
+    },
+    "model_trained": true,
+    "ml_own_odds": {
+      "result": {
+        "odds_home": 2.63,
+        "odds_draw": 10.0,
+        "odds_away": 1.92,
+        "prob_home": 0.3801,
+        "prob_draw": 0.1,
+        "prob_away": 0.5199
+      },
+      "over_under": {
+        "odds_over": 2.06,
+        "odds_under": 1.95,
+        "prob_over": 0.4864,
+        "prob_under": 0.5136
+      },
+      "over_under_3.5": {
+        "odds_over": 2.88,
+        "odds_under": 1.53,
+        "prob_over": 0.3474,
+        "prob_under": 0.6526
+      },
+      "btts": {
+        "odds_yes": 2.13,
+        "odds_no": 1.89,
+        "prob_yes": 0.4702,
+        "prob_no": 0.5298
+      },
+      "expected_goals": 2.43
+    },
+    "model_accuracy": {
+      "result_accuracy": 0,
+      "ou_accuracy": 0,
+      "example_count": 30,
+      "trained_at": "2026-02-12T10:09:40.480945"
+    }
+  },
+  "weighted_prediction": {
+    "result": {
+      "prediction": "2",
+      "probabilities": {
+        "1": 0.2674,
+        "X": 0.2647,
+        "2": 0.4679
+      },
+      "computed_odds": {
+        "1": 3.74,
+        "X": 3.78,
+        "2": 2.14
+      },
+      "confidence": 0.4679
+    },
+    "over_under": {
+      "prediction": "Under",
+      "probabilities": {
+        "Over": 0.42,
+        "Under": 0.58
+      },
+      "computed_odds": {
+        "Over": 2.38,
+        "Under": 1.72
+      },
+      "confidence": 0.58
+    },
+    "factor_analysis": {
+      "league_position": {
+        "home": 0.42105263157894735,
+        "away": 0.631578947368421,
+        "weight": 0.016080787440436953
+      },
+      "odds_analysis": {
+        "home": 0.38012388601481484,
+        "away": 0.5198761139851852,
+        "weight": 0.21301705894944464
+      },
+      "recent_form": {
+        "home": 0.2222222222222222,
+        "away": 0.4444444444444444,
+        "weight": 0.24479087642184938
+      },
+      "top5_performance": {
+        "home": 0.5,
+        "away": 0.5,
+        "weight": 0.016080787440436953
+      },
+      "goals_stats": {
+        "home": 0.29464285714285715,
+        "away": 0.5833333333333333,
+        "weight": 0.477868914866958
+      },
+      "h2h": {
+        "home": 0.33,
+        "away": 0.33,
+        "weight": 0.016080787440436953
+      },
+      "shots_possession": {
+        "home": 0.3045904761904762,
+        "away": 0.32865555555555553,
+        "weight": 0.016080787440436953
+      },
+      "h2h_draws": 0.33,
+      "expected_goals": 2.432142857142857,
+      "ml_own_odds": {
+        "odds_home": 2.6307212905874224,
+        "odds_draw": 10.0,
+        "odds_away": 1.9235351905944593,
+        "expected_goals": 2.432142857142857
+      }
+    },
+    "key_factors": {
+      "match_result": [
+        {
+          "factor": "goals_stats",
+          "direction": "away",
+          "impact": 13.8
+        },
+        {
+          "factor": "recent_form",
+          "direction": "away",
+          "impact": 5.4
+        },
+        {
+          "factor": "odds_analysis",
+          "direction": "away",
+          "impact": 3.0
+        }
+      ],
+      "over_under": [
+        {
+          "factor": "expected_goals",
+          "value": 2.43,
+          "direction": "Under"
+        },
+        {
+          "factor": "combined_scoring",
+          "value": 2.19,
+          "direction": "Under"
+        }
+      ]
+    },
+    "prediction_method": "weighted_factors",
+    "weights_used": {
+      "league_position": 0.016080787440436953,
+      "odds_analysis": 0.21301705894944464,
+      "recent_form": 0.24479087642184938,
+      "top5_performance": 0.016080787440436953,
+      "goals_stats": 0.477868914866958,
+      "h2h": 0.016080787440436953,
+      "shots_possession": 0.016080787440436953
+    }
+  }
+}

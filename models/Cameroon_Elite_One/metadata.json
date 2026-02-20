@@ -6,10 +6,10 @@
     "league": "Elite One",
     "league_url_path": "",
     "country_code": "cm",
-    "match_count": 19,
+    "match_count": 21,
     "teams": {
       "Coton Sport": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Aigle Royal de Moungo": {
@@ -17,7 +17,7 @@
         "away_matches": 2
       },
       "Gazelle": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Colombe FC": {
@@ -46,7 +46,7 @@
       },
       "AS Fortuna": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Dynamo Douala": {
         "home_matches": 0,
@@ -58,7 +58,7 @@
       },
       "Fauve Azur Elite": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Unisport Bafang": {
         "home_matches": 0,
@@ -66,8 +66,8 @@
       }
     }
   },
-  "example_count": 10,
-  "result_accuracy": 0.0,
-  "ou_accuracy": 0.5,
-  "trained_at": "2026-02-19T06:02:23.939473"
+  "example_count": 12,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 0.0,
+  "trained_at": "2026-02-19T09:52:30.170966"
 }

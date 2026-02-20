@@ -6,7 +6,7 @@
     "league": "Thai League 2",
     "league_url_path": "",
     "country_code": "th",
-    "match_count": 40,
+    "match_count": 47,
     "teams": {
       "Chanthaburi": {
         "home_matches": 3,
@@ -14,35 +14,35 @@
       },
       "Rasi Salai United": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Chainat FC": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Kasetsart FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Nong Bua Pitchaya": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Chiangmai United": {
         "home_matches": 1,
         "away_matches": 2
       },
       "Police Tero FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Nakhon Si United": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Mahasarakham Sambaitao FC": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Bangkok FC": {
         "home_matches": 2,
@@ -50,7 +50,7 @@
       },
       "Khon Kaen United": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Phrae United": {
         "home_matches": 1,
@@ -58,32 +58,32 @@
       },
       "Trat FC": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Songkhla FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Nakhon Pathom": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Pattaya Dolphins": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Pattani FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Sisaket United": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       }
     }
   },
-  "example_count": 21,
-  "result_accuracy": 0.2,
-  "ou_accuracy": 0.8,
-  "trained_at": "2026-02-19T06:02:56.825646"
+  "example_count": 28,
+  "result_accuracy": 0.0,
+  "ou_accuracy": 0.3333333333333333,
+  "trained_at": "2026-02-20T09:06:36.624202"
 }

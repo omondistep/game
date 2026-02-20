@@ -6,7 +6,7 @@
     "league": "Copa Argentina",
     "league_url_path": "",
     "country_code": "ar",
-    "match_count": 10,
+    "match_count": 12,
     "teams": {
       "Talleres Cordoba": {
         "home_matches": 1,
@@ -55,11 +55,27 @@
       "Gimnasia Jujuy": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "CA Tigre": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Claypole": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "River Plate": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Ciudad Bolivar": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 6,
+  "example_count": 8,
   "result_accuracy": 1.0,
   "ou_accuracy": 1.0,
-  "trained_at": "2026-02-19T06:02:08.964164"
+  "trained_at": "2026-02-19T09:52:17.748279"
 }

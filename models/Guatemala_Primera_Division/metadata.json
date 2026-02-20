@@ -6,7 +6,7 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "gt",
-    "match_count": 78,
+    "match_count": 79,
     "teams": {
       "Ipala": {
         "home_matches": 4,
@@ -45,12 +45,12 @@
         "away_matches": 1
       },
       "Suchitepequez": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 3
       },
       "Chichicasteco": {
         "home_matches": 4,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Coatepecano IB": {
         "home_matches": 0,
@@ -90,8 +90,8 @@
       }
     }
   },
-  "example_count": 47,
-  "result_accuracy": 0.4,
-  "ou_accuracy": 0.4,
-  "trained_at": "2026-02-19T06:02:32.225966"
+  "example_count": 48,
+  "result_accuracy": 0.2,
+  "ou_accuracy": 0.6,
+  "trained_at": "2026-02-20T09:06:21.747512"
 }

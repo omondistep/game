@@ -279,15 +279,6 @@
     "actual_result": {}
   },
   {
-    "url": "/en/football/matches/sua-flamingoes-tafic-2356254",
-    "home_team": "Sua Flamingoes",
-    "away_team": "TAFIC",
-    "date": "2026-02-04",
-    "league_code": "Bw1",
-    "has_result": false,
-    "actual_result": {}
-  },
-  {
     "url": "/en/football/matches/inverurie-loco-works-fraserburgh-fc-2331279",
     "home_team": "Inverurie Loco Works",
     "away_team": "Fraserburgh FC",
@@ -714,15 +705,6 @@
     "url": "/en/football/matches/quepos-cambute-turrialba-2413603",
     "home_team": "Quepos Cambute",
     "away_team": "Turrialba",
-    "date": "",
-    "league_code": "Cr2",
-    "has_result": false,
-    "actual_result": {}
-  },
-  {
-    "url": "/en/football/matches/consultants-moravia-ad-carmelita-2413607",
-    "home_team": "Consultants Moravia",
-    "away_team": "AD Carmelita",
     "date": "",
     "league_code": "Cr2",
     "has_result": false,

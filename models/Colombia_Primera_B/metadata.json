@@ -6,7 +6,7 @@
     "league": "Primera B",
     "league_url_path": "",
     "country_code": "co",
-    "match_count": 41,
+    "match_count": 42,
     "teams": {
       "Barranquilla FC": {
         "home_matches": 2,
@@ -14,7 +14,7 @@
       },
       "Orsomarso SC": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Cortulua": {
         "home_matches": 3,
@@ -33,7 +33,7 @@
         "away_matches": 2
       },
       "Boca Juniors Cali": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Deportes Quindio": {
@@ -70,8 +70,8 @@
       }
     }
   },
-  "example_count": 22,
-  "result_accuracy": 0.0,
-  "ou_accuracy": 0.6,
-  "trained_at": "2026-02-19T06:02:25.565097"
+  "example_count": 23,
+  "result_accuracy": 0.34782608695652173,
+  "ou_accuracy": 0.6956521739130435,
+  "trained_at": "2026-02-20T09:06:17.779328"
 }

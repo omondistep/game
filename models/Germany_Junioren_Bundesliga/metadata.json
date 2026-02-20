@@ -6,7 +6,7 @@
     "league": "Junioren Bundesliga",
     "league_url_path": "",
     "country_code": "de",
-    "match_count": 18,
+    "match_count": 19,
     "teams": {
       "Wacker Burghausen U19": {
         "home_matches": 1,
@@ -87,11 +87,19 @@
       "Hallescher FC U19": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Eintracht Frankfurt U19": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Koln U19": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 11,
-  "result_accuracy": 0.0,
-  "ou_accuracy": 0.6666666666666666,
-  "trained_at": "2026-02-19T06:02:27.306522"
+  "example_count": 12,
+  "result_accuracy": 0.3333333333333333,
+  "ou_accuracy": 1.0,
+  "trained_at": "2026-02-19T09:52:32.466973"
 }

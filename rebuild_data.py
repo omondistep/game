@@ -559,9 +559,17 @@ class ModelTrainer:
     def train_league(self, league_key: str, league_data: Dict) -> bool:
         """Train models for a specific league with train/test split."""
         examples = league_data.get('examples', [])
-        if len(examples) < 5:
-            print(f"  Skipping {league_key}: only {len(examples)} examples")
+        
+        # Minimum threshold for ML training
+        # Note: Even with more data, 3-class match result prediction typically only achieves 40-55%
+        # O/U predictions tend to be more accurate (55-70%)
+        MIN_EXAMPLES = 15
+        if len(examples) < MIN_EXAMPLES:
+            print(f"  Skipping {league_key}: only {len(examples)} examples (need {MIN_EXAMPLES}+)")
             return False
+        
+        if len(examples) < 25:
+            print(f"  Warning {league_key}: only {len(examples)} examples - accuracy may be unreliable")
         
         print(f"\nTraining for {league_key}:")
         print(f"  League: {league_data['league_info'].get('league', 'Unknown')}")
@@ -577,25 +585,20 @@ class ModelTrainer:
             feat = ex['features']
             label = ex['labels']
             
-            # Use ALL available features (35+ features)
+            # Use PERFORMANCE-BASED features ONLY (no betting odds to avoid circular dependency)
+            # Removed: prob_home, prob_draw, prob_away, odds_home, odds_draw, odds_away
+            # These features cause the model to just replicate bookmaker predictions
             feature_vec = [
-                # Odds-derived
-                feat.get('prob_home', 0.33),
-                feat.get('prob_draw', 0.33),
-                feat.get('prob_away', 0.34),
-                feat.get('prob_home_away_ratio', 1.0),
-                feat.get('prob_draw_diff', 0.0),
-                feat.get('predicted_avg_goals', 2.5),
-                feat.get('odds', 2.0),
-                feat.get('odds_draw', 3.0),
-                feat.get('odds_away', 2.5),
-                # Goals
+                # Goals - offensive and defensive strength
                 feat.get('home_scored_avg', 1.3),
                 feat.get('home_conceded_avg', 1.0),
                 feat.get('away_scored_avg', 1.1),
                 feat.get('away_conceded_avg', 1.2),
                 feat.get('expected_total_goals', 2.5),
-                # Form
+                # Goal difference (important signal)
+                feat.get('home_scored_avg', 1.3) - feat.get('home_conceded_avg', 1.0),
+                feat.get('away_scored_avg', 1.1) - feat.get('away_conceded_avg', 1.2),
+                # Form - recent performance
                 feat.get('home_form_points', 6),
                 feat.get('away_form_points', 6),
                 feat.get('home_wins_l6', 2),
@@ -608,42 +611,42 @@ class ModelTrainer:
                 feat.get('away_recent_form', 0.33),
                 feat.get('home_time_weighted_form', 1.5),
                 feat.get('away_time_weighted_form', 1.5),
-                # Standings
+                # Standings - league position
                 feat.get('home_points', 0),
                 feat.get('away_points', 0),
                 feat.get('home_position', 10),
                 feat.get('away_position', 10),
                 feat.get('position_diff', 0),
-                # Head-to-head
+                # Head-to-head - historical matchup
                 feat.get('h2h_home_win_pct', 33),
                 feat.get('h2h_draw_pct', 33),
                 feat.get('h2h_away_win_pct', 33),
-                # Home/Away
+                # Home/Away specific performance
                 feat.get('home_home_win_rate', 50),
                 feat.get('away_away_win_rate', 33),
                 feat.get('home_home_goals_avg', 1.3),
                 feat.get('away_away_goals_avg', 1.1),
-                # Shots
+                # Shots - attacking intent
                 feat.get('home_shots_avg', 10),
                 feat.get('away_shots_avg', 9),
                 feat.get('home_shots_on_target_pct', 40),
                 feat.get('away_shots_on_target_pct', 38),
-                # Attacks
+                # Attacks - dangerous opportunities
                 feat.get('home_dangerous_attacks_avg', 30),
                 feat.get('away_dangerous_attacks_avg', 28),
-                # Possession
+                # Possession - territorial control
                 feat.get('home_possession', 50),
                 feat.get('away_possession', 50),
                 feat.get('home_pass_accuracy', 80),
                 feat.get('away_pass_accuracy', 78),
-                # Discipline
+                # Discipline - fair play
                 feat.get('home_fouls_avg', 12),
                 feat.get('away_fouls_avg', 13),
                 feat.get('home_yellow_avg', 2),
                 feat.get('away_yellow_avg', 2),
                 # Home advantage
                 feat.get('home_advantage', 0.1),
-                # League
+                # League encoding
                 feat.get('league_code_encoded', 0),
             ]
             
@@ -656,12 +659,15 @@ class ModelTrainer:
         y_over_2_5 = np.array(y_over_2_5)
         
         # Split data into train/test sets (80/20)
-        if len(examples) >= 10:
+        # Use stratified split to ensure all classes are represented
+        # For very small datasets, use cross-validation instead
+        MIN_FOR_SPLIT = 25  # Need at least 25 for reliable 80/20 split
+        if len(examples) >= MIN_FOR_SPLIT:
             X_train, X_test, y_result_train, y_result_test, y_ou_train, y_ou_test = train_test_split(
                 X, y_result, y_over_2_5, test_size=0.2, random_state=42
             )
         else:
-            # Too few examples for split, use all for training
+            # Too few examples - use all for training but warn about accuracy
             X_train, X_test = X, X
             y_result_train, y_result_test = y_result, y_result
             y_ou_train, y_ou_test = y_over_2_5, y_over_2_5

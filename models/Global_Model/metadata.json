@@ -4,8 +4,8 @@
     "league": "All Leagues",
     "country": "Global"
   },
-  "example_count": 2758,
-  "result_accuracy": 0.4528985507246377,
-  "ou_accuracy": 0.5108695652173914,
-  "trained_at": "2026-02-19T06:03:07.529490"
+  "example_count": 2961,
+  "result_accuracy": 0.4688026981450253,
+  "ou_accuracy": 0.5278246205733558,
+  "trained_at": "2026-02-20T09:06:42.845991"
 }

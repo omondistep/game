@@ -6,7 +6,7 @@
     "league": "Ligue 1",
     "league_url_path": "",
     "country_code": "cd",
-    "match_count": 53,
+    "match_count": 56,
     "teams": {
       "CS Don Bosco": {
         "home_matches": 2,
@@ -41,7 +41,7 @@
         "away_matches": 2
       },
       "SimbaDRC": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Saint-Luc": {
@@ -61,24 +61,24 @@
         "away_matches": 0
       },
       "Blessing": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "CS Manika": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "SM Sanga Balende": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "TP Mazembe": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Tanganyika": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "FC Tshikas": {
         "home_matches": 1,
@@ -118,8 +118,8 @@
       }
     }
   },
-  "example_count": 25,
-  "result_accuracy": 0.4,
-  "ou_accuracy": 0.6,
-  "trained_at": "2026-02-19T06:02:21.241665"
+  "example_count": 28,
+  "result_accuracy": 0.16666666666666666,
+  "ou_accuracy": 0.5,
+  "trained_at": "2026-02-20T09:06:16.271375"
 }

@@ -6,22 +6,22 @@
     "league": "TFF 1. Lig",
     "league_url_path": "",
     "country_code": "tr",
-    "match_count": 16,
+    "match_count": 24,
     "teams": {
       "76 Igd\u0131r Belediye Spor": {
         "home_matches": 2,
         "away_matches": 1
       },
       "Manisa BBSK": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Erzurum BB": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 2
       },
       "Sariyer SK": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Erokspor": {
@@ -38,7 +38,7 @@
       },
       "Sivasspor": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Boluspor": {
         "home_matches": 1,
@@ -46,20 +46,56 @@
       },
       "Bandirmaspor": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Serik Belediyespor": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Istanbulspor AS": {
         "home_matches": 1,
         "away_matches": 0
+      },
+      "Keciorengucu": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Corum Belediyesi": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "MKE Ankaragucu": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Adana Demirspor": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Amedspor": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Van BB": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Bodrumspor SK": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sakaryaspor": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Pendikspor": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
-  "example_count": 11,
-  "result_accuracy": 0.0,
-  "ou_accuracy": 1.0,
-  "trained_at": "2026-02-19T06:02:59.072976"
+  "example_count": 19,
+  "result_accuracy": 0.42105263157894735,
+  "ou_accuracy": 0.5789473684210527,
+  "trained_at": "2026-02-20T09:06:37.502159"
 }

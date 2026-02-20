@@ -5,7 +5,7 @@
     "league": "Primera B",
     "league_url_path": "",
     "country_code": "co",
-    "match_count": 41,
+    "match_count": 42,
     "teams": {
       "Barranquilla FC": {
         "home_matches": 2,
@@ -13,7 +13,7 @@
       },
       "Orsomarso SC": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Cortulua": {
         "home_matches": 3,
@@ -32,7 +32,7 @@
         "away_matches": 2
       },
       "Boca Juniors Cali": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Deportes Quindio": {
@@ -75,7 +75,7 @@
     "league": "Campeonato Gaúcho",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 52,
+    "match_count": 53,
     "teams": {
       "Avenida RS": {
         "home_matches": 2,
@@ -142,7 +142,7 @@
         "away_matches": 0
       },
       "Aparecidense GO": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "ABECAT Ouvidorense": {
@@ -168,6 +168,10 @@
       "Sao Luiz RS": {
         "home_matches": 1,
         "away_matches": 1
+      },
+      "Centro Oeste": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
@@ -177,7 +181,7 @@
     "league": "Campeonato Capixaba",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 132,
+    "match_count": 144,
     "teams": {
       "Vitoria ES": {
         "home_matches": 2,
@@ -185,7 +189,7 @@
       },
       "Desp Ferroviaria ES": {
         "home_matches": 1,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Botafogo": {
         "home_matches": 2,
@@ -236,7 +240,7 @@
         "away_matches": 2
       },
       "Santa Catarina": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 1
       },
       "Avai FC": {
@@ -337,21 +341,97 @@
       },
       "Pague Menos": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Sampaio Correa RJ": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Madureira RJ": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Portuguesa RJ": {
         "home_matches": 1,
         "away_matches": 0
       },
       "Marica RJ": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Porto BA": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Serra Branca": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Maguary PE": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Laguna": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Bare RR": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Araguaina TO": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Primavera SP": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "IAPE MA": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "America SE": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "SE Gama DF": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Monte Roraima": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Betim": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Piaui PI": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Ivinhema MS": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Independente EC AP": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Ji-Parana FC RO": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Portuguesa": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Galvez AC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Guapore RO": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -363,31 +443,31 @@
     "league": "Campeonato Piauiense",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 214,
+    "match_count": 227,
     "teams": {
       "Votuporanguense SP": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 0
       },
       "Linense SP": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "XV de Piracicaba SP": {
         "home_matches": 4,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Oeste FC": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Gremio Prudente": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 1
       },
       "Juventus SP": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Uniao Barbarense SP": {
         "home_matches": 3,
@@ -406,11 +486,11 @@
         "away_matches": 2
       },
       "Sao Jose EC": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 3
       },
       "Monte Azul SP": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 3
       },
       "Bandeirante SP": {
@@ -423,7 +503,7 @@
       },
       "Treze": {
         "home_matches": 3,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Atletico PB": {
         "home_matches": 2,
@@ -438,12 +518,12 @@
         "away_matches": 2
       },
       "Ituano SP": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 1
       },
       "Sao Bento": {
         "home_matches": 1,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Novorizontino SP": {
         "home_matches": 2,
@@ -454,7 +534,7 @@
         "away_matches": 2
       },
       "Aguia de Maraba PA": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Santa Rosa PA": {
@@ -475,7 +555,7 @@
       },
       "Parnahyba PI": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Portuguesa SP": {
         "home_matches": 1,
@@ -507,10 +587,10 @@
       },
       "Sousa PB": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Taubate": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Uniao Sao Joao SP": {
@@ -531,31 +611,31 @@
       },
       "Santo Andre SP": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Ferroviaria SP": {
         "home_matches": 3,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Inter Limeira SP": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Agua Santa SP": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Sertaozinho SP": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Botafogo PB": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Pombal": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Serra Branca": {
         "home_matches": 3,
@@ -638,7 +718,7 @@
         "away_matches": 1
       },
       "Confianca EC": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "EC Sao Bernardo": {
@@ -683,7 +763,7 @@
       },
       "Remo PA": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Capivariano SP": {
         "home_matches": 1,
@@ -706,11 +786,11 @@
         "away_matches": 1
       },
       "Fluminense-PI": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Campinense PB": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Decisao PE": {
@@ -761,7 +841,7 @@
     "league": "Campeonato Acreano",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 37,
+    "match_count": 38,
     "teams": {
       "Princesa Solimoes": {
         "home_matches": 2,
@@ -840,6 +920,14 @@
         "away_matches": 0
       },
       "Independente EC AP": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "CRB AL": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "CS Alagoano": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -933,7 +1021,7 @@
     "league": "Liga de Ascenso",
     "league_url_path": "",
     "country_code": "cr",
-    "match_count": 45,
+    "match_count": 47,
     "teams": {
       "Santa Cruz FC": {
         "home_matches": 4,
@@ -944,11 +1032,11 @@
         "away_matches": 2
       },
       "Aserri": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Consultants Moravia": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "AD Sarchi": {
@@ -973,11 +1061,11 @@
       },
       "Pitbulls": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "AD Carmelita": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Grecia": {
         "home_matches": 2,
@@ -1413,11 +1501,11 @@
     "league": "TFF 2. Lig",
     "league_url_path": "",
     "country_code": "tr",
-    "match_count": 52,
+    "match_count": 54,
     "teams": {
       "Hekimoglu Trabzon": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Belediye Derincespor": {
         "home_matches": 0,
@@ -1460,7 +1548,7 @@
         "away_matches": 0
       },
       "Kepez Belediyespor": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Somaspor": {
@@ -1473,7 +1561,7 @@
       },
       "Sanlıurfaspor": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Inegolspor": {
         "home_matches": 0,
@@ -1524,7 +1612,7 @@
         "away_matches": 0
       },
       "Kahramanmaras Istiklalsp": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Arnavutkoy Bld": {
@@ -1731,7 +1819,7 @@
     "league": "Liga Revelacao U23",
     "league_url_path": "",
     "country_code": "pt",
-    "match_count": 45,
+    "match_count": 49,
     "teams": {
       "Sporting Braga U23": {
         "home_matches": 1,
@@ -1759,10 +1847,10 @@
       },
       "Portimonense U23": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Gil Vicente U23": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 3
       },
       "Famalicao U23": {
@@ -1775,26 +1863,30 @@
       },
       "Maritimo U23": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Rio Ave U23": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 3
       },
       "Estrela U23": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Farense U23": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Estoril U23": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Vizela U23": {
         "home_matches": 2,
+        "away_matches": 1
+      },
+      "Uniao Leiria U23": {
+        "home_matches": 0,
         "away_matches": 1
       }
     }
@@ -2091,15 +2183,15 @@
     "league": "1st Division",
     "league_url_path": "",
     "country_code": "sa",
-    "match_count": 53,
+    "match_count": 58,
     "teams": {
       "Al Baten": {
         "home_matches": 3,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Al Raed Club": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Al Arabi KSA": {
         "home_matches": 1,
@@ -2110,7 +2202,7 @@
         "away_matches": 2
       },
       "Al Jubail Club": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Al Zulfi": {
@@ -2123,19 +2215,19 @@
       },
       "Al Jabalain": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Al Jndal": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Al Anwar KSA": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Al Bukiryah": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Al Ula": {
         "home_matches": 1,
@@ -2150,7 +2242,7 @@
         "away_matches": 1
       },
       "Al Adalah": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Al Diriya": {
@@ -2158,12 +2250,12 @@
         "away_matches": 2
       },
       "Al Wahda Mecca": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Jeddah Club": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       }
     }
   },
@@ -2601,7 +2693,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "ug",
-    "match_count": 28,
+    "match_count": 33,
     "teams": {
       "Buhimba United Saints": {
         "home_matches": 2,
@@ -2612,28 +2704,28 @@
         "away_matches": 2
       },
       "KCC Kampala": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "UPDF FC": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Lugazi Municipal": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Bul FC": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Calvary": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "URA Kampala": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Gaddafi FC": {
         "home_matches": 2,
@@ -2641,7 +2733,7 @@
       },
       "Maroons FC": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Vipers SC": {
         "home_matches": 3,
@@ -2652,15 +2744,15 @@
         "away_matches": 2
       },
       "Kitara FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Express FC": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Villa SC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Mbarara City": {
@@ -2881,10 +2973,10 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "eg",
-    "match_count": 32,
+    "match_count": 35,
     "teams": {
       "Ahly Cairo": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Wadi Degla SC": {
@@ -2897,7 +2989,7 @@
       },
       "Petrojet Suez": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Pyramids": {
         "home_matches": 1,
@@ -2905,11 +2997,11 @@
       },
       "El Gouna": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Al Masry": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Ceramica Cleopatra": {
         "home_matches": 1,
@@ -2924,7 +3016,7 @@
         "away_matches": 2
       },
       "Pharco": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "FC Masr": {
@@ -2944,7 +3036,7 @@
         "away_matches": 1
       },
       "Arab Contractors": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Future FC": {
@@ -2971,7 +3063,7 @@
     "league": "Premier Soccer League",
     "league_url_path": "",
     "country_code": "za",
-    "match_count": 7,
+    "match_count": 9,
     "teams": {
       "Sekhukhune Utd": {
         "home_matches": 1,
@@ -2979,7 +3071,7 @@
       },
       "Sundowns FC": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Marumo Gallants": {
         "home_matches": 1,
@@ -2994,6 +3086,14 @@
         "away_matches": 0
       },
       "Orlando Pirates": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Stellenbosch FC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Magesi FC": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -3067,7 +3167,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "bh",
-    "match_count": 15,
+    "match_count": 17,
     "teams": {
       "Al Khaldiya": {
         "home_matches": 1,
@@ -3078,7 +3178,7 @@
         "away_matches": 1
       },
       "Budaiya": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Malkiya": {
@@ -3091,7 +3191,7 @@
       },
       "Shabab Manama": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Al Hidd Club": {
         "home_matches": 1,
@@ -3107,10 +3207,10 @@
       },
       "Riffa Club": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Al Ali CSC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Najma Manama": {
@@ -3343,7 +3443,7 @@
     "league": "Liga Alef North",
     "league_url_path": "",
     "country_code": "il",
-    "match_count": 70,
+    "match_count": 74,
     "teams": {
       "Hapoel Ironi Arraba": {
         "home_matches": 2,
@@ -3363,7 +3463,7 @@
       },
       "FC Karmiel Safed": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Hapoel Bnei Musmus": {
         "home_matches": 1,
@@ -3382,7 +3482,7 @@
         "away_matches": 1
       },
       "FC Dimona": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Ahi Nazareth": {
@@ -3390,7 +3490,7 @@
         "away_matches": 1
       },
       "FC Tira": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Ramat HaSharon": {
@@ -3419,7 +3519,7 @@
       },
       "Ironi Nesher": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Tzeirei Kafr Kanna": {
         "home_matches": 1,
@@ -3438,12 +3538,12 @@
         "away_matches": 1
       },
       "Shimshon Tel Aviv": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Kfar Saba 1928": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Ironi Kiryat Gat": {
         "home_matches": 1,
@@ -3458,7 +3558,7 @@
         "away_matches": 1
       },
       "Hapoel Migdal HaEmek": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Nordia Jerusalem": {
@@ -3471,7 +3571,7 @@
       },
       "Tzeirei Tira": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       }
     }
   },
@@ -3481,7 +3581,7 @@
     "league": "League Two",
     "league_url_path": "",
     "country_code": "gb-en",
-    "match_count": 37,
+    "match_count": 38,
     "teams": {
       "Newport County": {
         "home_matches": 1,
@@ -3528,7 +3628,7 @@
         "away_matches": 1
       },
       "Grimsby Town": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Salford City": {
@@ -3541,7 +3641,7 @@
       },
       "Walsall FC": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Crawley Town": {
         "home_matches": 1,
@@ -3613,7 +3713,7 @@
     "league": "League One",
     "league_url_path": "",
     "country_code": "gb-en",
-    "match_count": 34,
+    "match_count": 35,
     "teams": {
       "Huddersfield": {
         "home_matches": 1,
@@ -3621,7 +3721,7 @@
       },
       "Luton Town": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Cardiff City": {
         "home_matches": 2,
@@ -3660,7 +3760,7 @@
         "away_matches": 1
       },
       "Wigan Athletic": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Rotherham": {
@@ -3839,7 +3939,7 @@
     "league": "Super League",
     "league_url_path": "",
     "country_code": "ch",
-    "match_count": 21,
+    "match_count": 22,
     "teams": {
       "FC Luzern": {
         "home_matches": 1,
@@ -3856,6 +3956,14 @@
       "FC Basel": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "FC Winterthur": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "St Gallen": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
@@ -3865,7 +3973,7 @@
     "league": "Primera A",
     "league_url_path": "",
     "country_code": "co",
-    "match_count": 83,
+    "match_count": 85,
     "teams": {
       "Llaneros FC COL": {
         "home_matches": 3,
@@ -3889,7 +3997,7 @@
       },
       "America de Cali": {
         "home_matches": 2,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Rionegro Aguilas": {
         "home_matches": 2,
@@ -3904,7 +4012,7 @@
         "away_matches": 2
       },
       "Junior Barranquilla": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 3
       },
       "Once Caldas": {
@@ -3917,7 +4025,7 @@
       },
       "Cucuta Deportivo": {
         "home_matches": 3,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Fortaleza COL": {
         "home_matches": 3,
@@ -3928,7 +4036,7 @@
         "away_matches": 3
       },
       "Alianza Petrolera": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Deportivo Pereira": {
@@ -3955,14 +4063,14 @@
     "league": "Liga Nacional",
     "league_url_path": "",
     "country_code": "gt",
-    "match_count": 47,
+    "match_count": 51,
     "teams": {
       "Comunicaciones": {
         "home_matches": 2,
         "away_matches": 3
       },
       "Coban Imperial": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "CD Marquense": {
@@ -3970,7 +4078,7 @@
         "away_matches": 3
       },
       "Deportivo Achuapa": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 3
       },
       "Deportivo Mixco": {
@@ -3978,28 +4086,28 @@
         "away_matches": 2
       },
       "Malacateco": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 2
       },
       "Antigua GFC": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 2
       },
       "Club Xelaju MC": {
         "home_matches": 2,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Deportivo Guastatoya": {
         "home_matches": 3,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Aurora": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "CSD Municipal": {
         "home_matches": 3,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Deportivo Mictlan": {
         "home_matches": 2,
@@ -4071,7 +4179,7 @@
     "league": "Campeonato Baiano",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 31,
+    "match_count": 32,
     "teams": {
       "Galicia BA": {
         "home_matches": 3,
@@ -4099,7 +4207,7 @@
       },
       "Bahia de Feira BA": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Jequie": {
         "home_matches": 0,
@@ -4136,6 +4244,10 @@
       "Brasilia FC": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Vitoria": {
+        "home_matches": 1,
+        "away_matches": 0
       }
     }
   },
@@ -4275,7 +4387,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "bb",
-    "match_count": 25,
+    "match_count": 27,
     "teams": {
       "Ellerton": {
         "home_matches": 2,
@@ -4283,18 +4395,18 @@
       },
       "UWI Blackbirds": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Brittons Hill": {
         "home_matches": 2,
         "away_matches": 1
       },
       "Pride of Gall Hill": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Bagatelle": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Paradise": {
@@ -4315,7 +4427,7 @@
       },
       "Kick Start": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       }
     }
   },
@@ -4325,7 +4437,7 @@
     "league": "Campeonato Roraimense",
     "league_url_path": "",
     "country_code": "br",
-    "match_count": 45,
+    "match_count": 47,
     "teams": {
       "Monte Roraima": {
         "home_matches": 2,
@@ -4344,11 +4456,11 @@
         "away_matches": 3
       },
       "Rondoniense RO": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 1
       },
       "Barcelona RO": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Sao Raimundo RR": {
@@ -4381,7 +4493,7 @@
       },
       "Porto Velho": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Ji-Parana FC RO": {
         "home_matches": 0,
@@ -4389,7 +4501,7 @@
       },
       "Uniao Cacoalense RO": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       }
     }
   },
@@ -4529,7 +4641,7 @@
     "league": "National League",
     "league_url_path": "",
     "country_code": "mm",
-    "match_count": 32,
+    "match_count": 34,
     "teams": {
       "Yarmanya Utd": {
         "home_matches": 2,
@@ -4540,16 +4652,16 @@
         "away_matches": 2
       },
       "Ayeyawady United": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 0
       },
       "Dagon FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Yadanarbon FC": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Thitsar Arman": {
         "home_matches": 0,
@@ -4573,7 +4685,7 @@
       },
       "Rakhine United": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Shan United": {
         "home_matches": 0,
@@ -4787,7 +4899,7 @@
     "league": "Ligue 1",
     "league_url_path": "",
     "country_code": "cd",
-    "match_count": 53,
+    "match_count": 56,
     "teams": {
       "CS Don Bosco": {
         "home_matches": 2,
@@ -4822,7 +4934,7 @@
         "away_matches": 2
       },
       "SimbaDRC": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "Saint-Luc": {
@@ -4842,24 +4954,24 @@
         "away_matches": 0
       },
       "Blessing": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 0
       },
       "CS Manika": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "SM Sanga Balende": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "TP Mazembe": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Tanganyika": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "FC Tshikas": {
         "home_matches": 1,
@@ -4931,10 +5043,10 @@
     "league": "Elite One",
     "league_url_path": "",
     "country_code": "cm",
-    "match_count": 19,
+    "match_count": 21,
     "teams": {
       "Coton Sport": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Aigle Royal de Moungo": {
@@ -4942,7 +5054,7 @@
         "away_matches": 2
       },
       "Gazelle": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Colombe FC": {
@@ -4971,7 +5083,7 @@
       },
       "AS Fortuna": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Dynamo Douala": {
         "home_matches": 0,
@@ -4983,7 +5095,7 @@
       },
       "Fauve Azur Elite": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Unisport Bafang": {
         "home_matches": 0,
@@ -4997,7 +5109,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "zm",
-    "match_count": 22,
+    "match_count": 23,
     "teams": {
       "Kabwe Warriors": {
         "home_matches": 1,
@@ -5036,7 +5148,7 @@
         "away_matches": 0
       },
       "Zanaco FC": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Red Arrows FC": {
@@ -5062,6 +5174,10 @@
       "Green Eagles": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "ZESCO United": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
@@ -5071,7 +5187,7 @@
     "league": "Coppa Italia Serie C",
     "league_url_path": "",
     "country_code": "it",
-    "match_count": 4,
+    "match_count": 5,
     "teams": {
       "Latina Calcio": {
         "home_matches": 1,
@@ -5086,6 +5202,14 @@
         "away_matches": 0
       },
       "Ternana Calcio": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Pistoiese": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Ancona": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -5209,14 +5333,14 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "jo",
-    "match_count": 24,
+    "match_count": 26,
     "teams": {
       "Hussein Irbid": {
         "home_matches": 2,
         "away_matches": 1
       },
       "Al Salt": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Shabab Al Urdun": {
@@ -5232,12 +5356,12 @@
         "away_matches": 1
       },
       "Ramtha Club": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 2
       },
       "Ahli Amman": {
         "home_matches": 2,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Sama Al Sarhan": {
         "home_matches": 2,
@@ -5245,7 +5369,7 @@
       },
       "Jazeera Amman": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Buqaa Amman": {
         "home_matches": 0,
@@ -5259,7 +5383,7 @@
     "league": "Professional League",
     "league_url_path": "",
     "country_code": "sa",
-    "match_count": 32,
+    "match_count": 35,
     "teams": {
       "Al Hazm": {
         "home_matches": 1,
@@ -5271,11 +5395,11 @@
       },
       "Al Najma KSA": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Al Riyadh SC": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Al Feiha": {
         "home_matches": 2,
@@ -5286,16 +5410,16 @@
         "away_matches": 1
       },
       "Al Ahli": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Ettifaq FC": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Al Fateh KSA": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Ittihad Jeddah": {
         "home_matches": 0,
@@ -5314,7 +5438,7 @@
         "away_matches": 1
       },
       "Al Kholood Club": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Qadisiya Khubar": {
@@ -5481,54 +5605,54 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "sv",
-    "match_count": 58,
+    "match_count": 64,
     "teams": {
       "Inter FA": {
         "home_matches": 3,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Cacahuatique": {
         "home_matches": 3,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Alianza FC": {
         "home_matches": 3,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Luis Angel Firpo": {
         "home_matches": 3,
-        "away_matches": 2
+        "away_matches": 3
       },
       "CD Aguila": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 3
       },
       "Hercules": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 3
       },
       "Fuerte San Francisco": {
         "home_matches": 2,
-        "away_matches": 3
+        "away_matches": 4
       },
       "CD FAS": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 2
       },
       "Municipal Limeno": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 2
       },
       "Isidro Metapan": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 3
       },
       "Zacatecoluca": {
         "home_matches": 3,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Platense SLV": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 4
       }
     }
@@ -5539,7 +5663,7 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "gt",
-    "match_count": 78,
+    "match_count": 79,
     "teams": {
       "Ipala": {
         "home_matches": 4,
@@ -5578,12 +5702,12 @@
         "away_matches": 1
       },
       "Suchitepequez": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 3
       },
       "Chichicasteco": {
         "home_matches": 4,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Coatepecano IB": {
         "home_matches": 0,
@@ -6643,7 +6767,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "sy",
-    "match_count": 36,
+    "match_count": 37,
     "teams": {
       "Ittihad Aleppo": {
         "home_matches": 2,
@@ -6698,7 +6822,7 @@
         "away_matches": 1
       },
       "Shorta Damascus": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Wathba Homs": {
@@ -6707,7 +6831,7 @@
       },
       "Tishreen SC": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       }
     }
   },
@@ -6717,7 +6841,7 @@
     "league": "Thai League 2",
     "league_url_path": "",
     "country_code": "th",
-    "match_count": 40,
+    "match_count": 47,
     "teams": {
       "Chanthaburi": {
         "home_matches": 3,
@@ -6725,35 +6849,35 @@
       },
       "Rasi Salai United": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Chainat FC": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 1
       },
       "Kasetsart FC": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Nong Bua Pitchaya": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Chiangmai United": {
         "home_matches": 1,
         "away_matches": 2
       },
       "Police Tero FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Nakhon Si United": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Mahasarakham Sambaitao FC": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Bangkok FC": {
         "home_matches": 2,
@@ -6761,7 +6885,7 @@
       },
       "Khon Kaen United": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Phrae United": {
         "home_matches": 1,
@@ -6769,26 +6893,26 @@
       },
       "Trat FC": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Songkhla FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Nakhon Pathom": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Pattaya Dolphins": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Pattani FC": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Sisaket United": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       }
     }
@@ -7143,14 +7267,14 @@
     "league": "Girabola",
     "league_url_path": "",
     "country_code": "ao",
-    "match_count": 8,
+    "match_count": 9,
     "teams": {
       "1º de Maio": {
         "home_matches": 1,
         "away_matches": 0
       },
       "Petro Atletico": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Academica Lobito": {
@@ -7162,6 +7286,10 @@
         "away_matches": 0
       },
       "CD Lunda Sul": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Desportivo Huila": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -7305,7 +7433,7 @@
     "league": "Tercera Division Group 12 - Canarias",
     "league_url_path": "",
     "country_code": "es",
-    "match_count": 81,
+    "match_count": 82,
     "teams": {
       "Real Murcia Imperial": {
         "home_matches": 1,
@@ -7562,6 +7690,14 @@
       "CD Toledo": {
         "home_matches": 1,
         "away_matches": 0
+      },
+      "Atletico Albericia": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Colindres": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
@@ -7847,14 +7983,14 @@
     "league": "Première Division",
     "league_url_path": "",
     "country_code": "ml",
-    "match_count": 5,
+    "match_count": 7,
     "teams": {
       "FC Mali Coura": {
         "home_matches": 1,
         "away_matches": 0
       },
       "USFAS Bamako": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Derby Academie": {
@@ -7862,6 +7998,18 @@
         "away_matches": 0
       },
       "Afrique Football Elite": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Binga": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Djoliba AC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Stade Malien": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -8023,7 +8171,7 @@
     "league": "Lao League",
     "league_url_path": "",
     "country_code": "la",
-    "match_count": 18,
+    "match_count": 19,
     "teams": {
       "Namtha United": {
         "home_matches": 2,
@@ -8042,7 +8190,7 @@
         "away_matches": 1
       },
       "Luangprabang United": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Master 7 FC": {
@@ -8051,7 +8199,7 @@
       },
       "Lao Army": {
         "home_matches": 1,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Ezra": {
         "home_matches": 1,
@@ -8741,22 +8889,22 @@
     "league": "TFF 1. Lig",
     "league_url_path": "",
     "country_code": "tr",
-    "match_count": 16,
+    "match_count": 24,
     "teams": {
       "76 Igdır Belediye Spor": {
         "home_matches": 2,
         "away_matches": 1
       },
       "Manisa BBSK": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Erzurum BB": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 2
       },
       "Sariyer SK": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Erokspor": {
@@ -8773,7 +8921,7 @@
       },
       "Sivasspor": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Boluspor": {
         "home_matches": 1,
@@ -8781,15 +8929,51 @@
       },
       "Bandirmaspor": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Serik Belediyespor": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Istanbulspor AS": {
         "home_matches": 1,
         "away_matches": 0
+      },
+      "Keciorengucu": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Corum Belediyesi": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "MKE Ankaragucu": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Adana Demirspor": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Amedspor": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Van BB": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Bodrumspor SK": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sakaryaspor": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Pendikspor": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
@@ -8864,7 +9048,7 @@
     "league": "Bundesliga Women",
     "league_url_path": "",
     "country_code": "de",
-    "match_count": 7,
+    "match_count": 8,
     "teams": {
       "Bayer Leverkusen W": {
         "home_matches": 1,
@@ -8887,6 +9071,14 @@
         "away_matches": 0
       },
       "Bayern Munich W": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Meppen W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Eintracht Frankfurt II W": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -8944,26 +9136,26 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "ni",
-    "match_count": 50,
+    "match_count": 53,
     "teams": {
       "Diriangen FC": {
         "home_matches": 5,
         "away_matches": 1
       },
       "Jalapa ART": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 4
       },
       "Matagalpa FC": {
         "home_matches": 3,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Rancho Santana": {
         "home_matches": 3,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Real Esteli": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 3
       },
       "UNAN Managua": {
@@ -8971,7 +9163,7 @@
         "away_matches": 5
       },
       "CD Walter Ferretti": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 3
       },
       "Real Madriz": {
@@ -8984,7 +9176,7 @@
       },
       "HandH Export": {
         "home_matches": 3,
-        "away_matches": 3
+        "away_matches": 4
       }
     }
   },
@@ -9192,7 +9384,7 @@
     "league": "Serie C",
     "league_url_path": "",
     "country_code": "it",
-    "match_count": 32,
+    "match_count": 33,
     "teams": {
       "SS Cavese": {
         "home_matches": 1,
@@ -9220,7 +9412,7 @@
       },
       "Trapani 1905": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Benevento Calcio": {
         "home_matches": 0,
@@ -9243,7 +9435,7 @@
         "away_matches": 1
       },
       "Catania": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Audace Cerignola": {
@@ -9360,15 +9552,15 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "mt",
-    "match_count": 8,
+    "match_count": 13,
     "teams": {
       "Marsaxlokk": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Tarxien Rainbows": {
-        "home_matches": 0,
-        "away_matches": 1
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Sliema Wanderers": {
         "home_matches": 0,
@@ -9379,8 +9571,8 @@
         "away_matches": 1
       },
       "Hamrun Spartans": {
-        "home_matches": 0,
-        "away_matches": 1
+        "home_matches": 1,
+        "away_matches": 2
       },
       "Zabbar St Patrick": {
         "home_matches": 1,
@@ -9393,6 +9585,18 @@
       "Naxxar Lions": {
         "home_matches": 1,
         "away_matches": 0
+      },
+      "Floriana FC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Hibernians Paola": {
+        "home_matches": 1,
+        "away_matches": 1
+      },
+      "Mosta FC": {
+        "home_matches": 1,
+        "away_matches": 1
       }
     }
   },
@@ -9438,7 +9642,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "jm",
-    "match_count": 20,
+    "match_count": 21,
     "teams": {
       "Cavalier FC": {
         "home_matches": 3,
@@ -9466,10 +9670,10 @@
       },
       "Mount Pleasant": {
         "home_matches": 0,
-        "away_matches": 2
+        "away_matches": 3
       },
       "Harbour View": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Portmore United": {
@@ -10096,7 +10300,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "bw",
-    "match_count": 15,
+    "match_count": 16,
     "teams": {
       "BDF XI": {
         "home_matches": 1,
@@ -10111,6 +10315,14 @@
         "away_matches": 0
       },
       "Nico United": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sua Flamingoes": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "TAFIC": {
         "home_matches": 0,
         "away_matches": 1
       },
@@ -10812,7 +11024,7 @@
     "league": "Copa Argentina",
     "league_url_path": "",
     "country_code": "ar",
-    "match_count": 10,
+    "match_count": 12,
     "teams": {
       "Talleres Cordoba": {
         "home_matches": 1,
@@ -10861,6 +11073,22 @@
       "Gimnasia Jujuy": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "CA Tigre": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Claypole": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "River Plate": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Ciudad Bolivar": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
@@ -10870,47 +11098,47 @@
     "league": "I Liqa",
     "league_url_path": "",
     "country_code": "az",
-    "match_count": 15,
+    "match_count": 20,
     "teams": {
       "Cəbrayıl": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "MOIK Baku": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 2
       },
       "Shafa Baku": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Baku Sporting": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Zaqatala FK": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Sebail FK": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Shahdagh Qusar": {
         "home_matches": 2,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Difai Agsu": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Simal": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Energetik Mingachevir": {
         "home_matches": 1,
-        "away_matches": 1
+        "away_matches": 2
       }
     }
   },
@@ -11024,10 +11252,10 @@
     "league": "Reserve League",
     "league_url_path": "",
     "country_code": "ar",
-    "match_count": 9,
+    "match_count": 18,
     "teams": {
       "River Plate Res": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Talleres Cordoba Res": {
@@ -11035,16 +11263,16 @@
         "away_matches": 1
       },
       "Central Cordoba SdE Res": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "Quilmes Res": {
         "home_matches": 0,
-        "away_matches": 1
+        "away_matches": 2
       },
       "Gimnasia Mendoza Res": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Racing Club Res": {
         "home_matches": 0,
@@ -11052,7 +11280,7 @@
       },
       "Boca Juniors Res": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Deportivo Riestra Res": {
         "home_matches": 0,
@@ -11060,9 +11288,57 @@
       },
       "Atletico Tucuman Res": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Argentinos Juniors Res": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Independiente Riva Res": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Atletico Rafaela Res": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Lanus Res": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Estudiantes RC Res": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sarmiento Res": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Estudiantes La Plata Res": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Platense Res": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Colon Res": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "San Martin San Juan Res": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Independiente Res": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Belgrano Cordoba Res": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Huracan Res": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -11074,7 +11350,7 @@
     "league": "NPL NSW",
     "league_url_path": "",
     "country_code": "au",
-    "match_count": 18,
+    "match_count": 19,
     "teams": {
       "Sydney U21": {
         "home_matches": 1,
@@ -11133,6 +11409,14 @@
         "away_matches": 0
       },
       "University of NSW": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Kahibah": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Lambton Jaffas": {
         "home_matches": 0,
         "away_matches": 1
       },
@@ -11514,7 +11798,7 @@
     "league": "Junioren Bundesliga",
     "league_url_path": "",
     "country_code": "de",
-    "match_count": 18,
+    "match_count": 19,
     "teams": {
       "Wacker Burghausen U19": {
         "home_matches": 1,
@@ -11595,6 +11879,14 @@
       "Hallescher FC U19": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Eintracht Frankfurt U19": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Koln U19": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
@@ -11604,10 +11896,10 @@
     "league": "League Cup",
     "league_url_path": "",
     "country_code": "is",
-    "match_count": 3,
+    "match_count": 7,
     "teams": {
       "Vikingur Reykjavik": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 0
       },
       "UMF Njardvik": {
@@ -11619,6 +11911,34 @@
         "away_matches": 0
       },
       "Aegir Thorlakshofn": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "HK Kopavogur": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Vestri": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Thor Akureyri": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Volsungur": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Breidablik": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "FH Hafnarfjordur": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "KR Reykjavik": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -11798,7 +12118,7 @@
     "league": "Kosovar Cup",
     "league_url_path": "",
     "country_code": "xk",
-    "match_count": 11,
+    "match_count": 12,
     "teams": {
       "Drita": {
         "home_matches": 1,
@@ -11853,6 +12173,14 @@
         "away_matches": 0
       },
       "KF Malisheva": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "KF Feronikeli": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Dinamo Ferizaj": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -12082,7 +12410,7 @@
     "league": "Premier League",
     "league_url_path": "",
     "country_code": "gb-en",
-    "match_count": 6,
+    "match_count": 7,
     "teams": {
       "Tottenham": {
         "home_matches": 1,
@@ -12105,6 +12433,14 @@
         "away_matches": 0
       },
       "Leeds United": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Wolverhampton": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Arsenal": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -12476,7 +12812,7 @@
     "league": "",
     "league_url_path": "",
     "country_code": "",
-    "match_count": 10,
+    "match_count": 15,
     "teams": {
       "Forge FC": {
         "home_matches": 1,
@@ -12517,6 +12853,46 @@
       "Cruz Azul": {
         "home_matches": 1,
         "away_matches": 1
+      },
+      "Atletico Ottawa": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Nashville SC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Real Espana": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Los Angeles FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Defence Force": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Philadelphia Union": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Universidad OandM": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "FC Cincinnati": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "CS Cartagines": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Vancouver Whitecaps": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
@@ -12526,7 +12902,7 @@
     "league": "",
     "league_url_path": "",
     "country_code": "",
-    "match_count": 6,
+    "match_count": 12,
     "teams": {
       "The Strongest": {
         "home_matches": 1,
@@ -12537,7 +12913,7 @@
         "away_matches": 1
       },
       "2 de Mayo": {
-        "home_matches": 1,
+        "home_matches": 2,
         "away_matches": 1
       },
       "Alianza Lima": {
@@ -12550,6 +12926,50 @@
       },
       "Univ Catolica Quito": {
         "home_matches": 1,
+        "away_matches": 1
+      },
+      "Carabobo": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Huachipato": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sporting Cristal": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Liverpool URU": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Ind Medellin": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "O Higgins": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Bahia": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Nacional Potosi": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Botafogo": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Barcelona SC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Argentinos Juniors": {
+        "home_matches": 0,
         "away_matches": 1
       }
     }
@@ -12706,7 +13126,7 @@
     "league": "",
     "league_url_path": "",
     "country_code": "",
-    "match_count": 18,
+    "match_count": 20,
     "teams": {
       "Wahda Abu Dhabi": {
         "home_matches": 1,
@@ -12774,18 +13194,18 @@
       },
       "Ulsan Hyundai": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Melbourne City": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Gangwon FC": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Shanghai SIPG": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Sharjah SC": {
@@ -12804,7 +13224,7 @@
     "league": "",
     "league_url_path": "",
     "country_code": "",
-    "match_count": 10,
+    "match_count": 16,
     "teams": {
       "Esteghlal Tehran": {
         "home_matches": 1,
@@ -12824,50 +13244,50 @@
       },
       "Ratchaburi FC": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Persib Bandung": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Cong an Nhan dan": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Tampines Rovers": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Arkadag": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Al Nassr": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Sepahan Esfahan": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Ahli Doha": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Pohang Steelers": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Gamba Osaka": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "Bangkok United": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Macarthur FC": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       }
     }
@@ -12970,7 +13390,7 @@
     "league": "NPL Victoria",
     "league_url_path": "tips-and-predictions-for-australia/npl-victoria",
     "country_code": "au",
-    "match_count": 7,
+    "match_count": 8,
     "teams": {
       "Heidelberg United": {
         "home_matches": 1,
@@ -12982,7 +13402,7 @@
       },
       "Hume City FC": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Altona Magic SC": {
         "home_matches": 0,
@@ -12993,7 +13413,7 @@
         "away_matches": 0
       },
       "South Melbourne": {
-        "home_matches": 0,
+        "home_matches": 1,
         "away_matches": 1
       },
       "George Cross": {
@@ -13234,7 +13654,7 @@
     "league": "Segunda B Grupo 2",
     "league_url_path": "football-tips-and-predictions-for-spain/segunda-b2",
     "country_code": "es",
-    "match_count": 2,
+    "match_count": 3,
     "teams": {
       "Eibar II": {
         "home_matches": 1,
@@ -13251,6 +13671,14 @@
       "CD Ibiza-Islas": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "Extremadura 1924": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Atletico Antoniano": {
+        "home_matches": 0,
+        "away_matches": 1
       }
     }
   },
@@ -13260,11 +13688,11 @@
     "league": "WE League",
     "league_url_path": "football-tips-and-predictions-for-japan/we-league",
     "country_code": "jp",
-    "match_count": 2,
+    "match_count": 3,
     "teams": {
       "Omiya Ardija Ventus W": {
         "home_matches": 1,
-        "away_matches": 0
+        "away_matches": 1
       },
       "Cerezo Osaka W": {
         "home_matches": 0,
@@ -13277,6 +13705,10 @@
       "Urawa Reds W": {
         "home_matches": 0,
         "away_matches": 1
+      },
+      "NTV Beleza W": {
+        "home_matches": 1,
+        "away_matches": 0
       }
     }
   },
@@ -13374,13 +13806,21 @@
     "league": "Super League",
     "league_url_path": "football-tips-and-predictions-for-india/super-league",
     "country_code": "in",
-    "match_count": 1,
+    "match_count": 2,
     "teams": {
       "East Bengal": {
         "home_matches": 1,
         "away_matches": 0
       },
       "North East Utd": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Mumbai City": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Chennaiyin": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -13444,13 +13884,45 @@
     "league": "",
     "league_url_path": "",
     "country_code": "",
-    "match_count": 1,
+    "match_count": 5,
     "teams": {
       "Galatasaray": {
         "home_matches": 1,
         "away_matches": 0
       },
       "Juventus": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Qarabag": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Newcastle United": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Olympiacos FC": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Bayer Leverkusen": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Club Brugge": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Atletico Madrid": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "BodoGlimt": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Inter": {
         "home_matches": 0,
         "away_matches": 1
       }
@@ -13511,6 +13983,338 @@
         "away_matches": 0
       },
       "Hampton FC": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "SiC": {
+    "league_code": "SiC",
+    "country": "Slovakia",
+    "league": "Slovensky Pohar",
+    "league_url_path": "predictions-and-tips-for-slovakia/slovak-cup",
+    "country_code": "sk",
+    "match_count": 2,
+    "teams": {
+      "Liptovsky Mikulas": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "KFC Komarno": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Spartak Trnava": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Slovan Bratislava": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "Ma1": {
+    "league_code": "Ma1",
+    "country": "Morocco",
+    "league": "Botola Pro",
+    "league_url_path": "tips-and-predictions-for-morocco/botola-pro",
+    "country_code": "ma",
+    "match_count": 1,
+    "teams": {
+      "Khemis Zemamra": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "RSB Berkane": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "CLW": {
+    "league_code": "CLW",
+    "country": "",
+    "league": "",
+    "league_url_path": "",
+    "country_code": "",
+    "match_count": 4,
+    "teams": {
+      "Real Madrid W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Paris W": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Arsenal LFC W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "OH Leuven W": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Juventus W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Wolfsburg W": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Man Utd W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Atletico Madrid W": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "BeW": {
+    "league_code": "BeW",
+    "country": "Belgium",
+    "league": "Super League Women",
+    "league_url_path": "football-tips-and-predictions-for-belgium/super-league-women",
+    "country_code": "be",
+    "match_count": 2,
+    "teams": {
+      "RSC Anderlecht W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Zulte-Waregem W": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "St Liege W": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Genk W": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "Es1": {
+    "league_code": "Es1",
+    "country": "Spain",
+    "league": "La Liga",
+    "league_url_path": "football-tips-and-predictions-for-spain/primera-division",
+    "country_code": "es",
+    "match_count": 1,
+    "teams": {
+      "Levante": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Villarreal": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "It1": {
+    "league_code": "It1",
+    "country": "Italy",
+    "league": "Serie A",
+    "league_url_path": "football-tips-and-predictions-for-italy/serie-a",
+    "country_code": "it",
+    "match_count": 1,
+    "teams": {
+      "Milan": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Calcio Como": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "FA": {
+    "league_code": "FA",
+    "country": "Scotland",
+    "league": "FA Cup",
+    "league_url_path": "football-tips-and-predictions-for-scotland/fa-cup",
+    "country_code": "gb-sct",
+    "match_count": 1,
+    "teams": {
+      "Aberdeen": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Motherwell": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "Ro2": {
+    "league_code": "Ro2",
+    "country": "Romania",
+    "league": "Liga 2",
+    "league_url_path": "football-tips-and-predictions-for-romania/liga-2",
+    "country_code": "ro",
+    "match_count": 1,
+    "teams": {
+      "FC Voluntari": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "CSA Steaua": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "UEL": {
+    "league_code": "UEL",
+    "country": "",
+    "league": "",
+    "league_url_path": "",
+    "country_code": "",
+    "match_count": 8,
+    "teams": {
+      "Dinamo Zagreb": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Racing Genk": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Brann": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Bologna": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Fenerbahce": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Nottingham Forest": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "PAOK": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Celta Vigo": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Ludogorets": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Ferencvaros": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Panathinaikos": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Viktoria Plzen": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Celtic": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Stuttgart": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Lille": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Crvena Zvezda": {
+        "home_matches": 0,
+        "away_matches": 1
+      }
+    }
+  },
+  "ECL": {
+    "league_code": "ECL",
+    "country": "",
+    "league": "",
+    "league_url_path": "",
+    "country_code": "",
+    "match_count": 8,
+    "teams": {
+      "Noah": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "AZ Alkmaar": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "KuPS Kuopio": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Lech Poznan": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Sigma Olomouc": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Lausanne-Sport": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Zrinjski Mostar": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Crystal Palace": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Jagiellonia": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Fiorentina": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Omonia Nicosia": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Rijeka": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Drita": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Celje": {
+        "home_matches": 0,
+        "away_matches": 1
+      },
+      "Shkendija 79": {
+        "home_matches": 1,
+        "away_matches": 0
+      },
+      "Samsunspor": {
         "home_matches": 0,
         "away_matches": 1
       }

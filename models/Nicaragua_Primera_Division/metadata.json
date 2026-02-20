@@ -6,26 +6,26 @@
     "league": "Primera Division",
     "league_url_path": "",
     "country_code": "ni",
-    "match_count": 50,
+    "match_count": 53,
     "teams": {
       "Diriangen FC": {
         "home_matches": 5,
         "away_matches": 1
       },
       "Jalapa ART": {
-        "home_matches": 2,
+        "home_matches": 3,
         "away_matches": 4
       },
       "Matagalpa FC": {
         "home_matches": 3,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Rancho Santana": {
         "home_matches": 3,
-        "away_matches": 3
+        "away_matches": 4
       },
       "Real Esteli": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 3
       },
       "UNAN Managua": {
@@ -33,7 +33,7 @@
         "away_matches": 5
       },
       "CD Walter Ferretti": {
-        "home_matches": 3,
+        "home_matches": 4,
         "away_matches": 3
       },
       "Real Madriz": {
@@ -46,12 +46,12 @@
       },
       "HandH Export": {
         "home_matches": 3,
-        "away_matches": 3
+        "away_matches": 4
       }
     }
   },
-  "example_count": 30,
-  "result_accuracy": 0.5,
-  "ou_accuracy": 0.5,
-  "trained_at": "2026-02-19T06:02:47.160658"
+  "example_count": 33,
+  "result_accuracy": 0.2857142857142857,
+  "ou_accuracy": 0.5714285714285714,
+  "trained_at": "2026-02-20T09:06:32.408441"
 }
